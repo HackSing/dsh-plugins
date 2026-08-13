@@ -1,6 +1,7 @@
 # DSH Plugins
 
-<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/73cee9c0-8cc4-4641-934e-06fe7d251a5a" />
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/dd5e0442-4b29-4d34-be14-0425b4b891cc" />
+
 
 English | [中文](README.zh.md)
 
