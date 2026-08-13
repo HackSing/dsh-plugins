@@ -1,5 +1,7 @@
 # DSH Plugins
 
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/73cee9c0-8cc4-4641-934e-06fe7d251a5a" />
+
 English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
