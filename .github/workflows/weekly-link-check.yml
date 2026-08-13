@@ -1,0 +1,34 @@
+name: Weekly plugin link check
+
+on:
+  schedule:
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check plugin repository links
+        id: links
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/validate_directory.py --check-links 2>&1 | tee link-check.txt
+      - name: Open a maintenance issue for confirmed failures
+        if: steps.links.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --label broken-link --state open --search "Weekly plugin link check" --json number --jq 'length')
+          if [ "$existing" = "0" ]; then
+            gh issue create --title "Weekly plugin link check found unavailable repositories" --label broken-link,triage --body-file link-check.txt
+          fi
+      - name: Fail after reporting
+        if: steps.links.outcome == 'failure'
+        run: exit 1
