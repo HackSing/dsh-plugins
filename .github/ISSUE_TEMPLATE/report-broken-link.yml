@@ -1,0 +1,36 @@
+name: Report a broken link
+description: Report a missing, renamed, archived, or otherwise inaccessible plugin repository.
+title: "[Broken link]: "
+labels: ["broken-link", "triage"]
+body:
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Directory URL
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Observed status
+      options:
+        - Returns 404
+        - Repository renamed or moved
+        - Repository archived
+        - Access restricted
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Details or replacement URL
+    validations:
+      required: true

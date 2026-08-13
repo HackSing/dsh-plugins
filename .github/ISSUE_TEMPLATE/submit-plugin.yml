@@ -1,0 +1,55 @@
+name: Submit a plugin
+description: Propose a public DeepSeek Harness plugin for inclusion.
+title: "[Plugin]: "
+labels: ["plugin-submission", "triage"]
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: Plugin repository
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: value
+    attributes:
+      label: Primary value
+      description: In one factual sentence, what does the plugin help a DSH user do?
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Primary category
+      options:
+        - Interaction & Experience / 交互与体验
+        - Tools & Capabilities / 工具与能力
+        - Automation & Agents / 自动化与智能体
+        - Development & Ecosystem / 开发与生态集成
+    validations:
+      required: true
+  - type: textarea
+    id: install
+    attributes:
+      label: Installation and removal
+      description: Link to or summarize the documented install and uninstall steps.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and verification
+      description: State the tested DSH version, platform, and what you personally verified. Write "not verified" where applicable.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission checklist
+      options:
+        - label: The repository is public and clearly related to DeepSeek Harness.
+          required: true
+        - label: The repository documents its purpose and usage.
+          required: true
+        - label: I have disclosed any unverified compatibility claims.
+          required: true

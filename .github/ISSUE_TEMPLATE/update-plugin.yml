@@ -1,0 +1,30 @@
+name: Update plugin information
+description: Correct a description, category, repository URL, or other directory entry.
+title: "[Update]: "
+labels: ["content-update", "triage"]
+body:
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin name and repository
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current information
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Link to the plugin documentation, release, or repository change that supports this update.
+    validations:
+      required: true
