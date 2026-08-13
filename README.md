@@ -138,13 +138,15 @@ Before installing, check five things in the linked repository: the problem it so
 
 ## Add or update a plugin
 
-Contributions are welcome. Add or update the plugin in both language files, keep it in one primary category, and use this format:
+Contributions are welcome. Add or update the plugin in `data/plugins.json`, keep it in one primary category, and run `python3 scripts/sync_topic_plugins.py render` to regenerate both language files. Published entries use this format:
 
 ```markdown
 - [plugin-name](https://github.com/owner/repository) — One clear sentence describing its primary value.
 ```
 
 Adding the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to a plugin repository also makes it easier to discover.
+
+A daily automation scans that topic and prepares a Draft PR for maintainer review. Topic membership is only a discovery signal: no candidate is published until its category and bilingual description have been approved.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for acceptance criteria, review rules, and the contribution workflow.
 

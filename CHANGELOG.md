@@ -6,7 +6,13 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+- Added a structured plugin catalog and an approval-gated GitHub Topic discovery script.
+- Added a daily workflow that maintains one rolling Draft PR for `dsh-plugin` candidates.
+- Added deterministic candidate-classification tests and maintainer review guidance.
+
 ### Changed
+
+- Made `data/plugins.json` the source of truth for generated English and Chinese directory entries.
 
 ### Removed
 

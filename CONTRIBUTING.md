@@ -23,12 +23,26 @@ Inclusion means the project is discoverable. It is not a compatibility certifica
 
 ## Pull request requirements
 
-1. Update both `README.md` and `README.zh.md`.
+1. Add or update the plugin in `data/plugins.json`; do not hand-edit generated directory entries.
 2. Keep the plugin in one primary category only.
-3. Preserve matching names and repository URLs across both files.
-4. Write one factual sentence about the plugin's primary value; avoid rankings and unverifiable claims.
+3. Provide matching, factual English and Chinese descriptions without rankings or unverifiable claims.
+4. Run `python3 scripts/sync_topic_plugins.py render` to regenerate both READMEs.
 5. Update `CHANGELOG.md` under `Unreleased`.
-6. Run `python3 scripts/validate_directory.py` before submitting.
+6. Run `python3 scripts/sync_topic_plugins.py check` and `python3 scripts/validate_directory.py` before submitting.
+
+## Topic candidate review
+
+The daily discovery workflow stores unreviewed repositories in `data/topic-candidates.json` and opens or updates one Draft PR. A topic candidate is not automatically accepted.
+
+To approve a candidate:
+
+1. Verify that the repository contains a real DSH plugin and usable documentation.
+2. Review its license, permissions, dependencies, installation, and removal path.
+3. Set `status` to `accepted`.
+4. Confirm `category_suggestion`, `description_en`, and `description_zh`.
+5. Run `python3 scripts/sync_topic_plugins.py render`; the candidate will move into the published catalog.
+
+Use `rejected` for a confirmed non-plugin or unsuitable project, and `watch` when the project may become eligible later. These manual decisions are preserved until the repository changes materially.
 
 Maintainers may adjust wording or placement to keep the directory consistent. A missing license, inaccessible repository, unclear DSH relationship, or unverified claim may pause acceptance.
 

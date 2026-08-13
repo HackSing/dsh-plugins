@@ -138,13 +138,15 @@
 
 ## 新增或更新插件
 
-欢迎提交贡献。请同时更新中英文文件，将插件放入一个最符合主要用途的分类，并采用以下格式：
+欢迎提交贡献。请在 `data/plugins.json` 中新增或更新插件，将其放入一个最符合主要用途的分类，然后运行 `python3 scripts/sync_topic_plugins.py render` 重新生成中英文目录。正式条目采用以下格式：
 
 ```markdown
 - [插件名称](https://github.com/owner/repository) — 用一句清晰的话说明插件的主要价值。
 ```
 
 建议同时为插件仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 主题，方便其他用户发现。
+
+自动化任务每天扫描该 Topic，并生成等待维护者审核的 Draft PR。Topic 只作为发现信号；分类和中英文描述未经确认的候选项目不会直接发布。
 
 详细收录标准、审核规则和贡献流程请参阅 [CONTRIBUTING.md](CONTRIBUTING.md)。
 

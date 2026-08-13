@@ -2,6 +2,20 @@
 
 This repository is operated as a useful directory first and a backup index second. The public promise is simple classification, bilingual consistency, transparent updates, and evidence-based maintenance.
 
+## Daily: Topic discovery
+
+The `Discover DSH Topic plugins` workflow runs daily at 03:37 UTC and can also be started manually. It queries GitHub for `topic:dsh-plugin`, updates one rolling Draft PR, preserves review decisions already made on that branch, and never writes directly to `main`.
+
+Review the automation output in this order:
+
+1. Confirm that the scan is complete and that the API did not return partial results.
+2. Review `proposed` and `needs_review` candidates in `data/topic-candidates.json`.
+3. Confirm the repository is a real plugin; never run candidate code as part of discovery.
+4. Approve the category and both descriptions before setting `status` to `accepted`.
+5. Run `python3 scripts/sync_topic_plugins.py render`, then both validation commands.
+
+Topic removal, repository archival, and repository deletion do not automatically remove a published entry. They create a maintenance decision instead.
+
 ## Weekly: DSH Plugin Radar
 
 Publish only when there is meaningful new information. Use an Announcement discussion with:

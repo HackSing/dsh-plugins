@@ -13,5 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      - name: Validate structured catalog
+        run: python3 scripts/sync_topic_plugins.py check
       - name: Validate bilingual directory
         run: python3 scripts/validate_directory.py
+      - name: Test topic sync rules
+        run: python3 -m unittest discover -s tests -p "test_*.py"
