@@ -12,6 +12,8 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Fixed
 
+- Updated the workflow checkout runtime after live Actions verification reported the Node.js 20 deprecation warning.
+
 ## snapshot-2026-08 — 2026-08-13
 
 ### Added
