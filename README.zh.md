@@ -1,5 +1,7 @@
 # DSH Plugins
 
+![Uploading image.png…]()
+
 [English](README.md) | 中文
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
