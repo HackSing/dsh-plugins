@@ -1,6 +1,6 @@
 # DSH Plugins
 
-![Uploading image.png…]()
+![DSH Plugins — 发现、构建、扩展](assets/social-preview.jpg)
 
 [English](README.md) | 中文
 

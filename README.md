@@ -1,7 +1,6 @@
 # DSH Plugins
 
-<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/dd5e0442-4b29-4d34-be14-0425b4b891cc" />
-
+![DSH Plugins — Discover, Build, Extend](assets/social-preview.jpg)
 
 English | [中文](README.zh.md)
 
