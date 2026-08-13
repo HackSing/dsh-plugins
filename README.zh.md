@@ -91,6 +91,7 @@
 - [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — 为每个智能体提供按需工具发现和渐进式 Schema 展开。
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — 通过 OpenMAIC 提供课堂、幻灯片、交互组件和苏格拉底式教学流程。
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) — 提供面向学术场景的辅助能力。
+- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — 把 Claude Code / Codex / ChatGPT / Cursor 的聊天记录全保真导入为可续聊的 DSH 会话
 
 ## 自动化与智能体
 

@@ -91,6 +91,7 @@ This is the first published directory snapshot: **94 plugins**, grouped into **4
 - [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — Discovers tools on demand for each agent with progressive schema disclosure.
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — Adds classrooms, slides, interactive widgets, and Socratic teaching flows through OpenMAIC.
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) — Provides academic-assistant capabilities.
+- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — Import Claude Code / Codex / ChatGPT / Cursor chat histories as resumable DeepSeek Harness sessions.
 
 ## Automation & Agents
 
