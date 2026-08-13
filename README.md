@@ -2,9 +2,20 @@
 
 English | [中文](README.zh.md)
 
-> An independently maintained directory and backup index of plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
+> An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **94 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use.
+Explore **94 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 13, 2026**.
+
+## Start here
+
+- **Looking for a plugin?** Choose a category below, then review the linked repository, permissions, dependencies, and rollback path before installation.
+- **Built a plugin?** [Submit it with the plugin form](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml).
+- **Found outdated information?** [Request an update](https://github.com/HackSing/dsh-plugins/issues/new?template=update-plugin.yml) or [report a broken link](https://github.com/HackSing/dsh-plugins/issues/new?template=report-broken-link.yml).
+- **Want updates?** Watch the repository and follow [Releases](https://github.com/HackSing/dsh-plugins/releases) for monthly snapshots.
+
+### Current snapshot
+
+This is the first published directory snapshot: **94 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -119,6 +130,10 @@ Explore **94 plugins** across four broad areas. Each plugin appears once, under 
 - [Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) — Adds Qwen multimodal plugin support.
 - [dsh-tps](https://github.com/Small-tailqwq/dsh-tps) — Displays TPS performance metrics.
 
+## How to choose a plugin
+
+Before installing, check five things in the linked repository: the problem it solves, supported DSH version and platform, installation and removal steps, required permissions, and recent maintenance activity. Inclusion here means the project is discoverable; it does not mean compatibility or security has been independently verified.
+
 ## Add or update a plugin
 
 Contributions are welcome. Add or update the plugin in both language files, keep it in one primary category, and use this format:
@@ -129,6 +144,10 @@ Contributions are welcome. Add or update the plugin in both language files, keep
 
 Adding the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to a plugin repository also makes it easier to discover.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for acceptance criteria, review rules, and the contribution workflow.
+
 ## Notice
 
 This repository is an informational index, not an endorsement or security review. Plugin availability, compatibility, and behavior may change. Review the linked repository and its permissions before installation.
+
+The directory's original editorial content is licensed under [CC BY 4.0](LICENSE). Linked plugins and third-party materials remain subject to their respective owners and licenses.

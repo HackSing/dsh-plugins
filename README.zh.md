@@ -2,9 +2,20 @@
 
 [English](README.md) | 中文
 
-> 一个独立维护的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录与备份索引。
+> 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **94 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。
+当前整理 **94 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 13 日**。
+
+## 从这里开始
+
+- **正在找插件？** 从下方分类进入；安装前请检查插件仓库、权限、依赖和回滚方式。
+- **开发了插件？** 使用[插件提交表单](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml)申请收录。
+- **发现信息过期？** [提交信息更新](https://github.com/HackSing/dsh-plugins/issues/new?template=update-plugin.yml)，或[报告失效链接](https://github.com/HackSing/dsh-plugins/issues/new?template=report-broken-link.yml)。
+- **希望收到更新？** Watch 本仓库，并通过 [Releases](https://github.com/HackSing/dsh-plugins/releases)查看月度快照。
+
+### 当前快照
+
+这是目录的首个公开快照：共 **94 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -119,6 +130,10 @@
 - [Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) — 增加 Qwen 多模态插件支持。
 - [dsh-tps](https://github.com/Small-tailqwq/dsh-tps) — 展示 TPS 性能指标。
 
+## 如何选择插件
+
+安装前建议检查五项信息：插件解决的问题、支持的 DSH 版本与平台、安装和卸载步骤、所需权限，以及近期维护活跃度。被本目录收录只代表项目可被发现，不代表已经完成兼容性或安全性验证。
+
 ## 新增或更新插件
 
 欢迎提交贡献。请同时更新中英文文件，将插件放入一个最符合主要用途的分类，并采用以下格式：
@@ -129,6 +144,10 @@
 
 建议同时为插件仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 主题，方便其他用户发现。
 
+详细收录标准、审核规则和贡献流程请参阅 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## 使用说明
 
 本仓库只提供信息索引，不代表推荐或安全审查结论。插件的可用性、兼容性和实际行为可能发生变化，安装前请自行检查对应仓库及其权限要求。
+
+本目录的原创编辑内容采用 [CC BY 4.0](LICENSE) 许可；所链接插件及第三方材料仍遵循各自权利人和许可证。
