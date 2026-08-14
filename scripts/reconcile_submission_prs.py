@@ -8,6 +8,7 @@ import datetime as dt
 import json
 import os
 import re
+import subprocess
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -18,6 +19,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 PLUGINS_PATH = ROOT / "data" / "plugins.json"
 CANDIDATES_PATH = ROOT / "data" / "topic-candidates.json"
+REPORTS_PATH = ROOT / "reports" / "sync"
 SELF_REPOSITORY = "hacksing/dsh-plugins"
 GITHUB_REPOSITORY_URL = re.compile(
     r"https://github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+?)(?=\.git(?:\s|$)|[\s)\]}>，。；、]|$)",
@@ -45,15 +47,27 @@ class GitHubClient:
         if token:
             self.headers["Authorization"] = f"Bearer {token}"
 
-    def get_json(self, url: str) -> Any:
-        request = urllib.request.Request(url, headers=self.headers)
+    def request_json(
+        self, url: str, *, method: str = "GET", payload: Any = None
+    ) -> Any:
+        data = None
+        headers = dict(self.headers)
+        if payload is not None:
+            data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+            headers["Content-Type"] = "application/json"
+        request = urllib.request.Request(url, headers=headers, data=data, method=method)
         try:
             with urllib.request.urlopen(request, timeout=30) as response:
+                if response.status == 204:
+                    return None
                 return json.load(response)
         except urllib.error.HTTPError as exc:
             raise IntakeError(f"GitHub API returned HTTP {exc.code} for {url}") from exc
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
             raise IntakeError(f"GitHub API request failed for {url}: {exc}") from exc
+
+    def get_json(self, url: str) -> Any:
+        return self.request_json(url)
 
     def list_open_pull_requests(self) -> list[dict[str, Any]]:
         pulls: list[dict[str, Any]] = []
@@ -84,6 +98,56 @@ class GitHubClient:
             if len(batch) < 100:
                 return files
         raise IntakeError(f"pull request #{number} changes more than 300 files")
+
+    def list_pull_request_comments(self, number: int) -> list[dict[str, Any]]:
+        return self.get_json(
+            f"https://api.github.com/repos/{self.repository}/issues/{number}/comments?per_page=100"
+        )
+
+    def list_automation_report_issues(self) -> list[dict[str, Any]]:
+        return self.get_json(
+            f"https://api.github.com/repos/{self.repository}/issues"
+            "?state=all&labels=automation-report&per_page=100"
+        )
+
+    def ensure_label(self, name: str, color: str, description: str) -> None:
+        url = f"https://api.github.com/repos/{self.repository}/labels"
+        try:
+            self.request_json(
+                url,
+                method="POST",
+                payload={"name": name, "color": color, "description": description},
+            )
+        except IntakeError as exc:
+            if "HTTP 422" not in str(exc):
+                raise
+            encoded = urllib.parse.quote(name, safe="")
+            self.request_json(
+                f"{url}/{encoded}",
+                method="PATCH",
+                payload={"new_name": name, "color": color, "description": description},
+            )
+
+    def add_labels(self, number: int, labels: list[str]) -> None:
+        self.request_json(
+            f"https://api.github.com/repos/{self.repository}/issues/{number}/labels",
+            method="POST",
+            payload={"labels": labels},
+        )
+
+    def post_comment(self, number: int, body: str) -> None:
+        self.request_json(
+            f"https://api.github.com/repos/{self.repository}/issues/{number}/comments",
+            method="POST",
+            payload={"body": body},
+        )
+
+    def close_pull_request(self, number: int) -> None:
+        self.request_json(
+            f"https://api.github.com/repos/{self.repository}/pulls/{number}",
+            method="PATCH",
+            payload={"state": "closed"},
+        )
 
 
 def load_json(path: Path, default: Any) -> Any:
@@ -238,7 +302,11 @@ def markdown_summary(report: dict[str, Any]) -> str:
         "",
         f"- 开放 PR：{report['open_prs_scanned']}",
         f"- 跳过自动化 PR：{report['skipped_automation_prs']}",
-        "- 当前模式：只读，不评论、不关闭、不发布",
+        (
+            "- 当前模式：已收录申请自动闭环"
+            if report.get("mode") == "published_only"
+            else "- 当前模式：只读，不评论、不关闭、不发布"
+        ),
         "",
         "| PR | 插件仓库 | 识别结果 | 下一批动作 |",
         "| --- | --- | --- | --- |",
@@ -257,6 +325,117 @@ def markdown_summary(report: dict[str, Any]) -> str:
         repository = repository.replace("|", "\\|")
         lines.append(f"| {pr} | {repository} | `{status}` | {action} |")
     return "\n".join(lines) + "\n"
+
+
+def git_output(*args: str) -> str:
+    result = subprocess.run(
+        ["git", *args],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return result.stdout.strip()
+
+
+def find_publication_evidence(repository_url: str) -> dict[str, str]:
+    normalized = normalize_repository_url(repository_url) or repository_url
+    matched_report = None
+    if REPORTS_PATH.exists():
+        for path in sorted(REPORTS_PATH.glob("*.md")):
+            if f"]({normalized})" in path.read_text(encoding="utf-8"):
+                matched_report = path
+                break
+    if matched_report:
+        relative = str(matched_report.relative_to(ROOT))
+        commit = git_output("log", "-1", "--format=%H", "--", relative)
+        return {
+            "commit": commit,
+            "report_path": relative,
+            "report_stem": matched_report.stem,
+        }
+    return {"commit": git_output("rev-parse", "HEAD")}
+
+
+def accepted_comment(
+    item: dict[str, Any], evidence: dict[str, str], report_issue_url: str | None
+) -> str:
+    repository_id = item.get("repository_id") or repository_key(item["repository_url"])
+    commit = evidence["commit"]
+    report_link = report_issue_url
+    if not report_link and evidence.get("report_path"):
+        report_link = (
+            f"https://github.com/HackSing/dsh-plugins/blob/{commit}/{evidence['report_path']}"
+        )
+    lines = [
+        "✅ 已通过自动目录收录",
+        "",
+        "该插件已经在远端正式目录中确认，无需合并本 PR 的贡献者分支。",
+        "",
+        f"- 插件：[{item.get('plugin_name') or repository_key(item['repository_url'])}]({item['repository_url']})",
+        f"- 分类：`{item.get('category') or 'unknown'}`",
+        "- 正式目录：https://github.com/HackSing/dsh-plugins/blob/main/README.zh.md",
+        f"- 收录提交：https://github.com/HackSing/dsh-plugins/commit/{commit}",
+    ]
+    if report_link:
+        lines.append(f"- 自动收录报告：{report_link}")
+    lines.extend(
+        [
+            "",
+            "本 PR 作为收录申请自动关闭；后续信息修正可通过新的 Issue 或 PR 提交。",
+            "",
+            f"<!-- dsh-submission:v1 status=accepted repository={repository_id} commit={commit} -->",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def close_already_published(
+    report: dict[str, Any], client: GitHubClient
+) -> list[dict[str, Any]]:
+    accepted = [
+        item for item in report["submissions"] if item["intake_status"] == "already_published"
+    ]
+    if not accepted:
+        return []
+    client.ensure_label(
+        "submission:accepted", "0E8A16", "Plugin submission accepted by automation"
+    )
+    client.ensure_label(
+        "automation-managed", "1D76DB", "Pull request lifecycle managed by automation"
+    )
+    report_issues = client.list_automation_report_issues()
+    actions = []
+    for item in accepted:
+        evidence = find_publication_evidence(item["repository_url"])
+        issue_url = None
+        report_stem = evidence.get("report_stem")
+        if report_stem:
+            matching = [
+                issue
+                for issue in report_issues
+                if report_stem in str(issue.get("title", ""))
+            ]
+            if matching:
+                issue_url = matching[0].get("html_url")
+        marker = "<!-- dsh-submission:v1 status=accepted "
+        comments = client.list_pull_request_comments(int(item["pr_number"]))
+        if not any(marker in str(comment.get("body", "")) for comment in comments):
+            client.post_comment(
+                int(item["pr_number"]), accepted_comment(item, evidence, issue_url)
+            )
+        client.add_labels(
+            int(item["pr_number"]), ["submission:accepted", "automation-managed"]
+        )
+        client.close_pull_request(int(item["pr_number"]))
+        actions.append(
+            {
+                "action": "closed_as_published",
+                "pr_number": item["pr_number"],
+                "repository_url": item["repository_url"],
+            }
+        )
+    return actions
 
 
 def write_outputs(report: dict[str, Any], output: Path) -> None:
@@ -278,9 +457,17 @@ def main() -> None:
         "--repository", default=os.environ.get("GITHUB_REPOSITORY", "HackSing/dsh-plugins")
     )
     parser.add_argument("--output", type=Path, default=Path("pr-intake.json"))
+    parser.add_argument(
+        "--apply-published",
+        action="store_true",
+        help="reply to and close only submissions already present in the formal catalog",
+    )
     args = parser.parse_args()
     client = GitHubClient(args.repository, os.environ.get("GITHUB_TOKEN", ""))
     report = build_report(client)
+    if args.apply_published:
+        report["mode"] = "published_only"
+        report["actions"] = close_already_published(report, client)
     write_outputs(report, args.output)
 
 

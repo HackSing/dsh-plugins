@@ -3,6 +3,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "reconcile_submission_prs.py"
@@ -122,6 +123,96 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(report["open_prs_scanned"], 1)
         self.assertEqual(report["skipped_automation_prs"], 1)
         self.assertEqual(report["submissions"][0]["intake_status"], "new_submission")
+
+    def test_closes_already_published_submission_idempotently(self):
+        class FakeClient:
+            def __init__(self):
+                self.comments = []
+                self.labels = []
+                self.closed = []
+
+            def ensure_label(self, name, color, description):
+                self.labels.append(("ensure", name))
+
+            def list_automation_report_issues(self):
+                return []
+
+            def list_pull_request_comments(self, number):
+                return []
+
+            def post_comment(self, number, body):
+                self.comments.append((number, body))
+
+            def add_labels(self, number, labels):
+                self.labels.append((number, labels))
+
+            def close_pull_request(self, number):
+                self.closed.append(number)
+
+        report = {
+            "submissions": [
+                {
+                    "category": "tools",
+                    "intake_status": "already_published",
+                    "plugin_name": "published-plugin",
+                    "pr_number": 12,
+                    "repository_id": 120,
+                    "repository_url": "https://github.com/example/published-plugin",
+                }
+            ]
+        }
+        client = FakeClient()
+        with mock.patch.object(
+            submission_intake,
+            "find_publication_evidence",
+            return_value={"commit": "a" * 40},
+        ):
+            actions = submission_intake.close_already_published(report, client)
+        self.assertEqual(actions[0]["action"], "closed_as_published")
+        self.assertEqual(client.closed, [12])
+        self.assertIn("已通过自动目录收录", client.comments[0][1])
+        self.assertIn("dsh-submission:v1", client.comments[0][1])
+
+    def test_existing_acceptance_comment_is_not_duplicated(self):
+        class FakeClient:
+            def ensure_label(self, name, color, description):
+                pass
+
+            def list_automation_report_issues(self):
+                return []
+
+            def list_pull_request_comments(self, number):
+                return [{"body": "<!-- dsh-submission:v1 status=accepted repository=1 -->"}]
+
+            def post_comment(self, number, body):
+                raise AssertionError("duplicate comment")
+
+            def add_labels(self, number, labels):
+                pass
+
+            def close_pull_request(self, number):
+                self.closed = number
+
+        report = {
+            "submissions": [
+                {
+                    "category": "tools",
+                    "intake_status": "already_published",
+                    "plugin_name": "published-plugin",
+                    "pr_number": 13,
+                    "repository_id": 130,
+                    "repository_url": "https://github.com/example/published-plugin",
+                }
+            ]
+        }
+        client = FakeClient()
+        with mock.patch.object(
+            submission_intake,
+            "find_publication_evidence",
+            return_value={"commit": "b" * 40},
+        ):
+            submission_intake.close_already_published(report, client)
+        self.assertEqual(client.closed, 13)
 
 
 if __name__ == "__main__":

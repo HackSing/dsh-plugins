@@ -7,7 +7,7 @@
 ## 分批落地
 
 1. **只读收件箱**：每 30 分钟扫描开放 PR，提取插件仓库，识别已收录、候选、新申请、缺失地址和地址歧义，输出 Action Summary 与 JSON 台账；不评论、不关闭、不发布。
-2. **已收录闭环**：远端回读确认插件已经存在于 `data/plugins.json` 后，自动回复目录、提交和报告链接，添加状态标签并关闭 PR。
+2. **已收录闭环**：远端回读确认插件已经存在于 `data/plugins.json` 后，自动回复目录、提交和报告链接，添加状态标签并关闭 PR。已实现。
 3. **定向复核与发布**：未收录申请按仓库 ID 进入定向规则和模型复核；高置信度结果通过现有收录事务更新数据、双语 README、CHANGELOG 和报告，合并后再关闭申请 PR。
 4. **异常治理**：信息不足时请求补充并保留 PR；确定不符合时说明规则并关闭；GitHub 或模型异常只重试，不把系统故障当成拒绝；超时申请按规则归档。
 
@@ -21,4 +21,4 @@
 
 ## 第一批状态
 
-第一批工作流 `.github/workflows/submission-pr-intake.yml` 只申请 `contents: read` 和 `pull-requests: read` 权限。扫描结果保留 14 天，不产生仓库或 PR 写操作。
+第一批工作流 `.github/workflows/submission-pr-intake.yml` 每 30 分钟生成一次收件台账。第二批只对 `already_published` 状态开放写操作：回复、添加 `submission:accepted` 与 `automation-managed` 标签并关闭 PR；其他状态仍保持只读。评论通过隐藏标识保证重复运行不会重复发送。

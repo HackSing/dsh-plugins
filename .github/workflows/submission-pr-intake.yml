@@ -7,7 +7,8 @@ on:
 
 permissions:
   contents: read
-  pull-requests: read
+  issues: write
+  pull-requests: write
 
 concurrency:
   group: submission-pr-intake
@@ -18,10 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Scan open pull requests without mutating them
+        with:
+          fetch-depth: 0
+      - name: Scan submissions and close only already-published plugins
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 scripts/reconcile_submission_prs.py --output pr-intake.json
+        run: >-
+          python3 scripts/reconcile_submission_prs.py
+          --apply-published
+          --output pr-intake.json
       - name: Upload the intake ledger
         uses: actions/upload-artifact@v7
         with:
