@@ -146,17 +146,13 @@ This is the first published directory snapshot: **104 plugins**, grouped into **
 
 Before installing, check five things in the linked repository: the problem it solves, supported DSH version and platform, installation and removal steps, required permissions, and recent maintenance activity. Inclusion here means the project is discoverable; it does not mean compatibility or security has been independently verified.
 
-## Add or update a plugin
+## Submit or update a plugin
 
-Contributions are welcome. Add or update the plugin in `data/plugins.json`, keep it in one primary category, and run `python3 scripts/sync_topic_plugins.py render` to regenerate both language files. Published entries use this format:
+Plugin developers should use the [plugin submission form](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml), the single official submission path. You do not need to edit directory files or open a pull request. To correct a published entry, use the [information update form](https://github.com/HackSing/dsh-plugins/issues/new?template=update-plugin.yml).
 
-```markdown
-- [plugin-name](https://github.com/owner/repository) — One clear sentence describing its primary value.
-```
+Adding the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic also helps the discovery automation and other users find the project. The Topic is a discovery source, not a replacement for the official submission form.
 
-Adding the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to a plugin repository also makes it easier to discover.
-
-A daily automation scans that topic, applies structural rules, and uses a configured model provider to propose a category and factual bilingual descriptions. It starts in observation mode; when automatic publication is enabled, only candidates confirmed at high confidence are published after all directory checks pass. Every successful collection produces a repository report and a GitHub Issue notification.
+A daily automation scans that Topic, while a separate intake runs every 30 minutes for plugin submission Issues. Structural rules and a configured model provider produce a category and factual bilingual descriptions. Only high-confidence candidates that pass every directory check are published. Each successful submission updates both READMEs, the changelog, and a permanent report before returning the result to the originating Issue.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for acceptance criteria, review rules, and the contribution workflow.
 

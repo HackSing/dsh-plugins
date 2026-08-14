@@ -1,6 +1,8 @@
+> Plugin inclusion has one official path: [Submit a plugin](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml). Do not use a pull request to add a plugin entry. Catalog-only plugin PRs are redirected and closed without merging.
+
 ## What changed
 
-Describe the plugin addition, correction, removal, or directory improvement.
+Describe the automation, test, governance, template, or directory-system improvement.
 
 ## Evidence
 
@@ -8,9 +10,7 @@ Link to the plugin repository or documentation supporting this change.
 
 ## Checklist
 
-- [ ] I updated both `README.md` and `README.zh.md` when plugin entries changed.
-- [ ] Plugin names and repository URLs match across both files.
-- [ ] Each plugin appears in one primary category only.
-- [ ] Descriptions are factual and avoid unverified compatibility or security claims.
+- [ ] This pull request does not directly add a plugin entry.
+- [ ] I did not hand-edit generated plugin entries in either README.
 - [ ] I updated `CHANGELOG.md` under `Unreleased`.
-- [ ] `python3 scripts/validate_directory.py` passes locally.
+- [ ] Directory checks and relevant unit tests pass locally.

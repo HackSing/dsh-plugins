@@ -1,0 +1,59 @@
+name: Process plugin submission issues
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      only_issue:
+        description: "Only process this Issue number (0 means all open submissions)"
+        required: true
+        default: 0
+        type: number
+      review_limit:
+        description: "Maximum number of new reviews to dispatch"
+        required: true
+        default: 5
+        type: number
+
+permissions:
+  actions: write
+  contents: read
+  issues: write
+
+concurrency:
+  group: submission-issue-intake
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Reconcile official plugin submission issues
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ONLY_ISSUE: ${{ inputs.only_issue || 0 }}
+          REVIEW_LIMIT: ${{ inputs.review_limit || 5 }}
+        run: |
+          args=(
+            --issues
+            --apply-published
+            --handle-exceptions
+            --queue-reviews
+            --review-limit "$REVIEW_LIMIT"
+            --output issue-intake.json
+          )
+          if [[ "$ONLY_ISSUE" != "0" ]]; then
+            args+=(--only-issue "$ONLY_ISSUE")
+          fi
+          python3 scripts/reconcile_submission_prs.py "${args[@]}"
+      - name: Upload the intake ledger
+        uses: actions/upload-artifact@v7
+        with:
+          name: submission-issue-intake-${{ github.run_id }}
+          path: issue-intake.json
+          if-no-files-found: error
+          retention-days: 14

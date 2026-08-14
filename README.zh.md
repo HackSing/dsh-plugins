@@ -146,17 +146,13 @@
 
 安装前建议检查五项信息：插件解决的问题、支持的 DSH 版本与平台、安装和卸载步骤、所需权限，以及近期维护活跃度。被本目录收录只代表项目可被发现，不代表已经完成兼容性或安全性验证。
 
-## 新增或更新插件
+## 提交或更新插件
 
-欢迎提交贡献。请在 `data/plugins.json` 中新增或更新插件，将其放入一个最符合主要用途的分类，然后运行 `python3 scripts/sync_topic_plugins.py render` 重新生成中英文目录。正式条目采用以下格式：
+插件开发者统一使用[插件提交表单](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml)申请收录；这是唯一官方提交入口，不需要修改目录文件或创建 PR。发现已有条目需要修正时，请使用[信息更新表单](https://github.com/HackSing/dsh-plugins/issues/new?template=update-plugin.yml)。
 
-```markdown
-- [插件名称](https://github.com/owner/repository) — 用一句清晰的话说明插件的主要价值。
-```
+建议同时为插件仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 主题，方便自动发现任务和其他用户找到项目。Topic 是系统发现机制，不替代正式提交表单。
 
-建议同时为插件仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 主题，方便其他用户发现。
-
-自动化任务每天扫描该 Topic，通过结构规则和已配置的模型服务生成分类及事实性的双语描述。任务首先以观察模式运行；开启自动发布后，只有被高置信度确认且通过全部目录校验的候选项目才会发布。每次成功收录都会生成仓库报告并通过 GitHub Issue 通知维护者。
+自动化任务每天扫描该 Topic，并每 30 分钟处理插件提交 Issue，通过结构规则和已配置的模型服务生成分类及事实性的双语描述。只有被高置信度确认且通过全部目录校验的候选项目才会发布。每次成功收录都会同步更新中英文目录、CHANGELOG 和永久报告，并在原提交 Issue 中返回结果。
 
 详细收录标准、审核规则和贡献流程请参阅 [CONTRIBUTING.md](CONTRIBUTING.md)。
 

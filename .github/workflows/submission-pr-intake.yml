@@ -1,18 +1,17 @@
-name: Scan plugin submission pull requests
+name: Redirect legacy plugin submission pull requests
 
 on:
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "17,47 * * * *"
   workflow_dispatch:
 
 permissions:
-  actions: write
   contents: read
   issues: write
   pull-requests: write
 
 concurrency:
-  group: submission-pr-intake
+  group: legacy-submission-pr-redirect
   cancel-in-progress: false
 
 jobs:
@@ -22,19 +21,17 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - name: Reconcile submissions and queue targeted reviews
+      - name: Redirect catalog-only plugin submissions to the Issue Form
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: >-
           python3 scripts/reconcile_submission_prs.py
-          --apply-published
-          --handle-exceptions
-          --queue-reviews
+          --redirect-prs
           --output pr-intake.json
       - name: Upload the intake ledger
         uses: actions/upload-artifact@v7
         with:
-          name: submission-pr-intake-${{ github.run_id }}
+          name: legacy-submission-pr-redirect-${{ github.run_id }}
           path: pr-intake.json
           if-no-files-found: error
           retention-days: 14

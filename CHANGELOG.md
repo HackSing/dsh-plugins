@@ -29,11 +29,13 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 - Added deterministic candidate-classification tests and maintainer review guidance.
 - Added provider-neutral model assessment, observation and automatic-publication modes, permanent collection reports, report delivery recovery, and a weekly exception summary.
 - Added the Chinese full-automation product and operating plan under `docs/`.
+- Added detailed Chinese methodologies for plugin-directory content operations and full automation.
 
 ### Changed
 
 - Made `data/plugins.json` the source of truth for generated English and Chinese directory entries.
 - Expanded successful collection into one transaction covering catalog data, both READMEs, CHANGELOG, validation, merge, remote confirmation, and report notification.
+- Unified developer submissions under the `Submit a plugin` Issue Form, with automated Issue review and lifecycle feedback; legacy catalog-only plugin PRs now receive a safe redirect and close without merging.
 
 ### Removed
 

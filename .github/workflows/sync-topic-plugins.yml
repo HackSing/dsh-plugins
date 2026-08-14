@@ -18,8 +18,8 @@ on:
         description: Public GitHub repository URL used only in submission mode
         required: false
         type: string
-      source_pr:
-        description: Originating submission pull request number
+      source_issue:
+        description: Originating plugin submission Issue number
         required: false
         type: string
       max_promotions:
@@ -185,19 +185,21 @@ jobs:
               gh issue create --title "DSH 插件自动收录报告 — $(basename "$path" .md)" --label automation-report --assignee HackSing --body-file "$body"
             fi
           done < <(git ls-tree -r --name-only origin/main reports/sync)
-      - name: Reconcile the originating submission
-        if: always() && !cancelled() && github.event_name == 'workflow_dispatch' && inputs.mode == 'submission' && inputs.source_pr != '' && steps.assess.outcome == 'success' && steps.render.outcome == 'success' && steps.validate.outcome == 'success'
+      - name: Reconcile the originating submission Issue
+        if: always() && !cancelled() && github.event_name == 'workflow_dispatch' && inputs.mode == 'submission' && inputs.source_issue != '' && steps.assess.outcome == 'success' && steps.render.outcome == 'success' && steps.validate.outcome == 'success'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           PROMOTED_COUNT: ${{ steps.render.outputs.promoted_count }}
-          SOURCE_PR: ${{ inputs.source_pr }}
+          SOURCE_ISSUE: ${{ inputs.source_issue }}
         run: |
           if [ "$PROMOTED_COUNT" != "0" ]; then
             git fetch origin main
             git switch --detach origin/main
             python3 scripts/reconcile_submission_prs.py \
-              --apply-published --only-pr "$SOURCE_PR" --output source-pr-result.json
+              --issues --apply-published --only-issue "$SOURCE_ISSUE" \
+              --output source-issue-result.json
           else
             python3 scripts/reconcile_submission_prs.py \
-              --handle-exceptions --only-pr "$SOURCE_PR" --output source-pr-result.json
+              --issues --apply-published --handle-exceptions --finalize-review \
+              --only-issue "$SOURCE_ISSUE" --output source-issue-result.json
           fi

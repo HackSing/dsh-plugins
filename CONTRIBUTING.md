@@ -16,19 +16,22 @@ Inclusion means the project is discoverable. It is not a compatibility certifica
 
 ## Contribution paths
 
-- **New plugin:** use the `Submit a plugin` issue form or open a pull request.
+- **New plugin:** use the `Submit a plugin` Issue form. This is the only official submission path.
 - **Metadata correction:** use the `Update plugin information` form.
 - **Unavailable repository:** use the `Report a broken link` form.
 - **Open-ended recommendation or showcase:** use GitHub Discussions.
 
-## Pull request requirements
+Plugin additions are not accepted through pull requests. The trusted automation reads the public plugin repository and generates the catalog, both READMEs, changelog, and report after the submission passes review.
 
-1. Add or update the plugin in `data/plugins.json`; do not hand-edit generated directory entries.
-2. Keep the plugin in one primary category only.
-3. Provide matching, factual English and Chinese descriptions without rankings or unverifiable claims.
-4. Run `python3 scripts/sync_topic_plugins.py render` to regenerate both READMEs.
-5. Update `CHANGELOG.md` under `Unreleased`.
-6. Run `python3 scripts/sync_topic_plugins.py check` and `python3 scripts/validate_directory.py` before submitting.
+## Repository improvement pull requests
+
+Pull requests remain welcome for automation code, tests, governance, templates, and directory-system documentation. They should not add plugin entries directly.
+
+1. Explain the repository-system problem and the proposed change.
+2. Include evidence or tests appropriate to the change.
+3. Do not hand-edit generated plugin entries in the READMEs.
+4. Update `CHANGELOG.md` when the change affects users or operations.
+5. Run `python3 scripts/sync_topic_plugins.py check`, `python3 scripts/validate_directory.py`, and the relevant unit tests.
 
 ## Topic candidate review
 

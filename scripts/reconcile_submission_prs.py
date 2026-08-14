@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reconcile plugin submission pull requests with the trusted catalog workflow."""
+"""Reconcile official plugin Issue submissions and redirect legacy submission PRs."""
 
 from __future__ import annotations
 
@@ -27,6 +27,17 @@ AUTOMATION_LABEL = "automation-managed"
 NEEDS_INFO_LABEL = "submission:needs-info"
 DECLINED_LABEL = "submission:declined"
 EXPIRED_LABEL = "submission:expired"
+REDIRECTED_LABEL = "submission:redirected"
+PLUGIN_SUBMISSION_LABEL = "plugin-submission"
+ISSUE_FORM_URL = (
+    "https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml"
+)
+LEGACY_PR_ALLOWED_FILES = {
+    "CHANGELOG.md",
+    "README.md",
+    "README.zh.md",
+    "data/plugins.json",
+}
 REVIEW_RETRY_AFTER = dt.timedelta(hours=2)
 NEEDS_INFO_EXPIRES_AFTER = dt.timedelta(days=14)
 RETRYABLE_MODEL_REASONS = {
@@ -65,6 +76,11 @@ GITHUB_REPOSITORY_URL = re.compile(
 )
 EXPLICIT_REPOSITORY_URL = re.compile(
     r"(?:plugin\s+repository|repository|repo|插件仓库|仓库)\s*[:：]\s*"
+    r"(https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+(?:\.git)?)",
+    re.IGNORECASE,
+)
+ISSUE_REPOSITORY_FIELD = re.compile(
+    r"###\s+Plugin repository\s+"
     r"(https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+(?:\.git)?)",
     re.IGNORECASE,
 )
@@ -122,6 +138,22 @@ class GitHubClient:
             if len(batch) < 100:
                 return pulls
         raise IntakeError("more than 1,000 open pull requests; refusing a partial scan")
+
+    def list_open_issues(self) -> list[dict[str, Any]]:
+        issues: list[dict[str, Any]] = []
+        for page in range(1, 11):
+            query = urllib.parse.urlencode(
+                {"state": "open", "per_page": 100, "page": page, "sort": "created"}
+            )
+            batch = self.get_json(
+                f"https://api.github.com/repos/{self.repository}/issues?{query}"
+            )
+            if not isinstance(batch, list):
+                raise IntakeError("GitHub issue response was not a list")
+            issues.extend(item for item in batch if "pull_request" not in item)
+            if len(batch) < 100:
+                return issues
+        raise IntakeError("more than 1,000 open issues; refusing a partial scan")
 
     def list_pull_request_files(self, number: int) -> list[dict[str, Any]]:
         files: list[dict[str, Any]] = []
@@ -198,6 +230,13 @@ class GitHubClient:
             payload={"state": "closed"},
         )
 
+    def close_issue(self, number: int) -> None:
+        self.request_json(
+            f"https://api.github.com/repos/{self.repository}/issues/{number}",
+            method="PATCH",
+            payload={"state": "closed", "state_reason": "completed"},
+        )
+
     def dispatch_workflow(self, workflow: str, inputs: dict[str, str]) -> None:
         encoded = urllib.parse.quote(workflow, safe="")
         self.request_json(
@@ -229,6 +268,61 @@ def repository_key(value: str) -> str:
     if not normalized:
         return ""
     return normalized.removeprefix("https://github.com/").casefold()
+
+
+def submission_number(item: dict[str, Any]) -> int:
+    value = item.get("issue_number", item.get("pr_number"))
+    if value is None:
+        raise IntakeError("submission record is missing its number")
+    return int(value)
+
+
+def submission_type(item: dict[str, Any]) -> str:
+    return "issue" if item.get("source_type") == "issue" else "pr"
+
+
+def submission_name(item: dict[str, Any]) -> str:
+    return "Issue" if submission_type(item) == "issue" else "PR"
+
+
+def submission_url(item: dict[str, Any]) -> str:
+    return str(item.get("issue_url") or item.get("pr_url") or "")
+
+
+def close_submission(client: GitHubClient, item: dict[str, Any]) -> None:
+    number = submission_number(item)
+    if submission_type(item) == "issue":
+        client.close_issue(number)
+    else:
+        client.close_pull_request(number)
+
+
+def action_number(item: dict[str, Any]) -> dict[str, int]:
+    key = "issue_number" if submission_type(item) == "issue" else "pr_number"
+    return {key: submission_number(item)}
+
+
+def extract_issue_repository_urls(issue: dict[str, Any]) -> tuple[str, list[str]]:
+    body = str(issue.get("body") or "")
+    match = ISSUE_REPOSITORY_FIELD.search(body)
+    if match:
+        normalized = normalize_repository_url(match.group(1))
+        if normalized and repository_key(normalized) != SELF_REPOSITORY:
+            return "explicit", [normalized]
+    return extract_repository_urls(issue, [])
+
+
+def is_plugin_submission_issue(issue: dict[str, Any]) -> bool:
+    labels = {
+        str(label.get("name", "")).casefold() for label in issue.get("labels", [])
+    }
+    title = str(issue.get("title") or "")
+    body = str(issue.get("body") or "")
+    return PLUGIN_SUBMISSION_LABEL in labels or (
+        title.casefold().startswith("[plugin]:")
+        and "### Plugin repository" in body
+        and "### Primary value" in body
+    )
 
 
 def extract_repository_urls(
@@ -323,6 +417,7 @@ def build_report(client: GitHubClient, only_pr: int | None = None) -> dict[str, 
         extraction, urls = extract_repository_urls(pull_request, files)
         record: dict[str, Any] = {
             "author": (pull_request.get("user") or {}).get("login"),
+            "changed_files": [str(item.get("filename", "")) for item in files],
             "draft": bool(pull_request.get("draft")),
             "extraction": extraction,
             "labels": [
@@ -334,6 +429,7 @@ def build_report(client: GitHubClient, only_pr: int | None = None) -> dict[str, 
             "pr_title": pull_request.get("title"),
             "pr_url": pull_request.get("html_url"),
             "repository_urls": urls,
+            "source_type": "pr",
         }
         if extraction == "missing":
             record["intake_status"] = "not_identified"
@@ -360,21 +456,92 @@ def build_report(client: GitHubClient, only_pr: int | None = None) -> dict[str, 
     }
 
 
+def build_issue_report(
+    client: GitHubClient, only_issue: int | None = None
+) -> dict[str, Any]:
+    catalog = load_json(PLUGINS_PATH, {"plugins": []})
+    candidates = load_json(CANDIDATES_PATH, {"candidates": []})
+    submissions = []
+    skipped_non_submissions = 0
+    for issue in client.list_open_issues():
+        number = int(issue["number"])
+        if only_issue is not None and number != only_issue:
+            continue
+        if not is_plugin_submission_issue(issue):
+            skipped_non_submissions += 1
+            continue
+        extraction, urls = extract_issue_repository_urls(issue)
+        labels = [
+            str(label.get("name"))
+            for label in issue.get("labels", [])
+            if label.get("name")
+        ]
+        record: dict[str, Any] = {
+            "author": (issue.get("user") or {}).get("login"),
+            "draft": False,
+            "extraction": extraction,
+            "issue_number": number,
+            "issue_title": issue.get("title"),
+            "issue_url": issue.get("html_url"),
+            "labels": labels,
+            "repository_urls": urls,
+            "source_type": "issue",
+        }
+        if extraction == "missing":
+            record["intake_status"] = "not_identified"
+        elif extraction == "ambiguous":
+            record["intake_status"] = "ambiguous_repository"
+        else:
+            record["repository_url"] = urls[0]
+            classification = classify_repository(urls[0], catalog, candidates)
+            record.update(classification)
+            lifecycle_started = bool(
+                {REVIEWING_LABEL, NEEDS_INFO_LABEL, ACCEPTED_LABEL}.intersection(labels)
+            )
+            if classification["intake_status"] != "already_published" and not lifecycle_started:
+                record["previous_intake_status"] = classification["intake_status"]
+                record["previous_candidate_reasons"] = classification.get(
+                    "candidate_reasons", []
+                )
+                record["intake_status"] = "new_submission"
+        submissions.append(record)
+
+    counts: dict[str, int] = {}
+    for item in submissions:
+        status = str(item["intake_status"])
+        counts[status] = counts.get(status, 0) + 1
+    return {
+        "counts": counts,
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "mode": "read_only",
+        "open_issues_scanned": len(submissions),
+        "repository": client.repository,
+        "schema_version": 1,
+        "skipped_non_submission_issues": skipped_non_submissions,
+        "source_type": "issue",
+        "submissions": submissions,
+    }
+
+
 def markdown_summary(report: dict[str, Any]) -> str:
+    issues = report.get("source_type") == "issue"
+    source_label = "Issue" if issues else "PR"
+    open_count = report.get("open_issues_scanned", report.get("open_prs_scanned", 0))
     lines = [
-        "# 插件收录 PR 自动处理",
+        f"# 插件收录 {source_label} 自动处理",
         "",
-        f"- 开放 PR：{report['open_prs_scanned']}",
-        f"- 跳过自动化 PR：{report['skipped_automation_prs']}",
+        f"- 开放收录 {source_label}：{open_count}",
         (
             "- 当前模式：已收录闭环与未收录定向复核"
             if report.get("mode") == "active"
+            else "- 当前模式：旧 PR 只引导至官方 Issue Form"
+            if report.get("mode") == "redirect_only"
             else "- 当前模式：只处理已收录申请"
             if report.get("mode") == "published_only"
             else "- 当前模式：只读，不评论、不关闭、不发布"
         ),
         "",
-        "| PR | 插件仓库 | 识别结果 | 下一批动作 |",
+        f"| {source_label} | 插件仓库 | 识别结果 | 下一步动作 |",
         "| --- | --- | --- | --- |",
     ]
     actions = {
@@ -389,11 +556,11 @@ def markdown_summary(report: dict[str, Any]) -> str:
     }
     for item in report["submissions"]:
         status = str(item["intake_status"])
-        action = actions.get(status, "第三批：根据候选状态处理")
-        pr = f"[#{item['pr_number']}]({item.get('pr_url') or ''})"
+        action = actions.get(status, "根据候选状态处理")
+        submission = f"[#{submission_number(item)}]({submission_url(item)})"
         repository = item.get("repository_url") or "、".join(item.get("repository_urls", [])) or "未识别"
         repository = repository.replace("|", "\\|")
-        lines.append(f"| {pr} | {repository} | `{status}` | {action} |")
+        lines.append(f"| {submission} | {repository} | `{status}` | {action} |")
     return "\n".join(lines) + "\n"
 
 
@@ -430,6 +597,7 @@ def find_publication_evidence(repository_url: str) -> dict[str, str]:
 def accepted_comment(
     item: dict[str, Any], evidence: dict[str, str], report_issue_url: str | None
 ) -> str:
+    source = submission_name(item)
     repository_id = item.get("repository_id") or repository_key(item["repository_url"])
     commit = evidence["commit"]
     report_link = report_issue_url
@@ -440,7 +608,11 @@ def accepted_comment(
     lines = [
         "✅ 已通过自动目录收录",
         "",
-        "该插件已经在远端正式目录中确认，无需合并本 PR 的贡献者分支。",
+        (
+            "该插件已经在远端正式目录中确认。"
+            if source == "Issue"
+            else "该插件已经在远端正式目录中确认，无需合并本 PR 的贡献者分支。"
+        ),
         "",
         f"- 插件：[{item.get('plugin_name') or repository_key(item['repository_url'])}]({item['repository_url']})",
         f"- 分类：`{item.get('category') or 'unknown'}`",
@@ -452,7 +624,7 @@ def accepted_comment(
     lines.extend(
         [
             "",
-            "本 PR 作为收录申请自动关闭；后续信息修正可通过新的 Issue 或 PR 提交。",
+            f"本 {source} 作为收录申请自动关闭；后续信息修正请使用仓库的信息更新表单。",
             "",
             f"<!-- dsh-submission:v1 status=accepted repository={repository_id} commit={commit} -->",
         ]
@@ -461,6 +633,7 @@ def accepted_comment(
 
 
 def reviewing_comment(item: dict[str, Any]) -> str:
+    source = submission_name(item)
     repository = item["repository_url"]
     return "\n".join(
         [
@@ -469,7 +642,7 @@ def reviewing_comment(item: dict[str, Any]) -> str:
             f"系统将从主仓库的可信工作流定向复核 [{repository}]({repository})。",
             "复核只读取公开元数据、目录结构和 README，不会检出、安装或执行贡献者分支及插件代码。",
             "",
-            "高置信度通过后会自动更新正式目录、双语 README、CHANGELOG 和收录报告，再回到本 PR 回复结果并关闭。系统异常会重试，不会被当作审核拒绝。",
+            f"高置信度通过后会自动更新正式目录、双语 README、CHANGELOG 和收录报告，再回到本 {source} 回复结果并关闭。系统异常会重试，不会被当作审核拒绝。",
             "",
             f"<!-- dsh-submission:v1 status=reviewing repository={repository_key(repository)} -->",
         ]
@@ -484,21 +657,22 @@ def reasons_zh(item: dict[str, Any]) -> str:
 
 
 def needs_info_comment(item: dict[str, Any]) -> str:
+    source = submission_name(item)
     status = item["intake_status"]
     if status == "not_identified":
         guidance = (
-            "未识别到插件仓库。请在 PR 正文中增加唯一一行："
+            f"未识别到插件仓库。请在本 {source} 正文中增加唯一一行："
             "`仓库: https://github.com/owner/repo`。"
         )
     elif status == "ambiguous_repository":
         guidance = (
-            "识别到多个 GitHub 仓库地址，无法确定收录对象。请在 PR 正文中只保留一个明确的插件仓库："
+            f"识别到多个 GitHub 仓库地址，无法确定收录对象。请在本 {source} 正文中只保留一个明确的插件仓库："
             "`仓库: https://github.com/owner/repo`。"
         )
     else:
         guidance = (
             f"自动复核尚不能准入：{reasons_zh(item)}。请完善插件仓库的公开简介、许可证、"
-            "README 和插件结构；完成后在本 PR 评论 `/recheck`，系统会重新复核。"
+            f"README 和插件结构；完成后在本 {source} 评论 `/recheck`，系统会重新复核。"
         )
     return "\n".join(
         [
@@ -528,11 +702,12 @@ def declined_comment(item: dict[str, Any]) -> str:
 
 
 def expired_comment(item: dict[str, Any]) -> str:
+    source = submission_name(item)
     return "\n".join(
         [
             "🗄️ 收录申请已自动归档",
             "",
-            "补充信息等待期已超过 14 天，本 PR 自动关闭。资料完善后可以重新提交，新的申请仍会进入自动复核。",
+            f"补充信息等待期已超过 14 天，本 {source} 自动关闭。资料完善后可以重新提交，新的申请仍会进入自动复核。",
             "",
             f"<!-- dsh-submission:v1 status=expired repository={item.get('repository_url', 'unknown')} -->",
         ]
@@ -593,11 +768,16 @@ def close_already_published(
         ACCEPTED_LABEL, "0E8A16", "Plugin submission accepted by automation"
     )
     client.ensure_label(
-        AUTOMATION_LABEL, "1D76DB", "Pull request lifecycle managed by automation"
+        AUTOMATION_LABEL, "1D76DB", "Submission lifecycle managed by automation"
     )
+    if any(submission_type(item) == "issue" for item in accepted):
+        client.ensure_label(
+            PLUGIN_SUBMISSION_LABEL, "5319E7", "Plugin submitted for directory inclusion"
+        )
     report_issues = client.list_automation_report_issues()
     actions = []
     for item in accepted:
+        number = submission_number(item)
         evidence = find_publication_evidence(item["repository_url"])
         issue_url = None
         report_stem = evidence.get("report_stem")
@@ -610,19 +790,20 @@ def close_already_published(
             if matching:
                 issue_url = matching[0].get("html_url")
         marker = "<!-- dsh-submission:v1 status=accepted "
-        comments = client.list_pull_request_comments(int(item["pr_number"]))
+        comments = client.list_pull_request_comments(number)
         if not any(marker in str(comment.get("body", "")) for comment in comments):
-            client.post_comment(
-                int(item["pr_number"]), accepted_comment(item, evidence, issue_url)
-            )
-        client.add_labels(int(item["pr_number"]), [ACCEPTED_LABEL, AUTOMATION_LABEL])
-        client.remove_label(int(item["pr_number"]), REVIEWING_LABEL)
-        client.remove_label(int(item["pr_number"]), NEEDS_INFO_LABEL)
-        client.close_pull_request(int(item["pr_number"]))
+            client.post_comment(number, accepted_comment(item, evidence, issue_url))
+        labels = [ACCEPTED_LABEL, AUTOMATION_LABEL]
+        if submission_type(item) == "issue":
+            labels.append(PLUGIN_SUBMISSION_LABEL)
+        client.add_labels(number, labels)
+        client.remove_label(number, REVIEWING_LABEL)
+        client.remove_label(number, NEEDS_INFO_LABEL)
+        close_submission(client, item)
         actions.append(
             {
                 "action": "closed_as_published",
-                "pr_number": item["pr_number"],
+                **action_number(item),
                 "repository_url": item["repository_url"],
             }
         )
@@ -652,7 +833,7 @@ def stalled_review_is_retryable(
     if REVIEWING_LABEL not in item.get("labels", []):
         return False
     status = item.get("intake_status")
-    retryable_status = status == "new_submission" or (
+    retryable_status = submission_type(item) == "issue" or status == "new_submission" or (
         status == "candidate_needs_review"
         and bool(RETRYABLE_MODEL_REASONS.intersection(item.get("candidate_reasons", [])))
     )
@@ -676,7 +857,7 @@ def queue_targeted_reviews(
         comments = []
         labels = item.get("labels", [])
         if REVIEWING_LABEL in labels or NEEDS_INFO_LABEL in labels:
-            comments = client.list_pull_request_comments(int(item["pr_number"]))
+            comments = client.list_pull_request_comments(submission_number(item))
         recheck = NEEDS_INFO_LABEL in labels and contributor_requested_recheck(
             comments, item.get("author")
         )
@@ -692,21 +873,29 @@ def queue_targeted_reviews(
         REVIEWING_LABEL, "FBCA04", "Plugin submission is in automated review"
     )
     client.ensure_label(
-        AUTOMATION_LABEL, "1D76DB", "Pull request lifecycle managed by automation"
+        AUTOMATION_LABEL, "1D76DB", "Submission lifecycle managed by automation"
     )
+    if any(submission_type(item) == "issue" for item, _ in targets):
+        client.ensure_label(
+            PLUGIN_SUBMISSION_LABEL, "5319E7", "Plugin submitted for directory inclusion"
+        )
     actions = []
     for item, known_comments in targets:
-        number = int(item["pr_number"])
+        number = submission_number(item)
+        source_input = "source_issue" if submission_type(item) == "issue" else "source_pr"
         client.dispatch_workflow(
             "sync-topic-plugins.yml",
             {
                 "mode": "submission",
                 "target_repository": item["repository_url"],
-                "source_pr": str(number),
+                source_input: str(number),
                 "max_promotions": "0",
             },
         )
-        client.add_labels(number, [REVIEWING_LABEL, AUTOMATION_LABEL])
+        labels = [REVIEWING_LABEL, AUTOMATION_LABEL]
+        if submission_type(item) == "issue":
+            labels.append(PLUGIN_SUBMISSION_LABEL)
+        client.add_labels(number, labels)
         client.remove_label(number, NEEDS_INFO_LABEL)
         comments = known_comments or client.list_pull_request_comments(number)
         latest = latest_lifecycle_comment(comments)
@@ -715,7 +904,7 @@ def queue_targeted_reviews(
         actions.append(
             {
                 "action": "queued_targeted_review",
-                "pr_number": number,
+                **action_number(item),
                 "repository_url": item["repository_url"],
             }
         )
@@ -742,13 +931,22 @@ def should_request_info(item: dict[str, Any]) -> bool:
 
 
 def handle_exception_states(
-    report: dict[str, Any], client: GitHubClient, now: dt.datetime | None = None
+    report: dict[str, Any],
+    client: GitHubClient,
+    now: dt.datetime | None = None,
+    *,
+    finalize_review: bool = False,
 ) -> list[dict[str, Any]]:
     now = now or dt.datetime.now(dt.timezone.utc)
     actionable = [
         item
         for item in report["submissions"]
-        if should_decline(item) or should_request_info(item)
+        if (should_decline(item) or should_request_info(item))
+        and not (
+            submission_type(item) == "issue"
+            and REVIEWING_LABEL in item.get("labels", [])
+            and not finalize_review
+        )
     ]
     if not actionable:
         return []
@@ -756,22 +954,26 @@ def handle_exception_states(
         (NEEDS_INFO_LABEL, "D4C5F9", "Plugin submission needs more public information"),
         (DECLINED_LABEL, "D93F0B", "Plugin submission did not meet directory criteria"),
         (EXPIRED_LABEL, "6E7781", "Plugin submission expired while waiting for information"),
-        (AUTOMATION_LABEL, "1D76DB", "Pull request lifecycle managed by automation"),
+        (AUTOMATION_LABEL, "1D76DB", "Submission lifecycle managed by automation"),
+        (PLUGIN_SUBMISSION_LABEL, "5319E7", "Plugin submitted for directory inclusion"),
     ):
         client.ensure_label(name, color, description)
     actions = []
     for item in actionable:
-        number = int(item["pr_number"])
+        number = submission_number(item)
         comments = client.list_pull_request_comments(number)
         latest = latest_lifecycle_comment(comments)
         if should_decline(item):
             if not latest or latest[0] != "declined":
                 client.post_comment(number, declined_comment(item))
-            client.add_labels(number, [DECLINED_LABEL, AUTOMATION_LABEL])
+            labels = [DECLINED_LABEL, AUTOMATION_LABEL]
+            if submission_type(item) == "issue":
+                labels.append(PLUGIN_SUBMISSION_LABEL)
+            client.add_labels(number, labels)
             client.remove_label(number, REVIEWING_LABEL)
             client.remove_label(number, NEEDS_INFO_LABEL)
-            client.close_pull_request(number)
-            actions.append({"action": "closed_as_declined", "pr_number": number})
+            close_submission(client, item)
+            actions.append({"action": "closed_as_declined", **action_number(item)})
             continue
 
         created_at = github_time(latest[1].get("created_at")) if latest else None
@@ -785,18 +987,83 @@ def handle_exception_states(
         if expired:
             if not latest or latest[0] != "expired":
                 client.post_comment(number, expired_comment(item))
-            client.add_labels(number, [EXPIRED_LABEL, AUTOMATION_LABEL])
+            labels = [EXPIRED_LABEL, AUTOMATION_LABEL]
+            if submission_type(item) == "issue":
+                labels.append(PLUGIN_SUBMISSION_LABEL)
+            client.add_labels(number, labels)
             client.remove_label(number, REVIEWING_LABEL)
             client.remove_label(number, NEEDS_INFO_LABEL)
-            client.close_pull_request(number)
-            actions.append({"action": "closed_as_expired", "pr_number": number})
+            close_submission(client, item)
+            actions.append({"action": "closed_as_expired", **action_number(item)})
             continue
 
-        client.add_labels(number, [NEEDS_INFO_LABEL, AUTOMATION_LABEL])
+        labels = [NEEDS_INFO_LABEL, AUTOMATION_LABEL]
+        if submission_type(item) == "issue":
+            labels.append(PLUGIN_SUBMISSION_LABEL)
+        client.add_labels(number, labels)
         client.remove_label(number, REVIEWING_LABEL)
         if not latest or latest[0] != "needs-info":
             client.post_comment(number, needs_info_comment(item))
-        actions.append({"action": "requested_information", "pr_number": number})
+        actions.append({"action": "requested_information", **action_number(item)})
+    return actions
+
+
+def is_legacy_plugin_pull_request(item: dict[str, Any]) -> bool:
+    changed_files = {name for name in item.get("changed_files", []) if name}
+    return bool(
+        not item.get("draft")
+        and item.get("repository_urls")
+        and changed_files
+        and changed_files.issubset(LEGACY_PR_ALLOWED_FILES)
+    )
+
+
+def redirect_comment(item: dict[str, Any]) -> str:
+    repository = item.get("repository_url") or item.get("repository_urls", [""])[0]
+    return "\n".join(
+        [
+            "ℹ️ 插件收录已统一迁移到 Issue Form",
+            "",
+            "为了让提交字段、自动复核、状态反馈和收录报告保持一致，插件收录不再通过 PR 处理。",
+            f"请使用唯一官方入口重新提交：{ISSUE_FORM_URL}",
+            "",
+            f"本 PR 不会合并，也不会执行贡献者分支中的代码。插件仓库：{repository}",
+            "",
+            f"<!-- dsh-submission:v1 status=redirected repository={repository_key(repository)} -->",
+        ]
+    )
+
+
+def redirect_legacy_pull_requests(
+    report: dict[str, Any], client: GitHubClient
+) -> list[dict[str, Any]]:
+    targets = [
+        item for item in report["submissions"] if is_legacy_plugin_pull_request(item)
+    ]
+    if not targets:
+        return []
+    client.ensure_label(
+        REDIRECTED_LABEL, "8250DF", "Plugin submission redirected to the Issue Form"
+    )
+    client.ensure_label(
+        AUTOMATION_LABEL, "1D76DB", "Submission lifecycle managed by automation"
+    )
+    actions = []
+    for item in targets:
+        number = submission_number(item)
+        comments = client.list_pull_request_comments(number)
+        marker = "<!-- dsh-submission:v1 status=redirected "
+        if not any(marker in str(comment.get("body", "")) for comment in comments):
+            client.post_comment(number, redirect_comment(item))
+        client.add_labels(number, [REDIRECTED_LABEL, AUTOMATION_LABEL])
+        client.close_pull_request(number)
+        actions.append(
+            {
+                "action": "redirected_to_issue_form",
+                "pr_number": number,
+                "repository_url": item.get("repository_url"),
+            }
+        )
     return actions
 
 
@@ -820,6 +1087,11 @@ def main() -> None:
     )
     parser.add_argument("--output", type=Path, default=Path("pr-intake.json"))
     parser.add_argument(
+        "--issues",
+        action="store_true",
+        help="process official plugin submission Issues instead of legacy pull requests",
+    )
+    parser.add_argument(
         "--apply-published",
         action="store_true",
         help="reply to and close only submissions already present in the formal catalog",
@@ -834,22 +1106,49 @@ def main() -> None:
         action="store_true",
         help="request information, decline deterministic exclusions, and expire stale requests",
     )
+    parser.add_argument(
+        "--finalize-review",
+        action="store_true",
+        help="apply a completed targeted review result even while the Issue is labeled reviewing",
+    )
+    parser.add_argument(
+        "--redirect-prs",
+        action="store_true",
+        help="redirect catalog-only plugin pull requests to the official Issue Form",
+    )
     parser.add_argument("--review-limit", type=int, default=5)
     parser.add_argument("--only-pr", type=int)
+    parser.add_argument("--only-issue", type=int)
     args = parser.parse_args()
     client = GitHubClient(args.repository, os.environ.get("GITHUB_TOKEN", ""))
-    report = build_report(client, only_pr=args.only_pr)
+    report = (
+        build_issue_report(client, only_issue=args.only_issue)
+        if args.issues
+        else build_report(client, only_pr=args.only_pr)
+    )
     actions = []
     if args.apply_published:
         actions.extend(close_already_published(report, client))
         report["mode"] = "published_only"
     if args.handle_exceptions:
-        actions.extend(handle_exception_states(report, client))
+        actions.extend(
+            handle_exception_states(
+                report, client, finalize_review=args.finalize_review
+            )
+        )
         report["mode"] = "active"
     if args.queue_reviews:
         actions.extend(queue_targeted_reviews(report, client, args.review_limit))
         report["mode"] = "active"
-    if args.apply_published or args.handle_exceptions or args.queue_reviews:
+    if args.redirect_prs:
+        actions.extend(redirect_legacy_pull_requests(report, client))
+        report["mode"] = "redirect_only"
+    if (
+        args.apply_published
+        or args.handle_exceptions
+        or args.queue_reviews
+        or args.redirect_prs
+    ):
         report["actions"] = actions
     write_outputs(report, args.output)
 

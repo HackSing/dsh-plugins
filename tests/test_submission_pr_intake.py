@@ -47,6 +47,18 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(source, "ambiguous")
         self.assertEqual(len(urls), 2)
 
+    def test_extracts_repository_from_official_issue_form(self):
+        issue = {
+            "body": (
+                "### Plugin repository\n\nhttps://github.com/example/dsh-plugin\n\n"
+                "### Primary value\n\nAdds a useful capability."
+            ),
+            "title": "[Plugin]: dsh-plugin",
+        }
+        source, urls = submission_intake.extract_issue_repository_urls(issue)
+        self.assertEqual(source, "explicit")
+        self.assertEqual(urls, ["https://github.com/example/dsh-plugin"])
+
     def test_classifies_published_and_candidate_repositories(self):
         catalog = {
             "plugins": [
@@ -123,6 +135,49 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(report["open_prs_scanned"], 1)
         self.assertEqual(report["skipped_automation_prs"], 1)
         self.assertEqual(report["submissions"][0]["intake_status"], "new_submission")
+
+    def test_issue_report_treats_unstarted_candidate_as_fresh_submission(self):
+        class FakeClient:
+            repository = "HackSing/dsh-plugins"
+
+            def list_open_issues(self):
+                return [
+                    {
+                        "body": (
+                            "### Plugin repository\n\n"
+                            "https://github.com/example/dsh-plugin\n\n"
+                            "### Primary value\n\nAdds a capability."
+                        ),
+                        "html_url": "https://github.com/HackSing/dsh-plugins/issues/8",
+                        "labels": [],
+                        "number": 8,
+                        "title": "[Plugin]: dsh-plugin",
+                        "user": {"login": "contributor", "type": "User"},
+                    }
+                ]
+
+        with tempfile.TemporaryDirectory() as directory:
+            original_plugins = submission_intake.PLUGINS_PATH
+            original_candidates = submission_intake.CANDIDATES_PATH
+            try:
+                submission_intake.PLUGINS_PATH = Path(directory) / "plugins.json"
+                submission_intake.CANDIDATES_PATH = Path(directory) / "candidates.json"
+                submission_intake.PLUGINS_PATH.write_text(
+                    '{"plugins": []}', encoding="utf-8"
+                )
+                submission_intake.CANDIDATES_PATH.write_text(
+                    '{"candidates":[{"url":"https://github.com/example/dsh-plugin",'
+                    '"status":"excluded","reasons":["empty_repository"]}]}',
+                    encoding="utf-8",
+                )
+                report = submission_intake.build_issue_report(FakeClient())
+            finally:
+                submission_intake.PLUGINS_PATH = original_plugins
+                submission_intake.CANDIDATES_PATH = original_candidates
+        item = report["submissions"][0]
+        self.assertEqual(item["intake_status"], "new_submission")
+        self.assertEqual(item["previous_intake_status"], "candidate_excluded")
+        self.assertEqual(item["source_type"], "issue")
 
     def test_closes_already_published_submission_idempotently(self):
         class FakeClient:
@@ -265,6 +320,28 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(client.dispatched[0][1]["source_pr"], "5")
         self.assertIn("已进入自动复核", client.comments[0][1])
 
+    def test_issue_submission_dispatches_source_issue(self):
+        client = LifecycleClient()
+        report = {
+            "submissions": [
+                {
+                    "author": "contributor",
+                    "draft": False,
+                    "intake_status": "new_submission",
+                    "issue_number": 13,
+                    "labels": [],
+                    "repository_url": "https://github.com/example/dsh-plugin",
+                    "source_type": "issue",
+                }
+            ]
+        }
+        actions = submission_intake.queue_targeted_reviews(report, client, limit=5)
+        inputs = client.dispatched[0][1]
+        self.assertEqual(inputs["source_issue"], "13")
+        self.assertNotIn("source_pr", inputs)
+        self.assertEqual(actions[0]["issue_number"], 13)
+        self.assertIn("本 Issue", client.comments[0][1])
+
     def test_reviewing_label_prevents_duplicate_dispatch(self):
         report = {
             "submissions": [
@@ -328,6 +405,30 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(actions, [{"action": "closed_as_declined", "pr_number": 22}])
         self.assertEqual(client.closed, [22])
         self.assertIn("不是安全性或质量评价", client.comments[0][1])
+
+    def test_issue_reviewing_state_waits_for_target_workflow_finalization(self):
+        client = LifecycleClient()
+        report = {
+            "submissions": [
+                {
+                    "candidate_reasons": ["directory_or_collection"],
+                    "intake_status": "candidate_excluded",
+                    "issue_number": 22,
+                    "labels": [submission_intake.REVIEWING_LABEL],
+                    "repository_url": "https://github.com/example/directory",
+                    "source_type": "issue",
+                }
+            ]
+        }
+        self.assertEqual(
+            submission_intake.handle_exception_states(report, client), []
+        )
+        actions = submission_intake.handle_exception_states(
+            report, client, finalize_review=True
+        )
+        self.assertEqual(actions[0]["action"], "closed_as_declined")
+        self.assertEqual(actions[0]["issue_number"], 22)
+        self.assertEqual(client.closed_issues, [22])
 
     def test_expires_needs_info_submission_after_fourteen_days(self):
         client = LifecycleClient()
@@ -416,10 +517,39 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(actions[0]["action"], "queued_targeted_review")
         self.assertEqual(client.dispatched[0][1]["source_pr"], "25")
 
+    def test_legacy_catalog_pr_is_redirected_without_review_dispatch(self):
+        client = LifecycleClient()
+        report = {
+            "submissions": [
+                {
+                    "changed_files": ["README.md", "README.zh.md"],
+                    "draft": False,
+                    "pr_number": 30,
+                    "repository_url": "https://github.com/example/plugin",
+                    "repository_urls": ["https://github.com/example/plugin"],
+                    "source_type": "pr",
+                },
+                {
+                    "changed_files": ["README.md", "scripts/tool.py"],
+                    "draft": False,
+                    "pr_number": 31,
+                    "repository_url": "https://github.com/example/tool-change",
+                    "repository_urls": ["https://github.com/example/tool-change"],
+                    "source_type": "pr",
+                },
+            ]
+        }
+        actions = submission_intake.redirect_legacy_pull_requests(report, client)
+        self.assertEqual([item["pr_number"] for item in actions], [30])
+        self.assertEqual(client.closed, [30])
+        self.assertEqual(client.dispatched, [])
+        self.assertIn("Issue Form", client.comments[0][1])
+
 
 class LifecycleClient:
     def __init__(self):
         self.closed = []
+        self.closed_issues = []
         self.comments = []
         self.dispatched = []
         self.existing_comments = []
@@ -442,6 +572,9 @@ class LifecycleClient:
 
     def close_pull_request(self, number):
         self.closed.append(number)
+
+    def close_issue(self, number):
+        self.closed_issues.append(number)
 
     def dispatch_workflow(self, workflow, inputs):
         self.dispatched.append((workflow, inputs))
