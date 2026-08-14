@@ -146,6 +146,9 @@ class SubmissionIntakeTests(unittest.TestCase):
             def add_labels(self, number, labels):
                 self.labels.append((number, labels))
 
+            def remove_label(self, number, label):
+                self.labels.append((number, [f"removed:{label}"]))
+
             def close_pull_request(self, number):
                 self.closed.append(number)
 
@@ -190,6 +193,9 @@ class SubmissionIntakeTests(unittest.TestCase):
             def add_labels(self, number, labels):
                 pass
 
+            def remove_label(self, number, label):
+                pass
+
             def close_pull_request(self, number):
                 self.closed = number
 
@@ -213,6 +219,69 @@ class SubmissionIntakeTests(unittest.TestCase):
         ):
             submission_intake.close_already_published(report, client)
         self.assertEqual(client.closed, 13)
+
+    def test_queues_retryable_submission_for_trusted_targeted_review(self):
+        class FakeClient:
+            def __init__(self):
+                self.dispatched = []
+                self.labels = []
+                self.comments = []
+
+            def ensure_label(self, name, color, description):
+                pass
+
+            def dispatch_workflow(self, workflow, inputs):
+                self.dispatched.append((workflow, inputs))
+
+            def add_labels(self, number, labels):
+                self.labels.append((number, labels))
+
+            def list_pull_request_comments(self, number):
+                return []
+
+            def post_comment(self, number, body):
+                self.comments.append((number, body))
+
+        report = {
+            "submissions": [
+                {
+                    "candidate_reasons": ["model_analysis_deferred"],
+                    "draft": False,
+                    "intake_status": "candidate_needs_review",
+                    "labels": [],
+                    "pr_number": 5,
+                    "repository_url": "https://github.com/example/dsh-example",
+                }
+            ]
+        }
+        client = FakeClient()
+        actions = submission_intake.queue_targeted_reviews(report, client, limit=5)
+        self.assertEqual(actions[0]["action"], "queued_targeted_review")
+        self.assertEqual(client.dispatched[0][0], "sync-topic-plugins.yml")
+        self.assertEqual(client.dispatched[0][1]["mode"], "submission")
+        self.assertEqual(client.dispatched[0][1]["source_pr"], "5")
+        self.assertIn("已进入自动复核", client.comments[0][1])
+
+    def test_reviewing_label_prevents_duplicate_dispatch(self):
+        report = {
+            "submissions": [
+                {
+                    "draft": False,
+                    "intake_status": "new_submission",
+                    "labels": [submission_intake.REVIEWING_LABEL],
+                    "pr_number": 6,
+                    "repository_url": "https://github.com/example/dsh-example",
+                }
+            ]
+        }
+
+        class FakeClient:
+            def dispatch_workflow(self, workflow, inputs):
+                raise AssertionError("duplicate workflow dispatch")
+
+        self.assertEqual(
+            submission_intake.queue_targeted_reviews(report, FakeClient(), limit=5), []
+        )
 
 
 if __name__ == "__main__":

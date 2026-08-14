@@ -6,13 +6,22 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: Run in observation mode or publish high-confidence candidates
+        description: Observe the Topic, publish an observation, or review one submission
         required: true
         default: observe
         type: choice
         options:
           - observe
           - publish
+          - submission
+      target_repository:
+        description: Public GitHub repository URL used only in submission mode
+        required: false
+        type: string
+      source_pr:
+        description: Originating submission pull request number
+        required: false
+        type: string
       max_promotions:
         description: Maximum observed candidates to publish; 0 publishes all
         required: true
@@ -32,7 +41,7 @@ jobs:
   discover:
     runs-on: ubuntu-latest
     env:
-      AUTO_PUBLISH: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'publish') || (github.event_name != 'workflow_dispatch' && vars.AUTO_PUBLISH == 'true') }}
+      AUTO_PUBLISH: ${{ (github.event_name == 'workflow_dispatch' && (inputs.mode == 'publish' || inputs.mode == 'submission')) || (github.event_name != 'workflow_dispatch' && vars.AUTO_PUBLISH == 'true') }}
       ENRICHMENT_LIMIT: "150"
       LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
       LLM_MODEL: ${{ vars.LLM_MODEL }}
@@ -58,6 +67,7 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           RUN_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'scheduled' }}
           MAX_PROMOTIONS: ${{ inputs.max_promotions || 0 }}
+          TARGET_REPOSITORY: ${{ inputs.target_repository }}
         run: |
           if [ "$RUN_MODE" = "publish" ]; then
             args=(approve-observed)
@@ -65,6 +75,10 @@ jobs:
               args+=(--limit "$MAX_PROMOTIONS")
             fi
             python3 scripts/sync_topic_plugins.py "${args[@]}"
+          elif [ "$RUN_MODE" = "submission" ]; then
+            test -n "$TARGET_REPOSITORY"
+            python3 scripts/sync_topic_plugins.py review-target \
+              --repository "$TARGET_REPOSITORY" --auto-publish
           else
             args=(--analyze-model)
             if [ "$AUTO_PUBLISH" = "true" ]; then
@@ -169,3 +183,13 @@ jobs:
               gh issue create --title "DSH 插件自动收录报告 — $(basename "$path" .md)" --label automation-report --assignee HackSing --body-file "$body"
             fi
           done < <(git ls-tree -r --name-only origin/main reports/sync)
+      - name: Reconcile the originating submission
+        if: always() && !cancelled() && github.event_name == 'workflow_dispatch' && inputs.mode == 'submission' && inputs.source_pr != ''
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SOURCE_PR: ${{ inputs.source_pr }}
+        run: |
+          git fetch origin main
+          git switch --detach origin/main
+          python3 scripts/reconcile_submission_prs.py \
+            --apply-published --only-pr "$SOURCE_PR" --output source-pr-result.json

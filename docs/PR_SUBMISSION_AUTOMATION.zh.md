@@ -8,7 +8,7 @@
 
 1. **只读收件箱**：每 30 分钟扫描开放 PR，提取插件仓库，识别已收录、候选、新申请、缺失地址和地址歧义，输出 Action Summary 与 JSON 台账；不评论、不关闭、不发布。
 2. **已收录闭环**：远端回读确认插件已经存在于 `data/plugins.json` 后，自动回复目录、提交和报告链接，添加状态标签并关闭 PR。已实现。
-3. **定向复核与发布**：未收录申请按仓库 ID 进入定向规则和模型复核；高置信度结果通过现有收录事务更新数据、双语 README、CHANGELOG 和报告，合并后再关闭申请 PR。
+3. **定向复核与发布**：未收录申请按仓库 ID 进入定向规则和模型复核；高置信度结果通过现有收录事务更新数据、双语 README、CHANGELOG 和报告，合并后再关闭申请 PR。已实现，线上验收通过后进入常态运行。
 4. **异常治理**：信息不足时请求补充并保留 PR；确定不符合时说明规则并关闭；GitHub 或模型异常只重试，不把系统故障当成拒绝；超时申请按规则归档。
 
 ## 安全边界
@@ -21,4 +21,13 @@
 
 ## 第一批状态
 
-第一批工作流 `.github/workflows/submission-pr-intake.yml` 每 30 分钟生成一次收件台账。第二批只对 `already_published` 状态开放写操作：回复、添加 `submission:accepted` 与 `automation-managed` 标签并关闭 PR；其他状态仍保持只读。评论通过隐藏标识保证重复运行不会重复发送。
+第一批工作流 `.github/workflows/submission-pr-intake.yml` 每 30 分钟生成一次收件台账。第二批对 `already_published` 状态开放写操作：回复、添加 `submission:accepted` 与 `automation-managed` 标签并关闭 PR。评论通过隐藏标识保证重复运行不会重复发送。
+
+## 第三批运行方式
+
+- 新申请及模型暂缓、模型未配置、模型临时失败的候选会进入定向复核；草稿 PR 不自动处理。
+- 收件工作流先调用主分支上的 `sync-topic-plugins.yml`，再给原 PR 添加 `submission:reviewing` 与 `automation-managed` 标签；该状态用于阻止定时任务重复调度。
+- 定向工作流只读取申请中声明的公开 GitHub 仓库，不读取贡献者分支内容；规则和模型达到高置信度后直接进入现有正式发布事务。
+- 发布事务必须同时完成 `data/plugins.json`、中英文 README、CHANGELOG、收录报告、自动校验和 `main` 合并；之后才会回读远端目录。
+- 远端回读确认后，原 PR 自动收到“已通过自动目录收录”回复，切换为 `submission:accepted` 并关闭，贡献者提交始终不会合并。
+- 每次收件任务最多派发 5 个定向复核，目录发布仍通过 `topic-plugin-sync` 并发组串行执行。

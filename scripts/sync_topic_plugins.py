@@ -749,6 +749,98 @@ def discover(
     write_json(CANDIDATES_PATH, payload)
 
 
+def review_target(repository_url: str, auto_publish: bool) -> dict[str, Any]:
+    parsed = urllib.parse.urlparse(repository_url)
+    full_name = parsed.path.strip("/")
+    if parsed.netloc.casefold() != "github.com" or full_name.count("/") != 1:
+        raise SyncError("target repository must be a public GitHub repository URL")
+
+    catalog = load_json(PLUGINS_PATH, {"plugins": []})
+    candidate_payload = load_json(
+        CANDIDATES_PATH,
+        {"candidates": [], "query": f"topic:{TOPIC}", "schema_version": 1, "source_total": 0},
+    )
+    client = GitHubClient(os.environ.get("GITHUB_TOKEN", ""))
+    repo, _ = client.get_json(
+        f"https://api.github.com/repos/{urllib.parse.quote(full_name, safe='/')}"
+    )
+    if not isinstance(repo, dict) or not repo.get("id") or not repo.get("html_url"):
+        raise SyncError("target repository metadata was incomplete")
+
+    normalized_url = str(repo["html_url"]).rstrip("/").casefold()
+    repository_id = int(repo["id"])
+
+    def has_repository_id(item: dict[str, Any]) -> bool:
+        value = item.get("repository_id")
+        return value is not None and int(value) == repository_id
+
+    already_published = next(
+        (
+            plugin
+            for plugin in catalog.get("plugins", [])
+            if str(plugin.get("url", "")).rstrip("/").casefold() == normalized_url
+            or has_repository_id(plugin)
+        ),
+        None,
+    )
+    if already_published:
+        append_github_output("target_status", "already_published")
+        append_github_output("target_repository_id", str(repository_id))
+        print(f"Target repository is already published: {repo['html_url']}")
+        return {"status": "already_published", "url": repo["html_url"]}
+
+    previous = next(
+        (
+            candidate
+            for candidate in candidate_payload.get("candidates", [])
+            if has_repository_id(candidate)
+            or str(candidate.get("url", "")).rstrip("/").casefold() == normalized_url
+        ),
+        None,
+    )
+    readme = client.readme(repo["full_name"])
+    root_entries = client.root_entries(repo["full_name"])
+    candidate = classify(repo, readme, root_entries, previous)
+
+    if candidate["status"] == "proposed":
+        llm_key = os.environ.get("LLM_API_KEY", "")
+        llm_model = os.environ.get("LLM_MODEL", "")
+        llm_base_url = os.environ.get("LLM_BASE_URL", "")
+        if not (llm_key and llm_model and llm_base_url):
+            candidate["status"] = "needs_review"
+            candidate["reasons"] = ["model_provider_unconfigured"]
+        else:
+            model_client = OpenAICompatibleClient(llm_key, llm_model, llm_base_url)
+            try:
+                analysis = model_client.analyze(
+                    repo, readme or "", candidate["structure_evidence"]
+                )
+                apply_model_analysis(candidate, analysis, auto_publish)
+            except SyncError as exc:
+                candidate["status"] = "needs_review"
+                candidate["reasons"] = ["model_analysis_failed"]
+                candidate["model_error"] = str(exc)[:240]
+
+    retained = [
+        item
+        for item in candidate_payload.get("candidates", [])
+        if not has_repository_id(item)
+        and str(item.get("url", "")).rstrip("/").casefold() != normalized_url
+    ]
+    retained.append(candidate)
+    retained.sort(key=lambda item: (item["status"], item["name"].casefold(), item["url"]))
+    candidate_payload["candidates"] = retained
+    write_json(CANDIDATES_PATH, candidate_payload)
+    append_github_output("target_status", str(candidate["status"]))
+    append_github_output("target_repository_id", str(repository_id))
+    append_github_output("target_reasons", ",".join(candidate.get("reasons", [])))
+    print(
+        f"Target review completed: repository={repo['html_url']}, "
+        f"status={candidate['status']}, reasons={','.join(candidate.get('reasons', []))}"
+    )
+    return candidate
+
+
 def approve_observed(limit: int | None = None) -> int:
     payload = load_json(CANDIDATES_PATH, None)
     if not payload:
@@ -1144,6 +1236,11 @@ def main() -> None:
         "approve-observed", help="approve a saved observation snapshot without rescanning"
     )
     approve_parser.add_argument("--limit", type=int)
+    target_parser = subparsers.add_parser(
+        "review-target", help="review one submitted plugin repository without a Topic scan"
+    )
+    target_parser.add_argument("--repository", required=True)
+    target_parser.add_argument("--auto-publish", action="store_true")
     render_parser = subparsers.add_parser(
         "render", help="promote approved candidates and regenerate READMEs"
     )
@@ -1168,6 +1265,8 @@ def main() -> None:
             render(report=args.report, run_id=args.run_id)
         elif args.command == "approve-observed":
             approve_observed(limit=args.limit)
+        elif args.command == "review-target":
+            review_target(args.repository, args.auto_publish)
         elif args.command == "check":
             check()
         elif args.command == "summary":

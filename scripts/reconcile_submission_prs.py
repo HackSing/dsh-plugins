@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only intake scanner for plugin submission pull requests."""
+"""Reconcile plugin submission pull requests with the trusted catalog workflow."""
 
 from __future__ import annotations
 
@@ -21,6 +21,14 @@ PLUGINS_PATH = ROOT / "data" / "plugins.json"
 CANDIDATES_PATH = ROOT / "data" / "topic-candidates.json"
 REPORTS_PATH = ROOT / "reports" / "sync"
 SELF_REPOSITORY = "hacksing/dsh-plugins"
+REVIEWING_LABEL = "submission:reviewing"
+ACCEPTED_LABEL = "submission:accepted"
+AUTOMATION_LABEL = "automation-managed"
+RETRYABLE_MODEL_REASONS = {
+    "model_analysis_deferred",
+    "model_analysis_failed",
+    "model_provider_unconfigured",
+}
 GITHUB_REPOSITORY_URL = re.compile(
     r"https://github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+?)(?=\.git(?:\s|$)|[\s)\]}>，。；、]|$)",
     re.IGNORECASE,
@@ -135,6 +143,17 @@ class GitHubClient:
             payload={"labels": labels},
         )
 
+    def remove_label(self, number: int, label: str) -> None:
+        encoded = urllib.parse.quote(label, safe="")
+        try:
+            self.request_json(
+                f"https://api.github.com/repos/{self.repository}/issues/{number}/labels/{encoded}",
+                method="DELETE",
+            )
+        except IntakeError as exc:
+            if "HTTP 404" not in str(exc):
+                raise
+
     def post_comment(self, number: int, body: str) -> None:
         self.request_json(
             f"https://api.github.com/repos/{self.repository}/issues/{number}/comments",
@@ -147,6 +166,14 @@ class GitHubClient:
             f"https://api.github.com/repos/{self.repository}/pulls/{number}",
             method="PATCH",
             payload={"state": "closed"},
+        )
+
+    def dispatch_workflow(self, workflow: str, inputs: dict[str, str]) -> None:
+        encoded = urllib.parse.quote(workflow, safe="")
+        self.request_json(
+            f"https://api.github.com/repos/{self.repository}/actions/workflows/{encoded}/dispatches",
+            method="POST",
+            payload={"ref": "main", "inputs": inputs},
         )
 
 
@@ -250,12 +277,14 @@ def is_automation_pull_request(pull_request: dict[str, Any]) -> bool:
     )
 
 
-def build_report(client: GitHubClient) -> dict[str, Any]:
+def build_report(client: GitHubClient, only_pr: int | None = None) -> dict[str, Any]:
     catalog = load_json(PLUGINS_PATH, {"plugins": []})
     candidates = load_json(CANDIDATES_PATH, {"candidates": []})
     submissions = []
     skipped_automation = 0
     for pull_request in client.list_open_pull_requests():
+        if only_pr is not None and int(pull_request["number"]) != only_pr:
+            continue
         if is_automation_pull_request(pull_request):
             skipped_automation += 1
             continue
@@ -266,6 +295,11 @@ def build_report(client: GitHubClient) -> dict[str, Any]:
             "author": (pull_request.get("user") or {}).get("login"),
             "draft": bool(pull_request.get("draft")),
             "extraction": extraction,
+            "labels": [
+                str(label.get("name"))
+                for label in pull_request.get("labels", [])
+                if label.get("name")
+            ],
             "pr_number": number,
             "pr_title": pull_request.get("title"),
             "pr_url": pull_request.get("html_url"),
@@ -298,12 +332,14 @@ def build_report(client: GitHubClient) -> dict[str, Any]:
 
 def markdown_summary(report: dict[str, Any]) -> str:
     lines = [
-        "# 插件收录 PR 只读扫描",
+        "# 插件收录 PR 自动处理",
         "",
         f"- 开放 PR：{report['open_prs_scanned']}",
         f"- 跳过自动化 PR：{report['skipped_automation_prs']}",
         (
-            "- 当前模式：已收录申请自动闭环"
+            "- 当前模式：已收录闭环与未收录定向复核"
+            if report.get("mode") == "active"
+            else "- 当前模式：只处理已收录申请"
             if report.get("mode") == "published_only"
             else "- 当前模式：只读，不评论、不关闭、不发布"
         ),
@@ -390,6 +426,22 @@ def accepted_comment(
     return "\n".join(lines)
 
 
+def reviewing_comment(item: dict[str, Any]) -> str:
+    repository = item["repository_url"]
+    return "\n".join(
+        [
+            "🔎 已进入自动复核",
+            "",
+            f"系统将从主仓库的可信工作流定向复核 [{repository}]({repository})。",
+            "复核只读取公开元数据、目录结构和 README，不会检出、安装或执行贡献者分支及插件代码。",
+            "",
+            "高置信度通过后会自动更新正式目录、双语 README、CHANGELOG 和收录报告，再回到本 PR 回复结果并关闭。系统异常会重试，不会被当作审核拒绝。",
+            "",
+            f"<!-- dsh-submission:v1 status=reviewing repository={repository_key(repository)} -->",
+        ]
+    )
+
+
 def close_already_published(
     report: dict[str, Any], client: GitHubClient
 ) -> list[dict[str, Any]]:
@@ -399,10 +451,10 @@ def close_already_published(
     if not accepted:
         return []
     client.ensure_label(
-        "submission:accepted", "0E8A16", "Plugin submission accepted by automation"
+        ACCEPTED_LABEL, "0E8A16", "Plugin submission accepted by automation"
     )
     client.ensure_label(
-        "automation-managed", "1D76DB", "Pull request lifecycle managed by automation"
+        AUTOMATION_LABEL, "1D76DB", "Pull request lifecycle managed by automation"
     )
     report_issues = client.list_automation_report_issues()
     actions = []
@@ -424,14 +476,67 @@ def close_already_published(
             client.post_comment(
                 int(item["pr_number"]), accepted_comment(item, evidence, issue_url)
             )
-        client.add_labels(
-            int(item["pr_number"]), ["submission:accepted", "automation-managed"]
-        )
+        client.add_labels(int(item["pr_number"]), [ACCEPTED_LABEL, AUTOMATION_LABEL])
+        client.remove_label(int(item["pr_number"]), REVIEWING_LABEL)
         client.close_pull_request(int(item["pr_number"]))
         actions.append(
             {
                 "action": "closed_as_published",
                 "pr_number": item["pr_number"],
+                "repository_url": item["repository_url"],
+            }
+        )
+    return actions
+
+
+def is_reviewable_submission(item: dict[str, Any]) -> bool:
+    if item.get("draft") or REVIEWING_LABEL in item.get("labels", []):
+        return False
+    status = item.get("intake_status")
+    if status == "new_submission":
+        return True
+    if status != "candidate_needs_review":
+        return False
+    return bool(RETRYABLE_MODEL_REASONS.intersection(item.get("candidate_reasons", [])))
+
+
+def queue_targeted_reviews(
+    report: dict[str, Any], client: GitHubClient, limit: int
+) -> list[dict[str, Any]]:
+    if limit < 1:
+        raise IntakeError("review limit must be greater than zero")
+    targets = [item for item in report["submissions"] if is_reviewable_submission(item)][
+        :limit
+    ]
+    if not targets:
+        return []
+    client.ensure_label(
+        REVIEWING_LABEL, "FBCA04", "Plugin submission is in automated review"
+    )
+    client.ensure_label(
+        AUTOMATION_LABEL, "1D76DB", "Pull request lifecycle managed by automation"
+    )
+    actions = []
+    for item in targets:
+        number = int(item["pr_number"])
+        client.dispatch_workflow(
+            "sync-topic-plugins.yml",
+            {
+                "mode": "submission",
+                "target_repository": item["repository_url"],
+                "source_pr": str(number),
+                "max_promotions": "0",
+            },
+        )
+        client.add_labels(number, [REVIEWING_LABEL, AUTOMATION_LABEL])
+        marker = "<!-- dsh-submission:v1 status=reviewing "
+        comments = client.list_pull_request_comments(number)
+        if not any(marker in str(comment.get("body", "")) for comment in comments):
+            client.post_comment(number, reviewing_comment(item))
+        actions.append(
+            {
+                "action": "queued_targeted_review",
+                "pr_number": number,
                 "repository_url": item["repository_url"],
             }
         )
@@ -462,12 +567,25 @@ def main() -> None:
         action="store_true",
         help="reply to and close only submissions already present in the formal catalog",
     )
+    parser.add_argument(
+        "--queue-reviews",
+        action="store_true",
+        help="dispatch trusted targeted review workflows for eligible submissions",
+    )
+    parser.add_argument("--review-limit", type=int, default=5)
+    parser.add_argument("--only-pr", type=int)
     args = parser.parse_args()
     client = GitHubClient(args.repository, os.environ.get("GITHUB_TOKEN", ""))
-    report = build_report(client)
+    report = build_report(client, only_pr=args.only_pr)
+    actions = []
     if args.apply_published:
+        actions.extend(close_already_published(report, client))
         report["mode"] = "published_only"
-        report["actions"] = close_already_published(report, client)
+    if args.queue_reviews:
+        actions.extend(queue_targeted_reviews(report, client, args.review_limit))
+        report["mode"] = "active"
+    if args.apply_published or args.queue_reviews:
+        report["actions"] = actions
     write_outputs(report, args.output)
 
 

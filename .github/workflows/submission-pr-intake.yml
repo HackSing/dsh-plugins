@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: read
   issues: write
   pull-requests: write
@@ -21,12 +22,13 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - name: Scan submissions and close only already-published plugins
+      - name: Reconcile submissions and queue targeted reviews
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: >-
           python3 scripts/reconcile_submission_prs.py
           --apply-published
+          --queue-reviews
           --output pr-intake.json
       - name: Upload the intake ledger
         uses: actions/upload-artifact@v7

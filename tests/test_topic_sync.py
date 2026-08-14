@@ -268,6 +268,109 @@ class ClassificationTests(unittest.TestCase):
             ["accepted", "accepted", "would_accept"],
         )
 
+    def test_targeted_review_auto_accepts_high_confidence_submission(self):
+        class LiveClient:
+            def __init__(self, token=""):
+                pass
+
+            def get_json(self, url):
+                return repository(topics=["dsh-plugin"]), {}
+
+            def readme(self, full_name):
+                return "# dsh-example\nA DSH plugin for automated research workflows."
+
+            def root_entries(self, full_name):
+                return ["package.json", "src"]
+
+        class ModelClient:
+            def __init__(self, token, model, endpoint):
+                pass
+
+            def analyze(self, repo, readme, structure):
+                return {
+                    "category": "automation",
+                    "confidence": "high",
+                    "description_en": "Automates research workflows.",
+                    "description_zh": "自动执行研究工作流。",
+                    "evidence": ["README and package structure identify a DSH plugin"],
+                    "is_plugin": True,
+                    "model": "test-model",
+                }
+
+        with tempfile.TemporaryDirectory() as directory:
+            original_plugins = topic_sync.PLUGINS_PATH
+            original_candidates = topic_sync.CANDIDATES_PATH
+            try:
+                topic_sync.PLUGINS_PATH = Path(directory) / "plugins.json"
+                topic_sync.CANDIDATES_PATH = Path(directory) / "candidates.json"
+                topic_sync.write_json(
+                    topic_sync.PLUGINS_PATH, {"schema_version": 1, "plugins": []}
+                )
+                topic_sync.write_json(
+                    topic_sync.CANDIDATES_PATH,
+                    {
+                        "candidates": [],
+                        "query": "topic:dsh-plugin",
+                        "schema_version": 1,
+                        "source_total": 0,
+                    },
+                )
+                with mock.patch.object(topic_sync, "GitHubClient", LiveClient), mock.patch.object(
+                    topic_sync, "OpenAICompatibleClient", ModelClient
+                ), mock.patch.dict(
+                    topic_sync.os.environ,
+                    {
+                        "LLM_API_KEY": "test-key",
+                        "LLM_MODEL": "test-model",
+                        "LLM_BASE_URL": "https://example.invalid/v1",
+                    },
+                ):
+                    candidate = topic_sync.review_target(
+                        "https://github.com/example/dsh-example", auto_publish=True
+                    )
+                saved = json.loads(topic_sync.CANDIDATES_PATH.read_text(encoding="utf-8"))
+            finally:
+                topic_sync.PLUGINS_PATH = original_plugins
+                topic_sync.CANDIDATES_PATH = original_candidates
+        self.assertEqual(candidate["status"], "accepted")
+        self.assertEqual(saved["candidates"][0]["repository_id"], 101)
+
+    def test_targeted_review_handles_null_legacy_repository_ids(self):
+        class LiveClient:
+            def __init__(self, token=""):
+                pass
+
+            def get_json(self, url):
+                return repository(), {}
+
+        with tempfile.TemporaryDirectory() as directory:
+            original_plugins = topic_sync.PLUGINS_PATH
+            original_candidates = topic_sync.CANDIDATES_PATH
+            try:
+                topic_sync.PLUGINS_PATH = Path(directory) / "plugins.json"
+                topic_sync.CANDIDATES_PATH = Path(directory) / "candidates.json"
+                topic_sync.write_json(
+                    topic_sync.PLUGINS_PATH,
+                    {
+                        "schema_version": 1,
+                        "plugins": [
+                            {
+                                "name": "legacy",
+                                "repository_id": None,
+                                "url": "https://github.com/example/dsh-example",
+                            }
+                        ],
+                    },
+                )
+                with mock.patch.object(topic_sync, "GitHubClient", LiveClient):
+                    result = topic_sync.review_target(
+                        "https://github.com/example/dsh-example", auto_publish=True
+                    )
+            finally:
+                topic_sync.PLUGINS_PATH = original_plugins
+                topic_sync.CANDIDATES_PATH = original_candidates
+        self.assertEqual(result["status"], "already_published")
+
     def test_marketing_description_is_rejected(self):
         with self.assertRaises(topic_sync.SyncError):
             topic_sync.parse_model_analysis(
