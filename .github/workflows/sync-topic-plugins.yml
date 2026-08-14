@@ -27,7 +27,7 @@ jobs:
   discover:
     runs-on: ubuntu-latest
     env:
-      AUTO_PUBLISH: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'publish') || vars.AUTO_PUBLISH == 'true' }}
+      AUTO_PUBLISH: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'publish') || (github.event_name != 'workflow_dispatch' && vars.AUTO_PUBLISH == 'true') }}
       ENRICHMENT_LIMIT: "150"
       LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
       LLM_MODEL: ${{ vars.LLM_MODEL }}
