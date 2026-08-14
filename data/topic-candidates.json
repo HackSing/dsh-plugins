@@ -4389,24 +4389,6 @@
       "url": "https://github.com/Totoro-qaq/Cobsidian"
     },
     {
-      "category_confidence": "high",
-      "category_suggestion": "automation",
-      "description_en": "Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.",
-      "description_zh": "",
-      "enriched": true,
-      "fingerprint": "leechen298/Code2Skill|Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.|False|False|False|False|2026-08-14T07:36:07Z|MIT",
-      "name": "Code2Skill",
-      "reasons": [
-        "model_analysis_deferred"
-      ],
-      "repository_id": 1304163962,
-      "status": "needs_review",
-      "structure_evidence": [
-        "cordis.patch.yml"
-      ],
-      "url": "https://github.com/leechen298/Code2Skill"
-    },
-    {
       "category_confidence": "low",
       "category_suggestion": "tools",
       "description_en": "Use local Codex App Server as a model provider in DeepSeek Harness",
