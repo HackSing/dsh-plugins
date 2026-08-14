@@ -184,13 +184,6 @@ def parse_model_analysis(content: str) -> dict[str, Any]:
     }
 
 
-def effective_model_analysis_limit(auto_publish: bool) -> int:
-    """Publish only candidates that already passed a separate observation run."""
-    if auto_publish:
-        return 0
-    return int(os.environ.get("MODEL_ANALYSIS_LIMIT", "25"))
-
-
 def load_json(path: Path, default: Any) -> Any:
     if not path.exists():
         return default
@@ -669,7 +662,7 @@ def discover(
         llm_base_url = os.environ.get("LLM_BASE_URL", "")
         if llm_key and llm_model and llm_base_url:
             model_client = OpenAICompatibleClient(llm_key, llm_model, llm_base_url)
-    model_limit = effective_model_analysis_limit(auto_publish)
+    model_limit = int(os.environ.get("MODEL_ANALYSIS_LIMIT", "25"))
     model_calls = 0
     enrichment_limit = int(os.environ.get("ENRICHMENT_LIMIT", "150"))
     enrichment_calls = 0
@@ -754,6 +747,58 @@ def discover(
         return
     write_json(PLUGINS_PATH, catalog)
     write_json(CANDIDATES_PATH, payload)
+
+
+def approve_observed(limit: int | None = None) -> int:
+    payload = load_json(CANDIDATES_PATH, None)
+    if not payload:
+        raise SyncError("data/topic-candidates.json is missing; run observe first")
+    if limit is not None and limit < 1:
+        raise SyncError("approval limit must be greater than zero")
+    candidates = payload.get("candidates", [])
+    observed = [item for item in candidates if item.get("status") == "would_accept"]
+    if not observed:
+        raise SyncError("no observed high-confidence candidates are ready to publish")
+
+    client = GitHubClient(os.environ.get("GITHUB_TOKEN", ""))
+    approved = 0
+    for candidate in observed:
+        if limit is not None and approved >= limit:
+            break
+        parsed = urllib.parse.urlparse(str(candidate.get("url", "")))
+        full_name = parsed.path.strip("/")
+        if parsed.netloc.casefold() != "github.com" or full_name.count("/") != 1:
+            candidate["status"] = "needs_review"
+            candidate["reasons"] = ["invalid_repository_url_at_publish"]
+            continue
+        try:
+            metadata, _ = client.get_json(
+                f"https://api.github.com/repos/{urllib.parse.quote(full_name, safe='/')}"
+            )
+        except SyncError as exc:
+            if "HTTP 404" in str(exc):
+                candidate["status"] = "needs_review"
+                candidate["reasons"] = ["repository_unavailable_at_publish"]
+                continue
+            raise
+        topics = {str(topic).casefold() for topic in metadata.get("topics", [])}
+        unsafe = any(
+            metadata.get(key) for key in ("archived", "disabled", "fork", "is_template")
+        )
+        same_repository = int(metadata.get("id", 0)) == int(candidate.get("repository_id", -1))
+        if TOPIC not in topics or unsafe or not same_repository:
+            candidate["status"] = "needs_review"
+            candidate["reasons"] = ["repository_changed_at_publish"]
+            continue
+        candidate["status"] = "accepted"
+        approved += 1
+
+    if approved == 0:
+        raise SyncError("no observed candidates passed live publication checks")
+    write_json(CANDIDATES_PATH, payload)
+    append_github_output("approved_count", str(approved))
+    print(f"Approved {approved} observed high-confidence candidates for publication.")
+    return approved
 
 
 def promote_accepted(
@@ -1095,6 +1140,10 @@ def main() -> None:
     )
     discover_parser.add_argument("--analyze-model", action="store_true")
     discover_parser.add_argument("--auto-publish", action="store_true")
+    approve_parser = subparsers.add_parser(
+        "approve-observed", help="approve a saved observation snapshot without rescanning"
+    )
+    approve_parser.add_argument("--limit", type=int)
     render_parser = subparsers.add_parser(
         "render", help="promote approved candidates and regenerate READMEs"
     )
@@ -1117,6 +1166,8 @@ def main() -> None:
             )
         elif args.command == "render":
             render(report=args.report, run_id=args.run_id)
+        elif args.command == "approve-observed":
+            approve_observed(limit=args.limit)
         elif args.command == "check":
             check()
         elif args.command == "summary":

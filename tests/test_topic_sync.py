@@ -171,13 +171,6 @@ class ClassificationTests(unittest.TestCase):
         retry_body = json.loads(call.call_args_list[1].args[0].data.decode("utf-8"))
         self.assertIn("could not be parsed", retry_body["messages"][-1]["content"])
 
-    def test_publish_mode_only_promotes_previously_observed_candidates(self):
-        with mock.patch.dict(
-            topic_sync.os.environ, {"MODEL_ANALYSIS_LIMIT": "10"}, clear=False
-        ):
-            self.assertEqual(topic_sync.effective_model_analysis_limit(False), 10)
-            self.assertEqual(topic_sync.effective_model_analysis_limit(True), 0)
-
     def test_promoted_candidates_are_stably_grouped_by_readme_category(self):
         catalog = {
             "plugins": [
@@ -225,6 +218,54 @@ class ClassificationTests(unittest.TestCase):
                 "existing-tool",
                 "new-automation",
             ],
+        )
+
+    def test_approve_observed_uses_snapshot_limit_and_live_checks(self):
+        candidates = {
+            "candidates": [
+                {
+                    "name": f"candidate-{value}",
+                    "repository_id": value,
+                    "status": "would_accept",
+                    "url": f"https://github.com/example/candidate-{value}",
+                }
+                for value in (201, 202, 203)
+            ],
+            "schema_version": 1,
+        }
+
+        class LiveClient:
+            def __init__(self, token=""):
+                pass
+
+            def get_json(self, url):
+                repository_id = int(url.rsplit("-", 1)[-1])
+                return (
+                    {
+                        "archived": False,
+                        "disabled": False,
+                        "fork": False,
+                        "id": repository_id,
+                        "is_template": False,
+                        "topics": ["dsh-plugin"],
+                    },
+                    {},
+                )
+
+        with tempfile.TemporaryDirectory() as directory:
+            original_path = topic_sync.CANDIDATES_PATH
+            try:
+                topic_sync.CANDIDATES_PATH = Path(directory) / "topic-candidates.json"
+                topic_sync.write_json(topic_sync.CANDIDATES_PATH, candidates)
+                with mock.patch.object(topic_sync, "GitHubClient", LiveClient):
+                    approved = topic_sync.approve_observed(limit=2)
+                saved = json.loads(topic_sync.CANDIDATES_PATH.read_text(encoding="utf-8"))
+            finally:
+                topic_sync.CANDIDATES_PATH = original_path
+        self.assertEqual(approved, 2)
+        self.assertEqual(
+            [item["status"] for item in saved["candidates"]],
+            ["accepted", "accepted", "would_accept"],
         )
 
     def test_marketing_description_is_rejected(self):

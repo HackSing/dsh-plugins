@@ -13,6 +13,11 @@ on:
         options:
           - observe
           - publish
+      max_promotions:
+        description: Maximum observed candidates to publish; 0 publishes all
+        required: true
+        default: 0
+        type: number
 
 permissions:
   contents: write
@@ -51,12 +56,22 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          RUN_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'scheduled' }}
+          MAX_PROMOTIONS: ${{ inputs.max_promotions || 0 }}
         run: |
-          args=(--analyze-model)
-          if [ "$AUTO_PUBLISH" = "true" ]; then
-            args+=(--auto-publish)
+          if [ "$RUN_MODE" = "publish" ]; then
+            args=(approve-observed)
+            if [ "$MAX_PROMOTIONS" != "0" ]; then
+              args+=(--limit "$MAX_PROMOTIONS")
+            fi
+            python3 scripts/sync_topic_plugins.py "${args[@]}"
+          else
+            args=(--analyze-model)
+            if [ "$AUTO_PUBLISH" = "true" ]; then
+              args+=(--auto-publish)
+            fi
+            python3 scripts/sync_topic_plugins.py discover "${args[@]}"
           fi
-          python3 scripts/sync_topic_plugins.py discover "${args[@]}"
       - name: Generate published directory and report
         id: render
         run: |
