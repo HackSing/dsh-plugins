@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/reconcile_submission_prs.py --output pr-intake.json
       - name: Upload the intake ledger
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: submission-pr-intake-${{ github.run_id }}
           path: pr-intake.json
