@@ -1,9 +1,12 @@
 import importlib.util
+import io
+import json
 import sys
 import tempfile
 import unittest
 from datetime import date
 from pathlib import Path
+from unittest import mock
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "sync_topic_plugins.py"
@@ -118,6 +121,55 @@ class ClassificationTests(unittest.TestCase):
         )
         topic_sync.apply_model_analysis(candidate, analysis, auto_publish=True)
         self.assertEqual(candidate["status"], "accepted")
+
+    def test_model_analysis_normalizes_deepseek_style_output(self):
+        analysis = topic_sync.parse_model_analysis(
+            "Analysis complete.\n```json\n"
+            '{"is_plugin":true,"category":"Automation",'
+            '"description_en":"Automates research workflows",'
+            '"description_zh":"自动执行研究工作流","confidence":"HIGH",'
+            '"evidence":"README identifies a DSH plugin"}'
+            "\n```"
+        )
+        self.assertEqual(analysis["category"], "automation")
+        self.assertEqual(analysis["confidence"], "high")
+        self.assertEqual(analysis["evidence"], ["README identifies a DSH plugin"])
+
+    def test_model_client_retries_once_after_invalid_json(self):
+        valid = {
+            "choices": [
+                {
+                    "message": {
+                        "content": json.dumps(
+                            {
+                                "is_plugin": True,
+                                "category": "automation",
+                                "description_en": "Automates research workflows.",
+                                "description_zh": "自动执行研究工作流。",
+                                "confidence": "high",
+                                "evidence": ["Manifest and README agree"],
+                            },
+                            ensure_ascii=False,
+                        )
+                    }
+                }
+            ]
+        }
+        responses = [
+            io.BytesIO(json.dumps({"choices": [{"message": {"content": ""}}]}).encode()),
+            io.BytesIO(json.dumps(valid, ensure_ascii=False).encode()),
+        ]
+        client = topic_sync.OpenAICompatibleClient(
+            "test-token", "deepseek-test", "https://example.invalid/v1"
+        )
+        with mock.patch.object(topic_sync.urllib.request, "urlopen", side_effect=responses) as call:
+            analysis = client.analyze(
+                repository(), "# dsh-example\nA DSH plugin.", ["package.json+source"]
+            )
+        self.assertEqual(call.call_count, 2)
+        self.assertEqual(analysis["model"], "deepseek-test")
+        retry_body = json.loads(call.call_args_list[1].args[0].data.decode("utf-8"))
+        self.assertIn("could not be parsed", retry_body["messages"][-1]["content"])
 
     def test_marketing_description_is_rejected(self):
         with self.assertRaises(topic_sync.SyncError):
