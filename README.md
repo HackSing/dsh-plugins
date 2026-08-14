@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **95 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 14, 2026**.
+Explore **98 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 14, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **95 plugins** across four broad areas. Each plugin appears once, under 
 
 ### Current snapshot
 
-This is the first published directory snapshot: **95 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **98 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -69,6 +69,7 @@ This is the first published directory snapshot: **95 plugins**, grouped into **4
 - [dsh-auto-chess](https://github.com/omdsh-dev/dsh-auto-chess) — Provides auto-chess matches for human-versus-AI or AI-versus-AI play.
 - [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — Adds a short-video sidebar with native playback, series navigation, and history resume.
 - [dsh-model-modes](https://github.com/DTSFO/dsh-model-modes) — Adds a Fast mode switch and configurable reasoning effort profiles to the DeepSeek Harness web composer.
+- [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) — Converts dropped or pasted images and files into workspace paths for text-only models in DeepSeek Harness chat.
 
 ## Tools & Capabilities
 
@@ -92,6 +93,8 @@ This is the first published directory snapshot: **95 plugins**, grouped into **4
 - [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — Discovers tools on demand for each agent with progressive schema disclosure.
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — Adds classrooms, slides, interactive widgets, and Socratic teaching flows through OpenMAIC.
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) — Provides academic-assistant capabilities.
+- [dsh-email](https://github.com/STARDUSTLC666/dsh-email) — Provides six email tools (list, read, search, send, folders, attachment) for DeepSeek Harness with multi-account support and presets for common email providers.
+- [widget-dock](https://github.com/MorGogh/widget-dock) — Provides a draggable widget dock for DeepSeek Harness showing balance, tokens, stats, commands, goals, and cost.
 
 ## Automation & Agents
 
