@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **103 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 14, 2026**.
+Explore **104 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 14, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **103 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **103 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **104 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -99,6 +99,7 @@ This is the first published directory snapshot: **103 plugins**, grouped into **
 - [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.
 - [dsh-plugins-store](https://github.com/ZASENJC/dsh-plugins-store) — A static directory that automatically collects and categorizes GitHub dsh-plugin topic repositories, and includes an optional DSH web plugin for browsing the catalog.
 - [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — Redacts sensitive values from DeepSeek Harness session telemetry before export.
+- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — Imports conversation histories from various AI agent tools into DeepSeek Harness for continued chat.
 
 ## Automation & Agents
 

@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31809900757 -->
+- Automatically added [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:31801804894 -->
 - Automatically added [DeepJIT](https://github.com/fly3366/DeepJIT) to Automation & Agents from the `dsh-plugin` topic.
 - Automatically added [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) to Interaction & Experience from the `dsh-plugin` topic.

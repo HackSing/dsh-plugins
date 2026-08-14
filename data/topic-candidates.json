@@ -7986,25 +7986,6 @@
     {
       "category_confidence": "high",
       "category_suggestion": "interaction",
-      "description_en": "从Claude Code、Codex、Reasonix等Agent工具导入迁移历史消息，并在DeepSeek Harness(DSH)中继续对话",
-      "description_zh": "将多种Agent工具的历史对话导入DeepSeek Harness会话。",
-      "enriched": true,
-      "fingerprint": "Nwflower/dsh-chat-import|从Claude Code、Codex、Reasonix等Agent工具导入迁移历史消息，并在DeepSeek Harness(DSH)中继续对话|False|False|False|False|2026-08-14T12:21:46Z|MIT",
-      "name": "dsh-chat-import",
-      "reasons": [
-        "model_analysis_deferred"
-      ],
-      "repository_id": 1333200468,
-      "status": "needs_review",
-      "structure_evidence": [
-        "cordis.patch.yml",
-        "package.json+source"
-      ],
-      "url": "https://github.com/Nwflower/dsh-chat-import"
-    },
-    {
-      "category_confidence": "high",
-      "category_suggestion": "interaction",
       "description_en": "Peer-to-peer conversation linking for DeepSeek Harness (DSH): @-mention any session, wake it up, chat across conversations. Type @ in the composer, pick a session, send — the target agent is woken via agent.send. Persistent message board, native-feel inbox panel, 5 chat_link_* tools. dsh-plugin.",
       "description_zh": "",
       "enriched": false,
