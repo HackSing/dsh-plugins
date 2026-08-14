@@ -613,6 +613,15 @@
       "url": "https://github.com/030611/dsh-telemetry-redactor"
     },
     {
+      "category": "tools",
+      "description_en": "Imports conversation histories from various AI agent tools into DeepSeek Harness for continued chat.",
+      "description_zh": "将多种AI代理工具的历史会话导入DeepSeek Harness以继续对话。",
+      "name": "dsh-chat-import",
+      "repository_id": 1333200468,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Nwflower/dsh-chat-import"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
