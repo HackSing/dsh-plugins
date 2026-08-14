@@ -4,17 +4,25 @@ This repository is operated as a useful directory first and a backup index secon
 
 ## Daily: Topic discovery
 
-The `Discover DSH Topic plugins` workflow runs daily at 03:37 UTC and can also be started manually. It queries GitHub for `topic:dsh-plugin`, updates one rolling Draft PR, preserves review decisions already made on that branch, and never writes directly to `main`.
+The `Discover and publish DSH Topic plugins` workflow runs daily at 03:37 UTC and can also be started manually. It queries GitHub for `topic:dsh-plugin`, updates one rolling automation branch, and uses GitHub Models to produce structured bilingual assessments. Repository variable `AUTO_PUBLISH=false` keeps the workflow in observation mode; `AUTO_PUBLISH=true` permits high-confidence candidates to be merged after the same workflow passes every validation.
+
+GitHub Search exposes at most 1,000 results per query, so the scanner automatically partitions larger Topics by repository creation date and rejects incomplete shards. README and root-structure enrichment is bounded per run; deferred candidates continue on later runs instead of exhausting the repository API quota.
 
 Review the automation output in this order:
 
 1. Confirm that the scan is complete and that the API did not return partial results.
 2. Review `proposed` and `needs_review` candidates in `data/topic-candidates.json`.
 3. Confirm the repository is a real plugin; never run candidate code as part of discovery.
-4. Approve the category and both descriptions before setting `status` to `accepted`.
-5. Run `python3 scripts/sync_topic_plugins.py render`, then both validation commands.
+4. In observation mode, review `would_accept` results to calibrate false positives; ordinary daily operation does not require per-plugin approval.
+5. In publish mode, verify that each successful run produced a repository report and an `automation-report` Issue.
 
 Topic removal, repository archival, and repository deletion do not automatically remove a published entry. They create a maintenance decision instead.
+
+The `Weekly plugin candidate exceptions` workflow groups ambiguous candidates into one deduplicated Issue. It does not create an Issue when the exception snapshot has not changed.
+
+### Publication report recovery
+
+Every report under `reports/sync/` is keyed to the commit that first added it. At the end of each daily run, the workflow searches all published reports for their `report-sha` Issue marker and creates any missing notification. A notification failure therefore fails delivery without adding the plugin twice, and a later run retries it.
 
 ## Weekly: DSH Plugin Radar
 

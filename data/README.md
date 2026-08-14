@@ -4,19 +4,22 @@
 
 Candidate states:
 
-- `proposed`: automated rules found clear plugin evidence, but publication still needs review.
+- `proposed`: deterministic rules found clear plugin evidence and model analysis is pending.
+- `would_accept`: rules and the model agree at high confidence, but observation mode prevents publication.
 - `needs_review`: evidence, license, description, or category is incomplete or ambiguous.
 - `excluded`: deterministic rules identified a fork, template, directory, tutorial, inactive repository, or missing README.
 - `watch`: a maintainer chose to revisit the repository after it changes.
 - `rejected`: a maintainer decided not to include the repository.
-- `accepted`: a maintainer approved the category and both descriptions; `render` promotes it to `plugins.json`.
+- `accepted`: publish mode approved the high-confidence result, or a maintainer explicitly approved it; `render` promotes it to `plugins.json`.
 
 Commands:
 
 ```bash
 python3 scripts/sync_topic_plugins.py discover --dry-run
-python3 scripts/sync_topic_plugins.py render
+python3 scripts/sync_topic_plugins.py render --report --run-id manual
 python3 scripts/sync_topic_plugins.py check
 ```
 
 Discovery treats repository metadata and README content as untrusted input. It reads them through the GitHub API and never clones, installs, or executes candidate code.
+
+Permanent successful-collection reports are stored under `reports/sync/`. The report file is generated before publication; the matching GitHub Issue records the final merged commit SHA.

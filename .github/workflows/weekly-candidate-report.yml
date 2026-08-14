@@ -1,0 +1,45 @@
+name: Weekly plugin candidate exceptions
+
+on:
+  schedule:
+    - cron: "47 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Load the latest automation candidate ledger
+        id: ledger
+        run: |
+          if git fetch origin automation/topic-sync; then
+            git show FETCH_HEAD:data/topic-candidates.json > data/topic-candidates.json
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Generate the exception summary
+        if: steps.ledger.outputs.available == 'true'
+        id: summary
+        run: python3 scripts/sync_topic_plugins.py exceptions > candidate-exceptions.md
+      - name: Deliver a changed exception snapshot
+        if: steps.ledger.outputs.available == 'true' && steps.summary.outputs.actionable_count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          digest=$(sha256sum candidate-exceptions.md | cut -d ' ' -f 1)
+          marker="exception-snapshot:$digest"
+          existing=$(gh issue list --state all --search "\"$marker\" in:body" --json number --jq 'length')
+          if [ "$existing" = "0" ]; then
+            gh label create automation-exception --color D93F0B --description "Automated plugin candidate exception" --force
+            echo >> candidate-exceptions.md
+            echo "<!-- $marker -->" >> candidate-exceptions.md
+            gh issue create --title "DSH 插件候选异常汇总 — $(date -u +%F)" --label automation-exception --assignee HackSing --body-file candidate-exceptions.md
+          fi

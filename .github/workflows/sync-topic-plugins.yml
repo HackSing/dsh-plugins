@@ -1,12 +1,23 @@
-name: Discover DSH Topic plugins
+name: Discover and publish DSH Topic plugins
 
 on:
   schedule:
     - cron: "37 3 * * *"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: Run in observation mode or publish high-confidence candidates
+        required: true
+        default: observe
+        type: choice
+        options:
+          - observe
+          - publish
 
 permissions:
   contents: write
+  issues: write
+  models: read
   pull-requests: write
 
 concurrency:
@@ -16,6 +27,11 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
+    env:
+      AUTO_PUBLISH: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'publish') || vars.AUTO_PUBLISH == 'true' }}
+      ENRICHMENT_LIMIT: "150"
+      GITHUB_MODEL: openai/gpt-4.1-mini
+      MODEL_ANALYSIS_LIMIT: "10"
     steps:
       - uses: actions/checkout@v6
         with:
@@ -29,21 +45,45 @@ jobs:
           else
             git switch --create "$branch"
           fi
-      - name: Discover topic candidates
+      - name: Discover and assess topic candidates
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 scripts/sync_topic_plugins.py discover
-      - name: Promote maintainer-approved candidates
-        run: python3 scripts/sync_topic_plugins.py render
+        run: |
+          args=(--analyze-model)
+          if [ "$AUTO_PUBLISH" = "true" ]; then
+            args+=(--auto-publish)
+          fi
+          python3 scripts/sync_topic_plugins.py discover "${args[@]}"
+      - name: Generate published directory and report
+        id: render
+        run: |
+          args=(--run-id "$GITHUB_RUN_ID")
+          if [ "$AUTO_PUBLISH" = "true" ]; then
+            args+=(--report)
+          fi
+          python3 scripts/sync_topic_plugins.py render "${args[@]}"
       - name: Validate generated directory
         run: |
           python3 scripts/sync_topic_plugins.py check
           python3 scripts/validate_directory.py
           python3 -m unittest discover -s tests -p "test_*.py"
-      - name: Stop when the scan produces no changes
+          snapshot() {
+            git status --porcelain -- README.md README.zh.md CHANGELOG.md data reports
+            sha256sum README.md README.zh.md CHANGELOG.md data/*.json
+            find reports -type f -print0 2>/dev/null | sort -z | xargs -0 -r sha256sum
+          }
+          before=$(snapshot)
+          args=(--run-id "$GITHUB_RUN_ID")
+          if [ "$AUTO_PUBLISH" = "true" ]; then
+            args+=(--report)
+          fi
+          python3 scripts/sync_topic_plugins.py render "${args[@]}"
+          after=$(snapshot)
+          test "$before" = "$after"
+      - name: Detect automation changes
         id: changes
         run: |
-          if [ -z "$(git status --porcelain -- README.md README.zh.md data)" ]; then
+          if [ -z "$(git status --porcelain -- README.md README.zh.md CHANGELOG.md data reports)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -56,20 +96,57 @@ jobs:
           branch="automation/topic-sync"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md README.zh.md data/plugins.json data/topic-candidates.json
-          git commit -m "chore: refresh dsh-plugin topic candidates"
+          git add README.md README.zh.md CHANGELOG.md data reports
+          git commit -m "chore: refresh dsh-plugin topic catalog"
           git push --force-with-lease origin "HEAD:$branch"
-          pr_number=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+      - name: Open or update the automation pull request
+        if: steps.changes.outputs.changed == 'true'
+        id: pull_request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="automation/topic-sync"
           body=$(mktemp)
           python3 scripts/sync_topic_plugins.py summary > "$body"
-          cat >> "$body" <<'EOF'
-
-          This is an automated discovery proposal. The `dsh-plugin` topic is a discovery signal, not an endorsement.
-
-          Review `data/topic-candidates.json`. Set a candidate to `accepted` only after confirming its category and both descriptions, then run `python3 scripts/sync_topic_plugins.py render`. Merge remains a maintainer decision.
-          EOF
+          echo >> "$body"
+          echo "Observation mode proposes high-confidence candidates without publishing them. Publish mode promotes them only after the same workflow passes all validations." >> "$body"
+          pr_number=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
           if [ -z "$pr_number" ]; then
-            gh pr create --draft --base main --head "$branch" --title "chore: review dsh-plugin topic candidates" --body-file "$body"
+            pr_url=$(gh pr create --draft --base main --head "$branch" --title "chore: automated dsh-plugin topic update" --body-file "$body")
+            pr_number=$(gh pr view "$pr_url" --json number --jq .number)
           else
             gh pr edit "$pr_number" --body-file "$body"
           fi
+          echo "number=$pr_number" >> "$GITHUB_OUTPUT"
+      - name: Automatically merge a successful plugin publication
+        if: env.AUTO_PUBLISH == 'true' && steps.render.outputs.promoted_count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.pull_request.outputs.number }}
+        run: |
+          gh pr ready "$PR_NUMBER" || true
+          gh pr merge "$PR_NUMBER" --squash || gh pr merge "$PR_NUMBER" --squash --admin
+          git fetch origin main:refs/remotes/origin/main
+          git push --force-with-lease origin "origin/main:automation/topic-sync"
+      - name: Deliver any missing successful collection reports
+        if: always() && !cancelled()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git fetch origin main:refs/remotes/origin/main
+          gh label create automation-report --color 1D76DB --description "Automated plugin collection report" --force
+          while IFS= read -r path; do
+            [ -n "$path" ] || continue
+            sha=$(git log -1 --format=%H origin/main -- "$path")
+            marker="report-sha:$sha"
+            existing=$(gh issue list --state all --search "\"$marker\" in:body" --json number --jq 'length')
+            if [ "$existing" = "0" ]; then
+              body=$(mktemp)
+              git show "origin/main:$path" > "$body"
+              echo >> "$body"
+              echo "- 最终提交：[${sha:0:7}](https://github.com/${GITHUB_REPOSITORY}/commit/$sha)" >> "$body"
+              echo >> "$body"
+              echo "<!-- $marker -->" >> "$body"
+              gh issue create --title "DSH 插件自动收录报告 — $(basename "$path" .md)" --label automation-report --assignee HackSing --body-file "$body"
+            fi
+          done < <(git ls-tree -r --name-only origin/main reports/sync)

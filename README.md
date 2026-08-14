@@ -146,7 +146,7 @@ Contributions are welcome. Add or update the plugin in `data/plugins.json`, keep
 
 Adding the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to a plugin repository also makes it easier to discover.
 
-A daily automation scans that topic and prepares a Draft PR for maintainer review. Topic membership is only a discovery signal: no candidate is published until its category and bilingual description have been approved.
+A daily automation scans that topic, applies structural rules, and uses GitHub Models to propose a category and factual bilingual descriptions. It starts in observation mode; when automatic publication is enabled, only candidates confirmed at high confidence are published after all directory checks pass. Every successful collection produces a repository report and a GitHub Issue notification.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for acceptance criteria, review rules, and the contribution workflow.
 

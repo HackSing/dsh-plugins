@@ -146,7 +146,7 @@
 
 建议同时为插件仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 主题，方便其他用户发现。
 
-自动化任务每天扫描该 Topic，并生成等待维护者审核的 Draft PR。Topic 只作为发现信号；分类和中英文描述未经确认的候选项目不会直接发布。
+自动化任务每天扫描该 Topic，通过结构规则和 GitHub Models 生成分类及事实性的双语描述。任务首先以观察模式运行；开启自动发布后，只有被高置信度确认且通过全部目录校验的候选项目才会发布。每次成功收录都会生成仓库报告并通过 GitHub Issue 通知维护者。
 
 详细收录标准、审核规则和贡献流程请参阅 [CONTRIBUTING.md](CONTRIBUTING.md)。
 

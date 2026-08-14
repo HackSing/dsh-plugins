@@ -32,7 +32,7 @@ Inclusion means the project is discoverable. It is not a compatibility certifica
 
 ## Topic candidate review
 
-The daily discovery workflow stores unreviewed repositories in `data/topic-candidates.json` and opens or updates one Draft PR. A topic candidate is not automatically accepted.
+The daily discovery workflow stores assessed repositories in `data/topic-candidates.json` and opens or updates one rolling pull request. Observation mode never publishes candidates. In publish mode, deterministic rules and GitHub Models may automatically accept a candidate only when both produce a high-confidence result.
 
 To approve a candidate:
 
@@ -43,6 +43,8 @@ To approve a candidate:
 5. Run `python3 scripts/sync_topic_plugins.py render`; the candidate will move into the published catalog.
 
 Use `rejected` for a confirmed non-plugin or unsuitable project, and `watch` when the project may become eligible later. These manual decisions are preserved until the repository changes materially.
+
+Successful automatic additions also update `CHANGELOG.md`, generate a permanent file under `reports/sync/`, and create an `automation-report` Issue after the merged commit is confirmed remotely.
 
 Maintainers may adjust wording or placement to keep the directory consistent. A missing license, inaccessible repository, unclear DSH relationship, or unverified claim may pause acceptance.
 
