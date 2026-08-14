@@ -6,6 +6,13 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31801804894 -->
+- Automatically added [DeepJIT](https://github.com/fly3366/DeepJIT) to Automation & Agents from the `dsh-plugin` topic.
+- Automatically added [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) to Interaction & Experience from the `dsh-plugin` topic.
+- Automatically added [dsh-enhance](https://github.com/vcxmug/dsh-enhance) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [dsh-plugins-store](https://github.com/ZASENJC/dsh-plugins-store) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:31800120653 -->
 - Automatically added [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) to Interaction & Experience from the `dsh-plugin` topic.
 - Automatically added [dsh-email](https://github.com/STARDUSTLC666/dsh-email) to Tools & Capabilities from the `dsh-plugin` topic.

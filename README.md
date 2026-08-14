@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **98 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 14, 2026**.
+Explore **103 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 14, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **98 plugins** across four broad areas. Each plugin appears once, under 
 
 ### Current snapshot
 
-This is the first published directory snapshot: **98 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **103 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -70,6 +70,7 @@ This is the first published directory snapshot: **98 plugins**, grouped into **4
 - [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — Adds a short-video sidebar with native playback, series navigation, and history resume.
 - [dsh-model-modes](https://github.com/DTSFO/dsh-model-modes) — Adds a Fast mode switch and configurable reasoning effort profiles to the DeepSeek Harness web composer.
 - [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) — Converts dropped or pasted images and files into workspace paths for text-only models in DeepSeek Harness chat.
+- [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — Provides cross-session agent-to-agent messaging for DeepSeek Harness, with offline delivery, receipts, and session navigation.
 
 ## Tools & Capabilities
 
@@ -95,6 +96,9 @@ This is the first published directory snapshot: **98 plugins**, grouped into **4
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) — Provides academic-assistant capabilities.
 - [dsh-email](https://github.com/STARDUSTLC666/dsh-email) — Provides six email tools (list, read, search, send, folders, attachment) for DeepSeek Harness with multi-account support and presets for common email providers.
 - [widget-dock](https://github.com/MorGogh/widget-dock) — Provides a draggable widget dock for DeepSeek Harness showing balance, tokens, stats, commands, goals, and cost.
+- [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.
+- [dsh-plugins-store](https://github.com/ZASENJC/dsh-plugins-store) — A static directory that automatically collects and categorizes GitHub dsh-plugin topic repositories, and includes an optional DSH web plugin for browsing the catalog.
+- [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — Redacts sensitive values from DeepSeek Harness session telemetry before export.
 
 ## Automation & Agents
 
@@ -108,6 +112,7 @@ This is the first published directory snapshot: **98 plugins**, grouped into **4
 - [dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) — Runs an adversarial discover, fix, and review cycle.
 - [dsh-track](https://github.com/fakechris/dsh-track) — Embeds decision tracking, idea capture, and Linear-style issue management.
 - [dsh-advisor](https://github.com/btspoony/dsh-advisor) — Pairs the main agent with a second model that reviews each turn and contributes notes.
+- [DeepJIT](https://github.com/fly3366/DeepJIT) — JIT compiler plugin for deepseek-harness that mines agent execution traces and compiles recurring workflows into reusable skills and flow templates.
 
 ## Development & Ecosystem
 

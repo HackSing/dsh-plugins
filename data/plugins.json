@@ -379,6 +379,15 @@
       "url": "https://github.com/loudMore/dsh-drop-to-path"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides cross-session agent-to-agent messaging for DeepSeek Harness, with offline delivery, receipts, and session navigation.",
+      "description_zh": "为 DeepSeek Harness 提供跨会话 Agent 间消息传递，支持离线投递、回执和会话导航。",
+      "name": "dsh-agent-message",
+      "repository_id": 1333415260,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GengDaPeng/dsh-agent-message"
+    },
+    {
       "category": "tools",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
@@ -577,6 +586,33 @@
       "url": "https://github.com/MorGogh/widget-dock"
     },
     {
+      "category": "tools",
+      "description_en": "Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.",
+      "description_zh": "提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。",
+      "name": "dsh-enhance",
+      "repository_id": 1333335502,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/vcxmug/dsh-enhance"
+    },
+    {
+      "category": "tools",
+      "description_en": "A static directory that automatically collects and categorizes GitHub dsh-plugin topic repositories, and includes an optional DSH web plugin for browsing the catalog.",
+      "description_zh": "自动收录和分类 GitHub dsh-plugin Topic 项目的静态目录网站，并提供用于在 DSH 中浏览目录的可选 Web 插件。",
+      "name": "dsh-plugins-store",
+      "repository_id": 1333579278,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ZASENJC/dsh-plugins-store"
+    },
+    {
+      "category": "tools",
+      "description_en": "Redacts sensitive values from DeepSeek Harness session telemetry before export.",
+      "description_zh": "在导出前对 DeepSeek Harness 会话遥测中的敏感值进行脱敏处理。",
+      "name": "dsh-telemetry-redactor",
+      "repository_id": 1333368566,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/030611/dsh-telemetry-redactor"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
@@ -665,6 +701,15 @@
       "repository_id": null,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/btspoony/dsh-advisor"
+    },
+    {
+      "category": "automation",
+      "description_en": "JIT compiler plugin for deepseek-harness that mines agent execution traces and compiles recurring workflows into reusable skills and flow templates.",
+      "description_zh": "用于 deepseek-harness 的 JIT 编译器插件，挖掘智能体执行轨迹并将重复工作流编译为可复用的技能和流程模板。",
+      "name": "DeepJIT",
+      "repository_id": 1333380632,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/fly3366/DeepJIT"
     },
     {
       "category": "development",

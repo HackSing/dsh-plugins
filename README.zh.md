@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **98 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 14 日**。
+当前整理 **103 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 14 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **98 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **103 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -70,6 +70,7 @@
 - [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — 增加短视频侧栏，支持原生播放、系列导航和历史续播。
 - [dsh-model-modes](https://github.com/DTSFO/dsh-model-modes) — 为DeepSeek Harness Web 编辑器添加快速模式开关与可配置的推理努力档位。
 - [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) — 在 DeepSeek Harness 聊天中将拖放或粘贴的图片和文件转换为工作区路径，供纯文本模型使用。
+- [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — 为 DeepSeek Harness 提供跨会话 Agent 间消息传递，支持离线投递、回执和会话导航。
 
 ## 工具与能力
 
@@ -95,6 +96,9 @@
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) — 提供面向学术场景的辅助能力。
 - [dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 为 DeepSeek Harness 提供六个邮件工具（列表、读取、搜索、发送、文件夹、附件），支持多账号及常见邮箱服务商预设。
 - [widget-dock](https://github.com/MorGogh/widget-dock) — 为 DeepSeek Harness 提供可拖拽的小组件面板，展示余额、令牌、统计、命令、目标和成本。
+- [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — 提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。
+- [dsh-plugins-store](https://github.com/ZASENJC/dsh-plugins-store) — 自动收录和分类 GitHub dsh-plugin Topic 项目的静态目录网站，并提供用于在 DSH 中浏览目录的可选 Web 插件。
+- [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — 在导出前对 DeepSeek Harness 会话遥测中的敏感值进行脱敏处理。
 
 ## 自动化与智能体
 
@@ -108,6 +112,7 @@
 - [dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) — 执行发现问题、修复和复查的对抗式闭环。
 - [dsh-track](https://github.com/fakechris/dsh-track) — 内置决策跟踪、想法收集及 Linear 风格的问题管理。
 - [dsh-advisor](https://github.com/btspoony/dsh-advisor) — 配置第二个模型逐轮审查主智能体并补充建议。
+- [DeepJIT](https://github.com/fly3366/DeepJIT) — 用于 deepseek-harness 的 JIT 编译器插件，挖掘智能体执行轨迹并将重复工作流编译为可复用的技能和流程模板。
 
 ## 开发与生态集成
 
