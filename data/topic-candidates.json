@@ -225,12 +225,28 @@
       "url": "https://github.com/orxz/deepseek-harness-themes"
     },
     {
+      "category_confidence": "high",
+      "category_suggestion": "automation",
+      "description_en": "dsh plugin bridging agentmemory REST API: memory_search / memory_remember / memory_forget / memory_health",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "Yogioo/dsh-agentmemory|dsh plugin bridging agentmemory REST API: memory_search / memory_remember / memory_forget / memory_health|False|False|False|False|2026-08-14T07:32:50Z|MIT",
+      "name": "dsh-agentmemory",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333915343,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/Yogioo/dsh-agentmemory"
+    },
+    {
       "category_confidence": "low",
       "category_suggestion": "tools",
       "description_en": "DSHWeb 审批增强插件：无感替代内置审批窗口，支持「拒绝并附言」，并在拒绝后终止当前回合、让模型重新结合附言思考",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "MaYiFei1995/dsh-approval-comment|DSHWeb 审批增强插件：无感替代内置审批窗口，支持「拒绝并附言」，并在拒绝后终止当前回合、让模型重新结合附言思考|False|False|False|False|2026-08-14T07:26:42Z|MIT",
+      "fingerprint": "MaYiFei1995/dsh-approval-comment|DSHWeb 审批增强插件：无感替代内置审批窗口，支持「拒绝并附言」，并在拒绝后终止当前回合、让模型重新结合附言思考|False|False|False|False|2026-08-14T07:27:27Z|MIT",
       "name": "dsh-approval-comment",
       "reasons": [
         "empty_repository"
@@ -243,10 +259,26 @@
     {
       "category_confidence": "low",
       "category_suggestion": "tools",
-      "description_en": "",
+      "description_en": "DeepSeek Harness 自动审批门控：Flash 预判不可回补操作，安全自动批准、危险转人工（fail-safe）",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "Letter2025/dsh-approval-llm||False|False|False|False|2026-08-14T07:01:43Z|",
+      "fingerprint": "moon09300731/dsh-approval-gate|DeepSeek Harness 自动审批门控：Flash 预判不可回补操作，安全自动批准、危险转人工（fail-safe）|False|False|False|False|2026-08-14T07:29:41Z|MIT",
+      "name": "dsh-approval-gate",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333918421,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/moon09300731/dsh-approval-gate"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "Model-based permission approval (approve-for-me) for DeepSeek Harness: an approval/request answerer backed by a separate reviewer model",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "Letter2025/dsh-approval-llm|Model-based permission approval (approve-for-me) for DeepSeek Harness: an approval/request answerer backed by a separate reviewer model|False|False|False|False|2026-08-14T07:32:21Z|",
       "name": "dsh-approval-llm",
       "reasons": [
         "empty_repository"
@@ -271,6 +303,22 @@
       "status": "excluded",
       "structure_evidence": [],
       "url": "https://github.com/AtlasCloudAI/dsh-atlascloud"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "CZX2244/dsh-bilibili||False|False|False|False|2026-08-14T07:25:15Z|MIT",
+      "name": "dsh-bilibili",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333906304,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/CZX2244/dsh-bilibili"
     },
     {
       "category_confidence": "low",
@@ -339,6 +387,22 @@
     {
       "category_confidence": "low",
       "category_suggestion": "tools",
+      "description_en": "DeepSeek Harness plugin: image_gen tool backed by Codex CLI (gpt-image-2)",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "mindcarver/dsh-codex-canvas|DeepSeek Harness plugin: image_gen tool backed by Codex CLI (gpt-image-2)|False|False|False|False|2026-08-14T07:31:23Z|",
+      "name": "dsh-codex-canvas",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333919779,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/mindcarver/dsh-codex-canvas"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
       "description_en": "DSH 插件：按任务复杂度自动选模型 — 简单问题用便宜的，难题用贵的。跟踪花费，守住预算。",
       "description_zh": "",
       "enriched": true,
@@ -385,12 +449,28 @@
       "url": "https://github.com/Jesse-njx/dsh-crosstalk"
     },
     {
+      "category_confidence": "medium",
+      "category_suggestion": "interaction",
+      "description_en": "A DeepSeek usage panel plugin for the DeepSeek Harness Web GUI. It adds a 「Usage / 用量」 entry at the bottom of the left sidebar.",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "xavier711/dsh-deepseek-usage|A DeepSeek usage panel plugin for the DeepSeek Harness Web GUI. It adds a 「Usage / 用量」 entry at the bottom of the left sidebar.|False|False|False|False|2026-08-14T07:28:43Z|",
+      "name": "dsh-deepseek-usage",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333915722,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/xavier711/dsh-deepseek-usage"
+    },
+    {
       "category_confidence": "low",
       "category_suggestion": "tools",
       "description_en": "Durable delayed decisions for DeepSeek Harness",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "m-guo-2/dsh-delayed-task|Durable delayed decisions for DeepSeek Harness|False|False|False|False|2026-08-14T07:24:49Z|MIT",
+      "fingerprint": "m-guo-2/dsh-delayed-task|Durable delayed decisions for DeepSeek Harness|False|False|False|False|2026-08-14T07:27:43Z|MIT",
       "name": "dsh-delayed-task",
       "reasons": [
         "empty_repository"
@@ -406,7 +486,7 @@
       "description_en": "Lightweight cross-platform desktop shell for DeepSeek Harness",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "Sunshine-oneday/DSH-Desktop|Lightweight cross-platform desktop shell for DeepSeek Harness|False|False|False|False|2026-08-14T07:16:28Z|MIT",
+      "fingerprint": "Sunshine-oneday/DSH-Desktop|Lightweight cross-platform desktop shell for DeepSeek Harness|False|False|False|False|2026-08-14T07:28:08Z|MIT",
       "name": "DSH-Desktop",
       "reasons": [
         "empty_repository"
@@ -447,22 +527,6 @@
       "status": "excluded",
       "structure_evidence": [],
       "url": "https://github.com/oceanxuikun/dsh-eva-theme-plugin"
-    },
-    {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
-      "description_en": "",
-      "description_zh": "",
-      "enriched": true,
-      "fingerprint": "wenliang9527/dsh-eye||False|False|False|False|2026-08-14T07:05:43Z|",
-      "name": "dsh-eye",
-      "reasons": [
-        "empty_repository"
-      ],
-      "repository_id": 1333871199,
-      "status": "excluded",
-      "structure_evidence": [],
-      "url": "https://github.com/wenliang9527/dsh-eye"
     },
     {
       "category_confidence": "medium",
@@ -518,7 +582,7 @@
       "description_en": "DeepSeek Harness plugin: GitLab and GitHub API tokens stay out of the model context — encrypted at rest (AES-256-GCM), tools on demand, web settings panel.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "revive/dsh-git-credentials|DeepSeek Harness plugin: GitLab and GitHub API tokens stay out of the model context — encrypted at rest (AES-256-GCM), tools on demand, web settings panel.|False|False|False|False|2026-08-14T07:24:52Z|MIT",
+      "fingerprint": "revive/dsh-git-credentials|DeepSeek Harness plugin: GitLab and GitHub API tokens stay out of the model context — encrypted at rest (AES-256-GCM), tools on demand, web settings panel.|False|False|False|False|2026-08-14T07:31:30Z|MIT",
       "name": "dsh-git-credentials",
       "reasons": [
         "empty_repository"
@@ -550,7 +614,7 @@
       "description_en": "DeepSeek Harness (dsh) 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例/同模型多 Agent 实测对比（中文 + 英文 PDF）",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "Electricitysheep/dsh-handbook|DeepSeek Harness (dsh) 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例/同模型多 Agent 实测对比（中文 + 英文 PDF）|False|False|False|False|2026-08-14T07:23:52Z|",
+      "fingerprint": "Electricitysheep/dsh-handbook|DeepSeek Harness (dsh) 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例/同模型多 Agent 实测对比（中文 + 英文 PDF）|False|False|False|False|2026-08-14T07:32:36Z|",
       "name": "dsh-handbook",
       "reasons": [
         "tutorial_or_handbook"
@@ -1190,7 +1254,7 @@
       "description_en": "A bilingual, continuously maintained directory of plugins for DeepSeek Harness (DSH).",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "HackSing/dsh-plugins|A bilingual, continuously maintained directory of plugins for DeepSeek Harness (DSH).|False|False|False|False|2026-08-14T07:26:10Z|CC-BY-4.0",
+      "fingerprint": "HackSing/dsh-plugins|A bilingual, continuously maintained directory of plugins for DeepSeek Harness (DSH).|False|False|False|False|2026-08-14T07:32:41Z|CC-BY-4.0",
       "name": "dsh-plugins",
       "reasons": [
         "current_directory_repository"
@@ -1318,7 +1382,7 @@
       "description_en": "Voice control and multi-session task dispatch for DeepSeek Harness, powered by Qwen Audio Agent",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "leaveimagination/dsh-qwen-voice|Voice control and multi-session task dispatch for DeepSeek Harness, powered by Qwen Audio Agent|False|False|False|False|2026-08-14T07:05:12Z|MIT",
+      "fingerprint": "leaveimagination/dsh-qwen-voice|Voice control and multi-session task dispatch for DeepSeek Harness, powered by Qwen Audio Agent|False|False|False|False|2026-08-14T07:32:29Z|MIT",
       "name": "dsh-qwen-voice",
       "reasons": [
         "empty_repository"
@@ -1375,6 +1439,22 @@
       "status": "excluded",
       "structure_evidence": [],
       "url": "https://github.com/Songran241/dsh-req-workbench"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "anweat/dsh-restart||False|False|False|False|2026-08-14T07:30:03Z|MIT",
+      "name": "dsh-restart",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333917455,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/anweat/dsh-restart"
     },
     {
       "category_confidence": "low",
@@ -1526,7 +1606,7 @@
       "description_en": "Manage DeepSeek Harness skills: list and toggle filesystem skills instantly",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "Thomas-key/dsh-skill-manager|Manage DeepSeek Harness skills: list and toggle filesystem skills instantly|False|False|False|False|2026-08-14T07:11:15Z|MIT",
+      "fingerprint": "Thomas-key/dsh-skill-manager|Manage DeepSeek Harness skills: list and toggle filesystem skills instantly|False|False|False|False|2026-08-14T07:29:33Z|MIT",
       "name": "dsh-skill-manager",
       "reasons": [
         "empty_repository"
@@ -1551,6 +1631,22 @@
       "status": "excluded",
       "structure_evidence": [],
       "url": "https://github.com/KinGao294/dsh-skin"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "springbrand-lab/dsh-skin-universe||False|False|False|False|2026-08-14T07:24:49Z|BSD-3-Clause",
+      "name": "dsh-skin-universe",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333910360,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/springbrand-lab/dsh-skin-universe"
     },
     {
       "category_confidence": "low",
@@ -1601,6 +1697,54 @@
       "url": "https://github.com/whyihaveyou/dsh-suite"
     },
     {
+      "category_confidence": "medium",
+      "category_suggestion": "interaction",
+      "description_en": "为 DeepSeek Harness 提供基于 Tailscale 的安全远程访问运营面板：一键健康检查、HTTPS 入口开关、macOS 代理绕过、中继服务器运维、ACL 生成。Tailscale remote-access control panel for DeepSeek Harness: health checks, HTTPS serve toggle, proxy bypass, relay ops, ACL helper.",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "evanfang0054/dsh-tailscale-console|为 DeepSeek Harness 提供基于 Tailscale 的安全远程访问运营面板：一键健康检查、HTTPS 入口开关、macOS 代理绕过、中继服务器运维、ACL 生成。Tailscale remote-access control panel for DeepSeek Harness: health checks, HTTPS serve toggle, proxy bypass, relay ops, ACL helper.|False|False|False|False|2026-08-14T07:29:18Z|MIT",
+      "name": "dsh-tailscale-console",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333909895,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/evanfang0054/dsh-tailscale-console"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "DSH 插件：让模型始终用中文进行内部推理与思考（think in Chinese）。",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "lingtima/dsh-think-chinese|DSH 插件：让模型始终用中文进行内部推理与思考（think in Chinese）。|False|False|False|False|2026-08-14T07:08:01Z|",
+      "name": "dsh-think-chinese",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333901376,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/lingtima/dsh-think-chinese"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "Unlimited-OCR for DeepSeek Harness with a native tool and GUI configuration",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "Aidenwu0209/dsh-Unlimited-OCR-Skill|Unlimited-OCR for DeepSeek Harness with a native tool and GUI configuration|False|False|False|False|2026-08-14T07:28:15Z|Apache-2.0",
+      "name": "dsh-Unlimited-OCR-Skill",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333897177,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill"
+    },
+    {
       "category_confidence": "low",
       "category_suggestion": "tools",
       "description_en": "Lightweight DeepSeek Harness plugin: per-session + global API cost stats (peak/off-peak pricing)",
@@ -1649,22 +1793,6 @@
       "url": "https://github.com/blueWhalei/dsh-verify-gate"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
-      "description_en": "DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-friendly, human transcript untouched. 纯文本模型自动识图桥",
-      "description_zh": "",
-      "enriched": true,
-      "fingerprint": "237229953-create/dsh-vision|DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-friendly, human transcript untouched. 纯文本模型自动识图桥|False|False|False|False|2026-08-14T07:13:49Z|MIT",
-      "name": "dsh-vision",
-      "reasons": [
-        "empty_repository"
-      ],
-      "repository_id": 1333865233,
-      "status": "excluded",
-      "structure_evidence": [],
-      "url": "https://github.com/237229953-create/dsh-vision"
-    },
-    {
       "category_confidence": "medium",
       "category_suggestion": "interaction",
       "description_en": "DeepSeek Harness plugin: multimodal vision (OpenAI-compatible) + Android adb UI automation for real-tap mobile app testing",
@@ -1679,6 +1807,22 @@
       "status": "excluded",
       "structure_evidence": [],
       "url": "https://github.com/superclaude1/dsh-vision-android"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "DeepSeek Harness 视觉能力全家桶：vision_understand 工具 + 粘贴/拖拽/按钮三入口识图",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "moon09300731/dsh-vision-tools|DeepSeek Harness 视觉能力全家桶：vision_understand 工具 + 粘贴/拖拽/按钮三入口识图|False|False|False|False|2026-08-14T07:29:38Z|MIT",
+      "name": "dsh-vision-tools",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333918355,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/moon09300731/dsh-vision-tools"
     },
     {
       "category_confidence": "medium",
@@ -1750,7 +1894,7 @@
       "description_en": "dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "Sanqi-normal/dsh-webui-market-plugin|dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile.|False|False|False|False|2026-08-14T07:25:18Z|MIT",
+      "fingerprint": "Sanqi-normal/dsh-webui-market-plugin|dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile.|False|False|False|False|2026-08-14T07:29:40Z|MIT",
       "name": "dsh-webui-market-plugin",
       "reasons": [
         "directory_or_collection"
@@ -1814,7 +1958,7 @@
       "description_en": "DSH (DeepSeek Harness) 原理学习、插件市场与最佳实践 · Learn DSH principles, plugin marketplace & best practices",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "hikariming/dshfind|DSH (DeepSeek Harness) 原理学习、插件市场与最佳实践 · Learn DSH principles, plugin marketplace & best practices|False|False|False|False|2026-08-14T06:31:11Z|",
+      "fingerprint": "hikariming/dshfind|DSH (DeepSeek Harness) 原理学习、插件市场与最佳实践 · Learn DSH principles, plugin marketplace & best practices|False|False|False|False|2026-08-14T07:28:20Z|",
       "name": "dshfind",
       "reasons": [
         "directory_or_collection"
@@ -1846,7 +1990,7 @@
       "description_en": "use tavily for web_search",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "xuanyinmu/DshWebSearch|use tavily for web_search|False|False|False|False|2026-08-14T07:16:22Z|MIT",
+      "fingerprint": "xuanyinmu/DshWebSearch|use tavily for web_search|False|False|False|False|2026-08-14T07:32:54Z|MIT",
       "name": "DshWebSearch",
       "reasons": [
         "empty_repository"
@@ -1862,7 +2006,7 @@
       "description_en": "Community Wiki and daily-aggregated plugin directory for DeepSeek Harness (dsh). Original Chinese tutorials from 0-to-1, plus an auto-updating ecosystem of dsh plugins with AI-translated descriptions.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "qomob/DSHwiki|Community Wiki and daily-aggregated plugin directory for DeepSeek Harness (dsh). Original Chinese tutorials from 0-to-1, plus an auto-updating ecosystem of dsh plugins with AI-translated descriptions.|False|False|False|False|2026-08-14T07:17:10Z|MIT",
+      "fingerprint": "qomob/DSHwiki|Community Wiki and daily-aggregated plugin directory for DeepSeek Harness (dsh). Original Chinese tutorials from 0-to-1, plus an auto-updating ecosystem of dsh plugins with AI-translated descriptions.|False|False|False|False|2026-08-14T07:27:02Z|MIT",
       "name": "DSHwiki",
       "reasons": [
         "directory_or_collection"
@@ -1871,6 +2015,22 @@
       "status": "excluded",
       "structure_evidence": [],
       "url": "https://github.com/qomob/DSHwiki"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "Task-isolated, privacy-first memory for DeepSeek Harness",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "Haoran2099/focal-dsh|Task-isolated, privacy-first memory for DeepSeek Harness|False|False|False|False|2026-08-14T07:32:17Z|MIT",
+      "name": "focal-dsh",
+      "reasons": [
+        "empty_repository"
+      ],
+      "repository_id": 1333920034,
+      "status": "excluded",
+      "structure_evidence": [],
+      "url": "https://github.com/Haoran2099/focal-dsh"
     },
     {
       "category_confidence": "low",
@@ -1894,7 +2054,7 @@
       "description_en": "A next-generation, source-available AI workspace with a self-evolving agent runtime for editable code, design, presentations, websites, and video—a Codex alternative that integrates DeepSeek Harness for subagent delegation, combining iPolloWork’s complete AI workbench with DSH’s specialized agents and both plugin ecosystems in one workflow.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "Devin-AXIS/iPolloWork|A next-generation, source-available AI workspace with a self-evolving agent runtime for editable code, design, presentations, websites, and video—a Codex alternative that integrates DeepSeek Harness for subagent delegation, combining iPolloWork’s complete AI workbench with DSH’s specialized agents and both plugin ecosystems in one workflow.|False|False|False|True|2026-08-14T06:16:20Z|NOASSERTION",
+      "fingerprint": "Devin-AXIS/iPolloWork|A next-generation, source-available AI workspace with a self-evolving agent runtime for editable code, design, presentations, websites, and video—a Codex alternative that integrates DeepSeek Harness for subagent delegation, combining iPolloWork’s complete AI workbench with DSH’s specialized agents and both plugin ecosystems in one workflow.|False|False|False|True|2026-08-14T07:30:34Z|NOASSERTION",
       "name": "iPolloWork",
       "reasons": [
         "template_repository"
@@ -1926,7 +2086,7 @@
       "description_en": "一个用来进行数学建模比赛帮助的agent，基于MathModelAgent，欢迎大家进行改进。",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "ShuoSachiko/MathMN|一个用来进行数学建模比赛帮助的agent，基于MathModelAgent，欢迎大家进行改进。|False|False|False|False|2026-08-14T07:14:14Z|NOASSERTION",
+      "fingerprint": "ShuoSachiko/MathMN|一个用来进行数学建模比赛帮助的agent，基于MathModelAgent，欢迎大家进行改进。|False|False|False|False|2026-08-14T07:32:26Z|NOASSERTION",
       "name": "MathMN",
       "reasons": [
         "empty_repository"
@@ -2089,13 +2249,30 @@
     {
       "category_confidence": "high",
       "category_suggestion": "automation",
+      "description_en": "A protocol that lets any sufficiently intelligent AI agent join your shared memory by simply reading one file.",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "dqsjqian/agent-guild|A protocol that lets any sufficiently intelligent AI agent join your shared memory by simply reading one file.|False|False|False|False|2026-08-14T07:31:14Z|MIT",
+      "name": "agent-guild",
+      "reasons": [
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
+      ],
+      "repository_id": 1251972531,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/dqsjqian/agent-guild"
+    },
+    {
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "DeepSeek Harness (dsh) 插件：把 LLM agent loop 中确定性的执行路径编译成 DSL 程序并直接执行，显著降低 token、往返轮次与上下文暴露。A DeepSeek Harness plugin that compiles deterministic agent paths into DSL programs.",
       "description_zh": "",
       "enriched": true,
       "fingerprint": "sybolization/agent-jit|DeepSeek Harness (dsh) 插件：把 LLM agent loop 中确定性的执行路径编译成 DSL 程序并直接执行，显著降低 token、往返轮次与上下文暴露。A DeepSeek Harness plugin that compiles deterministic agent paths into DSL programs.|False|False|False|False|2026-08-14T06:00:28Z|MIT",
       "name": "agent-jit",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1326098871,
       "status": "needs_review",
@@ -2364,19 +2541,22 @@
       "url": "https://github.com/oslook/awesome-dsh-plugins"
     },
     {
-      "category_confidence": "medium",
-      "category_suggestion": "automation",
+      "category_confidence": "high",
+      "category_suggestion": "development",
       "description_en": "Open-source sandboxes for AI agents, untrusted code execution, and durable services.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "cofy-x/axern|Open-source sandboxes for AI agents, untrusted code execution, and durable services.|False|False|False|False|2026-08-14T03:46:00Z|Apache-2.0",
       "name": "axern",
       "reasons": [
-        "enrichment_deferred"
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1314587317,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source",
+        "pyproject.toml+source"
+      ],
       "url": "https://github.com/cofy-x/axern"
     },
     {
@@ -2385,11 +2565,10 @@
       "description_en": "Model-driven context management (Active Context Pruning / ACP) for the DeepSeek Harness — the model decides when and what to compress. Ported from billion-context-pi (ranxianglei); acp-kernel reused verbatim. CompactionEngine backend with compress/decompress/search_context/acp_status tools.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "Tyan66666/billion-context-dsh|Model-driven context management (Active Context Pruning / ACP) for the DeepSeek Harness — the model decides when and what to compress. Ported from billion-context-pi (ranxianglei); acp-kernel reused verbatim. CompactionEngine backend with compress/decompress/search_context/acp_status tools.|False|False|False|False|2026-08-14T07:13:56Z|MIT",
-      "model_error": "GitHub Models returned HTTP 410",
+      "fingerprint": "Tyan66666/billion-context-dsh|Model-driven context management (Active Context Pruning / ACP) for the DeepSeek Harness — the model decides when and what to compress. Ported from billion-context-pi (ranxianglei); acp-kernel reused verbatim. CompactionEngine backend with compress/decompress/search_context/acp_status tools.|False|False|False|False|2026-08-14T07:30:45Z|MIT",
       "name": "billion-context-dsh",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333322877,
       "status": "needs_review",
@@ -2468,7 +2647,7 @@
       "description_en": "",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "MoonShadow1976/chiral-pulse||False|False|False|False|2026-08-14T06:51:21Z|MIT",
+      "fingerprint": "MoonShadow1976/chiral-pulse||False|False|False|False|2026-08-14T07:30:34Z|MIT",
       "name": "chiral-pulse",
       "reasons": [
         "enrichment_deferred"
@@ -2516,11 +2695,10 @@
       "description_en": "Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "leechen298/Code2Skill|Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.|False|False|False|False|2026-08-14T07:23:50Z|MIT",
-      "model_error": "GitHub Models returned HTTP 410",
+      "fingerprint": "leechen298/Code2Skill|Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.|False|False|False|False|2026-08-14T07:30:41Z|MIT",
       "name": "Code2Skill",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1304163962,
       "status": "needs_review",
@@ -2578,19 +2756,21 @@
       "url": "https://github.com/titanwings/colleague-skill"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Low-token, low-latency Windows computer-use MCP with learned shortcuts, UIA/CDP/OCR routing, and DeepSeek Harness support",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Ethanout/computer-use-plus|Low-token, low-latency Windows computer-use MCP with learned shortcuts, UIA/CDP/OCR routing, and DeepSeek Harness support|False|False|False|False|2026-08-14T04:26:53Z|MIT",
       "name": "computer-use-plus",
       "reasons": [
-        "enrichment_deferred"
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333217874,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/Ethanout/computer-use-plus"
     },
     {
@@ -2618,10 +2798,9 @@
       "description_zh": "",
       "enriched": true,
       "fingerprint": "GooodWei/context-vista|为 DeepSeek Harness 提供右侧悬浮栏以及 /context 命令，用环形图实时展示当前上下文 token 用量与分配，compact指令效果，同时支持估算费用消耗，对标 Claude Code 的 /context。|False|False|False|False|2026-08-14T07:18:33Z|MIT",
-      "model_error": "GitHub Models returned HTTP 410",
       "name": "context-vista",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333231907,
       "status": "needs_review",
@@ -2778,19 +2957,22 @@
       "url": "https://github.com/deepseek-ai/deepseek-harness"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "development",
       "description_en": "ACP server implementation for DeepSeek harness",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "openma-ai/deepseek-harness-acp|ACP server implementation for DeepSeek harness|False|False|False|False|2026-08-14T02:49:57Z|NOASSERTION",
       "name": "deepseek-harness-acp",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333224461,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/openma-ai/deepseek-harness-acp"
     },
     {
@@ -2856,6 +3038,22 @@
       "status": "needs_review",
       "structure_evidence": [],
       "url": "https://github.com/WilliamLIiii/DeepSeek-Harness-billing-plugin"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "DeepSeek Harness: Everything is a Plugin.",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "soolaugust/deepseek-harness-cli|DeepSeek Harness: Everything is a Plugin.|False|False|False|False|2026-08-14T07:24:51Z|MIT",
+      "name": "deepseek-harness-cli",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333689681,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/soolaugust/deepseek-harness-cli"
     },
     {
       "category_confidence": "high",
@@ -2992,6 +3190,22 @@
     {
       "category_confidence": "low",
       "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "pig1et7/DeepSeek-Harness-Desktop||False|False|False|False|2026-08-14T05:00:29Z|",
+      "name": "DeepSeek-Harness-Desktop",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333714420,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/pig1et7/DeepSeek-Harness-Desktop"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
       "description_en": "Electron desktop app for DeepSeek Harness: bundles the dsh web server and its frontend into one installable app",
       "description_zh": "",
       "enriched": false,
@@ -3062,7 +3276,7 @@
       "fingerprint": "alison-xx/deepseek-harness-flow|Visual workflows and multi-model evaluation for DeepSeek Harness|False|False|False|False|2026-08-14T05:13:51Z|MIT",
       "name": "deepseek-harness-flow",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333396892,
       "status": "needs_review",
@@ -3144,10 +3358,9 @@
       "description_zh": "",
       "enriched": true,
       "fingerprint": "sliverp/DeepSeek-harness-lark|Feishu and Lark text and image channel plugin for DeepSeek Harness|False|False|False|False|2026-08-14T07:14:41Z|MIT",
-      "model_error": "GitHub Models returned HTTP 410",
       "name": "DeepSeek-harness-lark",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333402798,
       "status": "needs_review",
@@ -3254,19 +3467,21 @@
       "url": "https://github.com/DGPisces/deepseek-harness-openai-oauth"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "medium",
+      "category_suggestion": "development",
       "description_en": "Web plugin manager for DeepSeek Harness (DSH): inspect, search, group, enable, and disable Cordis plugins.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "hrhgit/deepseek-harness-plugin-manager|Web plugin manager for DeepSeek Harness (DSH): inspect, search, group, enable, and disable Cordis plugins.|False|False|False|False|2026-08-14T04:52:46Z|MIT",
       "name": "deepseek-harness-plugin-manager",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333398645,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/hrhgit/deepseek-harness-plugin-manager"
     },
     {
@@ -3294,7 +3509,7 @@
       "fingerprint": "sliverp/DeepSeek-harness-qqbot|QQ Bot text and image channel plugin for DeepSeek Harness|False|False|False|False|2026-08-14T06:57:40Z|MIT",
       "name": "DeepSeek-harness-qqbot",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333319964,
       "status": "needs_review",
@@ -3338,15 +3553,16 @@
       "url": "https://github.com/drowned-fish1/deepseek-harness-skillx"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "DeepSeek Harness 换肤系统：21 套内置皮肤 + 一张图生成整套配色的自定义皮肤。数据源驱动，保对比度推导，构建期校验可读性。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "HeiGeAi/deepseek-harness-skin|DeepSeek Harness 换肤系统：21 套内置皮肤 + 一张图生成整套配色的自定义皮肤。数据源驱动，保对比度推导，构建期校验可读性。|False|False|False|False|2026-08-14T03:09:09Z|MIT",
       "name": "deepseek-harness-skin",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333483404,
       "status": "needs_review",
@@ -3362,7 +3578,7 @@
       "fingerprint": "boxeryao/deepseek-harness-tui|DSH-TUI: a lightweight and fast terminal plugin connected directly to the DSH runtime.|False|False|False|False|2026-08-14T05:41:02Z|MIT",
       "name": "deepseek-harness-tui",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333513504,
       "status": "needs_review",
@@ -3463,7 +3679,7 @@
       "fingerprint": "sliverp/DeepSeek-harness-wecom|WeCom AI Bot text and image bridge for DeepSeek Harness|False|False|False|False|2026-08-14T06:57:39Z|MIT",
       "name": "DeepSeek-harness-wecom",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333338828,
       "status": "needs_review",
@@ -3474,19 +3690,22 @@
       "url": "https://github.com/sliverp/DeepSeek-harness-wecom"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Weixin ClawBot channel plugin for DeepSeek Harness with QR login and text/image messaging",
       "description_zh": "",
-      "enriched": false,
-      "fingerprint": "sliverp/DeepSeek-harness-weixin|Weixin ClawBot channel plugin for DeepSeek Harness with QR login and text/image messaging|False|False|False|False|2026-08-13T17:27:22Z|NOASSERTION",
+      "enriched": true,
+      "fingerprint": "sliverp/DeepSeek-harness-weixin|Weixin ClawBot channel plugin for DeepSeek Harness with QR login and text/image messaging|False|False|False|False|2026-08-14T07:30:23Z|NOASSERTION",
       "name": "DeepSeek-harness-weixin",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333372204,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/sliverp/DeepSeek-harness-weixin"
     },
     {
@@ -3656,11 +3875,13 @@
       "category_suggestion": "automation",
       "description_en": "Structured, reusable skill modules for AI coding agents — covering engineering workflows, reliability evaluation, and production readiness.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Leeaoyin/dr-agent-skills|Structured, reusable skill modules for AI coding agents — covering engineering workflows, reliability evaluation, and production readiness.|False|False|False|False|2026-08-14T03:23:48Z|",
       "name": "dr-agent-skills",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license",
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1284582023,
       "status": "needs_review",
@@ -3689,7 +3910,7 @@
       "description_en": "DeepSeek Harness 常驻额度卡片插件:自动识别已配置的平台 API Key,显示余额与 Coding Plan 额度",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "jasonsun29/ds-balance-card|DeepSeek Harness 常驻额度卡片插件:自动识别已配置的平台 API Key,显示余额与 Coding Plan 额度|False|False|False|False|2026-08-14T07:18:42Z|MIT",
+      "fingerprint": "jasonsun29/ds-balance-card|DeepSeek Harness 常驻额度卡片插件:自动识别已配置的平台 API Key,显示余额与 Coding Plan 额度|False|False|False|False|2026-08-14T07:31:25Z|MIT",
       "name": "ds-balance-card",
       "reasons": [
         "unclear_plugin_evidence"
@@ -3862,19 +4083,22 @@
       "url": "https://github.com/zimai233/dsh-adhd-copilot"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Advisor - Pair a second model that passively reviews each turn and injects notes.  搭配一个会在每轮对话被动注入见解和审查的副模型。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "omdsh-dev/dsh-advisor|Advisor - Pair a second model that passively reviews each turn and injects notes.  搭配一个会在每轮对话被动注入见解和审查的副模型。|False|False|False|False|2026-08-14T03:33:35Z|MIT",
       "name": "dsh-advisor",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1326938666,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/omdsh-dev/dsh-advisor"
     },
     {
@@ -3948,10 +4172,9 @@
       "description_zh": "",
       "enriched": true,
       "fingerprint": "GengDaPeng/dsh-agent-message|跨会话 Agent 通信插件 for DeepSeek Harness：让同一进程里的不同 Agent 会话互相收发消息。|False|False|False|False|2026-08-14T07:26:07Z|MIT",
-      "model_error": "GitHub Models returned HTTP 410",
       "name": "dsh-agent-message",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333415260,
       "status": "needs_review",
@@ -3983,7 +4206,7 @@
       "description_en": "DeepSeek Harness 会话回放与脱敏分享插件：将真实 Agent 轨迹导出为独立交互 HTML，用于文档、演示和问题反馈。",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "forrestsweet/dsh-agent-replay|DeepSeek Harness 会话回放与脱敏分享插件：将真实 Agent 轨迹导出为独立交互 HTML，用于文档、演示和问题反馈。|False|False|False|False|2026-08-14T06:36:38Z|MIT",
+      "fingerprint": "forrestsweet/dsh-agent-replay|DeepSeek Harness 会话回放与脱敏分享插件：将真实 Agent 轨迹导出为独立交互 HTML，用于文档、演示和问题反馈。|False|False|False|False|2026-08-14T07:27:26Z|MIT",
       "name": "dsh-agent-replay",
       "reasons": [
         "enrichment_deferred"
@@ -4010,15 +4233,15 @@
       "url": "https://github.com/vvlife/dsh-agnes-paseo"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "DS安甲网 (ds.ajw.cn) · 为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧 — 每日聚合 DeepSeek Harness / DSH 插件生态开源项目",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "rsagacom/dsh-ajw|DS安甲网 (ds.ajw.cn) · 为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧 — 每日聚合 DeepSeek Harness / DSH 插件生态开源项目|False|False|False|False|2026-08-14T04:25:17Z|MIT",
       "name": "dsh-ajw",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure"
       ],
       "repository_id": 1333300887,
       "status": "needs_review",
@@ -4170,19 +4393,22 @@
       "url": "https://github.com/csiroqa/dsh-archive-viewer"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "DeepSeek Harness 归档会话管理插件：查看/恢复已归档会话（回到原工作区分组）+ 右上角一键关闭 dsh。MIT 许可，欢迎收录到任何插件合集，注明出处即可。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "keepermttl/dsh-archive-viewer|DeepSeek Harness 归档会话管理插件：查看/恢复已归档会话（回到原工作区分组）+ 右上角一键关闭 dsh。MIT 许可，欢迎收录到任何插件合集，注明出处即可。|False|False|False|False|2026-08-14T04:46:20Z|MIT",
       "name": "dsh-archive-viewer",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333350176,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/keepermttl/dsh-archive-viewer"
     },
     {
@@ -4202,19 +4428,21 @@
       "url": "https://github.com/hashdiana/dsh-archived-sessions"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "development",
       "description_en": "火山方舟订阅套餐剩余额度 DSH 侧边栏小组件（宿主代理 GetCodingPlanUsage + 浏览器 widget + 免重启 cookie 刷新工具）",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "lordqyxz/dsh-ark-quota|火山方舟订阅套餐剩余额度 DSH 侧边栏小组件（宿主代理 GetCodingPlanUsage + 浏览器 widget + 免重启 cookie 刷新工具）|False|False|False|False|2026-08-14T03:14:43Z|MIT",
       "name": "dsh-ark-quota",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333338938,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/lordqyxz/dsh-ark-quota"
     },
     {
@@ -4429,19 +4657,22 @@
       "url": "https://github.com/HsiangNianian/dsh-auto-continue"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "development",
       "description_en": "Second-model AI auto-review for DeepSeek Harness approval requests: a read-only reviewer subagent returns structured allow/deny verdicts with reasons, fail-closed by default, fully auditable from the session log (approval/asked -> autoReview/verdict -> approval/decided).",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "PerryLink/dsh-auto-review|Second-model AI auto-review for DeepSeek Harness approval requests: a read-only reviewer subagent returns structured allow/deny verdicts with reasons, fail-closed by default, fully auditable from the session log (approval/asked -> autoReview/verdict -> approval/decided).|False|False|False|False|2026-08-14T03:42:27Z|Apache-2.0",
       "name": "dsh-auto-review",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333482618,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/PerryLink/dsh-auto-review"
     },
     {
@@ -4541,19 +4772,22 @@
       "url": "https://github.com/Liu-ty/dsh-balance-display"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "medium",
+      "category_suggestion": "interaction",
       "description_en": "DeepSeek account balance and session cost readout for the DeepSeek Harness Web GUI",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Ghost011118/dsh-balance-meter|DeepSeek account balance and session cost readout for the DeepSeek Harness Web GUI|False|False|False|False|2026-08-14T04:27:02Z|BSD-3-Clause",
       "name": "dsh-balance-meter",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333443843,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/Ghost011118/dsh-balance-meter"
     },
     {
@@ -4565,7 +4799,7 @@
       "fingerprint": "jelly-000/dsh-balance-monitor|DeepSeek 账户余额、剩余比例条与今日花费，显示在 dsh 侧边栏底部 · DeepSeek balance, remaining-ratio bar and today's spend in the dsh sidebar footer.|False|False|False|False|2026-08-14T06:58:24Z|MIT",
       "name": "dsh-balance-monitor",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333449414,
       "status": "needs_review",
@@ -4728,10 +4962,10 @@
       "description_en": "一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "omdsh-dev/DSH-better-sidebar|一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理|False|False|False|False|2026-08-14T07:03:05Z|MIT",
+      "fingerprint": "omdsh-dev/DSH-better-sidebar|一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理|False|False|False|False|2026-08-14T07:30:26Z|MIT",
       "name": "DSH-better-sidebar",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1326893710,
       "status": "needs_review",
@@ -4839,19 +5073,21 @@
       "url": "https://github.com/318197375/dsh-bottom-stats"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "development",
       "description_en": "dsh plugin: Chrome sidebar extension that lets DSH operate your browser directly—no vision capabilities required.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Lum1104/dsh-browser|dsh plugin: Chrome sidebar extension that lets DSH operate your browser directly—no vision capabilities required.|False|False|False|False|2026-08-14T04:27:30Z|MIT",
       "name": "dsh-browser",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1324996099,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/Lum1104/dsh-browser"
     },
     {
@@ -5224,7 +5460,7 @@
       "description_en": "A second brain for your DeepSeek Harness agent — strong-model review before risky tool calls, plus 70 models from one wallet.",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "BlockRunAI/dsh-clawrouter|A second brain for your DeepSeek Harness agent — strong-model review before risky tool calls, plus 70 models from one wallet.|False|False|False|False|2026-08-14T07:02:44Z|MIT",
+      "fingerprint": "BlockRunAI/dsh-clawrouter|A second brain for your DeepSeek Harness agent — strong-model review before risky tool calls, plus 70 models from one wallet.|False|False|False|False|2026-08-14T07:32:21Z|MIT",
       "name": "dsh-clawrouter",
       "reasons": [
         "enrichment_deferred"
@@ -5240,7 +5476,7 @@
       "description_en": "Global keyboard shortcuts plugin for the DeepSeek Harness web GUI: ctx.shortcuts registry service + mod+l/mod+k/mod+shift+c default bindings",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "blue-a11y/dsh-client-shortcuts|Global keyboard shortcuts plugin for the DeepSeek Harness web GUI: ctx.shortcuts registry service + mod+l/mod+k/mod+shift+c default bindings|False|False|False|False|2026-08-14T07:25:54Z|MIT",
+      "fingerprint": "blue-a11y/dsh-client-shortcuts|Global keyboard shortcuts plugin for the DeepSeek Harness web GUI: ctx.shortcuts registry service + mod+l/mod+k/mod+shift+c default bindings|False|False|False|False|2026-08-14T07:31:04Z|MIT",
       "name": "dsh-client-shortcuts",
       "reasons": [
         "planned_or_placeholder"
@@ -5400,19 +5636,22 @@
       "url": "https://github.com/baidd1011/dsh-code-impact"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Symbol-aware code indexing and hybrid search for DeepSeek Harness.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "lonelymoon87/dsh-code-intel|Symbol-aware code indexing and hybrid search for DeepSeek Harness.|False|False|False|False|2026-08-14T02:54:22Z|MIT",
       "name": "dsh-code-intel",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333415108,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/lonelymoon87/dsh-code-intel"
     },
     {
@@ -5725,7 +5964,7 @@
       "description_en": "DeepSeek Harness plugin: one-click ✨ composer draft polishing — flash rewrite, auto fill-back into the input box",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "tianji-qingtian/dsh-composer-polish|DeepSeek Harness plugin: one-click ✨ composer draft polishing — flash rewrite, auto fill-back into the input box|False|False|False|False|2026-08-14T07:08:45Z|MIT",
+      "fingerprint": "tianji-qingtian/dsh-composer-polish|DeepSeek Harness plugin: one-click ✨ composer draft polishing — flash rewrite, auto fill-back into the input box|False|False|False|False|2026-08-14T07:31:21Z|MIT",
       "name": "dsh-composer-polish",
       "reasons": [
         "enrichment_deferred"
@@ -5768,6 +6007,23 @@
       "url": "https://github.com/Equinox7379/dsh-config-watch"
     },
     {
+      "category_confidence": "high",
+      "category_suggestion": "development",
+      "description_en": "DeepSeek Harness (dsh) container image: universal dev-container base, dsh auto-update on boot, compose + Quadlet examples",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "NIyueeE/dsh-container|DeepSeek Harness (dsh) container image: universal dev-container base, dsh auto-update on boot, compose + Quadlet examples|False|False|False|False|2026-08-14T02:57:08Z|MIT",
+      "name": "dsh-container",
+      "reasons": [
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
+      ],
+      "repository_id": 1333316853,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/NIyueeE/dsh-container"
+    },
+    {
       "category_confidence": "medium",
       "category_suggestion": "automation",
       "description_en": "DSH bundle plugin: screenshots, screen recording, Markdown→Xiaohongshu image cards, dev.to publishing, and human-in-the-loop review for DeepSeek Harness",
@@ -5784,19 +6040,22 @@
       "url": "https://github.com/ZRui-C/dsh-content-studio"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "Request Context Profiler for DeepSeek Harness — see what changed between model requests, and how cache reuse changed with it.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "gordonlu/dsh-context-lens|Request Context Profiler for DeepSeek Harness — see what changed between model requests, and how cache reuse changed with it.|False|False|False|False|2026-08-14T04:22:20Z|MIT",
       "name": "dsh-context-lens",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333227897,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/gordonlu/dsh-context-lens"
     },
     {
@@ -5816,19 +6075,21 @@
       "url": "https://github.com/EvilIrving/dsh-context-proxy"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "Logical-call context taxonomy plugin for DeepSeek Harness",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "ArtificialNotImbecile/dsh-context-taxonomy|Logical-call context taxonomy plugin for DeepSeek Harness|False|False|False|False|2026-08-14T04:07:47Z|MIT",
       "name": "dsh-context-taxonomy",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333202591,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/ArtificialNotImbecile/dsh-context-taxonomy"
     },
     {
@@ -5848,19 +6109,22 @@
       "url": "https://github.com/shiningsprk-arch/dsh-context-viewer"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "automation",
       "description_en": "Continual self-evolution plugin for DeepSeek Harness: versioned, auditable, rollback-safe harness state refined from session trajectories, with a benchmark-driven validation loop.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "ZK-Andy/dsh-continual-evolve|Continual self-evolution plugin for DeepSeek Harness: versioned, auditable, rollback-safe harness state refined from session trajectories, with a benchmark-driven validation loop.|False|False|False|False|2026-08-14T03:17:22Z|MIT",
       "name": "dsh-continual-evolve",
       "reasons": [
-        "enrichment_deferred"
+        "planned_or_placeholder"
       ],
       "repository_id": 1333522020,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/ZK-Andy/dsh-continual-evolve"
     },
     {
@@ -5868,15 +6132,19 @@
       "category_suggestion": "interaction",
       "description_en": "Conversation indicator plugin for the DeepSeek Harness web GUI: a compact rail beside the scrollbar marks each user message; hover for the summary, click to jump. / DeepSeek Harness Web GUI 对话指示器插件：滚动条旁紧凑面板标记每条用户消息，悬停看摘要，点击跳转。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "smanx/dsh-conversation-indicator|Conversation indicator plugin for the DeepSeek Harness web GUI: a compact rail beside the scrollbar marks each user message; hover for the summary, click to jump. / DeepSeek Harness Web GUI 对话指示器插件：滚动条旁紧凑面板标记每条用户消息，悬停看摘要，点击跳转。|False|False|False|False|2026-08-14T04:53:43Z|MIT",
       "name": "dsh-conversation-indicator",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333437601,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "dsh.plugin.json",
+        "package.json+source"
+      ],
       "url": "https://github.com/smanx/dsh-conversation-indicator"
     },
     {
@@ -5984,7 +6252,7 @@
       "fingerprint": "Han-1413141/dsh-cost-meter|DeepSeek Harness 会话费用统计插件:本会话费用、当日费用、历史记录与官方价格同步|False|False|False|False|2026-08-14T06:25:33Z|MIT",
       "name": "dsh-cost-meter",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333235870,
       "status": "needs_review",
@@ -6219,6 +6487,22 @@
       "url": "https://github.com/baiyun200/dsh-dashboard"
     },
     {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "TT432/dsh-dcp||False|False|False|False|2026-08-14T05:23:56Z|",
+      "name": "dsh-dcp",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333814379,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/TT432/dsh-dcp"
+    },
+    {
       "category_confidence": "high",
       "category_suggestion": "interaction",
       "description_en": "DSH Web 鲸鱼娘皮肤系列(深海女仆工坊 maid-atelier)——CC BY-NC-SA 4.0",
@@ -6284,19 +6568,22 @@
       "url": "https://github.com/dshiq04/dsh-deepseek-balance"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "DeepSeek API 余额监视器：DSH 右下角悬浮徽章 + 7天/30天用量费用图表",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "lin-cheng-lab/dsh-deepseek-balance|DeepSeek API 余额监视器：DSH 右下角悬浮徽章 + 7天/30天用量费用图表|False|False|False|False|2026-08-14T04:28:52Z|MIT",
       "name": "dsh-deepseek-balance",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333227707,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/lin-cheng-lab/dsh-deepseek-balance"
     },
     {
@@ -6337,7 +6624,7 @@
       "description_en": "DeepSeek API quota (balance) widget for the DSH web GUI: a floating bottom-right card showing remaining DeepSeek API balance.",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "yingjunnan/dsh-deepseek-quota|DeepSeek API quota (balance) widget for the DSH web GUI: a floating bottom-right card showing remaining DeepSeek API balance.|False|False|False|False|2026-08-14T06:54:56Z|MIT",
+      "fingerprint": "yingjunnan/dsh-deepseek-quota|DeepSeek API quota (balance) widget for the DSH web GUI: a floating bottom-right card showing remaining DeepSeek API balance.|False|False|False|False|2026-08-14T07:29:50Z|MIT",
       "name": "dsh-deepseek-quota",
       "reasons": [
         "enrichment_deferred"
@@ -6438,7 +6725,7 @@
       "description_en": "Electron desktop shell for DeepSeek Harness (dsh web) — run the harness in a standalone window without a terminal or browser",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "ReachGa0/dsh-desktop|Electron desktop shell for DeepSeek Harness (dsh web) — run the harness in a standalone window without a terminal or browser|False|False|False|False|2026-08-14T07:25:15Z|MIT",
+      "fingerprint": "ReachGa0/dsh-desktop|Electron desktop shell for DeepSeek Harness (dsh web) — run the harness in a standalone window without a terminal or browser|False|False|False|False|2026-08-14T07:30:54Z|MIT",
       "name": "dsh-desktop",
       "reasons": [
         "enrichment_deferred"
@@ -6449,19 +6736,21 @@
       "url": "https://github.com/ReachGa0/dsh-desktop"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "development",
       "description_en": "DeepSeek Harness 桌面版 — 原生 Windows 桌面壳（无边框窗口 / 系统托盘 / 原生通知 / 单实例 / 开机自启）| Native Windows desktop shell for DeepSeek Harness (frameless window, tray, native notifications, single-instance, auto-launch)",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "SnowCrescenter-tech/dsh-desktop|DeepSeek Harness 桌面版 — 原生 Windows 桌面壳（无边框窗口 / 系统托盘 / 原生通知 / 单实例 / 开机自启）| Native Windows desktop shell for DeepSeek Harness (frameless window, tray, native notifications, single-instance, auto-launch)|False|False|False|False|2026-08-14T04:00:21Z|MIT",
       "name": "dsh-desktop",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333261846,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/SnowCrescenter-tech/dsh-desktop"
     },
     {
@@ -6595,15 +6884,16 @@
       "url": "https://github.com/longyu065/dsh-desktop"
     },
     {
-      "category_confidence": "medium",
-      "category_suggestion": "interaction",
+      "category_confidence": "high",
+      "category_suggestion": "development",
       "description_en": ".NET 10 WPF + WebView2 desktop launcher for DeepSeek Harness (dsh): managed child process, tray controls, HiDPI, native title bar theme following",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "mrbbbaixue/dsh-desktop|.NET 10 WPF + WebView2 desktop launcher for DeepSeek Harness (dsh): managed child process, tray controls, HiDPI, native title bar theme following|False|False|False|False|2026-08-14T04:03:43Z|MIT",
       "name": "dsh-desktop",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333329378,
       "status": "needs_review",
@@ -6663,11 +6953,13 @@
       "category_suggestion": "tools",
       "description_en": "DeepSeek Harness desktop shell — one-click Electron wrapper around dsh web",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "xiaoyuxiaoyuqwq/dsh-desktop|DeepSeek Harness desktop shell — one-click Electron wrapper around dsh web|False|False|False|False|2026-08-14T03:38:28Z|",
       "name": "dsh-desktop",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license",
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333385060,
       "status": "needs_review",
@@ -6740,6 +7032,22 @@
       "url": "https://github.com/xiaoshihou514/dsh-desktop-pet"
     },
     {
+      "category_confidence": "medium",
+      "category_suggestion": "automation",
+      "description_en": "DeepSeek Harness 桌面端 + 插件社区 + Agent 社区(270 个开源中文角色预设)",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "fan969690/dsh-desktop-tools|DeepSeek Harness 桌面端 + 插件社区 + Agent 社区(270 个开源中文角色预设)|False|False|False|False|2026-08-14T07:26:23Z|MIT",
+      "name": "dsh-desktop-tools",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333720135,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/fan969690/dsh-desktop-tools"
+    },
+    {
       "category_confidence": "low",
       "category_suggestion": "tools",
       "description_en": "",
@@ -6777,7 +7085,7 @@
       "description_en": "",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "ophielel/dsh-devkit||False|False|False|False|2026-08-14T07:26:27Z|",
+      "fingerprint": "ophielel/dsh-devkit||False|False|False|False|2026-08-14T07:28:37Z|",
       "name": "dsh-devkit",
       "reasons": [
         "missing_repository_description",
@@ -6872,19 +7180,22 @@
       "url": "https://github.com/coppynight/dsh-doctor"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "development",
       "description_en": "DeepSeek Harness environment diagnostic tool: dsh_doctor checks env, profile, config, bundles, mount, port, health, and disk",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "jorinyang/dsh-doctor|DeepSeek Harness environment diagnostic tool: dsh_doctor checks env, profile, config, bundles, mount, port, health, and disk|False|False|False|False|2026-08-14T03:30:35Z|MIT",
       "name": "dsh-doctor",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333447617,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/jorinyang/dsh-doctor"
     },
     {
@@ -6973,7 +7284,7 @@
       "description_en": "这是一个ssh前端程序，可以让UI体现类似lab的功能！用于远程ssh快速相应，同时可以直接在前端操作/查看远程服务器上的信息与代码。",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "chenw2759-wq/dsh-easyssh|这是一个ssh前端程序，可以让UI体现类似lab的功能！用于远程ssh快速相应，同时可以直接在前端操作/查看远程服务器上的信息与代码。|False|False|False|False|2026-08-14T07:22:10Z|BSD-3-Clause",
+      "fingerprint": "chenw2759-wq/dsh-easyssh|这是一个ssh前端程序，可以让UI体现类似lab的功能！用于远程ssh快速相应，同时可以直接在前端操作/查看远程服务器上的信息与代码。|False|False|False|False|2026-08-14T07:28:32Z|BSD-3-Clause",
       "name": "dsh-easyssh",
       "reasons": [
         "enrichment_deferred"
@@ -7072,10 +7383,9 @@
       "description_zh": "",
       "enriched": true,
       "fingerprint": "STARDUSTLC666/dsh-email|DeepSeek Harness 邮件插件：email_list/read/search/send/folders/attachment 六工具，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 八个预设，多账号、附件收发、Web 设置页配置，纯 Node 全平台。|False|False|False|False|2026-08-14T07:20:39Z|MIT",
-      "model_error": "GitHub Models returned HTTP 410",
       "name": "dsh-email",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333512933,
       "status": "needs_review",
@@ -7166,19 +7476,22 @@
       "url": "https://github.com/hccccc01333/dsh-eval"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "automation",
       "description_en": "DSH 插件评测工具：YAML 用例驱动真实 agent 回归评测 + baseline 对比 PASS/WARN/FAIL 门禁｜Regression eval harness for DeepSeek Harness plugins",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "BiBoyang/dsh-eval-harness|DSH 插件评测工具：YAML 用例驱动真实 agent 回归评测 + baseline 对比 PASS/WARN/FAIL 门禁｜Regression eval harness for DeepSeek Harness plugins|False|False|False|False|2026-08-14T02:53:24Z|",
       "name": "dsh-eval-harness",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license"
       ],
       "repository_id": 1333577584,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/BiBoyang/dsh-eval-harness"
     },
     {
@@ -7206,7 +7519,7 @@
       "fingerprint": "qing3a/dsh-event-auditor|DeepSeek Harness 事件流审计面板插件：观察事件类型/分发模式/计数/最近事件，帮助插件作者理解 harness 内部|False|False|False|False|2026-08-14T05:43:01Z|MIT",
       "name": "dsh-event-auditor",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333361885,
       "status": "needs_review",
@@ -7289,7 +7602,7 @@
       "fingerprint": "yyh-001/dsh-expression|找得到、发得出 —— DSH 表情包插件：语义搜图，只发真实文件，走 companion QQ 通道|False|False|False|False|2026-08-14T06:18:53Z|MIT",
       "name": "dsh-expression",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333232606,
       "status": "needs_review",
@@ -7297,6 +7610,22 @@
         "cordis.patch.yml"
       ],
       "url": "https://github.com/yyh-001/dsh-expression"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "wenliang9527/dsh-eye||False|False|False|False|2026-08-14T07:31:33Z|",
+      "name": "dsh-eye",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333871199,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/wenliang9527/dsh-eye"
     },
     {
       "category_confidence": "low",
@@ -7329,6 +7658,22 @@
       "status": "needs_review",
       "structure_evidence": [],
       "url": "https://github.com/Areium/dsh-fail-logger"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "TT432/dsh-feedback||False|False|False|False|2026-08-14T05:23:49Z|",
+      "name": "dsh-feedback",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333813838,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/TT432/dsh-feedback"
     },
     {
       "category_confidence": "low",
@@ -7429,6 +7774,22 @@
     {
       "category_confidence": "low",
       "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "left0ver/dsh-file-review||False|False|False|False|2026-08-14T07:23:25Z|MIT",
+      "name": "dsh-file-review",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333846315,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/left0ver/dsh-file-review"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
       "description_en": "Upload arbitrary local files from the DeepSeek Harness Web composer and manage them in Settings.",
       "description_zh": "",
       "enriched": false,
@@ -7467,7 +7828,7 @@
       "fingerprint": "Moximxxx/dsh-find-skill|dsh plugin bridging the vercel-labs/skills ecosystem: LLM-driven skill search, install, and lifecycle for temp/project/global scopes. |False|False|False|False|2026-08-14T05:53:48Z|MIT",
       "name": "dsh-find-skill",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333382944,
       "status": "needs_review",
@@ -7547,7 +7908,7 @@
       "description_en": "DeepSeek Harness的一些有趣插件",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "lvyuchuiyi/dsh-funpack| DeepSeek Harness的一些有趣插件|False|False|False|False|2026-08-14T07:22:06Z|MIT",
+      "fingerprint": "lvyuchuiyi/dsh-funpack| DeepSeek Harness的一些有趣插件|False|False|False|False|2026-08-14T07:30:04Z|MIT",
       "name": "dsh-funpack",
       "reasons": [
         "enrichment_deferred"
@@ -7562,15 +7923,17 @@
       "category_suggestion": "automation",
       "description_en": "Gated, durable human-in-the-loop workflow engine for DeepSeek Harness.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "TtTRz/dsh-gatedflow|Gated, durable human-in-the-loop workflow engine for DeepSeek Harness.|False|False|False|False|2026-08-14T04:51:29Z|MIT",
       "name": "dsh-gatedflow",
       "reasons": [
-        "enrichment_deferred"
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333434032,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/TtTRz/dsh-gatedflow"
     },
     {
@@ -7706,19 +8069,22 @@
       "url": "https://github.com/weiyuou-chowbus/dsh-git-status"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "automation",
       "description_en": "Git status, diff, commit, pull request, and worktree workflows for DeepSeek Harness.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "lonelymoon87/dsh-gitflow|Git status, diff, commit, pull request, and worktree workflows for DeepSeek Harness.|False|False|False|False|2026-08-14T02:54:23Z|MIT",
       "name": "dsh-gitflow",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333414957,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/lonelymoon87/dsh-gitflow"
     },
     {
@@ -7898,19 +8264,22 @@
       "url": "https://github.com/winyh/dsh-growth"
     },
     {
-      "category_confidence": "medium",
-      "category_suggestion": "development",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Runtime tool policy, dangerous-command guard, and output redaction for DeepSeek Harness.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "lonelymoon87/dsh-guardian|Runtime tool policy, dangerous-command guard, and output redaction for DeepSeek Harness.|False|False|False|False|2026-08-14T02:54:27Z|MIT",
       "name": "dsh-guardian",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333415037,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/lonelymoon87/dsh-guardian"
     },
     {
@@ -7971,7 +8340,7 @@
       "fingerprint": "1na-ko/dsh-hdc-bridge|DSH 原生鸿蒙设备桥：hdc 工具让 Agent 完成截图-看图-装包-验证的闭环调试 / DSH-native HarmonyOS device bridge|False|False|False|False|2026-08-14T05:53:13Z|MIT",
       "name": "dsh-hdc-bridge",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333258432,
       "status": "needs_review",
@@ -8243,15 +8612,15 @@
       "url": "https://github.com/cesaryike/dsh-image-to-path"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "automation",
       "description_en": "DeepSeek Harness Plugin and Agent Profile Package Index - Install dsh-plugin with just one command",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Sunrisepeak/dsh-index|DeepSeek Harness Plugin and Agent Profile Package Index - Install dsh-plugin with just one command|False|False|False|False|2026-08-14T05:51:34Z|Apache-2.0",
       "name": "dsh-index",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure"
       ],
       "repository_id": 1333208771,
       "status": "needs_review",
@@ -8299,7 +8668,7 @@
       "fingerprint": "Chinesezjc/dsh-interconnect|Cross-instance message/event handoff plugins for DSH (interconnect service + tools)|False|False|False|False|2026-08-14T06:32:47Z|MIT",
       "name": "dsh-interconnect",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333084899,
       "status": "needs_review",
@@ -8439,19 +8808,22 @@
       "url": "https://github.com/moxisuki/dsh-lan"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "automation",
       "description_en": "Agent-first DeepSeek Harness plugin intelligence: verify existing plugins, identify missing capabilities, and generate build-ready briefs.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "cyanseek/dsh-landscape|Agent-first DeepSeek Harness plugin intelligence: verify existing plugins, identify missing capabilities, and generate build-ready briefs.|False|False|False|False|2026-08-14T02:49:30Z|MIT",
       "name": "dsh-landscape",
       "reasons": [
-        "enrichment_deferred"
+        "planned_or_placeholder"
       ],
       "repository_id": 1333418369,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/cyanseek/dsh-landscape"
     },
     {
@@ -8497,7 +8869,7 @@
       "fingerprint": "imetn/dsh-lark-bridge|Bidirectional Lark/Feishu controller for DeepSeek Harness|False|False|False|False|2026-08-14T06:53:32Z|MIT",
       "name": "dsh-lark-bridge",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333285864,
       "status": "needs_review",
@@ -8561,7 +8933,7 @@
       "description_en": "Windows 下 DeepSeek Harness Web 的启动与管理工具：deepseek 命令一键前台/后台启动、自动打开浏览器、状态查询、停止服务与更新检查，支持一行命令安装",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "RYun601/dsh-launcher|Windows 下 DeepSeek Harness Web 的启动与管理工具：deepseek 命令一键前台/后台启动、自动打开浏览器、状态查询、停止服务与更新检查，支持一行命令安装|False|False|False|False|2026-08-14T05:56:13Z|MIT",
+      "fingerprint": "RYun601/dsh-launcher|Windows 下 DeepSeek Harness Web 的启动与管理工具：deepseek 命令一键前台/后台启动、自动打开浏览器、状态查询、停止服务与更新检查，支持一行命令安装|False|False|False|False|2026-08-14T07:31:45Z|MIT",
       "name": "dsh-launcher",
       "reasons": [
         "missing_plugin_structure",
@@ -8766,19 +9138,21 @@
       "url": "https://github.com/Player-MINEPIG/dsh-llm-codex-oauth"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "An dsh plugin for role-based LLM retry&fallback strategy. 基于角色的模型重试备用策略插件",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "omdsh-dev/dsh-llm-fallbacks|An dsh plugin for role-based LLM retry&fallback strategy. 基于角色的模型重试备用策略插件|False|False|False|False|2026-08-14T03:33:42Z|MIT",
       "name": "dsh-llm-fallbacks",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1326942966,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/omdsh-dev/dsh-llm-fallbacks"
     },
     {
@@ -8865,19 +9239,22 @@
       "url": "https://github.com/omdsh-dev/dsh-longbridge"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "development",
       "description_en": "LSP action surface for DeepSeek Harness: lsp_diagnostics, lsp_format, and lsp_completion tools over language servers",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "PerryLink/dsh-lsp-actions|LSP action surface for DeepSeek Harness: lsp_diagnostics, lsp_format, and lsp_completion tools over language servers|False|False|False|False|2026-08-14T03:09:20Z|Apache-2.0",
       "name": "dsh-lsp-actions",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333526401,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/PerryLink/dsh-lsp-actions"
     },
     {
@@ -9017,7 +9394,7 @@
       "fingerprint": "hyqhyq3/dsh-mcp-manager|MCP server manager plugin for DeepSeek Harness: Settings → MCP page, OAuth (PKCE + dynamic client registration) or static-token auth, tools registered as mcp__<name>__*|False|False|False|False|2026-08-14T07:04:33Z|MIT",
       "name": "dsh-mcp-manager",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333306299,
       "status": "needs_review",
@@ -9033,7 +9410,7 @@
       "description_en": "Read-only runtime management panel for the official DeepSeek Harness MCP client: /mcp command + Settings MCP tab with status, tools, errors, reconnect counts, sanitized display and controlled patch suggestions (Apache-2.0, dsh-plugin).",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "PerryLink/dsh-mcp-panel|Read-only runtime management panel for the official DeepSeek Harness MCP client: /mcp command + Settings MCP tab with status, tools, errors, reconnect counts, sanitized display and controlled patch suggestions (Apache-2.0, dsh-plugin).|False|False|False|False|2026-08-14T07:26:03Z|Apache-2.0",
+      "fingerprint": "PerryLink/dsh-mcp-panel|Read-only runtime management panel for the official DeepSeek Harness MCP client: /mcp command + Settings MCP tab with status, tools, errors, reconnect counts, sanitized display and controlled patch suggestions (Apache-2.0, dsh-plugin).|False|False|False|False|2026-08-14T07:28:04Z|Apache-2.0",
       "name": "dsh-mcp-panel",
       "reasons": [
         "enrichment_deferred"
@@ -9220,19 +9597,21 @@
       "url": "https://github.com/ljsysfurryACE/dsh-memory-director"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。",
       "description_zh": "",
-      "enriched": false,
-      "fingerprint": "csyangwen/dsh-memory-evolve|为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。|False|False|False|False|2026-08-14T03:44:29Z|MIT",
+      "enriched": true,
+      "fingerprint": "csyangwen/dsh-memory-evolve|为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。|False|False|False|False|2026-08-14T07:29:34Z|MIT",
       "name": "dsh-memory-evolve",
       "reasons": [
-        "enrichment_deferred"
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1323731026,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/csyangwen/dsh-memory-evolve"
     },
     {
@@ -9274,10 +9653,9 @@
       "description_zh": "",
       "enriched": true,
       "fingerprint": "jiruidai/dsh-meta-orchestrator|A model-native meta-agent plugin for DeepSeek Harness that uses the underlying model’s reasoning and planning capabilities to synthesize task-specific workflows at runtime and coordinate tools and subagents.|False|False|False|False|2026-08-14T07:13:24Z|MIT",
-      "model_error": "GitHub Models returned HTTP 410",
       "name": "dsh-meta-orchestrator",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333331301,
       "status": "needs_review",
@@ -9304,19 +9682,22 @@
       "url": "https://github.com/stushansusu/dsh-miku-skin"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "Git-style milestone timeline for DeepSeek Harness - hover for metadata, click to jump to any message. 会话里程碑导航条：像 Git 提交图一眼定位每条提问，悬停看时间/轮次/耗时/TTFT，点击即跳转。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "SnowCrescenter-tech/dsh-milestone|Git-style milestone timeline for DeepSeek Harness - hover for metadata, click to jump to any message. 会话里程碑导航条：像 Git 提交图一眼定位每条提问，悬停看时间/轮次/耗时/TTFT，点击即跳转。|False|False|False|False|2026-08-14T03:57:35Z|MIT",
       "name": "dsh-milestone",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333351892,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/SnowCrescenter-tech/dsh-milestone"
     },
     {
@@ -9421,7 +9802,7 @@
       "description_en": "",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "knGear/dsh-mobile||False|False|False|False|2026-08-14T07:05:49Z|MIT",
+      "fingerprint": "knGear/dsh-mobile||False|False|False|False|2026-08-14T07:28:11Z|MIT",
       "name": "dsh-mobile",
       "reasons": [
         "enrichment_deferred"
@@ -9513,19 +9894,23 @@
       "url": "https://github.com/citrusli2026/dsh-mobile-ui"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "DSH 高级模型配置器：为 DeepSeek Harness 提供将 pi-ai 预设模型的上下文、输出上限、推理挡位一键应用到自定义提供商的能力。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "LiangYin233/dsh-model-config-sync|DSH 高级模型配置器：为 DeepSeek Harness 提供将 pi-ai 预设模型的上下文、输出上限、推理挡位一键应用到自定义提供商的能力。|False|False|False|False|2026-08-14T04:07:10Z|MIT",
       "name": "dsh-model-config-sync",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333290303,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "dsh.plugin.json",
+        "package.json+source"
+      ],
       "url": "https://github.com/LiangYin233/dsh-model-config-sync"
     },
     {
@@ -9657,19 +10042,22 @@
       "url": "https://github.com/MC5lan/dsh-multimodal"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "DeepSeek Harness music plugin (dsh-plugin)",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "syy-shark/dsh-music-plugin|DeepSeek Harness music plugin (dsh-plugin)|False|False|False|False|2026-08-14T03:01:31Z|MIT",
       "name": "dsh-music-plugin",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333228875,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/syy-shark/dsh-music-plugin"
     },
     {
@@ -9883,19 +10271,21 @@
       "url": "https://github.com/hahaha-taotao/dsh-oauth-api"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "OAuth 2.1 Streamable HTTP MCP client plugin for DeepSeek Harness.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "springbrand-lab/dsh-oauth-mcp-client|OAuth 2.1 Streamable HTTP MCP client plugin for DeepSeek Harness.|False|False|False|False|2026-08-14T04:02:35Z|MIT",
       "name": "dsh-oauth-mcp-client",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333240748,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/springbrand-lab/dsh-oauth-mcp-client"
     },
     {
@@ -9995,19 +10385,22 @@
       "url": "https://github.com/ChuanTianML/dsh-open-with"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "OpenAI Codex OAuth login and usage card plugin for DeepSeek Harness",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "yoke233/dsh-openai-codex-auth|OpenAI Codex OAuth login and usage card plugin for DeepSeek Harness|False|False|False|False|2026-08-14T04:15:05Z|MIT",
       "name": "dsh-openai-codex-auth",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333175499,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/yoke233/dsh-openai-codex-auth"
     },
     {
@@ -10047,15 +10440,17 @@
       "category_suggestion": "automation",
       "description_en": "OpenBiliClaw 是本地运行的跨平台个性化内容推荐 Agent，持续理解你的兴趣并主动找内容。本仓库是它的 DeepSeek Harness 插件：DSH 界面常驻第四栏（推荐/内容库/对话/画像/设置），注册 22 个 Agent Bridge 工具，让 Agent 也能读推荐、答探测、闭环学习。",
       "description_zh": "",
-      "enriched": false,
-      "fingerprint": "whiteguo233/dsh-openbiliclaw|OpenBiliClaw 是本地运行的跨平台个性化内容推荐 Agent，持续理解你的兴趣并主动找内容。本仓库是它的 DeepSeek Harness 插件：DSH 界面常驻第四栏（推荐/内容库/对话/画像/设置），注册 22 个 Agent Bridge 工具，让 Agent 也能读推荐、答探测、闭环学习。|False|False|False|False|2026-08-13T19:06:56Z|BSD-3-Clause",
+      "enriched": true,
+      "fingerprint": "whiteguo233/dsh-openbiliclaw|OpenBiliClaw 是本地运行的跨平台个性化内容推荐 Agent，持续理解你的兴趣并主动找内容。本仓库是它的 DeepSeek Harness 插件：DSH 界面常驻第四栏（推荐/内容库/对话/画像/设置），注册 22 个 Agent Bridge 工具，让 Agent 也能读推荐、答探测、闭环学习。|False|False|False|False|2026-08-14T07:31:46Z|BSD-3-Clause",
       "name": "dsh-openbiliclaw",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1332396549,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/whiteguo233/dsh-openbiliclaw"
     },
     {
@@ -10283,19 +10678,22 @@
       "url": "https://github.com/czm15053/dsh-peer-link"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "development",
       "description_en": "Claude Code-style declarative permission rules for DeepSeek Harness: ordered allow/deny/ask rules with tool-name, argument (glob/regex), and workspace-path matching on the tools/pre-execute waterfall, session-log audit, and HMR reload.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "PerryLink/dsh-permission-rules|Claude Code-style declarative permission rules for DeepSeek Harness: ordered allow/deny/ask rules with tool-name, argument (glob/regex), and workspace-path matching on the tools/pre-execute waterfall, session-log audit, and HMR reload.|False|False|False|False|2026-08-14T03:42:06Z|Apache-2.0",
       "name": "dsh-permission-rules",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333515275,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/PerryLink/dsh-permission-rules"
     },
     {
@@ -10443,15 +10841,16 @@
       "url": "https://github.com/mitao-su/dsh-playwright-native"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "DeepSeek Harness 插件集合｜齐天大圣双主题皮肤，支持亮暗模式、响应式布局与热插拔",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Gandufu/dsh-plugin|DeepSeek Harness 插件集合｜齐天大圣双主题皮肤，支持亮暗模式、响应式布局与热插拔|False|False|False|False|2026-08-14T04:13:50Z|",
       "name": "dsh-plugin",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license",
+        "missing_plugin_structure"
       ],
       "repository_id": 1333356314,
       "status": "needs_review",
@@ -10534,7 +10933,7 @@
       "fingerprint": "HuanLinOTO/dsh-plugin-anti-ads|DSH Web 广告拦截器，四层独立防御拦截 dsh-ads 插件的所有广告位 | DSH Web ad blocker with four independent defense layers targeting the dsh-ads plugin|False|False|False|False|2026-08-14T06:25:42Z|NOASSERTION",
       "name": "dsh-plugin-anti-ads",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1329879949,
       "status": "needs_review",
@@ -10546,19 +10945,22 @@
       "url": "https://github.com/HuanLinOTO/dsh-plugin-anti-ads"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Action-State Memory Engine: typed time-series memory (states + actions) with trend/anomaly/causal analysis for DeepSeek Harness",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Xplore-LAB/dsh-plugin-asmemory|Action-State Memory Engine: typed time-series memory (states + actions) with trend/anomaly/causal analysis for DeepSeek Harness|False|False|False|False|2026-08-14T03:50:31Z|MIT",
       "name": "dsh-plugin-asmemory",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333390990,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source",
+        "pyproject.toml+source"
+      ],
       "url": "https://github.com/Xplore-LAB/dsh-plugin-asmemory"
     },
     {
@@ -10586,7 +10988,7 @@
       "fingerprint": "HuanLinOTO/dsh-plugin-auto-blame|模型回合结束后用 LLM 生成 3 条批判性跟进建议，点击即发送 | After a model turn, an LLM generates 3 critical follow-up suggestions shown as click-to-send chips|False|False|False|False|2026-08-14T06:25:52Z|NOASSERTION",
       "name": "dsh-plugin-auto-blame",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1329448333,
       "status": "needs_review",
@@ -10621,7 +11023,7 @@
       "fingerprint": "gameswu/dsh-plugin-background|dsh壁纸插件|False|False|False|False|2026-08-14T06:59:46Z|MIT",
       "name": "dsh-plugin-background",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333133160,
       "status": "needs_review",
@@ -10639,7 +11041,7 @@
       "fingerprint": "HuanLinOTO/dsh-plugin-better-sidebar-plugin-office|为 better-sidebar 提供 Office 三件套预览（.docx/.xlsx/.pptx），独立 bundle 瘦身主体 | Provides Office-suite preview (.docx/.xlsx/.pptx) for better-sidebar as a separate bundle to slim the core|False|False|False|False|2026-08-14T06:25:59Z|NOASSERTION",
       "name": "dsh-plugin-better-sidebar-plugin-office",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1331821326,
       "status": "needs_review",
@@ -10925,15 +11327,16 @@
       "url": "https://github.com/hnmrxz/dsh-plugin-deepseek-balance"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "medium",
+      "category_suggestion": "automation",
       "description_en": "DSH 插件开发踩坑与做法档案（skill + 文档）：cordis 双副本、tsconfig 三件套、Windows junction、多帧 zstd 等实测记录",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "omdsh-dev/dsh-plugin-dev|DSH 插件开发踩坑与做法档案（skill + 文档）：cordis 双副本、tsconfig 三件套、Windows junction、多帧 zstd 等实测记录|False|False|False|False|2026-08-14T03:11:23Z|",
       "name": "dsh-plugin-dev",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license",
+        "missing_plugin_structure"
       ],
       "repository_id": 1327920108,
       "status": "needs_review",
@@ -11125,7 +11528,7 @@
       "fingerprint": "HuanLinOTO/dsh-plugin-interpreters|暴露 run_python/run_node 工具，通过 stdin 执行代码返回 stdout/stderr/exit，含解释器路径配置卡 | Exposes run_python/run_node tools that execute code via stdin and return stdout/stderr/exit, with interpreter-path config card|False|False|False|False|2026-08-14T06:26:07Z|NOASSERTION",
       "name": "dsh-plugin-interpreters",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1331842107,
       "status": "needs_review",
@@ -11223,7 +11626,7 @@
       "description_en": "DSH 插件管理器：桌面 GUI + CLI，管理 dsh 的 profile、插件与一键启动 dsh web (Tauri 2 + Node CLI)",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "MAXeaglet/dsh-plugin-manager|DSH 插件管理器：桌面 GUI + CLI，管理 dsh 的 profile、插件与一键启动 dsh web (Tauri 2 + Node CLI)|False|False|False|False|2026-08-14T07:17:41Z|MIT",
+      "fingerprint": "MAXeaglet/dsh-plugin-manager|DSH 插件管理器：桌面 GUI + CLI，管理 dsh 的 profile、插件与一键启动 dsh web (Tauri 2 + Node CLI)|False|False|False|False|2026-08-14T07:29:03Z|MIT",
       "name": "dsh-plugin-manager",
       "reasons": [
         "enrichment_deferred"
@@ -11481,7 +11884,7 @@
       "description_en": "",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "YinFengWindy/dsh-plugin-shiori-role||False|False|False|False|2026-08-14T06:56:32Z|",
+      "fingerprint": "YinFengWindy/dsh-plugin-shiori-role||False|False|False|False|2026-08-14T07:30:11Z|",
       "name": "dsh-plugin-shiori-role",
       "reasons": [
         "enrichment_deferred"
@@ -11532,7 +11935,7 @@
       "fingerprint": "HuanLinOTO/dsh-plugin-sleep|向模型暴露 sleep 工具，按指定毫秒暂停执行后返回，支持取消/clamp | Exposes a sleep tool that pauses for specified ms then returns, with cancellation/clamping|False|False|False|False|2026-08-14T06:26:31Z|NOASSERTION",
       "name": "dsh-plugin-sleep",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1329739741,
       "status": "needs_review",
@@ -11551,7 +11954,7 @@
       "fingerprint": "HuanLinOTO/dsh-plugin-spur|聊天流中悬挂皮鞭，甩动鞭梢（>2.0 px/ms）即向 agent 发送 go work 消息 | A whip hanging in the chat stream; flick the tip (>2.0 px/ms) to send the agent a \"go work!\" message|False|False|False|False|2026-08-14T06:26:40Z|NOASSERTION",
       "name": "dsh-plugin-spur",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1328988789,
       "status": "needs_review",
@@ -11614,15 +12017,18 @@
       "category_suggestion": "development",
       "description_en": "Template for deepseek-harness plugin development.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "bugmaker2/dsh-plugin-template|Template for deepseek-harness plugin development.|False|False|False|False|2026-08-14T04:18:16Z|MIT",
       "name": "dsh-plugin-template",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333375150,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/bugmaker2/dsh-plugin-template"
     },
     {
@@ -11812,7 +12218,7 @@
       "fingerprint": "HuanLinOTO/dsh-plugin-ya-workspace-sidebar|DSH Web 工作区侧栏替代，顶部全局最近会话 + Workspace→Session 二级菜单 + 面包屑 | DSH Web workspace sidebar replacement: top global recent sessions + Workspace→Session two-level menu + breadcrumbs|False|False|False|False|2026-08-14T06:26:45Z|NOASSERTION",
       "name": "dsh-plugin-ya-workspace-sidebar",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1329587400,
       "status": "needs_review",
@@ -11831,7 +12237,7 @@
       "fingerprint": "HuanLinOTO/dsh-plugin-yet-another-subagent|可配置子代理 profile 系统，单一 subagent 工具 + profile 参数，含 Web UI 设置/实时进度/子代理树 | Configurable subagent profile system: single subagent tool + profile param, with Web UI settings/real-time progress/subagent tree|False|False|False|False|2026-08-14T06:26:51Z|NOASSERTION",
       "name": "dsh-plugin-yet-another-subagent",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1329031985,
       "status": "needs_review",
@@ -11986,35 +12392,39 @@
       "url": "https://github.com/rainforest888/dsh-plugins-raincode"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "自动收录和分类 GitHub dsh-plugin Topic 项目的静态目录网站",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "ZASENJC/dsh-plugins-store|自动收录和分类 GitHub dsh-plugin Topic 项目的静态目录网站|False|False|False|False|2026-08-14T03:57:42Z|MIT",
       "name": "dsh-plugins-store",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333579278,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/ZASENJC/dsh-plugins-store"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "DSH Plugins Cellection",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "JustGenius-s/DSH-Plugs|DSH Plugins Cellection|False|False|False|False|2026-08-14T04:26:46Z|",
       "name": "DSH-Plugs",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license"
       ],
       "repository_id": 1333377134,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/JustGenius-s/DSH-Plugs"
     },
     {
@@ -12243,15 +12653,16 @@
       "url": "https://github.com/lhmd/dsh-promotion-toolkit"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "medium",
+      "category_suggestion": "automation",
       "description_en": "DeepSeek Harness DSH 提示词增强插件：✨ 一键优化草稿",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Fishsb/dsh-prompt-enhancer|DeepSeek Harness DSH 提示词增强插件：✨ 一键优化草稿|False|False|False|False|2026-08-14T03:42:47Z|MIT",
       "name": "dsh-prompt-enhancer",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333612974,
       "status": "needs_review",
@@ -12331,7 +12742,7 @@
       "fingerprint": "Wine-Red/dsh-prompt-stash|Local, per-session prompt stash for DeepSeek Harness Web | 本地、分对话的提示词输入暂存工具。写了一半的长提示词，临时需要先问一个短问题？ 同时准备多个方案，但尚未决定发哪一个？将未完成的想法放入草稿架中，准备好后再继续完成|False|False|False|False|2026-08-14T06:56:46Z|MIT",
       "name": "dsh-prompt-stash",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333542028,
       "status": "needs_review",
@@ -12502,19 +12913,22 @@
       "url": "https://github.com/wuwangmao/dsh-qwen-multimodal"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "Ramify 是 DeepSeek Harness 的创意分支画布插件，用树状工作区生成、对比和迭代多个可交互方案。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "yanglongyun/dsh-ramify|Ramify 是 DeepSeek Harness 的创意分支画布插件，用树状工作区生成、对比和迭代多个可交互方案。|False|False|False|False|2026-08-14T02:47:05Z|MIT",
       "name": "dsh-ramify",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333302922,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/yanglongyun/dsh-ramify"
     },
     {
@@ -12534,35 +12948,41 @@
       "url": "https://github.com/Lehmaning/dsh-randomuuid-polyfill"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "medium",
+      "category_suggestion": "interaction",
       "description_en": "DeepSeek Harness plugin: make the model write its chain-of-thought in your language",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "pinkllo/dsh-reasoning-translator|DeepSeek Harness plugin: make the model write its chain-of-thought in your language|False|False|False|False|2026-08-14T02:59:04Z|MIT",
       "name": "dsh-reasoning-translator",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333319115,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/pinkllo/dsh-reasoning-translator"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "interaction",
       "description_en": "Message recall (撤回) plugin for the DSH Web UI: one undo button on each user message that removes the turn and everything after it, durably, without reverting code changes.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Mongfayi/dsh-recall|Message recall (撤回) plugin for the DSH Web UI: one undo button on each user message that removes the turn and everything after it, durably, without reverting code changes.|False|False|False|False|2026-08-14T02:52:14Z|MIT",
       "name": "dsh-recall",
       "reasons": [
-        "enrichment_deferred"
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333324528,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/Mongfayi/dsh-recall"
     },
     {
@@ -12574,7 +12994,7 @@
       "fingerprint": "zp-home/dsh-recommend|DSH 插件生态透明排行与推荐：每日自动抓取 dsh-plugin 话题 + 公开评分模型 + 排行/推荐插件与静态站|False|False|False|False|2026-08-14T05:46:38Z|MIT",
       "name": "dsh-recommend",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333568633,
       "status": "needs_review",
@@ -12718,7 +13138,7 @@
       "description_en": "DSH 插件：把 git 状态与仓库规范动态注入 system prompt（官方 system-prompt 缝隙插件）",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "qing3a/dsh-repo-context|DSH 插件：把 git 状态与仓库规范动态注入 system prompt（官方 system-prompt 缝隙插件）|False|False|False|False|2026-08-14T07:26:05Z|",
+      "fingerprint": "qing3a/dsh-repo-context|DSH 插件：把 git 状态与仓库规范动态注入 system prompt（官方 system-prompt 缝隙插件）|False|False|False|False|2026-08-14T07:28:44Z|",
       "name": "dsh-repo-context",
       "reasons": [
         "enrichment_deferred"
@@ -12753,7 +13173,7 @@
       "description_en": "Turn a DeepSeek Harness session into deliverable work reports (daily/weekly/handoff/article) with verifiable receipts",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "ciceroyang/dsh-report-studio|Turn a DeepSeek Harness session into deliverable work reports (daily/weekly/handoff/article) with verifiable receipts|False|False|False|False|2026-08-14T07:07:35Z|MIT",
+      "fingerprint": "ciceroyang/dsh-report-studio|Turn a DeepSeek Harness session into deliverable work reports (daily/weekly/handoff/article) with verifiable receipts|False|False|False|False|2026-08-14T07:32:27Z|MIT",
       "name": "dsh-report-studio",
       "reasons": [
         "enrichment_deferred"
@@ -12897,7 +13317,7 @@
       "description_en": "",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "LingyeSoul/dsh-rider||False|False|False|False|2026-08-14T06:59:42Z|GPL-3.0",
+      "fingerprint": "LingyeSoul/dsh-rider||False|False|False|False|2026-08-14T07:29:16Z|GPL-3.0",
       "name": "dsh-rider",
       "reasons": [
         "enrichment_deferred"
@@ -12963,7 +13383,7 @@
       "description_en": "Claude Code-style paths: rule injection for DeepSeek Harness (DSH).",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "Temoa/dsh-rules-paths|Claude Code-style paths: rule injection for DeepSeek Harness (DSH).|False|False|False|False|2026-08-14T07:20:42Z|MIT",
+      "fingerprint": "Temoa/dsh-rules-paths|Claude Code-style paths: rule injection for DeepSeek Harness (DSH).|False|False|False|False|2026-08-14T07:31:55Z|MIT",
       "name": "dsh-rules-paths",
       "reasons": [
         "enrichment_deferred"
@@ -12982,7 +13402,7 @@
       "fingerprint": "Qintsg/dsh-safe-delete|Safe delete plugin for DeepSeek Harness (DSH): move files to trash / staging area instead of permanent removal, with restore and purge support.|False|False|False|False|2026-08-14T05:44:41Z|Apache-2.0",
       "name": "dsh-safe-delete",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333205453,
       "status": "needs_review",
@@ -13080,7 +13500,7 @@
       "fingerprint": "omdsh-dev/dsh-scout|面向 DeepSeek Harness 的只读环境探测插件，为智能体提供运行环境、软件版本、系统资源、端口、服务、硬件及工作区信息。|False|False|False|False|2026-08-14T06:57:53Z|MIT",
       "name": "dsh-scout",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1331910339,
       "status": "needs_review",
@@ -13131,7 +13551,7 @@
       "fingerprint": "gxpppp/dsh-search-mcp|Replace dsh's built-in web search with search MCP servers (Tavily/Brave/Exa/Perplexity/DuckDuckGo/custom), configured from the web Settings page. Disables the built-in DeepSeek search provider while enabled.|False|False|False|False|2026-08-14T07:11:21Z|MIT",
       "name": "dsh-search-mcp",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333289615,
       "status": "needs_review",
@@ -13226,15 +13646,18 @@
       "category_suggestion": "interaction",
       "description_en": "Aggregate and natively control multiple remote DeepSeek Harness (DSH) servers' sessions from one official Web UI — hub gateway + official-UI bridge. 多服务器 DSH 会话聚合与原生操控",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Asaiuta/dsh-session-hub|Aggregate and natively control multiple remote DeepSeek Harness (DSH) servers' sessions from one official Web UI — hub gateway + official-UI bridge. 多服务器 DSH 会话聚合与原生操控|False|False|False|False|2026-08-14T03:42:54Z|MIT",
       "name": "dsh-session-hub",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333427944,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/Asaiuta/dsh-session-hub"
     },
     {
@@ -13270,19 +13693,21 @@
       "url": "https://github.com/longyu065/dsh-session-index"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "Pin sessions in the DeepSeek Harness (DSH) web sidebar - dual-face plugin with a hover pin badge, durable pinning, and top ordering",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "PerryLink/dsh-session-pin|Pin sessions in the DeepSeek Harness (DSH) web sidebar - dual-face plugin with a hover pin badge, durable pinning, and top ordering|False|False|False|False|2026-08-14T03:08:00Z|Apache-2.0",
       "name": "dsh-session-pin",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333462162,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/PerryLink/dsh-session-pin"
     },
     {
@@ -13643,6 +14068,22 @@
     {
       "category_confidence": "low",
       "category_suggestion": "tools",
+      "description_en": "",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "TT432/dsh-skillzip||False|False|False|False|2026-08-14T05:23:53Z|",
+      "name": "dsh-skillzip",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333814039,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/TT432/dsh-skillzip"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
       "description_en": "Mirror of dsh-external/dsh-skins + feat: harbor (夕港) dusk-harbor skin",
       "description_zh": "",
       "enriched": false,
@@ -13677,15 +14118,18 @@
       "category_suggestion": "automation",
       "description_en": "A drop-in DeepSeek Harness agent loop whose context engine is a bounded slice instead of a growing transcript",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "TT-Wang/dsh-slice-agent-loop|A drop-in DeepSeek Harness agent loop whose context engine is a bounded slice instead of a growing transcript|False|False|False|False|2026-08-14T04:56:30Z|BSD-3-Clause",
       "name": "dsh-slice-agent-loop",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1331085134,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/TT-Wang/dsh-slice-agent-loop"
     },
     {
@@ -13737,19 +14181,22 @@
       "url": "https://github.com/JasonJin2006/dsh-sound-effects-plugin"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Specification-driven development toolkit for DeepSeek Harness.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "lonelymoon87/dsh-specflow|Specification-driven development toolkit for DeepSeek Harness.|False|False|False|False|2026-08-14T02:54:22Z|MIT",
       "name": "dsh-specflow",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333414880,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/lonelymoon87/dsh-specflow"
     },
     {
@@ -13809,7 +14256,7 @@
       "fingerprint": "UynajGI/dsh-ssh|SSH remote-execution plugin for DeepSeek Harness: ProxyJump chain, SFTP filesystem, subprocess and PTY over ssh2|False|False|False|False|2026-08-14T05:57:58Z|MIT",
       "name": "dsh-ssh",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333157512,
       "status": "needs_review",
@@ -13851,19 +14298,22 @@
       "url": "https://github.com/YOLO-LZL/dsh-ssh-plugin"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "SSH remote workspaces for DeepSeek Harness: browse/read/write remote files, run remote commands, with connection status dots.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "CrazyShout/dsh-ssh-remote|SSH remote workspaces for DeepSeek Harness: browse/read/write remote files, run remote commands, with connection status dots.|False|False|False|False|2026-08-14T03:49:04Z|MIT",
       "name": "dsh-ssh-remote",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333472706,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/CrazyShout/dsh-ssh-remote"
     },
     {
@@ -13907,7 +14357,7 @@
       "fingerprint": "Han-1413141/dsh-sticky-disclosure|DSH Web client plugin: collapse every expanded section (Think / tool cards) in the conversation in one click, with a customizable hotkey.|False|False|False|False|2026-08-14T06:32:32Z|MIT",
       "name": "dsh-sticky-disclosure",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333236743,
       "status": "needs_review",
@@ -14077,7 +14527,7 @@
       "fingerprint": "jinhuang712/dsh-survey|问卷式批量提问插件 for DeepSeek Harness：一次性问 10+ 题（单选/多选/是否 toggle/对比题/开放题），可跳过、全屏浮层、提交后对半 recap|False|False|False|False|2026-08-14T05:55:30Z|MIT",
       "name": "dsh-survey",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333428345,
       "status": "needs_review",
@@ -14256,7 +14706,7 @@
       "fingerprint": "030611/dsh-telemetry-redactor|Fail-closed export-copy redaction for DeepSeek Harness session telemetry|False|False|False|False|2026-08-14T07:23:06Z|MIT",
       "name": "dsh-telemetry-redactor",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333368566,
       "status": "needs_review",
@@ -14321,7 +14771,7 @@
       "description_en": "A manual Terminal tab for the DeepSeek Harness (dsh) web UI — run commands on the host machine, persistent cwd, sudo password prompt, command history.现在可以在web界面内直接执行命令行了",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "wuwuzhige-sudo/dsh-terminal-panel|A manual Terminal tab for the DeepSeek Harness (dsh) web UI — run commands on the host machine, persistent cwd, sudo password prompt, command history.现在可以在web界面内直接执行命令行了|False|False|False|False|2026-08-14T06:47:34Z|MIT",
+      "fingerprint": "wuwuzhige-sudo/dsh-terminal-panel|A manual Terminal tab for the DeepSeek Harness (dsh) web UI — run commands on the host machine, persistent cwd, sudo password prompt, command history.现在可以在web界面内直接执行命令行了|False|False|False|False|2026-08-14T07:31:44Z|MIT",
       "name": "dsh-terminal-panel",
       "reasons": [
         "enrichment_deferred"
@@ -14449,7 +14899,7 @@
       "description_en": "dsh-tianshu-tui — DeepSeek Harness terminal UI",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "huiliyi37/dsh-tianshu-build|dsh-tianshu-tui — DeepSeek Harness terminal UI|False|False|False|False|2026-08-14T05:44:28Z|MIT",
+      "fingerprint": "huiliyi37/dsh-tianshu-build|dsh-tianshu-tui — DeepSeek Harness terminal UI|False|False|False|False|2026-08-14T07:29:30Z|MIT",
       "name": "dsh-tianshu-build",
       "reasons": [
         "unclear_plugin_evidence"
@@ -14470,7 +14920,7 @@
       "fingerprint": "Elaina-real/dsh-tiered-approval|Tiered auto-review for DeepSeek Harness: static-rule safety net + LLM reviewer + human fallback — auto-allow safe actions, deny irreversible ones, ask a human for the rest.|False|False|False|False|2026-08-14T06:19:04Z|MIT",
       "name": "dsh-tiered-approval",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333278814,
       "status": "needs_review",
@@ -14534,7 +14984,7 @@
       "description_en": "Real-time token consumption HUD plugin for DeepSeek Harness. Live token usage monitor, context pressure, cost estimation, history curves, per-day/per-month stats. DeepSeek Harness 实时 Token 消耗监控插件：用量统计、成本估算、趋势曲线、按日按月报表。",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "juhe291/dsh-token-panel|Real-time token consumption HUD plugin for DeepSeek Harness. Live token usage monitor, context pressure, cost estimation, history curves, per-day/per-month stats. DeepSeek Harness 实时 Token 消耗监控插件：用量统计、成本估算、趋势曲线、按日按月报表。|False|False|False|False|2026-08-14T07:26:21Z|MIT",
+      "fingerprint": "juhe291/dsh-token-panel|Real-time token consumption HUD plugin for DeepSeek Harness. Live token usage monitor, context pressure, cost estimation, history curves, per-day/per-month stats. DeepSeek Harness 实时 Token 消耗监控插件：用量统计、成本估算、趋势曲线、按日按月报表。|False|False|False|False|2026-08-14T07:32:40Z|MIT",
       "name": "dsh-token-panel",
       "reasons": [
         "enrichment_deferred"
@@ -14681,7 +15131,7 @@
       "fingerprint": "MashedPotato817/dsh-tool-browser|Native browser automation tools for DeepSeek Harness, powered by Playwright + Edge|False|False|False|False|2026-08-14T04:58:08Z|MIT",
       "name": "dsh-tool-browser",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333382521,
       "status": "needs_review",
@@ -14915,15 +15365,15 @@
       "url": "https://github.com/Drifter-yh/dsh-tool-policy"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "reqpipe — DeepSeek Harness 需求流水线插件（7 tools）+ Python CLI（需求→方案→评审→开发）",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "sikwoxy/dsh-tool-reqpipe|reqpipe — DeepSeek Harness 需求流水线插件（7 tools）+ Python CLI（需求→方案→评审→开发）|False|False|False|False|2026-08-14T04:11:33Z|MIT",
       "name": "dsh-tool-reqpipe",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure"
       ],
       "repository_id": 1333336924,
       "status": "needs_review",
@@ -14963,19 +15413,22 @@
       "url": "https://github.com/Electricitysheep/dsh-tool-turbo"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Hyperionjust/dsh-tool-underseal||False|False|False|False|2026-08-14T03:36:34Z|Apache-2.0",
       "name": "dsh-tool-underseal",
       "reasons": [
-        "enrichment_deferred"
+        "missing_repository_description"
       ],
       "repository_id": 1333451466,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/Hyperionjust/dsh-tool-underseal"
     },
     {
@@ -15099,10 +15552,10 @@
       "description_en": "解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插件——像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表。npm 一键安装。",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "ccch1mneyyy/dsh-TUI|解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插件——像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表。npm 一键安装。|False|False|False|False|2026-08-14T07:04:05Z|MIT",
+      "fingerprint": "ccch1mneyyy/dsh-TUI|解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插件——像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表。npm 一键安装。|False|False|False|False|2026-08-14T07:31:57Z|MIT",
       "name": "dsh-TUI",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333111893,
       "status": "needs_review",
@@ -15633,7 +16086,7 @@
       "fingerprint": "Yihong89/dsh-usage-plugin|DeepSeek Harness (DSH) plugins. First: dsh-usage-report — per-session token usage & estimated cost (/usage + usage_report), priced from the DeepSeek pricing table.|False|False|False|False|2026-08-14T06:31:49Z|MIT",
       "name": "dsh-usage-plugin",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333213894,
       "status": "needs_review",
@@ -15691,12 +16144,12 @@
       "url": "https://github.com/xinmo114514/dsh-usage-widget"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
-      "description_en": "",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
+      "description_en": "Persona-driven UX walkthrough plugin for DeepSeek Harness (DSH) - scans React + TypeScript source code for UX issues, pinpoints them, and suggests fixes.",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "DietCokewithSugar/dsh-user-experience||False|False|False|False|2026-08-14T06:19:05Z|MIT",
+      "fingerprint": "DietCokewithSugar/dsh-user-experience|Persona-driven UX walkthrough plugin for DeepSeek Harness (DSH) - scans React + TypeScript source code for UX issues, pinpoints them, and suggests fixes.|False|False|False|False|2026-08-14T07:30:18Z|MIT",
       "name": "dsh-user-experience",
       "reasons": [
         "enrichment_deferred"
@@ -15755,19 +16208,23 @@
       "url": "https://github.com/Ox0400/dsh-vault"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "development",
       "description_en": "Privacy-minimal heuristic per-turn verification summaries for DeepSeek Harness",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "030611/dsh-verification-receipt|Privacy-minimal heuristic per-turn verification summaries for DeepSeek Harness|False|False|False|False|2026-08-14T05:20:45Z|MIT",
       "name": "dsh-verification-receipt",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333370288,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "dsh.plugin.json",
+        "package.json+source"
+      ],
       "url": "https://github.com/030611/dsh-verification-receipt"
     },
     {
@@ -15801,6 +16258,22 @@
       "status": "needs_review",
       "structure_evidence": [],
       "url": "https://github.com/NigelYao/dsh-view-modes"
+    },
+    {
+      "category_confidence": "low",
+      "category_suggestion": "tools",
+      "description_en": "DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-friendly, human transcript untouched. 纯文本模型自动识图桥",
+      "description_zh": "",
+      "enriched": false,
+      "fingerprint": "237229953-create/dsh-vision|DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-friendly, human transcript untouched. 纯文本模型自动识图桥|False|False|False|False|2026-08-14T07:27:04Z|MIT",
+      "name": "dsh-vision",
+      "reasons": [
+        "enrichment_deferred"
+      ],
+      "repository_id": 1333865233,
+      "status": "needs_review",
+      "structure_evidence": [],
+      "url": "https://github.com/237229953-create/dsh-vision"
     },
     {
       "category_confidence": "medium",
@@ -15907,7 +16380,7 @@
       "fingerprint": "Yuuz12/dsh-vision-helper|DeepSeek Harness Vision Helper/DeepSeek Harness 视觉辅助方案|False|False|False|False|2026-08-14T06:58:52Z|MIT",
       "name": "dsh-vision-helper",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333484814,
       "status": "needs_review",
@@ -15955,7 +16428,7 @@
       "description_en": "Config-only DeepSeek Harness bundle for OpenAI-compatible vision models.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "libinyam/dsh-vision-provider|Config-only DeepSeek Harness bundle for OpenAI-compatible vision models.|False|False|False|False|2026-08-14T07:03:53Z|MIT",
+      "fingerprint": "libinyam/dsh-vision-provider|Config-only DeepSeek Harness bundle for OpenAI-compatible vision models.|False|False|False|False|2026-08-14T07:30:37Z|MIT",
       "name": "dsh-vision-provider",
       "reasons": [
         "planned_or_placeholder"
@@ -16006,11 +16479,10 @@
       "description_en": "DeepSeek Harness 视觉插件：图片自动识图（内置免费视觉模型链）+ 像素级视觉工具（看图问答/定位/裁剪/像素对比/取色/OCR/矢量化/抠图/截图），图片轮可像文本轮一样连续多步调用工具",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "ysr666/dsh-vision-router|DeepSeek Harness 视觉插件：图片自动识图（内置免费视觉模型链）+ 像素级视觉工具（看图问答/定位/裁剪/像素对比/取色/OCR/矢量化/抠图/截图），图片轮可像文本轮一样连续多步调用工具|False|False|False|False|2026-08-14T07:22:16Z|LGPL-3.0",
-      "model_error": "GitHub Models returned HTTP 410",
+      "fingerprint": "ysr666/dsh-vision-router|DeepSeek Harness 视觉插件：图片自动识图（内置免费视觉模型链）+ 像素级视觉工具（看图问答/定位/裁剪/像素对比/取色/OCR/矢量化/抠图/截图），图片轮可像文本轮一样连续多步调用工具|False|False|False|False|2026-08-14T07:26:45Z|LGPL-3.0",
       "name": "dsh-vision-router",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333446374,
       "status": "needs_review",
@@ -16029,7 +16501,7 @@
       "fingerprint": "121103qwq/dsh-vision-sidecar|Hosted free vision sidecar for DeepSeek Harness with durable session evidence|False|False|False|False|2026-08-14T05:54:07Z|MIT",
       "name": "dsh-vision-sidecar",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333411029,
       "status": "needs_review",
@@ -16138,19 +16610,21 @@
       "url": "https://github.com/HarcoChen/dsh-vsc-integration"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "development",
       "description_en": "VS Code client for the DeepSeek Harness SDK runtime.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "lonelymoon87/dsh-vscode|VS Code client for the DeepSeek Harness SDK runtime.|False|False|False|False|2026-08-14T02:54:24Z|MIT",
       "name": "dsh-vscode",
       "reasons": [
-        "enrichment_deferred"
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333415199,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/lonelymoon87/dsh-vscode"
     },
     {
@@ -16317,19 +16791,22 @@
       "url": "https://github.com/moxingovo/dsh-web-panel"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "interaction",
       "description_en": "在 Web UI 中一键管理 DeepSeek Harness (DSH) 插件：查看、实时启停、安装/卸载、环境管理、插件市场。bundle 与非 bundle 插件全覆盖。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "LX2000WASD/dsh-web-plugin-manager|在 Web UI 中一键管理 DeepSeek Harness (DSH) 插件：查看、实时启停、安装/卸载、环境管理、插件市场。bundle 与非 bundle 插件全覆盖。|False|False|False|False|2026-08-14T04:27:57Z|MIT",
       "name": "dsh-web-plugin-manager",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333491534,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/LX2000WASD/dsh-web-plugin-manager"
     },
     {
@@ -16413,35 +16890,41 @@
       "url": "https://github.com/crayonlu/dsh-web-search-firecrawl"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Firecrawl-backed search provider plugin for the DeepSeek Harness web capability seam (ctx.web)",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "yangzhe1003/dsh-web-search-firecrawl|Firecrawl-backed search provider plugin for the DeepSeek Harness web capability seam (ctx.web)|False|False|False|False|2026-08-14T03:05:19Z|MIT",
       "name": "dsh-web-search-firecrawl",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333284940,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/yangzhe1003/dsh-web-search-firecrawl"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Enhanced, persistent web search plugin for DeepSeek Harness (multi-engine search, SQLite+LRU cache, platform backends, Playwright rendering)",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "anweat/dsh-web-search-pro|Enhanced, persistent web search plugin for DeepSeek Harness (multi-engine search, SQLite+LRU cache, platform backends, Playwright rendering)|False|False|False|False|2026-08-14T02:45:32Z|MIT",
       "name": "dsh-web-search-pro",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333320049,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/anweat/dsh-web-search-pro"
     },
     {
@@ -16477,19 +16960,22 @@
       "url": "https://github.com/crayonlu/dsh-web-search-tavily"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "DSH Web GUI 文本文件拖拽导入插件:把 md / txt / log / 代码等文本文件拖进页面, 按内容长度自动处理 —— 短内容直接进输入框,长内容复制到工作区并粘贴可读路径。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "liceses/dsh-web-text-drop|DSH Web GUI 文本文件拖拽导入插件:把 md / txt / log / 代码等文本文件拖进页面, 按内容长度自动处理 —— 短内容直接进输入框,长内容复制到工作区并粘贴可读路径。|False|False|False|False|2026-08-14T04:42:45Z|",
       "name": "dsh-web-text-drop",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license"
       ],
       "repository_id": 1333379538,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/liceses/dsh-web-text-drop"
     },
     {
@@ -16581,7 +17067,7 @@
       "fingerprint": "TtTRz/dsh-wecom|WeCom AI Bot channel for DeepSeek Harness — every chat runs a persistent, preset-backed agent with real tools.|False|False|False|False|2026-08-14T06:47:43Z|MIT",
       "name": "dsh-wecom",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333465355,
       "status": "needs_review",
@@ -16698,7 +17184,7 @@
       "fingerprint": "MuziIsabel/dsh-win-notify|DSH plugin: Windows toast notification with sound when an agent task completes|False|False|False|False|2026-08-14T05:30:34Z|MIT",
       "name": "dsh-win-notify",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333243013,
       "status": "needs_review",
@@ -16793,7 +17279,7 @@
       "description_en": "",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "wenliang9527/dsh-workspace||False|False|False|False|2026-08-14T07:05:46Z|",
+      "fingerprint": "wenliang9527/dsh-workspace||False|False|False|False|2026-08-14T07:31:36Z|",
       "name": "dsh-workspace",
       "reasons": [
         "enrichment_deferred"
@@ -16988,7 +17474,7 @@
       "fingerprint": "whitelonng/dshcode|Community desktop companion for DeepSeek Harness — one-click Electron app for macOS and Windows|False|False|False|False|2026-08-14T07:05:14Z|MIT",
       "name": "dshcode",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333142935,
       "status": "needs_review",
@@ -17014,19 +17500,22 @@
       "url": "https://github.com/asdf17128/dshp"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "The missing companion CLI for DeepSeek Harness (dsh): manage MCP servers with dry-run checks, migrate from Claude Code / Codex in one command | dsh 的 MCP 管理与迁移工具",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "why913/dshx|The missing companion CLI for DeepSeek Harness (dsh): manage MCP servers with dry-run checks, migrate from Claude Code / Codex in one command | dsh 的 MCP 管理与迁移工具|False|False|False|False|2026-08-14T03:11:05Z|MIT",
       "name": "dshx",
       "reasons": [
-        "enrichment_deferred"
+        "planned_or_placeholder"
       ],
       "repository_id": 1333368136,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/why913/dshx"
     },
     {
@@ -17035,7 +17524,7 @@
       "description_en": "DSKIN · DeepSeek Harness（DSH）卡通像素皮肤插件 / Cartoon pixel skin plugin for DSH Web GUI — 原始界面不动，像素宠物会散步、眨眼、跳跃 / living pixel pets that stroll, blink and hop",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "dancingmemory/dskin|DSKIN · DeepSeek Harness（DSH）卡通像素皮肤插件 / Cartoon pixel skin plugin for DSH Web GUI — 原始界面不动，像素宠物会散步、眨眼、跳跃 / living pixel pets that stroll, blink and hop|False|False|False|False|2026-08-14T07:23:39Z|MIT",
+      "fingerprint": "dancingmemory/dskin|DSKIN · DeepSeek Harness（DSH）卡通像素皮肤插件 / Cartoon pixel skin plugin for DSH Web GUI — 原始界面不动，像素宠物会散步、眨眼、跳跃 / living pixel pets that stroll, blink and hop|False|False|False|False|2026-08-14T07:27:28Z|MIT",
       "name": "dskin",
       "reasons": [
         "enrichment_deferred"
@@ -17073,7 +17562,7 @@
       "fingerprint": "AmethystLuna/embedded-workbench|Embedded C/C++ AI engineering plugin — firmware skills (FreeRTOS, Keil, HardFault, state machines) + 1% Rule / Plan Verification Gate discipline | 嵌入式 C/C++ 工程 AI 插件:固件技能与 agent 纪律。 For Claude Code, Codex, Cursor, Kimi, OpenCode, ZCode and DeepSeek Harness (dsh)|False|False|False|False|2026-08-14T06:25:10Z|MIT",
       "name": "embedded-workbench",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1276714299,
       "status": "needs_review",
@@ -17149,15 +17638,16 @@
       "url": "https://github.com/shi275773124/falsify-dsh"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "FastHTML + pywebview 桌面应用全生命周期技能（本地 HTTP + WebView2 + PyInstaller）",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "kuailexiaozixin/fasthtml-desktop|FastHTML + pywebview 桌面应用全生命周期技能（本地 HTTP + WebView2 + PyInstaller）|False|False|False|False|2026-08-14T04:22:57Z|MIT",
       "name": "fasthtml-desktop",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1332975742,
       "status": "needs_review",
@@ -17181,15 +17671,15 @@
       "url": "https://github.com/morluto/flameox"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Compare multiple skills on the same task and pick the winner.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Jayden-X-L/forkprobe|Compare multiple skills on the same task and pick the winner.|False|False|False|False|2026-08-14T04:43:09Z|MIT",
       "name": "forkprobe",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure"
       ],
       "repository_id": 1261092598,
       "status": "needs_review",
@@ -17205,7 +17695,7 @@
       "fingerprint": "niyongsheng/free-vision-skill|Local‑only vision skill for macOS 本地化识图技能|False|False|False|False|2026-08-14T06:37:22Z|MIT",
       "name": "free-vision-skill",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1327502411,
       "status": "needs_review",
@@ -17319,7 +17809,7 @@
       "fingerprint": "zcx369658780/governed-workflow-for-dsh|Policy-enforced, evidence-first governed workflows for DeepSeek Harness agents.|False|False|False|False|2026-08-14T06:54:13Z|MIT",
       "name": "governed-workflow-for-dsh",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333262129,
       "status": "needs_review",
@@ -17412,15 +17902,16 @@
       "url": "https://github.com/cakeni/harness-pet"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "development",
       "description_en": "一个自主的高级智能伙伴，不仅分析问题，更持续工作直到完成实现和验证。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "hellowind777/helloagents|一个自主的高级智能伙伴，不仅分析问题，更持续工作直到完成实现和验证。|False|False|False|False|2026-08-14T03:01:12Z|NOASSERTION",
       "name": "helloagents",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1064776002,
       "status": "needs_review",
@@ -17549,7 +18040,7 @@
       "description_en": "Pure mathematics for agents: search for examples and counterexamples, compute exactly, and independently check what a result proves.",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "morluto/jacobian|Pure mathematics for agents: search for examples and counterexamples, compute exactly, and independently check what a result proves.|False|False|False|False|2026-08-14T07:26:33Z|MIT",
+      "fingerprint": "morluto/jacobian|Pure mathematics for agents: search for examples and counterexamples, compute exactly, and independently check what a result proves.|False|False|False|False|2026-08-14T07:29:42Z|MIT",
       "name": "jacobian",
       "reasons": [
         "enrichment_deferred"
@@ -17584,7 +18075,7 @@
       "fingerprint": "jumpserver-east/jumpserver-dsh|DeepSeek Harness plugin: manage JumpServer assets and operate on them through KoKo|False|False|False|False|2026-08-14T05:40:38Z|MIT",
       "name": "jumpserver-dsh",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333214052,
       "status": "needs_review",
@@ -17595,19 +18086,22 @@
       "url": "https://github.com/jumpserver-east/jumpserver-dsh"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "automation",
       "description_en": "The next-gen lightweight coding agent cli",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Sikao-Engine/KimiX|The next-gen lightweight coding agent cli|False|False|False|False|2026-08-14T04:36:01Z|",
       "name": "KimiX",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1180401969,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "pyproject.toml+source"
+      ],
       "url": "https://github.com/Sikao-Engine/KimiX"
     },
     {
@@ -17635,7 +18129,7 @@
       "fingerprint": "wly8691-jpg/knowlp-rag|KnowLP-RAG: dual knowledge graph retrieval for Markdown notes - MCP stdio server for DeepSeek Harness (dsh) & Claude Code|False|False|False|False|2026-08-14T07:09:50Z|MIT",
       "name": "knowlp-rag",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1291676455,
       "status": "needs_review",
@@ -17652,7 +18146,7 @@
       "description_en": "Code intelligence for agents: find the code that matters and keep your context window and tokens lean.",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "morluto/leantoken|Code intelligence for agents: find the code that matters and keep your context window and tokens lean.|False|False|False|False|2026-08-14T06:50:26Z|Apache-2.0",
+      "fingerprint": "morluto/leantoken|Code intelligence for agents: find the code that matters and keep your context window and tokens lean.|False|False|False|False|2026-08-14T07:32:53Z|Apache-2.0",
       "name": "leantoken",
       "reasons": [
         "enrichment_deferred"
@@ -17703,7 +18197,7 @@
       "fingerprint": "AmethystLuna/logicprobe|Claim verification for AI coding agents — 7 structural + 7 adversarial logic-primitive probes against design docs & refactoring plans | AI 编程助手声明核查插件:对设计文档与重构计划做逻辑原语验证(7 结构 + 7 对抗探针) for Claude Code, Codex, Cursor, Kimi, OpenCode, ZCode and DeepSeek Harness (dsh)|False|False|False|False|2026-08-14T06:24:18Z|MIT",
       "name": "logicprobe",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1331586818,
       "status": "needs_review",
@@ -17899,10 +18393,9 @@
       "description_zh": "",
       "enriched": true,
       "fingerprint": "liustack/modlens|The first vision plugin for DeepSeek Harness, and the vision bridge for every text-only coding agent. Paste an image, get structured JSON evidence (OCR, layout, semantics).|False|False|False|False|2026-08-14T07:19:40Z|MIT",
-      "model_error": "GitHub Models returned HTTP 410",
       "name": "modlens",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1163808211,
       "status": "needs_review",
@@ -18073,19 +18566,21 @@
       "url": "https://github.com/sisyphus-iambe/northstar-exam"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "开源版锤子便签，复刻锤科美学，一键Docker私有化部署，支持skill调用，支持dsh plugin，支持多租户，一键生成公众号格式，支持导出便签为图片",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "zhaoolee/notes|开源版锤子便签，复刻锤科美学，一键Docker私有化部署，支持skill调用，支持dsh plugin，支持多租户，一键生成公众号格式，支持导出便签为图片|False|False|False|False|2026-08-14T03:11:25Z|",
       "name": "notes",
       "reasons": [
-        "enrichment_deferred"
+        "missing_detected_license"
       ],
       "repository_id": 1182135360,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/zhaoolee/notes"
     },
     {
@@ -18111,10 +18606,9 @@
       "description_zh": "",
       "enriched": true,
       "fingerprint": "hust-open-atom-club/oh-dsh|一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验，支持分层安装、一步到位，免去手工整合打包。|False|False|False|False|2026-08-14T07:14:55Z|BSD-3-Clause",
-      "model_error": "GitHub Models returned HTTP 410",
       "name": "oh-dsh",
       "reasons": [
-        "model_analysis_failed"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1330531961,
       "status": "needs_review",
@@ -18157,15 +18651,16 @@
       "url": "https://github.com/NoWint/Oh-My-DSH"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "🐋 All you need is oh-my-dsh ｜ DeepSeek Harness 社区插件索引与精选（自动更新）",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "wangshunnn/oh-my-dsh|🐋 All you need is oh-my-dsh ｜ DeepSeek Harness 社区插件索引与精选（自动更新）|False|False|False|False|2026-08-14T04:17:16Z|MIT",
       "name": "oh-my-dsh",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure",
+        "planned_or_placeholder"
       ],
       "repository_id": 1333150021,
       "status": "needs_review",
@@ -18194,7 +18689,7 @@
       "description_en": "only my DSH plugins — monorepo of DeepSeek Harness plugin bundles",
       "description_zh": "",
       "enriched": false,
-      "fingerprint": "XJungit/omdp|only my DSH plugins — monorepo of DeepSeek Harness plugin bundles|False|False|False|False|2026-08-14T07:25:27Z|MIT",
+      "fingerprint": "XJungit/omdp|only my DSH plugins — monorepo of DeepSeek Harness plugin bundles|False|False|False|False|2026-08-14T07:30:59Z|MIT",
       "name": "omdp",
       "reasons": [
         "enrichment_deferred"
@@ -18242,7 +18737,7 @@
       "description_en": "🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "nexu-io/open-design|🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.|False|False|False|False|2026-08-14T07:18:28Z|Apache-2.0",
+      "fingerprint": "nexu-io/open-design|🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.|False|False|False|False|2026-08-14T07:30:59Z|Apache-2.0",
       "name": "open-design",
       "reasons": [
         "unclear_plugin_evidence"
@@ -18295,7 +18790,7 @@
       "fingerprint": "whiteguo233/OpenBiliClaw|本地私有、开源的自进化跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。（支持 deepseek harness 插件） | Local-first open-source cross-platform AI content discovery agent: understands you, then proactively finds content across Bilibili, Xiaohongshu, Douyin, YouTube, X, Zhihu, Reddit, Weibo and the open web.（support deepseek harness plugin）|False|False|False|False|2026-08-14T06:54:45Z|MIT",
       "name": "OpenBiliClaw",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1175278883,
       "status": "needs_review",
@@ -18488,19 +18983,21 @@
       "url": "https://github.com/pulseaiclub/phi"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "automation",
       "description_en": "Synesthesia Encoder (通感编码器) — give any text-only LLM (DeepSeek, etc.) the ability to see images via structured spatial text encoding. A Pi agent extension.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Elohia/pi-mm-vision|Synesthesia Encoder (通感编码器) — give any text-only LLM (DeepSeek, etc.) the ability to see images via structured spatial text encoding. A Pi agent extension.|False|False|False|False|2026-08-14T04:30:33Z|MIT",
       "name": "pi-mm-vision",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1321532328,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/Elohia/pi-mm-vision"
     },
     {
@@ -18512,7 +19009,7 @@
       "fingerprint": "weijiafu14/pi2dsh|Bridge the Pi and DeepSeek Harness ecosystems: one Pi Host ABI runs unmodified Pi extensions as native DSH plugins. 打通 Pi 与 DSH 生态。|False|False|False|False|2026-08-14T06:32:58Z|MIT",
       "name": "pi2dsh",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333452358,
       "status": "needs_review",
@@ -18594,7 +19091,7 @@
       "fingerprint": "openHacking/pptkit-presentation|End-user presentation workflows, preview application, and Agent Skill powered by PPTKit.|False|False|False|False|2026-08-14T07:02:02Z|MIT",
       "name": "pptkit-presentation",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1303876331,
       "status": "needs_review",
@@ -18620,19 +19117,22 @@
       "url": "https://github.com/Hyperionjust/Primordial-soup-"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "automation",
       "description_en": "Vision-first local MCP that gives text-only Agents image understanding through Agnes AI (BYOK).",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "Arnoldkevin/prismrelay-mcp|Vision-first local MCP that gives text-only Agents image understanding through Agnes AI (BYOK).|False|False|False|False|2026-08-14T03:05:35Z|MIT",
       "name": "prismrelay-mcp",
       "reasons": [
-        "enrichment_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1327571022,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "cordis.patch.yml",
+        "package.json+source"
+      ],
       "url": "https://github.com/Arnoldkevin/prismrelay-mcp"
     },
     {
@@ -18640,11 +19140,12 @@
       "category_suggestion": "automation",
       "description_en": "Make any project AI-agent-ready in one command. Adaptive tech stack detection (7 languages × 14 frameworks × 61 components), auto-generates AGENTS.md, docs skeleton, CI/CD, and testing infrastructure. 一句话让任何项目具备 AI 开发能力。",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "shuguang1994/project-blueprint|Make any project AI-agent-ready in one command. Adaptive tech stack detection (7 languages × 14 frameworks × 61 components), auto-generates AGENTS.md, docs skeleton, CI/CD, and testing infrastructure. 一句话让任何项目具备 AI 开发能力。|False|False|False|False|2026-08-14T03:49:42Z|MIT",
       "name": "project-blueprint",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure",
+        "planned_or_placeholder"
       ],
       "repository_id": 1304583136,
       "status": "needs_review",
@@ -18848,13 +19349,13 @@
     {
       "category_confidence": "high",
       "category_suggestion": "automation",
-      "description_en": "Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP tools, scenario templates, and a beautiful dashboard. One command start. Built for enterprise teams.",
+      "description_en": "Open-source CMA-compatible agent runtime for any model, with MCP tools, sandboxed sessions, audit, replay, and a local console. Includes a native DeepSeek Harness bundle over stdio MCP.",
       "description_zh": "",
       "enriched": true,
-      "fingerprint": "sandbaseai/sandbase-harness|Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP tools, scenario templates, and a beautiful dashboard. One command start. Built for enterprise teams.|False|False|False|False|2026-08-14T06:15:46Z|NOASSERTION",
+      "fingerprint": "sandbaseai/sandbase-harness|Open-source CMA-compatible agent runtime for any model, with MCP tools, sandboxed sessions, audit, replay, and a local console. Includes a native DeepSeek Harness bundle over stdio MCP.|False|False|False|False|2026-08-14T06:15:46Z|NOASSERTION",
       "name": "sandbase-harness",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1297278222,
       "status": "needs_review",
@@ -18925,7 +19426,7 @@
       "fingerprint": "morlay/session-persistence-rdb|session 关系型数据库持久化|False|False|False|False|2026-08-14T06:25:06Z|MIT",
       "name": "session-persistence-rdb",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1329348569,
       "status": "needs_review",
@@ -18992,7 +19493,7 @@
       "fingerprint": "ZhuXinAI/sidesight|CLI-first vision sidecar for text-only coding agents. Analyze screenshots, diagrams, charts, UI diffs, and videos with OpenAI-compatible multimodal models.|False|False|False|False|2026-08-14T05:37:07Z|MIT",
       "name": "sidesight",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1319104261,
       "status": "needs_review",
@@ -19131,15 +19632,16 @@
       "url": "https://github.com/N0zoM1z0/th08"
     },
     {
-      "category_confidence": "medium",
-      "category_suggestion": "interaction",
+      "category_confidence": "high",
+      "category_suggestion": "automation",
       "description_en": "Tkinter/ttk 原生桌面应用全生命周期技能（MVC + pygubu .ui + SQLite + PyInstaller）",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "kuailexiaozixin/tkinter-desktop|Tkinter/ttk 原生桌面应用全生命周期技能（MVC + pygubu .ui + SQLite + PyInstaller）|False|False|False|False|2026-08-14T04:22:55Z|MIT",
       "name": "tkinter-desktop",
       "reasons": [
-        "enrichment_deferred"
+        "missing_plugin_structure",
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1332975706,
       "status": "needs_review",
@@ -19291,19 +19793,21 @@
       "url": "https://github.com/RangeKing/vibemeter"
     },
     {
-      "category_confidence": "low",
-      "category_suggestion": "tools",
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
       "description_en": "MCP server for image understanding through OpenAI-compatible vision APIs. To provide image recognition capabilities for those large models that do not support Multimodal.",
       "description_zh": "",
-      "enriched": false,
-      "fingerprint": "weekitmo/vision-mcp|MCP server for image understanding through OpenAI-compatible vision APIs. To provide image recognition capabilities for those large models that do not support Multimodal.|False|False|False|False|2026-08-13T08:28:06Z|MIT",
+      "enriched": true,
+      "fingerprint": "weekitmo/vision-mcp|MCP server for image understanding through OpenAI-compatible vision APIs. To provide image recognition capabilities for those large models that do not support Multimodal.|False|False|False|False|2026-08-14T07:29:05Z|MIT",
       "name": "vision-mcp",
       "reasons": [
-        "enrichment_deferred"
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1331911941,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "pyproject.toml+source"
+      ],
       "url": "https://github.com/weekitmo/vision-mcp"
     },
     {
@@ -19374,19 +19878,21 @@
       "url": "https://github.com/Sdongmaker/vpshub"
     },
     {
-      "category_confidence": "medium",
+      "category_confidence": "high",
       "category_suggestion": "interaction",
       "description_en": "Unofficial: drive your own DeepSeek Harness (dsh) as a native VS Code chat agent, beside Claude Code and Codex.",
       "description_zh": "",
-      "enriched": false,
+      "enriched": true,
       "fingerprint": "kalynnka/vscode-deepseek-harness|Unofficial: drive your own DeepSeek Harness (dsh) as a native VS Code chat agent, beside Claude Code and Codex.|False|False|False|False|2026-08-14T03:26:03Z|MIT",
       "name": "vscode-deepseek-harness",
       "reasons": [
-        "enrichment_deferred"
+        "unclear_plugin_evidence"
       ],
       "repository_id": 1333538693,
       "status": "needs_review",
-      "structure_evidence": [],
+      "structure_evidence": [
+        "package.json+source"
+      ],
       "url": "https://github.com/kalynnka/vscode-deepseek-harness"
     },
     {
@@ -19430,7 +19936,7 @@
       "fingerprint": "MorGogh/widget-dock|DSH plugin: draggable widget panel (balance, tokens, stats, commands, goal, cost) for DeepSeek Harness|False|False|False|False|2026-08-14T05:37:48Z|MIT",
       "name": "widget-dock",
       "reasons": [
-        "model_analysis_deferred"
+        "model_provider_unconfigured"
       ],
       "repository_id": 1333331944,
       "status": "needs_review",
@@ -19522,5 +20028,5 @@
   ],
   "query": "topic:dsh-plugin",
   "schema_version": 1,
-  "source_total": 1290
+  "source_total": 1311
 }
