@@ -39,6 +39,8 @@ jobs:
       - name: Continue the rolling automation branch
         run: |
           branch="automation/topic-sync"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git fetch origin "$branch:refs/remotes/origin/$branch"; then
             git switch --force-create "$branch" "origin/$branch"
             git rebase origin/main
@@ -95,8 +97,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           branch="automation/topic-sync"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md README.zh.md CHANGELOG.md data
           if [ -d reports ]; then
             git add reports
