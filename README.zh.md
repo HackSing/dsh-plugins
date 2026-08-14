@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **95 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 14 日**。
+当前整理 **98 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 14 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **95 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **98 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -69,6 +69,7 @@
 - [dsh-auto-chess](https://github.com/omdsh-dev/dsh-auto-chess) — 提供人机或双 AI 自走棋对局。
 - [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — 增加短视频侧栏，支持原生播放、系列导航和历史续播。
 - [dsh-model-modes](https://github.com/DTSFO/dsh-model-modes) — 为DeepSeek Harness Web 编辑器添加快速模式开关与可配置的推理努力档位。
+- [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) — 在 DeepSeek Harness 聊天中将拖放或粘贴的图片和文件转换为工作区路径，供纯文本模型使用。
 
 ## 工具与能力
 
@@ -92,6 +93,8 @@
 - [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — 为每个智能体提供按需工具发现和渐进式 Schema 展开。
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — 通过 OpenMAIC 提供课堂、幻灯片、交互组件和苏格拉底式教学流程。
 - [dsh-scholar](https://github.com/lzszq/dsh-scholar) — 提供面向学术场景的辅助能力。
+- [dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 为 DeepSeek Harness 提供六个邮件工具（列表、读取、搜索、发送、文件夹、附件），支持多账号及常见邮箱服务商预设。
+- [widget-dock](https://github.com/MorGogh/widget-dock) — 为 DeepSeek Harness 提供可拖拽的小组件面板，展示余额、令牌、统计、命令、目标和成本。
 
 ## 自动化与智能体
 

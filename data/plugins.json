@@ -370,6 +370,15 @@
       "url": "https://github.com/DTSFO/dsh-model-modes"
     },
     {
+      "category": "interaction",
+      "description_en": "Converts dropped or pasted images and files into workspace paths for text-only models in DeepSeek Harness chat.",
+      "description_zh": "在 DeepSeek Harness 聊天中将拖放或粘贴的图片和文件转换为工作区路径，供纯文本模型使用。",
+      "name": "dsh-drop-to-path",
+      "repository_id": 1333472422,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/loudMore/dsh-drop-to-path"
+    },
+    {
       "category": "tools",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
@@ -548,6 +557,24 @@
       "repository_id": 1325458176,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/lzszq/dsh-scholar"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides six email tools (list, read, search, send, folders, attachment) for DeepSeek Harness with multi-account support and presets for common email providers.",
+      "description_zh": "为 DeepSeek Harness 提供六个邮件工具（列表、读取、搜索、发送、文件夹、附件），支持多账号及常见邮箱服务商预设。",
+      "name": "dsh-email",
+      "repository_id": 1333512933,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/STARDUSTLC666/dsh-email"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a draggable widget dock for DeepSeek Harness showing balance, tokens, stats, commands, goals, and cost.",
+      "description_zh": "为 DeepSeek Harness 提供可拖拽的小组件面板，展示余额、令牌、统计、命令、目标和成本。",
+      "name": "widget-dock",
+      "repository_id": 1333331944,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/MorGogh/widget-dock"
     },
     {
       "category": "automation",
