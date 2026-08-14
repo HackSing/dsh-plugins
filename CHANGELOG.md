@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31799435506 -->
+- Automatically added [dsh-model-modes](https://github.com/DTSFO/dsh-model-modes) to Interaction & Experience from the `dsh-plugin` topic.
+
 - Added a structured plugin catalog and an approval-gated GitHub Topic discovery script.
 - Added a daily workflow that maintains one rolling Draft PR for `dsh-plugin` candidates.
 - Added deterministic candidate-classification tests and maintainer review guidance.

@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **94 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 13, 2026**.
+Explore **95 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 14, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **94 plugins** across four broad areas. Each plugin appears once, under 
 
 ### Current snapshot
 
-This is the first published directory snapshot: **94 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **95 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -53,7 +53,7 @@ This is the first published directory snapshot: **94 plugins**, grouped into **4
 - [dsh-share](https://github.com/hellodigua/dsh-share) — Adds one-click conversation sharing.
 - [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) — Supports branch-based message edits, rerolls, retries, and version history.
 - [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — Integrates local runtime memory, retrievable documents, and supervised memory spaces.
-- [dsh-sidechain](https://github.com/Buyi-wsgzg/dsh-sidechain) — Runs persistent side sessions or one-off side questions without changing the main history.
+- [dsh-sidechain](https://github.com/omdsh-dev/dsh-sidechain) — Runs persistent side sessions or one-off side questions without changing the main history.
 - [dsh-conversation-share](https://github.com/bill9109/dsh-conversation-share) — Shares a selected excerpt instead of an entire conversation.
 - [dsh-explain](https://github.com/yuezengwu/dsh-explain) — Adds local-first learning threads with explanations organized by source.
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) — Edits user and built-in system-prompt sections with a live preview.
@@ -68,6 +68,7 @@ This is the first published directory snapshot: **94 plugins**, grouped into **4
 - [dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) — Opens an extensible mini-game menu while the model is generating.
 - [dsh-auto-chess](https://github.com/omdsh-dev/dsh-auto-chess) — Provides auto-chess matches for human-versus-AI or AI-versus-AI play.
 - [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — Adds a short-video sidebar with native playback, series navigation, and history resume.
+- [dsh-model-modes](https://github.com/DTSFO/dsh-model-modes) — Adds a Fast mode switch and configurable reasoning effort profiles to the DeepSeek Harness web composer.
 
 ## Tools & Capabilities
 

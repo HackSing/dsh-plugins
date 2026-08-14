@@ -5,7 +5,7 @@
       "description_en": "Brings a terminal-based interface to DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供终端交互界面。",
       "name": "dsh-tianshu-tui",
-      "repository_id": null,
+      "repository_id": 1332692519,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/huiliyi37/dsh-tianshu-tui"
     },
@@ -14,7 +14,7 @@
       "description_en": "Adds `@file` mentions for finding workspace files and attaching their contents to prompts.",
       "description_zh": "支持通过 `@file` 搜索工作区文件，并把文件内容带入提示词。",
       "name": "dsh-at-file",
-      "repository_id": null,
+      "repository_id": 1333068434,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-at-file"
     },
@@ -23,7 +23,7 @@
       "description_en": "Lets you replace the default thinking-status text with a custom label.",
       "description_zh": "可将默认思考状态文案替换成自定义内容。",
       "name": "ui-status-label",
-      "repository_id": null,
+      "repository_id": 1331298429,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/alingalingling/ui-status-label"
     },
@@ -32,7 +32,7 @@
       "description_en": "Adds OpenPencil design preview and editing support.",
       "description_zh": "提供 OpenPencil 设计预览与编辑能力。",
       "name": "dsh-openpencil",
-      "repository_id": null,
+      "repository_id": 1332212466,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/ZSeven-W/dsh-openpencil"
     },
@@ -41,7 +41,7 @@
       "description_en": "Renders interactive HTML cards inside conversations with streaming previews and sandbox isolation.",
       "description_zh": "在对话中渲染交互式 HTML 卡片，支持流式预览与沙箱隔离。",
       "name": "dsh-visualize",
-      "repository_id": null,
+      "repository_id": 1333132287,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Nagi-ovo/dsh-visualize"
     },
@@ -50,7 +50,7 @@
       "description_en": "Combines file browsing, terminal access, and Git review in a side panel.",
       "description_zh": "在侧边栏集中提供文件浏览、终端操作和 Git 审查。",
       "name": "dsh-side-panel",
-      "repository_id": null,
+      "repository_id": 1327183690,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/ccq1/dsh-side-panel"
     },
@@ -59,7 +59,7 @@
       "description_en": "Provides a minimal conversation view focused on final answers.",
       "description_zh": "提供只突出最终结果的精简会话视图。",
       "name": "dsh-focus-chat",
-      "repository_id": null,
+      "repository_id": 1330188742,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/dingyi222666/dsh-focus-chat"
     },
@@ -68,7 +68,7 @@
       "description_en": "Embeds interactive layouts, charts, forms, quizzes, Mermaid diagrams, and 3D scenes in replies.",
       "description_zh": "在回复中嵌入布局、图表、表单、测验、Mermaid 和 3D 场景等交互组件。",
       "name": "dsh-genui",
-      "repository_id": null,
+      "repository_id": 1333128726,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-genui"
     },
@@ -77,7 +77,7 @@
       "description_en": "Sends selected-text annotations with a message and maps replies back to each note.",
       "description_zh": "将选中文本的批注随消息发送，并让回复与各条批注对应。",
       "name": "dsh-annotation",
-      "repository_id": null,
+      "repository_id": 1330089831,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-annotation"
     },
@@ -86,7 +86,7 @@
       "description_en": "Adds a navigation strip for jumping between user-message nodes.",
       "description_zh": "增加会话节点导航条，便于快速跳转到不同用户消息。",
       "name": "dsh-navbar",
-      "repository_id": null,
+      "repository_id": 1330041615,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/vlln/dsh-navbar"
     },
@@ -95,7 +95,7 @@
       "description_en": "Shows background-task progress and a live output tail on the conversation page.",
       "description_zh": "在会话页展示后台任务进度和实时输出片段。",
       "name": "dsh-task-status",
-      "repository_id": null,
+      "repository_id": 1330041701,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/vlln/dsh-task-status"
     },
@@ -104,7 +104,7 @@
       "description_en": "Collapses noisy Think, Bash, and similar messages in the chat timeline.",
       "description_zh": "折叠 Think、Bash 等容易干扰阅读的会话消息。",
       "name": "dsh-web-archive",
-      "repository_id": null,
+      "repository_id": 1327504038,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/renat3u/dsh-web-archive"
     },
@@ -113,7 +113,7 @@
       "description_en": "Adds a keyboard-first command palette to the DSH web interface.",
       "description_zh": "为 DSH Web 界面增加键盘优先的命令面板。",
       "name": "dsh-spotlight",
-      "repository_id": null,
+      "repository_id": 1333136466,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/0xsline/dsh-spotlight"
     },
@@ -122,7 +122,7 @@
       "description_en": "Introduces a dedicated document-reading mode.",
       "description_zh": "提供专门的文档阅读模式。",
       "name": "dsh-101",
-      "repository_id": null,
+      "repository_id": 1328031168,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/bill9109/dsh-101"
     },
@@ -131,7 +131,7 @@
       "description_en": "Inserts raw file paths through cross-platform drag and drop without copying files.",
       "description_zh": "跨平台拖入文件并插入原始路径，无需复制文件。",
       "name": "dsh-drag-and-drop",
-      "repository_id": null,
+      "repository_id": 1324718909,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/bill9109/dsh-drag-and-drop"
     },
@@ -140,7 +140,7 @@
       "description_en": "Opens a particular session or workspace through query-string deep links.",
       "description_zh": "通过查询参数深链直达指定会话或工作区。",
       "name": "dsh-deeplink",
-      "repository_id": null,
+      "repository_id": 1333119284,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/qyw233/dsh-deeplink"
     },
@@ -149,7 +149,7 @@
       "description_en": "Replaces the default write/edit DiffBlock with a PiUI-style diff viewer.",
       "description_zh": "使用 PiUI 风格查看器替换写入和编辑操作的默认 DiffBlock。",
       "name": "dsh-diff-viewer",
-      "repository_id": null,
+      "repository_id": 1331947773,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/lehhair/dsh-diff-viewer"
     },
@@ -158,7 +158,7 @@
       "description_en": "Extends the available DSH settings.",
       "description_zh": "扩展 DSH 的设置项。",
       "name": "ex-setting",
-      "repository_id": null,
+      "repository_id": 1323139686,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/ex-setting"
     },
@@ -167,7 +167,7 @@
       "description_en": "Enables Web Components support.",
       "description_zh": "为 DSH 增加 Web Components 支持。",
       "name": "web-components",
-      "repository_id": null,
+      "repository_id": 1323137354,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/web-components"
     },
@@ -176,7 +176,7 @@
       "description_en": "Adds quick navigation between conversation turns.",
       "description_zh": "支持在不同对话轮次之间快速导航。",
       "name": "dsh-turn-navigator",
-      "repository_id": null,
+      "repository_id": 1331998945,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/vibeinging/dsh-turn-navigator"
     },
@@ -185,7 +185,7 @@
       "description_en": "Restores earlier conversation and workspace states through a persistent change ledger.",
       "description_zh": "基于持久化变更账本恢复到更早的会话和工作区状态。",
       "name": "dsh-turn-rewind",
-      "repository_id": null,
+      "repository_id": 1333100390,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Anionex/dsh-turn-rewind"
     },
@@ -194,7 +194,7 @@
       "description_en": "Distills conversations in the background using subagent reflection and skill updates.",
       "description_zh": "通过后台子智能体复盘及技能更新完成会话蒸馏。",
       "name": "distill",
-      "repository_id": null,
+      "repository_id": 1323384072,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/LoserFox/distill"
     },
@@ -203,7 +203,7 @@
       "description_en": "Adds one-click conversation sharing.",
       "description_zh": "提供一键分享完整会话的能力。",
       "name": "dsh-share",
-      "repository_id": null,
+      "repository_id": 1332051085,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/hellodigua/dsh-share"
     },
@@ -212,7 +212,7 @@
       "description_en": "Supports branch-based message edits, rerolls, retries, and version history.",
       "description_zh": "支持基于分支的消息编辑、重新生成、重试及版本回溯。",
       "name": "dsh-message-edit",
-      "repository_id": null,
+      "repository_id": 1324720195,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Moeblack/dsh-message-edit"
     },
@@ -221,7 +221,7 @@
       "description_en": "Integrates local runtime memory, retrievable documents, and supervised memory spaces.",
       "description_zh": "集成本地运行时记忆、可检索文档和受监督记忆空间。",
       "name": "dsh-mnemon",
-      "repository_id": null,
+      "repository_id": 1329424520,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-mnemon"
     },
@@ -230,16 +230,16 @@
       "description_en": "Runs persistent side sessions or one-off side questions without changing the main history.",
       "description_zh": "在不改变主会话历史的情况下运行持续侧会话或一次性侧问。",
       "name": "dsh-sidechain",
-      "repository_id": null,
+      "repository_id": 1326698240,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Buyi-wsgzg/dsh-sidechain"
+      "url": "https://github.com/omdsh-dev/dsh-sidechain"
     },
     {
       "category": "interaction",
       "description_en": "Shares a selected excerpt instead of an entire conversation.",
       "description_zh": "可只分享会话中的指定片段。",
       "name": "dsh-conversation-share",
-      "repository_id": null,
+      "repository_id": 1332322629,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/bill9109/dsh-conversation-share"
     },
@@ -248,7 +248,7 @@
       "description_en": "Adds local-first learning threads with explanations organized by source.",
       "description_zh": "提供本地优先的学习线程，并按信息来源组织讲解。",
       "name": "dsh-explain",
-      "repository_id": null,
+      "repository_id": 1331831416,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/yuezengwu/dsh-explain"
     },
@@ -257,7 +257,7 @@
       "description_en": "Edits user and built-in system-prompt sections with a live preview.",
       "description_zh": "可分节编辑用户及内置系统提示词，并实时预览效果。",
       "name": "dsh-prompt-studio",
-      "repository_id": null,
+      "repository_id": 1324517730,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Moeblack/dsh-prompt-studio"
     },
@@ -266,7 +266,7 @@
       "description_en": "Adds fictional parody ads inspired by Chinese websites from the mid-2000s.",
       "description_zh": "加入具有 2000 年代中文网站风格的虚构趣味广告。",
       "name": "dsh-ads",
-      "repository_id": null,
+      "repository_id": 1329113397,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Nagi-ovo/dsh-ads"
     },
@@ -275,7 +275,7 @@
       "description_en": "Lets a user play Gomoku against AI or watch two AIs compete.",
       "description_zh": "支持玩家与 AI 下五子棋，也可观看两个 AI 对局。",
       "name": "dsh-gomoku",
-      "repository_id": null,
+      "repository_id": 1327999315,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-gomoku"
     },
@@ -284,7 +284,7 @@
       "description_en": "Adds a tongue-in-cheek stock-market experience while you code.",
       "description_zh": "在编码过程中加入带幽默感的模拟股票体验。",
       "name": "dsh-stock-market",
-      "repository_id": null,
+      "repository_id": 1331846104,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/AnacondaKC/dsh-stock-market"
     },
@@ -293,7 +293,7 @@
       "description_en": "Automatically decorates AI replies with emoji.",
       "description_zh": "自动为 AI 回复补充表情符号。",
       "name": "dsh-emoji",
-      "repository_id": null,
+      "repository_id": 1332222725,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/hellodigua/dsh-emoji"
     },
@@ -302,7 +302,7 @@
       "description_en": "Opens a side-panel arcade with 18 offline games.",
       "description_zh": "在侧边栏提供 18 款可离线运行的小游戏。",
       "name": "dsh-minigames",
-      "repository_id": null,
+      "repository_id": 1333130619,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/lhh010/dsh-minigames"
     },
@@ -311,7 +311,7 @@
       "description_en": "Enables two-way sticker reactions between the user and the agent.",
       "description_zh": "支持用户与智能体双向发送贴纸反馈。",
       "name": "dsh-stickers",
-      "repository_id": null,
+      "repository_id": 1327745309,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/william-jin-cmu/dsh-stickers"
     },
@@ -320,7 +320,7 @@
       "description_en": "Adds a draggable, feedable, and playable desktop pet.",
       "description_zh": "增加可拖拽、投喂和互动的桌面宠物。",
       "name": "whale-girl",
-      "repository_id": null,
+      "repository_id": 1329947687,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/vlln/whale-girl"
     },
@@ -329,7 +329,7 @@
       "description_en": "Appends a thank-you message to keep conversations polite.",
       "description_zh": "自动追加感谢语，让会话表达更有礼貌。",
       "name": "deepseek-manners",
-      "repository_id": null,
+      "repository_id": 1330704503,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Moeblack/deepseek-manners"
     },
@@ -338,7 +338,7 @@
       "description_en": "Opens an extensible mini-game menu while the model is generating.",
       "description_zh": "在模型生成期间打开可扩展的小游戏菜单。",
       "name": "dsh-plugin-d399",
-      "repository_id": null,
+      "repository_id": 1329603396,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/HuanLinOTO/dsh-plugin-d399"
     },
@@ -347,7 +347,7 @@
       "description_en": "Provides auto-chess matches for human-versus-AI or AI-versus-AI play.",
       "description_zh": "提供人机或双 AI 自走棋对局。",
       "name": "dsh-auto-chess",
-      "repository_id": null,
+      "repository_id": 1329778469,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-auto-chess"
     },
@@ -356,16 +356,25 @@
       "description_en": "Adds a short-video sidebar with native playback, series navigation, and history resume.",
       "description_zh": "增加短视频侧栏，支持原生播放、系列导航和历史续播。",
       "name": "dsh-douyin",
-      "repository_id": null,
+      "repository_id": 1332642596,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/AnacondaKC/dsh-douyin"
+    },
+    {
+      "category": "interaction",
+      "description_en": "Adds a Fast mode switch and configurable reasoning effort profiles to the DeepSeek Harness web composer.",
+      "description_zh": "为DeepSeek Harness Web 编辑器添加快速模式开关与可配置的推理努力档位。",
+      "name": "dsh-model-modes",
+      "repository_id": 1333340665,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/DTSFO/dsh-model-modes"
     },
     {
       "category": "tools",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
       "name": "dsh-vision-toolkit",
-      "repository_id": null,
+      "repository_id": 1333100071,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Anionex/dsh-vision-toolkit"
     },
@@ -374,7 +383,7 @@
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
       "name": "dsh-custom-tool",
-      "repository_id": null,
+      "repository_id": 1333068379,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-custom-tool"
     },
@@ -383,7 +392,7 @@
       "description_en": "Provides accessibility-first macOS control with fresh-state checks and scoped permissions.",
       "description_zh": "提供无障碍优先的 macOS 控制，并包含状态新鲜度检查和权限约束。",
       "name": "dsh-computer-use",
-      "repository_id": null,
+      "repository_id": 1333116579,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Anionex/dsh-computer-use"
     },
@@ -392,7 +401,7 @@
       "description_en": "Connects AI workflows to databases and SQL authoring.",
       "description_zh": "让 AI 工作流连接数据库并编写 SQL。",
       "name": "dsh-data-agent",
-      "repository_id": null,
+      "repository_id": 1331112087,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-data-agent"
     },
@@ -401,7 +410,7 @@
       "description_en": "Bundles ten dependency-free utilities for time, encoding, JSON, math, CSV, regex, Markdown, diffs, statistics, and schemas.",
       "description_zh": "集成时间、编码、JSON、计算、CSV、正则、Markdown、差异、统计和 Schema 十类零依赖工具。",
       "name": "dsh-toolkit",
-      "repository_id": null,
+      "repository_id": 1327795364,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-toolkit"
     },
@@ -410,7 +419,7 @@
       "description_en": "Parses, queries, aggregates, and converts RFC 4180 CSV without dependencies.",
       "description_zh": "零依赖解析、查询、聚合和转换 RFC 4180 CSV。",
       "name": "dsh-tool-csv",
-      "repository_id": null,
+      "repository_id": 1326828799,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-csv"
     },
@@ -419,7 +428,7 @@
       "description_en": "Evaluates mathematical expressions with a dependency-free recursive-descent parser.",
       "description_zh": "使用递归下降解析器安全计算数学表达式。",
       "name": "dsh-tool-calculator",
-      "repository_id": null,
+      "repository_id": 1323526209,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-calculator"
     },
@@ -428,7 +437,7 @@
       "description_en": "Produces structured comparisons and unified diffs for text, JSON, CSV, and Markdown.",
       "description_zh": "对文本、JSON、CSV 和 Markdown 进行结构化比较并生成统一差异。",
       "name": "dsh-tool-diff",
-      "repository_id": null,
+      "repository_id": 1328474413,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-diff"
     },
@@ -437,7 +446,7 @@
       "description_en": "Handles Base64, URL, and hexadecimal encoding alongside hashes and UUID generation.",
       "description_zh": "处理 Base64、URL、十六进制编解码，以及哈希和 UUID 生成。",
       "name": "dsh-tool-encoding",
-      "repository_id": null,
+      "repository_id": 1324638838,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-encoding"
     },
@@ -446,7 +455,7 @@
       "description_en": "Queries JSON using a supported subset of JMESPath.",
       "description_zh": "使用受支持的 JMESPath 子集查询 JSON。",
       "name": "dsh-tool-json",
-      "repository_id": null,
+      "repository_id": 1323618624,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-json"
     },
@@ -455,7 +464,7 @@
       "description_en": "Converts HTML and Markdown, normalizes GFM tables, and generates tables of contents.",
       "description_zh": "完成 HTML 与 Markdown 转换、GFM 表格整理及目录生成。",
       "name": "dsh-tool-markdown",
-      "repository_id": null,
+      "repository_id": 1327795409,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-markdown"
     },
@@ -464,7 +473,7 @@
       "description_en": "Tests, extracts, safely replaces, and statically explains regular expressions.",
       "description_zh": "提供正则测试、提取、安全替换和静态解释。",
       "name": "dsh-tool-regex",
-      "repository_id": null,
+      "repository_id": 1326828848,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-regex"
     },
@@ -473,7 +482,7 @@
       "description_en": "Validates, explores, explains, and normalizes JSON Schema data.",
       "description_zh": "支持 JSON Schema 验证、路径查看、解释及规范化。",
       "name": "dsh-tool-schema",
-      "repository_id": null,
+      "repository_id": 1329526554,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-schema"
     },
@@ -482,7 +491,7 @@
       "description_en": "Calculates descriptive statistics, percentiles, frequency distributions, and correlations.",
       "description_zh": "计算描述统计、百分位数、频数分布和相关性。",
       "name": "dsh-tool-stat",
-      "repository_id": null,
+      "repository_id": 1329526524,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-stat"
     },
@@ -491,7 +500,7 @@
       "description_en": "Parses ISO 8601 values, converts IANA time zones, and performs UTC calendar arithmetic.",
       "description_zh": "解析 ISO 8601 时间、转换 IANA 时区并执行 UTC 日历运算。",
       "name": "dsh-tool-time",
-      "repository_id": null,
+      "repository_id": 1324638821,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-tool-time"
     },
@@ -500,7 +509,7 @@
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
       "name": "dsh-kb-sieve",
-      "repository_id": null,
+      "repository_id": 1331086179,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-kb-sieve"
     },
@@ -509,7 +518,7 @@
       "description_en": "Makes MineRU document-parsing tools available to the model.",
       "description_zh": "将 MineRU 文档解析工具提供给模型使用。",
       "name": "dsh-plugin-mineru",
-      "repository_id": null,
+      "repository_id": 1328601495,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/HuanLinOTO/dsh-plugin-mineru"
     },
@@ -518,7 +527,7 @@
       "description_en": "Discovers tools on demand for each agent with progressive schema disclosure.",
       "description_zh": "为每个智能体提供按需工具发现和渐进式 Schema 展开。",
       "name": "dsh-tool-search",
-      "repository_id": null,
+      "repository_id": 1330609835,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/vibeinging/dsh-tool-search"
     },
@@ -527,7 +536,7 @@
       "description_en": "Adds classrooms, slides, interactive widgets, and Socratic teaching flows through OpenMAIC.",
       "description_zh": "通过 OpenMAIC 提供课堂、幻灯片、交互组件和苏格拉底式教学流程。",
       "name": "dsh-openmaic",
-      "repository_id": null,
+      "repository_id": 1333147218,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/THU-MAIC/dsh-openmaic"
     },
@@ -536,7 +545,7 @@
       "description_en": "Provides academic-assistant capabilities.",
       "description_zh": "提供面向学术场景的辅助能力。",
       "name": "dsh-scholar",
-      "repository_id": null,
+      "repository_id": 1325458176,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/lzszq/dsh-scholar"
     },
@@ -545,7 +554,7 @@
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
       "name": "dsh_workflow",
-      "repository_id": null,
+      "repository_id": 1332243516,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/icetomoyo/dsh_workflow"
     },
@@ -554,7 +563,7 @@
       "description_en": "Organizes multiple agents into coordinated teams.",
       "description_zh": "将多个智能体组织为协作团队。",
       "name": "dsh-agent-teams",
-      "repository_id": null,
+      "repository_id": 1332073142,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/NanmiCoder/dsh-agent-teams"
     },
@@ -563,7 +572,7 @@
       "description_en": "Runs scheduled coding work in fresh agent sessions with an auditable history.",
       "description_zh": "在全新智能体会话中定时执行编码任务，并保留可审计记录。",
       "name": "dsh-automation",
-      "repository_id": null,
+      "repository_id": 1333150357,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/titanwings/dsh-automation"
     },
@@ -572,7 +581,7 @@
       "description_en": "Captures anchored plan annotations and returns structured feedback to the agent.",
       "description_zh": "对计划原文进行锚定批注，并把结构化反馈送回智能体。",
       "name": "dsh-plannotator",
-      "repository_id": null,
+      "repository_id": 1333150349,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/titanwings/dsh-plannotator"
     },
@@ -581,7 +590,7 @@
       "description_en": "Adds recurring execution through a `/loop` command, loop tool, and activity indicator.",
       "description_zh": "通过 `/loop` 命令、循环工具和活动指示器实现周期执行。",
       "name": "dsh-loop",
-      "repository_id": null,
+      "repository_id": 1330041547,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/vlln/dsh-loop"
     },
@@ -590,7 +599,7 @@
       "description_en": "Watches files, commands, HTTP endpoints, processes, or webhooks and wakes the agent when conditions match.",
       "description_zh": "持续监视文件、命令、HTTP、进程或 Webhook，并在条件满足时唤醒智能体。",
       "name": "dsh-sentinel",
-      "repository_id": null,
+      "repository_id": 1333122965,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/fuhefei/dsh-sentinel"
     },
@@ -599,7 +608,7 @@
       "description_en": "Orchestrates adaptive deep research on top of the workflow engine.",
       "description_zh": "基于工作流引擎编排自适应深度研究。",
       "name": "dsh-deep-research",
-      "repository_id": null,
+      "repository_id": 1324772199,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-deep-research"
     },
@@ -608,7 +617,7 @@
       "description_en": "Runs an adversarial discover, fix, and review cycle.",
       "description_zh": "执行发现问题、修复和复查的对抗式闭环。",
       "name": "dsh-inspect",
-      "repository_id": null,
+      "repository_id": 1325369702,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-inspect"
     },
@@ -617,7 +626,7 @@
       "description_en": "Embeds decision tracking, idea capture, and Linear-style issue management.",
       "description_zh": "内置决策跟踪、想法收集及 Linear 风格的问题管理。",
       "name": "dsh-track",
-      "repository_id": null,
+      "repository_id": 1328944719,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/fakechris/dsh-track"
     },
@@ -635,7 +644,7 @@
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
       "name": "dsh-open-in-vscode",
-      "repository_id": null,
+      "repository_id": 1333068322,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-open-in-vscode"
     },
@@ -644,7 +653,7 @@
       "description_en": "Sends configurable desktop notifications for turn outcomes and keyword matches.",
       "description_zh": "根据回合结果和关键词规则发送可配置的桌面通知。",
       "name": "dsh-notification",
-      "repository_id": null,
+      "repository_id": 1333068254,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-notification"
     },
@@ -653,7 +662,7 @@
       "description_en": "Bridges BitFun and DSH through ACP.",
       "description_zh": "通过 ACP 打通 BitFun 与 DSH。",
       "name": "dsh-acp-for-bitfun",
-      "repository_id": null,
+      "repository_id": 1333107949,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/bobleer/dsh-acp-for-bitfun"
     },
@@ -662,7 +671,7 @@
       "description_en": "Connects Telegram Bot API messaging with per-chat sessions and HTML formatting.",
       "description_zh": "连接 Telegram Bot API，支持独立聊天会话和 HTML 格式化。",
       "name": "telegram",
-      "repository_id": null,
+      "repository_id": 1323387669,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/LoserFox/telegram"
     },
@@ -671,7 +680,7 @@
       "description_en": "Reports four session states through browser notifications and prompts.",
       "description_zh": "通过浏览器通知和提示反馈四种会话状态。",
       "name": "dsh-session-notification",
-      "repository_id": null,
+      "repository_id": 1332326314,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/dingyi222666/dsh-session-notification"
     },
@@ -680,7 +689,7 @@
       "description_en": "Provides desktop reminders from the web interface.",
       "description_zh": "从 Web 界面触发桌面提醒。",
       "name": "dsh-web-ui-notify",
-      "repository_id": null,
+      "repository_id": 1323599380,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/bill9109/dsh-web-ui-notify"
     },
@@ -689,7 +698,7 @@
       "description_en": "Connects DSH with Kimi WebBridge.",
       "description_zh": "将 DSH 与 Kimi WebBridge 连接起来。",
       "name": "dsh-webbridge",
-      "repository_id": null,
+      "repository_id": 1328795096,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/bill9109/dsh-webbridge"
     },
@@ -698,7 +707,7 @@
       "description_en": "Supplies an MC-Fabric-inspired hook processor.",
       "description_zh": "提供类似 MC Fabric 的 Hook 处理机制。",
       "name": "fabric",
-      "repository_id": null,
+      "repository_id": 1324971591,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/fabric"
     },
@@ -707,7 +716,7 @@
       "description_en": "Pins commits to the environment's author identity through overriding environment variables.",
       "description_zh": "通过覆盖式环境变量固定 Git 提交的作者身份。",
       "name": "dsh-git-identity",
-      "repository_id": null,
+      "repository_id": 1327564033,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/LoserFox/dsh-git-identity"
     },
@@ -716,7 +725,7 @@
       "description_en": "Audits injected context for token cost, duplication, and conflicting instructions or schemas.",
       "description_zh": "审计注入上下文的 Token 成本、重复内容以及指令或 Schema 冲突。",
       "name": "dsh-context-doctor",
-      "repository_id": null,
+      "repository_id": 1332210938,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Zhenyu98/dsh-context-doctor"
     },
@@ -725,7 +734,7 @@
       "description_en": "Performs dependency-free, read-only checks for manifests, patch formats, and build pitfalls.",
       "description_zh": "零依赖、只读检查插件清单、补丁格式和构建风险。",
       "name": "dsh-plugin-check",
-      "repository_id": null,
+      "repository_id": 1327920055,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-plugin-check"
     },
@@ -734,7 +743,7 @@
       "description_en": "Produces a redacted local security report covering configuration, plugin origins, sessions, and network exposure.",
       "description_zh": "针对配置、插件来源、会话和网络暴露生成脱敏的本地安全报告。",
       "name": "dsh-security-audit",
-      "repository_id": null,
+      "repository_id": 1329526588,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-security-audit"
     },
@@ -743,7 +752,7 @@
       "description_en": "Diagnoses torn, corrupted, or empty session files at frame level.",
       "description_zh": "从帧级别诊断截断、损坏或空白的会话文件。",
       "name": "dsh-session-health",
-      "repository_id": null,
+      "repository_id": 1327795452,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-session-health"
     },
@@ -752,7 +761,7 @@
       "description_en": "Lets an agent hot-mount or remove persistent plugins during a session.",
       "description_zh": "让智能体在会话过程中动态挂载或移除持久化插件。",
       "name": "dsh-evolve",
-      "repository_id": null,
+      "repository_id": 1324673997,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/william-jin-cmu/dsh-evolve"
     },
@@ -761,7 +770,7 @@
       "description_en": "Exports turns, model steps, and tool calls to a yiTrace telemetry backend.",
       "description_zh": "将会话轮次、模型步骤和工具调用导出至 yiTrace 遥测后端。",
       "name": "dsh-trace",
-      "repository_id": null,
+      "repository_id": 1330691547,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/vibeinging/dsh-trace"
     },
@@ -770,7 +779,7 @@
       "description_en": "Adds microsandbox runtime support.",
       "description_zh": "增加 microsandbox 运行环境支持。",
       "name": "sandbox-micro",
-      "repository_id": null,
+      "repository_id": 1327532651,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/sandbox-micro"
     },
@@ -779,7 +788,7 @@
       "description_en": "Adds Microsoft cross-platform sandbox support.",
       "description_zh": "增加微软跨平台沙箱支持。",
       "name": "sandbox-mxc",
-      "repository_id": null,
+      "repository_id": 1323134652,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/sandbox-mxc"
     },
@@ -788,7 +797,7 @@
       "description_en": "Adds nono sandbox support.",
       "description_zh": "增加 nono 沙箱支持。",
       "name": "sandbox-nono",
-      "repository_id": null,
+      "repository_id": 1329755053,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/sandbox-nono"
     },
@@ -797,7 +806,7 @@
       "description_en": "Controls token budgets across an agent tree.",
       "description_zh": "管理智能体树的 Token 预算。",
       "name": "dsh-agent-budget",
-      "repository_id": null,
+      "repository_id": 1328918516,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/vibeinging/dsh-agent-budget"
     },
@@ -815,7 +824,7 @@
       "description_en": "Introduces a manual approval mode for tool use.",
       "description_zh": "为工具调用增加手动审批模式。",
       "name": "dsh-tool-approval",
-      "repository_id": null,
+      "repository_id": 1330513167,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/ilharp/dsh-tool-approval"
     },
@@ -824,7 +833,7 @@
       "description_en": "Offers a starter repository for building DSH plugins.",
       "description_zh": "提供用于开发 DSH 插件的起步模板。",
       "name": "plugin-template",
-      "repository_id": null,
+      "repository_id": 1330742759,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/plugin-template"
     },
@@ -833,7 +842,7 @@
       "description_en": "Adds Qwen multimodal plugin support.",
       "description_zh": "增加 Qwen 多模态插件支持。",
       "name": "Qwen-MM-Plugins",
-      "repository_id": null,
+      "repository_id": 1324174801,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/Qwen-MM-Plugins"
     },
@@ -842,7 +851,7 @@
       "description_en": "Displays TPS performance metrics.",
       "description_zh": "展示 TPS 性能指标。",
       "name": "dsh-tps",
-      "repository_id": null,
+      "repository_id": 1333126918,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Small-tailqwq/dsh-tps"
     }
