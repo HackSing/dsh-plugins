@@ -9,7 +9,7 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 - Added a structured plugin catalog and an approval-gated GitHub Topic discovery script.
 - Added a daily workflow that maintains one rolling Draft PR for `dsh-plugin` candidates.
 - Added deterministic candidate-classification tests and maintainer review guidance.
-- Added GitHub Models assessment, observation and automatic-publication modes, permanent collection reports, report delivery recovery, and a weekly exception summary.
+- Added provider-neutral model assessment, observation and automatic-publication modes, permanent collection reports, report delivery recovery, and a weekly exception summary.
 - Added the Chinese full-automation product and operating plan under `docs/`.
 
 ### Changed

@@ -32,7 +32,7 @@ Inclusion means the project is discoverable. It is not a compatibility certifica
 
 ## Topic candidate review
 
-The daily discovery workflow stores assessed repositories in `data/topic-candidates.json` and opens or updates one rolling pull request. Observation mode never publishes candidates. In publish mode, deterministic rules and GitHub Models may automatically accept a candidate only when both produce a high-confidence result.
+The daily discovery workflow stores assessed repositories in `data/topic-candidates.json` and opens or updates one rolling pull request. Observation mode never publishes candidates. In publish mode, deterministic rules and the configured model provider may automatically accept a candidate only when both produce a high-confidence result.
 
 To approve a candidate:
 

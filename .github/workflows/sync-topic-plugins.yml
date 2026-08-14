@@ -17,7 +17,6 @@ on:
 permissions:
   contents: write
   issues: write
-  models: read
   pull-requests: write
 
 concurrency:
@@ -30,7 +29,8 @@ jobs:
     env:
       AUTO_PUBLISH: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'publish') || vars.AUTO_PUBLISH == 'true' }}
       ENRICHMENT_LIMIT: "150"
-      GITHUB_MODEL: openai/gpt-4.1-mini
+      LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+      LLM_MODEL: ${{ vars.LLM_MODEL }}
       MODEL_ANALYSIS_LIMIT: "10"
     steps:
       - uses: actions/checkout@v6
@@ -48,6 +48,7 @@ jobs:
       - name: Discover and assess topic candidates
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
         run: |
           args=(--analyze-model)
           if [ "$AUTO_PUBLISH" = "true" ]; then

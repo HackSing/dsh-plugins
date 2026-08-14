@@ -360,12 +360,13 @@ class GitHubClient:
         return [str(item.get("name", "")) for item in payload if item.get("name")]
 
 
-class GitHubModelsClient:
-    def __init__(self, token: str, model: str) -> None:
-        if not token:
-            raise SyncError("GITHUB_TOKEN is required for model analysis")
+class OpenAICompatibleClient:
+    def __init__(self, token: str, model: str, endpoint: str) -> None:
+        if not token or not model or not endpoint:
+            raise SyncError("LLM_API_KEY, LLM_MODEL, and LLM_BASE_URL are required")
         self.token = token
         self.model = model
+        self.endpoint = endpoint.rstrip("/") + "/chat/completions"
 
     def analyze(
         self,
@@ -409,7 +410,7 @@ class GitHubModelsClient:
             ensure_ascii=False,
         ).encode("utf-8")
         request = urllib.request.Request(
-            "https://models.github.ai/inference/chat/completions",
+            self.endpoint,
             data=body,
             method="POST",
             headers={
@@ -423,13 +424,13 @@ class GitHubModelsClient:
             with urllib.request.urlopen(request, timeout=60) as response:
                 payload = json.load(response)
         except urllib.error.HTTPError as exc:
-            raise SyncError(f"GitHub Models returned HTTP {exc.code}") from exc
+            raise SyncError(f"model provider returned HTTP {exc.code}") from exc
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-            raise SyncError(f"GitHub Models request failed: {exc}") from exc
+            raise SyncError(f"model provider request failed: {exc}") from exc
         try:
             content = payload["choices"][0]["message"]["content"]
         except (KeyError, IndexError, TypeError) as exc:
-            raise SyncError("GitHub Models response did not contain message content") from exc
+            raise SyncError("model provider response did not contain message content") from exc
         analysis = parse_model_analysis(content)
         analysis["model"] = self.model
         return analysis
@@ -603,10 +604,11 @@ def discover(
     client = GitHubClient(os.environ.get("GITHUB_TOKEN", ""))
     model_client = None
     if analyze_model:
-        model_client = GitHubModelsClient(
-            os.environ.get("GITHUB_TOKEN", ""),
-            os.environ.get("GITHUB_MODEL", "openai/gpt-4.1-mini"),
-        )
+        llm_key = os.environ.get("LLM_API_KEY", "")
+        llm_model = os.environ.get("LLM_MODEL", "")
+        llm_base_url = os.environ.get("LLM_BASE_URL", "")
+        if llm_key and llm_model and llm_base_url:
+            model_client = OpenAICompatibleClient(llm_key, llm_model, llm_base_url)
     model_limit = int(os.environ.get("MODEL_ANALYSIS_LIMIT", "25"))
     model_calls = 0
     enrichment_limit = int(os.environ.get("ENRICHMENT_LIMIT", "150"))
@@ -631,6 +633,7 @@ def discover(
         retry_model = previous and previous.get("reasons") in (
             ["model_analysis_deferred"],
             ["model_analysis_failed"],
+            ["model_provider_unconfigured"],
         )
         if unchanged and (
             previous.get("model_analysis")
@@ -650,7 +653,10 @@ def discover(
         readme = "" if no_readme else client.readme(repo["full_name"])
         root_entries = [] if no_readme else client.root_entries(repo["full_name"])
         candidate = classify(repo, readme, root_entries, previous)
-        if model_client and candidate["status"] == "proposed":
+        if analyze_model and not model_client and candidate["status"] == "proposed":
+            candidate["status"] = "needs_review"
+            candidate["reasons"] = ["model_provider_unconfigured"]
+        elif model_client and candidate["status"] == "proposed":
             if model_calls >= model_limit:
                 candidate["status"] = "needs_review"
                 candidate["reasons"] = ["model_analysis_deferred"]

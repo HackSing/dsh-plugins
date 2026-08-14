@@ -4,7 +4,9 @@ This repository is operated as a useful directory first and a backup index secon
 
 ## Daily: Topic discovery
 
-The `Discover and publish DSH Topic plugins` workflow runs daily at 03:37 UTC and can also be started manually. It queries GitHub for `topic:dsh-plugin`, updates one rolling automation branch, and uses GitHub Models to produce structured bilingual assessments. Repository variable `AUTO_PUBLISH=false` keeps the workflow in observation mode; `AUTO_PUBLISH=true` permits high-confidence candidates to be merged after the same workflow passes every validation.
+The `Discover and publish DSH Topic plugins` workflow runs daily at 03:37 UTC and can also be started manually. It queries GitHub for `topic:dsh-plugin`, updates one rolling automation branch, and uses a configured OpenAI-compatible model provider to produce structured bilingual assessments. Repository variable `AUTO_PUBLISH=false` keeps the workflow in observation mode; `AUTO_PUBLISH=true` permits high-confidence candidates to be merged after the same workflow passes every validation.
+
+Model configuration uses repository variables `LLM_BASE_URL` and `LLM_MODEL`, plus encrypted repository Secret `LLM_API_KEY`. GitHub Models is not supported because GitHub retired the service on July 30, 2026. Missing provider configuration degrades safely to `model_provider_unconfigured` and blocks automatic publication.
 
 GitHub Search exposes at most 1,000 results per query, so the scanner automatically partitions larger Topics by repository creation date and rejects incomplete shards. README and root-structure enrichment is bounded per run; deferred candidates continue on later runs instead of exhausting the repository API quota.
 
