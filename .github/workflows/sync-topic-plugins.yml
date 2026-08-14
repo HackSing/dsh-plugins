@@ -96,7 +96,10 @@ jobs:
           branch="automation/topic-sync"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md README.zh.md CHANGELOG.md data reports
+          git add README.md README.zh.md CHANGELOG.md data
+          if [ -d reports ]; then
+            git add reports
+          fi
           git commit -m "chore: refresh dsh-plugin topic catalog"
           git push --force-with-lease origin "HEAD:$branch"
       - name: Open or update the automation pull request
