@@ -242,6 +242,9 @@ class SubmissionIntakeTests(unittest.TestCase):
             def post_comment(self, number, body):
                 self.comments.append((number, body))
 
+            def remove_label(self, number, label):
+                self.labels.append((number, [f"removed:{label}"]))
+
         report = {
             "submissions": [
                 {
@@ -276,12 +279,172 @@ class SubmissionIntakeTests(unittest.TestCase):
         }
 
         class FakeClient:
+            def list_pull_request_comments(self, number):
+                return []
+
             def dispatch_workflow(self, workflow, inputs):
                 raise AssertionError("duplicate workflow dispatch")
 
         self.assertEqual(
             submission_intake.queue_targeted_reviews(report, FakeClient(), limit=5), []
         )
+
+    def test_requests_information_without_closing_unclear_submission(self):
+        client = LifecycleClient()
+        report = {
+            "submissions": [
+                {
+                    "candidate_reasons": ["missing_plugin_structure"],
+                    "intake_status": "candidate_needs_review",
+                    "labels": [submission_intake.REVIEWING_LABEL],
+                    "pr_number": 21,
+                    "repository_url": "https://github.com/example/unclear",
+                }
+            ]
+        }
+        actions = submission_intake.handle_exception_states(report, client)
+        self.assertEqual(actions, [{"action": "requested_information", "pr_number": 21}])
+        self.assertEqual(client.closed, [])
+        self.assertIn("/recheck", client.comments[0][1])
+        self.assertIn(
+            (21, [submission_intake.NEEDS_INFO_LABEL, submission_intake.AUTOMATION_LABEL]),
+            client.labels,
+        )
+
+    def test_closes_deterministic_exclusion_as_declined(self):
+        client = LifecycleClient()
+        report = {
+            "submissions": [
+                {
+                    "candidate_reasons": ["directory_or_collection"],
+                    "intake_status": "candidate_excluded",
+                    "labels": [submission_intake.REVIEWING_LABEL],
+                    "pr_number": 22,
+                    "repository_url": "https://github.com/example/directory",
+                }
+            ]
+        }
+        actions = submission_intake.handle_exception_states(report, client)
+        self.assertEqual(actions, [{"action": "closed_as_declined", "pr_number": 22}])
+        self.assertEqual(client.closed, [22])
+        self.assertIn("不是安全性或质量评价", client.comments[0][1])
+
+    def test_expires_needs_info_submission_after_fourteen_days(self):
+        client = LifecycleClient()
+        client.existing_comments = [
+            {
+                "body": "<!-- dsh-submission:v1 status=needs-info repository=unknown -->",
+                "created_at": "2026-07-30T00:00:00Z",
+                "user": {"type": "Bot"},
+            }
+        ]
+        report = {
+            "submissions": [
+                {
+                    "intake_status": "not_identified",
+                    "labels": [submission_intake.NEEDS_INFO_LABEL],
+                    "pr_number": 23,
+                }
+            ]
+        }
+        now = submission_intake.dt.datetime(
+            2026, 8, 14, tzinfo=submission_intake.dt.timezone.utc
+        )
+        actions = submission_intake.handle_exception_states(report, client, now=now)
+        self.assertEqual(actions, [{"action": "closed_as_expired", "pr_number": 23}])
+        self.assertEqual(client.closed, [23])
+        self.assertIn("自动归档", client.comments[0][1])
+
+    def test_contributor_recheck_dispatches_new_review_cycle(self):
+        client = LifecycleClient()
+        client.existing_comments = [
+            {
+                "body": "<!-- dsh-submission:v1 status=needs-info repository=example/plugin -->",
+                "created_at": "2026-08-14T00:00:00Z",
+                "user": {"type": "Bot"},
+            },
+            {
+                "body": "/recheck",
+                "created_at": "2026-08-14T01:00:00Z",
+                "user": {"login": "contributor", "type": "User"},
+            },
+        ]
+        report = {
+            "submissions": [
+                {
+                    "author": "contributor",
+                    "candidate_reasons": ["missing_plugin_structure"],
+                    "draft": False,
+                    "intake_status": "candidate_needs_review",
+                    "labels": [submission_intake.NEEDS_INFO_LABEL],
+                    "pr_number": 24,
+                    "repository_url": "https://github.com/example/plugin",
+                }
+            ]
+        }
+        actions = submission_intake.queue_targeted_reviews(report, client, limit=5)
+        self.assertEqual(actions[0]["action"], "queued_targeted_review")
+        self.assertEqual(client.dispatched[0][1]["source_pr"], "24")
+        self.assertIn((24, [f"removed:{submission_intake.NEEDS_INFO_LABEL}"]), client.labels)
+
+    def test_stalled_new_submission_is_retried_after_two_hours(self):
+        client = LifecycleClient()
+        client.existing_comments = [
+            {
+                "body": "<!-- dsh-submission:v1 status=reviewing repository=example/plugin -->",
+                "created_at": "2026-08-14T00:00:00Z",
+                "user": {"type": "Bot"},
+            }
+        ]
+        report = {
+            "submissions": [
+                {
+                    "draft": False,
+                    "intake_status": "new_submission",
+                    "labels": [submission_intake.REVIEWING_LABEL],
+                    "pr_number": 25,
+                    "repository_url": "https://github.com/example/plugin",
+                }
+            ]
+        }
+        now = submission_intake.dt.datetime(
+            2026, 8, 14, 3, tzinfo=submission_intake.dt.timezone.utc
+        )
+        actions = submission_intake.queue_targeted_reviews(
+            report, client, limit=5, now=now
+        )
+        self.assertEqual(actions[0]["action"], "queued_targeted_review")
+        self.assertEqual(client.dispatched[0][1]["source_pr"], "25")
+
+
+class LifecycleClient:
+    def __init__(self):
+        self.closed = []
+        self.comments = []
+        self.dispatched = []
+        self.existing_comments = []
+        self.labels = []
+
+    def ensure_label(self, name, color, description):
+        pass
+
+    def list_pull_request_comments(self, number):
+        return list(self.existing_comments)
+
+    def post_comment(self, number, body):
+        self.comments.append((number, body))
+
+    def add_labels(self, number, labels):
+        self.labels.append((number, labels))
+
+    def remove_label(self, number, label):
+        self.labels.append((number, [f"removed:{label}"]))
+
+    def close_pull_request(self, number):
+        self.closed.append(number)
+
+    def dispatch_workflow(self, workflow, inputs):
+        self.dispatched.append((workflow, inputs))
 
 
 if __name__ == "__main__":

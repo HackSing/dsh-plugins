@@ -28,6 +28,7 @@ jobs:
         run: >-
           python3 scripts/reconcile_submission_prs.py
           --apply-published
+          --handle-exceptions
           --queue-reviews
           --output pr-intake.json
       - name: Upload the intake ledger

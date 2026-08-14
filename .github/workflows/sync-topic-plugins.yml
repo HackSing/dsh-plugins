@@ -62,6 +62,7 @@ jobs:
             git switch --create "$branch"
           fi
       - name: Discover and assess topic candidates
+        id: assess
         env:
           GITHUB_TOKEN: ${{ github.token }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
@@ -95,6 +96,7 @@ jobs:
           fi
           python3 scripts/sync_topic_plugins.py render "${args[@]}"
       - name: Validate generated directory
+        id: validate
         run: |
           python3 scripts/sync_topic_plugins.py check
           python3 scripts/validate_directory.py
@@ -184,12 +186,18 @@ jobs:
             fi
           done < <(git ls-tree -r --name-only origin/main reports/sync)
       - name: Reconcile the originating submission
-        if: always() && !cancelled() && github.event_name == 'workflow_dispatch' && inputs.mode == 'submission' && inputs.source_pr != ''
+        if: always() && !cancelled() && github.event_name == 'workflow_dispatch' && inputs.mode == 'submission' && inputs.source_pr != '' && steps.assess.outcome == 'success' && steps.render.outcome == 'success' && steps.validate.outcome == 'success'
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          PROMOTED_COUNT: ${{ steps.render.outputs.promoted_count }}
           SOURCE_PR: ${{ inputs.source_pr }}
         run: |
-          git fetch origin main
-          git switch --detach origin/main
-          python3 scripts/reconcile_submission_prs.py \
-            --apply-published --only-pr "$SOURCE_PR" --output source-pr-result.json
+          if [ "$PROMOTED_COUNT" != "0" ]; then
+            git fetch origin main
+            git switch --detach origin/main
+            python3 scripts/reconcile_submission_prs.py \
+              --apply-published --only-pr "$SOURCE_PR" --output source-pr-result.json
+          else
+            python3 scripts/reconcile_submission_prs.py \
+              --handle-exceptions --only-pr "$SOURCE_PR" --output source-pr-result.json
+          fi

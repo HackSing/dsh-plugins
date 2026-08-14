@@ -24,10 +24,40 @@ SELF_REPOSITORY = "hacksing/dsh-plugins"
 REVIEWING_LABEL = "submission:reviewing"
 ACCEPTED_LABEL = "submission:accepted"
 AUTOMATION_LABEL = "automation-managed"
+NEEDS_INFO_LABEL = "submission:needs-info"
+DECLINED_LABEL = "submission:declined"
+EXPIRED_LABEL = "submission:expired"
+REVIEW_RETRY_AFTER = dt.timedelta(hours=2)
+NEEDS_INFO_EXPIRES_AFTER = dt.timedelta(days=14)
 RETRYABLE_MODEL_REASONS = {
     "model_analysis_deferred",
     "model_analysis_failed",
     "model_provider_unconfigured",
+}
+HARD_DECLINE_REASONS = {
+    "current_directory_repository",
+    "directory_or_collection",
+    "empty_repository",
+    "fork_repository",
+    "inactive_repository",
+    "template_repository",
+    "tutorial_or_handbook",
+}
+REASON_TEXT_ZH = {
+    "current_directory_repository": "申请地址指向当前目录仓库，而不是独立插件仓库",
+    "directory_or_collection": "仓库内容是目录或合集，不是可收录插件",
+    "empty_repository": "仓库为空",
+    "fork_repository": "仓库是 Fork，目录只收录插件的源仓库",
+    "inactive_repository": "仓库已归档或停用",
+    "template_repository": "仓库是模板仓库",
+    "tutorial_or_handbook": "仓库内容是教程或手册，不是可收录插件",
+    "missing_readme": "仓库缺少可读取的 README",
+    "missing_repository_description": "仓库缺少简介",
+    "missing_detected_license": "GitHub 未识别到仓库许可证",
+    "missing_plugin_structure": "未识别到插件清单或源码结构",
+    "planned_or_placeholder": "仓库仍处于规划或占位状态",
+    "unclear_plugin_evidence": "README 未清楚说明这是 DeepSeek Harness 插件",
+    "model_did_not_confirm_high_confidence": "自动复核未达到高置信度准入门槛",
 }
 GITHUB_REPOSITORY_URL = re.compile(
     r"https://github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+?)(?=\.git(?:\s|$)|[\s)\]}>，。；、]|$)",
@@ -348,10 +378,14 @@ def markdown_summary(report: dict[str, Any]) -> str:
         "| --- | --- | --- | --- |",
     ]
     actions = {
-        "already_published": "第二批：回复并关闭",
-        "new_submission": "第三批：定向复核",
-        "not_identified": "第四批：请求补充信息",
-        "ambiguous_repository": "第四批：请求明确唯一仓库",
+        "already_published": "回复收录证据并关闭",
+        "new_submission": "派发定向复核",
+        "not_identified": "请求补充仓库地址",
+        "ambiguous_repository": "请求明确唯一仓库",
+        "candidate_excluded": "按原因拒绝或请求完善",
+        "candidate_rejected": "说明原因并关闭",
+        "candidate_needs_review": "重试系统故障或请求完善",
+        "candidate_watch": "请求补充公开信息",
     }
     for item in report["submissions"]:
         status = str(item["intake_status"])
@@ -442,6 +476,111 @@ def reviewing_comment(item: dict[str, Any]) -> str:
     )
 
 
+def reasons_zh(item: dict[str, Any]) -> str:
+    reasons = item.get("candidate_reasons", [])
+    if not reasons:
+        return "当前公开信息不足以完成自动判断"
+    return "；".join(REASON_TEXT_ZH.get(reason, reason) for reason in reasons)
+
+
+def needs_info_comment(item: dict[str, Any]) -> str:
+    status = item["intake_status"]
+    if status == "not_identified":
+        guidance = (
+            "未识别到插件仓库。请在 PR 正文中增加唯一一行："
+            "`仓库: https://github.com/owner/repo`。"
+        )
+    elif status == "ambiguous_repository":
+        guidance = (
+            "识别到多个 GitHub 仓库地址，无法确定收录对象。请在 PR 正文中只保留一个明确的插件仓库："
+            "`仓库: https://github.com/owner/repo`。"
+        )
+    else:
+        guidance = (
+            f"自动复核尚不能准入：{reasons_zh(item)}。请完善插件仓库的公开简介、许可证、"
+            "README 和插件结构；完成后在本 PR 评论 `/recheck`，系统会重新复核。"
+        )
+    return "\n".join(
+        [
+            "ℹ️ 自动复核需要补充信息",
+            "",
+            guidance,
+            "",
+            "若 14 天内仍未满足复核条件，本申请会自动归档关闭；完善后仍可重新提交。",
+            "",
+            f"<!-- dsh-submission:v1 status=needs-info repository={item.get('repository_url', 'unknown')} -->",
+        ]
+    )
+
+
+def declined_comment(item: dict[str, Any]) -> str:
+    return "\n".join(
+        [
+            "⛔ 本次申请未通过自动收录",
+            "",
+            f"原因：{reasons_zh(item)}。",
+            "",
+            "该结果仅表示当前仓库不符合目录准入规则，不是安全性或质量评价。仓库形态调整后可以重新提交收录申请。",
+            "",
+            f"<!-- dsh-submission:v1 status=declined repository={item.get('repository_url', 'unknown')} -->",
+        ]
+    )
+
+
+def expired_comment(item: dict[str, Any]) -> str:
+    return "\n".join(
+        [
+            "🗄️ 收录申请已自动归档",
+            "",
+            "补充信息等待期已超过 14 天，本 PR 自动关闭。资料完善后可以重新提交，新的申请仍会进入自动复核。",
+            "",
+            f"<!-- dsh-submission:v1 status=expired repository={item.get('repository_url', 'unknown')} -->",
+        ]
+    )
+
+
+LIFECYCLE_MARKER = re.compile(r"<!-- dsh-submission:v1 status=([a-z-]+) ")
+
+
+def latest_lifecycle_comment(comments: list[dict[str, Any]]) -> tuple[str, dict[str, Any]] | None:
+    latest = None
+    for comment in comments:
+        match = LIFECYCLE_MARKER.search(str(comment.get("body", "")))
+        if match:
+            latest = (match.group(1), comment)
+    return latest
+
+
+def github_time(value: Any) -> dt.datetime | None:
+    if not value:
+        return None
+    try:
+        parsed = dt.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return parsed.astimezone(dt.timezone.utc)
+
+
+def contributor_requested_recheck(
+    comments: list[dict[str, Any]], author: str | None
+) -> bool:
+    author_key = str(author or "").casefold()
+    if not author_key:
+        return False
+    latest_needs_info = -1
+    latest_recheck = -1
+    for index, comment in enumerate(comments):
+        body = str(comment.get("body", ""))
+        if "dsh-submission:v1 status=needs-info" in body:
+            latest_needs_info = index
+        user = comment.get("user") or {}
+        is_author = str(user.get("login", "")).casefold() == author_key
+        is_human = str(user.get("type", "User")).casefold() != "bot"
+        if body.strip().casefold() == "/recheck" and is_author and is_human:
+            latest_recheck = index
+    return latest_recheck > latest_needs_info >= 0
+
+
 def close_already_published(
     report: dict[str, Any], client: GitHubClient
 ) -> list[dict[str, Any]]:
@@ -478,6 +617,7 @@ def close_already_published(
             )
         client.add_labels(int(item["pr_number"]), [ACCEPTED_LABEL, AUTOMATION_LABEL])
         client.remove_label(int(item["pr_number"]), REVIEWING_LABEL)
+        client.remove_label(int(item["pr_number"]), NEEDS_INFO_LABEL)
         client.close_pull_request(int(item["pr_number"]))
         actions.append(
             {
@@ -489,8 +629,14 @@ def close_already_published(
     return actions
 
 
-def is_reviewable_submission(item: dict[str, Any]) -> bool:
-    if item.get("draft") or REVIEWING_LABEL in item.get("labels", []):
+def is_reviewable_submission(
+    item: dict[str, Any], *, recheck_requested: bool = False
+) -> bool:
+    if item.get("draft"):
+        return False
+    if recheck_requested and item.get("repository_url"):
+        return True
+    if REVIEWING_LABEL in item.get("labels", []):
         return False
     status = item.get("intake_status")
     if status == "new_submission":
@@ -500,14 +646,46 @@ def is_reviewable_submission(item: dict[str, Any]) -> bool:
     return bool(RETRYABLE_MODEL_REASONS.intersection(item.get("candidate_reasons", [])))
 
 
+def stalled_review_is_retryable(
+    item: dict[str, Any], comments: list[dict[str, Any]], now: dt.datetime
+) -> bool:
+    if REVIEWING_LABEL not in item.get("labels", []):
+        return False
+    status = item.get("intake_status")
+    retryable_status = status == "new_submission" or (
+        status == "candidate_needs_review"
+        and bool(RETRYABLE_MODEL_REASONS.intersection(item.get("candidate_reasons", [])))
+    )
+    if not retryable_status:
+        return False
+    latest = latest_lifecycle_comment(comments)
+    if not latest or latest[0] != "reviewing":
+        return False
+    created_at = github_time(latest[1].get("created_at"))
+    return bool(created_at and now - created_at >= REVIEW_RETRY_AFTER)
+
+
 def queue_targeted_reviews(
-    report: dict[str, Any], client: GitHubClient, limit: int
+    report: dict[str, Any], client: GitHubClient, limit: int, now: dt.datetime | None = None
 ) -> list[dict[str, Any]]:
     if limit < 1:
         raise IntakeError("review limit must be greater than zero")
-    targets = [item for item in report["submissions"] if is_reviewable_submission(item)][
-        :limit
-    ]
+    now = now or dt.datetime.now(dt.timezone.utc)
+    targets: list[tuple[dict[str, Any], list[dict[str, Any]]]] = []
+    for item in report["submissions"]:
+        comments = []
+        labels = item.get("labels", [])
+        if REVIEWING_LABEL in labels or NEEDS_INFO_LABEL in labels:
+            comments = client.list_pull_request_comments(int(item["pr_number"]))
+        recheck = NEEDS_INFO_LABEL in labels and contributor_requested_recheck(
+            comments, item.get("author")
+        )
+        if is_reviewable_submission(item, recheck_requested=recheck) or stalled_review_is_retryable(
+            item, comments, now
+        ):
+            targets.append((item, comments))
+        if len(targets) >= limit:
+            break
     if not targets:
         return []
     client.ensure_label(
@@ -517,7 +695,7 @@ def queue_targeted_reviews(
         AUTOMATION_LABEL, "1D76DB", "Pull request lifecycle managed by automation"
     )
     actions = []
-    for item in targets:
+    for item, known_comments in targets:
         number = int(item["pr_number"])
         client.dispatch_workflow(
             "sync-topic-plugins.yml",
@@ -529,9 +707,10 @@ def queue_targeted_reviews(
             },
         )
         client.add_labels(number, [REVIEWING_LABEL, AUTOMATION_LABEL])
-        marker = "<!-- dsh-submission:v1 status=reviewing "
-        comments = client.list_pull_request_comments(number)
-        if not any(marker in str(comment.get("body", "")) for comment in comments):
+        client.remove_label(number, NEEDS_INFO_LABEL)
+        comments = known_comments or client.list_pull_request_comments(number)
+        latest = latest_lifecycle_comment(comments)
+        if not latest or latest[0] != "reviewing":
             client.post_comment(number, reviewing_comment(item))
         actions.append(
             {
@@ -540,6 +719,84 @@ def queue_targeted_reviews(
                 "repository_url": item["repository_url"],
             }
         )
+    return actions
+
+
+def should_decline(item: dict[str, Any]) -> bool:
+    if item.get("intake_status") == "candidate_rejected":
+        return True
+    return item.get("intake_status") == "candidate_excluded" and bool(
+        HARD_DECLINE_REASONS.intersection(item.get("candidate_reasons", []))
+    )
+
+
+def should_request_info(item: dict[str, Any]) -> bool:
+    status = item.get("intake_status")
+    if status in {"not_identified", "ambiguous_repository", "candidate_watch"}:
+        return True
+    if status == "candidate_excluded":
+        return not should_decline(item)
+    if status != "candidate_needs_review":
+        return False
+    return not RETRYABLE_MODEL_REASONS.intersection(item.get("candidate_reasons", []))
+
+
+def handle_exception_states(
+    report: dict[str, Any], client: GitHubClient, now: dt.datetime | None = None
+) -> list[dict[str, Any]]:
+    now = now or dt.datetime.now(dt.timezone.utc)
+    actionable = [
+        item
+        for item in report["submissions"]
+        if should_decline(item) or should_request_info(item)
+    ]
+    if not actionable:
+        return []
+    for name, color, description in (
+        (NEEDS_INFO_LABEL, "D4C5F9", "Plugin submission needs more public information"),
+        (DECLINED_LABEL, "D93F0B", "Plugin submission did not meet directory criteria"),
+        (EXPIRED_LABEL, "6E7781", "Plugin submission expired while waiting for information"),
+        (AUTOMATION_LABEL, "1D76DB", "Pull request lifecycle managed by automation"),
+    ):
+        client.ensure_label(name, color, description)
+    actions = []
+    for item in actionable:
+        number = int(item["pr_number"])
+        comments = client.list_pull_request_comments(number)
+        latest = latest_lifecycle_comment(comments)
+        if should_decline(item):
+            if not latest or latest[0] != "declined":
+                client.post_comment(number, declined_comment(item))
+            client.add_labels(number, [DECLINED_LABEL, AUTOMATION_LABEL])
+            client.remove_label(number, REVIEWING_LABEL)
+            client.remove_label(number, NEEDS_INFO_LABEL)
+            client.close_pull_request(number)
+            actions.append({"action": "closed_as_declined", "pr_number": number})
+            continue
+
+        created_at = github_time(latest[1].get("created_at")) if latest else None
+        expired = bool(latest and latest[0] == "expired") or (
+            NEEDS_INFO_LABEL in item.get("labels", [])
+            and latest is not None
+            and latest[0] == "needs-info"
+            and created_at is not None
+            and now - created_at >= NEEDS_INFO_EXPIRES_AFTER
+        )
+        if expired:
+            if not latest or latest[0] != "expired":
+                client.post_comment(number, expired_comment(item))
+            client.add_labels(number, [EXPIRED_LABEL, AUTOMATION_LABEL])
+            client.remove_label(number, REVIEWING_LABEL)
+            client.remove_label(number, NEEDS_INFO_LABEL)
+            client.close_pull_request(number)
+            actions.append({"action": "closed_as_expired", "pr_number": number})
+            continue
+
+        client.add_labels(number, [NEEDS_INFO_LABEL, AUTOMATION_LABEL])
+        client.remove_label(number, REVIEWING_LABEL)
+        if not latest or latest[0] != "needs-info":
+            client.post_comment(number, needs_info_comment(item))
+        actions.append({"action": "requested_information", "pr_number": number})
     return actions
 
 
@@ -572,6 +829,11 @@ def main() -> None:
         action="store_true",
         help="dispatch trusted targeted review workflows for eligible submissions",
     )
+    parser.add_argument(
+        "--handle-exceptions",
+        action="store_true",
+        help="request information, decline deterministic exclusions, and expire stale requests",
+    )
     parser.add_argument("--review-limit", type=int, default=5)
     parser.add_argument("--only-pr", type=int)
     args = parser.parse_args()
@@ -581,10 +843,13 @@ def main() -> None:
     if args.apply_published:
         actions.extend(close_already_published(report, client))
         report["mode"] = "published_only"
+    if args.handle_exceptions:
+        actions.extend(handle_exception_states(report, client))
+        report["mode"] = "active"
     if args.queue_reviews:
         actions.extend(queue_targeted_reviews(report, client, args.review_limit))
         report["mode"] = "active"
-    if args.apply_published or args.queue_reviews:
+    if args.apply_published or args.handle_exceptions or args.queue_reviews:
         report["actions"] = actions
     write_outputs(report, args.output)
 
