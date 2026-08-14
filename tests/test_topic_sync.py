@@ -178,6 +178,55 @@ class ClassificationTests(unittest.TestCase):
             self.assertEqual(topic_sync.effective_model_analysis_limit(False), 10)
             self.assertEqual(topic_sync.effective_model_analysis_limit(True), 0)
 
+    def test_promoted_candidates_are_stably_grouped_by_readme_category(self):
+        catalog = {
+            "plugins": [
+                {
+                    "category": "interaction",
+                    "name": "existing-interaction",
+                    "url": "https://github.com/example/existing-interaction",
+                },
+                {
+                    "category": "tools",
+                    "name": "existing-tool",
+                    "url": "https://github.com/example/existing-tool",
+                },
+            ]
+        }
+        candidates = {
+            "candidates": [
+                {
+                    "category_suggestion": "automation",
+                    "description_en": "Automates workflows.",
+                    "description_zh": "自动执行工作流。",
+                    "name": "new-automation",
+                    "repository_id": 102,
+                    "status": "accepted",
+                    "url": "https://github.com/example/new-automation",
+                },
+                {
+                    "category_suggestion": "interaction",
+                    "description_en": "Adds an interface.",
+                    "description_zh": "添加交互界面。",
+                    "name": "new-interaction",
+                    "repository_id": 103,
+                    "status": "accepted",
+                    "url": "https://github.com/example/new-interaction",
+                },
+            ]
+        }
+        promoted = topic_sync.promote_accepted(catalog, candidates)
+        self.assertEqual(len(promoted), 2)
+        self.assertEqual(
+            [item["name"] for item in catalog["plugins"]],
+            [
+                "existing-interaction",
+                "new-interaction",
+                "existing-tool",
+                "new-automation",
+            ],
+        )
+
     def test_marketing_description_is_rejected(self):
         with self.assertRaises(topic_sync.SyncError):
             topic_sync.parse_model_analysis(

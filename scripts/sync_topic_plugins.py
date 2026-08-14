@@ -792,6 +792,9 @@ def promote_accepted(
         )
         urls.add(normalized_url)
         promoted.append(candidate)
+    if promoted:
+        category_order = {category: index for index, category in enumerate(CATEGORIES)}
+        plugins.sort(key=lambda item: category_order[item["category"]])
     candidates_payload["candidates"] = retained
     return promoted
 
