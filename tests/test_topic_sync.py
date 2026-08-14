@@ -141,6 +141,26 @@ class ClassificationTests(unittest.TestCase):
         self.assertFalse(candidate["enriched"])
         self.assertEqual(candidate["reasons"], ["enrichment_deferred"])
 
+    def test_search_shard_converges_when_topic_grows_during_pagination(self):
+        class GrowingClient(topic_sync.GitHubClient):
+            def __init__(self):
+                pass
+
+            def search_page(self, query_text, page):
+                if page == 2:
+                    return {
+                        "total_count": 104,
+                        "items": [{"id": value} for value in range(101, 105)],
+                    }
+                raise AssertionError("unexpected page")
+
+        first = {
+            "total_count": 102,
+            "items": [{"id": value} for value in range(1, 101)],
+        }
+        items = GrowingClient().collect_query("topic:dsh-plugin", first)
+        self.assertEqual(len(items), 104)
+
     def test_changelog_and_report_are_idempotent(self):
         promoted = [
             {

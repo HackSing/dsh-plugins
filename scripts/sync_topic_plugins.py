@@ -272,23 +272,26 @@ class GitHubClient:
         return payload
 
     def collect_query(self, query_text: str, first: dict[str, Any]) -> list[dict[str, Any]]:
-        total = int(first.get("total_count", 0))
-        if total > 1000:
+        initial_total = int(first.get("total_count", 0))
+        if initial_total > 1000:
             raise SyncError(f"search shard still exceeds 1,000 repositories: {query_text}")
-        repositories = list(first.get("items", []))
-        page = 2
-        while len(repositories) < total:
-            payload = self.search_page(query_text, page)
-            items = payload.get("items", [])
-            if not items:
-                break
-            repositories.extend(items)
-            page += 1
-        if len(repositories) != total:
-            raise SyncError(
-                f"search shard reported {total} repositories but returned {len(repositories)}"
-            )
-        return repositories
+        seen: dict[int, dict[str, Any]] = {}
+        next_first = first
+        for _ in range(3):
+            latest_total = int(next_first.get("total_count", 0))
+            page = 1
+            while page <= max(1, (latest_total + 99) // 100):
+                payload = next_first if page == 1 else self.search_page(query_text, page)
+                latest_total = int(payload.get("total_count", latest_total))
+                for item in payload.get("items", []):
+                    seen[int(item["id"])] = item
+                page += 1
+            if len(seen) >= latest_total:
+                return list(seen.values())
+            next_first = self.search_page(query_text, 1)
+        raise SyncError(
+            f"search shard did not converge: latest={latest_total}, unique={len(seen)}"
+        )
 
     def collect_date_range(
         self,
