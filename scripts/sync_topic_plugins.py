@@ -184,6 +184,13 @@ def parse_model_analysis(content: str) -> dict[str, Any]:
     }
 
 
+def effective_model_analysis_limit(auto_publish: bool) -> int:
+    """Publish only candidates that already passed a separate observation run."""
+    if auto_publish:
+        return 0
+    return int(os.environ.get("MODEL_ANALYSIS_LIMIT", "25"))
+
+
 def load_json(path: Path, default: Any) -> Any:
     if not path.exists():
         return default
@@ -662,7 +669,7 @@ def discover(
         llm_base_url = os.environ.get("LLM_BASE_URL", "")
         if llm_key and llm_model and llm_base_url:
             model_client = OpenAICompatibleClient(llm_key, llm_model, llm_base_url)
-    model_limit = int(os.environ.get("MODEL_ANALYSIS_LIMIT", "25"))
+    model_limit = effective_model_analysis_limit(auto_publish)
     model_calls = 0
     enrichment_limit = int(os.environ.get("ENRICHMENT_LIMIT", "150"))
     enrichment_calls = 0

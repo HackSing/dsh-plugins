@@ -171,6 +171,13 @@ class ClassificationTests(unittest.TestCase):
         retry_body = json.loads(call.call_args_list[1].args[0].data.decode("utf-8"))
         self.assertIn("could not be parsed", retry_body["messages"][-1]["content"])
 
+    def test_publish_mode_only_promotes_previously_observed_candidates(self):
+        with mock.patch.dict(
+            topic_sync.os.environ, {"MODEL_ANALYSIS_LIMIT": "10"}, clear=False
+        ):
+            self.assertEqual(topic_sync.effective_model_analysis_limit(False), 10)
+            self.assertEqual(topic_sync.effective_model_analysis_limit(True), 0)
+
     def test_marketing_description_is_rejected(self):
         with self.assertRaises(topic_sync.SyncError):
             topic_sync.parse_model_analysis(
