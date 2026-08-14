@@ -625,22 +625,6 @@
       "url": "https://github.com/JingkaiTang/dsh-client-ui-slingshot"
     },
     {
-      "category_confidence": "high",
-      "category_suggestion": "interaction",
-      "description_en": "DeepSeek Harness (dsh) Web UI plugin: voice input + prompt optimization for the composer. 语音输入 + 提示词优化（Web Speech API，宿主端 LLM 优化，支持撤回）",
-      "description_zh": "",
-      "enriched": true,
-      "fingerprint": "zjzqs/dsh-client-ui-voice-input|DeepSeek Harness (dsh) Web UI plugin: voice input + prompt optimization for the composer. 语音输入 + 提示词优化（Web Speech API，宿主端 LLM 优化，支持撤回）|False|False|False|False|2026-08-14T12:21:32Z|MIT",
-      "name": "dsh-client-ui-voice-input",
-      "reasons": [
-        "empty_repository"
-      ],
-      "repository_id": 1334145191,
-      "status": "excluded",
-      "structure_evidence": [],
-      "url": "https://github.com/zjzqs/dsh-client-ui-voice-input"
-    },
-    {
       "category_confidence": "medium",
       "category_suggestion": "automation",
       "description_en": "dsh-codex-pet · DSH 桌面宠物插件 — 导入精灵图序列帧宠物，悬浮浮层渲染 + Agent 状态联动",
@@ -4403,24 +4387,6 @@
       "status": "needs_review",
       "structure_evidence": [],
       "url": "https://github.com/Totoro-qaq/Cobsidian"
-    },
-    {
-      "category_confidence": "high",
-      "category_suggestion": "automation",
-      "description_en": "Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.",
-      "description_zh": "",
-      "enriched": true,
-      "fingerprint": "leechen298/Code2Skill|Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.|False|False|False|False|2026-08-14T07:36:07Z|MIT",
-      "name": "Code2Skill",
-      "reasons": [
-        "model_analysis_deferred"
-      ],
-      "repository_id": 1304163962,
-      "status": "needs_review",
-      "structure_evidence": [
-        "cordis.patch.yml"
-      ],
-      "url": "https://github.com/leechen298/Code2Skill"
     },
     {
       "category_confidence": "low",
@@ -8368,6 +8334,24 @@
       "status": "needs_review",
       "structure_evidence": [],
       "url": "https://github.com/QWQ-nn/dsh-client-ui-trajectory-categories"
+    },
+    {
+      "category_confidence": "high",
+      "category_suggestion": "interaction",
+      "description_en": "DeepSeek Harness (dsh) Web UI plugin: voice input + prompt optimization for the composer. 语音输入 + 提示词优化（Web Speech API，宿主端 LLM 优化，支持撤回）",
+      "description_zh": "",
+      "enriched": true,
+      "fingerprint": "zjzqs/dsh-client-ui-voice-input|DeepSeek Harness (dsh) Web UI plugin: voice input + prompt optimization for the composer. 语音输入 + 提示词优化（Web Speech API，宿主端 LLM 优化，支持撤回）|False|False|False|False|2026-08-14T12:57:34Z|MIT",
+      "name": "dsh-client-ui-voice-input",
+      "reasons": [
+        "unclear_plugin_evidence"
+      ],
+      "repository_id": 1334145191,
+      "status": "needs_review",
+      "structure_evidence": [
+        "package.json+source"
+      ],
+      "url": "https://github.com/zjzqs/dsh-client-ui-voice-input"
     },
     {
       "category_confidence": "low",

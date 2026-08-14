@@ -935,6 +935,15 @@
       "repository_id": 1333126918,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Small-tailqwq/dsh-tps"
+    },
+    {
+      "category": "development",
+      "description_en": "Generates Functions, MCP tools, Agent Skills, and offline tests from existing source code.",
+      "description_zh": "从现有源代码生成功能、MCP 工具、Agent 技能和离线测试。",
+      "name": "Code2Skill",
+      "repository_id": 1304163962,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/leechen298/Code2Skill"
     }
   ],
   "schema_version": 1
