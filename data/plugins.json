@@ -232,7 +232,7 @@
       "name": "dsh-sidechain",
       "repository_id": 1326698240,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Buyi-wsgzg/dsh-sidechain"
+      "url": "https://github.com/omdsh-dev/dsh-sidechain"
     },
     {
       "category": "interaction",

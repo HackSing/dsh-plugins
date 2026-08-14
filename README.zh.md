@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **94 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 13 日**。
+当前整理 **94 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 14 日**。
 
 ## 从这里开始
 
@@ -53,7 +53,7 @@
 - [dsh-share](https://github.com/hellodigua/dsh-share) — 提供一键分享完整会话的能力。
 - [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) — 支持基于分支的消息编辑、重新生成、重试及版本回溯。
 - [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — 集成本地运行时记忆、可检索文档和受监督记忆空间。
-- [dsh-sidechain](https://github.com/Buyi-wsgzg/dsh-sidechain) — 在不改变主会话历史的情况下运行持续侧会话或一次性侧问。
+- [dsh-sidechain](https://github.com/omdsh-dev/dsh-sidechain) — 在不改变主会话历史的情况下运行持续侧会话或一次性侧问。
 - [dsh-conversation-share](https://github.com/bill9109/dsh-conversation-share) — 可只分享会话中的指定片段。
 - [dsh-explain](https://github.com/yuezengwu/dsh-explain) — 提供本地优先的学习线程，并按信息来源组织讲解。
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) — 可分节编辑用户及内置系统提示词，并实时预览效果。
