@@ -361,6 +361,15 @@
       "url": "https://github.com/AnacondaKC/dsh-douyin"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a Fast mode switch and configurable reasoning effort profiles to the DeepSeek Harness web composer.",
+      "description_zh": "为DeepSeek Harness Web 编辑器添加快速模式开关与可配置的推理努力档位。",
+      "name": "dsh-model-modes",
+      "repository_id": 1333340665,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/DTSFO/dsh-model-modes"
+    },
+    {
       "category": "tools",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
