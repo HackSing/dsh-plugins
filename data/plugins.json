@@ -820,6 +820,15 @@
       "url": "https://github.com/fly3366/DeepJIT"
     },
     {
+      "category": "automation",
+      "description_en": "Implements continual self-evolution for DeepSeek Harness by persisting and refining prompt notes, memories, skills, and subagent specs with rollback and benchmark validation.",
+      "description_zh": "为 DeepSeek Harness 实现持续自我进化，持久化并优化提示笔记、记忆、技能和子代理规格，支持回滚和基准验证。",
+      "name": "dsh-continual-evolve",
+      "repository_id": 1333522020,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ZK-Andy/dsh-continual-evolve"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
