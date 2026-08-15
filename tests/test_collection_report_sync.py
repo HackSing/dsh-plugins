@@ -148,8 +148,12 @@ class CollectionReportSyncTests(unittest.TestCase):
             self.assertEqual(second, "duplicate")
             self.assertTrue((archive / "latest.md").exists())
             self.assertEqual(len((archive / "manifest.jsonl").read_text().splitlines()), 1)
-            self.assertEqual(len(list((archive / "2026" / "08").glob("*.md"))), 1)
-            self.assertEqual(len(list((archive / "2026" / "08").glob("*.json"))), 1)
+            date_dir = archive / "2026-08-15"
+            self.assertEqual(len(list(date_dir.glob("*.md"))), 1)
+            self.assertEqual(len(list(date_dir.glob("*.json"))), 1)
+            self.assertTrue(
+                (date_dir / f"plugin-collection-report-{commit_sha[:12]}-run-1.md").exists()
+            )
 
     def test_recovers_a_source_bundle_after_the_publication_commit_exists(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -253,9 +257,10 @@ class CollectionReportSyncTests(unittest.TestCase):
                 repo_root=repository,
             )
             self.assertEqual(outcome, "archived")
-            self.assertEqual(len(list((archive / "2026" / "08").glob("*.md"))), 1)
+            date_dir = archive / "2026-08-15"
+            self.assertEqual(len(list(date_dir.glob("*.md"))), 1)
             metadata = json.loads(
-                next((archive / "2026" / "08").glob("*.json")).read_text()
+                next(date_dir.glob("*.json")).read_text()
             )
             self.assertEqual(metadata["publication"]["commit_sha"], commit_sha)
             self.assertEqual(metadata["report_type"], "legacy_markdown_plugin_collection")

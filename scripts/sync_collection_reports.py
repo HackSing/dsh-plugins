@@ -292,8 +292,8 @@ def archive_legacy_markdown(
         json.dumps(metadata, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     ).encode("utf-8")
     safe_run_id = re.sub(r"[^A-Za-z0-9_.-]", "-", run_id)[:80]
-    base_name = f"{review_date}-{commit_sha[:12]}-{safe_run_id}"
-    target_dir = archive_root / review_date[:4] / review_date[5:7]
+    base_name = f"plugin-collection-report-{commit_sha[:12]}-{safe_run_id}"
+    target_dir = archive_root / review_date
     markdown_target = target_dir / f"{base_name}.md"
     json_target = target_dir / f"{base_name}.json"
     if dry_run:
@@ -365,8 +365,8 @@ def archive_bundle(
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", review_date):
         raise ArchiveError("report review_date is invalid")
     safe_run_id = re.sub(r"[^A-Za-z0-9_.-]", "-", run_id)[:80]
-    base_name = f"{review_date}-{commit_sha[:12]}-{safe_run_id}"
-    target_dir = archive_root / review_date[:4] / review_date[5:7]
+    base_name = f"plugin-collection-report-{commit_sha[:12]}-{safe_run_id}"
+    target_dir = archive_root / review_date
     markdown_target = target_dir / f"{base_name}.md"
     json_target = target_dir / f"{base_name}.json"
     if dry_run:
