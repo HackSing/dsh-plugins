@@ -712,6 +712,15 @@
       "url": "https://github.com/severin-ye/uagent-sync"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a login gateway and multi-user account management for DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供登录网关和多用户账户管理功能。",
+      "name": "dsh-passwords",
+      "repository_id": 1333875303,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/slywalker2006/dsh-passwords"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",

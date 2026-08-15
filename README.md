@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **121 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 15, 2026**.
+Explore **122 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 15, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **121 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **121 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **122 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -110,6 +110,7 @@ This is the first published directory snapshot: **121 plugins**, grouped into **
 - [pptfast](https://github.com/liustack/pptfast) — Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.
 - [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.
 - [uagent-sync](https://github.com/severin-ye/uagent-sync) — Provides command-line tools for backing up, restoring, and synchronizing agent workspace configuration and data.
+- [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — Provides a login gateway and multi-user account management for DeepSeek Harness.
 
 ## Automation & Agents
 
