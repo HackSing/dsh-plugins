@@ -4,9 +4,12 @@
 
 **适合读者**：开源维护者、平台产品经理、DevRel、自动化工程师、AI 应用开发者。
 
-**建议阅读时间**：30～35 分钟。
+**建议阅读时间**：35～40 分钟。
 
 **案例来源**：[HackSing/dsh-plugins](https://github.com/HackSing/dsh-plugins) 的真实建设与线上验证。
+
+**事实校准日期**：2026 年 8 月 15 日（中国标准时间）。当前正式目录为 105 个插件；Issue Form 唯一提交入口、Issue 自动收件、定向复核、自动发布、报告送达和旧插件 PR 重定向均已上线。
+
 **阅读提示**：本文重点讲设计方法与产品决策。命令、文件名和运行数据用于说明案例，不代表所有项目必须照搬同一技术栈。
 
 ---
@@ -533,6 +536,7 @@ DSH 案例中的运行节奏为：
 | 任务 | 频率 | 作用 |
 | --- | --- | --- |
 | Issue 收件与状态处理 | 每 30 分钟 | 快速响应主动申请与异常状态 |
+| 旧插件 PR 重定向 | 每 30 分钟，与 Issue 收件错峰 | 将目录型插件 PR 引导至唯一 Issue Form，不影响正常工程 PR |
 | Topic 发现与发布 | 每天一次 | 扫描生态新增与变化 |
 | 目录质量检查 | 每次 Push 和 PR | 阻止不一致内容进入主分支 |
 | 候选异常汇总 | 每周一次 | 聚合未变化的异常，减少通知噪声 |
@@ -621,13 +625,31 @@ Topic 移除、仓库归档或短暂 404 不应立刻自动删除正式条目。
 
 这样可以明确区分：源代码通过、本地测试通过、工作流通过、远端合并成功、用户可见闭环成功。任何一层都不能替代下一层的证据。
 
+### 16.5 当前案例的线上验收基线
+
+截至 2026 年 8 月 15 日，DSH 案例已经获得以下分层证据：
+
+| 验收层 | 当前结果 | 证据 |
+| --- | --- | --- |
+| 本地规则与生命周期测试 | 37 项通过 | 覆盖 Issue 解析、旧候选刷新、定向派发、异常状态、PR 重定向和幂等逻辑 |
+| 目录一致性 | 105 个插件、四个主分类，中英文名称、链接和顺序一致 | `data/plugins.json`、`README.md`、`README.zh.md` 与目录校验脚本 |
+| 仓库质量门 | Push 后自动检查成功 | [Directory quality #31820119463](https://github.com/HackSing/dsh-plugins/actions/runs/31820119463) |
+| 旧插件 PR 兼容层 | 定时任务已按新逻辑成功运行 | [Legacy PR redirect #31819376745](https://github.com/HackSing/dsh-plugins/actions/runs/31819376745) |
+| 信息不足分支 | 原 Issue 保持开放并给出 `/recheck` 路径 | [Issue #8](https://github.com/HackSing/dsh-plugins/issues/8) |
+| 高置信度发布分支 | `Code2Skill` 自动进入正式目录，原 Issue 自动关闭 | [Issue #13](https://github.com/HackSing/dsh-plugins/issues/13) |
+| 发布事务 | 自动化目录 PR 合并、远端回读成功 | [PR #16](https://github.com/HackSing/dsh-plugins/pull/16) 与[提交 `9652599`](https://github.com/HackSing/dsh-plugins/commit/9652599e51299b756342cfe905829af15b647ff5) |
+| 报告送达 | 永久报告进入 Git，通知 Issue 自动创建并指派维护者 | [报告 Issue #17](https://github.com/HackSing/dsh-plugins/issues/17) |
+| 幂等复跑 | 未再次派发复核，评论仍为两条，报告仍为一份 | [Issue intake #31819999540](https://github.com/HackSing/dsh-plugins/actions/runs/31819999540) |
+
+这张表的意义不是展示“任务全部是绿色”，而是明确每一种完成声明对应哪一层证据。尤其要区分：工作流成功、插件正式发布、报告送达和用户入口关闭，是四个不同的验收对象。
+
 ---
 
-## 十七、历史验证案例：PR #5 如何走完首次完整闭环
+## 十七、从历史 PR 到统一 Issue：三次真实验收
 
 DSH 目录曾使用外部贡献者提交的 [PR #5](https://github.com/HackSing/dsh-plugins/pull/5) 完成首次线上闭环验证。这个案例证明了“外部只提交意图、内部可信工作流生成并发布目录”的机制可行；在此基础上，当前官方入口已进一步统一为 Issue Form，旧式插件 PR 只负责引导迁移。
 
-### 17.1 输入
+### 17.1 历史输入：PR #5
 
 - PR 指向公开仓库 `Nwflower/dsh-chat-import`；
 - 贡献者补丁修改了中英文 README；
@@ -776,9 +798,10 @@ DSH 目录曾使用外部贡献者提交的 [PR #5](https://github.com/HackSing/
 5. 一个插件被自动收录时，README、CHANGELOG 和报告怎样同步更新；
 6. 怎样设计“不重复评论、不重复提交、不重复报告”的幂等系统；
 7. API 超时为什么不能被系统解释为“插件审核失败”；
-8. 从 PR #5 的历史实践看提交入口为什么最终统一为 Issue；
-9. 自动化为什么应该先观察，再开放写权限；
-10. 开源目录如何建立可审计的 AI 内容生产流程。
+8. Issue #8 和 #13 如何验证“需要补充”与“正式收录”两条路径；
+9. 从 PR #5 的历史实践看提交入口为什么最终统一为 Issue；
+10. 自动化为什么应该先观察，再开放写权限；
+11. 开源目录如何建立可审计的 AI 内容生产流程。
 
 不同平台可以选择不同重心：
 
@@ -819,7 +842,9 @@ DSH 目录曾使用外部贡献者提交的 [PR #5](https://github.com/HackSing/
 | [`.github/workflows/weekly-link-check.yml`](../.github/workflows/weekly-link-check.yml) | 已发布插件链接健康检查 |
 | [`reports/sync/`](../reports/sync/) | 每次成功收录的永久报告 |
 
-## 附录 B：上线前检查清单
+## 附录 B：可复用的上线检查清单
+
+以下清单面向希望复用本方法的目录项目。DSH 案例的当前完成情况以前文 16.5 节的线上验收基线为准。
 
 - [ ] 正式目录有唯一结构化事实源；
 - [ ] README 可以由事实源稳定生成；
