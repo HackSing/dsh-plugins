@@ -52,7 +52,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Restore the private candidate ledger
+      - name: Restore the operational candidate ledger
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -64,13 +64,8 @@ jobs:
               break
             fi
           done
-          if [ -n "$restored" ]; then
-            cp "$restored" data/topic-candidates.json
-          elif git fetch origin automation/topic-sync:refs/remotes/origin/automation/topic-sync && git show origin/automation/topic-sync:data/topic-candidates.json > data/topic-candidates.json; then
-            echo "Seeded candidate state from the legacy automation branch."
-          else
-            echo "No previous candidate state was available; discovery will initialize it."
-          fi
+          test -n "$restored"
+          cp "$restored" data/topic-candidates.json
 
       - name: Discover and assess topic candidates
         id: assess
