@@ -94,7 +94,7 @@ jobs:
             python3 scripts/sync_topic_plugins.py discover "${args[@]}"
           fi
 
-      - name: Generate the public directory and private report
+      - name: Generate the public directory and operational report
         id: render
         run: |
           args=(--run-id "$GITHUB_RUN_ID")
