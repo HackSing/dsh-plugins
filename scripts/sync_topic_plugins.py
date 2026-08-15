@@ -312,21 +312,28 @@ class GitHubClient:
             f"search shard did not converge: latest={latest_total}, unique={len(seen)}"
         )
 
-    def collect_date_range(
+    def collect_time_range(
         self,
-        start: dt.date,
-        end: dt.date,
+        start: dt.datetime,
+        end: dt.datetime,
     ) -> list[dict[str, Any]]:
-        query_text = f"topic:{TOPIC} created:{start.isoformat()}..{end.isoformat()}"
+        def timestamp(value: dt.datetime) -> str:
+            return value.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+        query_text = f"topic:{TOPIC} created:{timestamp(start)}..{timestamp(end)}"
         first = self.search_page(query_text, 1)
         total = int(first.get("total_count", 0))
         if total <= 1000:
             return self.collect_query(query_text, first)
         if start >= end:
-            raise SyncError(f"more than 1,000 topic repositories were created on {start}")
-        midpoint = start + (end - start) // 2
-        return self.collect_date_range(start, midpoint) + self.collect_date_range(
-            midpoint + dt.timedelta(days=1), end
+            raise SyncError(
+                f"more than 1,000 topic repositories were created at {timestamp(start)}"
+            )
+        midpoint = start + dt.timedelta(
+            seconds=int((end - start).total_seconds()) // 2
+        )
+        return self.collect_time_range(start, midpoint) + self.collect_time_range(
+            midpoint + dt.timedelta(seconds=1), end
         )
 
     def search(self, max_pages: int | None = None) -> tuple[list[dict[str, Any]], int]:
@@ -344,9 +351,10 @@ class GitHubClient:
         if total <= 1000:
             return self.collect_query(base_query, first), total
 
-        today = dt.datetime.now(dt.timezone.utc).date()
-        repositories = self.collect_date_range(dt.date(2008, 1, 1), today - dt.timedelta(days=1))
-        repositories += self.collect_date_range(today, today)
+        now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
+        repositories = self.collect_time_range(
+            dt.datetime(2008, 1, 1, tzinfo=dt.timezone.utc), now
+        )
         deduplicated = {int(item["id"]): item for item in repositories}
         if len(deduplicated) != len(repositories):
             raise SyncError("date-sharded topic search returned duplicate repository IDs")

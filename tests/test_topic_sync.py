@@ -413,6 +413,31 @@ class ClassificationTests(unittest.TestCase):
         items = GrowingClient().collect_query("topic:dsh-plugin", first)
         self.assertEqual(len(items), 104)
 
+    def test_oversized_day_is_split_by_timestamp(self):
+        class TimestampClient(topic_sync.GitHubClient):
+            def __init__(self):
+                self.queries = []
+
+            def search_page(self, query_text, page):
+                self.queries.append(query_text)
+                if "00:00:00Z..2026-08-14T23:59:59Z" in query_text:
+                    return {"total_count": 1500, "items": []}
+                if "00:00:00Z..2026-08-14T11:59:59Z" in query_text:
+                    return {"total_count": 1, "items": [{"id": 1}]}
+                if "12:00:00Z..2026-08-14T23:59:59Z" in query_text:
+                    return {"total_count": 1, "items": [{"id": 2}]}
+                raise AssertionError(query_text)
+
+        client = TimestampClient()
+        items = client.collect_time_range(
+            topic_sync.dt.datetime(2026, 8, 14, tzinfo=topic_sync.dt.timezone.utc),
+            topic_sync.dt.datetime(
+                2026, 8, 14, 23, 59, 59, tzinfo=topic_sync.dt.timezone.utc
+            ),
+        )
+        self.assertEqual([item["id"] for item in items], [1, 2])
+        self.assertEqual(len(client.queries), 3)
+
     def test_changelog_and_report_are_idempotent(self):
         promoted = [
             {
