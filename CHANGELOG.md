@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31877422388 -->
+- Automatically added [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:31863555587 -->
 - Automatically added [amber-protocol](https://github.com/Bandersnatch0x/amber-protocol) to Tools & Capabilities from the `dsh-plugin` topic.
 - Automatically added [argo](https://github.com/taxueseek/argo) to Tools & Capabilities from the `dsh-plugin` topic.
