@@ -972,65 +972,163 @@ def create_report(
     if not promoted:
         return None
     safe_run_id = re.sub(r"[^A-Za-z0-9_.-]", "-", run_id)[:80]
-    path = REPORTS_PATH / f"{review_date.isoformat()}-{safe_run_id}.md"
+    report_dir = REPORTS_PATH / f"{review_date.isoformat()}-{safe_run_id}"
     counts: dict[str, int] = {}
     for item in candidates_payload.get("candidates", []):
         status = item.get("status", "unknown")
         counts[status] = counts.get(status, 0) + 1
-    lines = [
-        f"# DSH 插件自动收录报告 — {review_date.isoformat()}",
-        "",
-        f"- 运行编号：`{run_id}`",
-        "- 发布提交：以本次自动化任务完成后回读的正式目录提交为准。",
-        f"- Topic 返回仓库：{candidates_payload.get('source_total', 0)}",
-        f"- 收录前插件：{before_count}",
-        f"- 本次新增插件：{len(promoted)}",
-        f"- 收录后插件：{before_count + len(promoted)}",
-        "",
-        "## 新增插件",
-        "",
-    ]
+    plugins = []
     for item in promoted:
         analysis = item.get("model_analysis", {})
+        plugins.append(
+            {
+                "category": item["category_suggestion"],
+                "category_en": CATEGORIES[item["category_suggestion"]]["en"],
+                "category_zh": CATEGORIES[item["category_suggestion"]]["zh"],
+                "confidence": analysis.get("confidence", "unknown"),
+                "description_en": item["description_en"],
+                "description_zh": item["description_zh"],
+                "evidence": analysis.get("evidence", []),
+                "name": item["name"],
+                "structure_evidence": item.get("structure_evidence", []),
+                "url": item["url"],
+            }
+        )
+    names = "、".join(item["name"] for item in plugins)
+    payload = {
+        "schema_version": 1,
+        "report_type": "plugin_collection",
+        "status": "pending_publication",
+        "run_id": str(run_id),
+        "review_date": review_date.isoformat(),
+        "source_total": int(candidates_payload.get("source_total", 0)),
+        "before_count": before_count,
+        "added_count": len(plugins),
+        "after_count": before_count + len(plugins),
+        "candidate_counts": counts,
+        "plugins": plugins,
+        "publication": {
+            "commit_sha": None,
+            "pr_url": None,
+            "published_at": None,
+            "run_url": None,
+        },
+        "content_material": {
+            "headline_zh": f"DSH 插件目录新增 {len(plugins)} 个插件",
+            "summary_zh": (
+                f"本次目录从 {before_count} 个插件更新到 {before_count + len(plugins)} 个，"
+                f"新增 {names}。"
+            ),
+            "fact_boundary_zh": "目录收录代表项目可被发现，不代表兼容性认证、安全审计或官方推荐。",
+        },
+    }
+    write_report_bundle(report_dir, payload)
+    return report_dir
+
+
+def report_markdown(payload: dict[str, Any]) -> str:
+    publication = payload.get("publication") or {}
+    commit_sha = publication.get("commit_sha")
+    lines = [
+        f'# DSH 插件自动收录报告 — {payload["review_date"]}',
+        "",
+        f'- 运行编号：`{payload["run_id"]}`',
+        (
+            f'- 正式提交：[`{commit_sha[:12]}`]({publication.get("commit_url")})'
+            if commit_sha
+            else "- 正式提交：等待目录合并后写入"
+        ),
+    ]
+    if publication.get("published_at"):
+        lines.append(f'- 发布时间：`{publication["published_at"]}`')
+    if publication.get("run_url"):
+        lines.append(f'- 自动化运行：{publication["run_url"]}')
+    if publication.get("pr_url"):
+        lines.append(f'- 发布 PR：{publication["pr_url"]}')
+    lines.extend(
+        [
+            f'- Topic 返回仓库：{payload["source_total"]}',
+            f'- 收录前插件：{payload["before_count"]}',
+            f'- 本次新增插件：{payload["added_count"]}',
+            f'- 收录后插件：{payload["after_count"]}',
+            "",
+            "## 本次更新摘要",
+            "",
+            f'- 标题建议：{payload["content_material"]["headline_zh"]}',
+            f'- 素材摘要：{payload["content_material"]["summary_zh"]}',
+            "",
+            "## 新增插件",
+            "",
+        ]
+    )
+    for item in payload["plugins"]:
         lines.extend(
             [
                 f'### [{item["name"]}]({item["url"]})',
                 "",
-                f'- 分类：{CATEGORIES[item["category_suggestion"]]["zh"]} / '
-                f'{CATEGORIES[item["category_suggestion"]]["en"]}',
+                f'- 分类：{item["category_zh"]} / {item["category_en"]}',
                 f'- 英文描述：{item["description_en"]}',
                 f'- 中文描述：{item["description_zh"]}',
-                f'- 准入结果：规则检查通过，模型置信度 `{analysis.get("confidence", "unknown")}`',
-                f'- 结构证据：{", ".join(item.get("structure_evidence", []))}',
-                f'- 判断依据：{"；".join(analysis.get("evidence", []))}',
+                f'- 准入结果：规则检查通过，模型置信度 `{item["confidence"]}`',
+                f'- 结构证据：{", ".join(item["structure_evidence"])}',
+                f'- 判断依据：{"；".join(item["evidence"])}',
                 "",
             ]
         )
-    lines.extend(
-        [
-            "## 候选处理摘要",
-            "",
-            *[
-                f'- {status.replace("_", " ")}: {count}'
-                for status, count in sorted(counts.items())
-            ],
-            "",
-            "## 自动校验",
-            "",
-            "- 结构化数据与中英文 README 一致性：通过后方可发布",
-            "- 插件名称及仓库链接重复检查：通过后方可发布",
-            "- 双语条目顺序检查：通过后方可发布",
-            "- 生成幂等检查：通过后方可发布",
-            "",
-            "## 验证边界",
-            "",
-            "本次流程只读取公开元数据、文件结构和 README，未安装或执行候选插件代码。自动收录不代表兼容性认证、安全审计或官方推荐。",
-            "",
-        ]
-    )
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(lines), encoding="utf-8")
-    return path
+    lines = [
+        *lines,
+        "## 候选处理摘要",
+        "",
+        *[
+            f'- {status.replace("_", " ")}: {count}'
+            for status, count in sorted(payload["candidate_counts"].items())
+        ],
+        "",
+        "## 自动校验",
+        "",
+        "- 结构化数据与中英文 README 一致性：通过后方可发布",
+        "- 插件名称及仓库链接重复检查：通过后方可发布",
+        "- 双语条目顺序检查：通过后方可发布",
+        "- 生成幂等检查：通过后方可发布",
+        "",
+        "## 验证边界",
+        "",
+        payload["content_material"]["fact_boundary_zh"],
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def write_report_bundle(report_dir: Path, payload: dict[str, Any]) -> None:
+    report_dir.mkdir(parents=True, exist_ok=True)
+    write_json(report_dir / "report.json", payload)
+    (report_dir / "report.md").write_text(report_markdown(payload), encoding="utf-8")
+
+
+def finalize_report_bundle(
+    report_dir: Path,
+    *,
+    commit_sha: str,
+    published_at: str,
+    run_url: str,
+    pr_url: str,
+    repository: str = "HackSing/dsh-plugins",
+) -> dict[str, Any]:
+    if not re.fullmatch(r"[0-9a-f]{40}", commit_sha):
+        raise SyncError("published commit SHA must contain 40 lowercase hexadecimal characters")
+    payload = load_json(report_dir / "report.json", None)
+    if not payload or payload.get("report_type") != "plugin_collection":
+        raise SyncError("report bundle is missing a supported report.json")
+    payload["status"] = "published"
+    payload["publication"] = {
+        "commit_sha": commit_sha,
+        "commit_url": f"https://github.com/{repository}/commit/{commit_sha}",
+        "pr_url": pr_url,
+        "published_at": published_at,
+        "run_url": run_url,
+    }
+    write_report_bundle(report_dir, payload)
+    return payload
 
 
 def render_readme(
@@ -1113,11 +1211,11 @@ def render(*, report: bool, run_id: str) -> None:
     write_json(PLUGINS_PATH, catalog)
     if CANDIDATES_PATH.exists() or candidates.get("candidates"):
         write_json(CANDIDATES_PATH, candidates)
-    report_path = None
+    report_dir = None
     if promoted:
         update_changelog(promoted, run_id)
         if report:
-            report_path = create_report(
+            report_dir = create_report(
                 promoted,
                 candidates,
                 before_count,
@@ -1125,9 +1223,11 @@ def render(*, report: bool, run_id: str) -> None:
                 review_date or dt.datetime.now(dt.timezone.utc).date(),
             )
     append_github_output("promoted_count", str(len(promoted)))
-    append_github_output("report_created", "true" if report_path else "false")
-    if report_path:
-        append_github_output("report_path", str(report_path.relative_to(ROOT)))
+    append_github_output("report_created", "true" if report_dir else "false")
+    if report_dir:
+        relative = str(report_dir.relative_to(ROOT))
+        append_github_output("report_dir", relative)
+        append_github_output("report_path", relative)
     print(
         f"Rendered {len(catalog['plugins'])} plugins; "
         f"promoted {len(promoted)} accepted candidates."
@@ -1254,6 +1354,15 @@ def main() -> None:
     )
     render_parser.add_argument("--report", action="store_true")
     render_parser.add_argument("--run-id", default="manual")
+    finalize_parser = subparsers.add_parser(
+        "finalize-report", help="attach confirmed publication metadata to a report bundle"
+    )
+    finalize_parser.add_argument("--report-dir", required=True)
+    finalize_parser.add_argument("--commit-sha", required=True)
+    finalize_parser.add_argument("--published-at", required=True)
+    finalize_parser.add_argument("--run-url", required=True)
+    finalize_parser.add_argument("--pr-url", required=True)
+    finalize_parser.add_argument("--repository", default="HackSing/dsh-plugins")
     subparsers.add_parser("check", help="validate the structured catalog and READMEs")
     subparsers.add_parser("summary", help="print the saved candidate summary as Markdown")
     subparsers.add_parser("exceptions", help="print actionable candidates as Markdown")
@@ -1271,6 +1380,15 @@ def main() -> None:
             )
         elif args.command == "render":
             render(report=args.report, run_id=args.run_id)
+        elif args.command == "finalize-report":
+            finalize_report_bundle(
+                ROOT / args.report_dir,
+                commit_sha=args.commit_sha,
+                published_at=args.published_at,
+                run_url=args.run_url,
+                pr_url=args.pr_url,
+                repository=args.repository,
+            )
         elif args.command == "approve-observed":
             approve_observed(limit=args.limit)
         elif args.command == "review-target":

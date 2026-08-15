@@ -476,7 +476,24 @@ class ClassificationTests(unittest.TestCase):
                     date(2026, 8, 14),
                 )
                 self.assertIsNotNone(report)
-                self.assertIn("本次新增插件：1", report.read_text(encoding="utf-8"))
+                self.assertIn(
+                    "本次新增插件：1",
+                    (report / "report.md").read_text(encoding="utf-8"),
+                )
+                payload = json.loads((report / "report.json").read_text(encoding="utf-8"))
+                self.assertEqual(payload["status"], "pending_publication")
+                finalized = topic_sync.finalize_report_bundle(
+                    report,
+                    commit_sha="a" * 40,
+                    published_at="2026-08-14T12:00:00Z",
+                    run_url="https://github.com/HackSing/dsh-plugins/actions/runs/run-1",
+                    pr_url="https://github.com/HackSing/dsh-plugins/pull/1",
+                )
+                self.assertEqual(finalized["status"], "published")
+                self.assertIn(
+                    "aaaaaaaaaaaa",
+                    (report / "report.md").read_text(encoding="utf-8"),
+                )
             finally:
                 topic_sync.CHANGELOG_PATH = original_changelog
                 topic_sync.REPORTS_PATH = original_reports

@@ -122,6 +122,15 @@ jobs:
           after=$(snapshot)
           test "$before" = "$after"
 
+      - name: Save a recoverable report source bundle
+        if: steps.render.outputs.report_created == 'true'
+        uses: actions/upload-artifact@v7
+        with:
+          name: plugin-collection-report-source-${{ github.run_id }}
+          path: ${{ steps.render.outputs.report_dir }}
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Detect public directory changes
         id: changes
         run: |
@@ -164,6 +173,22 @@ jobs:
         run: |
           gh pr merge "$PR_NUMBER" --squash --delete-branch || gh pr merge "$PR_NUMBER" --squash --admin --delete-branch
           git fetch origin main:refs/remotes/origin/main
+          pr_data=$(gh pr view "$PR_NUMBER" --json mergeCommit,mergedAt,url)
+          published_sha=$(jq -r '.mergeCommit.oid // empty' <<< "$pr_data")
+          pr_url=$(jq -r '.url' <<< "$pr_data")
+          published_at=$(jq -r '.mergedAt // empty' <<< "$pr_data")
+          test -n "$published_sha"
+          test -n "$published_at"
+          run_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          python3 scripts/sync_topic_plugins.py finalize-report \
+            --report-dir "${{ steps.render.outputs.report_dir }}" \
+            --commit-sha "$published_sha" \
+            --published-at "$published_at" \
+            --run-url "$run_url" \
+            --pr-url "$pr_url" \
+            --repository "$GITHUB_REPOSITORY"
+          echo "published_sha=$published_sha" >> "$GITHUB_OUTPUT"
+          echo "published_short_sha=${published_sha:0:12}" >> "$GITHUB_OUTPUT"
           git push origin --delete "$PUBLICATION_BRANCH" 2>/dev/null || true
 
       - name: Save the candidate ledger outside the public catalog
@@ -179,8 +204,8 @@ jobs:
         if: steps.render.outputs.report_created == 'true' && steps.publication.outcome == 'success'
         uses: actions/upload-artifact@v7
         with:
-          name: plugin-collection-report-${{ github.run_id }}
-          path: ${{ steps.render.outputs.report_path }}
+          name: plugin-collection-report-${{ steps.publication.outputs.published_short_sha }}-${{ github.run_id }}
+          path: ${{ steps.render.outputs.report_dir }}
           if-no-files-found: error
           retention-days: 90
 
