@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **105 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 14 日**。
+当前整理 **121 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 15 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **105 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **121 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -100,6 +100,16 @@
 - [dsh-plugins-store](https://github.com/ZASENJC/dsh-plugins-store) — 自动收录和分类 GitHub dsh-plugin Topic 项目的静态目录网站，并提供用于在 DSH 中浏览目录的可选 Web 插件。
 - [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — 在导出前对 DeepSeek Harness 会话遥测中的敏感值进行脱敏处理。
 - [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — 将多种AI代理工具的历史会话导入DeepSeek Harness以继续对话。
+- [amber-protocol](https://github.com/Bandersnatch0x/amber-protocol) — 为编码代理提供仓库本地治理，并包含 DeepSeek Harness 补丁覆盖层。
+- [argo](https://github.com/taxueseek/argo) — 为 AI Agent 提供多语言搜索与证据核验工具。
+- [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — 为AI编程代理生成、渲染和视觉复检Mermaid图表。
+- [deepseek-harness-skillx](https://github.com/drowned-fish1/deepseek-harness-skillx) — 一个 DeepSeek Harness 插件，指导智能体安全地发现、评估并采用外部 Agent Skills。
+- [knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) — 实现基于双知识图谱的Markdown笔记检索，提供MCP搜索与反馈工具。
+- [modlens](https://github.com/liustack/modlens) — 一个 DeepSeek Harness 插件，通过将粘贴的图片转换为结构化 JSON 证据来提供图像理解能力。
+- [modsearch](https://github.com/liustack/modsearch) — 为 DeepSeek Harness 添加网页搜索、X（推特）搜索与页面抓取工具，支持多种引擎。
+- [pptfast](https://github.com/liustack/pptfast) — 通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。
+- [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — 提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。
+- [uagent-sync](https://github.com/severin-ye/uagent-sync) — 提供命令行工具，用于备份、恢复和同步代理工作区配置与数据。
 
 ## 自动化与智能体
 
@@ -142,6 +152,12 @@
 - [Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) — 增加 Qwen 多模态插件支持。
 - [dsh-tps](https://github.com/Small-tailqwq/dsh-tps) — 展示 TPS 性能指标。
 - [Code2Skill](https://github.com/leechen298/Code2Skill) — 从现有源代码生成功能、MCP 工具、Agent 技能和离线测试。
+- [conservative-code-edits](https://github.com/addxing/conservative-code-edits) — 为 AI 编程代理提供在现有项目中进行小范围、最小必要代码修改的技能。
+- [embedded-workbench](https://github.com/AmethystLuna/embedded-workbench) — 提供嵌入式 C/C++ 固件开发技能（FreeRTOS、Keil MDK、HardFault 故障排查、状态机）及 agent 纪律工作流。
+- [function-extraction](https://github.com/addxing/function-extraction) — 从代码库中提取完整功能实现链路并生成技术开发文档的技能。
+- [function-testing](https://github.com/addxing/function-testing) — 根据PRD、Git提交记录或用户故事生成功能测试用例，并导出Excel风格测试报告。
+- [mstar-harness](https://github.com/btspoony/mstar-harness) — 实现了一个由技能驱动的工作流引擎，提供多智能体代码交付技能。
+- [replicate-android-feature](https://github.com/addxing/replicate-android-feature) — 一个代理技能，用于在其他项目或平台中复刻现有 Android 功能，保持行为、界面和可复用资源一致。
 
 ## 如何选择插件
 

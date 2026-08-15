@@ -622,6 +622,96 @@
       "url": "https://github.com/Nwflower/dsh-chat-import"
     },
     {
+      "category": "tools",
+      "description_en": "Provides repository-local governance for coding agents with a DeepSeek Harness patch overlay.",
+      "description_zh": "为编码代理提供仓库本地治理，并包含 DeepSeek Harness 补丁覆盖层。",
+      "name": "amber-protocol",
+      "repository_id": 1276213353,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Bandersnatch0x/amber-protocol"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a multilingual search and evidence-verification tool for AI agents.",
+      "description_zh": "为 AI Agent 提供多语言搜索与证据核验工具。",
+      "name": "argo",
+      "repository_id": 1304997851,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/taxueseek/argo"
+    },
+    {
+      "category": "tools",
+      "description_en": "Generates, renders, and visually reviews Mermaid diagrams for AI coding agents.",
+      "description_zh": "为AI编程代理生成、渲染和视觉复检Mermaid图表。",
+      "name": "craft-mermaid",
+      "repository_id": 1303651617,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/chunkithwang/craft-mermaid"
+    },
+    {
+      "category": "tools",
+      "description_en": "A DeepSeek Harness plugin that guides agents to safely discover, assess, and adopt external Agent Skills.",
+      "description_zh": "一个 DeepSeek Harness 插件，指导智能体安全地发现、评估并采用外部 Agent Skills。",
+      "name": "deepseek-harness-skillx",
+      "repository_id": 1254458909,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/drowned-fish1/deepseek-harness-skillx"
+    },
+    {
+      "category": "tools",
+      "description_en": "Implements dual knowledge-graph retrieval over Markdown notes, exposing MCP tools for search and feedback.",
+      "description_zh": "实现基于双知识图谱的Markdown笔记检索，提供MCP搜索与反馈工具。",
+      "name": "knowlp-rag",
+      "repository_id": 1291676455,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/wly8691-jpg/knowlp-rag"
+    },
+    {
+      "category": "tools",
+      "description_en": "A plugin for DeepSeek Harness that provides image understanding by converting pasted images into structured JSON evidence.",
+      "description_zh": "一个 DeepSeek Harness 插件，通过将粘贴的图片转换为结构化 JSON 证据来提供图像理解能力。",
+      "name": "modlens",
+      "repository_id": 1163808211,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/liustack/modlens"
+    },
+    {
+      "category": "tools",
+      "description_en": "Adds web search, X (Twitter) search, and page fetching tools to DeepSeek Harness through multiple engines.",
+      "description_zh": "为 DeepSeek Harness 添加网页搜索、X（推特）搜索与页面抓取工具，支持多种引擎。",
+      "name": "modsearch",
+      "repository_id": 1163808542,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/liustack/modsearch"
+    },
+    {
+      "category": "tools",
+      "description_en": "Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.",
+      "description_zh": "通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。",
+      "name": "pptfast",
+      "repository_id": 1303071154,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/liustack/pptfast"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.",
+      "description_zh": "提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。",
+      "name": "pptkit-presentation",
+      "repository_id": 1303876331,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/openHacking/pptkit-presentation"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides command-line tools for backing up, restoring, and synchronizing agent workspace configuration and data.",
+      "description_zh": "提供命令行工具，用于备份、恢复和同步代理工作区配置与数据。",
+      "name": "uagent-sync",
+      "repository_id": 1266465567,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/severin-ye/uagent-sync"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
@@ -944,6 +1034,60 @@
       "repository_id": 1304163962,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/leechen298/Code2Skill"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides a skill for AI coding agents to make small, scoped code changes in existing projects.",
+      "description_zh": "为 AI 编程代理提供在现有项目中进行小范围、最小必要代码修改的技能。",
+      "name": "conservative-code-edits",
+      "repository_id": 1249863312,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/addxing/conservative-code-edits"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides embedded C/C++ firmware development skills (FreeRTOS, Keil MDK, HardFault triage, state machines) and agent discipline workflows.",
+      "description_zh": "提供嵌入式 C/C++ 固件开发技能（FreeRTOS、Keil MDK、HardFault 故障排查、状态机）及 agent 纪律工作流。",
+      "name": "embedded-workbench",
+      "repository_id": 1276714299,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/AmethystLuna/embedded-workbench"
+    },
+    {
+      "category": "development",
+      "description_en": "A skill for extracting a complete feature implementation chain from a codebase and generating a technical development document.",
+      "description_zh": "从代码库中提取完整功能实现链路并生成技术开发文档的技能。",
+      "name": "function-extraction",
+      "repository_id": 1249894954,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/addxing/function-extraction"
+    },
+    {
+      "category": "development",
+      "description_en": "Generates functional test cases from PRDs, Git commits, or user stories and exports an Excel-style test report.",
+      "description_zh": "根据PRD、Git提交记录或用户故事生成功能测试用例，并导出Excel风格测试报告。",
+      "name": "function-testing",
+      "repository_id": 1249895109,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/addxing/function-testing"
+    },
+    {
+      "category": "development",
+      "description_en": "Implements a skill-driven workflow engine with skills for multi-agent code delivery.",
+      "description_zh": "实现了一个由技能驱动的工作流引擎，提供多智能体代码交付技能。",
+      "name": "mstar-harness",
+      "repository_id": 1174622182,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/btspoony/mstar-harness"
+    },
+    {
+      "category": "development",
+      "description_en": "An agent skill for reproducing an existing Android feature in another project or platform, preserving behavior, UI, and reusable resources.",
+      "description_zh": "一个代理技能，用于在其他项目或平台中复刻现有 Android 功能，保持行为、界面和可复用资源一致。",
+      "name": "replicate-android-feature",
+      "repository_id": 1303494204,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/addxing/replicate-android-feature"
     }
   ],
   "schema_version": 1

@@ -6,6 +6,24 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31863555587 -->
+- Automatically added [amber-protocol](https://github.com/Bandersnatch0x/amber-protocol) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [argo](https://github.com/taxueseek/argo) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [conservative-code-edits](https://github.com/addxing/conservative-code-edits) to Development & Ecosystem from the `dsh-plugin` topic.
+- Automatically added [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [deepseek-harness-skillx](https://github.com/drowned-fish1/deepseek-harness-skillx) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [embedded-workbench](https://github.com/AmethystLuna/embedded-workbench) to Development & Ecosystem from the `dsh-plugin` topic.
+- Automatically added [function-extraction](https://github.com/addxing/function-extraction) to Development & Ecosystem from the `dsh-plugin` topic.
+- Automatically added [function-testing](https://github.com/addxing/function-testing) to Development & Ecosystem from the `dsh-plugin` topic.
+- Automatically added [knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [modlens](https://github.com/liustack/modlens) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [modsearch](https://github.com/liustack/modsearch) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [mstar-harness](https://github.com/btspoony/mstar-harness) to Development & Ecosystem from the `dsh-plugin` topic.
+- Automatically added [pptfast](https://github.com/liustack/pptfast) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [replicate-android-feature](https://github.com/addxing/replicate-android-feature) to Development & Ecosystem from the `dsh-plugin` topic.
+- Automatically added [uagent-sync](https://github.com/severin-ye/uagent-sync) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:31819872080 -->
 - Automatically added [Code2Skill](https://github.com/leechen298/Code2Skill) to Development & Ecosystem from the `dsh-plugin` topic.
 
