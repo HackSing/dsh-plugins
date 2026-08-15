@@ -32,6 +32,23 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+      - name: Restore the latest operational candidate ledger
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data .candidate-state
+          restored=""
+          for run_id in $(gh run list --workflow sync-topic-plugins.yml --status success --limit 20 --json databaseId --jq '.[].databaseId'); do
+            if gh run download "$run_id" --name topic-candidate-ledger --dir .candidate-state 2>/dev/null; then
+              restored=$(find .candidate-state -name topic-candidates.json -print -quit)
+              break
+            fi
+          done
+          if [ -n "$restored" ]; then
+            cp "$restored" data/topic-candidates.json
+          else
+            echo '{"candidates":[],"query":"topic:dsh-plugin","schema_version":1,"source_total":0}' > data/topic-candidates.json
+          fi
       - name: Reconcile official plugin submission issues
         env:
           GITHUB_TOKEN: ${{ github.token }}

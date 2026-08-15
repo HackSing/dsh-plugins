@@ -174,12 +174,6 @@ class GitHubClient:
             f"https://api.github.com/repos/{self.repository}/issues/{number}/comments?per_page=100"
         )
 
-    def list_automation_report_issues(self) -> list[dict[str, Any]]:
-        return self.get_json(
-            f"https://api.github.com/repos/{self.repository}/issues"
-            "?state=all&labels=automation-report&per_page=100"
-        )
-
     def ensure_label(self, name: str, color: str, description: str) -> None:
         url = f"https://api.github.com/repos/{self.repository}/labels"
         try:
@@ -577,34 +571,16 @@ def git_output(*args: str) -> str:
 
 def find_publication_evidence(repository_url: str) -> dict[str, str]:
     normalized = normalize_repository_url(repository_url) or repository_url
-    matched_report = None
-    if REPORTS_PATH.exists():
-        for path in sorted(REPORTS_PATH.glob("*.md")):
-            if f"]({normalized})" in path.read_text(encoding="utf-8"):
-                matched_report = path
-                break
-    if matched_report:
-        relative = str(matched_report.relative_to(ROOT))
-        commit = git_output("log", "-1", "--format=%H", "--", relative)
-        return {
-            "commit": commit,
-            "report_path": relative,
-            "report_stem": matched_report.stem,
-        }
-    return {"commit": git_output("rev-parse", "HEAD")}
+    commits = git_output(
+        "log", "-S", normalized, "--format=%H", "--", "data/plugins.json"
+    ).splitlines()
+    return {"commit": commits[0] if commits else git_output("rev-parse", "HEAD")}
 
 
-def accepted_comment(
-    item: dict[str, Any], evidence: dict[str, str], report_issue_url: str | None
-) -> str:
+def accepted_comment(item: dict[str, Any], evidence: dict[str, str]) -> str:
     source = submission_name(item)
     repository_id = item.get("repository_id") or repository_key(item["repository_url"])
     commit = evidence["commit"]
-    report_link = report_issue_url
-    if not report_link and evidence.get("report_path"):
-        report_link = (
-            f"https://github.com/HackSing/dsh-plugins/blob/{commit}/{evidence['report_path']}"
-        )
     lines = [
         "✅ 已通过自动目录收录",
         "",
@@ -619,8 +595,6 @@ def accepted_comment(
         "- 正式目录：https://github.com/HackSing/dsh-plugins/blob/main/README.zh.md",
         f"- 收录提交：https://github.com/HackSing/dsh-plugins/commit/{commit}",
     ]
-    if report_link:
-        lines.append(f"- 自动收录报告：{report_link}")
     lines.extend(
         [
             "",
@@ -642,7 +616,7 @@ def reviewing_comment(item: dict[str, Any]) -> str:
             f"系统将从主仓库的可信工作流定向复核 [{repository}]({repository})。",
             "复核只读取公开元数据、目录结构和 README，不会检出、安装或执行贡献者分支及插件代码。",
             "",
-            f"高置信度通过后会自动更新正式目录、双语 README、CHANGELOG 和收录报告，再回到本 {source} 回复结果并关闭。系统异常会重试，不会被当作审核拒绝。",
+            f"通过后会自动更新正式目录、双语 README 和 CHANGELOG，并生成内部运行报告，再回到本 {source} 回复结果并关闭。系统异常会重试，不会被当作审核拒绝。",
             "",
             f"<!-- dsh-submission:v1 status=reviewing repository={repository_key(repository)} -->",
         ]
@@ -774,25 +748,14 @@ def close_already_published(
         client.ensure_label(
             PLUGIN_SUBMISSION_LABEL, "5319E7", "Plugin submitted for directory inclusion"
         )
-    report_issues = client.list_automation_report_issues()
     actions = []
     for item in accepted:
         number = submission_number(item)
         evidence = find_publication_evidence(item["repository_url"])
-        issue_url = None
-        report_stem = evidence.get("report_stem")
-        if report_stem:
-            matching = [
-                issue
-                for issue in report_issues
-                if report_stem in str(issue.get("title", ""))
-            ]
-            if matching:
-                issue_url = matching[0].get("html_url")
         marker = "<!-- dsh-submission:v1 status=accepted "
         comments = client.list_pull_request_comments(number)
         if not any(marker in str(comment.get("body", "")) for comment in comments):
-            client.post_comment(number, accepted_comment(item, evidence, issue_url))
+            client.post_comment(number, accepted_comment(item, evidence))
         labels = [ACCEPTED_LABEL, AUTOMATION_LABEL]
         if submission_type(item) == "issue":
             labels.append(PLUGIN_SUBMISSION_LABEL)

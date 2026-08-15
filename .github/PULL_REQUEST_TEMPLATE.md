@@ -1,16 +1,5 @@
-> Plugin inclusion has one official path: [Submit a plugin](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml). Do not use a pull request to add a plugin entry. Catalog-only plugin PRs are redirected and closed without merging.
+> 插件收录请使用 [Submit a plugin](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml) 表单，不要通过 Pull Request 修改目录条目。
 
-## What changed
+## 变更说明
 
-Describe the automation, test, governance, template, or directory-system improvement.
-
-## Evidence
-
-Link to the plugin repository or documentation supporting this change.
-
-## Checklist
-
-- [ ] This pull request does not directly add a plugin entry.
-- [ ] I did not hand-edit generated plugin entries in either README.
-- [ ] I updated `CHANGELOG.md` under `Unreleased`.
-- [ ] Directory checks and relevant unit tests pass locally.
+请简要说明问题、修改内容和验证结果。

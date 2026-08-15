@@ -151,9 +151,9 @@
 
 插件开发者统一使用[插件提交表单](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml)申请收录；这是唯一官方提交入口，不需要修改目录文件或创建 PR。发现已有条目需要修正时，请使用[信息更新表单](https://github.com/HackSing/dsh-plugins/issues/new?template=update-plugin.yml)。
 
-建议同时为插件仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 主题，方便自动发现任务和其他用户找到项目。Topic 是系统发现机制，不替代正式提交表单。
+建议同时为插件仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 主题，方便生态用户发现项目。Topic 不替代正式提交表单。
 
-自动化任务每天扫描该 Topic，并每 30 分钟处理插件提交 Issue，通过结构规则和已配置的模型服务生成分类及事实性的双语描述。只有被高置信度确认且通过全部目录校验的候选项目才会发布。每次成功收录都会同步更新中英文目录、CHANGELOG 和永久报告，并在原提交 Issue 中返回结果。
+目录通过自动化规则持续维护；正式收录结果以中英文目录和 [CHANGELOG.md](CHANGELOG.md) 为准。
 
 详细收录标准、审核规则和贡献流程请参阅 [CONTRIBUTING.md](CONTRIBUTING.md)。
 

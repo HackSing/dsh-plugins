@@ -4,3 +4,11 @@ __pycache__/
 # Local-only operations methodology documents
 docs/DSH_PLUGIN_CONTENT_OPERATIONS_METHODOLOGY.zh.md
 docs/DSH_PLUGIN_AUTOMATED_OPERATIONS_METHODOLOGY.zh.md
+
+# Local-only operations material and generated review state
+OPERATIONS.md
+docs/AUTOMATED_INGESTION_PLAN.zh.md
+docs/PR_SUBMISSION_AUTOMATION.zh.md
+data/README.md
+data/topic-candidates.json
+reports/sync/

@@ -973,7 +973,7 @@ def create_report(
         f"# DSH 插件自动收录报告 — {review_date.isoformat()}",
         "",
         f"- 运行编号：`{run_id}`",
-        "- 发布提交：见包含本报告的 Git 提交；送达 Issue 会记录最终提交 SHA。",
+        "- 发布提交：以本次自动化任务完成后回读的正式目录提交为准。",
         f"- Topic 返回仓库：{candidates_payload.get('source_total', 0)}",
         f"- 收录前插件：{before_count}",
         f"- 本次新增插件：{len(promoted)}",

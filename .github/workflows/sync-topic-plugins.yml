@@ -29,6 +29,7 @@ on:
         type: number
 
 permissions:
+  actions: read
   contents: write
   issues: write
   pull-requests: write
@@ -50,17 +51,27 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - name: Continue the rolling automation branch
+
+      - name: Restore the private candidate ledger
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          branch="automation/topic-sync"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git fetch origin "$branch:refs/remotes/origin/$branch"; then
-            git switch --force-create "$branch" "origin/$branch"
-            git rebase origin/main
+          mkdir -p data .candidate-state
+          restored=""
+          for run_id in $(gh run list --workflow sync-topic-plugins.yml --status success --limit 20 --json databaseId --jq '.[].databaseId'); do
+            if gh run download "$run_id" --name topic-candidate-ledger --dir .candidate-state 2>/dev/null; then
+              restored=$(find .candidate-state -name topic-candidates.json -print -quit)
+              break
+            fi
+          done
+          if [ -n "$restored" ]; then
+            cp "$restored" data/topic-candidates.json
+          elif git fetch origin automation/topic-sync:refs/remotes/origin/automation/topic-sync && git show origin/automation/topic-sync:data/topic-candidates.json > data/topic-candidates.json; then
+            echo "Seeded candidate state from the legacy automation branch."
           else
-            git switch --create "$branch"
+            echo "No previous candidate state was available; discovery will initialize it."
           fi
+
       - name: Discover and assess topic candidates
         id: assess
         env:
@@ -87,7 +98,8 @@ jobs:
             fi
             python3 scripts/sync_topic_plugins.py discover "${args[@]}"
           fi
-      - name: Generate published directory and report
+
+      - name: Generate the public directory and private report
         id: render
         run: |
           args=(--run-id "$GITHUB_RUN_ID")
@@ -95,16 +107,16 @@ jobs:
             args+=(--report)
           fi
           python3 scripts/sync_topic_plugins.py render "${args[@]}"
-      - name: Validate generated directory
+
+      - name: Validate the generated directory
         id: validate
         run: |
           python3 scripts/sync_topic_plugins.py check
           python3 scripts/validate_directory.py
           python3 -m unittest discover -s tests -p "test_*.py"
           snapshot() {
-            git status --porcelain -- README.md README.zh.md CHANGELOG.md data reports
-            sha256sum README.md README.zh.md CHANGELOG.md data/*.json
-            find reports -type f -print0 2>/dev/null | sort -z | xargs -0 -r sha256sum
+            git status --porcelain -- README.md README.zh.md CHANGELOG.md data/plugins.json
+            sha256sum README.md README.zh.md CHANGELOG.md data/plugins.json
           }
           before=$(snapshot)
           args=(--run-id "$GITHUB_RUN_ID")
@@ -114,79 +126,71 @@ jobs:
           python3 scripts/sync_topic_plugins.py render "${args[@]}"
           after=$(snapshot)
           test "$before" = "$after"
-      - name: Detect automation changes
+
+      - name: Detect public directory changes
         id: changes
         run: |
-          if [ -z "$(git status --porcelain -- README.md README.zh.md CHANGELOG.md data reports)" ]; then
+          if [ -z "$(git status --porcelain -- README.md README.zh.md CHANGELOG.md data/plugins.json)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-      - name: Update the rolling automation branch
-        if: steps.changes.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          branch="automation/topic-sync"
-          git add README.md README.zh.md CHANGELOG.md data
-          if [ -d reports ]; then
-            git add reports
-          fi
-          git commit -m "chore: refresh dsh-plugin topic catalog"
-          git push --force-with-lease origin "HEAD:$branch"
-      - name: Open or update the automation pull request
+
+      - name: Publish changes through a temporary branch
         if: steps.changes.outputs.changed == 'true'
         id: pull_request
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          branch="automation/topic-sync"
+          branch="automation/catalog-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --create "$branch"
+          git add README.md README.zh.md CHANGELOG.md data/plugins.json
+          git commit -m "chore: refresh dsh-plugin catalog"
+          git push origin "HEAD:$branch"
           body=$(mktemp)
           python3 scripts/sync_topic_plugins.py summary > "$body"
-          echo >> "$body"
-          echo "Observation mode proposes high-confidence candidates without publishing them. Publish mode promotes them only after the same workflow passes all validations." >> "$body"
-          pr_number=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
-          if [ -z "$pr_number" ]; then
-            pr_url=$(gh pr create --draft --base main --head "$branch" --title "chore: automated dsh-plugin topic update" --body-file "$body")
-            pr_number=$(gh pr view "$pr_url" --json number --jq .number)
+          if [ "$AUTO_PUBLISH" = "true" ]; then
+            pr_url=$(gh pr create --base main --head "$branch" --title "chore: refresh dsh-plugin catalog" --body-file "$body")
           else
-            gh pr edit "$pr_number" --body-file "$body"
+            pr_url=$(gh pr create --draft --base main --head "$branch" --title "chore: refresh dsh-plugin catalog" --body-file "$body")
           fi
-          echo "number=$pr_number" >> "$GITHUB_OUTPUT"
-      - name: Automatically merge a successful plugin publication
-        if: env.AUTO_PUBLISH == 'true' && steps.render.outputs.promoted_count != '0'
+          echo "number=$(gh pr view "$pr_url" --json number --jq .number)" >> "$GITHUB_OUTPUT"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      - name: Merge a successful publication and remove its temporary branch
+        if: env.AUTO_PUBLISH == 'true' && steps.render.outputs.promoted_count != '0' && steps.pull_request.outputs.number != ''
+        id: publication
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ steps.pull_request.outputs.number }}
+          PUBLICATION_BRANCH: ${{ steps.pull_request.outputs.branch }}
         run: |
-          gh pr ready "$PR_NUMBER" || true
-          gh pr merge "$PR_NUMBER" --squash || gh pr merge "$PR_NUMBER" --squash --admin
+          gh pr merge "$PR_NUMBER" --squash --delete-branch || gh pr merge "$PR_NUMBER" --squash --admin --delete-branch
           git fetch origin main:refs/remotes/origin/main
-          git push --force-with-lease origin "origin/main:automation/topic-sync"
-      - name: Deliver any missing successful collection reports
-        if: always() && !cancelled()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          git fetch origin main:refs/remotes/origin/main
-          gh label create automation-report --color 1D76DB --description "Automated plugin collection report" --force
-          while IFS= read -r path; do
-            [ -n "$path" ] || continue
-            sha=$(git log -1 --format=%H origin/main -- "$path")
-            marker="report-sha:$sha"
-            existing=$(gh issue list --state all --search "\"$marker\" in:body" --json number --jq 'length')
-            if [ "$existing" = "0" ]; then
-              body=$(mktemp)
-              git show "origin/main:$path" > "$body"
-              echo >> "$body"
-              echo "- 最终提交：[${sha:0:7}](https://github.com/${GITHUB_REPOSITORY}/commit/$sha)" >> "$body"
-              echo >> "$body"
-              echo "<!-- $marker -->" >> "$body"
-              gh issue create --title "DSH 插件自动收录报告 — $(basename "$path" .md)" --label automation-report --assignee HackSing --body-file "$body"
-            fi
-          done < <(git ls-tree -r --name-only origin/main reports/sync)
+          git push origin --delete "$PUBLICATION_BRANCH" 2>/dev/null || true
+
+      - name: Save the candidate ledger outside the public catalog
+        if: steps.changes.outputs.changed == 'false' || steps.publication.outcome == 'success'
+        uses: actions/upload-artifact@v7
+        with:
+          name: topic-candidate-ledger
+          path: data/topic-candidates.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Save the successful collection report outside the public catalog
+        if: steps.render.outputs.report_created == 'true' && steps.publication.outcome == 'success'
+        uses: actions/upload-artifact@v7
+        with:
+          name: plugin-collection-report-${{ github.run_id }}
+          path: ${{ steps.render.outputs.report_path }}
+          if-no-files-found: error
+          retention-days: 90
+
       - name: Reconcile the originating submission Issue
-        if: always() && !cancelled() && github.event_name == 'workflow_dispatch' && inputs.mode == 'submission' && inputs.source_issue != '' && steps.assess.outcome == 'success' && steps.render.outcome == 'success' && steps.validate.outcome == 'success'
+        if: always() && !cancelled() && github.event_name == 'workflow_dispatch' && inputs.mode == 'submission' && inputs.source_issue != '' && steps.assess.outcome == 'success' && steps.render.outcome == 'success' && steps.validate.outcome == 'success' && (steps.changes.outputs.changed == 'false' || steps.publication.outcome == 'success')
         env:
           GITHUB_TOKEN: ${{ github.token }}
           PROMOTED_COUNT: ${{ steps.render.outputs.promoted_count }}

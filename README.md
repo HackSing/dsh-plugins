@@ -151,9 +151,9 @@ Before installing, check five things in the linked repository: the problem it so
 
 Plugin developers should use the [plugin submission form](https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml), the single official submission path. You do not need to edit directory files or open a pull request. To correct a published entry, use the [information update form](https://github.com/HackSing/dsh-plugins/issues/new?template=update-plugin.yml).
 
-Adding the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic also helps the discovery automation and other users find the project. The Topic is a discovery source, not a replacement for the official submission form.
+Adding the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic also helps ecosystem users find the project. The Topic does not replace the official submission form.
 
-A daily automation scans that Topic, while a separate intake runs every 30 minutes for plugin submission Issues. Structural rules and a configured model provider produce a category and factual bilingual descriptions. Only high-confidence candidates that pass every directory check are published. Each successful submission updates both READMEs, the changelog, and a permanent report before returning the result to the originating Issue.
+The directory is maintained continuously through automated checks. Published results are reflected in both directory languages and [CHANGELOG.md](CHANGELOG.md).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for acceptance criteria, review rules, and the contribution workflow.
 
