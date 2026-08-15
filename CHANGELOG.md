@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31895991421 -->
+- Automatically added [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) to Automation & Agents from the `dsh-plugin` topic.
+
 <!-- topic-sync:31877422388 -->
 - Automatically added [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) to Tools & Capabilities from the `dsh-plugin` topic.
 
