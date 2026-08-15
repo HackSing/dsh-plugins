@@ -25,6 +25,10 @@ DEFAULT_ARCHIVE_ROOT = ROOT / "local-reports"
 FINAL_PREFIX = "plugin-collection-report-"
 SOURCE_PREFIX = "plugin-collection-report-source-"
 SHA_PATTERN = re.compile(r"[0-9a-f]{40}")
+LEGACY_RUN_PATTERN = re.compile(r"^- 运行编号：`([^`]+)`$", re.MULTILINE)
+LEGACY_DATE_PATTERN = re.compile(r"^# DSH 插件自动收录报告 — (\d{4}-\d{2}-\d{2})$", re.MULTILINE)
+LEGACY_ADDED_PATTERN = re.compile(r"^- 本次新增插件：(\d+)$", re.MULTILINE)
+LEGACY_PLUGIN_PATTERN = re.compile(r"^### \[([^]]+)]\((https://github\.com/[^)]+)\)$", re.MULTILINE)
 
 
 class ArchiveError(RuntimeError):
@@ -226,6 +230,94 @@ def validate_report(payload: dict[str, Any], markdown: str, repo_root: Path) -> 
     return commit_sha
 
 
+def archive_legacy_markdown(
+    markdown_path: Path,
+    *,
+    artifact: dict[str, Any],
+    archive_root: Path,
+    manifest_records: list[dict[str, Any]],
+    repo_root: Path,
+    dry_run: bool = False,
+) -> str:
+    """Archive the Markdown-only report format used before report bundles."""
+    markdown = markdown_path.read_text(encoding="utf-8")
+    run_match = LEGACY_RUN_PATTERN.search(markdown)
+    date_match = LEGACY_DATE_PATTERN.search(markdown)
+    added_match = LEGACY_ADDED_PATTERN.search(markdown)
+    plugins = LEGACY_PLUGIN_PATTERN.findall(markdown)
+    if not run_match or not date_match or not added_match:
+        raise ArchiveError("legacy report is missing required identity fields")
+    run_id = run_match.group(1)
+    if str((artifact.get("workflow_run") or {}).get("id", "")) != run_id:
+        raise ArchiveError("legacy report run id does not match its artifact")
+    if len(plugins) != int(added_match.group(1)) or not plugins:
+        raise ArchiveError("legacy report plugin count is inconsistent")
+    commit_sha = publication_commit(repo_root, run_id)
+    if not commit_sha:
+        return "pending"
+    catalog = json.loads(
+        command(["git", "show", f"{commit_sha}:data/plugins.json"], cwd=repo_root).stdout
+    )
+    published_urls = {item.get("url") for item in catalog.get("plugins", [])}
+    missing = [url for _, url in plugins if url not in published_urls]
+    if missing:
+        raise ArchiveError(f"publication commit is missing legacy report plugins: {missing}")
+    markdown_bytes = markdown.encode("utf-8")
+    markdown_hash = sha256(markdown_bytes)
+    existing = next(
+        (item for item in manifest_records if item.get("publication_sha") == commit_sha),
+        None,
+    )
+    if existing:
+        if existing.get("markdown_sha256") != markdown_hash:
+            raise ArchiveError("existing report SHA has different Markdown content")
+        return "duplicate"
+    review_date = date_match.group(1)
+    metadata = {
+        "schema_version": 1,
+        "report_type": "legacy_markdown_plugin_collection",
+        "status": "published",
+        "run_id": run_id,
+        "review_date": review_date,
+        "added_count": len(plugins),
+        "plugins": [{"name": name, "url": url} for name, url in plugins],
+        "publication": {
+            "commit_sha": commit_sha,
+            "commit_url": f"https://github.com/HackSing/dsh-plugins/commit/{commit_sha}",
+            "run_url": f"https://github.com/HackSing/dsh-plugins/actions/runs/{run_id}",
+        },
+        "migration_note_zh": "此报告由旧版 Markdown Artifact 迁移，原文未改写。",
+    }
+    metadata_bytes = (
+        json.dumps(metadata, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+    ).encode("utf-8")
+    safe_run_id = re.sub(r"[^A-Za-z0-9_.-]", "-", run_id)[:80]
+    base_name = f"{review_date}-{commit_sha[:12]}-{safe_run_id}"
+    target_dir = archive_root / review_date[:4] / review_date[5:7]
+    markdown_target = target_dir / f"{base_name}.md"
+    json_target = target_dir / f"{base_name}.json"
+    if dry_run:
+        return "would_archive"
+    atomic_write(markdown_target, markdown_bytes)
+    atomic_write(json_target, metadata_bytes)
+    atomic_write(archive_root / "latest.md", markdown_bytes)
+    record = {
+        "artifact_id": artifact.get("id"),
+        "artifact_name": artifact.get("name"),
+        "format": "legacy_markdown",
+        "json_path": str(json_target.relative_to(archive_root)),
+        "json_sha256": sha256(metadata_bytes),
+        "markdown_path": str(markdown_target.relative_to(archive_root)),
+        "markdown_sha256": markdown_hash,
+        "publication_sha": commit_sha,
+        "run_id": run_id,
+        "synced_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+    }
+    append_manifest(archive_root / "manifest.jsonl", record)
+    manifest_records.append(record)
+    return "archived"
+
+
 def archive_bundle(
     report_dir: Path,
     *,
@@ -331,18 +423,29 @@ def sync_reports(
                     cwd=repo_root,
                 )
                 report_json = next(Path(directory).rglob("report.json"), None)
-                if report_json is None:
-                    raise ArchiveError("downloaded artifact is missing report.json")
-                outcome = archive_bundle(
-                    report_json.parent,
-                    artifact=artifact,
-                    archive_root=archive_root,
-                    manifest_records=manifest_records,
-                    gh=gh,
-                    repository=repository,
-                    repo_root=repo_root,
-                    dry_run=dry_run,
-                )
+                if report_json is not None:
+                    outcome = archive_bundle(
+                        report_json.parent,
+                        artifact=artifact,
+                        archive_root=archive_root,
+                        manifest_records=manifest_records,
+                        gh=gh,
+                        repository=repository,
+                        repo_root=repo_root,
+                        dry_run=dry_run,
+                    )
+                else:
+                    legacy_markdown = next(Path(directory).rglob("*.md"), None)
+                    if legacy_markdown is None:
+                        raise ArchiveError("downloaded artifact has no supported report")
+                    outcome = archive_legacy_markdown(
+                        legacy_markdown,
+                        artifact=artifact,
+                        archive_root=archive_root,
+                        manifest_records=manifest_records,
+                        repo_root=repo_root,
+                        dry_run=dry_run,
+                    )
                 counts[outcome] += 1
         except (ArchiveError, json.JSONDecodeError, OSError) as exc:
             failures.append(f"{artifact.get('name')}: {exc}")

@@ -201,6 +201,65 @@ class CollectionReportSyncTests(unittest.TestCase):
             self.assertEqual(recovered["publication"]["commit_sha"], commit_sha)
             self.assertEqual(recovered["status"], "published")
 
+    def test_archives_a_legacy_markdown_report(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            repository = root / "repo"
+            archive = root / "archive"
+            report = root / "legacy.md"
+            (repository / "data").mkdir(parents=True)
+            git(repository, "init", "-q")
+            git(repository, "config", "user.name", "Test")
+            git(repository, "config", "user.email", "test@example.com")
+            (repository / "CHANGELOG.md").write_text(
+                "# Changelog\n\n<!-- topic-sync:run-1 -->\n", encoding="utf-8"
+            )
+            (repository / "data" / "plugins.json").write_text(
+                json.dumps(
+                    {
+                        "plugins": [
+                            {
+                                "name": "dsh-example",
+                                "url": "https://github.com/example/dsh-example",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            git(repository, "add", ".")
+            git(repository, "commit", "-q", "-m", "publish")
+            commit_sha = git(repository, "rev-parse", "HEAD")
+            git(repository, "update-ref", "refs/remotes/origin/main", commit_sha)
+            report.write_text(
+                "# DSH 插件自动收录报告 — 2026-08-15\n\n"
+                "- 运行编号：`run-1`\n"
+                "- 本次新增插件：1\n\n"
+                "## 新增插件\n\n"
+                "### [dsh-example](https://github.com/example/dsh-example)\n",
+                encoding="utf-8",
+            )
+            records = []
+            artifact = {
+                "id": 10,
+                "name": "plugin-collection-report-run-1",
+                "workflow_run": {"id": "run-1"},
+            }
+            outcome = report_sync.archive_legacy_markdown(
+                report,
+                artifact=artifact,
+                archive_root=archive,
+                manifest_records=records,
+                repo_root=repository,
+            )
+            self.assertEqual(outcome, "archived")
+            self.assertEqual(len(list((archive / "2026" / "08").glob("*.md"))), 1)
+            metadata = json.loads(
+                next((archive / "2026" / "08").glob("*.json")).read_text()
+            )
+            self.assertEqual(metadata["publication"]["commit_sha"], commit_sha)
+            self.assertEqual(metadata["report_type"], "legacy_markdown_plugin_collection")
+
 
 if __name__ == "__main__":
     unittest.main()
