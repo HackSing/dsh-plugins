@@ -1,3 +1,4 @@
+import contextlib
 import importlib.util
 import io
 import json
@@ -497,6 +498,131 @@ class ClassificationTests(unittest.TestCase):
             finally:
                 topic_sync.CHANGELOG_PATH = original_changelog
                 topic_sync.REPORTS_PATH = original_reports
+
+
+def sample_report_payload(with_tweets=False):
+    payload = {
+        "schema_version": 1,
+        "report_type": "plugin_collection",
+        "status": "pending_publication",
+        "run_id": "run-1",
+        "review_date": "2026-08-16",
+        "source_total": 100,
+        "before_count": 123,
+        "added_count": 1,
+        "after_count": 124,
+        "candidate_counts": {"needs_review": 3},
+        "plugins": [
+            {
+                "category": "tools",
+                "category_en": "Tools & Capabilities",
+                "category_zh": "工具与能力",
+                "confidence": "high",
+                "description_en": "Adds a tool.",
+                "description_zh": "增加一个工具。",
+                "evidence": ["README"],
+                "name": "dsh-example",
+                "structure_evidence": ["package.json+source"],
+                "url": "https://github.com/example/dsh-example",
+            }
+        ],
+        "publication": {},
+        "content_material": {
+            "headline_zh": "DSH 插件目录新增 1 个插件",
+            "summary_zh": "本次新增 dsh-example。",
+            "fact_boundary_zh": "目录收录不代表安全审计。",
+        },
+    }
+    if with_tweets:
+        payload["content_material"]["tweets"] = {
+            "zh": ["中文方案一\ngithub.com/HackSing/dsh-plugins", "中文方案二", "中文方案三"],
+            "en": ["EN option one\ngithub.com/HackSing/dsh-plugins", "EN two", "EN three"],
+        }
+    return payload
+
+
+class FakeTweetClient:
+    def __init__(self, result):
+        self.result = result
+        self.calls = []
+
+    def draft_tweets(self, facts):
+        self.calls.append(facts)
+        return self.result
+
+
+class PromotionTweetTests(unittest.TestCase):
+    def test_report_markdown_includes_tweets_when_present(self):
+        markdown = topic_sync.report_markdown(sample_report_payload(with_tweets=True))
+        self.assertIn("## 媒体推广推文备选", markdown)
+        self.assertIn("### 中文", markdown)
+        self.assertIn("### English", markdown)
+        self.assertIn("**方案 1**", markdown)
+        self.assertIn("**Option 1**", markdown)
+        self.assertIn("中文方案一", markdown)
+        self.assertIn("EN three", markdown)
+        self.assertLess(
+            markdown.index("## 媒体推广推文备选"), markdown.index("## 新增插件")
+        )
+
+    def test_report_markdown_omits_tweets_when_absent(self):
+        markdown = topic_sync.report_markdown(sample_report_payload(with_tweets=False))
+        self.assertNotIn("媒体推广推文备选", markdown)
+
+    def test_report_markdown_with_tweets_is_deterministic(self):
+        payload = sample_report_payload(with_tweets=True)
+        self.assertEqual(
+            topic_sync.report_markdown(payload), topic_sync.report_markdown(payload)
+        )
+
+    def test_draft_promotion_tweets_stores_model_output(self):
+        payload = sample_report_payload()
+        result = {"zh": ["a", "b", "c"], "en": ["d", "e", "f"]}
+        client = FakeTweetClient(result)
+        updated = topic_sync.draft_promotion_tweets(payload, client)
+        self.assertEqual(updated["content_material"]["tweets"], result)
+        self.assertEqual(client.calls[0]["after_count"], 124)
+        self.assertEqual(
+            client.calls[0]["repository_url"], "https://github.com/HackSing/dsh-plugins"
+        )
+        self.assertEqual(client.calls[0]["plugins"][0]["name"], "dsh-example")
+
+    def test_parse_tweets_requires_three_each(self):
+        with self.assertRaises(topic_sync.SyncError):
+            topic_sync.parse_tweets(
+                json.dumps({"zh": ["only", "two"], "en": ["a", "b", "c"]})
+            )
+
+    def test_parse_tweets_strips_and_returns(self):
+        parsed = topic_sync.parse_tweets(
+            json.dumps({"zh": [" one ", "two", "three"], "en": ["a", "b", "c"]})
+        )
+        self.assertEqual(parsed["zh"][0], "one")
+        self.assertEqual(len(parsed["en"]), 3)
+
+    def test_draft_tweets_command_skips_without_llm(self):
+        with tempfile.TemporaryDirectory() as directory:
+            report_dir = Path(directory)
+            topic_sync.write_report_bundle(report_dir, sample_report_payload())
+            with mock.patch.object(topic_sync, "model_client_from_env", return_value=None):
+                with contextlib.redirect_stdout(io.StringIO()):
+                    topic_sync.draft_tweets_command(report_dir)
+            payload = json.loads((report_dir / "report.json").read_text(encoding="utf-8"))
+            self.assertNotIn("tweets", payload["content_material"])
+
+    def test_draft_tweets_command_is_idempotent_when_present(self):
+        with tempfile.TemporaryDirectory() as directory:
+            report_dir = Path(directory)
+            topic_sync.write_report_bundle(report_dir, sample_report_payload(with_tweets=True))
+            guard = mock.Mock(side_effect=AssertionError("should not build a client"))
+            with mock.patch.object(topic_sync, "model_client_from_env", guard):
+                with contextlib.redirect_stdout(io.StringIO()):
+                    topic_sync.draft_tweets_command(report_dir)
+            payload = json.loads((report_dir / "report.json").read_text(encoding="utf-8"))
+            self.assertEqual(
+                payload["content_material"]["tweets"]["zh"][0],
+                "中文方案一\ngithub.com/HackSing/dsh-plugins",
+            )
 
 
 if __name__ == "__main__":

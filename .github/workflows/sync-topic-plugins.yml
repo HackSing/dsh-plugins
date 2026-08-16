@@ -122,6 +122,15 @@ jobs:
           after=$(snapshot)
           test "$before" = "$after"
 
+      - name: Draft bilingual promotion tweets for the report
+        id: tweets
+        if: steps.render.outputs.report_created == 'true'
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: |
+          python3 scripts/sync_topic_plugins.py draft-tweets \
+            --report-dir "${{ steps.render.outputs.report_dir }}"
+
       - name: Save a recoverable report source bundle
         if: steps.render.outputs.report_created == 'true'
         uses: actions/upload-artifact@v7
