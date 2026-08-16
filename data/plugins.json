@@ -856,6 +856,15 @@
       "url": "https://github.com/JohnXu22786/task-board"
     },
     {
+      "category": "tools",
+      "description_en": "Provides background terminal job management for DeepSeek Harness with PTY-based process launching, input, output paging, and job control.",
+      "description_zh": "为 DeepSeek Harness 提供后台终端作业管理，支持 PTY 进程启动、输入、输出分页和作业控制。",
+      "name": "pty-runner",
+      "repository_id": 1335842344,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/pty-runner"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
