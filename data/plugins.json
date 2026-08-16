@@ -811,6 +811,15 @@
       "url": "https://github.com/mudden2380078550-creator/write-chinese-long-screenplay"
     },
     {
+      "category": "tools",
+      "description_en": "Provides background terminal job management for DeepSeek Harness, including launching processes, sending input, reading output, and stopping jobs.",
+      "description_zh": "为DeepSeek Harness提供后台终端作业管理，包括启动进程、发送输入、读取输出和停止作业。",
+      "name": "pty-runner",
+      "repository_id": 1335842344,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/pty-runner"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",

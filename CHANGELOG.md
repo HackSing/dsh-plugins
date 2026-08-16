@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31959201017 -->
+- Automatically added [pty-runner](https://github.com/JohnXu22786/pty-runner) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:31926252293 -->
 - Automatically added [agent-jit](https://github.com/sybolization/agent-jit) to Tools & Capabilities from the `dsh-plugin` topic.
 - Automatically added [clawock](https://github.com/KCNyu/clawock) to Tools & Capabilities from the `dsh-plugin` topic.
