@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31977651252 -->
+- Automatically added [skill-framework](https://github.com/JohnXu22786/skill-framework) to Development & Ecosystem from the `dsh-plugin` topic.
+
 <!-- topic-sync:31976670345 -->
 - Automatically added [spec-driven](https://github.com/JohnXu22786/spec-driven) to Development & Ecosystem from the `dsh-plugin` topic.
 
