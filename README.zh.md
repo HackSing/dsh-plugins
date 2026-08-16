@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **138 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
+当前整理 **139 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **138 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **139 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -126,6 +126,7 @@
 - [file-planning](https://github.com/JohnXu22786/file-planning) — 提供基于磁盘持久化的执行规划，包含里程碑、步骤状态机和审计事件。
 - [fs-mcp](https://github.com/JohnXu22786/fs-mcp) — 为代理提供受限的文件系统 MCP 服务器，在可配置区域内提供文件读写、搜索和元数据操作。
 - [task-board](https://github.com/JohnXu22786/task-board) — 为 DeepSeek Harness 提供跨会话事件溯源任务面板，支持任务跟踪、审计历史和看板导出。
+- [pty-runner](https://github.com/JohnXu22786/pty-runner) — 为 DeepSeek Harness 提供后台终端作业管理，支持 PTY 进程启动、输入、输出分页和作业控制。
 
 ## 自动化与智能体
 
