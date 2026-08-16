@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **133 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 16, 2026**.
+Explore **134 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 16, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **133 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **133 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **134 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -121,6 +121,7 @@ This is the first published directory snapshot: **133 plugins**, grouped into **
 - [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — Provides a DeepSeek Harness plugin bundle that exposes agent runtime management tools through MCP.
 - [sidesight](https://github.com/ZhuXinAI/sidesight) — Provides CLI commands for analyzing screenshots, diagrams, charts, UI diffs, and videos with multimodal models.
 - [write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) — Provides a Chinese long-screenplay writing skill with project initialization, context building, validation, and review scripts for SKILL.md-compatible agents.
+- [docs-retriever](https://github.com/JohnXu22786/docs-retriever) — Implements an MCP server for retrieving versioned library documentation, with tools for catalog lookup, release listing, and doc extraction.
 
 ## Automation & Agents
 
