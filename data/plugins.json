@@ -883,6 +883,15 @@
       "url": "https://github.com/JohnXu22786/worktree-mgr"
     },
     {
+      "category": "tools",
+      "description_en": "Scans project build commands from Makefiles, package.json scripts, justfiles, and Deno tasks, and registers them as tools for the agent.",
+      "description_zh": "扫描项目中的构建命令（Makefile、package.json 脚本、justfile 和 Deno 任务），并将其注册为智能体工具。",
+      "name": "command-scout",
+      "repository_id": 1335840341,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/command-scout"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
