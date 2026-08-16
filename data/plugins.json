@@ -874,6 +874,15 @@
       "url": "https://github.com/JohnXu22786/github-mcp"
     },
     {
+      "category": "tools",
+      "description_en": "Scans a project's declared build commands from Makefile, package.json scripts, justfile, and deno tasks and exposes them as agent tools.",
+      "description_zh": "扫描项目声明的构建命令（Makefile、package.json scripts、justfile、deno tasks）并将其暴露为代理工具。",
+      "name": "command-scout",
+      "repository_id": 1335840341,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/command-scout"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
