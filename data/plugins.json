@@ -874,6 +874,15 @@
       "url": "https://github.com/JohnXu22786/github-mcp"
     },
     {
+      "category": "tools",
+      "description_en": "Provides task-isolated git worktree management tools for DeepSeek Harness, including create, sync, finish, and batch cleanup operations.",
+      "description_zh": "为 DeepSeek Harness 提供任务隔离的 git 工作区管理工具，包括创建、同步、收尾和批量清理操作。",
+      "name": "worktree-mgr",
+      "repository_id": 1335840982,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/worktree-mgr"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",

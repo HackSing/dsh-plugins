@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **141 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 16, 2026**.
+Explore **142 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 16, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **141 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **141 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **142 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -128,6 +128,7 @@ This is the first published directory snapshot: **141 plugins**, grouped into **
 - [task-board](https://github.com/JohnXu22786/task-board) — Provides a cross-session event-sourced task board for DeepSeek Harness, supporting task tracking, audit history, and kanban export.
 - [pty-runner](https://github.com/JohnXu22786/pty-runner) — Provides background terminal job management for DeepSeek Harness with PTY-based process launching, input, output paging, and job control.
 - [github-mcp](https://github.com/JohnXu22786/github-mcp) — A DeepSeek Harness plugin bundling an MCP server that exposes GitHub repository, issue, pull request, review, and search tools.
+- [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — Provides task-isolated git worktree management tools for DeepSeek Harness, including create, sync, finish, and batch cleanup operations.
 
 ## Automation & Agents
 
