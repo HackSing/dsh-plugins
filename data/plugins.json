@@ -829,6 +829,15 @@
       "url": "https://github.com/JohnXu22786/codegraph"
     },
     {
+      "category": "tools",
+      "description_en": "Provides disk-persisted execution planning with milestones, step state machines, and audit events.",
+      "description_zh": "提供基于磁盘持久化的执行规划，包含里程碑、步骤状态机和审计事件。",
+      "name": "file-planning",
+      "repository_id": 1335840975,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/file-planning"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
