@@ -1277,6 +1277,15 @@
       "repository_id": 1303494204,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/addxing/replicate-android-feature"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides spec-driven development skills and tools including keel_catalog, keel_spec, and keel_review.",
+      "description_zh": "提供规格驱动开发技能包，包括五个技能和三个工具。",
+      "name": "spec-driven",
+      "repository_id": 1335840850,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/spec-driven"
     }
   ],
   "schema_version": 1

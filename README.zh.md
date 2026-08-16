@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **142 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
+当前整理 **143 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **142 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **143 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -179,6 +179,7 @@
 - [function-testing](https://github.com/addxing/function-testing) — 根据PRD、Git提交记录或用户故事生成功能测试用例，并导出Excel风格测试报告。
 - [mstar-harness](https://github.com/btspoony/mstar-harness) — 实现了一个由技能驱动的工作流引擎，提供多智能体代码交付技能。
 - [replicate-android-feature](https://github.com/addxing/replicate-android-feature) — 一个代理技能，用于在其他项目或平台中复刻现有 Android 功能，保持行为、界面和可复用资源一致。
+- [spec-driven](https://github.com/JohnXu22786/spec-driven) — 提供规格驱动开发技能包，包括五个技能和三个工具。
 
 ## 如何选择插件
 
