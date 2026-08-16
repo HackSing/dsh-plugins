@@ -9,11 +9,13 @@ import fcntl
 import hashlib
 import json
 import os
+import random
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 from typing import Any
 
@@ -30,25 +32,47 @@ LEGACY_DATE_PATTERN = re.compile(r"^# DSH 插件自动收录报告 — (\d{4}-\d
 LEGACY_ADDED_PATTERN = re.compile(r"^- 本次新增插件：(\d+)$", re.MULTILINE)
 LEGACY_PLUGIN_PATTERN = re.compile(r"^### \[([^]]+)]\((https://github\.com/[^)]+)\)$", re.MULTILINE)
 
+# Transient GitHub/Azure network drops (EOF, SSL_ERROR_SYSCALL, connection reset)
+# were flipping whole runs to failure. Retry only the network calls, with backoff.
+NETWORK_RETRIES = 3
+NETWORK_RETRY_BACKOFF = 1.0
+
 
 class ArchiveError(RuntimeError):
     """A report could not be safely archived."""
 
 
 def command(
-    args: list[str], *, cwd: Path = ROOT, check: bool = True
+    args: list[str],
+    *,
+    cwd: Path = ROOT,
+    check: bool = True,
+    retries: int = 0,
+    backoff: float = NETWORK_RETRY_BACKOFF,
 ) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(
-        args,
-        cwd=cwd,
-        check=False,
-        capture_output=True,
-        text=True,
-    )
-    if check and result.returncode != 0:
+    attempt = 0
+    while True:
+        result = subprocess.run(
+            args,
+            cwd=cwd,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode == 0 or not check:
+            return result
         detail = result.stderr.strip() or result.stdout.strip() or "command failed"
-        raise ArchiveError(f"{args[0]} failed: {detail}")
-    return result
+        if attempt >= retries:
+            raise ArchiveError(f"{args[0]} failed: {detail}")
+        # Exponential backoff with jitter, so a transient blip does not burn the run.
+        delay = backoff * (2**attempt) + random.uniform(0, backoff)
+        print(
+            f"{args[0]} failed (attempt {attempt + 1}/{retries + 1}), "
+            f"retrying in {delay:.1f}s: {detail.splitlines()[0][:200]}",
+            file=sys.stderr,
+        )
+        time.sleep(delay)
+        attempt += 1
 
 
 def list_artifacts(gh: str, repository: str) -> list[dict[str, Any]]:
@@ -59,7 +83,8 @@ def list_artifacts(gh: str, repository: str) -> list[dict[str, Any]]:
                 gh,
                 "api",
                 f"repos/{repository}/actions/artifacts?per_page=100&page={page}",
-            ]
+            ],
+            retries=NETWORK_RETRIES,
         )
         payload = json.loads(result.stdout)
         batch = payload.get("artifacts", [])
@@ -127,6 +152,11 @@ def append_manifest(path: Path, record: dict[str, Any]) -> None:
         handle.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
         handle.flush()
         os.fsync(handle.fileno())
+
+
+def failure_record_path(archive_root: Path, artifact: dict[str, Any]) -> Path:
+    """Location of an artifact's last-error marker (written on failure, cleared on success)."""
+    return archive_root / "failed" / f"{artifact.get('id', 'unknown')}.json"
 
 
 def publication_commit(repo_root: Path, run_id: str) -> str | None:
@@ -398,7 +428,11 @@ def sync_reports(
     archive_root: Path,
     dry_run: bool = False,
 ) -> dict[str, int]:
-    command(["git", "fetch", "--quiet", "origin", "main"], cwd=repo_root)
+    command(
+        ["git", "fetch", "--quiet", "origin", "main"],
+        cwd=repo_root,
+        retries=NETWORK_RETRIES,
+    )
     artifacts = select_report_artifacts(list_artifacts(gh, repository))
     manifest_records = load_manifest(archive_root / "manifest.jsonl")
     counts = {"archived": 0, "duplicate": 0, "pending": 0, "would_archive": 0}
@@ -421,6 +455,7 @@ def sync_reports(
                         directory,
                     ],
                     cwd=repo_root,
+                    retries=NETWORK_RETRIES,
                 )
                 report_json = next(Path(directory).rglob("report.json"), None)
                 if report_json is not None:
@@ -447,6 +482,9 @@ def sync_reports(
                         dry_run=dry_run,
                     )
                 counts[outcome] += 1
+                # The artifact synced cleanly this round; drop any stale failure marker.
+                if not dry_run:
+                    failure_record_path(archive_root, artifact).unlink(missing_ok=True)
         except (ArchiveError, json.JSONDecodeError, OSError) as exc:
             failures.append(f"{artifact.get('name')}: {exc}")
             failure_record = {
@@ -457,7 +495,7 @@ def sync_reports(
                 "run_id": run_id,
             }
             atomic_write(
-                archive_root / "failed" / f"{artifact.get('id', 'unknown')}.json",
+                failure_record_path(archive_root, artifact),
                 (
                     json.dumps(failure_record, ensure_ascii=False, indent=2, sort_keys=True)
                     + "\n"
