@@ -1241,6 +1241,15 @@
       "repository_id": 1303494204,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/addxing/replicate-android-feature"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides skills and tools for enforcing a spec-driven development workflow, including spec generation and review.",
+      "description_zh": "提供用于强制规格驱动开发工作流程的技能和工具，包括规格生成与审查。",
+      "name": "spec-driven",
+      "repository_id": 1335840850,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/spec-driven"
     }
   ],
   "schema_version": 1
