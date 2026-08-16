@@ -973,6 +973,15 @@
       "url": "https://github.com/ZK-Andy/dsh-continual-evolve"
     },
     {
+      "category": "automation",
+      "description_en": "A session context triage plugin for DeepSeek Harness that prunes stale, repeated, failed, and oversized context to conserve token budget.",
+      "description_zh": "用于 DeepSeek Harness 的会话上下文分诊插件，修剪过期、重复、失败和过大的上下文以节省 token 预算。",
+      "name": "context-pruner",
+      "repository_id": 1335839811,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/context-pruner"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",

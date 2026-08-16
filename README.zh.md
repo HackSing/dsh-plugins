@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **139 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
+当前整理 **140 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **139 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **140 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -142,6 +142,7 @@
 - [dsh-advisor](https://github.com/btspoony/dsh-advisor) — 配置第二个模型逐轮审查主智能体并补充建议。
 - [DeepJIT](https://github.com/fly3366/DeepJIT) — 用于 deepseek-harness 的 JIT 编译器插件，挖掘智能体执行轨迹并将重复工作流编译为可复用的技能和流程模板。
 - [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — 为 DeepSeek Harness 实现持续自我进化，持久化并优化提示笔记、记忆、技能和子代理规格，支持回滚和基准验证。
+- [context-pruner](https://github.com/JohnXu22786/context-pruner) — 用于 DeepSeek Harness 的会话上下文分诊插件，修剪过期、重复、失败和过大的上下文以节省 token 预算。
 
 ## 开发与生态集成
 

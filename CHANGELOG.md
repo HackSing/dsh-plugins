@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31971995095 -->
+- Automatically added [context-pruner](https://github.com/JohnXu22786/context-pruner) to Automation & Agents from the `dsh-plugin` topic.
+
 <!-- topic-sync:31970928557 -->
 - Automatically added [pty-runner](https://github.com/JohnXu22786/pty-runner) to Tools & Capabilities from the `dsh-plugin` topic.
 

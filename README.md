@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **139 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 16, 2026**.
+Explore **140 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 16, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **139 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **139 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **140 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -142,6 +142,7 @@ This is the first published directory snapshot: **139 plugins**, grouped into **
 - [dsh-advisor](https://github.com/btspoony/dsh-advisor) — Pairs the main agent with a second model that reviews each turn and contributes notes.
 - [DeepJIT](https://github.com/fly3366/DeepJIT) — JIT compiler plugin for deepseek-harness that mines agent execution traces and compiles recurring workflows into reusable skills and flow templates.
 - [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — Implements continual self-evolution for DeepSeek Harness by persisting and refining prompt notes, memories, skills, and subagent specs with rollback and benchmark validation.
+- [context-pruner](https://github.com/JohnXu22786/context-pruner) — A session context triage plugin for DeepSeek Harness that prunes stale, repeated, failed, and oversized context to conserve token budget.
 
 ## Development & Ecosystem
 
