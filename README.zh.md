@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **135 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
+当前整理 **136 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **135 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **136 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -123,6 +123,7 @@
 - [write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) — 提供中文长剧本创作技能，包含项目初始化、上下文构建、校验与审查脚本，适用于兼容 SKILL.md 的智能体。
 - [docs-retriever](https://github.com/JohnXu22786/docs-retriever) — 实现一个MCP服务器，用于检索版本化库文档，提供目录查询、版本列表和文档提取工具。
 - [codegraph](https://github.com/JohnXu22786/codegraph) — 提供代码知识图谱，将符号、调用点和导入索引到SQLite，并通过CLI或stdio MCP工具服务器回答结构性问题。
+- [github-mcp](https://github.com/JohnXu22786/github-mcp) — 作为 DeepSeek Harness 插件，提供 GitHub 仓库、问题、拉取请求、代码审查和搜索等工具能力。
 
 ## 自动化与智能体
 

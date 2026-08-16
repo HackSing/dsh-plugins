@@ -829,6 +829,15 @@
       "url": "https://github.com/JohnXu22786/codegraph"
     },
     {
+      "category": "tools",
+      "description_en": "Provides GitHub repository, issue, pull request, review, and search capabilities as a DeepSeek Harness plugin.",
+      "description_zh": "作为 DeepSeek Harness 插件，提供 GitHub 仓库、问题、拉取请求、代码审查和搜索等工具能力。",
+      "name": "github-mcp",
+      "repository_id": 1335840223,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/github-mcp"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
