@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **143 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
+当前整理 **144 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **143 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **144 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -129,6 +129,7 @@
 - [pty-runner](https://github.com/JohnXu22786/pty-runner) — 为 DeepSeek Harness 提供后台终端作业管理，支持 PTY 进程启动、输入、输出分页和作业控制。
 - [github-mcp](https://github.com/JohnXu22786/github-mcp) — 一个 DeepSeek Harness 插件，打包了暴露 GitHub 仓库、议题、拉取请求、审查和搜索工具的 MCP 服务器。
 - [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — 为 DeepSeek Harness 提供任务隔离的 git 工作区管理工具，包括创建、同步、收尾和批量清理操作。
+- [command-scout](https://github.com/JohnXu22786/command-scout) — 扫描项目中声明的构建命令（Makefile、package.json scripts、justfile、deno tasks），并将其作为代理工具提供。
 
 ## 自动化与智能体
 
