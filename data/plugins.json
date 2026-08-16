@@ -811,6 +811,15 @@
       "url": "https://github.com/mudden2380078550-creator/write-chinese-long-screenplay"
     },
     {
+      "category": "tools",
+      "description_en": "Implements an MCP server for retrieving versioned library documentation, with tools for catalog lookup, release listing, and doc extraction.",
+      "description_zh": "实现一个MCP服务器，用于检索版本化库文档，提供目录查询、版本列表和文档提取工具。",
+      "name": "docs-retriever",
+      "repository_id": 1335840644,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/docs-retriever"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
