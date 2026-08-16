@@ -865,6 +865,15 @@
       "url": "https://github.com/JohnXu22786/pty-runner"
     },
     {
+      "category": "tools",
+      "description_en": "A DeepSeek Harness plugin bundling an MCP server that exposes GitHub repository, issue, pull request, review, and search tools.",
+      "description_zh": "一个 DeepSeek Harness 插件，打包了暴露 GitHub 仓库、议题、拉取请求、审查和搜索工具的 MCP 服务器。",
+      "name": "github-mcp",
+      "repository_id": 1335840223,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/github-mcp"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
