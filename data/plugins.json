@@ -820,6 +820,15 @@
       "url": "https://github.com/JohnXu22786/docs-retriever"
     },
     {
+      "category": "tools",
+      "description_en": "Provides task-isolated git worktrees for DeepSeek Harness, managing the create/sync/finish lifecycle.",
+      "description_zh": "为 DeepSeek Harness 提供任务隔离的 git 工作区，管理创建/同步/收尾生命周期。",
+      "name": "worktree-mgr",
+      "repository_id": 1335840982,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/worktree-mgr"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
