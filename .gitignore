@@ -1,6 +1,9 @@
 __pycache__/
 *.py[cod]
 
+# macOS
+.DS_Store
+
 # Local-only operations methodology documents
 docs/DSH_PLUGIN_CONTENT_OPERATIONS_METHODOLOGY.zh.md
 docs/DSH_PLUGIN_AUTOMATED_OPERATIONS_METHODOLOGY.zh.md
