@@ -820,6 +820,15 @@
       "url": "https://github.com/JohnXu22786/docs-retriever"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a code knowledge graph that indexes symbols, call sites, and imports into SQLite and answers structural questions through CLI or a stdio MCP tool server.",
+      "description_zh": "提供代码知识图谱，将符号、调用点和导入索引到SQLite，并通过CLI或stdio MCP工具服务器回答结构性问题。",
+      "name": "codegraph",
+      "repository_id": 1335842340,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/codegraph"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
