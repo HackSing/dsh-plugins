@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31976670345 -->
+- Automatically added [spec-driven](https://github.com/JohnXu22786/spec-driven) to Development & Ecosystem from the `dsh-plugin` topic.
+
 <!-- topic-sync:31974758060 -->
 - Automatically added [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) to Tools & Capabilities from the `dsh-plugin` topic.
 
