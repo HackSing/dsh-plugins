@@ -1286,6 +1286,15 @@
       "repository_id": 1335840850,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/JohnXu22786/spec-driven"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides a bundled engineering-methodology skill library for DeepSeek Harness dsh as a Cordis plugin.",
+      "description_zh": "为 DeepSeek Harness dsh 提供作为 Cordis 插件的工程方法论技能库。",
+      "name": "skill-framework",
+      "repository_id": 1335839813,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/skill-framework"
     }
   ],
   "schema_version": 1
