@@ -388,6 +388,24 @@
       "url": "https://github.com/GengDaPeng/dsh-agent-message"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides a keyboard-oriented kanban interface for managing multi-agent coding workspaces in DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供面向键盘操作的看板界面，用于管理多智能体编码工作空间。",
+      "name": "ikanban",
+      "repository_id": 1137545389,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/isomoes/ikanban"
+    },
+    {
+      "category": "interaction",
+      "description_en": "Provides stateless dialogue compression to keep conversation context bounded.",
+      "description_zh": "提供无状态对话压缩，使对话上下文保持有界。",
+      "name": "mosaic_compress",
+      "repository_id": 1262737601,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/TuringCorp-net/mosaic_compress"
+    },
+    {
       "category": "tools",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
@@ -719,6 +737,78 @@
       "repository_id": 1333875303,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/slywalker2006/dsh-passwords"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a DeepSeek Harness plugin that compiles deterministic agent execution paths into DSL programs for direct execution.",
+      "description_zh": "提供一个 DeepSeek Harness 插件，将确定性代理执行路径编译为 DSL 程序并直接执行。",
+      "name": "agent-jit",
+      "repository_id": 1326098871,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/sybolization/agent-jit"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a portable investment decision workflow plugin kit with Python source and a command line interface.",
+      "description_zh": "提供可移植的投资决策工作流插件套件，包含 Python 源码和命令行工具。",
+      "name": "clawock",
+      "repository_id": 1240554500,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/KCNyu/clawock"
+    },
+    {
+      "category": "tools",
+      "description_en": "Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.",
+      "description_zh": "通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。",
+      "name": "DeepSeek-PPT-skill",
+      "repository_id": 1310893070,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/lecutu/DeepSeek-PPT-skill"
+    },
+    {
+      "category": "tools",
+      "description_en": "Adds a prism_see tool and VEP image recognition capability to DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 添加 prism_see 工具和图片识别能力。",
+      "name": "DeepSeek_Prism",
+      "repository_id": 1320268905,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/YOGEMOW/DeepSeek_Prism"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a Chinese official document processing tool with DSH skill and Cordis plugin integration.",
+      "description_zh": "提供中文公文处理工具，支持 DSH 技能与 Cordis 插件集成。",
+      "name": "gongwen-skill",
+      "repository_id": 1306637593,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/linhut/gongwen-skill"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a DeepSeek Harness plugin bundle that exposes agent runtime management tools through MCP.",
+      "description_zh": "提供 DeepSeek Harness 插件包，通过 MCP 暴露代理运行时管理工具。",
+      "name": "sandbase-harness",
+      "repository_id": 1297278222,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/sandbaseai/sandbase-harness"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides CLI commands for analyzing screenshots, diagrams, charts, UI diffs, and videos with multimodal models.",
+      "description_zh": "提供CLI命令，使用多模态模型分析截图、示意图、图表、UI差异和视频。",
+      "name": "sidesight",
+      "repository_id": 1319104261,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ZhuXinAI/sidesight"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a Chinese long-screenplay writing skill with project initialization, context building, validation, and review scripts for SKILL.md-compatible agents.",
+      "description_zh": "提供中文长剧本创作技能，包含项目初始化、上下文构建、校验与审查脚本，适用于兼容 SKILL.md 的智能体。",
+      "name": "write-chinese-long-screenplay",
+      "repository_id": 1316202030,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/mudden2380078550-creator/write-chinese-long-screenplay"
     },
     {
       "category": "automation",

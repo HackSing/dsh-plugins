@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **123 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 15, 2026**.
+Explore **133 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 16, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **123 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **123 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **133 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -71,6 +71,8 @@ This is the first published directory snapshot: **123 plugins**, grouped into **
 - [dsh-model-modes](https://github.com/DTSFO/dsh-model-modes) — Adds a Fast mode switch and configurable reasoning effort profiles to the DeepSeek Harness web composer.
 - [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) — Converts dropped or pasted images and files into workspace paths for text-only models in DeepSeek Harness chat.
 - [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — Provides cross-session agent-to-agent messaging for DeepSeek Harness, with offline delivery, receipts, and session navigation.
+- [ikanban](https://github.com/isomoes/ikanban) — Provides a keyboard-oriented kanban interface for managing multi-agent coding workspaces in DeepSeek Harness.
+- [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) — Provides stateless dialogue compression to keep conversation context bounded.
 
 ## Tools & Capabilities
 
@@ -111,6 +113,14 @@ This is the first published directory snapshot: **123 plugins**, grouped into **
 - [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.
 - [uagent-sync](https://github.com/severin-ye/uagent-sync) — Provides command-line tools for backing up, restoring, and synchronizing agent workspace configuration and data.
 - [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — Provides a login gateway and multi-user account management for DeepSeek Harness.
+- [agent-jit](https://github.com/sybolization/agent-jit) — Provides a DeepSeek Harness plugin that compiles deterministic agent execution paths into DSL programs for direct execution.
+- [clawock](https://github.com/KCNyu/clawock) — Provides a portable investment decision workflow plugin kit with Python source and a command line interface.
+- [DeepSeek-PPT-skill](https://github.com/lecutu/DeepSeek-PPT-skill) — Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.
+- [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — Adds a prism_see tool and VEP image recognition capability to DeepSeek Harness.
+- [gongwen-skill](https://github.com/linhut/gongwen-skill) — Provides a Chinese official document processing tool with DSH skill and Cordis plugin integration.
+- [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — Provides a DeepSeek Harness plugin bundle that exposes agent runtime management tools through MCP.
+- [sidesight](https://github.com/ZhuXinAI/sidesight) — Provides CLI commands for analyzing screenshots, diagrams, charts, UI diffs, and videos with multimodal models.
+- [write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) — Provides a Chinese long-screenplay writing skill with project initialization, context building, validation, and review scripts for SKILL.md-compatible agents.
 
 ## Automation & Agents
 

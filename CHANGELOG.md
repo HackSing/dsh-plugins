@@ -6,6 +6,18 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31926252293 -->
+- Automatically added [agent-jit](https://github.com/sybolization/agent-jit) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [clawock](https://github.com/KCNyu/clawock) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [DeepSeek-PPT-skill](https://github.com/lecutu/DeepSeek-PPT-skill) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [gongwen-skill](https://github.com/linhut/gongwen-skill) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [ikanban](https://github.com/isomoes/ikanban) to Interaction & Experience from the `dsh-plugin` topic.
+- Automatically added [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) to Interaction & Experience from the `dsh-plugin` topic.
+- Automatically added [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [sidesight](https://github.com/ZhuXinAI/sidesight) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:31895991421 -->
 - Automatically added [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) to Automation & Agents from the `dsh-plugin` topic.
 
