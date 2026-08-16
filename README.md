@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **123 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 15, 2026**.
+Explore **124 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 15, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **123 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **123 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **124 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -139,6 +139,7 @@ This is the first published directory snapshot: **123 plugins**, grouped into **
 - [fabric](https://github.com/omdsh-dev/fabric) — Supplies an MC-Fabric-inspired hook processor.
 - [dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) — Pins commits to the environment's author identity through overriding environment variables.
 - [dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — Audits injected context for token cost, duplication, and conflicting instructions or schemas.
+- [dsh-context](https://github.com/bowenliang123/dsh-context) — Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.
 - [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) — Performs dependency-free, read-only checks for manifests, patch formats, and build pitfalls.
 - [dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) — Produces a redacted local security report covering configuration, plugin origins, sessions, and network exposure.
 - [dsh-session-health](https://github.com/omdsh-dev/dsh-session-health) — Diagnoses torn, corrupted, or empty session files at frame level.

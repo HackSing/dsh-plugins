@@ -920,6 +920,15 @@
     },
     {
       "category": "development",
+      "description_en": "Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.",
+      "description_zh": "上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。",
+      "name": "dsh-context",
+      "repository_id": 1333961389,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/bowenliang123/dsh-context"
+    },
+    {
+      "category": "development",
       "description_en": "Performs dependency-free, read-only checks for manifests, patch formats, and build pitfalls.",
       "description_zh": "零依赖、只读检查插件清单、补丁格式和构建风险。",
       "name": "dsh-plugin-check",

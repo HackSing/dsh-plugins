@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **123 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 15 日**。
+当前整理 **124 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 15 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **123 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **124 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -139,6 +139,7 @@
 - [fabric](https://github.com/omdsh-dev/fabric) — 提供类似 MC Fabric 的 Hook 处理机制。
 - [dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) — 通过覆盖式环境变量固定 Git 提交的作者身份。
 - [dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — 审计注入上下文的 Token 成本、重复内容以及指令或 Schema 冲突。
+- [dsh-context](https://github.com/bowenliang123/dsh-context) — 上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。
 - [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) — 零依赖、只读检查插件清单、补丁格式和构建风险。
 - [dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) — 针对配置、插件来源、会话和网络暴露生成脱敏的本地安全报告。
 - [dsh-session-health](https://github.com/omdsh-dev/dsh-session-health) — 从帧级别诊断截断、损坏或空白的会话文件。
