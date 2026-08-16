@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **123 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 15 日**。
+当前整理 **133 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **123 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **133 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -71,6 +71,8 @@
 - [dsh-model-modes](https://github.com/DTSFO/dsh-model-modes) — 为DeepSeek Harness Web 编辑器添加快速模式开关与可配置的推理努力档位。
 - [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) — 在 DeepSeek Harness 聊天中将拖放或粘贴的图片和文件转换为工作区路径，供纯文本模型使用。
 - [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — 为 DeepSeek Harness 提供跨会话 Agent 间消息传递，支持离线投递、回执和会话导航。
+- [ikanban](https://github.com/isomoes/ikanban) — 为 DeepSeek Harness 提供面向键盘操作的看板界面，用于管理多智能体编码工作空间。
+- [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) — 提供无状态对话压缩，使对话上下文保持有界。
 
 ## 工具与能力
 
@@ -111,6 +113,14 @@
 - [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — 提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。
 - [uagent-sync](https://github.com/severin-ye/uagent-sync) — 提供命令行工具，用于备份、恢复和同步代理工作区配置与数据。
 - [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 为 DeepSeek Harness 提供登录网关和多用户账户管理功能。
+- [agent-jit](https://github.com/sybolization/agent-jit) — 提供一个 DeepSeek Harness 插件，将确定性代理执行路径编译为 DSL 程序并直接执行。
+- [clawock](https://github.com/KCNyu/clawock) — 提供可移植的投资决策工作流插件套件，包含 Python 源码和命令行工具。
+- [DeepSeek-PPT-skill](https://github.com/lecutu/DeepSeek-PPT-skill) — 通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。
+- [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — 为 DeepSeek Harness 添加 prism_see 工具和图片识别能力。
+- [gongwen-skill](https://github.com/linhut/gongwen-skill) — 提供中文公文处理工具，支持 DSH 技能与 Cordis 插件集成。
+- [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — 提供 DeepSeek Harness 插件包，通过 MCP 暴露代理运行时管理工具。
+- [sidesight](https://github.com/ZhuXinAI/sidesight) — 提供CLI命令，使用多模态模型分析截图、示意图、图表、UI差异和视频。
+- [write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) — 提供中文长剧本创作技能，包含项目初始化、上下文构建、校验与审查脚本，适用于兼容 SKILL.md 的智能体。
 
 ## 自动化与智能体
 
