@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32036874321 -->
+- Automatically added [TokenLedger](https://github.com/zh667/TokenLedger) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:31994217787 -->
 - Automatically added [dsh-Api-monitor](https://github.com/linshufan21/dsh-Api-monitor) to Tools & Capabilities from the `dsh-plugin` topic.
 - Automatically added [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) to Tools & Capabilities from the `dsh-plugin` topic.

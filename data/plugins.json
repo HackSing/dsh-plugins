@@ -937,6 +937,15 @@
       "url": "https://github.com/ChongCyrus/Vibe-Mathematics"
     },
     {
+      "category": "tools",
+      "description_en": "Tracks token usage for DeepSeek Harness and attributes it to relay sites, with support for balance and quota queries.",
+      "description_zh": "为 DeepSeek Harness 记录令牌用量并按中转站归属，支持余额与配额查询。",
+      "name": "TokenLedger",
+      "repository_id": 1333969047,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zh667/TokenLedger"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
