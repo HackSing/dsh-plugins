@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **145 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 16, 2026**.
+Explore **150 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 17, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **145 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **145 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **150 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -73,6 +73,7 @@ This is the first published directory snapshot: **145 plugins**, grouped into **
 - [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — Provides cross-session agent-to-agent messaging for DeepSeek Harness, with offline delivery, receipts, and session navigation.
 - [ikanban](https://github.com/isomoes/ikanban) — Provides a keyboard-oriented kanban interface for managing multi-agent coding workspaces in DeepSeek Harness.
 - [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) — Provides stateless dialogue compression to keep conversation context bounded.
+- [working-activity](https://github.com/ccch1mneyyy/working-activity) — Provides a DeepSeek Harness plugin that renders a real-time working status line with agent activity, tool progress, and context alerts.
 
 ## Tools & Capabilities
 
@@ -115,7 +116,7 @@ This is the first published directory snapshot: **145 plugins**, grouped into **
 - [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — Provides a login gateway and multi-user account management for DeepSeek Harness.
 - [agent-jit](https://github.com/sybolization/agent-jit) — Provides a DeepSeek Harness plugin that compiles deterministic agent execution paths into DSL programs for direct execution.
 - [clawock](https://github.com/KCNyu/clawock) — Provides a portable investment decision workflow plugin kit with Python source and a command line interface.
-- [DeepSeek-PPT-skill](https://github.com/lecutu/DeepSeek-PPT-skill) — Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.
+- [DeepSeek-PPT-skill](https://github.com/lecutu/dsh-slide-reflex) — Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.
 - [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — Adds a prism_see tool and VEP image recognition capability to DeepSeek Harness.
 - [gongwen-skill](https://github.com/linhut/gongwen-skill) — Provides a Chinese official document processing tool with DSH skill and Cordis plugin integration.
 - [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — Provides a DeepSeek Harness plugin bundle that exposes agent runtime management tools through MCP.
@@ -130,10 +131,14 @@ This is the first published directory snapshot: **145 plugins**, grouped into **
 - [github-mcp](https://github.com/JohnXu22786/github-mcp) — A DeepSeek Harness plugin bundling an MCP server that exposes GitHub repository, issue, pull request, review, and search tools.
 - [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — Provides task-isolated git worktree management tools for DeepSeek Harness, including create, sync, finish, and batch cleanup operations.
 - [command-scout](https://github.com/JohnXu22786/command-scout) — Scans project build declaration files and exposes the found commands as agent tools.
+- [dsh-Api-monitor](https://github.com/linshufan21/dsh-Api-monitor) — Adds an API balance and token usage monitoring module to the DeepSeek Harness settings panel.
+- [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) — Provides a DeepSeek Harness plugin bundle that exposes shell, file, browser, and remote machine tools via an MCP server.
+- [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — Provides a native localhost HTTP service for AI agents to run Stata, distributed as a DeepSeek Harness plugin.
+- [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — Provides a multi-agent framework for solving and verifying mathematical problems within DeepSeek Harness.
 
 ## Automation & Agents
 
-- [dsh_workflow](https://github.com/icetomoyo/dsh_workflow) — Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.
+- [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) — Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — Organizes multiple agents into coordinated teams.
 - [dsh-automation](https://github.com/titanwings/dsh-automation) — Runs scheduled coding work in fresh agent sessions with an auditable history.
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator) — Captures anchored plan annotations and returns structured feedback to the agent.
