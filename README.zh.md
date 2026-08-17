@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **150 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 17 日**。
+当前整理 **151 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 17 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **150 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **151 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -135,6 +135,7 @@
 - [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) — 提供一个DeepSeek Harness插件包，通过MCP服务器暴露shell、文件、浏览器和远程机器工具。
 - [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — 提供本地 HTTP 服务，使 AI 代理能够运行 Stata，并以 DeepSeek Harness 插件形式分发。
 - [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 在 DeepSeek Harness 中提供多代理数学问题求解与验证框架。
+- [TokenLedger](https://github.com/zh667/TokenLedger) — 为 DeepSeek Harness 记录令牌用量并按中转站归属，支持余额与配额查询。
 
 ## 自动化与智能体
 

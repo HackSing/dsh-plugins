@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **150 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 17, 2026**.
+Explore **151 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 17, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **150 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **150 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **151 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -135,6 +135,7 @@ This is the first published directory snapshot: **150 plugins**, grouped into **
 - [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) — Provides a DeepSeek Harness plugin bundle that exposes shell, file, browser, and remote machine tools via an MCP server.
 - [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — Provides a native localhost HTTP service for AI agents to run Stata, distributed as a DeepSeek Harness plugin.
 - [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — Provides a multi-agent framework for solving and verifying mathematical problems within DeepSeek Harness.
+- [TokenLedger](https://github.com/zh667/TokenLedger) — Tracks token usage for DeepSeek Harness and attributes it to relay sites, with support for balance and quota queries.
 
 ## Automation & Agents
 
