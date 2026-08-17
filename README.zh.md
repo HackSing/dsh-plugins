@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **145 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 16 日**。
+当前整理 **150 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 17 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **145 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **150 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -73,6 +73,7 @@
 - [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — 为 DeepSeek Harness 提供跨会话 Agent 间消息传递，支持离线投递、回执和会话导航。
 - [ikanban](https://github.com/isomoes/ikanban) — 为 DeepSeek Harness 提供面向键盘操作的看板界面，用于管理多智能体编码工作空间。
 - [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) — 提供无状态对话压缩，使对话上下文保持有界。
+- [working-activity](https://github.com/ccch1mneyyy/working-activity) — 提供一个 DeepSeek Harness 插件，用于在运行状态行中实时展示代理活动、工具进度和上下文警告。
 
 ## 工具与能力
 
@@ -115,7 +116,7 @@
 - [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 为 DeepSeek Harness 提供登录网关和多用户账户管理功能。
 - [agent-jit](https://github.com/sybolization/agent-jit) — 提供一个 DeepSeek Harness 插件，将确定性代理执行路径编译为 DSL 程序并直接执行。
 - [clawock](https://github.com/KCNyu/clawock) — 提供可移植的投资决策工作流插件套件，包含 Python 源码和命令行工具。
-- [DeepSeek-PPT-skill](https://github.com/lecutu/DeepSeek-PPT-skill) — 通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。
+- [DeepSeek-PPT-skill](https://github.com/lecutu/dsh-slide-reflex) — 通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。
 - [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — 为 DeepSeek Harness 添加 prism_see 工具和图片识别能力。
 - [gongwen-skill](https://github.com/linhut/gongwen-skill) — 提供中文公文处理工具，支持 DSH 技能与 Cordis 插件集成。
 - [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — 提供 DeepSeek Harness 插件包，通过 MCP 暴露代理运行时管理工具。
@@ -130,10 +131,14 @@
 - [github-mcp](https://github.com/JohnXu22786/github-mcp) — 一个 DeepSeek Harness 插件，打包了暴露 GitHub 仓库、议题、拉取请求、审查和搜索工具的 MCP 服务器。
 - [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — 为 DeepSeek Harness 提供任务隔离的 git 工作区管理工具，包括创建、同步、收尾和批量清理操作。
 - [command-scout](https://github.com/JohnXu22786/command-scout) — 扫描项目构建声明文件并将发现的命令作为代理工具暴露。
+- [dsh-Api-monitor](https://github.com/linshufan21/dsh-Api-monitor) — 在 DeepSeek Harness 设置面板中新增 API 余额与 Token 用量监测模块。
+- [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) — 提供一个DeepSeek Harness插件包，通过MCP服务器暴露shell、文件、浏览器和远程机器工具。
+- [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — 提供本地 HTTP 服务，使 AI 代理能够运行 Stata，并以 DeepSeek Harness 插件形式分发。
+- [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 在 DeepSeek Harness 中提供多代理数学问题求解与验证框架。
 
 ## 自动化与智能体
 
-- [dsh_workflow](https://github.com/icetomoyo/dsh_workflow) — 提供可复用、可观察、可治理并支持恢复的多智能体工作流层。
+- [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) — 提供可复用、可观察、可治理并支持恢复的多智能体工作流层。
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — 将多个智能体组织为协作团队。
 - [dsh-automation](https://github.com/titanwings/dsh-automation) — 在全新智能体会话中定时执行编码任务，并保留可审计记录。
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator) — 对计划原文进行锚定批注，并把结构化反馈送回智能体。

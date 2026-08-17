@@ -406,6 +406,15 @@
       "url": "https://github.com/TuringCorp-net/mosaic_compress"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides a DeepSeek Harness plugin that renders a real-time working status line with agent activity, tool progress, and context alerts.",
+      "description_zh": "提供一个 DeepSeek Harness 插件，用于在运行状态行中实时展示代理活动、工具进度和上下文警告。",
+      "name": "working-activity",
+      "repository_id": 1309769324,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ccch1mneyyy/working-activity"
+    },
+    {
       "category": "tools",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
@@ -763,7 +772,7 @@
       "name": "DeepSeek-PPT-skill",
       "repository_id": 1310893070,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/lecutu/DeepSeek-PPT-skill"
+      "url": "https://github.com/lecutu/dsh-slide-reflex"
     },
     {
       "category": "tools",
@@ -892,13 +901,49 @@
       "url": "https://github.com/JohnXu22786/command-scout"
     },
     {
+      "category": "tools",
+      "description_en": "Adds an API balance and token usage monitoring module to the DeepSeek Harness settings panel.",
+      "description_zh": "在 DeepSeek Harness 设置面板中新增 API 余额与 Token 用量监测模块。",
+      "name": "dsh-Api-monitor",
+      "repository_id": 1204656257,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/linshufan21/dsh-Api-monitor"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a DeepSeek Harness plugin bundle that exposes shell, file, browser, and remote machine tools via an MCP server.",
+      "description_zh": "提供一个DeepSeek Harness插件包，通过MCP服务器暴露shell、文件、浏览器和远程机器工具。",
+      "name": "local-shell-mcp",
+      "repository_id": 1249040497,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/fwerkor/local-shell-mcp"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a native localhost HTTP service for AI agents to run Stata, distributed as a DeepSeek Harness plugin.",
+      "description_zh": "提供本地 HTTP 服务，使 AI 代理能够运行 Stata，并以 DeepSeek Harness 插件形式分发。",
+      "name": "Stata-AI-Skill",
+      "repository_id": 1268108268,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ZihaoVistonWang/Stata-AI-Skill"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a multi-agent framework for solving and verifying mathematical problems within DeepSeek Harness.",
+      "description_zh": "在 DeepSeek Harness 中提供多代理数学问题求解与验证框架。",
+      "name": "Vibe-Mathematics",
+      "repository_id": 1319853777,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ChongCyrus/Vibe-Mathematics"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
       "name": "dsh_workflow",
       "repository_id": 1332243516,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/icetomoyo/dsh_workflow"
+      "url": "https://github.com/omdsh-dev/dsh_workflow"
     },
     {
       "category": "automation",

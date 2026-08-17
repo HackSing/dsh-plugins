@@ -6,6 +6,13 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:31994217787 -->
+- Automatically added [dsh-Api-monitor](https://github.com/linshufan21/dsh-Api-monitor) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [working-activity](https://github.com/ccch1mneyyy/working-activity) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:31979360487 -->
 - Automatically added [command-scout](https://github.com/JohnXu22786/command-scout) to Tools & Capabilities from the `dsh-plugin` topic.
 
