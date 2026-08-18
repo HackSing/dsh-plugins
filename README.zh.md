@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **151 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 17 日**。
+当前整理 **157 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 18 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **151 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **157 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -136,6 +136,10 @@
 - [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — 提供本地 HTTP 服务，使 AI 代理能够运行 Stata，并以 DeepSeek Harness 插件形式分发。
 - [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 在 DeepSeek Harness 中提供多代理数学问题求解与验证框架。
 - [TokenLedger](https://github.com/zh667/TokenLedger) — 为 DeepSeek Harness 记录令牌用量并按中转站归属，支持余额与配额查询。
+- [agentshim](https://github.com/possible055/agentshim) — 为编码代理提供代码库工具和进程执行功能，并包含 DSH 原生适配器。
+- [gamify-edu](https://github.com/BinLe1988/gamify-edu) — 作为DeepSeek Harness客户端插件，提供游戏化教育平台。
+- [geo-content-optimizer](https://github.com/wangzhuo-coding/geo-content-optimizer) — 为DeepSeek Harness提供GEO内容优化能力，包括文档解析、流水线执行和联网搜索工具。
+- [ouroboros](https://github.com/Q00/ouroboros) — 通过内置的 dsh 插件，在 DeepSeek Harness 聊天中启用 Ouroboros 的 interview 和 auto 工作流命令。
 
 ## 自动化与智能体
 
@@ -152,6 +156,8 @@
 - [DeepJIT](https://github.com/fly3366/DeepJIT) — 用于 deepseek-harness 的 JIT 编译器插件，挖掘智能体执行轨迹并将重复工作流编译为可复用的技能和流程模板。
 - [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — 为 DeepSeek Harness 实现持续自我进化，持久化并优化提示笔记、记忆、技能和子代理规格，支持回滚和基准验证。
 - [context-pruner](https://github.com/JohnXu22786/context-pruner) — 用于 DeepSeek Harness 的会话上下文分诊插件，修剪过期、重复、失败和过大的上下文以节省 token 预算。
+- [allinluna](https://github.com/zenx0x/allinluna) — 为 DeepSeek Harness 提供资源感知的多智能体编排。
+- [dsh-browser](https://github.com/Lum1104/dsh-browser) — 提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。
 
 ## 开发与生态集成
 

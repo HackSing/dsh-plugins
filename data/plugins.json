@@ -946,6 +946,42 @@
       "url": "https://github.com/zh667/TokenLedger"
     },
     {
+      "category": "tools",
+      "description_en": "Provides repository tools and process execution for coding agents, with a DSH native adapter included.",
+      "description_zh": "为编码代理提供代码库工具和进程执行功能，并包含 DSH 原生适配器。",
+      "name": "agentshim",
+      "repository_id": 1322407852,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/possible055/agentshim"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a gamified educational platform as a DeepSeek Harness client plugin.",
+      "description_zh": "作为DeepSeek Harness客户端插件，提供游戏化教育平台。",
+      "name": "gamify-edu",
+      "repository_id": 1068628553,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/BinLe1988/gamify-edu"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides GEO content optimization capabilities for DeepSeek Harness, including document parsing, pipeline execution, and web search tools.",
+      "description_zh": "为DeepSeek Harness提供GEO内容优化能力，包括文档解析、流水线执行和联网搜索工具。",
+      "name": "geo-content-optimizer",
+      "repository_id": 1302542494,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/wangzhuo-coding/geo-content-optimizer"
+    },
+    {
+      "category": "tools",
+      "description_en": "Enables Ouroboros interview and auto workflow commands within DeepSeek Harness chat via a bundled dsh plugin.",
+      "description_zh": "通过内置的 dsh 插件，在 DeepSeek Harness 聊天中启用 Ouroboros 的 interview 和 auto 工作流命令。",
+      "name": "ouroboros",
+      "repository_id": 1133901637,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Q00/ouroboros"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
@@ -1061,6 +1097,24 @@
       "repository_id": 1335839811,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/JohnXu22786/context-pruner"
+    },
+    {
+      "category": "automation",
+      "description_en": "Provides resource-aware multi-agent orchestration for DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供资源感知的多智能体编排。",
+      "name": "allinluna",
+      "repository_id": 1321408361,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zenx0x/allinluna"
+    },
+    {
+      "category": "automation",
+      "description_en": "Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.",
+      "description_zh": "提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。",
+      "name": "dsh-browser",
+      "repository_id": 1324996099,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Lum1104/dsh-browser"
     },
     {
       "category": "development",

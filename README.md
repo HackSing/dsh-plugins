@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **151 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 17, 2026**.
+Explore **157 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 18, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **151 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **151 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **157 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -136,6 +136,10 @@ This is the first published directory snapshot: **151 plugins**, grouped into **
 - [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — Provides a native localhost HTTP service for AI agents to run Stata, distributed as a DeepSeek Harness plugin.
 - [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — Provides a multi-agent framework for solving and verifying mathematical problems within DeepSeek Harness.
 - [TokenLedger](https://github.com/zh667/TokenLedger) — Tracks token usage for DeepSeek Harness and attributes it to relay sites, with support for balance and quota queries.
+- [agentshim](https://github.com/possible055/agentshim) — Provides repository tools and process execution for coding agents, with a DSH native adapter included.
+- [gamify-edu](https://github.com/BinLe1988/gamify-edu) — Provides a gamified educational platform as a DeepSeek Harness client plugin.
+- [geo-content-optimizer](https://github.com/wangzhuo-coding/geo-content-optimizer) — Provides GEO content optimization capabilities for DeepSeek Harness, including document parsing, pipeline execution, and web search tools.
+- [ouroboros](https://github.com/Q00/ouroboros) — Enables Ouroboros interview and auto workflow commands within DeepSeek Harness chat via a bundled dsh plugin.
 
 ## Automation & Agents
 
@@ -152,6 +156,8 @@ This is the first published directory snapshot: **151 plugins**, grouped into **
 - [DeepJIT](https://github.com/fly3366/DeepJIT) — JIT compiler plugin for deepseek-harness that mines agent execution traces and compiles recurring workflows into reusable skills and flow templates.
 - [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — Implements continual self-evolution for DeepSeek Harness by persisting and refining prompt notes, memories, skills, and subagent specs with rollback and benchmark validation.
 - [context-pruner](https://github.com/JohnXu22786/context-pruner) — A session context triage plugin for DeepSeek Harness that prunes stale, repeated, failed, and oversized context to conserve token budget.
+- [allinluna](https://github.com/zenx0x/allinluna) — Provides resource-aware multi-agent orchestration for DeepSeek Harness.
+- [dsh-browser](https://github.com/Lum1104/dsh-browser) — Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.
 
 ## Development & Ecosystem
 
