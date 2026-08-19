@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **157 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 18, 2026**.
+Explore **162 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 19, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **157 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **157 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **162 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -140,6 +140,11 @@ This is the first published directory snapshot: **157 plugins**, grouped into **
 - [gamify-edu](https://github.com/BinLe1988/gamify-edu) — Provides a gamified educational platform as a DeepSeek Harness client plugin.
 - [geo-content-optimizer](https://github.com/wangzhuo-coding/geo-content-optimizer) — Provides GEO content optimization capabilities for DeepSeek Harness, including document parsing, pipeline execution, and web search tools.
 - [ouroboros](https://github.com/Q00/ouroboros) — Enables Ouroboros interview and auto workflow commands within DeepSeek Harness chat via a bundled dsh plugin.
+- [beautiCode](https://github.com/starsstreaming/beautiCode) — Adds customizable image and video backgrounds to the DeepSeek Harness web interface.
+- [Co-Engram](https://github.com/Co-Engram/Co-Engram) — Provides a self-evolving team memory system for AI agents, storing memories as Markdown files with reinforcement and decay over time.
+- [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) — Implements a risk-aware approval layer that tracks data provenance and applies policy decisions before tool execution in DeepSeek Harness.
+- [MemOS](https://github.com/MemTensor/MemOS) — Provides a memory operating system for AI agents, including local and cloud plugin components for persistent memory management.
+- [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — Provides video frame interpolation tools for DeepSeek Harness agents using RIFE models.
 
 ## Automation & Agents
 

@@ -6,6 +6,13 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32215271273 -->
+- Automatically added [beautiCode](https://github.com/starsstreaming/beautiCode) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [Co-Engram](https://github.com/Co-Engram/Co-Engram) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [MemOS](https://github.com/MemTensor/MemOS) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32098605944 -->
 - Automatically added [agentshim](https://github.com/possible055/agentshim) to Tools & Capabilities from the `dsh-plugin` topic.
 - Automatically added [allinluna](https://github.com/zenx0x/allinluna) to Automation & Agents from the `dsh-plugin` topic.

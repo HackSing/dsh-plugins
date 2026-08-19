@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **157 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 18 日**。
+当前整理 **162 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 19 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **157 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **162 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -140,6 +140,11 @@
 - [gamify-edu](https://github.com/BinLe1988/gamify-edu) — 作为DeepSeek Harness客户端插件，提供游戏化教育平台。
 - [geo-content-optimizer](https://github.com/wangzhuo-coding/geo-content-optimizer) — 为DeepSeek Harness提供GEO内容优化能力，包括文档解析、流水线执行和联网搜索工具。
 - [ouroboros](https://github.com/Q00/ouroboros) — 通过内置的 dsh 插件，在 DeepSeek Harness 聊天中启用 Ouroboros 的 interview 和 auto 工作流命令。
+- [beautiCode](https://github.com/starsstreaming/beautiCode) — 为DeepSeek Harness网页界面添加可定制的图片和视频背景。
+- [Co-Engram](https://github.com/Co-Engram/Co-Engram) — 为AI代理和团队提供自进化记忆系统，以Markdown文件存储记忆，并随时间进行强化和衰减。
+- [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) — 实现一个风险感知的审批层，在DeepSeek Harness中追踪数据来源并在工具执行前应用策略决策。
+- [MemOS](https://github.com/MemTensor/MemOS) — 为AI智能体提供持久记忆管理的记忆操作系统，包含本地和云插件组件。
+- [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — 为DeepSeek Harness代理提供基于RIFE模型的视频帧插值工具。
 
 ## 自动化与智能体
 
