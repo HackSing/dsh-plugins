@@ -982,6 +982,51 @@
       "url": "https://github.com/Q00/ouroboros"
     },
     {
+      "category": "tools",
+      "description_en": "Adds customizable image and video backgrounds to the DeepSeek Harness web interface.",
+      "description_zh": "为DeepSeek Harness网页界面添加可定制的图片和视频背景。",
+      "name": "beautiCode",
+      "repository_id": 1314807642,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/starsstreaming/beautiCode"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a self-evolving team memory system for AI agents, storing memories as Markdown files with reinforcement and decay over time.",
+      "description_zh": "为AI代理和团队提供自进化记忆系统，以Markdown文件存储记忆，并随时间进行强化和衰减。",
+      "name": "Co-Engram",
+      "repository_id": 1281574939,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Co-Engram/Co-Engram"
+    },
+    {
+      "category": "tools",
+      "description_en": "Implements a risk-aware approval layer that tracks data provenance and applies policy decisions before tool execution in DeepSeek Harness.",
+      "description_zh": "实现一个风险感知的审批层，在DeepSeek Harness中追踪数据来源并在工具执行前应用策略决策。",
+      "name": "dsh-riskproof",
+      "repository_id": 1299059971,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/onlyqzq/dsh-riskproof"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a memory operating system for AI agents, including local and cloud plugin components for persistent memory management.",
+      "description_zh": "为AI智能体提供持久记忆管理的记忆操作系统，包含本地和云插件组件。",
+      "name": "MemOS",
+      "repository_id": 1014729376,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/MemTensor/MemOS"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides video frame interpolation tools for DeepSeek Harness agents using RIFE models.",
+      "description_zh": "为DeepSeek Harness代理提供基于RIFE模型的视频帧插值工具。",
+      "name": "OpenFlowFrames",
+      "repository_id": 1289245890,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ZeroHackz/OpenFlowFrames"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
