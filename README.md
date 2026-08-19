@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **162 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 19, 2026**.
+Explore **163 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 19, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **162 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **162 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **163 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -74,6 +74,7 @@ This is the first published directory snapshot: **162 plugins**, grouped into **
 - [ikanban](https://github.com/isomoes/ikanban) — Provides a keyboard-oriented kanban interface for managing multi-agent coding workspaces in DeepSeek Harness.
 - [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) — Provides stateless dialogue compression to keep conversation context bounded.
 - [working-activity](https://github.com/ccch1mneyyy/working-activity) — Provides a DeepSeek Harness plugin that renders a real-time working status line with agent activity, tool progress, and context alerts.
+- [computer-control](https://github.com/JohnXu22786/computer-control) — Provides desktop control capabilities including screen capture, pointer and keyboard injection, and accessibility-tree semantic actions for DSH agents.
 
 ## Tools & Capabilities
 

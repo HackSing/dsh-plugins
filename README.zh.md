@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **162 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 19 日**。
+当前整理 **163 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 19 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **162 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **163 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -74,6 +74,7 @@
 - [ikanban](https://github.com/isomoes/ikanban) — 为 DeepSeek Harness 提供面向键盘操作的看板界面，用于管理多智能体编码工作空间。
 - [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) — 提供无状态对话压缩，使对话上下文保持有界。
 - [working-activity](https://github.com/ccch1mneyyy/working-activity) — 提供一个 DeepSeek Harness 插件，用于在运行状态行中实时展示代理活动、工具进度和上下文警告。
+- [computer-control](https://github.com/JohnXu22786/computer-control) — 为 DSH 智能体提供桌面控制能力，包括屏幕截图、指针与键盘注入以及无障碍树语义操作。
 
 ## 工具与能力
 

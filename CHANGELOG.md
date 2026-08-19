@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32220656124 -->
+- Automatically added [computer-control](https://github.com/JohnXu22786/computer-control) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32215271273 -->
 - Automatically added [beautiCode](https://github.com/starsstreaming/beautiCode) to Tools & Capabilities from the `dsh-plugin` topic.
 - Automatically added [Co-Engram](https://github.com/Co-Engram/Co-Engram) to Tools & Capabilities from the `dsh-plugin` topic.
