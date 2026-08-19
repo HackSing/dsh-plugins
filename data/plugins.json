@@ -415,6 +415,15 @@
       "url": "https://github.com/ccch1mneyyy/working-activity"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides desktop control capabilities including screen capture, pointer and keyboard injection, and accessibility-tree semantic actions for DSH agents.",
+      "description_zh": "为 DSH 智能体提供桌面控制能力，包括屏幕截图、指针与键盘注入以及无障碍树语义操作。",
+      "name": "computer-control",
+      "repository_id": 1335841179,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/computer-control"
+    },
+    {
       "category": "tools",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
