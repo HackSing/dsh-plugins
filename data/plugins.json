@@ -1108,6 +1108,15 @@
       "url": "https://github.com/JohnXu22786/bookkeeping"
     },
     {
+      "category": "tools",
+      "description_en": "Applies unified diffs to the filesystem inside DeepSeek Harness with dry-run and undo support.",
+      "description_zh": "在 DeepSeek Harness 内将统一差异补丁应用到文件系统，支持预演与撤销。",
+      "name": "apply-patch",
+      "repository_id": 1340365338,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/apply-patch"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
