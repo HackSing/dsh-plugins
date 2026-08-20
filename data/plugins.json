@@ -1063,6 +1063,15 @@
       "url": "https://github.com/sandbaseai/sandbase-skills"
     },
     {
+      "category": "tools",
+      "description_en": "Provides session export, redaction, and compliance archiving for DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供会话导出、脱敏与合规归档功能。",
+      "name": "session-export",
+      "repository_id": 1340353591,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/session-export"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
