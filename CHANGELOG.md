@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32372580930 -->
+- Automatically added [session-export](https://github.com/JohnXu22786/session-export) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32364741268 -->
 - Automatically added [market-watch](https://github.com/JohnXu22786/market-watch) to Tools & Capabilities from the `dsh-plugin` topic.
 
