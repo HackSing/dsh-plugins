@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **169 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 20 日**。
+当前整理 **170 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 20 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **169 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **170 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -150,6 +150,7 @@
 - [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — 为 DeepSeek Harness 添加跨会话记忆、待办管理、技能管理器、会话协作等功能增强。
 - [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — 一个包含88个智能体技能的集合，涵盖研究、社交智能、营销和业务流程。
 - [rss-digest](https://github.com/JohnXu22786/rss-digest) — 提供RSS/Atom订阅、定时抓取、去重、LLM摘要和每日Markdown简报功能。
+- [apply-patch](https://github.com/JohnXu22786/apply-patch) — 在 DeepSeek Harness 内将结构化 unified diff 应用到文件系统，提供 patch_apply、patch_dry_run、patch_reverse 和 patch_stat 工具。
 
 ## 自动化与智能体
 

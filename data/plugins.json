@@ -1072,6 +1072,15 @@
       "url": "https://github.com/JohnXu22786/rss-digest"
     },
     {
+      "category": "tools",
+      "description_en": "Applies structured unified diffs to the filesystem inside DeepSeek Harness, adding patch_apply, patch_dry_run, patch_reverse, and patch_stat tools.",
+      "description_zh": "在 DeepSeek Harness 内将结构化 unified diff 应用到文件系统，提供 patch_apply、patch_dry_run、patch_reverse 和 patch_stat 工具。",
+      "name": "apply-patch",
+      "repository_id": 1340365338,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/apply-patch"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
