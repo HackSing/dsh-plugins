@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32351005640 -->
+- Automatically added [rss-digest](https://github.com/JohnXu22786/rss-digest) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32331363377 -->
 - Automatically added [agent-dev-skills](https://github.com/ddtcorex/agent-dev-skills) to Development & Ecosystem from the `dsh-plugin` topic.
 - Automatically added [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) to Tools & Capabilities from the `dsh-plugin` topic.

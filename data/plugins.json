@@ -1063,6 +1063,15 @@
       "url": "https://github.com/sandbaseai/sandbase-skills"
     },
     {
+      "category": "tools",
+      "description_en": "RSS/Atom plugin with scheduled fetching, deduplication, LLM summarization, and daily Markdown digest delivery.",
+      "description_zh": "提供RSS/Atom订阅、定时抓取、去重、LLM摘要和每日Markdown简报功能。",
+      "name": "rss-digest",
+      "repository_id": 1340346717,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/rss-digest"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",

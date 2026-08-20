@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **168 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 20, 2026**.
+Explore **169 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 20, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **168 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **168 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **169 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -149,6 +149,7 @@ This is the first published directory snapshot: **168 plugins**, grouped into **
 - [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.
 - [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — Adds cross-session memory, todo management, skill manager, session collaboration, and other enhancement features to DeepSeek Harness.
 - [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — A collection of 88 agent skills covering research, social intelligence, marketing, and business workflows.
+- [rss-digest](https://github.com/JohnXu22786/rss-digest) — RSS/Atom plugin with scheduled fetching, deduplication, LLM summarization, and daily Markdown digest delivery.
 
 ## Automation & Agents
 
