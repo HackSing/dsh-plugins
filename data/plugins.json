@@ -1090,6 +1090,15 @@
       "url": "https://github.com/JohnXu22786/net-debug"
     },
     {
+      "category": "tools",
+      "description_en": "Implements a financial market monitor for DeepSeek Harness, providing real-time quotes, a local watchlist, threshold alerts, periodic polling, and ASCII/mermaid charts for A-share stocks, indices, and cryptocurrencies.",
+      "description_zh": "为 DeepSeek Harness 实现金融行情监控，提供实时报价、本地自选列表、阈值提醒、定期轮询以及 A 股、指数和加密货币的 ASCII/mermaid 图表。",
+      "name": "market-watch",
+      "repository_id": 1340388282,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/market-watch"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
