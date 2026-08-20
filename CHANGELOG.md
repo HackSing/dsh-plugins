@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32355646526 -->
+- Automatically added [docindex](https://github.com/JohnXu22786/docindex) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32351005640 -->
 - Automatically added [rss-digest](https://github.com/JohnXu22786/rss-digest) to Tools & Capabilities from the `dsh-plugin` topic.
 
