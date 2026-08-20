@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **173 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 20, 2026**.
+Explore **174 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 20, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **173 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **173 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **174 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -154,6 +154,7 @@ This is the first published directory snapshot: **173 plugins**, grouped into **
 - [net-debug](https://github.com/JohnXu22786/net-debug) — Adds HTTP debugging tools to DeepSeek Harness, including a general-purpose HTTP client, request history with replay, and response inspection.
 - [market-watch](https://github.com/JohnXu22786/market-watch) — Implements a financial market monitor for DeepSeek Harness, providing real-time quotes, a local watchlist, threshold alerts, periodic polling, and ASCII/mermaid charts for A-share stocks, indices, and cryptocurrencies.
 - [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — Provides conversational bookkeeping with expense and income recording, querying, reporting, CSV/HTML export, and monthly budgets using a local SQLite ledger.
+- [session-export](https://github.com/JohnXu22786/session-export) — Provides session export, redaction, and compliance archiving for DeepSeek Harness (dsh).
 
 ## Automation & Agents
 
