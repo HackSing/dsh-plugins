@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **163 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 19, 2026**.
+Explore **168 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 20, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **163 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **163 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **168 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -146,6 +146,9 @@ This is the first published directory snapshot: **163 plugins**, grouped into **
 - [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) — Implements a risk-aware approval layer that tracks data provenance and applies policy decisions before tool execution in DeepSeek Harness.
 - [MemOS](https://github.com/MemTensor/MemOS) — Provides a memory operating system for AI agents, including local and cloud plugin components for persistent memory management.
 - [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — Provides video frame interpolation tools for DeepSeek Harness agents using RIFE models.
+- [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.
+- [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — Adds cross-session memory, todo management, skill manager, session collaboration, and other enhancement features to DeepSeek Harness.
+- [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — A collection of 88 agent skills covering research, social intelligence, marketing, and business workflows.
 
 ## Automation & Agents
 
@@ -200,6 +203,8 @@ This is the first published directory snapshot: **163 plugins**, grouped into **
 - [replicate-android-feature](https://github.com/addxing/replicate-android-feature) — An agent skill for reproducing an existing Android feature in another project or platform, preserving behavior, UI, and reusable resources.
 - [spec-driven](https://github.com/JohnXu22786/spec-driven) — Provides spec-driven development skills and tools including keel_catalog, keel_spec, and keel_review.
 - [skill-framework](https://github.com/JohnXu22786/skill-framework) — Provides a bundled engineering-methodology skill library for DeepSeek Harness dsh as a Cordis plugin.
+- [agent-dev-skills](https://github.com/ddtcorex/agent-dev-skills) — Provides a collection of development skills and an agent preset for DeepSeek Harness.
+- [GraphFlow](https://github.com/Roarpeng/GraphFlow) — A DSH plugin that provides a local-first code knowledge graph and context harness for coding agents.
 
 ## How to choose a plugin
 

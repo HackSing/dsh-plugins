@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **163 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 19 日**。
+当前整理 **168 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 20 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **163 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **168 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -146,6 +146,9 @@
 - [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) — 实现一个风险感知的审批层，在DeepSeek Harness中追踪数据来源并在工具执行前应用策略决策。
 - [MemOS](https://github.com/MemTensor/MemOS) — 为AI智能体提供持久记忆管理的记忆操作系统，包含本地和云插件组件。
 - [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — 为DeepSeek Harness代理提供基于RIFE模型的视频帧插值工具。
+- [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — 仓库包含桌面版 AI 小说创作应用及用于 DeepSeek Harness Web 的小说创作插件。
+- [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — 为 DeepSeek Harness 添加跨会话记忆、待办管理、技能管理器、会话协作等功能增强。
+- [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — 一个包含88个智能体技能的集合，涵盖研究、社交智能、营销和业务流程。
 
 ## 自动化与智能体
 
@@ -200,6 +203,8 @@
 - [replicate-android-feature](https://github.com/addxing/replicate-android-feature) — 一个代理技能，用于在其他项目或平台中复刻现有 Android 功能，保持行为、界面和可复用资源一致。
 - [spec-driven](https://github.com/JohnXu22786/spec-driven) — 提供规格驱动开发技能包，包括五个技能和三个工具。
 - [skill-framework](https://github.com/JohnXu22786/skill-framework) — 为 DeepSeek Harness dsh 提供作为 Cordis 插件的工程方法论技能库。
+- [agent-dev-skills](https://github.com/ddtcorex/agent-dev-skills) — 为 DeepSeek Harness 提供开发技能集合和代理预设。
+- [GraphFlow](https://github.com/Roarpeng/GraphFlow) — 一个DSH插件，为编码代理提供本地优先的代码知识图谱和上下文工具。
 
 ## 如何选择插件
 
