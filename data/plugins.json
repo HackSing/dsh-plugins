@@ -1036,6 +1036,33 @@
       "url": "https://github.com/ZeroHackz/OpenFlowFrames"
     },
     {
+      "category": "tools",
+      "description_en": "Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.",
+      "description_zh": "仓库包含桌面版 AI 小说创作应用及用于 DeepSeek Harness Web 的小说创作插件。",
+      "name": "AI-Novel-Writer",
+      "repository_id": 1275436512,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/EthanYoQ/AI-Novel-Writer"
+    },
+    {
+      "category": "tools",
+      "description_en": "Adds cross-session memory, todo management, skill manager, session collaboration, and other enhancement features to DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 添加跨会话记忆、待办管理、技能管理器、会话协作等功能增强。",
+      "name": "dsh-memory-evolve",
+      "repository_id": 1323731026,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/csyangwen/dsh-memory-evolve"
+    },
+    {
+      "category": "tools",
+      "description_en": "A collection of 88 agent skills covering research, social intelligence, marketing, and business workflows.",
+      "description_zh": "一个包含88个智能体技能的集合，涵盖研究、社交智能、营销和业务流程。",
+      "name": "sandbase-skills",
+      "repository_id": 1315919904,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/sandbaseai/sandbase-skills"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
@@ -1466,6 +1493,24 @@
       "repository_id": 1335839813,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/JohnXu22786/skill-framework"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides a collection of development skills and an agent preset for DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供开发技能集合和代理预设。",
+      "name": "agent-dev-skills",
+      "repository_id": 1249032231,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ddtcorex/agent-dev-skills"
+    },
+    {
+      "category": "development",
+      "description_en": "A DSH plugin that provides a local-first code knowledge graph and context harness for coding agents.",
+      "description_zh": "一个DSH插件，为编码代理提供本地优先的代码知识图谱和上下文工具。",
+      "name": "GraphFlow",
+      "repository_id": 1251045010,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Roarpeng/GraphFlow"
     }
   ],
   "schema_version": 1

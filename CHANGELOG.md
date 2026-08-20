@@ -6,6 +6,13 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32331363377 -->
+- Automatically added [agent-dev-skills](https://github.com/ddtcorex/agent-dev-skills) to Development & Ecosystem from the `dsh-plugin` topic.
+- Automatically added [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [GraphFlow](https://github.com/Roarpeng/GraphFlow) to Development & Ecosystem from the `dsh-plugin` topic.
+- Automatically added [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32220656124 -->
 - Automatically added [computer-control](https://github.com/JohnXu22786/computer-control) to Interaction & Experience from the `dsh-plugin` topic.
 
