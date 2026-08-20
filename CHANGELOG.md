@@ -6,6 +6,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32372574752 -->
+- Automatically added [bookkeeping](https://github.com/JohnXu22786/bookkeeping) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32364741268 -->
 - Automatically added [market-watch](https://github.com/JohnXu22786/market-watch) to Tools & Capabilities from the `dsh-plugin` topic.
 

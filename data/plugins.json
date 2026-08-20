@@ -1099,6 +1099,15 @@
       "url": "https://github.com/JohnXu22786/market-watch"
     },
     {
+      "category": "tools",
+      "description_en": "Provides conversational bookkeeping with expense and income recording, querying, reporting, CSV/HTML export, and monthly budgets using a local SQLite ledger.",
+      "description_zh": "提供对话式记账功能，支持收支记录、查询、报表、CSV/HTML导出及月度预算，数据存储于本地SQLite。",
+      "name": "bookkeeping",
+      "repository_id": 1337291444,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/bookkeeping"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
