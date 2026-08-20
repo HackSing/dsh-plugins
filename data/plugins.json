@@ -1081,6 +1081,15 @@
       "url": "https://github.com/JohnXu22786/docindex"
     },
     {
+      "category": "tools",
+      "description_en": "Adds HTTP debugging tools to DeepSeek Harness, including a general-purpose HTTP client, request history with replay, and response inspection.",
+      "description_zh": "为 DeepSeek Harness 提供 HTTP 调试工具，包括通用 HTTP 客户端、带重放功能的请求历史以及响应检查。",
+      "name": "net-debug",
+      "repository_id": 1340399167,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/net-debug"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
