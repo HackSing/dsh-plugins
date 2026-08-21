@@ -1126,6 +1126,15 @@
       "url": "https://github.com/JohnXu22786/session-export"
     },
     {
+      "category": "tools",
+      "description_en": "Syncs OpenAI Codex projects, chats, skills, and MCP servers with DeepSeek Harness.",
+      "description_zh": "将 OpenAI Codex 项目、聊天、技能和 MCP 服务器与 DeepSeek Harness 同步。",
+      "name": "dsh-codex-sync",
+      "repository_id": 1335661102,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Walvez/dsh-codex-sync"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",

@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **175 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 20 日**。
+当前整理 **176 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 21 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **175 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **176 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -156,6 +156,7 @@
 - [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — 提供对话式记账功能，支持收支记录、查询、报表、CSV/HTML导出及月度预算，数据存储于本地SQLite。
 - [apply-patch](https://github.com/JohnXu22786/apply-patch) — 在 DeepSeek Harness 内将统一差异补丁应用到文件系统，支持预演与撤销。
 - [session-export](https://github.com/JohnXu22786/session-export) — 通过新的工具和斜杠命令为DeepSeek Harness添加会话导出、脱敏和合规归档功能。
+- [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — 将 OpenAI Codex 项目、聊天、技能和 MCP 服务器与 DeepSeek Harness 同步。
 
 ## 自动化与智能体
 
