@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **175 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 20, 2026**.
+Explore **176 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 21, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **175 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **175 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **176 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -156,6 +156,7 @@ This is the first published directory snapshot: **175 plugins**, grouped into **
 - [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — Provides conversational bookkeeping with expense and income recording, querying, reporting, CSV/HTML export, and monthly budgets using a local SQLite ledger.
 - [apply-patch](https://github.com/JohnXu22786/apply-patch) — Applies unified diffs to the filesystem inside DeepSeek Harness with dry-run and undo support.
 - [session-export](https://github.com/JohnXu22786/session-export) — Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.
+- [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — Syncs OpenAI Codex projects, chats, skills, and MCP servers with DeepSeek Harness.
 
 ## Automation & Agents
 
