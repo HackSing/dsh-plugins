@@ -865,6 +865,15 @@
       "url": "https://github.com/uckkk/dsh-host-guide"
     },
     {
+      "category": "tools",
+      "description_en": "Adds an /init slash command that generates an AGENTS.md guide for the current project using a two-stage model call.",
+      "description_zh": "添加 /init 斜杠命令，通过两阶段模型调用为当前项目生成 AGENTS.md 指南。",
+      "name": "dsh-init-command",
+      "repository_id": 1335133040,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/LittleFishStars/dsh-init-command"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
