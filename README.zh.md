@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **220 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **221 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **220 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **221 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -145,6 +145,7 @@
 - [dsh-single-instance-guard](https://github.com/Tang-mm95/dsh-single-instance-guard) — 通过在启动时对 DSH_HOME 数据目录加独占锁，防止多个 DeepSeek Harness 服务器并发导致会话日志损坏。
 - [dsh-spirit-guide](https://github.com/uckkk/dsh-spirit-guide) — 提供一个 spirit_guide 工具，根据参数返回威士忌和烈酒推荐。
 - [dsh-tune-guide](https://github.com/uckkk/dsh-tune-guide) — 提供乐器调音工具，根据参数返回练习方案。
+- [dsh-workshop](https://github.com/Zlyraz/dsh-workshop) — 提供用于切换 DeepSeek Harness 插件、标记来源并显示风险等级的管理面板。
 
 ## 知识与记忆
 
