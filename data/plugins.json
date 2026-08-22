@@ -595,6 +595,15 @@
       "url": "https://github.com/CSlawyer1985/trajectory-zh-guide"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides a sidebar panel in the DeepSeek Harness web interface listing curated plugins with copyable install commands.",
+      "description_zh": "在 DeepSeek Harness Web 界面中提供侧边栏面板，列出精选插件并支持复制安装命令。",
+      "name": "dshwiki-plugin",
+      "repository_id": 1338200068,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ai798-Lab/dshwiki-plugin"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

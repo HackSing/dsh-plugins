@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **229 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **230 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **229 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **229 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **230 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -97,6 +97,7 @@ This is the first published directory snapshot: **229 plugins**, grouped into **
 - [dsh-workspace-scope-selection](https://github.com/jiangr100/dsh-workspace-scope-selection) — Adds a selected-workspace-write permission mode and a directory-tree scope editor to DeepSeek Harness web sessions.
 - [dsh-wsl-workspace-picker](https://github.com/WilliamShi666/dsh-wsl-workspace-picker) — Enhances the DeepSeek Harness web UI workspace directory picker with /mnt Windows drive shortcuts, full breadcrumb navigation, and a persistent path input.
 - [trajectory-zh-guide](https://github.com/CSlawyer1985/trajectory-zh-guide) — Provides Chinese translations and plain-language explanations for the DeepSeek Harness trajectory panel.
+- [dshwiki-plugin](https://github.com/ai798-Lab/dshwiki-plugin) — Provides a sidebar panel in the DeepSeek Harness web interface listing curated plugins with copyable install commands.
 
 ## Tools & Capabilities
 
