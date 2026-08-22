@@ -514,6 +514,15 @@
       "url": "https://github.com/Yuuichu/dsh-remote-picker"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds curated skin palettes, custom wallpaper with opacity/blur controls, and a draggable desktop pet to DeepSeek Harness through a dual-face plugin.",
+      "description_zh": "通过双端插件为 DeepSeek Harness 添加精选皮肤配色、带透明度和模糊控制的自定义壁纸，以及可拖动的桌面宠物。",
+      "name": "dsh-skin",
+      "repository_id": 1333619228,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/KinGao294/dsh-skin"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
