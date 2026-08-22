@@ -559,6 +559,15 @@
       "url": "https://github.com/dragan2023/dsh-workspace-default-dir"
     },
     {
+      "category": "interaction",
+      "description_en": "Displays the current conversation's working directory and file list in a draggable, opacity-adjustable panel within the DeepSeek Harness interface.",
+      "description_zh": "在 DeepSeek Harness 界面中，以可拖动、透明度可调的面板显示当前对话的工作目录和文件列表。",
+      "name": "dsh-workspace-dir",
+      "repository_id": 1334749513,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/DDSG-X/dsh-workspace-dir"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

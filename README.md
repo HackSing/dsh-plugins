@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **222 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **223 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **222 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **222 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **223 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -93,6 +93,7 @@ This is the first published directory snapshot: **222 plugins**, grouped into **
 - [dsh-weekly-hot](https://github.com/XCNXNXNX/dsh-weekly-hot) — Adds a sidebar panel to the DSH Web UI showing weekly trending DSH plugins with install buttons and configurable popups.
 - [dsh-whale-cards](https://github.com/changer-changer/dsh-whale-cards) — Provides a local-first DeepSeek Harness web plugin with curated mini-games and an AI companion character.
 - [dsh-workspace-default-dir](https://github.com/dragan2023/dsh-workspace-default-dir) — Sets the default starting directory of the dsh workspace directory picker through a settings card and CLI commands.
+- [dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) — Displays the current conversation's working directory and file list in a draggable, opacity-adjustable panel within the DeepSeek Harness interface.
 
 ## Tools & Capabilities
 
