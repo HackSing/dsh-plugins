@@ -221,6 +221,73 @@ class ClassificationTests(unittest.TestCase):
             ],
         )
 
+    def test_promotion_skips_candidates_with_a_colliding_name(self):
+        catalog = {"plugins": []}
+        candidates = {
+            "candidates": [
+                {
+                    "category_suggestion": "automation",
+                    "description_en": "Advisor from omdsh-dev.",
+                    "description_zh": "来自 omdsh-dev 的顾问。",
+                    "name": "dsh-advisor",
+                    "repository_id": 201,
+                    "status": "accepted",
+                    "url": "https://github.com/omdsh-dev/dsh-advisor",
+                },
+                {
+                    "category_suggestion": "automation",
+                    "description_en": "Advisor from slhssb.",
+                    "description_zh": "来自 slhssb 的顾问。",
+                    "name": "dsh-advisor",
+                    "repository_id": 202,
+                    "status": "accepted",
+                    "url": "https://github.com/slhssb/dsh-advisor",
+                },
+            ]
+        }
+        promoted = topic_sync.promote_accepted(catalog, candidates)
+        self.assertEqual(len(promoted), 1)
+        self.assertEqual(len(catalog["plugins"]), 1)
+        self.assertEqual(
+            catalog["plugins"][0]["url"], "https://github.com/omdsh-dev/dsh-advisor"
+        )
+        retained = candidates["candidates"]
+        self.assertEqual(len(retained), 1)
+        self.assertEqual(retained[0]["url"], "https://github.com/slhssb/dsh-advisor")
+        self.assertEqual(retained[0]["status"], "needs_review")
+        self.assertEqual(retained[0]["reasons"], ["duplicate_name_conflict"])
+
+    def test_promotion_skips_a_candidate_colliding_with_a_published_name(self):
+        catalog = {
+            "plugins": [
+                {
+                    "category": "automation",
+                    "name": "dsh-advisor",
+                    "url": "https://github.com/omdsh-dev/dsh-advisor",
+                }
+            ]
+        }
+        candidates = {
+            "candidates": [
+                {
+                    "category_suggestion": "automation",
+                    "description_en": "A different advisor.",
+                    "description_zh": "另一个顾问。",
+                    "name": "dsh-advisor",
+                    "repository_id": 202,
+                    "status": "accepted",
+                    "url": "https://github.com/slhssb/dsh-advisor",
+                }
+            ]
+        }
+        promoted = topic_sync.promote_accepted(catalog, candidates)
+        self.assertEqual(promoted, [])
+        self.assertEqual(len(catalog["plugins"]), 1)
+        retained = candidates["candidates"]
+        self.assertEqual(len(retained), 1)
+        self.assertEqual(retained[0]["status"], "needs_review")
+        self.assertEqual(retained[0]["reasons"], ["duplicate_name_conflict"])
+
     def test_approve_observed_uses_snapshot_limit_and_live_checks(self):
         candidates = {
             "candidates": [

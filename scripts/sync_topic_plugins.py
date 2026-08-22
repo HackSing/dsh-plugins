@@ -957,6 +957,7 @@ def promote_accepted(
     retained = []
     promoted: list[dict[str, Any]] = []
     urls = {item["url"].rstrip("/").lower() for item in plugins}
+    names = {str(item["name"]).casefold() for item in plugins}
     for candidate in candidates_payload.get("candidates", []):
         if candidate.get("status") != "accepted":
             retained.append(candidate)
@@ -973,6 +974,12 @@ def promote_accepted(
         normalized_url = candidate["url"].rstrip("/").lower()
         if normalized_url in urls:
             continue
+        normalized_name = str(candidate["name"]).casefold()
+        if normalized_name in names:
+            candidate["status"] = "needs_review"
+            candidate["reasons"] = ["duplicate_name_conflict"]
+            retained.append(candidate)
+            continue
         plugins.append(
             {
                 "category": candidate["category_suggestion"],
@@ -985,6 +992,7 @@ def promote_accepted(
             }
         )
         urls.add(normalized_url)
+        names.add(normalized_name)
         promoted.append(candidate)
     if promoted:
         category_order = {category: index for index, category in enumerate(CATEGORIES)}
