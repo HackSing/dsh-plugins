@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **207 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **208 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **207 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **207 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **208 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -85,6 +85,7 @@ This is the first published directory snapshot: **207 plugins**, grouped into **
 - [dsh-compass](https://github.com/Happy2Git/dsh-compass) — Adds a right-side panel with directory browser, injected context display, and read-only Git graph to the DeepSeek Harness web interface.
 - [dsh-dir-tree](https://github.com/bentong-chain/dsh-dir-tree) — Provides a floating workspace directory tree for DeepSeek Harness, allowing file and folder path drag-and-drop into the chat input.
 - [dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — Loads Wallpaper Engine .mpkg files and Steam Workshop folders as animated, video, web, or scene wallpapers in the DeepSeek Harness web interface.
+- [dsh-postman](https://github.com/zhousun55-byte/dsh-postman) — Adds an in-conversation upload command to DeepSeek Harness that sends images as message attachments and writes text file contents into the composer.
 
 ## Tools & Capabilities
 

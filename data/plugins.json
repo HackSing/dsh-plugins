@@ -487,6 +487,15 @@
       "url": "https://github.com/XHR666/dsh-mpkg-wallpaper"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds an in-conversation upload command to DeepSeek Harness that sends images as message attachments and writes text file contents into the composer.",
+      "description_zh": "为 DeepSeek Harness 增加会话内上传命令，图片作为消息附件发送，文本文件内容写入输入框。",
+      "name": "dsh-postman",
+      "repository_id": 1336103488,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zhousun55-byte/dsh-postman"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
