@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32563590447 -->
+- Automatically added [dshwiki-plugin](https://github.com/ai798-Lab/dshwiki-plugin) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32563471377 -->
 - Automatically added [trajectory-zh-guide](https://github.com/CSlawyer1985/trajectory-zh-guide) to Interaction & Experience from the `dsh-plugin` topic.
 
