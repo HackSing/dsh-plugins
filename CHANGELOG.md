@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32563260054 -->
+- Automatically added [dsh-worktree-flow](https://github.com/TY-ang/dsh-worktree-flow) to Development & Ecosystem from the `dsh-plugin` topic.
+
 <!-- topic-sync:32563223983 -->
 - Automatically added [dsh-workspace-scope-selection](https://github.com/jiangr100/dsh-workspace-scope-selection) to Interaction & Experience from the `dsh-plugin` topic.
 

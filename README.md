@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **224 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **225 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **224 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **224 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **225 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -273,6 +273,7 @@ This is the first published directory snapshot: **224 plugins**, grouped into **
 - [agent-dev-skills](https://github.com/ddtcorex/maestro-skills) — Provides a collection of development skills and an agent preset for DeepSeek Harness.
 - [GraphFlow](https://github.com/Roarpeng/GraphFlow) — A DSH plugin that provides a local-first code knowledge graph and context harness for coding agents.
 - [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) — Provides isolated install-and-smoke testing for DeepSeek Harness plugins with structured pass/fail reports.
+- [dsh-worktree-flow](https://github.com/TY-ang/dsh-worktree-flow) — Creates DSH feature workspaces that map one directory per feature to git worktrees across multiple component repositories on a shared feature branch.
 
 ## How to choose a plugin
 

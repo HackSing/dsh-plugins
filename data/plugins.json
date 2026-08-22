@@ -2015,6 +2015,15 @@
       "repository_id": 1336521207,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/PerryLink/dsh-test-drive"
+    },
+    {
+      "category": "development",
+      "description_en": "Creates DSH feature workspaces that map one directory per feature to git worktrees across multiple component repositories on a shared feature branch.",
+      "description_zh": "为DSH创建功能工作区：每个功能对应一个目录，将多个组件仓库以git worktree方式检出到共享功能分支。",
+      "name": "dsh-worktree-flow",
+      "repository_id": 1339287884,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/TY-ang/dsh-worktree-flow"
     }
   ],
   "schema_version": 1
