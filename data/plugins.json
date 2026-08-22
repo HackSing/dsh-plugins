@@ -829,6 +829,15 @@
       "url": "https://github.com/uckkk/dsh-cutting-guide"
     },
     {
+      "category": "tools",
+      "description_en": "Reports disk usage of DeepSeek Harness data directories, including total size, per-directory breakdown, largest files, and cleanup suggestions.",
+      "description_zh": "报告 DeepSeek Harness 数据目录的磁盘占用情况，包括总大小、按目录拆分、最大文件和清理建议。",
+      "name": "dsh-disk-audit",
+      "repository_id": 1338535168,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zoahdev/dsh-disk-audit"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
