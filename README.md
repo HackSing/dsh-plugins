@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **196 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **197 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **196 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **196 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **197 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -83,6 +83,7 @@ This is the first published directory snapshot: **196 plugins**, grouped into **
 - [dsh-client-ui-voice-input](https://github.com/zjzqs/dsh-client-ui-voice-input) — Adds voice input and prompt optimization buttons to the DeepSeek Harness web composer.
 - [dock-files](https://github.com/AKS1st/dock-files) — Provides a file explorer panel for browsing, managing, and opening files within a DSH session.
 - [dsh-compass](https://github.com/Happy2Git/dsh-compass) — Adds a right-side panel with directory browser, injected context display, and read-only Git graph to the DeepSeek Harness web interface.
+- [dsh-dir-tree](https://github.com/bentong-chain/dsh-dir-tree) — Provides a floating workspace directory tree for DeepSeek Harness, allowing file and folder path drag-and-drop into the chat input.
 
 ## Tools & Capabilities
 
