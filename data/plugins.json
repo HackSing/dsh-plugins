@@ -973,6 +973,15 @@
       "url": "https://github.com/uckkk/dsh-spirit-guide"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a musical instrument tuning tool that returns practice plans based on parameters.",
+      "description_zh": "提供乐器调音工具，根据参数返回练习方案。",
+      "name": "dsh-tune-guide",
+      "repository_id": 1341039182,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/uckkk/dsh-tune-guide"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
