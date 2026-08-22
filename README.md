@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **206 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **207 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **206 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **206 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **207 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -196,6 +196,7 @@ This is the first published directory snapshot: **206 plugins**, grouped into **
 - [db-connector](https://github.com/JohnXu22786/db-connector) — Provides database connectivity for DeepSeek Harness with SQLite, PostgreSQL, and MySQL connections, schema introspection, read-only queries, write approval, and a JSONL audit trail.
 - [browser-automation](https://github.com/JohnXu22786/browser-automation) — Provides browser automation tools (navigation, clicking, form filling, screenshots, and JavaScript execution) through an MCP server for DeepSeek Harness.
 - [dsh-browser](https://github.com/Lum1104/dsh-browser) — Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.
+- [dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) — Provides a configurable OpenAI-compatible LLM adapter with automatic provider fallback and usage tracking for DeepSeek Harness.
 
 ## Automation & Agents
 

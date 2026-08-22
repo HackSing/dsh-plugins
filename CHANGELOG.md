@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562467154 -->
+- Automatically added [dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:32562396753 -->
 - Automatically added [dsh-open-in](https://github.com/NevermindZZT/dsh-open-in) to Tools & Capabilities from the `dsh-plugin` topic.
 

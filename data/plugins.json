@@ -1378,6 +1378,15 @@
       "url": "https://github.com/Lum1104/dsh-browser"
     },
     {
+      "category": "integrations",
+      "description_en": "Provides a configurable OpenAI-compatible LLM adapter with automatic provider fallback and usage tracking for DeepSeek Harness.",
+      "description_zh": "为DeepSeek Harness提供可配置的OpenAI兼容LLM适配器，支持自动提供商回退和使用统计。",
+      "name": "dsh-polyglot",
+      "repository_id": 1333323173,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Jesse-njx/dsh-polyglot"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
