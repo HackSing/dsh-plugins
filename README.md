@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **194 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **195 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **194 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **194 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **195 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -123,6 +123,7 @@ This is the first published directory snapshot: **194 plugins**, grouped into **
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — Provides a sidebar foundation with built-in file management, editing, terminal, Git, and side chat for DSH.
 - [safety-net](https://github.com/JohnXu22786/safety-net) — Provides a destructive-command interception gate that parses command semantics and requires human confirmation before executing risky operations.
 - [secret-guard](https://github.com/JohnXu22786/secret-guard) — Provides a DeepSeek Harness security plugin that intercepts sensitive file access, masks leaked secrets, and offers safe inspection tools.
+- [dsh-cpr-guide](https://github.com/uckkk/dsh-cpr-guide) — Provides CPR emergency response steps by scenario.
 
 ## Knowledge & Memory
 
