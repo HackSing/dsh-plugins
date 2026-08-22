@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32560550341 -->
+- Automatically added [docgen](https://github.com/JohnXu22786/docgen) to Content & Creation from the `dsh-plugin` topic.
+
 <!-- topic-sync:32560502374 -->
 - Automatically added [adversarial-review](https://github.com/JohnXu22786/adversarial-review) to Tools & Capabilities from the `dsh-plugin` topic.
 

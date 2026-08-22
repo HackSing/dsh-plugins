@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **190 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **191 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **190 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **190 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **191 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -158,6 +158,7 @@ This is the first published directory snapshot: **190 plugins**, grouped into **
 - [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — Provides video frame interpolation tools for DeepSeek Harness agents using RIFE models.
 - [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.
 - [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — Provides a visual model adapter that routes image tasks to PaddleOCR-VL and Qwen for DeepSeek Harness.
+- [docgen](https://github.com/JohnXu22786/docgen) — Provides document-generation skills for agent harnesses, including README generation, PR description, changelog generation, and code review.
 
 ## Integrations & Connectors
 

@@ -1063,6 +1063,15 @@
       "url": "https://github.com/hamliy-feng/duhai-vision"
     },
     {
+      "category": "content",
+      "description_en": "Provides document-generation skills for agent harnesses, including README generation, PR description, changelog generation, and code review.",
+      "description_zh": "为智能体框架提供文档生成技能，包括 README 生成、PR 描述、变更日志生成和代码审查。",
+      "name": "docgen",
+      "repository_id": 1335841184,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/docgen"
+    },
+    {
       "category": "integrations",
       "description_en": "Provides accessibility-first macOS control with fresh-state checks and scoped permissions.",
       "description_zh": "提供无障碍优先的 macOS 控制，并包含状态新鲜度检查和权限约束。",
