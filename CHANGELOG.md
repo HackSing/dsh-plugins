@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32559905287 -->
+- Automatically added [db-connector](https://github.com/JohnXu22786/db-connector) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:32559150041 -->
 - Automatically added [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) to Integrations & Connectors from the `dsh-plugin` topic.
 
