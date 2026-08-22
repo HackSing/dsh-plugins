@@ -1756,6 +1756,15 @@
       "url": "https://github.com/Viy1204/recruiting-copilot"
     },
     {
+      "category": "automation",
+      "description_en": "Validates and ranks multiple independent coding-agent patches before allowing an approved patch to be applied.",
+      "description_zh": "验证并对多个独立编码代理的补丁进行排名，然后允许应用已批准的补丁。",
+      "name": "dsh-llm-verifier",
+      "repository_id": 1340236138,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Web0926/dsh-llm-verifier"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
