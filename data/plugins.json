@@ -1198,6 +1198,15 @@
       "url": "https://github.com/JohnXu22786/db-connector"
     },
     {
+      "category": "integrations",
+      "description_en": "Provides browser automation tools (navigation, clicking, form filling, screenshots, and JavaScript execution) through an MCP server for DeepSeek Harness.",
+      "description_zh": "通过 MCP 服务器为 DeepSeek Harness 提供浏览器自动化工具（导航、点击、填表、截图和 JavaScript 执行）。",
+      "name": "browser-automation",
+      "repository_id": 1335840221,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/browser-automation"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",

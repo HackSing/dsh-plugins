@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **185 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **186 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **185 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **185 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **186 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -176,6 +176,7 @@ This is the first published directory snapshot: **185 plugins**, grouped into **
 - [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — Provides Wind AIFin MCP integration and Alice workflows for DeepSeek Harness.
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — Loads hooks configurations from Claude Code, Codex, and opencode and executes them inside DeepSeek Harness.
 - [db-connector](https://github.com/JohnXu22786/db-connector) — Provides database connectivity for DeepSeek Harness with SQLite, PostgreSQL, and MySQL connections, schema introspection, read-only queries, write approval, and a JSONL audit trail.
+- [browser-automation](https://github.com/JohnXu22786/browser-automation) — Provides browser automation tools (navigation, clicking, form filling, screenshots, and JavaScript execution) through an MCP server for DeepSeek Harness.
 
 ## Automation & Agents
 
