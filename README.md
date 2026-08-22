@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **199 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **200 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **199 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **199 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **200 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -143,6 +143,7 @@ This is the first published directory snapshot: **199 plugins**, grouped into **
 - [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — Adds cross-session memory, todo management, skill manager, session collaboration, and other enhancement features to DeepSeek Harness.
 - [docindex](https://github.com/JohnXu22786/docindex) — Provides a local semantic index over workspace documents with hybrid lexical-semantic retrieval and line-numbered citations.
 - [session-export](https://github.com/JohnXu22786/session-export) — Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.
+- [dsh-ecc](https://github.com/gongyijie85/dsh-ecc) — Registers curated ECC-derived agent skills with DeepSeek Harness's Cordis host layer.
 
 ## Content & Creation
 
