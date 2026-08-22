@@ -775,6 +775,15 @@
       "url": "https://github.com/JohnXu22786/review-gate"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a destructive-command interception gate that parses command semantics and requires human confirmation before executing risky operations.",
+      "description_zh": "提供破坏性命令拦截闸门，在执行危险操作前解析命令语义并要求人工确认。",
+      "name": "safety-net",
+      "repository_id": 1335840137,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/safety-net"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",

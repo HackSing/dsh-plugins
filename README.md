@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **188 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **189 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **188 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **188 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **189 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -120,6 +120,7 @@ This is the first published directory snapshot: **188 plugins**, grouped into **
 - [apply-patch](https://github.com/JohnXu22786/apply-patch) — Applies unified diffs to the filesystem inside DeepSeek Harness with dry-run and undo support.
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — Provides a sidebar foundation with built-in file management, editing, terminal, Git, and side chat for DSH.
 - [review-gate](https://github.com/JohnXu22786/review-gate) — Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.
+- [safety-net](https://github.com/JohnXu22786/safety-net) — Provides a destructive-command interception gate that parses command semantics and requires human confirmation before executing risky operations.
 
 ## Knowledge & Memory
 

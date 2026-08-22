@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32560271180 -->
+- Automatically added [safety-net](https://github.com/JohnXu22786/safety-net) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32560232365 -->
 - Automatically added [review-gate](https://github.com/JohnXu22786/review-gate) to Tools & Capabilities from the `dsh-plugin` topic.
 

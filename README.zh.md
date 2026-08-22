@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **188 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **189 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **188 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **189 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -120,6 +120,7 @@
 - [apply-patch](https://github.com/JohnXu22786/apply-patch) — 在 DeepSeek Harness 内将统一差异补丁应用到文件系统，支持预演与撤销。
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — 为 DSH 提供侧边栏底座，内置文件管理、编辑、终端、Git 和侧边对话。
 - [review-gate](https://github.com/JohnXu22786/review-gate) — 为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。
+- [safety-net](https://github.com/JohnXu22786/safety-net) — 提供破坏性命令拦截闸门，在执行危险操作前解析命令语义并要求人工确认。
 
 ## 知识与记忆
 
