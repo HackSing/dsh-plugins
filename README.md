@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **192 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **193 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **192 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **192 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **193 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -81,6 +81,7 @@ This is the first published directory snapshot: **192 plugins**, grouped into **
 - [session-titler](https://github.com/JohnXu22786/session-titler) — Generates automatic session titles using a two-phase pipeline: instant keyword captions while active and budget-model refinement when idle.
 - [snippet-expander](https://github.com/JohnXu22786/snippet-expander) — Provides inline expansion of #tag shorthands in user messages before they are sent.
 - [dsh-client-ui-voice-input](https://github.com/zjzqs/dsh-client-ui-voice-input) — Adds voice input and prompt optimization buttons to the DeepSeek Harness web composer.
+- [dock-files](https://github.com/AKS1st/dock-files) — Provides a file explorer panel for browsing, managing, and opening files within a DSH session.
 
 ## Tools & Capabilities
 

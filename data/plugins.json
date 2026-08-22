@@ -451,6 +451,15 @@
       "url": "https://github.com/zjzqs/dsh-client-ui-voice-input"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides a file explorer panel for browsing, managing, and opening files within a DSH session.",
+      "description_zh": "提供DSH会话中的文件浏览面板，用于浏览、管理和打开文件。",
+      "name": "dock-files",
+      "repository_id": 1340492214,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/AKS1st/dock-files"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
