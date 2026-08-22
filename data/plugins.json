@@ -442,6 +442,15 @@
       "url": "https://github.com/JohnXu22786/snippet-expander"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds voice input and prompt optimization buttons to the DeepSeek Harness web composer.",
+      "description_zh": "为 DeepSeek Harness 网页输入框添加语音输入和提示词优化按钮。",
+      "name": "dsh-client-ui-voice-input",
+      "repository_id": 1334145191,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zjzqs/dsh-client-ui-voice-input"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
