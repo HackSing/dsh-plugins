@@ -793,6 +793,15 @@
       "url": "https://github.com/JohnXu22786/adversarial-review"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a DeepSeek Harness security plugin that intercepts sensitive file access, masks leaked secrets, and offers safe inspection tools.",
+      "description_zh": "为 DeepSeek Harness 提供安全插件，拦截敏感文件访问，掩蔽泄漏的机密，并提供安全的检查工具。",
+      "name": "secret-guard",
+      "repository_id": 1335842040,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/secret-guard"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
