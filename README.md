@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **217 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **218 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **217 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **217 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **218 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -142,6 +142,7 @@ This is the first published directory snapshot: **217 plugins**, grouped into **
 - [dsh-prune-guide](https://github.com/uckkk/dsh-prune-guide) — Provides plant care guidance through a prune_guide tool that returns tailored care plans based on parameters.
 - [dsh-single-instance-guard](https://github.com/Tang-mm95/dsh-single-instance-guard) — Prevents concurrent DeepSeek Harness servers from corrupting session logs by taking an exclusive lock on the DSH_HOME data directory at startup.
 - [dsh-spirit-guide](https://github.com/uckkk/dsh-spirit-guide) — Provides a spirit_guide tool that returns whiskey and spirit recommendations based on parameters.
+- [dsh-tune-guide](https://github.com/uckkk/dsh-tune-guide) — Provides a musical instrument tuning tool that returns practice plans based on parameters.
 
 ## Knowledge & Memory
 

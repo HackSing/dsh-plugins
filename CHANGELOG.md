@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562905924 -->
+- Automatically added [dsh-tune-guide](https://github.com/uckkk/dsh-tune-guide) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32562867087 -->
 - Automatically added [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) to Development & Ecosystem from the `dsh-plugin` topic.
 
