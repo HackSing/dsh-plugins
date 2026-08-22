@@ -955,6 +955,15 @@
       "url": "https://github.com/JohnXu22786/session-export"
     },
     {
+      "category": "knowledge",
+      "description_en": "Registers curated ECC-derived agent skills with DeepSeek Harness's Cordis host layer.",
+      "description_zh": "向 DeepSeek Harness 的 Cordis host 层注册来自 ECC 的精选代理技能。",
+      "name": "dsh-ecc",
+      "repository_id": 1335728737,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/gongyijie85/dsh-ecc"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",

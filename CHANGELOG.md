@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562045369 -->
+- Automatically added [dsh-ecc](https://github.com/gongyijie85/dsh-ecc) to Knowledge & Memory from the `dsh-plugin` topic.
+
 <!-- topic-sync:32562009220 -->
 - Automatically added [dsh-dry-guide](https://github.com/uckkk/dsh-dry-guide) to Tools & Capabilities from the `dsh-plugin` topic.
 
