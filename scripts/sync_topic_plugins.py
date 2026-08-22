@@ -56,11 +56,11 @@ SNAPSHOT_PATTERNS = {
 }
 
 DIRECTORY_WORDS = re.compile(
-    r"(?:^|[-_\s])(awesome|directory|collection|curated|marketplace|catalog|list)(?:$|[-_\s])",
+    r"(?:^|[-_\s])(awesome|collection|marketplace|catalog|list)(?:$|[-_\s])",
     re.IGNORECASE,
 )
 LEARNING_WORDS = re.compile(
-    r"(?:^|[-_\s])(tutorial|handbook|course|workshop|guide|from[-_\s]?scratch)(?:$|[-_\s])",
+    r"(?:^|[-_\s])(tutorial|handbook|course|from[-_\s]?scratch)(?:$|[-_\s])",
     re.IGNORECASE,
 )
 MARKETING_WORDS = re.compile(
@@ -705,6 +705,13 @@ def apply_model_analysis(
         candidate["reasons"] = ["model_did_not_confirm_high_confidence"]
 
 
+# Reason codes classify() can no longer produce (their triggering rules were removed
+# because they misfired on unrelated repository content). Cached candidates carrying
+# one of these must be reclassified from scratch instead of reused as-is, since the
+# cached verdict came from logic that no longer exists.
+STALE_RULE_REASONS = {"unclear_plugin_evidence", "planned_or_placeholder"}
+
+
 def discover(
     *,
     dry_run: bool,
@@ -762,7 +769,10 @@ def discover(
             ["model_analysis_failed"],
             ["model_provider_unconfigured"],
         )
-        if unchanged and (
+        stale = bool(previous) and STALE_RULE_REASONS.intersection(
+            previous.get("reasons", [])
+        )
+        if unchanged and not stale and (
             previous.get("model_analysis")
             or previous.get("status") in {"excluded", "rejected", "watch"}
             or (previous.get("enriched") and not retry_model)

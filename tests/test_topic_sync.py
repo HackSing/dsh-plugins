@@ -53,7 +53,7 @@ class ClassificationTests(unittest.TestCase):
             repository(
                 name="awesome-dsh-plugins",
                 full_name="example/awesome-dsh-plugins",
-                description="A curated directory of DSH plugins.",
+                description="A collection of DSH plugins.",
             ),
             "# Awesome DSH plugins",
             ["README.md"],
@@ -61,6 +61,21 @@ class ClassificationTests(unittest.TestCase):
         )
         self.assertEqual(result["status"], "excluded")
         self.assertIn("directory_or_collection", result["reasons"])
+
+    def test_directory_words_do_not_match_unrelated_technical_usage(self):
+        result = topic_sync.classify(
+            repository(
+                name="dsh-workspace-default-dir",
+                full_name="example/dsh-workspace-default-dir",
+                description="Set the default initial directory of the dsh "
+                "workspace directory picker.",
+            ),
+            "# dsh-workspace-default-dir\nA DSH plugin that sets the default "
+            "workspace directory.",
+            ["package.json", "src"],
+            None,
+        )
+        self.assertEqual(result["status"], "proposed")
 
     def test_missing_readme_is_excluded(self):
         result = topic_sync.classify(repository(), None, [], None)
@@ -471,6 +486,100 @@ class ClassificationTests(unittest.TestCase):
         self.assertEqual(candidate["status"], "needs_review")
         self.assertFalse(candidate["enriched"])
         self.assertEqual(candidate["reasons"], ["enrichment_deferred"])
+
+    def test_discover_reclassifies_candidates_with_stale_rule_reasons(self):
+        class LiveClient:
+            def __init__(self, token=""):
+                pass
+
+            def search(self, max_pages=None):
+                return [repository(topics=["dsh-plugin"])], 1
+
+            def readme(self, full_name):
+                return "# dsh-example\nA DSH plugin for automated research workflows."
+
+            def root_entries(self, full_name):
+                return ["package.json", "src"]
+
+        class ModelClient:
+            def __init__(self, token, model, endpoint):
+                pass
+
+            def analyze(self, repo, readme, structure):
+                return {
+                    "category": "automation",
+                    "confidence": "high",
+                    "description_en": "Automates research workflows.",
+                    "description_zh": "自动执行研究工作流。",
+                    "evidence": ["README and package structure identify a DSH plugin"],
+                    "is_plugin": True,
+                    "model": "test-model",
+                }
+
+        with tempfile.TemporaryDirectory() as directory:
+            original_plugins = topic_sync.PLUGINS_PATH
+            original_candidates = topic_sync.CANDIDATES_PATH
+            try:
+                topic_sync.PLUGINS_PATH = Path(directory) / "plugins.json"
+                topic_sync.CANDIDATES_PATH = Path(directory) / "candidates.json"
+                topic_sync.write_json(
+                    topic_sync.PLUGINS_PATH, {"schema_version": 1, "plugins": []}
+                )
+                topic_sync.write_json(
+                    topic_sync.CANDIDATES_PATH,
+                    {
+                        "candidates": [
+                            {
+                                "category_suggestion": "tools",
+                                "category_confidence": "low",
+                                "description_en": "A plugin for DeepSeek Harness "
+                                "that automates research workflows.",
+                                "description_zh": "",
+                                "enriched": True,
+                                "fingerprint": topic_sync.repository_fingerprint(
+                                    repository()
+                                ),
+                                "name": "dsh-example",
+                                "reasons": ["unclear_plugin_evidence"],
+                                "repository_id": 101,
+                                "structure_evidence": ["package.json+source"],
+                                "status": "needs_review",
+                                "url": "https://github.com/example/dsh-example",
+                            }
+                        ],
+                        "query": "topic:dsh-plugin",
+                        "schema_version": 1,
+                        "source_total": 0,
+                    },
+                )
+                with mock.patch.object(
+                    topic_sync, "GitHubClient", LiveClient
+                ), mock.patch.object(
+                    topic_sync, "OpenAICompatibleClient", ModelClient
+                ), mock.patch.dict(
+                    topic_sync.os.environ,
+                    {
+                        "LLM_API_KEY": "test-key",
+                        "LLM_MODEL": "test-model",
+                        "LLM_BASE_URL": "https://example.invalid/v1",
+                    },
+                ):
+                    topic_sync.discover(
+                        dry_run=False,
+                        max_pages=1,
+                        no_readme=False,
+                        analyze_model=True,
+                        auto_publish=True,
+                    )
+                saved = json.loads(topic_sync.CANDIDATES_PATH.read_text(encoding="utf-8"))
+            finally:
+                topic_sync.PLUGINS_PATH = original_plugins
+                topic_sync.CANDIDATES_PATH = original_candidates
+        self.assertEqual(len(saved["candidates"]), 1)
+        self.assertEqual(
+            saved["candidates"][0]["reasons"], ["rules_and_model_high_confidence"]
+        )
+        self.assertEqual(saved["candidates"][0]["status"], "accepted")
 
     def test_search_shard_converges_when_topic_grows_during_pagination(self):
         class GrowingClient(topic_sync.GitHubClient):
