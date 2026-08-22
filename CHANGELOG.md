@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562746264 -->
+- Automatically added [dsh-skin](https://github.com/KinGao294/dsh-skin) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32562711480 -->
 - Automatically added [dsh-single-instance-guard](https://github.com/Tang-mm95/dsh-single-instance-guard) to Tools & Capabilities from the `dsh-plugin` topic.
 

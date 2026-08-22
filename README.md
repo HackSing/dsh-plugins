@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **213 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **214 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **213 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **213 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **214 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -88,6 +88,7 @@ This is the first published directory snapshot: **213 plugins**, grouped into **
 - [dsh-postman](https://github.com/zhousun55-byte/dsh-postman) — Adds an in-conversation upload command to DeepSeek Harness that sends images as message attachments and writes text file contents into the composer.
 - [dsh-remote-dir-picker](https://github.com/gfds2005/dsh-remote-dir-picker) — Forces the DSH web workspace directory picker to use the in-app browse interaction, enabling remote browser access.
 - [dsh-remote-picker](https://github.com/Yuuichu/dsh-remote-picker) — Forces the in-browser browse directory picker in DeepSeek Harness when the web GUI is accessed through remote browsers such as Tailscale Serve or Cloudflared.
+- [dsh-skin](https://github.com/KinGao294/dsh-skin) — Adds curated skin palettes, custom wallpaper with opacity/blur controls, and a draggable desktop pet to DeepSeek Harness through a dual-face plugin.
 
 ## Tools & Capabilities
 
