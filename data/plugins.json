@@ -1585,6 +1585,15 @@
       "url": "https://github.com/xgone/dsh-remote"
     },
     {
+      "category": "integrations",
+      "description_en": "Bridges DeepSeek Harness with Tencent's WeChat ClawBot/iLink channel, allowing remote control via WeChat text messages.",
+      "description_zh": "通过腾讯官方微信 ClawBot/iLink 通道将 DeepSeek Harness 与微信连接，支持通过微信文本消息进行远程控制。",
+      "name": "dsh-weixin-clawbot",
+      "repository_id": 1342061613,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zp-home/dsh-weixin-clawbot"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",

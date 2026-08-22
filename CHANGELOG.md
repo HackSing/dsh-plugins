@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32568022375 -->
+- Automatically added [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:32563795595 -->
 - Automatically added [dsh-ux-writing](https://github.com/uckkk/dsh-ux-writing) to Tools & Capabilities from the `dsh-plugin` topic.
 
