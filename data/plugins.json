@@ -910,6 +910,15 @@
       "url": "https://github.com/NevermindZZT/dsh-open-in"
     },
     {
+      "category": "tools",
+      "description_en": "Provides plant care guidance through a prune_guide tool that returns tailored care plans based on parameters.",
+      "description_zh": "通过 prune_guide 工具根据参数返回定制的植物养护方案。",
+      "name": "dsh-prune-guide",
+      "repository_id": 1341026271,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/uckkk/dsh-prune-guide"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
