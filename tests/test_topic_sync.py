@@ -62,6 +62,20 @@ class ClassificationTests(unittest.TestCase):
         self.assertEqual(result["status"], "excluded")
         self.assertIn("directory_or_collection", result["reasons"])
 
+    def test_directory_words_match_the_bare_repo_name(self):
+        result = topic_sync.classify(
+            repository(
+                name="awesome-dsh-plugins",
+                full_name="coolbat/awesome-dsh-plugins",
+                description="Browse every DeepSeek Harness plugin on GitHub in one place.",
+            ),
+            "# Awesome DSH plugins",
+            ["README.md"],
+            None,
+        )
+        self.assertEqual(result["status"], "excluded")
+        self.assertIn("directory_or_collection", result["reasons"])
+
     def test_directory_words_do_not_match_unrelated_technical_usage(self):
         result = topic_sync.classify(
             repository(

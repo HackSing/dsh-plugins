@@ -604,9 +604,13 @@ def metadata_exclusion(repo: dict[str, Any]) -> tuple[str, list[str]] | None:
         return "excluded", ["inactive_repository"]
     if int(repo.get("size") or 0) == 0:
         return "excluded", ["empty_repository"]
-    if DIRECTORY_WORDS.search(full_name + " " + description):
+    # full_name is "owner/repo"; the slash isn't a [-_\s] boundary, so a
+    # repo named e.g. "awesome-dsh-plugins" would never match against
+    # full_name alone. Search the bare repo name too.
+    evidence_text = " ".join((repo.get("name", ""), full_name, description))
+    if DIRECTORY_WORDS.search(evidence_text):
         return "excluded", ["directory_or_collection"]
-    if LEARNING_WORDS.search(full_name + " " + description):
+    if LEARNING_WORDS.search(evidence_text):
         return "excluded", ["tutorial_or_handbook"]
     return None
 
