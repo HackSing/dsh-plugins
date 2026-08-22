@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **214 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **215 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **214 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **215 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -89,6 +89,7 @@
 - [dsh-remote-dir-picker](https://github.com/gfds2005/dsh-remote-dir-picker) — 强制 DSH 网页工作区目录选择器使用应用内浏览交互，使其可在远程浏览器中使用。
 - [dsh-remote-picker](https://github.com/Yuuichu/dsh-remote-picker) — 当 DeepSeek Harness 的 Web GUI 通过 Tailscale Serve 或 Cloudflared 等远程浏览器访问时，强制使用浏览器内的目录浏览选择器。
 - [dsh-skin](https://github.com/KinGao294/dsh-skin) — 通过双端插件为 DeepSeek Harness 添加精选皮肤配色、带透明度和模糊控制的自定义壁纸，以及可拖动的桌面宠物。
+- [dsh-skin-studio](https://github.com/daboge-beach/dsh-skin-studio) — 提供皮肤工作室，包含精选皮肤和社区皮肤中心，用于自定义 DeepSeek Harness 界面。
 
 ## 工具与能力
 

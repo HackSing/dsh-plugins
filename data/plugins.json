@@ -523,6 +523,15 @@
       "url": "https://github.com/KinGao294/dsh-skin"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides a skin studio with curated skins and a community gallery for customizing DeepSeek Harness interfaces.",
+      "description_zh": "提供皮肤工作室，包含精选皮肤和社区皮肤中心，用于自定义 DeepSeek Harness 界面。",
+      "name": "dsh-skin-studio",
+      "repository_id": 1335083327,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/daboge-beach/dsh-skin-studio"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
