@@ -1000,6 +1000,15 @@
       "url": "https://github.com/uckkk/dsh-tune-guide"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a management panel for toggling DeepSeek Harness plugins, labeling their origins, and showing risk ratings.",
+      "description_zh": "提供用于切换 DeepSeek Harness 插件、标记来源并显示风险等级的管理面板。",
+      "name": "dsh-workshop",
+      "repository_id": 1337048530,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Zlyraz/dsh-workshop"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
