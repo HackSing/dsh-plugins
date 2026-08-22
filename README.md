@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **231 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **232 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **231 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **231 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **232 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -219,6 +219,7 @@ This is the first published directory snapshot: **231 plugins**, grouped into **
 - [dsh-browser](https://github.com/Lum1104/dsh-browser) — Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.
 - [dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) — Provides a configurable OpenAI-compatible LLM adapter with automatic provider fallback and usage tracking for DeepSeek Harness.
 - [dsh-remote](https://github.com/xgone/dsh-remote) — Provides remote access and authentication for DeepSeek Harness, including password login, MFA/TOTP, role-based access, and an in-browser directory picker.
+- [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) — Bridges DeepSeek Harness with Tencent's WeChat ClawBot/iLink channel, allowing remote control via WeChat text messages.
 
 ## Automation & Agents
 
