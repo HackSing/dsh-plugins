@@ -937,6 +937,15 @@
       "url": "https://github.com/uckkk/dsh-prune-guide"
     },
     {
+      "category": "tools",
+      "description_en": "Prevents concurrent DeepSeek Harness servers from corrupting session logs by taking an exclusive lock on the DSH_HOME data directory at startup.",
+      "description_zh": "通过在启动时对 DSH_HOME 数据目录加独占锁，防止多个 DeepSeek Harness 服务器并发导致会话日志损坏。",
+      "name": "dsh-single-instance-guard",
+      "repository_id": 1336433989,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Tang-mm95/dsh-single-instance-guard"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
