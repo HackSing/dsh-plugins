@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **176 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 21, 2026**.
+Explore **181 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **176 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **176 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **181 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -29,7 +29,7 @@ This is the first published directory snapshot: **176 plugins**, grouped into **
 ## Interaction & Experience
 
 - [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — Brings a terminal-based interface to DeepSeek Harness.
-- [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) — Adds `@file` mentions for finding workspace files and attaching their contents to prompts.
+- [dsh-at-file](https://github.com/FSMargoo/dsh-at-file) — Adds `@file` mentions for finding workspace files and attaching their contents to prompts.
 - [ui-status-label](https://github.com/alingalingling/ui-status-label) — Lets you replace the default thinking-status text with a custom label.
 - [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — Adds OpenPencil design preview and editing support.
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) — Renders interactive HTML cards inside conversations with streaming previews and sandbox isolation.
@@ -157,6 +157,9 @@ This is the first published directory snapshot: **176 plugins**, grouped into **
 - [apply-patch](https://github.com/JohnXu22786/apply-patch) — Applies unified diffs to the filesystem inside DeepSeek Harness with dry-run and undo support.
 - [session-export](https://github.com/JohnXu22786/session-export) — Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.
 - [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — Syncs OpenAI Codex projects, chats, skills, and MCP servers with DeepSeek Harness.
+- [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — Provides a sidebar foundation with built-in file management, editing, terminal, Git, and side chat for DSH.
+- [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — Provides a visual model adapter that routes image tasks to PaddleOCR-VL and Qwen for DeepSeek Harness.
+- [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — Provides Wind AIFin MCP integration and Alice workflows for DeepSeek Harness.
 
 ## Automation & Agents
 
@@ -175,6 +178,8 @@ This is the first published directory snapshot: **176 plugins**, grouped into **
 - [context-pruner](https://github.com/JohnXu22786/context-pruner) — A session context triage plugin for DeepSeek Harness that prunes stale, repeated, failed, and oversized context to conserve token budget.
 - [allinluna](https://github.com/zenx0x/allinluna) — Provides resource-aware multi-agent orchestration for DeepSeek Harness.
 - [dsh-browser](https://github.com/Lum1104/dsh-browser) — Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.
+- [openspec-agents](https://github.com/ifrankwang/openspec-agents) — Provides a multi-agent workflow orchestration plugin that drives OpenSpec change specifications through implementation, verification, and review stages.
+- [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) — Provides an AI-driven recruitment workflow covering job requirement analysis, candidate sourcing, resume screening, interview scheduling, and daily reporting.
 
 ## Development & Ecosystem
 
@@ -185,7 +190,7 @@ This is the first published directory snapshot: **176 plugins**, grouped into **
 - [dsh-session-notification](https://github.com/dingyi222666/dsh-session-notification) — Reports four session states through browser notifications and prompts.
 - [dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) — Provides desktop reminders from the web interface.
 - [dsh-webbridge](https://github.com/bill9109/dsh-webbridge) — Connects DSH with Kimi WebBridge.
-- [fabric](https://github.com/omdsh-dev/fabric) — Supplies an MC-Fabric-inspired hook processor.
+- [fabric](https://github.com/omdsh-dev/stent) — Supplies an MC-Fabric-inspired hook processor.
 - [dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) — Pins commits to the environment's author identity through overriding environment variables.
 - [dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — Audits injected context for token cost, duplication, and conflicting instructions or schemas.
 - [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) — Performs dependency-free, read-only checks for manifests, patch formats, and build pitfalls.
@@ -211,7 +216,7 @@ This is the first published directory snapshot: **176 plugins**, grouped into **
 - [replicate-android-feature](https://github.com/addxing/replicate-android-feature) — An agent skill for reproducing an existing Android feature in another project or platform, preserving behavior, UI, and reusable resources.
 - [spec-driven](https://github.com/JohnXu22786/spec-driven) — Provides spec-driven development skills and tools including keel_catalog, keel_spec, and keel_review.
 - [skill-framework](https://github.com/JohnXu22786/skill-framework) — Provides a bundled engineering-methodology skill library for DeepSeek Harness dsh as a Cordis plugin.
-- [agent-dev-skills](https://github.com/ddtcorex/agent-dev-skills) — Provides a collection of development skills and an agent preset for DeepSeek Harness.
+- [agent-dev-skills](https://github.com/ddtcorex/maestro-skills) — Provides a collection of development skills and an agent preset for DeepSeek Harness.
 - [GraphFlow](https://github.com/Roarpeng/GraphFlow) — A DSH plugin that provides a local-first code knowledge graph and context harness for coding agents.
 
 ## How to choose a plugin
