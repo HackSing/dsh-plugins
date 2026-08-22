@@ -1405,6 +1405,15 @@
       "url": "https://github.com/Jesse-njx/dsh-polyglot"
     },
     {
+      "category": "integrations",
+      "description_en": "Provides remote access and authentication for DeepSeek Harness, including password login, MFA/TOTP, role-based access, and an in-browser directory picker.",
+      "description_zh": "为 DeepSeek Harness 提供远程访问与认证功能，包括账号密码登录、MFA/TOTP、基于角色的访问控制及浏览器内目录选择器。",
+      "name": "dsh-remote",
+      "repository_id": 1335750234,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/xgone/dsh-remote"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
