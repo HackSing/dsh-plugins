@@ -1081,6 +1081,15 @@
       "url": "https://github.com/omdsh-plugins/omdsh-editor"
     },
     {
+      "category": "tools",
+      "description_en": "Provides UX microcopy writing guidelines and button/error message copy recommendations for DeepSeek Harness.",
+      "description_zh": "提供DeepSeek Harness的UX微文案规范及按钮、错误提示文案撰写指南。",
+      "name": "dsh-ux-writing",
+      "repository_id": 1336124838,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/uckkk/dsh-ux-writing"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
