@@ -1036,6 +1036,15 @@
       "url": "https://github.com/Zlyraz/dsh-workshop"
     },
     {
+      "category": "tools",
+      "description_en": "Creates symlinks in the WSL home directory for Windows drive mounts so DeepSeek Harness can access them.",
+      "description_zh": "在WSL主目录中为Windows驱动器挂载创建符号链接，使DeepSeek Harness能够访问。",
+      "name": "dsh-wsl-drive-links",
+      "repository_id": 1334343928,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/HAPPYFAPTAIN/dsh-wsl-drive-links"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",

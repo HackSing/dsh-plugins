@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32563305389 -->
+- Automatically added [dsh-wsl-drive-links](https://github.com/HAPPYFAPTAIN/dsh-wsl-drive-links) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32563260054 -->
 - Automatically added [dsh-worktree-flow](https://github.com/TY-ang/dsh-worktree-flow) to Development & Ecosystem from the `dsh-plugin` topic.
 
