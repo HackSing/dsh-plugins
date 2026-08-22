@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562590003 -->
+- Automatically added [dsh-remote](https://github.com/xgone/dsh-remote) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:32562556622 -->
 - Automatically added [dsh-prune-guide](https://github.com/uckkk/dsh-prune-guide) to Tools & Capabilities from the `dsh-plugin` topic.
 
