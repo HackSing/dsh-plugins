@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32561891484 -->
+- Automatically added [dsh-cutting-guide](https://github.com/uckkk/dsh-cutting-guide) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32561856291 -->
 - Automatically added [dsh-cpr-guide](https://github.com/uckkk/dsh-cpr-guide) to Tools & Capabilities from the `dsh-plugin` topic.
 

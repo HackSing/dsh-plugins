@@ -811,6 +811,15 @@
       "url": "https://github.com/uckkk/dsh-cpr-guide"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a cutting propagation guide that returns plant care plans based on parameters.",
+      "description_zh": "提供扦插繁殖指南，根据参数返回植物养护方案。",
+      "name": "dsh-cutting-guide",
+      "repository_id": 1341030080,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/uckkk/dsh-cutting-guide"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
