@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **185 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **186 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **185 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **186 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -176,6 +176,7 @@
 - [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — 为 DeepSeek Harness 提供 Wind AIFin MCP 集成和 Alice 工作流。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — 读取 Claude Code、Codex 和 opencode 的钩子配置，并在 DeepSeek Harness 中执行这些钩子。
 - [db-connector](https://github.com/JohnXu22786/db-connector) — 为 DeepSeek Harness 提供数据库连接能力，包括 SQLite、PostgreSQL 和 MySQL 连接、模式检查、只读查询、写入审批和 JSONL 审计记录。
+- [browser-automation](https://github.com/JohnXu22786/browser-automation) — 通过 MCP 服务器为 DeepSeek Harness 提供浏览器自动化工具（导航、点击、填表、截图和 JavaScript 执行）。
 
 ## 自动化与智能体
 
