@@ -883,6 +883,15 @@
       "url": "https://github.com/LittleFishStars/dsh-init-command"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a plugin guide tool that matches natural-language needs to a curated plugin directory with reasons and install commands.",
+      "description_zh": "提供一个插件导购工具，将自然语言需求与精选插件目录进行匹配，并给出理由和安装命令。",
+      "name": "dsh-need-finder",
+      "repository_id": 1336571882,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/863683348/dsh-need-finder"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",

@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562359212 -->
+- Automatically added [dsh-need-finder](https://github.com/863683348/dsh-need-finder) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32562306320 -->
 - Automatically added [dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) to Interaction & Experience from the `dsh-plugin` topic.
 
