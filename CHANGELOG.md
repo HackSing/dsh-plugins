@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32563223983 -->
+- Automatically added [dsh-workspace-scope-selection](https://github.com/jiangr100/dsh-workspace-scope-selection) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32563170804 -->
 - Automatically added [dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) to Interaction & Experience from the `dsh-plugin` topic.
 

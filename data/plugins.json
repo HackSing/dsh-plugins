@@ -568,6 +568,15 @@
       "url": "https://github.com/DDSG-X/dsh-workspace-dir"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a selected-workspace-write permission mode and a directory-tree scope editor to DeepSeek Harness web sessions.",
+      "description_zh": "为 DeepSeek Harness Web 会话添加所选工作区写入权限模式和目录树范围编辑器。",
+      "name": "dsh-workspace-scope-selection",
+      "repository_id": 1337228426,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/jiangr100/dsh-workspace-scope-selection"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
