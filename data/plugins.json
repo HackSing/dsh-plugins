@@ -577,6 +577,15 @@
       "url": "https://github.com/jiangr100/dsh-workspace-scope-selection"
     },
     {
+      "category": "interaction",
+      "description_en": "Enhances the DeepSeek Harness web UI workspace directory picker with /mnt Windows drive shortcuts, full breadcrumb navigation, and a persistent path input.",
+      "description_zh": "增强 DeepSeek Harness Web UI 的工作区目录选择器，提供 /mnt Windows 盘符快捷访问、完整面包屑导航和常显路径输入框。",
+      "name": "dsh-wsl-workspace-picker",
+      "repository_id": 1336739992,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/WilliamShi666/dsh-wsl-workspace-picker"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
