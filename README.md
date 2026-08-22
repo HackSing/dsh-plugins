@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **200 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **201 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **200 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **200 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **201 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -128,6 +128,7 @@ This is the first published directory snapshot: **200 plugins**, grouped into **
 - [dsh-cutting-guide](https://github.com/uckkk/dsh-cutting-guide) — Provides a cutting propagation guide that returns plant care plans based on parameters.
 - [dsh-disk-audit](https://github.com/zoahdev/dsh-disk-audit) — Reports disk usage of DeepSeek Harness data directories, including total size, per-directory breakdown, largest files, and cleanup suggestions.
 - [dsh-dry-guide](https://github.com/uckkk/dsh-dry-guide) — Provides drying and airing guidance based on input parameters.
+- [dsh-emotion-guide](https://github.com/uckkk/dsh-emotion-guide) — Provides an emotion guidance tool that returns parenting education plans based on parameters.
 
 ## Knowledge & Memory
 
