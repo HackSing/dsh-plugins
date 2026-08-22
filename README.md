@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **191 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **192 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **191 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **191 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **192 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -122,6 +122,7 @@ This is the first published directory snapshot: **191 plugins**, grouped into **
 - [review-gate](https://github.com/JohnXu22786/review-gate) — Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.
 - [safety-net](https://github.com/JohnXu22786/safety-net) — Provides a destructive-command interception gate that parses command semantics and requires human confirmation before executing risky operations.
 - [adversarial-review](https://github.com/JohnXu22786/adversarial-review) — Provides adversarial multi-perspective code review with parallel lens analysis, static sentinel scanning, severity grading, and review history.
+- [secret-guard](https://github.com/JohnXu22786/secret-guard) — Provides a DeepSeek Harness security plugin that intercepts sensitive file access, masks leaked secrets, and offers safe inspection tools.
 
 ## Knowledge & Memory
 
