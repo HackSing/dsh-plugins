@@ -847,6 +847,15 @@
       "url": "https://github.com/uckkk/dsh-dry-guide"
     },
     {
+      "category": "tools",
+      "description_en": "Provides an emotion guidance tool that returns parenting education plans based on parameters.",
+      "description_zh": "提供情绪引导工具，根据参数返回亲子教育方案。",
+      "name": "dsh-emotion-guide",
+      "repository_id": 1341082614,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/uckkk/dsh-emotion-guide"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",

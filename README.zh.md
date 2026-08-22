@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **200 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **201 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **200 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **201 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -128,6 +128,7 @@
 - [dsh-cutting-guide](https://github.com/uckkk/dsh-cutting-guide) — 提供扦插繁殖指南，根据参数返回植物养护方案。
 - [dsh-disk-audit](https://github.com/zoahdev/dsh-disk-audit) — 报告 DeepSeek Harness 数据目录的磁盘占用情况，包括总大小、按目录拆分、最大文件和清理建议。
 - [dsh-dry-guide](https://github.com/uckkk/dsh-dry-guide) — 根据输入参数提供晾晒烘干建议。
+- [dsh-emotion-guide](https://github.com/uckkk/dsh-emotion-guide) — 提供情绪引导工具，根据参数返回亲子教育方案。
 
 ## 知识与记忆
 
