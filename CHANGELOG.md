@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562009220 -->
+- Automatically added [dsh-dry-guide](https://github.com/uckkk/dsh-dry-guide) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32561962317 -->
 - Automatically added [dsh-disk-audit](https://github.com/zoahdev/dsh-disk-audit) to Tools & Capabilities from the `dsh-plugin` topic.
 
