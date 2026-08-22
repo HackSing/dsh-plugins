@@ -460,6 +460,15 @@
       "url": "https://github.com/AKS1st/dock-files"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a right-side panel with directory browser, injected context display, and read-only Git graph to the DeepSeek Harness web interface.",
+      "description_zh": "为 DeepSeek Harness Web 界面添加右侧上下文面板、文件夹浏览器和只读 Git 图。",
+      "name": "dsh-compass",
+      "repository_id": 1335151157,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Happy2Git/dsh-compass"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
