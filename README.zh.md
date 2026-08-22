@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **222 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **223 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **222 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **223 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -93,6 +93,7 @@
 - [dsh-weekly-hot](https://github.com/XCNXNXNX/dsh-weekly-hot) — 为 DSH Web UI 添加一个侧边栏面板，展示每周热门 DSH 插件并提供一键安装与可配置弹窗。
 - [dsh-whale-cards](https://github.com/changer-changer/dsh-whale-cards) — 为 DeepSeek Harness 提供本地优先的网页插件，包含精选小游戏和 AI 陪伴角色。
 - [dsh-workspace-default-dir](https://github.com/dragan2023/dsh-workspace-default-dir) — 通过设置卡片和命令行界面，设置 dsh 工作区目录选择器的默认起始目录。
+- [dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) — 在 DeepSeek Harness 界面中，以可拖动、透明度可调的面板显示当前对话的工作目录和文件列表。
 
 ## 工具与能力
 
