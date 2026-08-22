@@ -767,30 +767,12 @@
     },
     {
       "category": "tools",
-      "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
-      "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
-      "name": "review-gate",
-      "repository_id": 1340356812,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/review-gate"
-    },
-    {
-      "category": "tools",
       "description_en": "Provides a destructive-command interception gate that parses command semantics and requires human confirmation before executing risky operations.",
       "description_zh": "提供破坏性命令拦截闸门，在执行危险操作前解析命令语义并要求人工确认。",
       "name": "safety-net",
       "repository_id": 1335840137,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/JohnXu22786/safety-net"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides adversarial multi-perspective code review with parallel lens analysis, static sentinel scanning, severity grading, and review history.",
-      "description_zh": "提供对抗式多视角代码审查，支持并行透镜分析、静态哨兵扫描、严重度定级与审查历史。",
-      "name": "adversarial-review",
-      "repository_id": 1335841150,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/adversarial-review"
     },
     {
       "category": "tools",
@@ -1261,6 +1243,33 @@
       "url": "https://github.com/JohnXu22786/browser-automation"
     },
     {
+      "category": "integrations",
+      "description_en": "Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.",
+      "description_zh": "提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。",
+      "name": "dsh-browser",
+      "repository_id": 1324996099,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Lum1104/dsh-browser"
+    },
+    {
+      "category": "automation",
+      "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
+      "name": "review-gate",
+      "repository_id": 1340356812,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/review-gate"
+    },
+    {
+      "category": "automation",
+      "description_en": "Provides adversarial multi-perspective code review with parallel lens analysis, static sentinel scanning, severity grading, and review history.",
+      "description_zh": "提供对抗式多视角代码审查，支持并行透镜分析、静态哨兵扫描、严重度定级与审查历史。",
+      "name": "adversarial-review",
+      "repository_id": 1335841150,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/adversarial-review"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
@@ -1385,15 +1394,6 @@
       "repository_id": 1321408361,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/zenx0x/allinluna"
-    },
-    {
-      "category": "automation",
-      "description_en": "Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.",
-      "description_zh": "提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。",
-      "name": "dsh-browser",
-      "repository_id": 1324996099,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Lum1104/dsh-browser"
     },
     {
       "category": "automation",

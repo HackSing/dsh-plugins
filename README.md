@@ -119,9 +119,7 @@ This is the first published directory snapshot: **192 plugins**, grouped into **
 - [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — Provides conversational bookkeeping with expense and income recording, querying, reporting, CSV/HTML export, and monthly budgets using a local SQLite ledger.
 - [apply-patch](https://github.com/JohnXu22786/apply-patch) — Applies unified diffs to the filesystem inside DeepSeek Harness with dry-run and undo support.
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — Provides a sidebar foundation with built-in file management, editing, terminal, Git, and side chat for DSH.
-- [review-gate](https://github.com/JohnXu22786/review-gate) — Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.
 - [safety-net](https://github.com/JohnXu22786/safety-net) — Provides a destructive-command interception gate that parses command semantics and requires human confirmation before executing risky operations.
-- [adversarial-review](https://github.com/JohnXu22786/adversarial-review) — Provides adversarial multi-perspective code review with parallel lens analysis, static sentinel scanning, severity grading, and review history.
 - [secret-guard](https://github.com/JohnXu22786/secret-guard) — Provides a DeepSeek Harness security plugin that intercepts sensitive file access, masks leaked secrets, and offers safe inspection tools.
 
 ## Knowledge & Memory
@@ -183,9 +181,12 @@ This is the first published directory snapshot: **192 plugins**, grouped into **
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — Loads hooks configurations from Claude Code, Codex, and opencode and executes them inside DeepSeek Harness.
 - [db-connector](https://github.com/JohnXu22786/db-connector) — Provides database connectivity for DeepSeek Harness with SQLite, PostgreSQL, and MySQL connections, schema introspection, read-only queries, write approval, and a JSONL audit trail.
 - [browser-automation](https://github.com/JohnXu22786/browser-automation) — Provides browser automation tools (navigation, clicking, form filling, screenshots, and JavaScript execution) through an MCP server for DeepSeek Harness.
+- [dsh-browser](https://github.com/Lum1104/dsh-browser) — Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.
 
 ## Automation & Agents
 
+- [review-gate](https://github.com/JohnXu22786/review-gate) — Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.
+- [adversarial-review](https://github.com/JohnXu22786/adversarial-review) — Provides adversarial multi-perspective code review with parallel lens analysis, static sentinel scanning, severity grading, and review history.
 - [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) — Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — Organizes multiple agents into coordinated teams.
 - [dsh-automation](https://github.com/titanwings/dsh-automation) — Runs scheduled coding work in fresh agent sessions with an auditable history.
@@ -200,7 +201,6 @@ This is the first published directory snapshot: **192 plugins**, grouped into **
 - [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — Implements continual self-evolution for DeepSeek Harness by persisting and refining prompt notes, memories, skills, and subagent specs with rollback and benchmark validation.
 - [context-pruner](https://github.com/JohnXu22786/context-pruner) — A session context triage plugin for DeepSeek Harness that prunes stale, repeated, failed, and oversized context to conserve token budget.
 - [allinluna](https://github.com/zenx0x/allinluna) — Provides resource-aware multi-agent orchestration for DeepSeek Harness.
-- [dsh-browser](https://github.com/Lum1104/dsh-browser) — Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.
 - [openspec-agents](https://github.com/ifrankwang/openspec-agents) — Provides a multi-agent workflow orchestration plugin that drives OpenSpec change specifications through implementation, verification, and review stages.
 - [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) — Provides an AI-driven recruitment workflow covering job requirement analysis, candidate sourcing, resume screening, interview scheduling, and daily reporting.
 

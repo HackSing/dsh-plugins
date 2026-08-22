@@ -119,9 +119,7 @@
 - [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — 提供对话式记账功能，支持收支记录、查询、报表、CSV/HTML导出及月度预算，数据存储于本地SQLite。
 - [apply-patch](https://github.com/JohnXu22786/apply-patch) — 在 DeepSeek Harness 内将统一差异补丁应用到文件系统，支持预演与撤销。
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — 为 DSH 提供侧边栏底座，内置文件管理、编辑、终端、Git 和侧边对话。
-- [review-gate](https://github.com/JohnXu22786/review-gate) — 为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。
 - [safety-net](https://github.com/JohnXu22786/safety-net) — 提供破坏性命令拦截闸门，在执行危险操作前解析命令语义并要求人工确认。
-- [adversarial-review](https://github.com/JohnXu22786/adversarial-review) — 提供对抗式多视角代码审查，支持并行透镜分析、静态哨兵扫描、严重度定级与审查历史。
 - [secret-guard](https://github.com/JohnXu22786/secret-guard) — 为 DeepSeek Harness 提供安全插件，拦截敏感文件访问，掩蔽泄漏的机密，并提供安全的检查工具。
 
 ## 知识与记忆
@@ -183,9 +181,12 @@
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — 读取 Claude Code、Codex 和 opencode 的钩子配置，并在 DeepSeek Harness 中执行这些钩子。
 - [db-connector](https://github.com/JohnXu22786/db-connector) — 为 DeepSeek Harness 提供数据库连接能力，包括 SQLite、PostgreSQL 和 MySQL 连接、模式检查、只读查询、写入审批和 JSONL 审计记录。
 - [browser-automation](https://github.com/JohnXu22786/browser-automation) — 通过 MCP 服务器为 DeepSeek Harness 提供浏览器自动化工具（导航、点击、填表、截图和 JavaScript 执行）。
+- [dsh-browser](https://github.com/Lum1104/dsh-browser) — 提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。
 
 ## 自动化与智能体
 
+- [review-gate](https://github.com/JohnXu22786/review-gate) — 为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。
+- [adversarial-review](https://github.com/JohnXu22786/adversarial-review) — 提供对抗式多视角代码审查，支持并行透镜分析、静态哨兵扫描、严重度定级与审查历史。
 - [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) — 提供可复用、可观察、可治理并支持恢复的多智能体工作流层。
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — 将多个智能体组织为协作团队。
 - [dsh-automation](https://github.com/titanwings/dsh-automation) — 在全新智能体会话中定时执行编码任务，并保留可审计记录。
@@ -200,7 +201,6 @@
 - [dsh-continual-evolve](https://github.com/ZK-Andy/dsh-continual-evolve) — 为 DeepSeek Harness 实现持续自我进化，持久化并优化提示笔记、记忆、技能和子代理规格，支持回滚和基准验证。
 - [context-pruner](https://github.com/JohnXu22786/context-pruner) — 用于 DeepSeek Harness 的会话上下文分诊插件，修剪过期、重复、失败和过大的上下文以节省 token 预算。
 - [allinluna](https://github.com/zenx0x/allinluna) — 为 DeepSeek Harness 提供资源感知的多智能体编排。
-- [dsh-browser](https://github.com/Lum1104/dsh-browser) — 提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。
 - [openspec-agents](https://github.com/ifrankwang/openspec-agents) — 提供多智能体工作流编排插件，将 OpenSpec 变更规范推进到实现、验证与审查阶段。
 - [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) — 提供 AI 驱动的招聘工作流，涵盖岗位梳理、候选人寻源、简历评估、面试安排和日报生成。
 
