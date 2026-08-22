@@ -550,6 +550,15 @@
       "url": "https://github.com/changer-changer/dsh-whale-cards"
     },
     {
+      "category": "interaction",
+      "description_en": "Sets the default starting directory of the dsh workspace directory picker through a settings card and CLI commands.",
+      "description_zh": "通过设置卡片和命令行界面，设置 dsh 工作区目录选择器的默认起始目录。",
+      "name": "dsh-workspace-default-dir",
+      "repository_id": 1340123220,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/dragan2023/dsh-workspace-default-dir"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
