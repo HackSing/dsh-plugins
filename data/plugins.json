@@ -784,6 +784,15 @@
       "url": "https://github.com/JohnXu22786/safety-net"
     },
     {
+      "category": "tools",
+      "description_en": "Provides adversarial multi-perspective code review with parallel lens analysis, static sentinel scanning, severity grading, and review history.",
+      "description_zh": "提供对抗式多视角代码审查，支持并行透镜分析、静态哨兵扫描、严重度定级与审查历史。",
+      "name": "adversarial-review",
+      "repository_id": 1335841150,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/adversarial-review"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
