@@ -83,12 +83,23 @@ class ClassificationTests(unittest.TestCase):
         result = topic_sync.classify(
             repository(description="Experimental utilities", license=None),
             "# Experimental utilities",
-            ["package.json", "src"],
+            [],
             None,
         )
         self.assertEqual(result["status"], "needs_review")
         self.assertIn("missing_detected_license", result["reasons"])
-        self.assertIn("unclear_plugin_evidence", result["reasons"])
+        self.assertIn("missing_plugin_structure", result["reasons"])
+
+    def test_readme_wording_does_not_block_proposal(self):
+        result = topic_sync.classify(
+            repository(
+                description="Steno dsh plugin: inline #tag shorthand expansion.",
+            ),
+            "# steno\n\nPlaceholder regions are opaque: tags inside them are not expanded.",
+            ["cordis.patch.yml", "src"],
+            None,
+        )
+        self.assertEqual(result["status"], "proposed")
 
     def test_model_analysis_enables_observation_candidate(self):
         candidate = topic_sync.classify(

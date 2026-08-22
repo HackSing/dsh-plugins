@@ -63,11 +63,6 @@ LEARNING_WORDS = re.compile(
     r"(?:^|[-_\s])(tutorial|handbook|course|workshop|guide|from[-_\s]?scratch)(?:$|[-_\s])",
     re.IGNORECASE,
 )
-PLANNED_WORDS = re.compile(r"\b(planned|coming soon|placeholder|roadmap only)\b", re.IGNORECASE)
-PLUGIN_EVIDENCE = re.compile(
-    r"\b(dsh[-_ ]plugin|plugin for (?:deepseek harness|dsh)|deepseek harness plugin)\b",
-    re.IGNORECASE,
-)
 MARKETING_WORDS = re.compile(
     r"\b(best|leading|ultimate|revolutionary|powerful|unmatched|fastest)\b|"
     r"最强|领先|革命性|无与伦比|极致",
@@ -435,10 +430,14 @@ class OpenAICompatibleClient:
             "plugin-building tooling). Pick the single category matching the repository's "
             "primary value; when several apply, prefer the one a user would search for first. "
             "Descriptions must be one factual sentence without rankings, marketing "
-            "claims, compatibility claims, or security claims. Use high confidence only when the "
-            "repository clearly contains an installable DeepSeek Harness plugin. evidence must "
-            "always be a JSON array of factual strings. Return exactly one JSON object matching "
-            f"this shape: {schema_example}"
+            "claims, compatibility claims, or security claims. Judge is_plugin and confidence "
+            "from the actual package/manifest structure, source code, and README content, "
+            "regardless of which language the README is written in or which exact words it "
+            "uses. Use high confidence only when the repository clearly contains an installable "
+            "DeepSeek Harness plugin; use is_plugin=false or low confidence when it is still "
+            "just an idea, roadmap, or empty scaffold with no working implementation. evidence "
+            "must always be a JSON array of factual strings. Return exactly one JSON object "
+            f"matching this shape: {schema_example}"
         )
         repository_data = {
             "description": repo.get("description"),
@@ -660,10 +659,6 @@ def classify(
             reasons.append("missing_detected_license")
         if not structure:
             reasons.append("missing_plugin_structure")
-        if PLANNED_WORDS.search(evidence_text):
-            reasons.append("planned_or_placeholder")
-        if not PLUGIN_EVIDENCE.search(evidence_text):
-            reasons.append("unclear_plugin_evidence")
         if reasons:
             status = "needs_review"
         else:
