@@ -59,6 +59,20 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(source, "explicit")
         self.assertEqual(urls, ["https://github.com/example/dsh-plugin"])
 
+    def test_recognizes_the_h2_url_suffixed_issue_variant(self):
+        issue = {
+            "body": (
+                "## Plugin repository URL\n\nhttps://github.com/example/dsh-plugin\n\n"
+                "## Primary value\n\nAdds a useful capability."
+            ),
+            "title": "[Plugin]: dsh-plugin",
+            "labels": [],
+        }
+        self.assertTrue(submission_intake.is_plugin_submission_issue(issue))
+        source, urls = submission_intake.extract_issue_repository_urls(issue)
+        self.assertEqual(source, "explicit")
+        self.assertEqual(urls, ["https://github.com/example/dsh-plugin"])
+
     def test_classifies_published_and_candidate_repositories(self):
         catalog = {
             "plugins": [

@@ -79,8 +79,12 @@ EXPLICIT_REPOSITORY_URL = re.compile(
     r"(https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+(?:\.git)?)",
     re.IGNORECASE,
 )
+ISSUE_REPOSITORY_HEADING = re.compile(
+    r"#{2,3}\s+Plugin repository(?:\s+URL)?\b", re.IGNORECASE
+)
+ISSUE_PRIMARY_VALUE_HEADING = re.compile(r"#{2,3}\s+Primary value\b", re.IGNORECASE)
 ISSUE_REPOSITORY_FIELD = re.compile(
-    r"###\s+Plugin repository\s+"
+    r"#{2,3}\s+Plugin repository(?:\s+URL)?\s+"
     r"(https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+(?:\.git)?)",
     re.IGNORECASE,
 )
@@ -314,8 +318,8 @@ def is_plugin_submission_issue(issue: dict[str, Any]) -> bool:
     body = str(issue.get("body") or "")
     return PLUGIN_SUBMISSION_LABEL in labels or (
         title.casefold().startswith("[plugin]:")
-        and "### Plugin repository" in body
-        and "### Primary value" in body
+        and bool(ISSUE_REPOSITORY_HEADING.search(body))
+        and bool(ISSUE_PRIMARY_VALUE_HEADING.search(body))
     )
 
 
