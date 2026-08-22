@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32561817073 -->
+- Automatically added [dsh-compass](https://github.com/Happy2Git/dsh-compass) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32561770050 -->
 - Automatically added [dock-files](https://github.com/AKS1st/dock-files) to Interaction & Experience from the `dsh-plugin` topic.
 

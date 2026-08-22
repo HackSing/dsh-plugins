@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **193 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **194 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **193 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **193 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **194 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -82,6 +82,7 @@ This is the first published directory snapshot: **193 plugins**, grouped into **
 - [snippet-expander](https://github.com/JohnXu22786/snippet-expander) — Provides inline expansion of #tag shorthands in user messages before they are sent.
 - [dsh-client-ui-voice-input](https://github.com/zjzqs/dsh-client-ui-voice-input) — Adds voice input and prompt optimization buttons to the DeepSeek Harness web composer.
 - [dock-files](https://github.com/AKS1st/dock-files) — Provides a file explorer panel for browsing, managing, and opening files within a DSH session.
+- [dsh-compass](https://github.com/Happy2Git/dsh-compass) — Adds a right-side panel with directory browser, injected context display, and read-only Git graph to the DeepSeek Harness web interface.
 
 ## Tools & Capabilities
 
