@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562556622 -->
+- Automatically added [dsh-prune-guide](https://github.com/uckkk/dsh-prune-guide) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32562513245 -->
 - Automatically added [dsh-postman](https://github.com/zhousun55-byte/dsh-postman) to Interaction & Experience from the `dsh-plugin` topic.
 
