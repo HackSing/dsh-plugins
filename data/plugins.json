@@ -496,6 +496,15 @@
       "url": "https://github.com/zhousun55-byte/dsh-postman"
     },
     {
+      "category": "interaction",
+      "description_en": "Forces the DSH web workspace directory picker to use the in-app browse interaction, enabling remote browser access.",
+      "description_zh": "强制 DSH 网页工作区目录选择器使用应用内浏览交互，使其可在远程浏览器中使用。",
+      "name": "dsh-remote-dir-picker",
+      "repository_id": 1336117987,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/gfds2005/dsh-remote-dir-picker"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

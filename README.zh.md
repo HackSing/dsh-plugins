@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **210 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **211 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **210 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **211 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -86,6 +86,7 @@
 - [dsh-dir-tree](https://github.com/bentong-chain/dsh-dir-tree) — 为 DeepSeek Harness 提供浮窗工作区目录树，支持将文件与文件夹路径拖拽到聊天输入框。
 - [dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — 在 DeepSeek Harness 网页界面中加载 Wallpaper Engine .mpkg 文件和 Steam 创意工坊文件夹作为动态、视频、网页或场景壁纸。
 - [dsh-postman](https://github.com/zhousun55-byte/dsh-postman) — 为 DeepSeek Harness 增加会话内上传命令，图片作为消息附件发送，文本文件内容写入输入框。
+- [dsh-remote-dir-picker](https://github.com/gfds2005/dsh-remote-dir-picker) — 强制 DSH 网页工作区目录选择器使用应用内浏览交互，使其可在远程浏览器中使用。
 
 ## 工具与能力
 
