@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **205 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **206 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **205 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **205 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **206 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -133,6 +133,7 @@ This is the first published directory snapshot: **205 plugins**, grouped into **
 - [dsh-host-guide](https://github.com/uckkk/dsh-host-guide) — Returns family dinner hosting plans based on input parameters.
 - [dsh-init-command](https://github.com/LittleFishStars/dsh-init-command) — Adds an /init slash command that generates an AGENTS.md guide for the current project using a two-stage model call.
 - [dsh-need-finder](https://github.com/863683348/dsh-need-finder) — Provides a plugin guide tool that matches natural-language needs to a curated plugin directory with reasons and install commands.
+- [dsh-open-in](https://github.com/NevermindZZT/dsh-open-in) — Lets users open a DeepSeek Harness workspace directory in an external launcher such as VS Code, file explorer, or a terminal from the web GUI.
 
 ## Knowledge & Memory
 
