@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32563031740 -->
+- Automatically added [dsh-whale-cards](https://github.com/changer-changer/dsh-whale-cards) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32563003471 -->
 - Automatically added [dsh-weekly-hot](https://github.com/XCNXNXNX/dsh-weekly-hot) to Interaction & Experience from the `dsh-plugin` topic.
 

@@ -541,6 +541,15 @@
       "url": "https://github.com/XCNXNXNX/dsh-weekly-hot"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides a local-first DeepSeek Harness web plugin with curated mini-games and an AI companion character.",
+      "description_zh": "为 DeepSeek Harness 提供本地优先的网页插件，包含精选小游戏和 AI 陪伴角色。",
+      "name": "dsh-whale-cards",
+      "repository_id": 1337979682,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/changer-changer/dsh-whale-cards"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
