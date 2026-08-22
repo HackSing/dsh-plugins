@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **204 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **205 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **204 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **205 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -132,6 +132,7 @@
 - [dsh-emotion-guide](https://github.com/uckkk/dsh-emotion-guide) — 提供情绪引导工具，根据参数返回亲子教育方案。
 - [dsh-host-guide](https://github.com/uckkk/dsh-host-guide) — 根据输入参数返回家庭聚餐待客方案。
 - [dsh-init-command](https://github.com/LittleFishStars/dsh-init-command) — 添加 /init 斜杠命令，通过两阶段模型调用为当前项目生成 AGENTS.md 指南。
+- [dsh-need-finder](https://github.com/863683348/dsh-need-finder) — 提供一个插件导购工具，将自然语言需求与精选插件目录进行匹配，并给出理由和安装命令。
 
 ## 知识与记忆
 
