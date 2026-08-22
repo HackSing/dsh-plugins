@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32560040465 -->
+- Automatically added [snippet-expander](https://github.com/JohnXu22786/snippet-expander) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32559998327 -->
 - Automatically added [session-titler](https://github.com/JohnXu22786/session-titler) to Interaction & Experience from the `dsh-plugin` topic.
 

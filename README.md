@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **184 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **185 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **184 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **184 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **185 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -79,6 +79,7 @@ This is the first published directory snapshot: **184 plugins**, grouped into **
 - [working-activity](https://github.com/ccch1mneyyy/working-activity) — Provides a DeepSeek Harness plugin that renders a real-time working status line with agent activity, tool progress, and context alerts.
 - [computer-control](https://github.com/JohnXu22786/computer-control) — Provides desktop control capabilities including screen capture, pointer and keyboard injection, and accessibility-tree semantic actions for DSH agents.
 - [session-titler](https://github.com/JohnXu22786/session-titler) — Generates automatic session titles using a two-phase pipeline: instant keyword captions while active and budget-model refinement when idle.
+- [snippet-expander](https://github.com/JohnXu22786/snippet-expander) — Provides inline expansion of #tag shorthands in user messages before they are sent.
 
 ## Tools & Capabilities
 

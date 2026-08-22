@@ -433,6 +433,15 @@
       "url": "https://github.com/JohnXu22786/session-titler"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides inline expansion of #tag shorthands in user messages before they are sent.",
+      "description_zh": "在消息发送前将 #tag 简写扩展为完整内容。",
+      "name": "snippet-expander",
+      "repository_id": 1335842036,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/snippet-expander"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
