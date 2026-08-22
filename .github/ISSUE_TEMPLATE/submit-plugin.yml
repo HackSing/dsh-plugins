@@ -24,6 +24,9 @@ body:
       options:
         - Interaction & Experience / 交互与体验
         - Tools & Capabilities / 工具与能力
+        - Knowledge & Memory / 知识与记忆
+        - Content & Creation / 内容与创作
+        - Integrations & Connectors / 集成与连接
         - Automation & Agents / 自动化与智能体
         - Development & Ecosystem / 开发与生态集成
     validations:

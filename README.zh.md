@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **181 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **181 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,14 +17,17 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **181 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **181 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
 - [交互与体验](#交互与体验)：界面、会话、导航、分享及趣味体验
-- [工具与能力](#工具与能力)：视觉、数据、文档、通用工具及模型能力扩展
+- [工具与能力](#工具与能力)：无依赖的单一功能工具
+- [知识与记忆](#知识与记忆)：知识库、检索增强生成与跨会话记忆
+- [内容与创作](#内容与创作)：文档、演示文稿、视觉与多媒体生成
+- [集成与连接](#集成与连接)：MCP 服务器、外部系统桥接与数据同步
 - [自动化与智能体](#自动化与智能体)：工作流、多智能体、定时执行及研究闭环
-- [开发与生态集成](#开发与生态集成)：平台集成、运行时、沙箱、诊断及插件开发
+- [开发与生态集成](#开发与生态集成)：运行时、沙箱、诊断及插件开发
 
 ## 交互与体验
 
@@ -78,10 +81,7 @@
 
 ## 工具与能力
 
-- [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — 为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) — 通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。
-- [dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — 提供无障碍优先的 macOS 控制，并包含状态新鲜度检查和权限约束。
-- [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) — 让 AI 工作流连接数据库并编写 SQL。
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) — 集成时间、编码、JSON、计算、CSV、正则、Markdown、差异、统计和 Schema 十类零依赖工具。
 - [dsh-tool-csv](https://github.com/omdsh-dev/dsh-tool-csv) — 零依赖解析、查询、聚合和转换 RFC 4180 CSV。
 - [dsh-tool-calculator](https://github.com/omdsh-dev/dsh-tool-calculator) — 使用递归下降解析器安全计算数学表达式。
@@ -93,72 +93,84 @@
 - [dsh-tool-schema](https://github.com/omdsh-dev/dsh-tool-schema) — 支持 JSON Schema 验证、路径查看、解释及规范化。
 - [dsh-tool-stat](https://github.com/omdsh-dev/dsh-tool-stat) — 计算描述统计、百分位数、频数分布和相关性。
 - [dsh-tool-time](https://github.com/omdsh-dev/dsh-tool-time) — 解析 ISO 8601 时间、转换 IANA 时区并执行 UTC 日历运算。
-- [dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) — 从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。
-- [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 将 MineRU 文档解析工具提供给模型使用。
 - [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — 为每个智能体提供按需工具发现和渐进式 Schema 展开。
-- [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — 通过 OpenMAIC 提供课堂、幻灯片、交互组件和苏格拉底式教学流程。
-- [dsh-scholar](https://github.com/lzszq/dsh-scholar) — 提供面向学术场景的辅助能力。
-- [dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 为 DeepSeek Harness 提供六个邮件工具（列表、读取、搜索、发送、文件夹、附件），支持多账号及常见邮箱服务商预设。
 - [widget-dock](https://github.com/MorGogh/widget-dock) — 为 DeepSeek Harness 提供可拖拽的小组件面板，展示余额、令牌、统计、命令、目标和成本。
-- [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — 提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。
 - [dsh-plugins-store](https://github.com/ZASENJC/dsh-plugins-store) — 自动收录和分类 GitHub dsh-plugin Topic 项目的静态目录网站，并提供用于在 DSH 中浏览目录的可选 Web 插件。
 - [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — 在导出前对 DeepSeek Harness 会话遥测中的敏感值进行脱敏处理。
-- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — 将多种AI代理工具的历史会话导入DeepSeek Harness以继续对话。
 - [amber-protocol](https://github.com/Bandersnatch0x/amber-protocol) — 为编码代理提供仓库本地治理，并包含 DeepSeek Harness 补丁覆盖层。
-- [argo](https://github.com/taxueseek/argo) — 为 AI Agent 提供多语言搜索与证据核验工具。
-- [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — 为AI编程代理生成、渲染和视觉复检Mermaid图表。
 - [deepseek-harness-skillx](https://github.com/drowned-fish1/deepseek-harness-skillx) — 一个 DeepSeek Harness 插件，指导智能体安全地发现、评估并采用外部 Agent Skills。
-- [knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) — 实现基于双知识图谱的Markdown笔记检索，提供MCP搜索与反馈工具。
-- [modlens](https://github.com/liustack/modlens) — 一个 DeepSeek Harness 插件，通过将粘贴的图片转换为结构化 JSON 证据来提供图像理解能力。
-- [modsearch](https://github.com/liustack/modsearch) — 为 DeepSeek Harness 添加网页搜索、X（推特）搜索与页面抓取工具，支持多种引擎。
-- [pptfast](https://github.com/liustack/pptfast) — 通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。
-- [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — 提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。
 - [uagent-sync](https://github.com/severin-ye/uagent-sync) — 提供命令行工具，用于备份、恢复和同步代理工作区配置与数据。
 - [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 为 DeepSeek Harness 提供登录网关和多用户账户管理功能。
 - [agent-jit](https://github.com/sybolization/agent-jit) — 提供一个 DeepSeek Harness 插件，将确定性代理执行路径编译为 DSL 程序并直接执行。
 - [clawock](https://github.com/KCNyu/clawock) — 提供可移植的投资决策工作流插件套件，包含 Python 源码和命令行工具。
+- [file-planning](https://github.com/JohnXu22786/file-planning) — 提供基于磁盘持久化的执行规划，包含里程碑、步骤状态机和审计事件。
+- [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — 为 DeepSeek Harness 提供任务隔离的 git 工作区管理工具，包括创建、同步、收尾和批量清理操作。
+- [command-scout](https://github.com/JohnXu22786/command-scout) — 扫描项目构建声明文件并将发现的命令作为代理工具暴露。
+- [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 在 DeepSeek Harness 中提供多代理数学问题求解与验证框架。
+- [agentshim](https://github.com/possible055/agentshim) — 为编码代理提供代码库工具和进程执行功能，并包含 DSH 原生适配器。
+- [ouroboros](https://github.com/Q00/ouroboros) — 通过内置的 dsh 插件，在 DeepSeek Harness 聊天中启用 Ouroboros 的 interview 和 auto 工作流命令。
+- [beautiCode](https://github.com/starsstreaming/beautiCode) — 为DeepSeek Harness网页界面添加可定制的图片和视频背景。
+- [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) — 实现一个风险感知的审批层，在DeepSeek Harness中追踪数据来源并在工具执行前应用策略决策。
+- [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — 一个包含88个智能体技能的集合，涵盖研究、社交智能、营销和业务流程。
+- [net-debug](https://github.com/JohnXu22786/net-debug) — 为 DeepSeek Harness 提供 HTTP 调试工具，包括通用 HTTP 客户端、带重放功能的请求历史以及响应检查。
+- [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — 提供对话式记账功能，支持收支记录、查询、报表、CSV/HTML导出及月度预算，数据存储于本地SQLite。
+- [apply-patch](https://github.com/JohnXu22786/apply-patch) — 在 DeepSeek Harness 内将统一差异补丁应用到文件系统，支持预演与撤销。
+- [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — 为 DSH 提供侧边栏底座，内置文件管理、编辑、终端、Git 和侧边对话。
+
+## 知识与记忆
+
+- [dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) — 从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。
+- [dsh-scholar](https://github.com/lzszq/dsh-scholar) — 提供面向学术场景的辅助能力。
+- [argo](https://github.com/taxueseek/argo) — 为 AI Agent 提供多语言搜索与证据核验工具。
+- [knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) — 实现基于双知识图谱的Markdown笔记检索，提供MCP搜索与反馈工具。
+- [docs-retriever](https://github.com/JohnXu22786/docs-retriever) — 实现一个MCP服务器，用于检索版本化库文档，提供目录查询、版本列表和文档提取工具。
+- [codegraph](https://github.com/JohnXu22786/codegraph) — 提供代码知识图谱，将符号、调用点和导入索引到SQLite，并通过CLI或stdio MCP工具服务器回答结构性问题。
+- [task-board](https://github.com/JohnXu22786/task-board) — 为 DeepSeek Harness 提供跨会话事件溯源任务面板，支持任务跟踪、审计历史和看板导出。
+- [Co-Engram](https://github.com/Co-Engram/Co-Engram) — 为AI代理和团队提供自进化记忆系统，以Markdown文件存储记忆，并随时间进行强化和衰减。
+- [MemOS](https://github.com/MemTensor/MemOS) — 为AI智能体提供持久记忆管理的记忆操作系统，包含本地和云插件组件。
+- [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — 为 DeepSeek Harness 添加跨会话记忆、待办管理、技能管理器、会话协作等功能增强。
+- [docindex](https://github.com/JohnXu22786/docindex) — 提供工作区文档的本地语义索引，支持词法和语义混合检索及行号引用。
+- [session-export](https://github.com/JohnXu22786/session-export) — 通过新的工具和斜杠命令为DeepSeek Harness添加会话导出、脱敏和合规归档功能。
+
+## 内容与创作
+
+- [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — 为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。
+- [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 将 MineRU 文档解析工具提供给模型使用。
+- [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — 通过 OpenMAIC 提供课堂、幻灯片、交互组件和苏格拉底式教学流程。
+- [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — 提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。
+- [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — 为AI编程代理生成、渲染和视觉复检Mermaid图表。
+- [modlens](https://github.com/liustack/modlens) — 一个 DeepSeek Harness 插件，通过将粘贴的图片转换为结构化 JSON 证据来提供图像理解能力。
+- [pptfast](https://github.com/liustack/pptfast) — 通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。
+- [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — 提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。
 - [DeepSeek-PPT-skill](https://github.com/lecutu/dsh-slide-reflex) — 通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。
 - [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — 为 DeepSeek Harness 添加 prism_see 工具和图片识别能力。
 - [gongwen-skill](https://github.com/linhut/gongwen-skill) — 提供中文公文处理工具，支持 DSH 技能与 Cordis 插件集成。
-- [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — 提供 DeepSeek Harness 插件包，通过 MCP 暴露代理运行时管理工具。
 - [sidesight](https://github.com/ZhuXinAI/sidesight) — 提供CLI命令，使用多模态模型分析截图、示意图、图表、UI差异和视频。
 - [write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) — 提供中文长剧本创作技能，包含项目初始化、上下文构建、校验与审查脚本，适用于兼容 SKILL.md 的智能体。
-- [docs-retriever](https://github.com/JohnXu22786/docs-retriever) — 实现一个MCP服务器，用于检索版本化库文档，提供目录查询、版本列表和文档提取工具。
-- [codegraph](https://github.com/JohnXu22786/codegraph) — 提供代码知识图谱，将符号、调用点和导入索引到SQLite，并通过CLI或stdio MCP工具服务器回答结构性问题。
-- [file-planning](https://github.com/JohnXu22786/file-planning) — 提供基于磁盘持久化的执行规划，包含里程碑、步骤状态机和审计事件。
+- [gamify-edu](https://github.com/BinLe1988/gamify-edu) — 作为DeepSeek Harness客户端插件，提供游戏化教育平台。
+- [geo-content-optimizer](https://github.com/wangzhuo-coding/geo-content-optimizer) — 为DeepSeek Harness提供GEO内容优化能力，包括文档解析、流水线执行和联网搜索工具。
+- [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — 为DeepSeek Harness代理提供基于RIFE模型的视频帧插值工具。
+- [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — 仓库包含桌面版 AI 小说创作应用及用于 DeepSeek Harness Web 的小说创作插件。
+- [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — 为 DeepSeek Harness 提供视觉模型适配器，将图片任务路由至 PaddleOCR-VL 和 Qwen。
+
+## 集成与连接
+
+- [dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — 提供无障碍优先的 macOS 控制，并包含状态新鲜度检查和权限约束。
+- [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) — 让 AI 工作流连接数据库并编写 SQL。
+- [dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 为 DeepSeek Harness 提供六个邮件工具（列表、读取、搜索、发送、文件夹、附件），支持多账号及常见邮箱服务商预设。
+- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — 将多种AI代理工具的历史会话导入DeepSeek Harness以继续对话。
+- [modsearch](https://github.com/liustack/modsearch) — 为 DeepSeek Harness 添加网页搜索、X（推特）搜索与页面抓取工具，支持多种引擎。
+- [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — 提供 DeepSeek Harness 插件包，通过 MCP 暴露代理运行时管理工具。
 - [fs-mcp](https://github.com/JohnXu22786/fs-mcp) — 为代理提供受限的文件系统 MCP 服务器，在可配置区域内提供文件读写、搜索和元数据操作。
-- [task-board](https://github.com/JohnXu22786/task-board) — 为 DeepSeek Harness 提供跨会话事件溯源任务面板，支持任务跟踪、审计历史和看板导出。
 - [pty-runner](https://github.com/JohnXu22786/pty-runner) — 为 DeepSeek Harness 提供后台终端作业管理，支持 PTY 进程启动、输入、输出分页和作业控制。
 - [github-mcp](https://github.com/JohnXu22786/github-mcp) — 一个 DeepSeek Harness 插件，打包了暴露 GitHub 仓库、议题、拉取请求、审查和搜索工具的 MCP 服务器。
-- [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — 为 DeepSeek Harness 提供任务隔离的 git 工作区管理工具，包括创建、同步、收尾和批量清理操作。
-- [command-scout](https://github.com/JohnXu22786/command-scout) — 扫描项目构建声明文件并将发现的命令作为代理工具暴露。
 - [dsh-Api-monitor](https://github.com/linshufan21/dsh-Api-monitor) — 在 DeepSeek Harness 设置面板中新增 API 余额与 Token 用量监测模块。
 - [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) — 提供一个DeepSeek Harness插件包，通过MCP服务器暴露shell、文件、浏览器和远程机器工具。
 - [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — 提供本地 HTTP 服务，使 AI 代理能够运行 Stata，并以 DeepSeek Harness 插件形式分发。
-- [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 在 DeepSeek Harness 中提供多代理数学问题求解与验证框架。
 - [TokenLedger](https://github.com/zh667/TokenLedger) — 为 DeepSeek Harness 记录令牌用量并按中转站归属，支持余额与配额查询。
-- [agentshim](https://github.com/possible055/agentshim) — 为编码代理提供代码库工具和进程执行功能，并包含 DSH 原生适配器。
-- [gamify-edu](https://github.com/BinLe1988/gamify-edu) — 作为DeepSeek Harness客户端插件，提供游戏化教育平台。
-- [geo-content-optimizer](https://github.com/wangzhuo-coding/geo-content-optimizer) — 为DeepSeek Harness提供GEO内容优化能力，包括文档解析、流水线执行和联网搜索工具。
-- [ouroboros](https://github.com/Q00/ouroboros) — 通过内置的 dsh 插件，在 DeepSeek Harness 聊天中启用 Ouroboros 的 interview 和 auto 工作流命令。
-- [beautiCode](https://github.com/starsstreaming/beautiCode) — 为DeepSeek Harness网页界面添加可定制的图片和视频背景。
-- [Co-Engram](https://github.com/Co-Engram/Co-Engram) — 为AI代理和团队提供自进化记忆系统，以Markdown文件存储记忆，并随时间进行强化和衰减。
-- [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) — 实现一个风险感知的审批层，在DeepSeek Harness中追踪数据来源并在工具执行前应用策略决策。
-- [MemOS](https://github.com/MemTensor/MemOS) — 为AI智能体提供持久记忆管理的记忆操作系统，包含本地和云插件组件。
-- [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — 为DeepSeek Harness代理提供基于RIFE模型的视频帧插值工具。
-- [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — 仓库包含桌面版 AI 小说创作应用及用于 DeepSeek Harness Web 的小说创作插件。
-- [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — 为 DeepSeek Harness 添加跨会话记忆、待办管理、技能管理器、会话协作等功能增强。
-- [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — 一个包含88个智能体技能的集合，涵盖研究、社交智能、营销和业务流程。
 - [rss-digest](https://github.com/JohnXu22786/rss-digest) — 提供RSS/Atom订阅、定时抓取、去重、LLM摘要和每日Markdown简报功能。
-- [docindex](https://github.com/JohnXu22786/docindex) — 提供工作区文档的本地语义索引，支持词法和语义混合检索及行号引用。
-- [net-debug](https://github.com/JohnXu22786/net-debug) — 为 DeepSeek Harness 提供 HTTP 调试工具，包括通用 HTTP 客户端、带重放功能的请求历史以及响应检查。
 - [market-watch](https://github.com/JohnXu22786/market-watch) — 为 DeepSeek Harness 实现金融行情监控，提供实时报价、本地自选列表、阈值提醒、定期轮询以及 A 股、指数和加密货币的 ASCII/mermaid 图表。
-- [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — 提供对话式记账功能，支持收支记录、查询、报表、CSV/HTML导出及月度预算，数据存储于本地SQLite。
-- [apply-patch](https://github.com/JohnXu22786/apply-patch) — 在 DeepSeek Harness 内将统一差异补丁应用到文件系统，支持预演与撤销。
-- [session-export](https://github.com/JohnXu22786/session-export) — 通过新的工具和斜杠命令为DeepSeek Harness添加会话导出、脱敏和合规归档功能。
 - [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — 将 OpenAI Codex 项目、聊天、技能和 MCP 服务器与 DeepSeek Harness 同步。
-- [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — 为 DSH 提供侧边栏底座，内置文件管理、编辑、终端、Git 和侧边对话。
-- [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — 为 DeepSeek Harness 提供视觉模型适配器，将图片任务路由至 PaddleOCR-VL 和 Qwen。
 - [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — 为 DeepSeek Harness 提供 Wind AIFin MCP 集成和 Alice 工作流。
 
 ## 自动化与智能体

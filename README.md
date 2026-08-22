@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **181 plugins** across four broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **181 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,14 +17,17 @@ Explore **181 plugins** across four broad areas. Each plugin appears once, under
 
 ### Current snapshot
 
-This is the first published directory snapshot: **181 plugins**, grouped into **4 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **181 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
 - [Interaction & Experience](#interaction--experience) — interfaces, conversations, navigation, sharing, and playful additions
-- [Tools & Capabilities](#tools--capabilities) — vision, data, documents, utilities, and model-facing tools
+- [Tools & Capabilities](#tools--capabilities) — dependency-free, single-purpose utilities
+- [Knowledge & Memory](#knowledge--memory) — knowledge bases, retrieval, and cross-session memory
+- [Content & Creation](#content--creation) — documents, presentations, vision, and media generation
+- [Integrations & Connectors](#integrations--connectors) — MCP servers, external system bridges, and data sync
 - [Automation & Agents](#automation--agents) — workflows, multi-agent coordination, scheduled runs, and research loops
-- [Development & Ecosystem](#development--ecosystem) — integrations, runtimes, sandboxes, diagnostics, and plugin development
+- [Development & Ecosystem](#development--ecosystem) — runtimes, sandboxes, diagnostics, and plugin development
 
 ## Interaction & Experience
 
@@ -78,10 +81,7 @@ This is the first published directory snapshot: **181 plugins**, grouped into **
 
 ## Tools & Capabilities
 
-- [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) — Creates and manages sandboxed JavaScript tools through a Monaco-based editor.
-- [dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — Provides accessibility-first macOS control with fresh-state checks and scoped permissions.
-- [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) — Connects AI workflows to databases and SQL authoring.
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) — Bundles ten dependency-free utilities for time, encoding, JSON, math, CSV, regex, Markdown, diffs, statistics, and schemas.
 - [dsh-tool-csv](https://github.com/omdsh-dev/dsh-tool-csv) — Parses, queries, aggregates, and converts RFC 4180 CSV without dependencies.
 - [dsh-tool-calculator](https://github.com/omdsh-dev/dsh-tool-calculator) — Evaluates mathematical expressions with a dependency-free recursive-descent parser.
@@ -93,72 +93,84 @@ This is the first published directory snapshot: **181 plugins**, grouped into **
 - [dsh-tool-schema](https://github.com/omdsh-dev/dsh-tool-schema) — Validates, explores, explains, and normalizes JSON Schema data.
 - [dsh-tool-stat](https://github.com/omdsh-dev/dsh-tool-stat) — Calculates descriptive statistics, percentiles, frequency distributions, and correlations.
 - [dsh-tool-time](https://github.com/omdsh-dev/dsh-tool-time) — Parses ISO 8601 values, converts IANA time zones, and performs UTC calendar arithmetic.
-- [dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) — Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.
-- [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — Makes MineRU document-parsing tools available to the model.
 - [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) — Discovers tools on demand for each agent with progressive schema disclosure.
-- [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — Adds classrooms, slides, interactive widgets, and Socratic teaching flows through OpenMAIC.
-- [dsh-scholar](https://github.com/lzszq/dsh-scholar) — Provides academic-assistant capabilities.
-- [dsh-email](https://github.com/STARDUSTLC666/dsh-email) — Provides six email tools (list, read, search, send, folders, attachment) for DeepSeek Harness with multi-account support and presets for common email providers.
 - [widget-dock](https://github.com/MorGogh/widget-dock) — Provides a draggable widget dock for DeepSeek Harness showing balance, tokens, stats, commands, goals, and cost.
-- [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.
 - [dsh-plugins-store](https://github.com/ZASENJC/dsh-plugins-store) — A static directory that automatically collects and categorizes GitHub dsh-plugin topic repositories, and includes an optional DSH web plugin for browsing the catalog.
 - [dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — Redacts sensitive values from DeepSeek Harness session telemetry before export.
-- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — Imports conversation histories from various AI agent tools into DeepSeek Harness for continued chat.
 - [amber-protocol](https://github.com/Bandersnatch0x/amber-protocol) — Provides repository-local governance for coding agents with a DeepSeek Harness patch overlay.
-- [argo](https://github.com/taxueseek/argo) — Provides a multilingual search and evidence-verification tool for AI agents.
-- [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — Generates, renders, and visually reviews Mermaid diagrams for AI coding agents.
 - [deepseek-harness-skillx](https://github.com/drowned-fish1/deepseek-harness-skillx) — A DeepSeek Harness plugin that guides agents to safely discover, assess, and adopt external Agent Skills.
-- [knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) — Implements dual knowledge-graph retrieval over Markdown notes, exposing MCP tools for search and feedback.
-- [modlens](https://github.com/liustack/modlens) — A plugin for DeepSeek Harness that provides image understanding by converting pasted images into structured JSON evidence.
-- [modsearch](https://github.com/liustack/modsearch) — Adds web search, X (Twitter) search, and page fetching tools to DeepSeek Harness through multiple engines.
-- [pptfast](https://github.com/liustack/pptfast) — Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.
-- [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.
 - [uagent-sync](https://github.com/severin-ye/uagent-sync) — Provides command-line tools for backing up, restoring, and synchronizing agent workspace configuration and data.
 - [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — Provides a login gateway and multi-user account management for DeepSeek Harness.
 - [agent-jit](https://github.com/sybolization/agent-jit) — Provides a DeepSeek Harness plugin that compiles deterministic agent execution paths into DSL programs for direct execution.
 - [clawock](https://github.com/KCNyu/clawock) — Provides a portable investment decision workflow plugin kit with Python source and a command line interface.
+- [file-planning](https://github.com/JohnXu22786/file-planning) — Provides disk-persisted execution planning with milestones, step state machines, and audit events.
+- [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — Provides task-isolated git worktree management tools for DeepSeek Harness, including create, sync, finish, and batch cleanup operations.
+- [command-scout](https://github.com/JohnXu22786/command-scout) — Scans project build declaration files and exposes the found commands as agent tools.
+- [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — Provides a multi-agent framework for solving and verifying mathematical problems within DeepSeek Harness.
+- [agentshim](https://github.com/possible055/agentshim) — Provides repository tools and process execution for coding agents, with a DSH native adapter included.
+- [ouroboros](https://github.com/Q00/ouroboros) — Enables Ouroboros interview and auto workflow commands within DeepSeek Harness chat via a bundled dsh plugin.
+- [beautiCode](https://github.com/starsstreaming/beautiCode) — Adds customizable image and video backgrounds to the DeepSeek Harness web interface.
+- [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) — Implements a risk-aware approval layer that tracks data provenance and applies policy decisions before tool execution in DeepSeek Harness.
+- [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — A collection of 88 agent skills covering research, social intelligence, marketing, and business workflows.
+- [net-debug](https://github.com/JohnXu22786/net-debug) — Adds HTTP debugging tools to DeepSeek Harness, including a general-purpose HTTP client, request history with replay, and response inspection.
+- [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — Provides conversational bookkeeping with expense and income recording, querying, reporting, CSV/HTML export, and monthly budgets using a local SQLite ledger.
+- [apply-patch](https://github.com/JohnXu22786/apply-patch) — Applies unified diffs to the filesystem inside DeepSeek Harness with dry-run and undo support.
+- [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — Provides a sidebar foundation with built-in file management, editing, terminal, Git, and side chat for DSH.
+
+## Knowledge & Memory
+
+- [dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) — Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.
+- [dsh-scholar](https://github.com/lzszq/dsh-scholar) — Provides academic-assistant capabilities.
+- [argo](https://github.com/taxueseek/argo) — Provides a multilingual search and evidence-verification tool for AI agents.
+- [knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) — Implements dual knowledge-graph retrieval over Markdown notes, exposing MCP tools for search and feedback.
+- [docs-retriever](https://github.com/JohnXu22786/docs-retriever) — Implements an MCP server for retrieving versioned library documentation, with tools for catalog lookup, release listing, and doc extraction.
+- [codegraph](https://github.com/JohnXu22786/codegraph) — Provides a code knowledge graph that indexes symbols, call sites, and imports into SQLite and answers structural questions through CLI or a stdio MCP tool server.
+- [task-board](https://github.com/JohnXu22786/task-board) — Provides a cross-session event-sourced task board for DeepSeek Harness, supporting task tracking, audit history, and kanban export.
+- [Co-Engram](https://github.com/Co-Engram/Co-Engram) — Provides a self-evolving team memory system for AI agents, storing memories as Markdown files with reinforcement and decay over time.
+- [MemOS](https://github.com/MemTensor/MemOS) — Provides a memory operating system for AI agents, including local and cloud plugin components for persistent memory management.
+- [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — Adds cross-session memory, todo management, skill manager, session collaboration, and other enhancement features to DeepSeek Harness.
+- [docindex](https://github.com/JohnXu22786/docindex) — Provides a local semantic index over workspace documents with hybrid lexical-semantic retrieval and line-numbered citations.
+- [session-export](https://github.com/JohnXu22786/session-export) — Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.
+
+## Content & Creation
+
+- [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.
+- [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — Makes MineRU document-parsing tools available to the model.
+- [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — Adds classrooms, slides, interactive widgets, and Socratic teaching flows through OpenMAIC.
+- [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.
+- [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — Generates, renders, and visually reviews Mermaid diagrams for AI coding agents.
+- [modlens](https://github.com/liustack/modlens) — A plugin for DeepSeek Harness that provides image understanding by converting pasted images into structured JSON evidence.
+- [pptfast](https://github.com/liustack/pptfast) — Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.
+- [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.
 - [DeepSeek-PPT-skill](https://github.com/lecutu/dsh-slide-reflex) — Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.
 - [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — Adds a prism_see tool and VEP image recognition capability to DeepSeek Harness.
 - [gongwen-skill](https://github.com/linhut/gongwen-skill) — Provides a Chinese official document processing tool with DSH skill and Cordis plugin integration.
-- [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — Provides a DeepSeek Harness plugin bundle that exposes agent runtime management tools through MCP.
 - [sidesight](https://github.com/ZhuXinAI/sidesight) — Provides CLI commands for analyzing screenshots, diagrams, charts, UI diffs, and videos with multimodal models.
 - [write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) — Provides a Chinese long-screenplay writing skill with project initialization, context building, validation, and review scripts for SKILL.md-compatible agents.
-- [docs-retriever](https://github.com/JohnXu22786/docs-retriever) — Implements an MCP server for retrieving versioned library documentation, with tools for catalog lookup, release listing, and doc extraction.
-- [codegraph](https://github.com/JohnXu22786/codegraph) — Provides a code knowledge graph that indexes symbols, call sites, and imports into SQLite and answers structural questions through CLI or a stdio MCP tool server.
-- [file-planning](https://github.com/JohnXu22786/file-planning) — Provides disk-persisted execution planning with milestones, step state machines, and audit events.
+- [gamify-edu](https://github.com/BinLe1988/gamify-edu) — Provides a gamified educational platform as a DeepSeek Harness client plugin.
+- [geo-content-optimizer](https://github.com/wangzhuo-coding/geo-content-optimizer) — Provides GEO content optimization capabilities for DeepSeek Harness, including document parsing, pipeline execution, and web search tools.
+- [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — Provides video frame interpolation tools for DeepSeek Harness agents using RIFE models.
+- [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.
+- [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — Provides a visual model adapter that routes image tasks to PaddleOCR-VL and Qwen for DeepSeek Harness.
+
+## Integrations & Connectors
+
+- [dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — Provides accessibility-first macOS control with fresh-state checks and scoped permissions.
+- [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) — Connects AI workflows to databases and SQL authoring.
+- [dsh-email](https://github.com/STARDUSTLC666/dsh-email) — Provides six email tools (list, read, search, send, folders, attachment) for DeepSeek Harness with multi-account support and presets for common email providers.
+- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — Imports conversation histories from various AI agent tools into DeepSeek Harness for continued chat.
+- [modsearch](https://github.com/liustack/modsearch) — Adds web search, X (Twitter) search, and page fetching tools to DeepSeek Harness through multiple engines.
+- [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — Provides a DeepSeek Harness plugin bundle that exposes agent runtime management tools through MCP.
 - [fs-mcp](https://github.com/JohnXu22786/fs-mcp) — Provides a constrained filesystem MCP server for agents, exposing file read/write, search, and metadata operations within configurable zones.
-- [task-board](https://github.com/JohnXu22786/task-board) — Provides a cross-session event-sourced task board for DeepSeek Harness, supporting task tracking, audit history, and kanban export.
 - [pty-runner](https://github.com/JohnXu22786/pty-runner) — Provides background terminal job management for DeepSeek Harness with PTY-based process launching, input, output paging, and job control.
 - [github-mcp](https://github.com/JohnXu22786/github-mcp) — A DeepSeek Harness plugin bundling an MCP server that exposes GitHub repository, issue, pull request, review, and search tools.
-- [worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — Provides task-isolated git worktree management tools for DeepSeek Harness, including create, sync, finish, and batch cleanup operations.
-- [command-scout](https://github.com/JohnXu22786/command-scout) — Scans project build declaration files and exposes the found commands as agent tools.
 - [dsh-Api-monitor](https://github.com/linshufan21/dsh-Api-monitor) — Adds an API balance and token usage monitoring module to the DeepSeek Harness settings panel.
 - [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) — Provides a DeepSeek Harness plugin bundle that exposes shell, file, browser, and remote machine tools via an MCP server.
 - [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) — Provides a native localhost HTTP service for AI agents to run Stata, distributed as a DeepSeek Harness plugin.
-- [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — Provides a multi-agent framework for solving and verifying mathematical problems within DeepSeek Harness.
 - [TokenLedger](https://github.com/zh667/TokenLedger) — Tracks token usage for DeepSeek Harness and attributes it to relay sites, with support for balance and quota queries.
-- [agentshim](https://github.com/possible055/agentshim) — Provides repository tools and process execution for coding agents, with a DSH native adapter included.
-- [gamify-edu](https://github.com/BinLe1988/gamify-edu) — Provides a gamified educational platform as a DeepSeek Harness client plugin.
-- [geo-content-optimizer](https://github.com/wangzhuo-coding/geo-content-optimizer) — Provides GEO content optimization capabilities for DeepSeek Harness, including document parsing, pipeline execution, and web search tools.
-- [ouroboros](https://github.com/Q00/ouroboros) — Enables Ouroboros interview and auto workflow commands within DeepSeek Harness chat via a bundled dsh plugin.
-- [beautiCode](https://github.com/starsstreaming/beautiCode) — Adds customizable image and video backgrounds to the DeepSeek Harness web interface.
-- [Co-Engram](https://github.com/Co-Engram/Co-Engram) — Provides a self-evolving team memory system for AI agents, storing memories as Markdown files with reinforcement and decay over time.
-- [dsh-riskproof](https://github.com/onlyqzq/dsh-riskproof) — Implements a risk-aware approval layer that tracks data provenance and applies policy decisions before tool execution in DeepSeek Harness.
-- [MemOS](https://github.com/MemTensor/MemOS) — Provides a memory operating system for AI agents, including local and cloud plugin components for persistent memory management.
-- [OpenFlowFrames](https://github.com/ZeroHackz/OpenFlowFrames) — Provides video frame interpolation tools for DeepSeek Harness agents using RIFE models.
-- [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.
-- [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — Adds cross-session memory, todo management, skill manager, session collaboration, and other enhancement features to DeepSeek Harness.
-- [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — A collection of 88 agent skills covering research, social intelligence, marketing, and business workflows.
 - [rss-digest](https://github.com/JohnXu22786/rss-digest) — RSS/Atom plugin with scheduled fetching, deduplication, LLM summarization, and daily Markdown digest delivery.
-- [docindex](https://github.com/JohnXu22786/docindex) — Provides a local semantic index over workspace documents with hybrid lexical-semantic retrieval and line-numbered citations.
-- [net-debug](https://github.com/JohnXu22786/net-debug) — Adds HTTP debugging tools to DeepSeek Harness, including a general-purpose HTTP client, request history with replay, and response inspection.
 - [market-watch](https://github.com/JohnXu22786/market-watch) — Implements a financial market monitor for DeepSeek Harness, providing real-time quotes, a local watchlist, threshold alerts, periodic polling, and ASCII/mermaid charts for A-share stocks, indices, and cryptocurrencies.
-- [bookkeeping](https://github.com/JohnXu22786/bookkeeping) — Provides conversational bookkeeping with expense and income recording, querying, reporting, CSV/HTML export, and monthly budgets using a local SQLite ledger.
-- [apply-patch](https://github.com/JohnXu22786/apply-patch) — Applies unified diffs to the filesystem inside DeepSeek Harness with dry-run and undo support.
-- [session-export](https://github.com/JohnXu22786/session-export) — Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.
 - [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — Syncs OpenAI Codex projects, chats, skills, and MCP servers with DeepSeek Harness.
-- [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — Provides a sidebar foundation with built-in file management, editing, terminal, Git, and side chat for DSH.
-- [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — Provides a visual model adapter that routes image tasks to PaddleOCR-VL and Qwen for DeepSeek Harness.
 - [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — Provides Wind AIFin MCP integration and Alice workflows for DeepSeek Harness.
 
 ## Automation & Agents

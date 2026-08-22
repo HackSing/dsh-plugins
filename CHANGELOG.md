@@ -4,6 +4,10 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ## Unreleased
 
+### Changed
+
+- Split the `Tools & Capabilities` catch-all into four categories: `Tools & Capabilities` (dependency-free utilities), `Knowledge & Memory`, `Content & Creation`, and `Integrations & Connectors`. It had grown to 82 of 181 entries (45%) and no longer predicted its own contents. Existing entries were reclassified by primary user value; no plugin was added, removed, or re-described.
+
 ### Added
 
 <!-- topic-sync:32550925426 -->

@@ -17,10 +17,21 @@ CATEGORIES = {
     "README.md": [
         "Interaction & Experience",
         "Tools & Capabilities",
+        "Knowledge & Memory",
+        "Content & Creation",
+        "Integrations & Connectors",
         "Automation & Agents",
         "Development & Ecosystem",
     ],
-    "README.zh.md": ["交互与体验", "工具与能力", "自动化与智能体", "开发与生态集成"],
+    "README.zh.md": [
+        "交互与体验",
+        "工具与能力",
+        "知识与记忆",
+        "内容与创作",
+        "集成与连接",
+        "自动化与智能体",
+        "开发与生态集成",
+    ],
 }
 ENTRY = re.compile(r"^- \[([^]]+)]\((https://github\.com/[^)]+)\) — (.+)$")
 DECLARED = re.compile(r"\*\*(\d+) (?:plugins|个插件)\*\*")
@@ -76,7 +87,11 @@ def validate() -> list[Plugin]:
             print(f"- {error}", file=sys.stderr)
         raise SystemExit(1)
 
-    print(f"Directory validation passed: {len(en)} bilingual plugin entries across 4 categories.")
+    category_count = len(CATEGORIES["README.md"])
+    print(
+        f"Directory validation passed: {len(en)} bilingual plugin entries "
+        f"across {category_count} categories."
+    )
     return en
 
 

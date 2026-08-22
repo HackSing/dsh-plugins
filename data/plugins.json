@@ -425,39 +425,12 @@
     },
     {
       "category": "tools",
-      "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
-      "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
-      "name": "dsh-vision-toolkit",
-      "repository_id": 1333100071,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Anionex/dsh-vision-toolkit"
-    },
-    {
-      "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
       "name": "dsh-custom-tool",
       "repository_id": 1333068379,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/omdsh-dev/dsh-custom-tool"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides accessibility-first macOS control with fresh-state checks and scoped permissions.",
-      "description_zh": "提供无障碍优先的 macOS 控制，并包含状态新鲜度检查和权限约束。",
-      "name": "dsh-computer-use",
-      "repository_id": 1333116579,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Anionex/dsh-computer-use"
-    },
-    {
-      "category": "tools",
-      "description_en": "Connects AI workflows to databases and SQL authoring.",
-      "description_zh": "让 AI 工作流连接数据库并编写 SQL。",
-      "name": "dsh-data-agent",
-      "repository_id": 1331112087,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/omdsh-dev/dsh-data-agent"
     },
     {
       "category": "tools",
@@ -560,24 +533,6 @@
     },
     {
       "category": "tools",
-      "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
-      "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
-      "name": "dsh-kb-sieve",
-      "repository_id": 1331086179,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/omdsh-dev/dsh-kb-sieve"
-    },
-    {
-      "category": "tools",
-      "description_en": "Makes MineRU document-parsing tools available to the model.",
-      "description_zh": "将 MineRU 文档解析工具提供给模型使用。",
-      "name": "dsh-plugin-mineru",
-      "repository_id": 1328601495,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/HuanLinOTO/dsh-plugin-mineru"
-    },
-    {
-      "category": "tools",
       "description_en": "Discovers tools on demand for each agent with progressive schema disclosure.",
       "description_zh": "为每个智能体提供按需工具发现和渐进式 Schema 展开。",
       "name": "dsh-tool-search",
@@ -587,48 +542,12 @@
     },
     {
       "category": "tools",
-      "description_en": "Adds classrooms, slides, interactive widgets, and Socratic teaching flows through OpenMAIC.",
-      "description_zh": "通过 OpenMAIC 提供课堂、幻灯片、交互组件和苏格拉底式教学流程。",
-      "name": "dsh-openmaic",
-      "repository_id": 1333147218,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/THU-MAIC/dsh-openmaic"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides academic-assistant capabilities.",
-      "description_zh": "提供面向学术场景的辅助能力。",
-      "name": "dsh-scholar",
-      "repository_id": 1325458176,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/lzszq/dsh-scholar"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides six email tools (list, read, search, send, folders, attachment) for DeepSeek Harness with multi-account support and presets for common email providers.",
-      "description_zh": "为 DeepSeek Harness 提供六个邮件工具（列表、读取、搜索、发送、文件夹、附件），支持多账号及常见邮箱服务商预设。",
-      "name": "dsh-email",
-      "repository_id": 1333512933,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/STARDUSTLC666/dsh-email"
-    },
-    {
-      "category": "tools",
       "description_en": "Provides a draggable widget dock for DeepSeek Harness showing balance, tokens, stats, commands, goals, and cost.",
       "description_zh": "为 DeepSeek Harness 提供可拖拽的小组件面板，展示余额、令牌、统计、命令、目标和成本。",
       "name": "widget-dock",
       "repository_id": 1333331944,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/MorGogh/widget-dock"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.",
-      "description_zh": "提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。",
-      "name": "dsh-enhance",
-      "repository_id": 1333335502,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/vcxmug/dsh-enhance"
     },
     {
       "category": "tools",
@@ -650,15 +569,6 @@
     },
     {
       "category": "tools",
-      "description_en": "Imports conversation histories from various AI agent tools into DeepSeek Harness for continued chat.",
-      "description_zh": "将多种AI代理工具的历史会话导入DeepSeek Harness以继续对话。",
-      "name": "dsh-chat-import",
-      "repository_id": 1333200468,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Nwflower/dsh-chat-import"
-    },
-    {
-      "category": "tools",
       "description_en": "Provides repository-local governance for coding agents with a DeepSeek Harness patch overlay.",
       "description_zh": "为编码代理提供仓库本地治理，并包含 DeepSeek Harness 补丁覆盖层。",
       "name": "amber-protocol",
@@ -668,75 +578,12 @@
     },
     {
       "category": "tools",
-      "description_en": "Provides a multilingual search and evidence-verification tool for AI agents.",
-      "description_zh": "为 AI Agent 提供多语言搜索与证据核验工具。",
-      "name": "argo",
-      "repository_id": 1304997851,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/taxueseek/argo"
-    },
-    {
-      "category": "tools",
-      "description_en": "Generates, renders, and visually reviews Mermaid diagrams for AI coding agents.",
-      "description_zh": "为AI编程代理生成、渲染和视觉复检Mermaid图表。",
-      "name": "craft-mermaid",
-      "repository_id": 1303651617,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/chunkithwang/craft-mermaid"
-    },
-    {
-      "category": "tools",
       "description_en": "A DeepSeek Harness plugin that guides agents to safely discover, assess, and adopt external Agent Skills.",
       "description_zh": "一个 DeepSeek Harness 插件，指导智能体安全地发现、评估并采用外部 Agent Skills。",
       "name": "deepseek-harness-skillx",
       "repository_id": 1254458909,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/drowned-fish1/deepseek-harness-skillx"
-    },
-    {
-      "category": "tools",
-      "description_en": "Implements dual knowledge-graph retrieval over Markdown notes, exposing MCP tools for search and feedback.",
-      "description_zh": "实现基于双知识图谱的Markdown笔记检索，提供MCP搜索与反馈工具。",
-      "name": "knowlp-rag",
-      "repository_id": 1291676455,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/wly8691-jpg/knowlp-rag"
-    },
-    {
-      "category": "tools",
-      "description_en": "A plugin for DeepSeek Harness that provides image understanding by converting pasted images into structured JSON evidence.",
-      "description_zh": "一个 DeepSeek Harness 插件，通过将粘贴的图片转换为结构化 JSON 证据来提供图像理解能力。",
-      "name": "modlens",
-      "repository_id": 1163808211,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/liustack/modlens"
-    },
-    {
-      "category": "tools",
-      "description_en": "Adds web search, X (Twitter) search, and page fetching tools to DeepSeek Harness through multiple engines.",
-      "description_zh": "为 DeepSeek Harness 添加网页搜索、X（推特）搜索与页面抓取工具，支持多种引擎。",
-      "name": "modsearch",
-      "repository_id": 1163808542,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/liustack/modsearch"
-    },
-    {
-      "category": "tools",
-      "description_en": "Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.",
-      "description_zh": "通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。",
-      "name": "pptfast",
-      "repository_id": 1303071154,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/liustack/pptfast"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.",
-      "description_zh": "提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。",
-      "name": "pptkit-presentation",
-      "repository_id": 1303876331,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/openHacking/pptkit-presentation"
     },
     {
       "category": "tools",
@@ -776,120 +623,12 @@
     },
     {
       "category": "tools",
-      "description_en": "Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.",
-      "description_zh": "通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。",
-      "name": "DeepSeek-PPT-skill",
-      "repository_id": 1310893070,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/lecutu/dsh-slide-reflex"
-    },
-    {
-      "category": "tools",
-      "description_en": "Adds a prism_see tool and VEP image recognition capability to DeepSeek Harness.",
-      "description_zh": "为 DeepSeek Harness 添加 prism_see 工具和图片识别能力。",
-      "name": "DeepSeek_Prism",
-      "repository_id": 1320268905,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/YOGEMOW/DeepSeek_Prism"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a Chinese official document processing tool with DSH skill and Cordis plugin integration.",
-      "description_zh": "提供中文公文处理工具，支持 DSH 技能与 Cordis 插件集成。",
-      "name": "gongwen-skill",
-      "repository_id": 1306637593,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/linhut/gongwen-skill"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a DeepSeek Harness plugin bundle that exposes agent runtime management tools through MCP.",
-      "description_zh": "提供 DeepSeek Harness 插件包，通过 MCP 暴露代理运行时管理工具。",
-      "name": "sandbase-harness",
-      "repository_id": 1297278222,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/sandbaseai/sandbase-harness"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides CLI commands for analyzing screenshots, diagrams, charts, UI diffs, and videos with multimodal models.",
-      "description_zh": "提供CLI命令，使用多模态模型分析截图、示意图、图表、UI差异和视频。",
-      "name": "sidesight",
-      "repository_id": 1319104261,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/ZhuXinAI/sidesight"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a Chinese long-screenplay writing skill with project initialization, context building, validation, and review scripts for SKILL.md-compatible agents.",
-      "description_zh": "提供中文长剧本创作技能，包含项目初始化、上下文构建、校验与审查脚本，适用于兼容 SKILL.md 的智能体。",
-      "name": "write-chinese-long-screenplay",
-      "repository_id": 1316202030,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/mudden2380078550-creator/write-chinese-long-screenplay"
-    },
-    {
-      "category": "tools",
-      "description_en": "Implements an MCP server for retrieving versioned library documentation, with tools for catalog lookup, release listing, and doc extraction.",
-      "description_zh": "实现一个MCP服务器，用于检索版本化库文档，提供目录查询、版本列表和文档提取工具。",
-      "name": "docs-retriever",
-      "repository_id": 1335840644,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/docs-retriever"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a code knowledge graph that indexes symbols, call sites, and imports into SQLite and answers structural questions through CLI or a stdio MCP tool server.",
-      "description_zh": "提供代码知识图谱，将符号、调用点和导入索引到SQLite，并通过CLI或stdio MCP工具服务器回答结构性问题。",
-      "name": "codegraph",
-      "repository_id": 1335842340,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/codegraph"
-    },
-    {
-      "category": "tools",
       "description_en": "Provides disk-persisted execution planning with milestones, step state machines, and audit events.",
       "description_zh": "提供基于磁盘持久化的执行规划，包含里程碑、步骤状态机和审计事件。",
       "name": "file-planning",
       "repository_id": 1335840975,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/JohnXu22786/file-planning"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a constrained filesystem MCP server for agents, exposing file read/write, search, and metadata operations within configurable zones.",
-      "description_zh": "为代理提供受限的文件系统 MCP 服务器，在可配置区域内提供文件读写、搜索和元数据操作。",
-      "name": "fs-mcp",
-      "repository_id": 1335840647,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/fs-mcp"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a cross-session event-sourced task board for DeepSeek Harness, supporting task tracking, audit history, and kanban export.",
-      "description_zh": "为 DeepSeek Harness 提供跨会话事件溯源任务面板，支持任务跟踪、审计历史和看板导出。",
-      "name": "task-board",
-      "repository_id": 1335841635,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/task-board"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides background terminal job management for DeepSeek Harness with PTY-based process launching, input, output paging, and job control.",
-      "description_zh": "为 DeepSeek Harness 提供后台终端作业管理，支持 PTY 进程启动、输入、输出分页和作业控制。",
-      "name": "pty-runner",
-      "repository_id": 1335842344,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/pty-runner"
-    },
-    {
-      "category": "tools",
-      "description_en": "A DeepSeek Harness plugin bundling an MCP server that exposes GitHub repository, issue, pull request, review, and search tools.",
-      "description_zh": "一个 DeepSeek Harness 插件，打包了暴露 GitHub 仓库、议题、拉取请求、审查和搜索工具的 MCP 服务器。",
-      "name": "github-mcp",
-      "repository_id": 1335840223,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/github-mcp"
     },
     {
       "category": "tools",
@@ -911,33 +650,6 @@
     },
     {
       "category": "tools",
-      "description_en": "Adds an API balance and token usage monitoring module to the DeepSeek Harness settings panel.",
-      "description_zh": "在 DeepSeek Harness 设置面板中新增 API 余额与 Token 用量监测模块。",
-      "name": "dsh-Api-monitor",
-      "repository_id": 1204656257,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/linshufan21/dsh-Api-monitor"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a DeepSeek Harness plugin bundle that exposes shell, file, browser, and remote machine tools via an MCP server.",
-      "description_zh": "提供一个DeepSeek Harness插件包，通过MCP服务器暴露shell、文件、浏览器和远程机器工具。",
-      "name": "local-shell-mcp",
-      "repository_id": 1249040497,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/fwerkor/local-shell-mcp"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a native localhost HTTP service for AI agents to run Stata, distributed as a DeepSeek Harness plugin.",
-      "description_zh": "提供本地 HTTP 服务，使 AI 代理能够运行 Stata，并以 DeepSeek Harness 插件形式分发。",
-      "name": "Stata-AI-Skill",
-      "repository_id": 1268108268,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/ZihaoVistonWang/Stata-AI-Skill"
-    },
-    {
-      "category": "tools",
       "description_en": "Provides a multi-agent framework for solving and verifying mathematical problems within DeepSeek Harness.",
       "description_zh": "在 DeepSeek Harness 中提供多代理数学问题求解与验证框架。",
       "name": "Vibe-Mathematics",
@@ -947,39 +659,12 @@
     },
     {
       "category": "tools",
-      "description_en": "Tracks token usage for DeepSeek Harness and attributes it to relay sites, with support for balance and quota queries.",
-      "description_zh": "为 DeepSeek Harness 记录令牌用量并按中转站归属，支持余额与配额查询。",
-      "name": "TokenLedger",
-      "repository_id": 1333969047,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/zh667/TokenLedger"
-    },
-    {
-      "category": "tools",
       "description_en": "Provides repository tools and process execution for coding agents, with a DSH native adapter included.",
       "description_zh": "为编码代理提供代码库工具和进程执行功能，并包含 DSH 原生适配器。",
       "name": "agentshim",
       "repository_id": 1322407852,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/possible055/agentshim"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a gamified educational platform as a DeepSeek Harness client plugin.",
-      "description_zh": "作为DeepSeek Harness客户端插件，提供游戏化教育平台。",
-      "name": "gamify-edu",
-      "repository_id": 1068628553,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/BinLe1988/gamify-edu"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides GEO content optimization capabilities for DeepSeek Harness, including document parsing, pipeline execution, and web search tools.",
-      "description_zh": "为DeepSeek Harness提供GEO内容优化能力，包括文档解析、流水线执行和联网搜索工具。",
-      "name": "geo-content-optimizer",
-      "repository_id": 1302542494,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/wangzhuo-coding/geo-content-optimizer"
     },
     {
       "category": "tools",
@@ -1001,57 +686,12 @@
     },
     {
       "category": "tools",
-      "description_en": "Provides a self-evolving team memory system for AI agents, storing memories as Markdown files with reinforcement and decay over time.",
-      "description_zh": "为AI代理和团队提供自进化记忆系统，以Markdown文件存储记忆，并随时间进行强化和衰减。",
-      "name": "Co-Engram",
-      "repository_id": 1281574939,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Co-Engram/Co-Engram"
-    },
-    {
-      "category": "tools",
       "description_en": "Implements a risk-aware approval layer that tracks data provenance and applies policy decisions before tool execution in DeepSeek Harness.",
       "description_zh": "实现一个风险感知的审批层，在DeepSeek Harness中追踪数据来源并在工具执行前应用策略决策。",
       "name": "dsh-riskproof",
       "repository_id": 1299059971,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/onlyqzq/dsh-riskproof"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a memory operating system for AI agents, including local and cloud plugin components for persistent memory management.",
-      "description_zh": "为AI智能体提供持久记忆管理的记忆操作系统，包含本地和云插件组件。",
-      "name": "MemOS",
-      "repository_id": 1014729376,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/MemTensor/MemOS"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides video frame interpolation tools for DeepSeek Harness agents using RIFE models.",
-      "description_zh": "为DeepSeek Harness代理提供基于RIFE模型的视频帧插值工具。",
-      "name": "OpenFlowFrames",
-      "repository_id": 1289245890,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/ZeroHackz/OpenFlowFrames"
-    },
-    {
-      "category": "tools",
-      "description_en": "Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.",
-      "description_zh": "仓库包含桌面版 AI 小说创作应用及用于 DeepSeek Harness Web 的小说创作插件。",
-      "name": "AI-Novel-Writer",
-      "repository_id": 1275436512,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/EthanYoQ/AI-Novel-Writer"
-    },
-    {
-      "category": "tools",
-      "description_en": "Adds cross-session memory, todo management, skill manager, session collaboration, and other enhancement features to DeepSeek Harness.",
-      "description_zh": "为 DeepSeek Harness 添加跨会话记忆、待办管理、技能管理器、会话协作等功能增强。",
-      "name": "dsh-memory-evolve",
-      "repository_id": 1323731026,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/csyangwen/dsh-memory-evolve"
     },
     {
       "category": "tools",
@@ -1064,39 +704,12 @@
     },
     {
       "category": "tools",
-      "description_en": "RSS/Atom plugin with scheduled fetching, deduplication, LLM summarization, and daily Markdown digest delivery.",
-      "description_zh": "提供RSS/Atom订阅、定时抓取、去重、LLM摘要和每日Markdown简报功能。",
-      "name": "rss-digest",
-      "repository_id": 1340346717,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/rss-digest"
-    },
-    {
-      "category": "tools",
-      "description_en": "Provides a local semantic index over workspace documents with hybrid lexical-semantic retrieval and line-numbered citations.",
-      "description_zh": "提供工作区文档的本地语义索引，支持词法和语义混合检索及行号引用。",
-      "name": "docindex",
-      "repository_id": 1340378590,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/docindex"
-    },
-    {
-      "category": "tools",
       "description_en": "Adds HTTP debugging tools to DeepSeek Harness, including a general-purpose HTTP client, request history with replay, and response inspection.",
       "description_zh": "为 DeepSeek Harness 提供 HTTP 调试工具，包括通用 HTTP 客户端、带重放功能的请求历史以及响应检查。",
       "name": "net-debug",
       "repository_id": 1340399167,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/JohnXu22786/net-debug"
-    },
-    {
-      "category": "tools",
-      "description_en": "Implements a financial market monitor for DeepSeek Harness, providing real-time quotes, a local watchlist, threshold alerts, periodic polling, and ASCII/mermaid charts for A-share stocks, indices, and cryptocurrencies.",
-      "description_zh": "为 DeepSeek Harness 实现金融行情监控，提供实时报价、本地自选列表、阈值提醒、定期轮询以及 A 股、指数和加密货币的 ASCII/mermaid 图表。",
-      "name": "market-watch",
-      "repository_id": 1340388282,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/market-watch"
     },
     {
       "category": "tools",
@@ -1118,24 +731,6 @@
     },
     {
       "category": "tools",
-      "description_en": "Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.",
-      "description_zh": "通过新的工具和斜杠命令为DeepSeek Harness添加会话导出、脱敏和合规归档功能。",
-      "name": "session-export",
-      "repository_id": 1340353591,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/JohnXu22786/session-export"
-    },
-    {
-      "category": "tools",
-      "description_en": "Syncs OpenAI Codex projects, chats, skills, and MCP servers with DeepSeek Harness.",
-      "description_zh": "将 OpenAI Codex 项目、聊天、技能和 MCP 服务器与 DeepSeek Harness 同步。",
-      "name": "dsh-codex-sync",
-      "repository_id": 1335661102,
-      "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Walvez/dsh-codex-sync"
-    },
-    {
-      "category": "tools",
       "description_en": "Provides a sidebar foundation with built-in file management, editing, terminal, Git, and side chat for DSH.",
       "description_zh": "为 DSH 提供侧边栏底座，内置文件管理、编辑、终端、Git 和侧边对话。",
       "name": "DSH-better-sidebar",
@@ -1144,7 +739,268 @@
       "url": "https://github.com/omdsh-dev/DSH-better-sidebar"
     },
     {
-      "category": "tools",
+      "category": "knowledge",
+      "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
+      "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
+      "name": "dsh-kb-sieve",
+      "repository_id": 1331086179,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/omdsh-dev/dsh-kb-sieve"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Provides academic-assistant capabilities.",
+      "description_zh": "提供面向学术场景的辅助能力。",
+      "name": "dsh-scholar",
+      "repository_id": 1325458176,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/lzszq/dsh-scholar"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Provides a multilingual search and evidence-verification tool for AI agents.",
+      "description_zh": "为 AI Agent 提供多语言搜索与证据核验工具。",
+      "name": "argo",
+      "repository_id": 1304997851,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/taxueseek/argo"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Implements dual knowledge-graph retrieval over Markdown notes, exposing MCP tools for search and feedback.",
+      "description_zh": "实现基于双知识图谱的Markdown笔记检索，提供MCP搜索与反馈工具。",
+      "name": "knowlp-rag",
+      "repository_id": 1291676455,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/wly8691-jpg/knowlp-rag"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Implements an MCP server for retrieving versioned library documentation, with tools for catalog lookup, release listing, and doc extraction.",
+      "description_zh": "实现一个MCP服务器，用于检索版本化库文档，提供目录查询、版本列表和文档提取工具。",
+      "name": "docs-retriever",
+      "repository_id": 1335840644,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/docs-retriever"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Provides a code knowledge graph that indexes symbols, call sites, and imports into SQLite and answers structural questions through CLI or a stdio MCP tool server.",
+      "description_zh": "提供代码知识图谱，将符号、调用点和导入索引到SQLite，并通过CLI或stdio MCP工具服务器回答结构性问题。",
+      "name": "codegraph",
+      "repository_id": 1335842340,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/codegraph"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Provides a cross-session event-sourced task board for DeepSeek Harness, supporting task tracking, audit history, and kanban export.",
+      "description_zh": "为 DeepSeek Harness 提供跨会话事件溯源任务面板，支持任务跟踪、审计历史和看板导出。",
+      "name": "task-board",
+      "repository_id": 1335841635,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/task-board"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Provides a self-evolving team memory system for AI agents, storing memories as Markdown files with reinforcement and decay over time.",
+      "description_zh": "为AI代理和团队提供自进化记忆系统，以Markdown文件存储记忆，并随时间进行强化和衰减。",
+      "name": "Co-Engram",
+      "repository_id": 1281574939,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Co-Engram/Co-Engram"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Provides a memory operating system for AI agents, including local and cloud plugin components for persistent memory management.",
+      "description_zh": "为AI智能体提供持久记忆管理的记忆操作系统，包含本地和云插件组件。",
+      "name": "MemOS",
+      "repository_id": 1014729376,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/MemTensor/MemOS"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Adds cross-session memory, todo management, skill manager, session collaboration, and other enhancement features to DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 添加跨会话记忆、待办管理、技能管理器、会话协作等功能增强。",
+      "name": "dsh-memory-evolve",
+      "repository_id": 1323731026,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/csyangwen/dsh-memory-evolve"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Provides a local semantic index over workspace documents with hybrid lexical-semantic retrieval and line-numbered citations.",
+      "description_zh": "提供工作区文档的本地语义索引，支持词法和语义混合检索及行号引用。",
+      "name": "docindex",
+      "repository_id": 1340378590,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/docindex"
+    },
+    {
+      "category": "knowledge",
+      "description_en": "Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.",
+      "description_zh": "通过新的工具和斜杠命令为DeepSeek Harness添加会话导出、脱敏和合规归档功能。",
+      "name": "session-export",
+      "repository_id": 1340353591,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/session-export"
+    },
+    {
+      "category": "content",
+      "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
+      "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
+      "name": "dsh-vision-toolkit",
+      "repository_id": 1333100071,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Anionex/dsh-vision-toolkit"
+    },
+    {
+      "category": "content",
+      "description_en": "Makes MineRU document-parsing tools available to the model.",
+      "description_zh": "将 MineRU 文档解析工具提供给模型使用。",
+      "name": "dsh-plugin-mineru",
+      "repository_id": 1328601495,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-mineru"
+    },
+    {
+      "category": "content",
+      "description_en": "Adds classrooms, slides, interactive widgets, and Socratic teaching flows through OpenMAIC.",
+      "description_zh": "通过 OpenMAIC 提供课堂、幻灯片、交互组件和苏格拉底式教学流程。",
+      "name": "dsh-openmaic",
+      "repository_id": 1333147218,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/THU-MAIC/dsh-openmaic"
+    },
+    {
+      "category": "content",
+      "description_en": "Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.",
+      "description_zh": "提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。",
+      "name": "dsh-enhance",
+      "repository_id": 1333335502,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/vcxmug/dsh-enhance"
+    },
+    {
+      "category": "content",
+      "description_en": "Generates, renders, and visually reviews Mermaid diagrams for AI coding agents.",
+      "description_zh": "为AI编程代理生成、渲染和视觉复检Mermaid图表。",
+      "name": "craft-mermaid",
+      "repository_id": 1303651617,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/chunkithwang/craft-mermaid"
+    },
+    {
+      "category": "content",
+      "description_en": "A plugin for DeepSeek Harness that provides image understanding by converting pasted images into structured JSON evidence.",
+      "description_zh": "一个 DeepSeek Harness 插件，通过将粘贴的图片转换为结构化 JSON 证据来提供图像理解能力。",
+      "name": "modlens",
+      "repository_id": 1163808211,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/liustack/modlens"
+    },
+    {
+      "category": "content",
+      "description_en": "Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.",
+      "description_zh": "通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。",
+      "name": "pptfast",
+      "repository_id": 1303071154,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/liustack/pptfast"
+    },
+    {
+      "category": "content",
+      "description_en": "Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.",
+      "description_zh": "提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。",
+      "name": "pptkit-presentation",
+      "repository_id": 1303876331,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/openHacking/pptkit-presentation"
+    },
+    {
+      "category": "content",
+      "description_en": "Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.",
+      "description_zh": "通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。",
+      "name": "DeepSeek-PPT-skill",
+      "repository_id": 1310893070,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/lecutu/dsh-slide-reflex"
+    },
+    {
+      "category": "content",
+      "description_en": "Adds a prism_see tool and VEP image recognition capability to DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 添加 prism_see 工具和图片识别能力。",
+      "name": "DeepSeek_Prism",
+      "repository_id": 1320268905,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/YOGEMOW/DeepSeek_Prism"
+    },
+    {
+      "category": "content",
+      "description_en": "Provides a Chinese official document processing tool with DSH skill and Cordis plugin integration.",
+      "description_zh": "提供中文公文处理工具，支持 DSH 技能与 Cordis 插件集成。",
+      "name": "gongwen-skill",
+      "repository_id": 1306637593,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/linhut/gongwen-skill"
+    },
+    {
+      "category": "content",
+      "description_en": "Provides CLI commands for analyzing screenshots, diagrams, charts, UI diffs, and videos with multimodal models.",
+      "description_zh": "提供CLI命令，使用多模态模型分析截图、示意图、图表、UI差异和视频。",
+      "name": "sidesight",
+      "repository_id": 1319104261,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ZhuXinAI/sidesight"
+    },
+    {
+      "category": "content",
+      "description_en": "Provides a Chinese long-screenplay writing skill with project initialization, context building, validation, and review scripts for SKILL.md-compatible agents.",
+      "description_zh": "提供中文长剧本创作技能，包含项目初始化、上下文构建、校验与审查脚本，适用于兼容 SKILL.md 的智能体。",
+      "name": "write-chinese-long-screenplay",
+      "repository_id": 1316202030,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/mudden2380078550-creator/write-chinese-long-screenplay"
+    },
+    {
+      "category": "content",
+      "description_en": "Provides a gamified educational platform as a DeepSeek Harness client plugin.",
+      "description_zh": "作为DeepSeek Harness客户端插件，提供游戏化教育平台。",
+      "name": "gamify-edu",
+      "repository_id": 1068628553,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/BinLe1988/gamify-edu"
+    },
+    {
+      "category": "content",
+      "description_en": "Provides GEO content optimization capabilities for DeepSeek Harness, including document parsing, pipeline execution, and web search tools.",
+      "description_zh": "为DeepSeek Harness提供GEO内容优化能力，包括文档解析、流水线执行和联网搜索工具。",
+      "name": "geo-content-optimizer",
+      "repository_id": 1302542494,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/wangzhuo-coding/geo-content-optimizer"
+    },
+    {
+      "category": "content",
+      "description_en": "Provides video frame interpolation tools for DeepSeek Harness agents using RIFE models.",
+      "description_zh": "为DeepSeek Harness代理提供基于RIFE模型的视频帧插值工具。",
+      "name": "OpenFlowFrames",
+      "repository_id": 1289245890,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ZeroHackz/OpenFlowFrames"
+    },
+    {
+      "category": "content",
+      "description_en": "Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.",
+      "description_zh": "仓库包含桌面版 AI 小说创作应用及用于 DeepSeek Harness Web 的小说创作插件。",
+      "name": "AI-Novel-Writer",
+      "repository_id": 1275436512,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/EthanYoQ/AI-Novel-Writer"
+    },
+    {
+      "category": "content",
       "description_en": "Provides a visual model adapter that routes image tasks to PaddleOCR-VL and Qwen for DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供视觉模型适配器，将图片任务路由至 PaddleOCR-VL 和 Qwen。",
       "name": "duhai-vision",
@@ -1153,7 +1009,151 @@
       "url": "https://github.com/hamliy-feng/duhai-vision"
     },
     {
-      "category": "tools",
+      "category": "integrations",
+      "description_en": "Provides accessibility-first macOS control with fresh-state checks and scoped permissions.",
+      "description_zh": "提供无障碍优先的 macOS 控制，并包含状态新鲜度检查和权限约束。",
+      "name": "dsh-computer-use",
+      "repository_id": 1333116579,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Anionex/dsh-computer-use"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Connects AI workflows to databases and SQL authoring.",
+      "description_zh": "让 AI 工作流连接数据库并编写 SQL。",
+      "name": "dsh-data-agent",
+      "repository_id": 1331112087,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/omdsh-dev/dsh-data-agent"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Provides six email tools (list, read, search, send, folders, attachment) for DeepSeek Harness with multi-account support and presets for common email providers.",
+      "description_zh": "为 DeepSeek Harness 提供六个邮件工具（列表、读取、搜索、发送、文件夹、附件），支持多账号及常见邮箱服务商预设。",
+      "name": "dsh-email",
+      "repository_id": 1333512933,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/STARDUSTLC666/dsh-email"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Imports conversation histories from various AI agent tools into DeepSeek Harness for continued chat.",
+      "description_zh": "将多种AI代理工具的历史会话导入DeepSeek Harness以继续对话。",
+      "name": "dsh-chat-import",
+      "repository_id": 1333200468,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Nwflower/dsh-chat-import"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Adds web search, X (Twitter) search, and page fetching tools to DeepSeek Harness through multiple engines.",
+      "description_zh": "为 DeepSeek Harness 添加网页搜索、X（推特）搜索与页面抓取工具，支持多种引擎。",
+      "name": "modsearch",
+      "repository_id": 1163808542,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/liustack/modsearch"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Provides a DeepSeek Harness plugin bundle that exposes agent runtime management tools through MCP.",
+      "description_zh": "提供 DeepSeek Harness 插件包，通过 MCP 暴露代理运行时管理工具。",
+      "name": "sandbase-harness",
+      "repository_id": 1297278222,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/sandbaseai/sandbase-harness"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Provides a constrained filesystem MCP server for agents, exposing file read/write, search, and metadata operations within configurable zones.",
+      "description_zh": "为代理提供受限的文件系统 MCP 服务器，在可配置区域内提供文件读写、搜索和元数据操作。",
+      "name": "fs-mcp",
+      "repository_id": 1335840647,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/fs-mcp"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Provides background terminal job management for DeepSeek Harness with PTY-based process launching, input, output paging, and job control.",
+      "description_zh": "为 DeepSeek Harness 提供后台终端作业管理，支持 PTY 进程启动、输入、输出分页和作业控制。",
+      "name": "pty-runner",
+      "repository_id": 1335842344,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/pty-runner"
+    },
+    {
+      "category": "integrations",
+      "description_en": "A DeepSeek Harness plugin bundling an MCP server that exposes GitHub repository, issue, pull request, review, and search tools.",
+      "description_zh": "一个 DeepSeek Harness 插件，打包了暴露 GitHub 仓库、议题、拉取请求、审查和搜索工具的 MCP 服务器。",
+      "name": "github-mcp",
+      "repository_id": 1335840223,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/github-mcp"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Adds an API balance and token usage monitoring module to the DeepSeek Harness settings panel.",
+      "description_zh": "在 DeepSeek Harness 设置面板中新增 API 余额与 Token 用量监测模块。",
+      "name": "dsh-Api-monitor",
+      "repository_id": 1204656257,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/linshufan21/dsh-Api-monitor"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Provides a DeepSeek Harness plugin bundle that exposes shell, file, browser, and remote machine tools via an MCP server.",
+      "description_zh": "提供一个DeepSeek Harness插件包，通过MCP服务器暴露shell、文件、浏览器和远程机器工具。",
+      "name": "local-shell-mcp",
+      "repository_id": 1249040497,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/fwerkor/local-shell-mcp"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Provides a native localhost HTTP service for AI agents to run Stata, distributed as a DeepSeek Harness plugin.",
+      "description_zh": "提供本地 HTTP 服务，使 AI 代理能够运行 Stata，并以 DeepSeek Harness 插件形式分发。",
+      "name": "Stata-AI-Skill",
+      "repository_id": 1268108268,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ZihaoVistonWang/Stata-AI-Skill"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Tracks token usage for DeepSeek Harness and attributes it to relay sites, with support for balance and quota queries.",
+      "description_zh": "为 DeepSeek Harness 记录令牌用量并按中转站归属，支持余额与配额查询。",
+      "name": "TokenLedger",
+      "repository_id": 1333969047,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zh667/TokenLedger"
+    },
+    {
+      "category": "integrations",
+      "description_en": "RSS/Atom plugin with scheduled fetching, deduplication, LLM summarization, and daily Markdown digest delivery.",
+      "description_zh": "提供RSS/Atom订阅、定时抓取、去重、LLM摘要和每日Markdown简报功能。",
+      "name": "rss-digest",
+      "repository_id": 1340346717,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/rss-digest"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Implements a financial market monitor for DeepSeek Harness, providing real-time quotes, a local watchlist, threshold alerts, periodic polling, and ASCII/mermaid charts for A-share stocks, indices, and cryptocurrencies.",
+      "description_zh": "为 DeepSeek Harness 实现金融行情监控，提供实时报价、本地自选列表、阈值提醒、定期轮询以及 A 股、指数和加密货币的 ASCII/mermaid 图表。",
+      "name": "market-watch",
+      "repository_id": 1340388282,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/market-watch"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Syncs OpenAI Codex projects, chats, skills, and MCP servers with DeepSeek Harness.",
+      "description_zh": "将 OpenAI Codex 项目、聊天、技能和 MCP 服务器与 DeepSeek Harness 同步。",
+      "name": "dsh-codex-sync",
+      "repository_id": 1335661102,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Walvez/dsh-codex-sync"
+    },
+    {
+      "category": "integrations",
       "description_en": "Provides Wind AIFin MCP integration and Alice workflows for DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供 Wind AIFin MCP 集成和 Alice 工作流。",
       "name": "snowmountain-market",
