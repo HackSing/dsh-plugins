@@ -838,6 +838,15 @@
       "url": "https://github.com/zoahdev/dsh-disk-audit"
     },
     {
+      "category": "tools",
+      "description_en": "Provides drying and airing guidance based on input parameters.",
+      "description_zh": "根据输入参数提供晾晒烘干建议。",
+      "name": "dsh-dry-guide",
+      "repository_id": 1340830065,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/uckkk/dsh-dry-guide"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
