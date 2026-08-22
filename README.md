@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **232 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **233 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **232 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **232 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **233 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -241,6 +241,7 @@ This is the first published directory snapshot: **232 plugins**, grouped into **
 - [allinluna](https://github.com/zenx0x/allinluna) — Provides resource-aware multi-agent orchestration for DeepSeek Harness.
 - [openspec-agents](https://github.com/ifrankwang/openspec-agents) — Provides a multi-agent workflow orchestration plugin that drives OpenSpec change specifications through implementation, verification, and review stages.
 - [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) — Provides an AI-driven recruitment workflow covering job requirement analysis, candidate sourcing, resume screening, interview scheduling, and daily reporting.
+- [dsh-llm-verifier](https://github.com/Web0926/dsh-llm-verifier) — Validates and ranks multiple independent coding-agent patches before allowing an approved patch to be applied.
 
 ## Development & Ecosystem
 
