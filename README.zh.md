@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **186 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **187 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **186 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **187 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -80,6 +80,7 @@
 - [computer-control](https://github.com/JohnXu22786/computer-control) — 为 DSH 智能体提供桌面控制能力，包括屏幕截图、指针与键盘注入以及无障碍树语义操作。
 - [session-titler](https://github.com/JohnXu22786/session-titler) — 使用两阶段流程自动生成会话标题：活跃时即时关键词标题，空闲时使用预算模型精炼。
 - [snippet-expander](https://github.com/JohnXu22786/snippet-expander) — 在消息发送前将 #tag 简写扩展为完整内容。
+- [dsh-client-ui-voice-input](https://github.com/zjzqs/dsh-client-ui-voice-input) — 为 DeepSeek Harness 网页输入框添加语音输入和提示词优化按钮。
 
 ## 工具与能力
 

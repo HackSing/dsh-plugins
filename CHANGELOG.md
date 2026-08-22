@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32560119599 -->
+- Automatically added [dsh-client-ui-voice-input](https://github.com/zjzqs/dsh-client-ui-voice-input) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32560076141 -->
 - Automatically added [browser-automation](https://github.com/JohnXu22786/browser-automation) to Integrations & Connectors from the `dsh-plugin` topic.
 
