@@ -532,6 +532,15 @@
       "url": "https://github.com/daboge-beach/dsh-skin-studio"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a sidebar panel to the DSH Web UI showing weekly trending DSH plugins with install buttons and configurable popups.",
+      "description_zh": "为 DSH Web UI 添加一个侧边栏面板，展示每周热门 DSH 插件并提供一键安装与可配置弹窗。",
+      "name": "dsh-weekly-hot",
+      "repository_id": 1335590428,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/XCNXNXNX/dsh-weekly-hot"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
