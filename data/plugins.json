@@ -469,6 +469,15 @@
       "url": "https://github.com/Happy2Git/dsh-compass"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides a floating workspace directory tree for DeepSeek Harness, allowing file and folder path drag-and-drop into the chat input.",
+      "description_zh": "为 DeepSeek Harness 提供浮窗工作区目录树，支持将文件与文件夹路径拖拽到聊天输入框。",
+      "name": "dsh-dir-tree",
+      "repository_id": 1339724739,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/bentong-chain/dsh-dir-tree"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
