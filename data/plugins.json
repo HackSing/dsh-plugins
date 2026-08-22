@@ -1171,6 +1171,15 @@
       "url": "https://github.com/JohnXu22786/hooks-adapter"
     },
     {
+      "category": "integrations",
+      "description_en": "Provides database connectivity for DeepSeek Harness with SQLite, PostgreSQL, and MySQL connections, schema introspection, read-only queries, write approval, and a JSONL audit trail.",
+      "description_zh": "为 DeepSeek Harness 提供数据库连接能力，包括 SQLite、PostgreSQL 和 MySQL 连接、模式检查、只读查询、写入审批和 JSONL 审计记录。",
+      "name": "db-connector",
+      "repository_id": 1340370318,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/db-connector"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
