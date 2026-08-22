@@ -424,6 +424,15 @@
       "url": "https://github.com/JohnXu22786/computer-control"
     },
     {
+      "category": "interaction",
+      "description_en": "Generates automatic session titles using a two-phase pipeline: instant keyword captions while active and budget-model refinement when idle.",
+      "description_zh": "使用两阶段流程自动生成会话标题：活跃时即时关键词标题，空闲时使用预算模型精炼。",
+      "name": "session-titler",
+      "repository_id": 1335840994,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/session-titler"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
