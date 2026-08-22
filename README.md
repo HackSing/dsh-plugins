@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **227 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **228 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **227 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **227 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **228 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -151,6 +151,7 @@ This is the first published directory snapshot: **227 plugins**, grouped into **
 - [dsh-tune-guide](https://github.com/uckkk/dsh-tune-guide) — Provides a musical instrument tuning tool that returns practice plans based on parameters.
 - [dsh-workshop](https://github.com/Zlyraz/dsh-workshop) — Provides a management panel for toggling DeepSeek Harness plugins, labeling their origins, and showing risk ratings.
 - [dsh-wsl-drive-links](https://github.com/HAPPYFAPTAIN/dsh-wsl-drive-links) — Creates symlinks in the WSL home directory for Windows drive mounts so DeepSeek Harness can access them.
+- [omdsh-editor](https://github.com/omdsh-plugins/omdsh-editor) — Adds a session-header control to open the current project directory in a detected native editor, with routes to list editors, serve their icons, and launch one.
 
 ## Knowledge & Memory
 
