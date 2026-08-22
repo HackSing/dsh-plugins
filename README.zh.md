@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **176 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 21 日**。
+当前整理 **181 个插件**，统一归入四个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **176 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **181 个插件**、**4 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -29,7 +29,7 @@
 ## 交互与体验
 
 - [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) — 为 DeepSeek Harness 提供终端交互界面。
-- [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) — 支持通过 `@file` 搜索工作区文件，并把文件内容带入提示词。
+- [dsh-at-file](https://github.com/FSMargoo/dsh-at-file) — 支持通过 `@file` 搜索工作区文件，并把文件内容带入提示词。
 - [ui-status-label](https://github.com/alingalingling/ui-status-label) — 可将默认思考状态文案替换成自定义内容。
 - [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — 提供 OpenPencil 设计预览与编辑能力。
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) — 在对话中渲染交互式 HTML 卡片，支持流式预览与沙箱隔离。
@@ -157,6 +157,9 @@
 - [apply-patch](https://github.com/JohnXu22786/apply-patch) — 在 DeepSeek Harness 内将统一差异补丁应用到文件系统，支持预演与撤销。
 - [session-export](https://github.com/JohnXu22786/session-export) — 通过新的工具和斜杠命令为DeepSeek Harness添加会话导出、脱敏和合规归档功能。
 - [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — 将 OpenAI Codex 项目、聊天、技能和 MCP 服务器与 DeepSeek Harness 同步。
+- [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — 为 DSH 提供侧边栏底座，内置文件管理、编辑、终端、Git 和侧边对话。
+- [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — 为 DeepSeek Harness 提供视觉模型适配器，将图片任务路由至 PaddleOCR-VL 和 Qwen。
+- [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — 为 DeepSeek Harness 提供 Wind AIFin MCP 集成和 Alice 工作流。
 
 ## 自动化与智能体
 
@@ -175,6 +178,8 @@
 - [context-pruner](https://github.com/JohnXu22786/context-pruner) — 用于 DeepSeek Harness 的会话上下文分诊插件，修剪过期、重复、失败和过大的上下文以节省 token 预算。
 - [allinluna](https://github.com/zenx0x/allinluna) — 为 DeepSeek Harness 提供资源感知的多智能体编排。
 - [dsh-browser](https://github.com/Lum1104/dsh-browser) — 提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。
+- [openspec-agents](https://github.com/ifrankwang/openspec-agents) — 提供多智能体工作流编排插件，将 OpenSpec 变更规范推进到实现、验证与审查阶段。
+- [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) — 提供 AI 驱动的招聘工作流，涵盖岗位梳理、候选人寻源、简历评估、面试安排和日报生成。
 
 ## 开发与生态集成
 
@@ -185,7 +190,7 @@
 - [dsh-session-notification](https://github.com/dingyi222666/dsh-session-notification) — 通过浏览器通知和提示反馈四种会话状态。
 - [dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) — 从 Web 界面触发桌面提醒。
 - [dsh-webbridge](https://github.com/bill9109/dsh-webbridge) — 将 DSH 与 Kimi WebBridge 连接起来。
-- [fabric](https://github.com/omdsh-dev/fabric) — 提供类似 MC Fabric 的 Hook 处理机制。
+- [fabric](https://github.com/omdsh-dev/stent) — 提供类似 MC Fabric 的 Hook 处理机制。
 - [dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) — 通过覆盖式环境变量固定 Git 提交的作者身份。
 - [dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — 审计注入上下文的 Token 成本、重复内容以及指令或 Schema 冲突。
 - [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) — 零依赖、只读检查插件清单、补丁格式和构建风险。
@@ -211,7 +216,7 @@
 - [replicate-android-feature](https://github.com/addxing/replicate-android-feature) — 一个代理技能，用于在其他项目或平台中复刻现有 Android 功能，保持行为、界面和可复用资源一致。
 - [spec-driven](https://github.com/JohnXu22786/spec-driven) — 提供规格驱动开发技能包，包括五个技能和三个工具。
 - [skill-framework](https://github.com/JohnXu22786/skill-framework) — 为 DeepSeek Harness dsh 提供作为 Cordis 插件的工程方法论技能库。
-- [agent-dev-skills](https://github.com/ddtcorex/agent-dev-skills) — 为 DeepSeek Harness 提供开发技能集合和代理预设。
+- [agent-dev-skills](https://github.com/ddtcorex/maestro-skills) — 为 DeepSeek Harness 提供开发技能集合和代理预设。
 - [GraphFlow](https://github.com/Roarpeng/GraphFlow) — 一个DSH插件，为编码代理提供本地优先的代码知识图谱和上下文工具。
 
 ## 如何选择插件

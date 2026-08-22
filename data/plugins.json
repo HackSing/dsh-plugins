@@ -16,7 +16,7 @@
       "name": "dsh-at-file",
       "repository_id": 1333068434,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/omdsh-dev/dsh-at-file"
+      "url": "https://github.com/FSMargoo/dsh-at-file"
     },
     {
       "category": "interaction",
@@ -1135,6 +1135,33 @@
       "url": "https://github.com/Walvez/dsh-codex-sync"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a sidebar foundation with built-in file management, editing, terminal, Git, and side chat for DSH.",
+      "description_zh": "为 DSH 提供侧边栏底座，内置文件管理、编辑、终端、Git 和侧边对话。",
+      "name": "DSH-better-sidebar",
+      "repository_id": 1326893710,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/omdsh-dev/DSH-better-sidebar"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides a visual model adapter that routes image tasks to PaddleOCR-VL and Qwen for DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供视觉模型适配器，将图片任务路由至 PaddleOCR-VL 和 Qwen。",
+      "name": "duhai-vision",
+      "repository_id": 1327714398,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/hamliy-feng/duhai-vision"
+    },
+    {
+      "category": "tools",
+      "description_en": "Provides Wind AIFin MCP integration and Alice workflows for DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供 Wind AIFin MCP 集成和 Alice 工作流。",
+      "name": "snowmountain-market",
+      "repository_id": 1299508956,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Xiamu-ssr/snowmountain-market"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",
@@ -1270,6 +1297,24 @@
       "url": "https://github.com/Lum1104/dsh-browser"
     },
     {
+      "category": "automation",
+      "description_en": "Provides a multi-agent workflow orchestration plugin that drives OpenSpec change specifications through implementation, verification, and review stages.",
+      "description_zh": "提供多智能体工作流编排插件，将 OpenSpec 变更规范推进到实现、验证与审查阶段。",
+      "name": "openspec-agents",
+      "repository_id": 1296059141,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ifrankwang/openspec-agents"
+    },
+    {
+      "category": "automation",
+      "description_en": "Provides an AI-driven recruitment workflow covering job requirement analysis, candidate sourcing, resume screening, interview scheduling, and daily reporting.",
+      "description_zh": "提供 AI 驱动的招聘工作流，涵盖岗位梳理、候选人寻源、简历评估、面试安排和日报生成。",
+      "name": "recruiting-copilot",
+      "repository_id": 1294614772,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Viy1204/recruiting-copilot"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
@@ -1339,7 +1384,7 @@
       "name": "fabric",
       "repository_id": 1324971591,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/omdsh-dev/fabric"
+      "url": "https://github.com/omdsh-dev/stent"
     },
     {
       "category": "development",
@@ -1573,7 +1618,7 @@
       "name": "agent-dev-skills",
       "repository_id": 1249032231,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/ddtcorex/agent-dev-skills"
+      "url": "https://github.com/ddtcorex/maestro-skills"
     },
     {
       "category": "development",

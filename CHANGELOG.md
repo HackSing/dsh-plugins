@@ -6,6 +6,13 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32550925426 -->
+- Automatically added [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [duhai-vision](https://github.com/hamliy-feng/duhai-vision) to Tools & Capabilities from the `dsh-plugin` topic.
+- Automatically added [openspec-agents](https://github.com/ifrankwang/openspec-agents) to Automation & Agents from the `dsh-plugin` topic.
+- Automatically added [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) to Automation & Agents from the `dsh-plugin` topic.
+- Automatically added [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32485247440 -->
 - Automatically added [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) to Tools & Capabilities from the `dsh-plugin` topic.
 
