@@ -586,6 +586,15 @@
       "url": "https://github.com/WilliamShi666/dsh-wsl-workspace-picker"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides Chinese translations and plain-language explanations for the DeepSeek Harness trajectory panel.",
+      "description_zh": "为 DeepSeek Harness 轨迹面板提供中文翻译和白话讲解。",
+      "name": "trajectory-zh-guide",
+      "repository_id": 1339469321,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/CSlawyer1985/trajectory-zh-guide"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
