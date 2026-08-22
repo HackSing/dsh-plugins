@@ -964,6 +964,15 @@
       "url": "https://github.com/Tang-mm95/dsh-single-instance-guard"
     },
     {
+      "category": "tools",
+      "description_en": "Provides a spirit_guide tool that returns whiskey and spirit recommendations based on parameters.",
+      "description_zh": "提供一个 spirit_guide 工具，根据参数返回威士忌和烈酒推荐。",
+      "name": "dsh-spirit-guide",
+      "repository_id": 1341049778,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/uckkk/dsh-spirit-guide"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
