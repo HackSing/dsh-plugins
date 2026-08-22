@@ -1943,6 +1943,15 @@
       "repository_id": 1251045010,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Roarpeng/GraphFlow"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides isolated install-and-smoke testing for DeepSeek Harness plugins with structured pass/fail reports.",
+      "description_zh": "为 DeepSeek Harness 插件提供隔离的安装与冒烟测试，并生成结构化通过/失败报告。",
+      "name": "dsh-test-drive",
+      "repository_id": 1336521207,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/PerryLink/dsh-test-drive"
     }
   ],
   "schema_version": 1
