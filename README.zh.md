@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **203 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **204 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **203 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **204 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -84,6 +84,7 @@
 - [dock-files](https://github.com/AKS1st/dock-files) — 提供DSH会话中的文件浏览面板，用于浏览、管理和打开文件。
 - [dsh-compass](https://github.com/Happy2Git/dsh-compass) — 为 DeepSeek Harness Web 界面添加右侧上下文面板、文件夹浏览器和只读 Git 图。
 - [dsh-dir-tree](https://github.com/bentong-chain/dsh-dir-tree) — 为 DeepSeek Harness 提供浮窗工作区目录树，支持将文件与文件夹路径拖拽到聊天输入框。
+- [dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — 在 DeepSeek Harness 网页界面中加载 Wallpaper Engine .mpkg 文件和 Steam 创意工坊文件夹作为动态、视频、网页或场景壁纸。
 
 ## 工具与能力
 

@@ -478,6 +478,15 @@
       "url": "https://github.com/bentong-chain/dsh-dir-tree"
     },
     {
+      "category": "interaction",
+      "description_en": "Loads Wallpaper Engine .mpkg files and Steam Workshop folders as animated, video, web, or scene wallpapers in the DeepSeek Harness web interface.",
+      "description_zh": "在 DeepSeek Harness 网页界面中加载 Wallpaper Engine .mpkg 文件和 Steam 创意工坊文件夹作为动态、视频、网页或场景壁纸。",
+      "name": "dsh-mpkg-wallpaper",
+      "repository_id": 1336419104,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/XHR666/dsh-mpkg-wallpaper"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
