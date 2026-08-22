@@ -505,6 +505,15 @@
       "url": "https://github.com/gfds2005/dsh-remote-dir-picker"
     },
     {
+      "category": "interaction",
+      "description_en": "Forces the in-browser browse directory picker in DeepSeek Harness when the web GUI is accessed through remote browsers such as Tailscale Serve or Cloudflared.",
+      "description_zh": "当 DeepSeek Harness 的 Web GUI 通过 Tailscale Serve 或 Cloudflared 等远程浏览器访问时，强制使用浏览器内的目录浏览选择器。",
+      "name": "dsh-remote-picker",
+      "repository_id": 1337441968,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Yuuichu/dsh-remote-picker"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

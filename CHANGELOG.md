@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32562673112 -->
+- Automatically added [dsh-remote-picker](https://github.com/Yuuichu/dsh-remote-picker) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32562633952 -->
 - Automatically added [dsh-remote-dir-picker](https://github.com/gfds2005/dsh-remote-dir-picker) to Interaction & Experience from the `dsh-plugin` topic.
 
