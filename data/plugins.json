@@ -892,6 +892,15 @@
       "url": "https://github.com/863683348/dsh-need-finder"
     },
     {
+      "category": "tools",
+      "description_en": "Lets users open a DeepSeek Harness workspace directory in an external launcher such as VS Code, file explorer, or a terminal from the web GUI.",
+      "description_zh": "允许用户从 Web GUI 在外部启动器中打开 DeepSeek Harness 工作区目录，例如 VS Code、文件资源管理器或终端。",
+      "name": "dsh-open-in",
+      "repository_id": 1336071063,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/NevermindZZT/dsh-open-in"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
