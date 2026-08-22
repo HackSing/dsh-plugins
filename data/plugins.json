@@ -1162,6 +1162,15 @@
       "url": "https://github.com/Xiamu-ssr/snowmountain-market"
     },
     {
+      "category": "integrations",
+      "description_en": "Loads hooks configurations from Claude Code, Codex, and opencode and executes them inside DeepSeek Harness.",
+      "description_zh": "读取 Claude Code、Codex 和 opencode 的钩子配置，并在 DeepSeek Harness 中执行这些钩子。",
+      "name": "hooks-adapter",
+      "repository_id": 1335841765,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/JohnXu22786/hooks-adapter"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a reusable and observable multi-agent workflow layer with generation, governance, and resume support.",
       "description_zh": "提供可复用、可观察、可治理并支持恢复的多智能体工作流层。",

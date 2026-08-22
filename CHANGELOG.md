@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32559150041 -->
+- Automatically added [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:32550925426 -->
 - Automatically added [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) to Tools & Capabilities from the `dsh-plugin` topic.
 - Automatically added [duhai-vision](https://github.com/hamliy-feng/duhai-vision) to Tools & Capabilities from the `dsh-plugin` topic.

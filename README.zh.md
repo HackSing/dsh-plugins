@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **181 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **182 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **181 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **182 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -172,6 +172,7 @@
 - [market-watch](https://github.com/JohnXu22786/market-watch) — 为 DeepSeek Harness 实现金融行情监控，提供实时报价、本地自选列表、阈值提醒、定期轮询以及 A 股、指数和加密货币的 ASCII/mermaid 图表。
 - [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — 将 OpenAI Codex 项目、聊天、技能和 MCP 服务器与 DeepSeek Harness 同步。
 - [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — 为 DeepSeek Harness 提供 Wind AIFin MCP 集成和 Alice 工作流。
+- [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — 读取 Claude Code、Codex 和 opencode 的钩子配置，并在 DeepSeek Harness 中执行这些钩子。
 
 ## 自动化与智能体
 
