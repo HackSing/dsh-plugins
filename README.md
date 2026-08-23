@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **233 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 22, 2026**.
+Explore **234 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 23, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **233 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **233 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **234 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -75,7 +75,7 @@ This is the first published directory snapshot: **233 plugins**, grouped into **
 - [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) — Converts dropped or pasted images and files into workspace paths for text-only models in DeepSeek Harness chat.
 - [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — Provides cross-session agent-to-agent messaging for DeepSeek Harness, with offline delivery, receipts, and session navigation.
 - [ikanban](https://github.com/isomoes/ikanban) — Provides a keyboard-oriented kanban interface for managing multi-agent coding workspaces in DeepSeek Harness.
-- [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) — Provides stateless dialogue compression to keep conversation context bounded.
+- [mosaic_compress](https://github.com/TuringCorp-net/mosaic-memory-compress) — Provides stateless dialogue compression to keep conversation context bounded.
 - [working-activity](https://github.com/ccch1mneyyy/working-activity) — Provides a DeepSeek Harness plugin that renders a real-time working status line with agent activity, tool progress, and context alerts.
 - [computer-control](https://github.com/JohnXu22786/computer-control) — Provides desktop control capabilities including screen capture, pointer and keyboard injection, and accessibility-tree semantic actions for DSH agents.
 - [session-titler](https://github.com/JohnXu22786/session-titler) — Generates automatic session titles using a two-phase pipeline: instant keyword captions while active and budget-model refinement when idle.
@@ -180,7 +180,7 @@ This is the first published directory snapshot: **233 plugins**, grouped into **
 - [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.
 - [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — Generates, renders, and visually reviews Mermaid diagrams for AI coding agents.
 - [modlens](https://github.com/liustack/modlens) — A plugin for DeepSeek Harness that provides image understanding by converting pasted images into structured JSON evidence.
-- [pptfast](https://github.com/liustack/pptfast) — Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.
+- [pptfast](https://github.com/liustack/pptpress) — Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.
 - [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.
 - [DeepSeek-PPT-skill](https://github.com/lecutu/dsh-slide-reflex) — Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.
 - [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — Adds a prism_see tool and VEP image recognition capability to DeepSeek Harness.
@@ -220,6 +220,7 @@ This is the first published directory snapshot: **233 plugins**, grouped into **
 - [dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) — Provides a configurable OpenAI-compatible LLM adapter with automatic provider fallback and usage tracking for DeepSeek Harness.
 - [dsh-remote](https://github.com/xgone/dsh-remote) — Provides remote access and authentication for DeepSeek Harness, including password login, MFA/TOTP, role-based access, and an in-browser directory picker.
 - [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) — Bridges DeepSeek Harness with Tencent's WeChat ClawBot/iLink channel, allowing remote control via WeChat text messages.
+- [mcp-for-stata](https://github.com/SepineTam/mcp-for-stata) — Implements a Model Context Protocol server that enables AI agents to execute Stata commands for data analysis.
 
 ## Automation & Agents
 

@@ -403,7 +403,7 @@
       "name": "mosaic_compress",
       "repository_id": 1262737601,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/TuringCorp-net/mosaic_compress"
+      "url": "https://github.com/TuringCorp-net/mosaic-memory-compress"
     },
     {
       "category": "interaction",
@@ -1267,7 +1267,7 @@
       "name": "pptfast",
       "repository_id": 1303071154,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/liustack/pptfast"
+      "url": "https://github.com/liustack/pptpress"
     },
     {
       "category": "content",
@@ -1592,6 +1592,15 @@
       "repository_id": 1342061613,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/zp-home/dsh-weixin-clawbot"
+    },
+    {
+      "category": "integrations",
+      "description_en": "Implements a Model Context Protocol server that enables AI agents to execute Stata commands for data analysis.",
+      "description_zh": "实现了一个模型上下文协议服务器，使AI代理能够执行Stata命令进行数据分析。",
+      "name": "mcp-for-stata",
+      "repository_id": 956330003,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/SepineTam/mcp-for-stata"
     },
     {
       "category": "automation",
