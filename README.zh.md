@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **233 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 22 日**。
+当前整理 **234 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 23 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **233 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **234 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -75,7 +75,7 @@
 - [dsh-drop-to-path](https://github.com/loudMore/dsh-drop-to-path) — 在 DeepSeek Harness 聊天中将拖放或粘贴的图片和文件转换为工作区路径，供纯文本模型使用。
 - [dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — 为 DeepSeek Harness 提供跨会话 Agent 间消息传递，支持离线投递、回执和会话导航。
 - [ikanban](https://github.com/isomoes/ikanban) — 为 DeepSeek Harness 提供面向键盘操作的看板界面，用于管理多智能体编码工作空间。
-- [mosaic_compress](https://github.com/TuringCorp-net/mosaic_compress) — 提供无状态对话压缩，使对话上下文保持有界。
+- [mosaic_compress](https://github.com/TuringCorp-net/mosaic-memory-compress) — 提供无状态对话压缩，使对话上下文保持有界。
 - [working-activity](https://github.com/ccch1mneyyy/working-activity) — 提供一个 DeepSeek Harness 插件，用于在运行状态行中实时展示代理活动、工具进度和上下文警告。
 - [computer-control](https://github.com/JohnXu22786/computer-control) — 为 DSH 智能体提供桌面控制能力，包括屏幕截图、指针与键盘注入以及无障碍树语义操作。
 - [session-titler](https://github.com/JohnXu22786/session-titler) — 使用两阶段流程自动生成会话标题：活跃时即时关键词标题，空闲时使用预算模型精炼。
@@ -180,7 +180,7 @@
 - [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — 提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。
 - [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — 为AI编程代理生成、渲染和视觉复检Mermaid图表。
 - [modlens](https://github.com/liustack/modlens) — 一个 DeepSeek Harness 插件，通过将粘贴的图片转换为结构化 JSON 证据来提供图像理解能力。
-- [pptfast](https://github.com/liustack/pptfast) — 通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。
+- [pptfast](https://github.com/liustack/pptpress) — 通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。
 - [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — 提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。
 - [DeepSeek-PPT-skill](https://github.com/lecutu/dsh-slide-reflex) — 通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。
 - [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — 为 DeepSeek Harness 添加 prism_see 工具和图片识别能力。
@@ -220,6 +220,7 @@
 - [dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) — 为DeepSeek Harness提供可配置的OpenAI兼容LLM适配器，支持自动提供商回退和使用统计。
 - [dsh-remote](https://github.com/xgone/dsh-remote) — 为 DeepSeek Harness 提供远程访问与认证功能，包括账号密码登录、MFA/TOTP、基于角色的访问控制及浏览器内目录选择器。
 - [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) — 通过腾讯官方微信 ClawBot/iLink 通道将 DeepSeek Harness 与微信连接，支持通过微信文本消息进行远程控制。
+- [mcp-for-stata](https://github.com/SepineTam/mcp-for-stata) — 实现了一个模型上下文协议服务器，使AI代理能够执行Stata命令进行数据分析。
 
 ## 自动化与智能体
 

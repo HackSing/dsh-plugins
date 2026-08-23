@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32617552484 -->
+- Automatically added [mcp-for-stata](https://github.com/SepineTam/mcp-for-stata) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:32583067971 -->
 - Automatically added [dsh-llm-verifier](https://github.com/Web0926/dsh-llm-verifier) to Automation & Agents from the `dsh-plugin` topic.
 
