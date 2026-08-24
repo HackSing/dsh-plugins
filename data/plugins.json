@@ -1090,6 +1090,15 @@
       "url": "https://github.com/uckkk/dsh-ux-writing"
     },
     {
+      "category": "tools",
+      "description_en": "Detects and removes AI-generated traces from Russian text using pattern and regex markers.",
+      "description_zh": "检测并去除俄语文本中的 AI 生成痕迹，使用模式与正则标记。",
+      "name": "humanizer-ru",
+      "repository_id": 1139128402,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Vladimir-Human/humanizer-ru"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
@@ -1240,7 +1249,7 @@
       "name": "dsh-enhance",
       "repository_id": 1333335502,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/vcxmug/dsh-enhance"
+      "url": "https://github.com/vcxmug/dsh-evo"
     },
     {
       "category": "content",
@@ -1267,7 +1276,7 @@
       "name": "pptfast",
       "repository_id": 1303071154,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/liustack/pptpress"
+      "url": "https://github.com/liustack/pptwise"
     },
     {
       "category": "content",

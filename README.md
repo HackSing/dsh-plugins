@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **234 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 23, 2026**.
+Explore **235 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 24, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **234 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **234 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **235 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -155,6 +155,7 @@ This is the first published directory snapshot: **234 plugins**, grouped into **
 - [dsh-wsl-drive-links](https://github.com/HAPPYFAPTAIN/dsh-wsl-drive-links) — Creates symlinks in the WSL home directory for Windows drive mounts so DeepSeek Harness can access them.
 - [omdsh-editor](https://github.com/omdsh-plugins/omdsh-editor) — Adds a session-header control to open the current project directory in a detected native editor, with routes to list editors, serve their icons, and launch one.
 - [dsh-ux-writing](https://github.com/uckkk/dsh-ux-writing) — Provides UX microcopy writing guidelines and button/error message copy recommendations for DeepSeek Harness.
+- [humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) — Detects and removes AI-generated traces from Russian text using pattern and regex markers.
 
 ## Knowledge & Memory
 
@@ -177,10 +178,10 @@ This is the first published directory snapshot: **234 plugins**, grouped into **
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.
 - [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — Makes MineRU document-parsing tools available to the model.
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — Adds classrooms, slides, interactive widgets, and Socratic teaching flows through OpenMAIC.
-- [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.
+- [dsh-enhance](https://github.com/vcxmug/dsh-evo) — Provides two DeepSeek Harness plugins: dsh-vision for image understanding and dsh-native-web for web search and scraping.
 - [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — Generates, renders, and visually reviews Mermaid diagrams for AI coding agents.
 - [modlens](https://github.com/liustack/modlens) — A plugin for DeepSeek Harness that provides image understanding by converting pasted images into structured JSON evidence.
-- [pptfast](https://github.com/liustack/pptpress) — Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.
+- [pptfast](https://github.com/liustack/pptwise) — Generates editable PPTX presentations from semantic intermediate representations via an installable DeepSeek Harness plugin.
 - [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — Provides a DeepSeek Harness plugin bundle that registers the pptkit-presentation skill for creating editable PowerPoint decks from source materials.
 - [DeepSeek-PPT-skill](https://github.com/lecutu/dsh-slide-reflex) — Generates PowerPoint decks from AI-declared layout intents using a deterministic layout engine and includes a DSH plugin for live preview and feedback.
 - [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — Adds a prism_see tool and VEP image recognition capability to DeepSeek Harness.
