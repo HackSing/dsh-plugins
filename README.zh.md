@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **234 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 23 日**。
+当前整理 **235 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 24 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **234 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **235 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -155,6 +155,7 @@
 - [dsh-wsl-drive-links](https://github.com/HAPPYFAPTAIN/dsh-wsl-drive-links) — 在WSL主目录中为Windows驱动器挂载创建符号链接，使DeepSeek Harness能够访问。
 - [omdsh-editor](https://github.com/omdsh-plugins/omdsh-editor) — 在会话头部添加一个控件，用于在检测到的本机编辑器中打开当前项目目录，并提供列出编辑器、提供图标和启动编辑器的路由。
 - [dsh-ux-writing](https://github.com/uckkk/dsh-ux-writing) — 提供DeepSeek Harness的UX微文案规范及按钮、错误提示文案撰写指南。
+- [humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) — 检测并去除俄语文本中的 AI 生成痕迹，使用模式与正则标记。
 
 ## 知识与记忆
 
@@ -177,10 +178,10 @@
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — 为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。
 - [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 将 MineRU 文档解析工具提供给模型使用。
 - [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — 通过 OpenMAIC 提供课堂、幻灯片、交互组件和苏格拉底式教学流程。
-- [dsh-enhance](https://github.com/vcxmug/dsh-enhance) — 提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。
+- [dsh-enhance](https://github.com/vcxmug/dsh-evo) — 提供两个 DeepSeek Harness 插件：dsh-vision 用于图像理解，dsh-native-web 用于网页搜索和抓取。
 - [craft-mermaid](https://github.com/chunkithwang/craft-mermaid) — 为AI编程代理生成、渲染和视觉复检Mermaid图表。
 - [modlens](https://github.com/liustack/modlens) — 一个 DeepSeek Harness 插件，通过将粘贴的图片转换为结构化 JSON 证据来提供图像理解能力。
-- [pptfast](https://github.com/liustack/pptpress) — 通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。
+- [pptfast](https://github.com/liustack/pptwise) — 通过可安装的 DeepSeek Harness 插件，从语义中间表示生成可编辑的 PPTX 演示文稿。
 - [pptkit-presentation](https://github.com/openHacking/pptkit-presentation) — 提供一个 DeepSeek Harness 插件包，注册 pptkit-presentation 技能，用于从源材料创建可编辑的 PowerPoint 演示文稿。
 - [DeepSeek-PPT-skill](https://github.com/lecutu/dsh-slide-reflex) — 通过确定性布局引擎，根据AI声明的布局意图生成PowerPoint演示文稿，并提供用于实时预览和反馈的DSH插件。
 - [DeepSeek_Prism](https://github.com/YOGEMOW/DeepSeek_Prism) — 为 DeepSeek Harness 添加 prism_see 工具和图片识别能力。

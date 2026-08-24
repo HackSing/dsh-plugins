@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32689877122 -->
+- Automatically added [humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:32617552484 -->
 - Automatically added [mcp-for-stata](https://github.com/SepineTam/mcp-for-stata) to Integrations & Connectors from the `dsh-plugin` topic.
 
