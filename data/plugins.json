@@ -1216,6 +1216,15 @@
       "url": "https://github.com/gongyijie85/dsh-ecc"
     },
     {
+      "category": "knowledge",
+      "description_en": "Provides a local-first, self-evolving personal knowledge base for AI agents using Markdown memory files.",
+      "description_zh": "为 AI 代理提供本地优先、自演进的个人知识库，使用 Markdown 记忆文件。",
+      "name": "ReMe",
+      "repository_id": 849121458,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/agentscope-ai/ReMe"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
@@ -1781,6 +1790,15 @@
       "repository_id": 1340236138,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Web0926/dsh-llm-verifier"
+    },
+    {
+      "category": "automation",
+      "description_en": "Provides evidence-backed governance workflows for AI coding delivery, covering planning, review, risk, quality, and release control.",
+      "description_zh": "为AI编码交付提供基于证据的治理工作流，涵盖规划、审查、风险、质量和发布控制。",
+      "name": "software-project-governance",
+      "repository_id": 1219000209,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/peterwangze/software-project-governance"
     },
     {
       "category": "development",
