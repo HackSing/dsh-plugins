@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **235 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 24, 2026**.
+Explore **237 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 25, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **235 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **235 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **237 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -172,6 +172,7 @@ This is the first published directory snapshot: **235 plugins**, grouped into **
 - [docindex](https://github.com/JohnXu22786/docindex) — Provides a local semantic index over workspace documents with hybrid lexical-semantic retrieval and line-numbered citations.
 - [session-export](https://github.com/JohnXu22786/session-export) — Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.
 - [dsh-ecc](https://github.com/gongyijie85/dsh-ecc) — Registers curated ECC-derived agent skills with DeepSeek Harness's Cordis host layer.
+- [ReMe](https://github.com/agentscope-ai/ReMe) — Provides a local-first, self-evolving personal knowledge base for AI agents using Markdown memory files.
 
 ## Content & Creation
 
@@ -244,6 +245,7 @@ This is the first published directory snapshot: **235 plugins**, grouped into **
 - [openspec-agents](https://github.com/ifrankwang/openspec-agents) — Provides a multi-agent workflow orchestration plugin that drives OpenSpec change specifications through implementation, verification, and review stages.
 - [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) — Provides an AI-driven recruitment workflow covering job requirement analysis, candidate sourcing, resume screening, interview scheduling, and daily reporting.
 - [dsh-llm-verifier](https://github.com/Web0926/dsh-llm-verifier) — Validates and ranks multiple independent coding-agent patches before allowing an approved patch to be applied.
+- [software-project-governance](https://github.com/peterwangze/software-project-governance) — Provides evidence-backed governance workflows for AI coding delivery, covering planning, review, risk, quality, and release control.
 
 ## Development & Ecosystem
 
