@@ -604,6 +604,15 @@
       "url": "https://github.com/ai798-Lab/dshwiki-plugin"
     },
     {
+      "category": "interaction",
+      "description_en": "A client-side theme for DeepSeek Harness that applies a paper-and-ink visual style with Balanced and Immersive modes.",
+      "description_zh": "为 DeepSeek Harness 提供的客户端主题，采用纸墨视觉风格，并包含 Balanced 与 Immersive 两种模式。",
+      "name": "dsh-theme-eink-retro",
+      "repository_id": 1347131628,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/exoticknight/dsh-theme-eink-retro"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

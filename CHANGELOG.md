@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:32960108099 -->
+- Automatically added [dsh-theme-eink-retro](https://github.com/exoticknight/dsh-theme-eink-retro) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:32808499112 -->
 - Automatically added [ReMe](https://github.com/agentscope-ai/ReMe) to Knowledge & Memory from the `dsh-plugin` topic.
 - Automatically added [software-project-governance](https://github.com/peterwangze/software-project-governance) to Automation & Agents from the `dsh-plugin` topic.
