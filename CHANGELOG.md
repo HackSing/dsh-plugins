@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:33186071736 -->
+- Automatically added [MisakaNet](https://github.com/Ikalus1988/MisakaNet) to Knowledge & Memory from the `dsh-plugin` topic.
+
 <!-- topic-sync:32960108099 -->
 - Automatically added [dsh-theme-eink-retro](https://github.com/exoticknight/dsh-theme-eink-retro) to Interaction & Experience from the `dsh-plugin` topic.
 
