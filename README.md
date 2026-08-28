@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **238 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 26, 2026**.
+Explore **239 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 28, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **238 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **238 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **239 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -174,6 +174,7 @@ This is the first published directory snapshot: **238 plugins**, grouped into **
 - [session-export](https://github.com/JohnXu22786/session-export) — Adds session export, redaction, and compliance archiving to DeepSeek Harness via new tools and slash commands.
 - [dsh-ecc](https://github.com/gongyijie85/dsh-ecc) — Registers curated ECC-derived agent skills with DeepSeek Harness's Cordis host layer.
 - [ReMe](https://github.com/agentscope-ai/ReMe) — Provides a local-first, self-evolving personal knowledge base for AI agents using Markdown memory files.
+- [MisakaNet](https://github.com/Ikalus1988/MisakaNet) — Provides a git-backed searchable library of debugging lessons for AI agents.
 
 ## Content & Creation
 

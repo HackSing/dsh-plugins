@@ -1234,6 +1234,15 @@
       "url": "https://github.com/agentscope-ai/ReMe"
     },
     {
+      "category": "knowledge",
+      "description_en": "Provides a git-backed searchable library of debugging lessons for AI agents.",
+      "description_zh": "为AI代理提供基于Git的可搜索调试经验库。",
+      "name": "MisakaNet",
+      "repository_id": 1224734286,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Ikalus1988/MisakaNet"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
