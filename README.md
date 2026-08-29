@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **239 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 28, 2026**.
+Explore **240 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 29, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **239 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **239 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **240 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -225,6 +225,7 @@ This is the first published directory snapshot: **239 plugins**, grouped into **
 - [dsh-remote](https://github.com/xgone/dsh-remote) — Provides remote access and authentication for DeepSeek Harness, including password login, MFA/TOTP, role-based access, and an in-browser directory picker.
 - [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) — Bridges DeepSeek Harness with Tencent's WeChat ClawBot/iLink channel, allowing remote control via WeChat text messages.
 - [mcp-for-stata](https://github.com/SepineTam/mcp-for-stata) — Implements a Model Context Protocol server that enables AI agents to execute Stata commands for data analysis.
+- [CloudBase-AI-Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit) — Bridges AI coding agents to CloudBase backend services such as database, storage, auth, and cloud functions via a DeepSeek Harness plugin and MCP server.
 
 ## Automation & Agents
 
