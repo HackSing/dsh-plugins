@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:33247724958 -->
+- Automatically added [CloudBase-AI-Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:33186071736 -->
 - Automatically added [MisakaNet](https://github.com/Ikalus1988/MisakaNet) to Knowledge & Memory from the `dsh-plugin` topic.
 
