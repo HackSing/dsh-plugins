@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:33309915581 -->
+- Automatically added [dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:33295402116 -->
 - Automatically added [dsh-live-voice](https://github.com/Jstn-1g/dsh-live-voice) to Interaction & Experience from the `dsh-plugin` topic.
 
