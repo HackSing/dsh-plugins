@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **241 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 30, 2026**.
+Explore **242 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **August 30, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **241 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **241 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **242 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -227,6 +227,7 @@ This is the first published directory snapshot: **241 plugins**, grouped into **
 - [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) — Bridges DeepSeek Harness with Tencent's WeChat ClawBot/iLink channel, allowing remote control via WeChat text messages.
 - [mcp-for-stata](https://github.com/SepineTam/mcp-for-stata) — Implements a Model Context Protocol server that enables AI agents to execute Stata commands for data analysis.
 - [CloudBase-AI-Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit) — Bridges AI coding agents to CloudBase backend services such as database, storage, auth, and cloud functions via a DeepSeek Harness plugin and MCP server.
+- [dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) — Provides a marketplace and connection manager for MCP servers within DeepSeek Harness.
 
 ## Automation & Agents
 

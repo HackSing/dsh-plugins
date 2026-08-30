@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **241 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 30 日**。
+当前整理 **242 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 30 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **241 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **242 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -227,6 +227,7 @@
 - [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) — 通过腾讯官方微信 ClawBot/iLink 通道将 DeepSeek Harness 与微信连接，支持通过微信文本消息进行远程控制。
 - [mcp-for-stata](https://github.com/SepineTam/mcp-for-stata) — 实现了一个模型上下文协议服务器，使AI代理能够执行Stata命令进行数据分析。
 - [CloudBase-AI-Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit) — 通过 DeepSeek Harness 插件和 MCP 服务器，将 AI 编程代理连接到 CloudBase 后端服务，如数据库、存储、认证和云函数。
+- [dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) — 在 DeepSeek Harness 中提供 MCP 服务器连接市场与连接管理功能。
 
 ## 自动化与智能体
 

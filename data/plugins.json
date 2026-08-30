@@ -1657,6 +1657,15 @@
       "url": "https://github.com/TencentCloudBase/CloudBase-AI-Toolkit"
     },
     {
+      "category": "integrations",
+      "description_en": "Provides a marketplace and connection manager for MCP servers within DeepSeek Harness.",
+      "description_zh": "在 DeepSeek Harness 中提供 MCP 服务器连接市场与连接管理功能。",
+      "name": "dsh-mcp-connector",
+      "repository_id": 1340838178,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/duhu2000/dsh-mcp-connector"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
