@@ -613,6 +613,15 @@
       "url": "https://github.com/exoticknight/dsh-theme-eink-retro"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds live voice input and playback to the DeepSeek Harness web interface, supporting one manual audio turn per session.",
+      "description_zh": "为 DeepSeek Harness 网页界面添加实时语音输入与播放功能，每次会话支持一次手动音频回合。",
+      "name": "dsh-live-voice",
+      "repository_id": 1346666086,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Jstn-1g/dsh-live-voice"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

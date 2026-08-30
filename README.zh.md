@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **240 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 29 日**。
+当前整理 **241 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 8 月 30 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **240 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **241 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -99,6 +99,7 @@
 - [trajectory-zh-guide](https://github.com/CSlawyer1985/trajectory-zh-guide) — 为 DeepSeek Harness 轨迹面板提供中文翻译和白话讲解。
 - [dshwiki-plugin](https://github.com/ai798-Lab/dshwiki-plugin) — 在 DeepSeek Harness Web 界面中提供侧边栏面板，列出精选插件并支持复制安装命令。
 - [dsh-theme-eink-retro](https://github.com/exoticknight/dsh-theme-eink-retro) — 为 DeepSeek Harness 提供的客户端主题，采用纸墨视觉风格，并包含 Balanced 与 Immersive 两种模式。
+- [dsh-live-voice](https://github.com/Jstn-1g/dsh-live-voice) — 为 DeepSeek Harness 网页界面添加实时语音输入与播放功能，每次会话支持一次手动音频回合。
 
 ## 工具与能力
 
