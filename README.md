@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **243 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 1, 2026**.
+Explore **244 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 3, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **243 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **243 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **244 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -217,7 +217,7 @@ This is the first published directory snapshot: **243 plugins**, grouped into **
 - [rss-digest](https://github.com/JohnXu22786/rss-digest) — RSS/Atom plugin with scheduled fetching, deduplication, LLM summarization, and daily Markdown digest delivery.
 - [market-watch](https://github.com/JohnXu22786/market-watch) — Implements a financial market monitor for DeepSeek Harness, providing real-time quotes, a local watchlist, threshold alerts, periodic polling, and ASCII/mermaid charts for A-share stocks, indices, and cryptocurrencies.
 - [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — Syncs OpenAI Codex projects, chats, skills, and MCP servers with DeepSeek Harness.
-- [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — Provides Wind AIFin MCP integration and Alice workflows for DeepSeek Harness.
+- [snowmountain-market](https://github.com/Xiamu-ssr/dsh-wind-aifin) — Provides Wind AIFin MCP integration and Alice workflows for DeepSeek Harness.
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — Loads hooks configurations from Claude Code, Codex, and opencode and executes them inside DeepSeek Harness.
 - [db-connector](https://github.com/JohnXu22786/db-connector) — Provides database connectivity for DeepSeek Harness with SQLite, PostgreSQL, and MySQL connections, schema introspection, read-only queries, write approval, and a JSONL audit trail.
 - [browser-automation](https://github.com/JohnXu22786/browser-automation) — Provides browser automation tools (navigation, clicking, form filling, screenshots, and JavaScript execution) through an MCP server for DeepSeek Harness.
@@ -252,6 +252,7 @@ This is the first published directory snapshot: **243 plugins**, grouped into **
 - [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) — Provides an AI-driven recruitment workflow covering job requirement analysis, candidate sourcing, resume screening, interview scheduling, and daily reporting.
 - [dsh-llm-verifier](https://github.com/Web0926/dsh-llm-verifier) — Validates and ranks multiple independent coding-agent patches before allowing an approved patch to be applied.
 - [software-project-governance](https://github.com/peterwangze/software-project-governance) — Provides evidence-backed governance workflows for AI coding delivery, covering planning, review, risk, quality, and release control.
+- [MathModelingAgent](https://github.com/yohanchen1/MathModelingAgent) — Provides a closed-loop scientific modeling agent that iterates between modeling, computation, evidence verification, and correction.
 
 ## Development & Ecosystem
 

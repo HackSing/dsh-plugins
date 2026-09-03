@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **243 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 1 日**。
+当前整理 **244 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 3 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **243 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **244 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -217,7 +217,7 @@
 - [rss-digest](https://github.com/JohnXu22786/rss-digest) — 提供RSS/Atom订阅、定时抓取、去重、LLM摘要和每日Markdown简报功能。
 - [market-watch](https://github.com/JohnXu22786/market-watch) — 为 DeepSeek Harness 实现金融行情监控，提供实时报价、本地自选列表、阈值提醒、定期轮询以及 A 股、指数和加密货币的 ASCII/mermaid 图表。
 - [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — 将 OpenAI Codex 项目、聊天、技能和 MCP 服务器与 DeepSeek Harness 同步。
-- [snowmountain-market](https://github.com/Xiamu-ssr/snowmountain-market) — 为 DeepSeek Harness 提供 Wind AIFin MCP 集成和 Alice 工作流。
+- [snowmountain-market](https://github.com/Xiamu-ssr/dsh-wind-aifin) — 为 DeepSeek Harness 提供 Wind AIFin MCP 集成和 Alice 工作流。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — 读取 Claude Code、Codex 和 opencode 的钩子配置，并在 DeepSeek Harness 中执行这些钩子。
 - [db-connector](https://github.com/JohnXu22786/db-connector) — 为 DeepSeek Harness 提供数据库连接能力，包括 SQLite、PostgreSQL 和 MySQL 连接、模式检查、只读查询、写入审批和 JSONL 审计记录。
 - [browser-automation](https://github.com/JohnXu22786/browser-automation) — 通过 MCP 服务器为 DeepSeek Harness 提供浏览器自动化工具（导航、点击、填表、截图和 JavaScript 执行）。
@@ -252,6 +252,7 @@
 - [recruiting-copilot](https://github.com/Viy1204/recruiting-copilot) — 提供 AI 驱动的招聘工作流，涵盖岗位梳理、候选人寻源、简历评估、面试安排和日报生成。
 - [dsh-llm-verifier](https://github.com/Web0926/dsh-llm-verifier) — 验证并对多个独立编码代理的补丁进行排名，然后允许应用已批准的补丁。
 - [software-project-governance](https://github.com/peterwangze/software-project-governance) — 为AI编码交付提供基于证据的治理工作流，涵盖规划、审查、风险、质量和发布控制。
+- [MathModelingAgent](https://github.com/yohanchen1/MathModelingAgent) — 提供闭环科学建模智能体，在建模范式、计算、证据验证与纠偏之间迭代运行。
 
 ## 开发与生态集成
 
