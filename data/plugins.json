@@ -1573,7 +1573,7 @@
       "name": "snowmountain-market",
       "repository_id": 1299508956,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Xiamu-ssr/snowmountain-market"
+      "url": "https://github.com/Xiamu-ssr/dsh-wind-aifin"
     },
     {
       "category": "integrations",
@@ -1853,6 +1853,15 @@
       "repository_id": 1219000209,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/peterwangze/software-project-governance"
+    },
+    {
+      "category": "automation",
+      "description_en": "Provides a closed-loop scientific modeling agent that iterates between modeling, computation, evidence verification, and correction.",
+      "description_zh": "提供闭环科学建模智能体，在建模范式、计算、证据验证与纠偏之间迭代运行。",
+      "name": "MathModelingAgent",
+      "repository_id": 1035729275,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/yohanchen1/MathModelingAgent"
     },
     {
       "category": "development",

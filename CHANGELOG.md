@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:33732412124 -->
+- Automatically added [MathModelingAgent](https://github.com/yohanchen1/MathModelingAgent) to Automation & Agents from the `dsh-plugin` topic.
+
 <!-- topic-sync:33489316235 -->
 - Automatically added [agent-knock-knock](https://github.com/scotthuang/agent-knock-knock) to Integrations & Connectors from the `dsh-plugin` topic.
 
