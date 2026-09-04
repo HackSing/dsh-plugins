@@ -622,6 +622,24 @@
       "url": "https://github.com/Jstn-1g/dsh-live-voice"
     },
     {
+      "category": "interaction",
+      "description_en": "Captures the frontmost macOS window and attaches a screenshot to the current DSH Desktop chat.",
+      "description_zh": "捕获macOS最前面的窗口，并将截图附加到当前的DSH Desktop聊天中。",
+      "name": "dsh-appshots",
+      "repository_id": 377408127,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/WongYuYe/dsh-appshots"
+    },
+    {
+      "category": "interaction",
+      "description_en": "Provides a desktop launcher and sidebar menu that opens DeepSeek Harness in fullscreen and supports reload and exit actions.",
+      "description_zh": "提供桌面启动器和侧栏菜单，支持全屏打开 DeepSeek Harness、重载界面和退出操作。",
+      "name": "dsh-dock",
+      "repository_id": 1092940076,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/UnknowCao/dsh-dock"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
