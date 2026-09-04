@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **244 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 3, 2026**.
+Explore **246 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 4, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **244 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **244 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **246 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -100,6 +100,8 @@ This is the first published directory snapshot: **244 plugins**, grouped into **
 - [dshwiki-plugin](https://github.com/ai798-Lab/dshwiki-plugin) — Provides a sidebar panel in the DeepSeek Harness web interface listing curated plugins with copyable install commands.
 - [dsh-theme-eink-retro](https://github.com/exoticknight/dsh-theme-eink-retro) — A client-side theme for DeepSeek Harness that applies a paper-and-ink visual style with Balanced and Immersive modes.
 - [dsh-live-voice](https://github.com/Jstn-1g/dsh-live-voice) — Adds live voice input and playback to the DeepSeek Harness web interface, supporting one manual audio turn per session.
+- [dsh-appshots](https://github.com/WongYuYe/dsh-appshots) — Captures the frontmost macOS window and attaches a screenshot to the current DSH Desktop chat.
+- [dsh-dock](https://github.com/UnknowCao/dsh-dock) — Provides a desktop launcher and sidebar menu that opens DeepSeek Harness in fullscreen and supports reload and exit actions.
 
 ## Tools & Capabilities
 
