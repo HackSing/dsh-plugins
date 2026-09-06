@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34016578511 -->
+- Automatically added [dsh-amphoreus](https://github.com/xi-kari/dsh-amphoreus) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:33852271836 -->
 - Automatically added [dsh-appshots](https://github.com/WongYuYe/dsh-appshots) to Interaction & Experience from the `dsh-plugin` topic.
 - Automatically added [dsh-dock](https://github.com/UnknowCao/dsh-dock) to Interaction & Experience from the `dsh-plugin` topic.
