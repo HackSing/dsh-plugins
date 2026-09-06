@@ -640,6 +640,15 @@
       "url": "https://github.com/UnknowCao/dsh-dock"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides a DeepSeek Harness plugin that adds a seat-based workspace and canvas workbench for character skill cards.",
+      "description_zh": "提供一个 DeepSeek Harness 插件，为角色技能卡增加按席位组织的工作区和画布工作台。",
+      "name": "dsh-amphoreus",
+      "repository_id": 1357788413,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/xi-kari/dsh-amphoreus"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

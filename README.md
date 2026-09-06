@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **246 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 4, 2026**.
+Explore **247 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 6, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **246 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **246 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **247 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -102,6 +102,7 @@ This is the first published directory snapshot: **246 plugins**, grouped into **
 - [dsh-live-voice](https://github.com/Jstn-1g/dsh-live-voice) — Adds live voice input and playback to the DeepSeek Harness web interface, supporting one manual audio turn per session.
 - [dsh-appshots](https://github.com/WongYuYe/dsh-appshots) — Captures the frontmost macOS window and attaches a screenshot to the current DSH Desktop chat.
 - [dsh-dock](https://github.com/UnknowCao/dsh-dock) — Provides a desktop launcher and sidebar menu that opens DeepSeek Harness in fullscreen and supports reload and exit actions.
+- [dsh-amphoreus](https://github.com/xi-kari/dsh-amphoreus) — Provides a DeepSeek Harness plugin that adds a seat-based workspace and canvas workbench for character skill cards.
 
 ## Tools & Capabilities
 
