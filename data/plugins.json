@@ -1891,6 +1891,15 @@
       "url": "https://github.com/yohanchen1/MathModelingAgent"
     },
     {
+      "category": "automation",
+      "description_en": "Automates information aggregation, AI summarization, and publishing across multiple channels, and includes a native DeepSeek Harness plugin for synchronized source ingestion, AI selection, review, and controlled distribution.",
+      "description_zh": "自动化实现信息聚合、AI 总结和多渠道发布，并提供 DeepSeek Harness 原生插件用于数据源同步、AI 筛选、审核和受控分发。",
+      "name": "PrismFlowAgent",
+      "repository_id": 1074123489,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/justlovemaki/PrismFlowAgent"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
