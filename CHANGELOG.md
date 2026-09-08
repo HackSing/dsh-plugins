@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34203800276 -->
+- Automatically added [PrismFlowAgent](https://github.com/justlovemaki/PrismFlowAgent) to Automation & Agents from the `dsh-plugin` topic.
+
 <!-- topic-sync:34016578511 -->
 - Automatically added [dsh-amphoreus](https://github.com/xi-kari/dsh-amphoreus) to Interaction & Experience from the `dsh-plugin` topic.
 
