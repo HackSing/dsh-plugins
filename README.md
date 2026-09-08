@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **249 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 8, 2026**.
+Explore **250 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 8, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **249 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **249 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **250 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -233,6 +233,7 @@ This is the first published directory snapshot: **249 plugins**, grouped into **
 - [CloudBase-AI-Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit) — Bridges AI coding agents to CloudBase backend services such as database, storage, auth, and cloud functions via a DeepSeek Harness plugin and MCP server.
 - [dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) — Provides a marketplace and connection manager for MCP servers within DeepSeek Harness.
 - [agent-knock-knock](https://github.com/scotthuang/agent-knock-knock) — Provides a DeepSeek Harness connector that controls local Codex and Claude Code sessions running in tmux or Herdr from chat.
+- [dsh-vision-bridge](https://github.com/GooDAnDReaDY/dsh-vision-bridge) — Adds vision support to DeepSeek Harness by routing attached images to external vision models and converting them into text descriptions.
 
 ## Automation & Agents
 
