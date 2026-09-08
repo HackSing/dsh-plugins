@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34283698936 -->
+- Automatically added [dsh-shadow-auditor](https://github.com/GooDAnDReaDY/dsh-shadow-auditor) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:34269742570 -->
 - Automatically added [dsh-usage-guard](https://github.com/GooDAnDReaDY/dsh-usage-guard) to Tools & Capabilities from the `dsh-plugin` topic.
 

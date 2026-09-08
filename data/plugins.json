@@ -1162,6 +1162,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-usage-guard"
     },
     {
+      "category": "tools",
+      "description_en": "Implements background security auditing for DeepSeek Harness, scanning diffs for secrets and checking shell commands for destructive patterns.",
+      "description_zh": "为 DeepSeek Harness 实现后台安全审计，扫描差异中的秘密并检查 shell 命令是否具有破坏性。",
+      "name": "dsh-shadow-auditor",
+      "repository_id": 1355190084,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-shadow-auditor"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
