@@ -1702,6 +1702,15 @@
       "url": "https://github.com/scotthuang/agent-knock-knock"
     },
     {
+      "category": "integrations",
+      "description_en": "Connects paid subscription accounts for Codex, Claude, Grok, and Antigravity into DeepSeek Harness via OAuth, with multi-account rotation pools and a Cordis service for sibling plugins.",
+      "description_zh": "通过 OAuth 将 Codex、Claude、Grok 和 Antigravity 的付费订阅账户接入 DeepSeek Harness，支持多账户轮换并为兄弟插件提供 Cordis 服务。",
+      "name": "dsh-subscriptions",
+      "repository_id": 1341764343,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-subscriptions"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
