@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **249 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 8, 2026**.
+Explore **250 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 8, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **249 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **249 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **250 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -162,6 +162,7 @@ This is the first published directory snapshot: **249 plugins**, grouped into **
 - [omdsh-editor](https://github.com/omdsh-plugins/omdsh-editor) — Adds a session-header control to open the current project directory in a detected native editor, with routes to list editors, serve their icons, and launch one.
 - [dsh-ux-writing](https://github.com/uckkk/dsh-ux-writing) — Provides UX microcopy writing guidelines and button/error message copy recommendations for DeepSeek Harness.
 - [humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) — Detects and removes AI-generated traces from Russian text using pattern and regex markers.
+- [dsh-time-machine](https://github.com/GooDAnDReaDY/dsh-time-machine) — Provides shadow Git snapshots, workspace rollback, and visual diff capabilities for DeepSeek Harness.
 
 ## Knowledge & Memory
 

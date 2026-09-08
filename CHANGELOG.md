@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34251909007 -->
+- Automatically added [dsh-time-machine](https://github.com/GooDAnDReaDY/dsh-time-machine) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:34222166080 -->
 - Automatically added [dsh-voice](https://github.com/GooDAnDReaDY/dsh-voice) to Interaction & Experience from the `dsh-plugin` topic.
 
