@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **251 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 8, 2026**.
+Explore **252 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 8, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **251 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **251 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **252 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -104,6 +104,7 @@ This is the first published directory snapshot: **251 plugins**, grouped into **
 - [dsh-dock](https://github.com/UnknowCao/dsh-dock) — Provides a desktop launcher and sidebar menu that opens DeepSeek Harness in fullscreen and supports reload and exit actions.
 - [dsh-amphoreus](https://github.com/xi-kari/dsh-amphoreus) — Provides a DeepSeek Harness plugin that adds a seat-based workspace and canvas workbench for character skill cards.
 - [dsh-voice](https://github.com/GooDAnDReaDY/dsh-voice) — Provides voice input for DeepSeek Harness with streaming dictation, voice messages, and multi-provider fallback chains.
+- [dsh-tts](https://github.com/GooDAnDReaDY/dsh-tts) — Provides multi-provider text-to-speech synthesis for assistant replies, including offline neural engines and streaming audio.
 
 ## Tools & Capabilities
 

@@ -658,6 +658,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-voice"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides multi-provider text-to-speech synthesis for assistant replies, including offline neural engines and streaming audio.",
+      "description_zh": "为助手回复提供多提供商文本转语音合成，支持离线神经引擎和流式音频。",
+      "name": "dsh-tts",
+      "repository_id": 1340581243,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-tts"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
