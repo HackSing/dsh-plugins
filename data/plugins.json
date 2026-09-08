@@ -1711,6 +1711,15 @@
       "url": "https://github.com/scotthuang/agent-knock-knock"
     },
     {
+      "category": "integrations",
+      "description_en": "Adds vision support to DeepSeek Harness by routing attached images to external vision models and converting them into text descriptions.",
+      "description_zh": "为 DeepSeek Harness 添加视觉支持，将附加的图像路由到外部视觉模型并转换为文本描述。",
+      "name": "dsh-vision-bridge",
+      "repository_id": 1338166229,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-vision-bridge"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
