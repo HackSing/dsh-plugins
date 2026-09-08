@@ -1153,6 +1153,15 @@
       "url": "https://github.com/Vladimir-Human/humanizer-ru"
     },
     {
+      "category": "tools",
+      "description_en": "Sanitizes session token-usage metrics in DeepSeek Harness to prevent malformed provider data from corrupting chat history.",
+      "description_zh": "清理 DeepSeek Harness 中的会话 token 用量指标，防止格式错误的提供方数据破坏聊天历史。",
+      "name": "dsh-usage-guard",
+      "repository_id": 1345319852,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-usage-guard"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
