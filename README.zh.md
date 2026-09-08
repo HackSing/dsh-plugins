@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **250 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 8 日**。
+当前整理 **251 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 8 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **250 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **251 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -162,6 +162,7 @@
 - [omdsh-editor](https://github.com/omdsh-plugins/omdsh-editor) — 在会话头部添加一个控件，用于在检测到的本机编辑器中打开当前项目目录，并提供列出编辑器、提供图标和启动编辑器的路由。
 - [dsh-ux-writing](https://github.com/uckkk/dsh-ux-writing) — 提供DeepSeek Harness的UX微文案规范及按钮、错误提示文案撰写指南。
 - [humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) — 检测并去除俄语文本中的 AI 生成痕迹，使用模式与正则标记。
+- [dsh-usage-guard](https://github.com/GooDAnDReaDY/dsh-usage-guard) — 清理 DeepSeek Harness 中的会话 token 用量指标，防止格式错误的提供方数据破坏聊天历史。
 
 ## 知识与记忆
 
