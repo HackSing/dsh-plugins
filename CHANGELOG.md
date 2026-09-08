@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34269757841 -->
+- Automatically added [dsh-session-control](https://github.com/GooDAnDReaDY/dsh-session-control) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:34251893923 -->
 - Automatically added [dsh-vision-bridge](https://github.com/GooDAnDReaDY/dsh-vision-bridge) to Integrations & Connectors from the `dsh-plugin` topic.
 

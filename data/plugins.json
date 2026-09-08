@@ -658,6 +658,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-voice"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides advanced sidebar session management for DeepSeek Harness: pinning, labeling, search, keyboard navigation, and reading/exporting archived transcripts.",
+      "description_zh": "为 DeepSeek Harness 侧边栏提供进阶会话管理功能：置顶、标签、搜索、键盘导航，以及读取和导出归档转录。",
+      "name": "dsh-session-control",
+      "repository_id": 1359535706,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-session-control"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
