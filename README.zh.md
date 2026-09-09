@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **254 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 9 日**。
+当前整理 **255 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 9 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **254 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **255 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -238,6 +238,7 @@
 - [agent-knock-knock](https://github.com/scotthuang/agent-knock-knock) — 提供 DeepSeek Harness 连接器，可从聊天控制 tmux 或 Herdr 中运行的本地 Codex 和 Claude Code 会话。
 - [dsh-vision-bridge](https://github.com/GooDAnDReaDY/dsh-vision-bridge) — 为 DeepSeek Harness 添加视觉支持，将附加的图像路由到外部视觉模型并转换为文本描述。
 - [dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) — 将基于OAuth的付费AI订阅账户（Codex、Claude、Grok、Antigravity）桥接为DeepSeek Harness的LLM提供商，支持多账户轮换与限流故障转移。
+- [dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) — 将 Telegram、Discord 和 Slack 桥接到 DeepSeek Harness，支持会话控制、消息传递和语音笔记功能。
 
 ## 自动化与智能体
 

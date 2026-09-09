@@ -1756,6 +1756,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-subscriptions"
     },
     {
+      "category": "integrations",
+      "description_en": "Bridges Telegram, Discord, and Slack to DeepSeek Harness with session control, messaging, and voice note features.",
+      "description_zh": "将 Telegram、Discord 和 Slack 桥接到 DeepSeek Harness，支持会话控制、消息传递和语音笔记功能。",
+      "name": "dsh-messenger-gateway",
+      "repository_id": 1347427335,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-messenger-gateway"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",

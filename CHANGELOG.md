@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34338301006 -->
+- Automatically added [dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:34313886068 -->
 - Automatically added [dsh-time-machine](https://github.com/GooDAnDReaDY/dsh-time-machine) to Tools & Capabilities from the `dsh-plugin` topic.
 

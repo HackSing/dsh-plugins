@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **254 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 9, 2026**.
+Explore **255 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 9, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **254 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **254 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **255 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -238,6 +238,7 @@ This is the first published directory snapshot: **254 plugins**, grouped into **
 - [agent-knock-knock](https://github.com/scotthuang/agent-knock-knock) — Provides a DeepSeek Harness connector that controls local Codex and Claude Code sessions running in tmux or Herdr from chat.
 - [dsh-vision-bridge](https://github.com/GooDAnDReaDY/dsh-vision-bridge) — Adds vision support to DeepSeek Harness by routing attached images to external vision models and converting them into text descriptions.
 - [dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) — Bridges OAuth-based paid AI subscription accounts (Codex, Claude, Grok, Antigravity) into DeepSeek Harness as LLM providers with multi-account rotation and rate-limit failover.
+- [dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) — Bridges Telegram, Discord, and Slack to DeepSeek Harness with session control, messaging, and voice note features.
 
 ## Automation & Agents
 
