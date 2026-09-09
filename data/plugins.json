@@ -1981,6 +1981,15 @@
       "url": "https://github.com/justlovemaki/PrismFlowAgent"
     },
     {
+      "category": "automation",
+      "description_en": "Provides a Mixture of Agents workflow for DeepSeek Harness that runs parallel model proposals, evaluates them with a judge model, and promotes winning files.",
+      "description_zh": "为 DeepSeek Harness 提供多智能体混合（MoA）工作流，并行生成多个方案，由评判模型评估并采纳优胜文件。",
+      "name": "dsh-moa",
+      "repository_id": 1357256243,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-moa"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
