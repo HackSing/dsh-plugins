@@ -1738,6 +1738,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-vision-bridge"
     },
     {
+      "category": "integrations",
+      "description_en": "Bridges OAuth-based paid AI subscription accounts (Codex, Claude, Grok, Antigravity) into DeepSeek Harness as LLM providers with multi-account rotation and rate-limit failover.",
+      "description_zh": "将基于OAuth的付费AI订阅账户（Codex、Claude、Grok、Antigravity）桥接为DeepSeek Harness的LLM提供商，支持多账户轮换与限流故障转移。",
+      "name": "dsh-subscriptions",
+      "repository_id": 1341764343,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-subscriptions"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",

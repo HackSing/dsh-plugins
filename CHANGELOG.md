@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34293732147 -->
+- Automatically added [dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:34283685166 -->
 - Automatically added [dsh-tts](https://github.com/GooDAnDReaDY/dsh-tts) to Interaction & Experience from the `dsh-plugin` topic.
 
