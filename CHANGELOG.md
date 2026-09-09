@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34415776440 -->
+- Automatically added [dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) to Content & Creation from the `dsh-plugin` topic.
+
 <!-- topic-sync:34403715198 -->
 - Automatically added [dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) to Automation & Agents from the `dsh-plugin` topic.
 

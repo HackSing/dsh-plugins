@@ -1513,6 +1513,15 @@
       "url": "https://github.com/JohnXu22786/docgen"
     },
     {
+      "category": "content",
+      "description_en": "Provides image generation and visual processing tools for DeepSeek Harness with multiple providers and utility functions.",
+      "description_zh": "为 DeepSeek Harness 提供图像生成与视觉处理工具，支持多种提供方及实用功能。",
+      "name": "dsh-image-gen",
+      "repository_id": 1338165972,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-image-gen"
+    },
+    {
       "category": "integrations",
       "description_en": "Provides accessibility-first macOS control with fresh-state checks and scoped permissions.",
       "description_zh": "提供无障碍优先的 macOS 控制，并包含状态新鲜度检查和权限约束。",
