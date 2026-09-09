@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **256 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 9, 2026**.
+Explore **257 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 9, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **256 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **256 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **257 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -106,6 +106,7 @@ This is the first published directory snapshot: **256 plugins**, grouped into **
 - [dsh-voice](https://github.com/GooDAnDReaDY/dsh-voice) — Provides voice input for DeepSeek Harness with streaming dictation, voice messages, and multi-provider fallback chains.
 - [dsh-tts](https://github.com/GooDAnDReaDY/dsh-tts) — Provides multi-provider text-to-speech synthesis for assistant replies, including offline neural engines and streaming audio.
 - [dsh-session-control](https://github.com/GooDAnDReaDY/dsh-session-control) — Provides session management for the DeepSeek Harness sidebar, including pinning, labeling, searching, hiding, renaming, and exporting conversations.
+- [dsh-russian-lang](https://github.com/GooDAnDReaDY/dsh-russian-lang) — Provides Russian localization, typography correction, and keyboard layout fixing for the DeepSeek Harness interface.
 
 ## Tools & Capabilities
 

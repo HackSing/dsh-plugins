@@ -676,6 +676,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-session-control"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides Russian localization, typography correction, and keyboard layout fixing for the DeepSeek Harness interface.",
+      "description_zh": "为 DeepSeek Harness 界面提供俄语本地化、排版修正和键盘布局修复功能。",
+      "name": "dsh-russian-lang",
+      "repository_id": 1343684581,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-russian-lang"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
