@@ -1189,6 +1189,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-time-machine"
     },
     {
+      "category": "tools",
+      "description_en": "Provides background security auditing for DeepSeek Harness, scanning code diffs for secrets and validating shell commands before execution.",
+      "description_zh": "为 DeepSeek Harness 提供后台安全审计，扫描代码差异中的机密并在执行前验证 shell 命令。",
+      "name": "dsh-shadow-auditor",
+      "repository_id": 1355190084,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-shadow-auditor"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
