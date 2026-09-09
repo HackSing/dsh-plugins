@@ -667,6 +667,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-tts"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides full Russian localization for DeepSeek Harness core and ecosystem plugins, with typography and keyboard-layout correction features.",
+      "description_zh": "为 DeepSeek Harness 核心及生态插件提供完整俄语本地化，并包含排版与键盘布局修正功能。",
+      "name": "dsh-russian-lang",
+      "repository_id": 1343684581,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-russian-lang"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
