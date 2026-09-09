@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **253 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 9, 2026**.
+Explore **254 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 9, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **253 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **253 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **254 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -262,6 +262,7 @@ This is the first published directory snapshot: **253 plugins**, grouped into **
 - [software-project-governance](https://github.com/peterwangze/software-project-governance) — Provides evidence-backed governance workflows for AI coding delivery, covering planning, review, risk, quality, and release control.
 - [MathModelingAgent](https://github.com/yohanchen1/MathModelingAgent) — Provides a closed-loop scientific modeling agent that iterates between modeling, computation, evidence verification, and correction.
 - [PrismFlowAgent](https://github.com/justlovemaki/PrismFlowAgent) — Automates information aggregation, AI summarization, and publishing across multiple channels, and includes a native DeepSeek Harness plugin for synchronized source ingestion, AI selection, review, and controlled distribution.
+- [dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) — Runs Mixture-of-Agents workflows through a /moa slash command with parallel model proposers, a judge model, isolated candidate workspaces, and winner file promotion in the project directory.
 
 ## Development & Ecosystem
 

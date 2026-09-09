@@ -1945,6 +1945,15 @@
       "url": "https://github.com/justlovemaki/PrismFlowAgent"
     },
     {
+      "category": "automation",
+      "description_en": "Runs Mixture-of-Agents workflows through a /moa slash command with parallel model proposers, a judge model, isolated candidate workspaces, and winner file promotion in the project directory.",
+      "description_zh": "通过 /moa 斜杠命令运行混合智能体工作流，包括并行模型提案者、评估模型、隔离候选工作区以及将获胜文件提升到项目目录。",
+      "name": "dsh-moa",
+      "repository_id": 1357256243,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-moa"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
