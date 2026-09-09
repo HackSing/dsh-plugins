@@ -667,6 +667,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-tts"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides session management for the DeepSeek Harness sidebar, including pinning, labeling, searching, hiding, renaming, and exporting conversations.",
+      "description_zh": "为 DeepSeek Harness 侧边栏提供会话管理功能，包括固定、标记、搜索、隐藏、重命名和导出对话。",
+      "name": "dsh-session-control",
+      "repository_id": 1359535706,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-session-control"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
