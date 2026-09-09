@@ -1198,6 +1198,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-shadow-auditor"
     },
     {
+      "category": "tools",
+      "description_en": "Provides per-provider API key rotation, automatic rate-limit failover, and cooldown probing for DeepSeek Harness.",
+      "description_zh": "为 DeepSeek Harness 提供按提供商分配的 API 密钥轮换、自动速率限制故障转移和冷却探测功能。",
+      "name": "dsh-key-rotation",
+      "repository_id": 1338166081,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-key-rotation"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",

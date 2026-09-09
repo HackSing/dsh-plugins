@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **256 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 9, 2026**.
+Explore **257 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 9, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **256 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **256 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **257 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -167,6 +167,7 @@ This is the first published directory snapshot: **256 plugins**, grouped into **
 - [dsh-usage-guard](https://github.com/GooDAnDReaDY/dsh-usage-guard) — Sanitizes session token-usage metrics in DeepSeek Harness to prevent malformed provider data from corrupting chat history.
 - [dsh-time-machine](https://github.com/GooDAnDReaDY/dsh-time-machine) — Provides automated shadow git snapshots, visual diffs, and instant rollback for DeepSeek Harness workspaces.
 - [dsh-shadow-auditor](https://github.com/GooDAnDReaDY/dsh-shadow-auditor) — Provides background security auditing for DeepSeek Harness, scanning code diffs for secrets and validating shell commands before execution.
+- [dsh-key-rotation](https://github.com/GooDAnDReaDY/dsh-key-rotation) — Provides per-provider API key rotation, automatic rate-limit failover, and cooldown probing for DeepSeek Harness.
 
 ## Knowledge & Memory
 

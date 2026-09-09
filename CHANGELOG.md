@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34386119539 -->
+- Automatically added [dsh-key-rotation](https://github.com/GooDAnDReaDY/dsh-key-rotation) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:34364284085 -->
 - Automatically added [dsh-shadow-auditor](https://github.com/GooDAnDReaDY/dsh-shadow-auditor) to Tools & Capabilities from the `dsh-plugin` topic.
 
