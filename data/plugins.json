@@ -2330,6 +2330,15 @@
       "repository_id": 1339287884,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/TY-ang/dsh-worktree-flow"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides a DSH sidebar/drawer canvas that renders HTML, React JSX, SVG, and Mermaid previews in a sandboxed in-browser frame with SSE hot-reload and registers agent tools for previewing, inspecting, and exporting those artifacts.",
+      "description_zh": "提供 DSH 侧边栏/抽屉式画布，在浏览器沙箱 iframe 中渲染 HTML、React JSX、SVG 和 Mermaid 预览并支持 SSE 热重载，同时注册用于预览、检查与导出这些产物的 Agent 工具。",
+      "name": "dsh-live-canvas",
+      "repository_id": 1352220414,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-live-canvas"
     }
   ],
   "schema_version": 1
