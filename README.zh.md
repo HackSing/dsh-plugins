@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **263 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 10 日**。
+当前整理 **264 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 10 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **263 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **264 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -208,6 +208,7 @@
 - [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — 仓库包含桌面版 AI 小说创作应用及用于 DeepSeek Harness Web 的小说创作插件。
 - [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — 为 DeepSeek Harness 提供视觉模型适配器，将图片任务路由至 PaddleOCR-VL 和 Qwen。
 - [docgen](https://github.com/JohnXu22786/docgen) — 为智能体框架提供文档生成技能，包括 README 生成、PR 描述、变更日志生成和代码审查。
+- [dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) — 为 DeepSeek Harness 提供图像生成与图像处理工具，包含多个服务商后端、风格预设和设置面板。
 
 ## 集成与连接
 
