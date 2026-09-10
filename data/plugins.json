@@ -1999,6 +1999,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-moa"
     },
     {
+      "category": "automation",
+      "description_en": "Adds a Kanban board plugin to DeepSeek Harness that stores tasks in SQLite, syncs them bidirectionally with Gitea/Forgejo issues and pull requests, and dispatches agent sessions when cards move between workflow columns.",
+      "description_zh": "为 DeepSeek Harness 添加看板插件，用 SQLite 存储任务，与 Gitea/Forgejo 的 issue 和拉取请求双向同步，并在卡片切换工作流列时派发对应的代理会话。",
+      "name": "dsh-kanban",
+      "repository_id": 1348613783,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-kanban"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
