@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **263 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 10, 2026**.
+Explore **264 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 10, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **263 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **263 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **264 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -208,6 +208,7 @@ This is the first published directory snapshot: **263 plugins**, grouped into **
 - [AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — Repository contains a desktop AI novel writing application and a DeepSeek Harness plugin for novel creation in the web interface.
 - [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — Provides a visual model adapter that routes image tasks to PaddleOCR-VL and Qwen for DeepSeek Harness.
 - [docgen](https://github.com/JohnXu22786/docgen) — Provides document-generation skills for agent harnesses, including README generation, PR description, changelog generation, and code review.
+- [dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) — Provides image generation and image processing tools for DeepSeek Harness, including provider backends, style presets, and a settings panel.
 
 ## Integrations & Connectors
 
