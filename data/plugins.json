@@ -1810,6 +1810,15 @@
       "url": "https://github.com/evil7/deepSea"
     },
     {
+      "category": "integrations",
+      "description_en": "DSH plugin that enables LAN access to the Web UI via mDNS, HTTPS with a local root CA, QR code pairing, PWA support, and loopback header rewriting.",
+      "description_zh": "DSH 插件，通过 mDNS、本地根 CA 的 HTTPS、二维码配对、PWA 支持和回环请求头重写，实现 Web UI 的局域网访问。",
+      "name": "dsh-lanmode",
+      "repository_id": 1340911992,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-lanmode"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
