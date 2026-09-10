@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **260 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 10, 2026**.
+Explore **261 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 10, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **260 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **260 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **261 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -242,6 +242,7 @@ This is the first published directory snapshot: **260 plugins**, grouped into **
 - [dsh-vision-bridge](https://github.com/GooDAnDReaDY/dsh-vision-bridge) — Adds vision support to DeepSeek Harness by routing attached images to external vision models and converting them into text descriptions.
 - [dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) — Bridges OAuth-based paid AI subscription accounts (Codex, Claude, Grok, Antigravity) into DeepSeek Harness as LLM providers with multi-account rotation and rate-limit failover.
 - [dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) — Bridges DeepSeek Harness agents to Telegram, Discord, and Slack for messaging, voice notes, and session control.
+- [dsh-key-rotation](https://github.com/GooDAnDReaDY/dsh-key-rotation) — Manages per-provider API key pools for DeepSeek Harness with credential rotation, 429 failover, cooldown probing, and a React settings dashboard.
 
 ## Automation & Agents
 
