@@ -1828,6 +1828,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-lanmode"
     },
     {
+      "category": "integrations",
+      "description_en": "Registers four DeepSeek Harness tools that call the xAI Responses API through SuperGrok OAuth to search X posts, profile authors, list trends, and check Community Notes.",
+      "description_zh": "通过 SuperGrok OAuth 调用 xAI Responses API，为 DeepSeek Harness 注册四个工具，用于搜索 X 帖子、分析作者、获取趋势和核查社区笔记。",
+      "name": "dsh-grok-xsearch",
+      "repository_id": 1341938261,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-grok-xsearch"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
