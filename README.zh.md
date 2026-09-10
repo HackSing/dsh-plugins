@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **262 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 10 日**。
+当前整理 **263 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 10 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **262 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **263 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -270,6 +270,7 @@
 - [MathModelingAgent](https://github.com/yohanchen1/MathModelingAgent) — 提供闭环科学建模智能体，在建模范式、计算、证据验证与纠偏之间迭代运行。
 - [PrismFlowAgent](https://github.com/justlovemaki/PrismFlowAgent) — 自动化实现信息聚合、AI 总结和多渠道发布，并提供 DeepSeek Harness 原生插件用于数据源同步、AI 筛选、审核和受控分发。
 - [dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) — 为 DeepSeek Harness 提供多智能体混合（MoA）工作流，并行生成多个方案，由评判模型评估并采纳优胜文件。
+- [dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) — 为 DeepSeek Harness 添加 /goal 命令，运行带里程碑跟踪、代理工具和顶部状态横幅的自主多轮执行循环。
 
 ## 开发与生态集成
 

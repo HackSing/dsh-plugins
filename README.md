@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **262 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 10, 2026**.
+Explore **263 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 10, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **262 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **262 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **263 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -270,6 +270,7 @@ This is the first published directory snapshot: **262 plugins**, grouped into **
 - [MathModelingAgent](https://github.com/yohanchen1/MathModelingAgent) — Provides a closed-loop scientific modeling agent that iterates between modeling, computation, evidence verification, and correction.
 - [PrismFlowAgent](https://github.com/justlovemaki/PrismFlowAgent) — Automates information aggregation, AI summarization, and publishing across multiple channels, and includes a native DeepSeek Harness plugin for synchronized source ingestion, AI selection, review, and controlled distribution.
 - [dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) — Provides a Mixture of Agents workflow for DeepSeek Harness that runs parallel model proposals, evaluates them with a judge model, and promotes winning files.
+- [dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) — Adds a /goal command to DeepSeek Harness that runs an autonomous multi-turn execution loop with milestone tracking, agent tools, and a sticky status banner.
 
 ## Development & Ecosystem
 

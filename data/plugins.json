@@ -2017,6 +2017,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-moa"
     },
     {
+      "category": "automation",
+      "description_en": "Adds a /goal command to DeepSeek Harness that runs an autonomous multi-turn execution loop with milestone tracking, agent tools, and a sticky status banner.",
+      "description_zh": "为 DeepSeek Harness 添加 /goal 命令，运行带里程碑跟踪、代理工具和顶部状态横幅的自主多轮执行循环。",
+      "name": "dsh-goal",
+      "repository_id": 1358489359,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-goal"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
