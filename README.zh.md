@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **260 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 10 日**。
+当前整理 **261 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 10 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **260 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **261 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -242,6 +242,7 @@
 - [dsh-vision-bridge](https://github.com/GooDAnDReaDY/dsh-vision-bridge) — 为 DeepSeek Harness 添加视觉支持，将附加的图像路由到外部视觉模型并转换为文本描述。
 - [dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) — 将基于OAuth的付费AI订阅账户（Codex、Claude、Grok、Antigravity）桥接为DeepSeek Harness的LLM提供商，支持多账户轮换与限流故障转移。
 - [dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) — 将DeepSeek Harness智能体桥接到Telegram、Discord和Slack，支持消息、语音笔记和会话控制。
+- [dsh-key-rotation](https://github.com/GooDAnDReaDY/dsh-key-rotation) — 为 DeepSeek Harness 管理按提供方划分的 API 密钥池，包含凭据轮换、429 故障转移、冷却探测和 React 设置面板。
 
 ## 自动化与智能体
 
