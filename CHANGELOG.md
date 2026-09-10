@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34425414021 -->
+- Automatically added [dsh-grok-xsearch](https://github.com/GooDAnDReaDY/dsh-grok-xsearch) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:34415766976 -->
 - Automatically added [dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) to Integrations & Connectors from the `dsh-plugin` topic.
 

@@ -1792,6 +1792,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-messenger-gateway"
     },
     {
+      "category": "integrations",
+      "description_en": "DSH plugin that registers X search, author profile, trending topics, and fact-check tools backed by xAI's Responses API.",
+      "description_zh": "DSH 插件，注册由 xAI Responses API 支持的 X 搜索、作者资料、热门话题和事实核查工具。",
+      "name": "dsh-grok-xsearch",
+      "repository_id": 1341938261,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-grok-xsearch"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
