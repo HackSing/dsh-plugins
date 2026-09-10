@@ -2044,6 +2044,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-moa"
     },
     {
+      "category": "automation",
+      "description_en": "A DeepSeek Harness plugin that schedules cron and interval tasks and runs agent or shell prompts on those schedules.",
+      "description_zh": "一个 DeepSeek Harness 插件，用于调度 cron 和间隔任务，并按计划运行 agent 或 shell 提示。",
+      "name": "dsh-cron",
+      "repository_id": 1356982920,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-cron"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
