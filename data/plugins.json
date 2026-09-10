@@ -1819,6 +1819,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-lanmode"
     },
     {
+      "category": "integrations",
+      "description_en": "DeepSeek Harness plugin that exposes Gitea and Forgejo instance operations as agent tools for issues, pull requests, CI, releases, labels, webhooks, and git worktrees.",
+      "description_zh": "DeepSeek Harness 插件，将 Gitea 与 Forgejo 实例的议题、拉取请求、CI、发布、标签、Webhook 与 git worktree 操作以代理工具形式提供。",
+      "name": "dsh-gitea",
+      "repository_id": 1352549172,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-gitea"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
