@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34454752275 -->
+- Automatically added [deepSea](https://github.com/evil7/deepSea) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:34446020147 -->
 - Automatically added [dsh-key-rotation](https://github.com/GooDAnDReaDY/dsh-key-rotation) to Integrations & Connectors from the `dsh-plugin` topic.
 
