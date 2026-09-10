@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34534372186 -->
+- Automatically added [dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) to Automation & Agents from the `dsh-plugin` topic.
+
 <!-- topic-sync:34519204062 -->
 - Automatically added [dsh-grok-xsearch](https://github.com/GooDAnDReaDY/dsh-grok-xsearch) to Integrations & Connectors from the `dsh-plugin` topic.
 

@@ -2044,6 +2044,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-moa"
     },
     {
+      "category": "automation",
+      "description_en": "Provides a Kanban board for DeepSeek Harness with Gitea-backed tasks, workflow columns, and per-task agent sessions.",
+      "description_zh": "为 DeepSeek Harness 提供看板，包含由 Gitea 支持的任务、工作流列和每任务智能体会话。",
+      "name": "dsh-kanban",
+      "repository_id": 1348613783,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-kanban"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",

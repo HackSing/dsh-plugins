@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **265 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 10, 2026**.
+Explore **266 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 10, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **265 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **265 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **266 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -273,6 +273,7 @@ This is the first published directory snapshot: **265 plugins**, grouped into **
 - [MathModelingAgent](https://github.com/yohanchen1/MathModelingAgent) — Provides a closed-loop scientific modeling agent that iterates between modeling, computation, evidence verification, and correction.
 - [PrismFlowAgent](https://github.com/justlovemaki/PrismFlowAgent) — Automates information aggregation, AI summarization, and publishing across multiple channels, and includes a native DeepSeek Harness plugin for synchronized source ingestion, AI selection, review, and controlled distribution.
 - [dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) — Provides a Mixture of Agents workflow for DeepSeek Harness that runs parallel model proposals, evaluates them with a judge model, and promotes winning files.
+- [dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) — Provides a Kanban board for DeepSeek Harness with Gitea-backed tasks, workflow columns, and per-task agent sessions.
 
 ## Development & Ecosystem
 
