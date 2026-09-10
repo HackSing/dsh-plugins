@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34519214948 -->
+- Automatically added [dsh-dsml-artifact-guard](https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:34501447521 -->
 - Automatically added [dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) to Content & Creation from the `dsh-plugin` topic.
 
