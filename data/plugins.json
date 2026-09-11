@@ -2053,6 +2053,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-kanban"
     },
     {
+      "category": "automation",
+      "description_en": "Adds a /goal slash command and agent tools (goal_set_milestones, goal_update_progress, goal_finish) that decompose an objective into milestones and drive a pausable autonomous loop with a sticky progress banner.",
+      "description_zh": "提供 /goal 斜杠命令与 goal_set_milestones、goal_update_progress、goal_finish 等代理工具，将目标拆解为里程碑并驱动可暂停的自主循环，同时显示置顶进度横幅。",
+      "name": "dsh-goal",
+      "repository_id": 1358489359,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-goal"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
