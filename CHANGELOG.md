@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34578378267 -->
+- Automatically added [memsearch](https://github.com/zilliztech/memsearch) to Knowledge & Memory from the `dsh-plugin` topic.
+
 <!-- topic-sync:34562667669 -->
 - Automatically added [dsh-gitea](https://github.com/GooDAnDReaDY/dsh-gitea) to Integrations & Connectors from the `dsh-plugin` topic.
 
