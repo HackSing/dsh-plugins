@@ -1360,6 +1360,15 @@
       "url": "https://github.com/zilliztech/memsearch"
     },
     {
+      "category": "knowledge",
+      "description_en": "Provides DSH agent tools that reduce context by converting source files into AST skeletons, condensing test and build logs, and tracking session token usage against a budget.",
+      "description_zh": "提供 DSH 代理工具，通过将源文件转换为 AST 骨架、精简测试与构建日志，并按预算跟踪会话令牌用量来压缩上下文。",
+      "name": "dsh-context-lens",
+      "repository_id": 1352326572,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-context-lens"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
