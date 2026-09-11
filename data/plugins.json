@@ -1837,6 +1837,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-grok-xsearch"
     },
     {
+      "category": "integrations",
+      "description_en": "Provides a DeepSeek Harness plugin that connects the harness to the ClineBot/ClinePass OpenAI-compatible API endpoint, adding a settings page, model sync, quota display, in-UI credential storage, and a /cline slash command.",
+      "description_zh": "提供一个 DeepSeek Harness 插件，将 Harness 连接到 ClineBot/ClinePass 的 OpenAI 兼容 API 端点，并添加设置页面、模型同步、配额显示、界面内密钥存储以及 /cline 斜杠命令。",
+      "name": "dsh-clinebot",
+      "repository_id": 1357677916,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-clinebot"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",

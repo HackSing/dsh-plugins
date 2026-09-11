@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **267 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
+Explore **268 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **267 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **267 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **268 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -247,6 +247,7 @@ This is the first published directory snapshot: **267 plugins**, grouped into **
 - [deepSea](https://github.com/evil7/deepSea) — Monorepo containing a DSH plugin ecosystem search site plus the deepc-link plugin, which is installed into DSH and exposes a local DSH host through a Cloudflare Tunnel for remote control and data sync.
 - [dsh-lanmode](https://github.com/GooDAnDReaDY/dsh-lanmode) — DSH plugin that enables LAN access to the Web UI via mDNS, HTTPS with a local root CA, QR code pairing, PWA support, and loopback header rewriting.
 - [dsh-grok-xsearch](https://github.com/GooDAnDReaDY/dsh-grok-xsearch) — Registers four DeepSeek Harness tools that call the xAI Responses API through SuperGrok OAuth to search X posts, profile authors, list trends, and check Community Notes.
+- [dsh-clinebot](https://github.com/GooDAnDReaDY/dsh-clinebot) — Provides a DeepSeek Harness plugin that connects the harness to the ClineBot/ClinePass OpenAI-compatible API endpoint, adding a settings page, model sync, quota display, in-UI credential storage, and a /cline slash command.
 
 ## Automation & Agents
 
