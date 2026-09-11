@@ -1225,6 +1225,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard"
     },
     {
+      "category": "tools",
+      "description_en": "DSH plugin that compresses agent context by generating AST code skeletons, condensing test and build logs, and tracking token budget usage.",
+      "description_zh": "DSH 插件，通过生成 AST 代码骨架、压缩测试与构建日志以及跟踪 token 预算用量来压缩智能体上下文。",
+      "name": "dsh-context-lens",
+      "repository_id": 1352326572,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-context-lens"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
