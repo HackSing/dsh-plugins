@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34562667669 -->
+- Automatically added [dsh-gitea](https://github.com/GooDAnDReaDY/dsh-gitea) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:34544941284 -->
 - Automatically added [dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) to Automation & Agents from the `dsh-plugin` topic.
 
