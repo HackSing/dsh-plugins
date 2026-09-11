@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **273 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 11 日**。
+当前整理 **274 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 11 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **273 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **274 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -322,6 +322,7 @@
 - [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) — 为 DeepSeek Harness 插件提供隔离的安装与冒烟测试，并生成结构化通过/失败报告。
 - [dsh-worktree-flow](https://github.com/TY-ang/dsh-worktree-flow) — 为DSH创建功能工作区：每个功能对应一个目录，将多个组件仓库以git worktree方式检出到共享功能分支。
 - [dsh-live-canvas](https://github.com/GooDAnDReaDY/dsh-live-canvas) — 提供 DSH 侧边栏/抽屉式画布，在浏览器沙箱 iframe 中渲染 HTML、React JSX、SVG 和 Mermaid 预览并支持 SSE 热重载，同时注册用于预览、检查与导出这些产物的 Agent 工具。
+- [dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) — 一个 DeepSeek Harness 宿主运行时插件，通过 Cordis 生命周期钩子拦截重复的工具调用与重复的助手输出，并拒绝或取消失控循环。
 
 ## 如何选择插件
 
