@@ -685,6 +685,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-russian-lang"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a session cost chip to the DeepSeek Harness conversation header that displays live token usage by bucket and the current peak or off-peak tariff with a countdown to the next switch.",
+      "description_zh": "在 DeepSeek Harness 会话头部添加会话费用标签，按类别显示实时 token 用量以及当前峰谷费率与下次切换倒计时。",
+      "name": "dsh-cost-meter",
+      "repository_id": 1358344240,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-cost-meter"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
