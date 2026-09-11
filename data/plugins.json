@@ -2420,6 +2420,15 @@
       "repository_id": 1352220414,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/GooDAnDReaDY/dsh-live-canvas"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides a DeepSeek Harness runtime plugin that intercepts repeated tool calls and repetitive assistant output during agent turns using Cordis lifecycle hooks.",
+      "description_zh": "提供一个 DeepSeek Harness 运行时插件，通过 Cordis 生命周期钩子在代理回合中拦截重复的工具调用和重复的助手输出。",
+      "name": "dsh-agent-loop-guard",
+      "repository_id": 1354931756,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-agent-loop-guard"
     }
   ],
   "schema_version": 1
