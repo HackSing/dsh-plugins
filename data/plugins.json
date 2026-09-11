@@ -1216,6 +1216,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard"
     },
     {
+      "category": "tools",
+      "description_en": "Provides DeepSeek Harness agent tools that turn source code into AST skeletons, condense test and build logs, and track token usage against a configurable session budget.",
+      "description_zh": "提供 DeepSeek Harness 智能体工具，可将源代码转为 AST 骨架、精简测试与构建日志，并按可配置的会话预算跟踪 token 使用量。",
+      "name": "dsh-context-lens",
+      "repository_id": 1352326572,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-context-lens"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
