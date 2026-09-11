@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34641821704 -->
+- Automatically added [dsh-context-lens](https://github.com/GooDAnDReaDY/dsh-context-lens) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:34626292751 -->
 - Automatically added [dsh-cost-meter](https://github.com/GooDAnDReaDY/dsh-cost-meter) to Interaction & Experience from the `dsh-plugin` topic.
 
