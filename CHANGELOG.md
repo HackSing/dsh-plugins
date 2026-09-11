@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34544951859 -->
+- Automatically added [dsh-cost-meter](https://github.com/GooDAnDReaDY/dsh-cost-meter) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:34534372186 -->
 - Automatically added [dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) to Automation & Agents from the `dsh-plugin` topic.
 
