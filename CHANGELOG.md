@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34654339801 -->
+- Automatically added [dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) to Development & Ecosystem from the `dsh-plugin` topic.
+
 <!-- topic-sync:34641818166 -->
 - Automatically added [dsh-clinebot](https://github.com/GooDAnDReaDY/dsh-clinebot) to Integrations & Connectors from the `dsh-plugin` topic.
 

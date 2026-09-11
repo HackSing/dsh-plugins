@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **273 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
+Explore **274 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **273 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **273 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **274 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -322,6 +322,7 @@ This is the first published directory snapshot: **273 plugins**, grouped into **
 - [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) — Provides isolated install-and-smoke testing for DeepSeek Harness plugins with structured pass/fail reports.
 - [dsh-worktree-flow](https://github.com/TY-ang/dsh-worktree-flow) — Creates DSH feature workspaces that map one directory per feature to git worktrees across multiple component repositories on a shared feature branch.
 - [dsh-live-canvas](https://github.com/GooDAnDReaDY/dsh-live-canvas) — Provides a DSH sidebar/drawer canvas that renders HTML, React JSX, SVG, and Mermaid previews in a sandboxed in-browser frame with SSE hot-reload and registers agent tools for previewing, inspecting, and exporting those artifacts.
+- [dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) — A DeepSeek Harness host runtime plugin that intercepts repeated tool calls and repetitive assistant output, denying or canceling runaway loops through Cordis lifecycle hooks.
 
 ## How to choose a plugin
 
