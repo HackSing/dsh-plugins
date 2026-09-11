@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **270 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
+Explore **271 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **270 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **270 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **271 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -278,6 +278,7 @@ This is the first published directory snapshot: **270 plugins**, grouped into **
 - [dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) — Provides a Mixture of Agents workflow for DeepSeek Harness that runs parallel model proposals, evaluates them with a judge model, and promotes winning files.
 - [dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) — Provides a Kanban board for DeepSeek Harness with Gitea-backed tasks, workflow columns, and per-task agent sessions.
 - [dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) — Adds a /goal slash command and agent tools (goal_set_milestones, goal_update_progress, goal_finish) that decompose an objective into milestones and drive a pausable autonomous loop with a sticky progress banner.
+- [dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — A DeepSeek Harness plugin that schedules cron, interval, and one-shot tasks and runs them through LLM agent sessions or shell, Node.js, Python, HTTP, SSH, and Docker runtimes with notification delivery.
 
 ## Development & Ecosystem
 

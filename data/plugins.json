@@ -2089,6 +2089,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-goal"
     },
     {
+      "category": "automation",
+      "description_en": "A DeepSeek Harness plugin that schedules cron, interval, and one-shot tasks and runs them through LLM agent sessions or shell, Node.js, Python, HTTP, SSH, and Docker runtimes with notification delivery.",
+      "description_zh": "一个 DeepSeek Harness 插件，可按 cron、间隔和一次性计划调度任务，并通过 LLM 代理会话或 shell、Node.js、Python、HTTP、SSH、Docker 运行时执行，同时发送通知。",
+      "name": "dsh-cron",
+      "repository_id": 1356982920,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-cron"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
