@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **270 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 11 日**。
+当前整理 **271 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 11 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **270 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **271 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -278,6 +278,7 @@
 - [dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) — 为 DeepSeek Harness 提供多智能体混合（MoA）工作流，并行生成多个方案，由评判模型评估并采纳优胜文件。
 - [dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) — 为 DeepSeek Harness 提供看板，包含由 Gitea 支持的任务、工作流列和每任务智能体会话。
 - [dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) — 提供 /goal 斜杠命令与 goal_set_milestones、goal_update_progress、goal_finish 等代理工具，将目标拆解为里程碑并驱动可暂停的自主循环，同时显示置顶进度横幅。
+- [dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — 一个 DeepSeek Harness 插件，可按 cron、间隔和一次性计划调度任务，并通过 LLM 代理会话或 shell、Node.js、Python、HTTP、SSH、Docker 运行时执行，同时发送通知。
 
 ## 开发与生态集成
 

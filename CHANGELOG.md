@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34605000297 -->
+- Automatically added [dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) to Automation & Agents from the `dsh-plugin` topic.
+
 <!-- topic-sync:34582547534 -->
 - Automatically added [dsh-dsml-artifact-guard](https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard) to Tools & Capabilities from the `dsh-plugin` topic.
 
