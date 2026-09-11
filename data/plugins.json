@@ -1342,6 +1342,15 @@
       "url": "https://github.com/Ikalus1988/MisakaNet"
     },
     {
+      "category": "knowledge",
+      "description_en": "Provides a Markdown-backed, Milvus-indexed persistent memory layer for AI coding agents, including a DeepSeek Harness plugin for automatic conversation capture and semantic recall.",
+      "description_zh": "为 AI 编程助手提供以 Markdown 存储、Milvus 索引的持久记忆层，并包含用于自动记录对话与语义召回的 DeepSeek Harness 插件。",
+      "name": "memsearch",
+      "repository_id": 1153190876,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zilliztech/memsearch"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
