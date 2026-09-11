@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **272 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
+Explore **273 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **272 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **272 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **273 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -251,6 +251,7 @@ This is the first published directory snapshot: **272 plugins**, grouped into **
 - [dsh-lanmode](https://github.com/GooDAnDReaDY/dsh-lanmode) — DSH plugin that enables LAN access to the Web UI via mDNS, HTTPS with a local root CA, QR code pairing, PWA support, and loopback header rewriting.
 - [dsh-grok-xsearch](https://github.com/GooDAnDReaDY/dsh-grok-xsearch) — Registers four DeepSeek Harness tools that call the xAI Responses API through SuperGrok OAuth to search X posts, profile authors, list trends, and check Community Notes.
 - [dsh-gitea](https://github.com/GooDAnDReaDY/dsh-gitea) — DeepSeek Harness plugin that connects agents to self-hosted Gitea and Forgejo instances through issue, pull request, CI, release, and worktree tools.
+- [dsh-clinebot](https://github.com/GooDAnDReaDY/dsh-clinebot) — Adds a ClineBot/ClinePass provider companion to DeepSeek Harness with a settings page, quota dashboard, key storage, model sync, and a /cline slash command.
 
 ## Automation & Agents
 
