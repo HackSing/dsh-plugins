@@ -1873,6 +1873,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-gitea"
     },
     {
+      "category": "integrations",
+      "description_en": "Adds a ClineBot/ClinePass provider companion to DeepSeek Harness with a settings page, quota dashboard, key storage, model sync, and a /cline slash command.",
+      "description_zh": "为 DeepSeek Harness 添加 ClineBot/ClinePass 提供商配套插件，包含设置页面、额度面板、密钥保存、模型同步和 /cline 斜杠命令。",
+      "name": "dsh-clinebot",
+      "repository_id": 1357677916,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-clinebot"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
