@@ -1207,6 +1207,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-shadow-auditor"
     },
     {
+      "category": "tools",
+      "description_en": "Sanitizes leaked DSML protocol closing tags from DeepSeek Harness LLM output streams via a synchronous llm/stream hook.",
+      "description_zh": "通过同步的 llm/stream 钩子清理 DeepSeek Harness 模型输出流中泄漏的 DSML 协议闭合标签。",
+      "name": "dsh-dsml-artifact-guard",
+      "repository_id": 1356965793,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",

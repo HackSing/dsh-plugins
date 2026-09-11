@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **269 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 11 日**。
+当前整理 **270 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 11 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **269 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **270 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -168,6 +168,7 @@
 - [dsh-usage-guard](https://github.com/GooDAnDReaDY/dsh-usage-guard) — 清理 DeepSeek Harness 中的会话 token 用量指标，防止格式错误的提供方数据破坏聊天历史。
 - [dsh-time-machine](https://github.com/GooDAnDReaDY/dsh-time-machine) — 为 DeepSeek Harness 工作区提供自动影子 Git 快照、可视化差异和即时回滚功能。
 - [dsh-shadow-auditor](https://github.com/GooDAnDReaDY/dsh-shadow-auditor) — 为 DeepSeek Harness 提供后台安全审计，扫描代码差异中的机密并在执行前验证 shell 命令。
+- [dsh-dsml-artifact-guard](https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard) — 通过同步的 llm/stream 钩子清理 DeepSeek Harness 模型输出流中泄漏的 DSML 协议闭合标签。
 
 ## 知识与记忆
 
