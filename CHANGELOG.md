@@ -10,6 +10,10 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34682422740 -->
+- Automatically added [claude-paper](https://github.com/alaliqing/claude-paper) to Content & Creation from the `dsh-plugin` topic.
+- Automatically added [notes](https://github.com/zhaoolee/notes) to Content & Creation from the `dsh-plugin` topic.
+
 <!-- topic-sync:34662152817 -->
 - Automatically added [dsh-context-lens](https://github.com/GooDAnDReaDY/dsh-context-lens) to Tools & Capabilities from the `dsh-plugin` topic.
 

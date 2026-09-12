@@ -1558,6 +1558,24 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-image-gen"
     },
     {
+      "category": "content",
+      "description_en": "Processes research paper PDFs into extracted text, metadata, summaries, study notes, code demonstrations, and a local Nuxt.js web viewer.",
+      "description_zh": "将研究论文 PDF 处理为提取文本、元数据、摘要、学习笔记、代码示例以及本地 Nuxt.js 网页查看器。",
+      "name": "claude-paper",
+      "repository_id": 1154333841,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/alaliqing/claude-paper"
+    },
+    {
+      "category": "content",
+      "description_en": "Open-source note-taking application that includes a DSH plugin for exporting conversations to notes and images.",
+      "description_zh": "开源便签应用，包含用于将会话导出为便签和图片的 DSH 插件。",
+      "name": "notes",
+      "repository_id": 1182135360,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zhaoolee/notes"
+    },
+    {
       "category": "integrations",
       "description_en": "Provides accessibility-first macOS control with fresh-state checks and scoped permissions.",
       "description_zh": "提供无障碍优先的 macOS 控制，并包含状态新鲜度检查和权限约束。",
