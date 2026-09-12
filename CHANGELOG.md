@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34704815360 -->
+- Automatically added [dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:34682422740 -->
 - Automatically added [claude-paper](https://github.com/alaliqing/claude-paper) to Content & Creation from the `dsh-plugin` topic.
 - Automatically added [notes](https://github.com/zhaoolee/notes) to Content & Creation from the `dsh-plugin` topic.

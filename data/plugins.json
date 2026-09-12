@@ -1909,6 +1909,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-clinebot"
     },
     {
+      "category": "integrations",
+      "description_en": "Provides a DeepSeek Harness plugin for remote SSH/SFTP workspace access, file synchronization, and port tunneling.",
+      "description_zh": "提供用于远程 SSH/SFTP 工作区访问、文件同步和端口隧道的 DeepSeek Harness 插件。",
+      "name": "dsh-remote-workspace",
+      "repository_id": 1364715873,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-remote-workspace"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
