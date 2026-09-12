@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **274 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 11, 2026**.
+Explore **275 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 12, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **274 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **274 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **275 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -170,6 +170,7 @@ This is the first published directory snapshot: **274 plugins**, grouped into **
 - [dsh-time-machine](https://github.com/GooDAnDReaDY/dsh-time-machine) — Provides automated shadow git snapshots, visual diffs, and instant rollback for DeepSeek Harness workspaces.
 - [dsh-shadow-auditor](https://github.com/GooDAnDReaDY/dsh-shadow-auditor) — Provides background security auditing for DeepSeek Harness, scanning code diffs for secrets and validating shell commands before execution.
 - [dsh-dsml-artifact-guard](https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard) — Sanitizes leaked DSML protocol closing tags from DeepSeek Harness LLM output streams via a synchronous llm/stream hook.
+- [dsh-context-lens](https://github.com/GooDAnDReaDY/dsh-context-lens) — A DeepSeek Harness plugin that exposes tools for AST-based code skeletonization, log condensation, focus-path scoping, and session token-savings tracking with a configurable budget.
 
 ## Knowledge & Memory
 

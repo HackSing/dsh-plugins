@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34662152817 -->
+- Automatically added [dsh-context-lens](https://github.com/GooDAnDReaDY/dsh-context-lens) to Tools & Capabilities from the `dsh-plugin` topic.
+
 <!-- topic-sync:34654339801 -->
 - Automatically added [dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) to Development & Ecosystem from the `dsh-plugin` topic.
 
