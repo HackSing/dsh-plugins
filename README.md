@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **277 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 12, 2026**.
+Explore **278 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 12, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **277 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **277 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **278 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -255,6 +255,7 @@ This is the first published directory snapshot: **277 plugins**, grouped into **
 - [dsh-grok-xsearch](https://github.com/GooDAnDReaDY/dsh-grok-xsearch) — Registers four DeepSeek Harness tools that call the xAI Responses API through SuperGrok OAuth to search X posts, profile authors, list trends, and check Community Notes.
 - [dsh-gitea](https://github.com/GooDAnDReaDY/dsh-gitea) — DeepSeek Harness plugin that connects agents to self-hosted Gitea and Forgejo instances through issue, pull request, CI, release, and worktree tools.
 - [dsh-clinebot](https://github.com/GooDAnDReaDY/dsh-clinebot) — Adds a ClineBot/ClinePass provider companion to DeepSeek Harness with a settings page, quota dashboard, key storage, model sync, and a /cline slash command.
+- [dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) — Provides a DeepSeek Harness plugin for remote SSH/SFTP workspace access, file synchronization, and port tunneling.
 
 ## Automation & Agents
 
