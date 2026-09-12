@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **275 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 12 日**。
+当前整理 **277 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 12 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **275 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **277 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -213,6 +213,8 @@
 - [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — 为 DeepSeek Harness 提供视觉模型适配器，将图片任务路由至 PaddleOCR-VL 和 Qwen。
 - [docgen](https://github.com/JohnXu22786/docgen) — 为智能体框架提供文档生成技能，包括 README 生成、PR 描述、变更日志生成和代码审查。
 - [dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) — 为 DeepSeek Harness 提供图像生成与图像处理工具，包含多个服务商后端、风格预设和设置面板。
+- [claude-paper](https://github.com/alaliqing/claude-paper) — 将研究论文 PDF 处理为提取文本、元数据、摘要、学习笔记、代码示例以及本地 Nuxt.js 网页查看器。
+- [notes](https://github.com/zhaoolee/notes) — 开源便签应用，包含用于将会话导出为便签和图片的 DSH 插件。
 
 ## 集成与连接
 

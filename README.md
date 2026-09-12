@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **275 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 12, 2026**.
+Explore **277 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 12, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **275 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **275 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **277 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -213,6 +213,8 @@ This is the first published directory snapshot: **275 plugins**, grouped into **
 - [duhai-vision](https://github.com/hamliy-feng/duhai-vision) — Provides a visual model adapter that routes image tasks to PaddleOCR-VL and Qwen for DeepSeek Harness.
 - [docgen](https://github.com/JohnXu22786/docgen) — Provides document-generation skills for agent harnesses, including README generation, PR description, changelog generation, and code review.
 - [dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) — Provides image generation and image processing tools for DeepSeek Harness, including provider backends, style presets, and a settings panel.
+- [claude-paper](https://github.com/alaliqing/claude-paper) — Processes research paper PDFs into extracted text, metadata, summaries, study notes, code demonstrations, and a local Nuxt.js web viewer.
+- [notes](https://github.com/zhaoolee/notes) — Open-source note-taking application that includes a DSH plugin for exporting conversations to notes and images.
 
 ## Integrations & Connectors
 
