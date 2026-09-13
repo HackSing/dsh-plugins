@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **278 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 12, 2026**.
+Explore **279 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 13, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **278 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **278 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **279 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -190,6 +190,7 @@ This is the first published directory snapshot: **278 plugins**, grouped into **
 - [ReMe](https://github.com/agentscope-ai/ReMe) — Provides a local-first, self-evolving personal knowledge base for AI agents using Markdown memory files.
 - [MisakaNet](https://github.com/Ikalus1988/MisakaNet) — Provides a git-backed searchable library of debugging lessons for AI agents.
 - [memsearch](https://github.com/zilliztech/memsearch) — Provides a Markdown-backed, Milvus-indexed persistent memory layer for AI coding agents, including a DeepSeek Harness plugin for automatic conversation capture and semantic recall.
+- [Agent-Memory-Bridge](https://github.com/zzhang82/Agent-Memory-Bridge) — Python MCP stdio server that stores and recalls explicit project decisions in a local home directory for coding agents.
 
 ## Content & Creation
 

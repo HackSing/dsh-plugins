@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34747889313 -->
+- Automatically added [Agent-Memory-Bridge](https://github.com/zzhang82/Agent-Memory-Bridge) to Knowledge & Memory from the `dsh-plugin` topic.
+
 <!-- topic-sync:34704815360 -->
 - Automatically added [dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) to Integrations & Connectors from the `dsh-plugin` topic.
 
