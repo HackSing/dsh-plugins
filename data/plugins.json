@@ -2519,6 +2519,15 @@
       "repository_id": 1354931756,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/GooDAnDReaDY/dsh-agent-loop-guard"
+    },
+    {
+      "category": "development",
+      "description_en": "DeepSeek Harness plugin that scans the installed plugin catalog and files redacted issue reports to GitHub or Gitea, with optional screenshots, session-log attachment, and an agent-facing report_issue tool.",
+      "description_zh": "DeepSeek Harness 插件，扫描已安装插件目录并向 GitHub 或 Gitea 提交经脱敏的问题报告，支持可选截图、会话日志附件以及面向代理的 report_issue 工具。",
+      "name": "dsh-issue-reporter",
+      "repository_id": 1370083201,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-issue-reporter"
     }
   ],
   "schema_version": 1
