@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **279 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 13 日**。
+当前整理 **280 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 14 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **279 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **280 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -108,6 +108,7 @@
 - [dsh-session-control](https://github.com/GooDAnDReaDY/dsh-session-control) — 为 DeepSeek Harness 侧边栏提供会话管理功能，包括固定、标记、搜索、隐藏、重命名和导出对话。
 - [dsh-russian-lang](https://github.com/GooDAnDReaDY/dsh-russian-lang) — 为 DeepSeek Harness 界面提供俄语本地化、排版修正和键盘布局修复功能。
 - [dsh-cost-meter](https://github.com/GooDAnDReaDY/dsh-cost-meter) — 在 DeepSeek Harness 会话头部添加会话费用标签，按类别显示实时 token 用量以及当前峰谷费率与下次切换倒计时。
+- [dsh-just-chat](https://github.com/exoticknight/dsh-just-chat) — 添加快捷对话入口，点击后在独立工作区中创建并打开 DeepSeek Harness 原生会话。
 
 ## 工具与能力
 

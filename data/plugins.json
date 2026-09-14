@@ -694,6 +694,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-cost-meter"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds one-click chat entry points that create an independent workspace and native DeepSeek Harness conversation.",
+      "description_zh": "添加快捷对话入口，点击后在独立工作区中创建并打开 DeepSeek Harness 原生会话。",
+      "name": "dsh-just-chat",
+      "repository_id": 1369813650,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/exoticknight/dsh-just-chat"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
