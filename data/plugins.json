@@ -703,6 +703,15 @@
       "url": "https://github.com/exoticknight/dsh-just-chat"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a live search field with fuzzy, provider-prefixed and keyboard-driven filtering to the DeepSeek Harness WebUI model selector.",
+      "description_zh": "为 DeepSeek Harness WebUI 的模型选择器添加实时搜索框，支持模糊匹配、@provider 前缀过滤和键盘导航。",
+      "name": "dsh-model-search",
+      "repository_id": 1356059316,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-model-search"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
