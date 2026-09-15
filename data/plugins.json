@@ -2528,6 +2528,15 @@
       "repository_id": 1354931756,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/GooDAnDReaDY/dsh-agent-loop-guard"
+    },
+    {
+      "category": "development",
+      "description_en": "Collects sanitized runtime diagnostics and plugin inventory in DeepSeek Harness and files structured bug reports to GitHub or Gitea repositories.",
+      "description_zh": "在 DeepSeek Harness 中收集经过脱敏的运行时诊断信息与插件清单，并向 GitHub 或 Gitea 仓库提交结构化缺陷报告。",
+      "name": "dsh-issue-reporter",
+      "repository_id": 1370083201,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-issue-reporter"
     }
   ],
   "schema_version": 1
