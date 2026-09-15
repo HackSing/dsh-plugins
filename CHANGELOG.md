@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:34949683617 -->
+- Automatically added [REMI](https://github.com/Hoshino910/REMI) to Knowledge & Memory from the `dsh-plugin` topic.
+
 <!-- topic-sync:34930168524 -->
 - Automatically added [dsh-issue-reporter](https://github.com/GooDAnDReaDY/dsh-issue-reporter) to Development & Ecosystem from the `dsh-plugin` topic.
 
