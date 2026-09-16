@@ -1954,6 +1954,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-remote-workspace"
     },
     {
+      "category": "integrations",
+      "description_en": "Ships a DeepSeek Harness plugin bundle at plugins/dsh-postiz that connects the agent to the hosted Postiz MCP server for scheduling social media posts.",
+      "description_zh": "在 plugins/dsh-postiz 提供 DeepSeek Harness 插件包，将智能体连接到托管的 Postiz MCP 服务器以安排社交媒体发布。",
+      "name": "postiz-agent",
+      "repository_id": 1157659618,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/gitroomhq/postiz-agent"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
