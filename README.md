@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **283 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 15, 2026**.
+Explore **284 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 16, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **283 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **283 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **284 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -260,6 +260,7 @@ This is the first published directory snapshot: **283 plugins**, grouped into **
 - [dsh-gitea](https://github.com/GooDAnDReaDY/dsh-gitea) — DeepSeek Harness plugin that connects agents to self-hosted Gitea and Forgejo instances through issue, pull request, CI, release, and worktree tools.
 - [dsh-clinebot](https://github.com/GooDAnDReaDY/dsh-clinebot) — Adds a ClineBot/ClinePass provider companion to DeepSeek Harness with a settings page, quota dashboard, key storage, model sync, and a /cline slash command.
 - [dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) — Provides a DeepSeek Harness plugin for remote SSH/SFTP workspace access, file synchronization, and port tunneling.
+- [postiz-agent](https://github.com/gitroomhq/postiz-agent) — Ships a DeepSeek Harness plugin bundle at plugins/dsh-postiz that connects the agent to the hosted Postiz MCP server for scheduling social media posts.
 
 ## Automation & Agents
 
