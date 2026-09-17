@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **284 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 16, 2026**.
+Explore **286 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 17, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **284 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **284 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **286 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -261,6 +261,7 @@ This is the first published directory snapshot: **284 plugins**, grouped into **
 - [dsh-clinebot](https://github.com/GooDAnDReaDY/dsh-clinebot) — Adds a ClineBot/ClinePass provider companion to DeepSeek Harness with a settings page, quota dashboard, key storage, model sync, and a /cline slash command.
 - [dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) — Provides a DeepSeek Harness plugin for remote SSH/SFTP workspace access, file synchronization, and port tunneling.
 - [postiz-agent](https://github.com/gitroomhq/postiz-agent) — Ships a DeepSeek Harness plugin bundle at plugins/dsh-postiz that connects the agent to the hosted Postiz MCP server for scheduling social media posts.
+- [agent-skills](https://github.com/youdotcom-oss/agent-skills) — Offers a DeepSeek Harness plugin and shared skills that connect to You.com MCP servers for web search, content extraction, research, and finance.
 
 ## Automation & Agents
 
@@ -290,6 +291,7 @@ This is the first published directory snapshot: **284 plugins**, grouped into **
 - [dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) — Provides a Kanban board for DeepSeek Harness with Gitea-backed tasks, workflow columns, and per-task agent sessions.
 - [dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) — Adds a /goal slash command and agent tools (goal_set_milestones, goal_update_progress, goal_finish) that decompose an objective into milestones and drive a pausable autonomous loop with a sticky progress banner.
 - [dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — A DeepSeek Harness plugin that schedules cron, interval, and one-shot tasks and runs them through LLM agent sessions or shell, Node.js, Python, HTTP, SSH, and Docker runtimes with notification delivery.
+- [Wegent](https://github.com/wecode-ai/Wegent) — An open-source AI workspace monorepo with an Electron desktop app whose UI is built from DeepSeek Harness plugins and a self-hostable web platform for agents, tasks, and project automation.
 
 ## Development & Ecosystem
 
