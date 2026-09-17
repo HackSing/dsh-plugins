@@ -1963,6 +1963,15 @@
       "url": "https://github.com/gitroomhq/postiz-agent"
     },
     {
+      "category": "integrations",
+      "description_en": "Offers a DeepSeek Harness plugin and shared skills that connect to You.com MCP servers for web search, content extraction, research, and finance.",
+      "description_zh": "提供 DeepSeek Harness 插件及共享技能，连接 You.com MCP 服务器以进行网页搜索、内容提取、研究和金融查询。",
+      "name": "agent-skills",
+      "repository_id": 1142838994,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/youdotcom-oss/agent-skills"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
@@ -2195,6 +2204,15 @@
       "repository_id": 1356982920,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/GooDAnDReaDY/dsh-cron"
+    },
+    {
+      "category": "automation",
+      "description_en": "An open-source AI workspace monorepo with an Electron desktop app whose UI is built from DeepSeek Harness plugins and a self-hostable web platform for agents, tasks, and project automation.",
+      "description_zh": "一个开源 AI 工作空间仓库，其 Electron 桌面应用界面由 DeepSeek Harness 插件构建，并提供可自托管的 Web 平台用于代理、任务与项目自动化。",
+      "name": "Wegent",
+      "repository_id": 1131734767,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/wecode-ai/Wegent"
     },
     {
       "category": "development",

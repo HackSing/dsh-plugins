@@ -10,6 +10,10 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:35202062326 -->
+- Automatically added [agent-skills](https://github.com/youdotcom-oss/agent-skills) to Integrations & Connectors from the `dsh-plugin` topic.
+- Automatically added [Wegent](https://github.com/wecode-ai/Wegent) to Automation & Agents from the `dsh-plugin` topic.
+
 <!-- topic-sync:35075847289 -->
 - Automatically added [postiz-agent](https://github.com/gitroomhq/postiz-agent) to Integrations & Connectors from the `dsh-plugin` topic.
 
