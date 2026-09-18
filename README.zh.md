@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **287 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 18 日**。
+当前整理 **288 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 18 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **287 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **288 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -194,6 +194,7 @@
 - [memsearch](https://github.com/zilliztech/memsearch) — 为 AI 编程助手提供以 Markdown 存储、Milvus 索引的持久记忆层，并包含用于自动记录对话与语义召回的 DeepSeek Harness 插件。
 - [Agent-Memory-Bridge](https://github.com/zzhang82/Agent-Memory-Bridge) — Python MCP 标准输入输出服务器，在本地主目录中存储和召回编码代理的显式项目决策。
 - [REMI](https://github.com/Hoshino910/REMI) — 一个 DeepSeek Harness 插件，监听会话事件并把可检索记忆存入 SQLite，在提示组装时注入受 token 预算约束的记忆上下文窗口，并继承 Harness 的压缩引擎。
+- [dsh-session-search](https://github.com/GooDAnDReaDY/dsh-session-search) — 注册 session_search 工具，对历史 DeepSeek Harness 会话记录执行全文检索，返回匹配的标题、会话 ID 和片段。
 
 ## 内容与创作
 
