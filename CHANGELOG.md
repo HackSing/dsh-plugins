@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:35359553986 -->
+- Automatically added [dsh-approval-gate](https://github.com/GooDAnDReaDY/dsh-approval-gate) to Development & Ecosystem from the `dsh-plugin` topic.
+
 <!-- topic-sync:35338019306 -->
 - Automatically added [dsh-server-monitor](https://github.com/GooDAnDReaDY/dsh-server-monitor) to Integrations & Connectors from the `dsh-plugin` topic.
 

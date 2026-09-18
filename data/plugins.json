@@ -2582,6 +2582,15 @@
       "repository_id": 1370083201,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/GooDAnDReaDY/dsh-issue-reporter"
+    },
+    {
+      "category": "development",
+      "description_en": "Host-side DeepSeek Harness plugin that registers a monotonic tools.guard hook to deny or route bash and file-write tool calls through native approval.",
+      "description_zh": "宿主侧 DeepSeek Harness 插件，注册单调的 tools.guard 钩子，用于拒绝 bash 与文件写入工具调用或将其转交原生审批流程。",
+      "name": "dsh-approval-gate",
+      "repository_id": 1374627156,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-approval-gate"
     }
   ],
   "schema_version": 1
