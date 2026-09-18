@@ -1972,6 +1972,15 @@
       "url": "https://github.com/youdotcom-oss/agent-skills"
     },
     {
+      "category": "integrations",
+      "description_en": "A DSH sidebar plugin that connects to Linux hosts over SSH and displays host, CPU, memory, disk, container, network, and port metrics from plugin-owned server profiles.",
+      "description_zh": "一个 DSH 侧边栏插件，通过 SSH 连接 Linux 主机，并显示来自插件自有服务器配置文件的主机、CPU、内存、磁盘、容器、网络和端口指标。",
+      "name": "dsh-server-monitor",
+      "repository_id": 1374300321,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-server-monitor"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
