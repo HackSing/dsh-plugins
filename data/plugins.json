@@ -1414,6 +1414,15 @@
       "url": "https://github.com/Hoshino910/REMI"
     },
     {
+      "category": "knowledge",
+      "description_en": "Registers a session_search tool that runs full-text queries over historical DeepSeek Harness session logs and returns matching titles, session IDs, and snippets.",
+      "description_zh": "注册 session_search 工具，对历史 DeepSeek Harness 会话记录执行全文检索，返回匹配的标题、会话 ID 和片段。",
+      "name": "dsh-session-search",
+      "repository_id": 1374689374,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-session-search"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
