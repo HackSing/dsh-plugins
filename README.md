@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **288 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 18, 2026**.
+Explore **289 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 18, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **288 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **288 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **289 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -173,6 +173,7 @@ This is the first published directory snapshot: **288 plugins**, grouped into **
 - [dsh-shadow-auditor](https://github.com/GooDAnDReaDY/dsh-shadow-auditor) — Provides background security auditing for DeepSeek Harness, scanning code diffs for secrets and validating shell commands before execution.
 - [dsh-dsml-artifact-guard](https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard) — Sanitizes leaked DSML protocol closing tags from DeepSeek Harness LLM output streams via a synchronous llm/stream hook.
 - [dsh-context-lens](https://github.com/GooDAnDReaDY/dsh-context-lens) — A DeepSeek Harness plugin that exposes tools for AST-based code skeletonization, log condensation, focus-path scoping, and session token-savings tracking with a configurable budget.
+- [dsh-approval-gate](https://github.com/GooDAnDReaDY/dsh-approval-gate) — A DeepSeek Harness host plugin that registers a native tools.guard to block destructive shell commands and protected-file writes before tool execution, routing uncertain syntax to DSH's approval flow.
 
 ## Knowledge & Memory
 

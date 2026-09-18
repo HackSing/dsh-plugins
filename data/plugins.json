@@ -1252,6 +1252,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-context-lens"
     },
     {
+      "category": "tools",
+      "description_en": "A DeepSeek Harness host plugin that registers a native tools.guard to block destructive shell commands and protected-file writes before tool execution, routing uncertain syntax to DSH's approval flow.",
+      "description_zh": "一个 DeepSeek Harness 宿主插件，注册原生 tools.guard，在工具执行前拦截破坏性 shell 命令与受保护文件写入，并将无法确定的语法交由 DSH 审批流程处理。",
+      "name": "dsh-approval-gate",
+      "repository_id": 1374627156,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-approval-gate"
+    },
+    {
       "category": "knowledge",
       "description_en": "Builds auditable SQLite FTS5 knowledge packs from text, Markdown, DOCX, and PDF files.",
       "description_zh": "从文本、Markdown、DOCX 和 PDF 构建可审计的 SQLite FTS5 知识库包。",
