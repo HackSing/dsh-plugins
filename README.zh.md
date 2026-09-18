@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **286 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 17 日**。
+当前整理 **287 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 18 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **286 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **287 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -262,6 +262,7 @@
 - [dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) — 提供用于远程 SSH/SFTP 工作区访问、文件同步和端口隧道的 DeepSeek Harness 插件。
 - [postiz-agent](https://github.com/gitroomhq/postiz-agent) — 在 plugins/dsh-postiz 提供 DeepSeek Harness 插件包，将智能体连接到托管的 Postiz MCP 服务器以安排社交媒体发布。
 - [agent-skills](https://github.com/youdotcom-oss/agent-skills) — 提供 DeepSeek Harness 插件及共享技能，连接 You.com MCP 服务器以进行网页搜索、内容提取、研究和金融查询。
+- [dsh-server-monitor](https://github.com/GooDAnDReaDY/dsh-server-monitor) — 一个 DSH 侧边栏插件，通过 SSH 连接 Linux 主机，并显示来自插件自有服务器配置文件的主机、CPU、内存、磁盘、容器、网络和端口指标。
 
 ## 自动化与智能体
 

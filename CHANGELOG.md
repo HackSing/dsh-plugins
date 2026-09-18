@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:35338019306 -->
+- Automatically added [dsh-server-monitor](https://github.com/GooDAnDReaDY/dsh-server-monitor) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:35202062326 -->
 - Automatically added [agent-skills](https://github.com/youdotcom-oss/agent-skills) to Integrations & Connectors from the `dsh-plugin` topic.
 - Automatically added [Wegent](https://github.com/wecode-ai/Wegent) to Automation & Agents from the `dsh-plugin` topic.
