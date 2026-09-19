@@ -29,6 +29,7 @@ body:
         - Integrations & Connectors / 集成与连接
         - Automation & Agents / 自动化与智能体
         - Development & Ecosystem / 开发与生态集成
+        - Usage, cost, and account tracking / 用量、成本与账户跟踪
     validations:
       required: true
   - type: textarea

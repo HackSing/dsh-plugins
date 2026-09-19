@@ -22,6 +22,7 @@ CATEGORIES = {
         "Integrations & Connectors",
         "Automation & Agents",
         "Development & Ecosystem",
+        "Usage, cost, and account tracking",
     ],
     "README.zh.md": [
         "交互与体验",
@@ -31,6 +32,7 @@ CATEGORIES = {
         "集成与连接",
         "自动化与智能体",
         "开发与生态集成",
+        "用量、成本与账户跟踪",
     ],
 }
 ENTRY = re.compile(r"^- \[([^]]+)]\((https://github\.com/[^)]+)\) — (.+)$")
