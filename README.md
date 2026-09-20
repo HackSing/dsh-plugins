@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **289 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 18, 2026**.
+Explore **290 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 20, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **289 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **289 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **290 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -196,6 +196,7 @@ This is the first published directory snapshot: **289 plugins**, grouped into **
 - [Agent-Memory-Bridge](https://github.com/zzhang82/Agent-Memory-Bridge) — Python MCP stdio server that stores and recalls explicit project decisions in a local home directory for coding agents.
 - [REMI](https://github.com/Hoshino910/REMI) — A DeepSeek Harness plugin that observes session events, stores retrievable memories in SQLite, and injects a token-budgeted memory context window while subclassing the harness compaction engine.
 - [dsh-session-search](https://github.com/GooDAnDReaDY/dsh-session-search) — Registers a session_search tool that runs full-text queries over historical DeepSeek Harness session logs and returns matching titles, session IDs, and snippets.
+- [thoughtdag](https://github.com/chenxiachan/thoughtdag) — Provides a DeepSeek Harness web UI canvas plugin that represents conversations, materials, and notes as an editable node-and-edge graph whose incoming wires determine the context sent to the model.
 
 ## Content & Creation
 
