@@ -1432,6 +1432,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-session-search"
     },
     {
+      "category": "knowledge",
+      "description_en": "Provides a DeepSeek Harness web UI canvas plugin that represents conversations, materials, and notes as an editable node-and-edge graph whose incoming wires determine the context sent to the model.",
+      "description_zh": "提供一个 DeepSeek Harness 网页界面画布插件，将会话、素材与笔记表示为可编辑的节点连线图，接入的连线决定发送给模型的上下文。",
+      "name": "thoughtdag",
+      "repository_id": 1160354976,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/chenxiachan/thoughtdag"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
