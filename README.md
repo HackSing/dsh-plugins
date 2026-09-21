@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **290 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 20, 2026**.
+Explore **291 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 21, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **290 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **290 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **291 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -222,6 +222,7 @@ This is the first published directory snapshot: **290 plugins**, grouped into **
 - [dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) — Provides image generation and image processing tools for DeepSeek Harness, including provider backends, style presets, and a settings panel.
 - [claude-paper](https://github.com/alaliqing/claude-paper) — Processes research paper PDFs into extracted text, metadata, summaries, study notes, code demonstrations, and a local Nuxt.js web viewer.
 - [notes](https://github.com/zhaoolee/notes) — Open-source note-taking application that includes a DSH plugin for exporting conversations to notes and images.
+- [dsh-resume-expert](https://github.com/wmw343/dsh-resume-expert) — A DeepSeek Harness plugin that guides users through a multi-stage conversational resume-building flow and exports a single-page A4 PDF.
 
 ## Integrations & Connectors
 
