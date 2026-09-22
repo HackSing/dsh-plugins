@@ -1834,7 +1834,7 @@
       "name": "dsh-browser",
       "repository_id": 1324996099,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Lum1104/dsh-browser"
+      "url": "https://github.com/omdsh-dev/dsh-browser"
     },
     {
       "category": "integrations",
