@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:35839203195 -->
+- Automatically added [dsh-dd-forge](https://github.com/McBonB/dsh-dd-forge) to Knowledge & Memory from the `dsh-plugin` topic.
+
 <!-- topic-sync:35612714792 -->
 - Automatically added [dsh-resume-expert](https://github.com/wmw343/dsh-resume-expert) to Content & Creation from the `dsh-plugin` topic.
 
