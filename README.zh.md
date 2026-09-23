@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **291 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 21 日**。
+当前整理 **292 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 23 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **291 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **292 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -197,6 +197,7 @@
 - [REMI](https://github.com/Hoshino910/REMI) — 一个 DeepSeek Harness 插件，监听会话事件并把可检索记忆存入 SQLite，在提示组装时注入受 token 预算约束的记忆上下文窗口，并继承 Harness 的压缩引擎。
 - [dsh-session-search](https://github.com/GooDAnDReaDY/dsh-session-search) — 注册 session_search 工具，对历史 DeepSeek Harness 会话记录执行全文检索，返回匹配的标题、会话 ID 和片段。
 - [thoughtdag](https://github.com/chenxiachan/thoughtdag) — 提供一个 DeepSeek Harness 网页界面画布插件，将会话、素材与笔记表示为可编辑的节点连线图，接入的连线决定发送给模型的上下文。
+- [dsh-dd-forge](https://github.com/McBonB/dsh-dd-forge) — 提供确定性规则包引擎，审查尽职调查文档文件夹，并导出带来源的风险报告（md、docx、xlsx）。
 
 ## 内容与创作
 
@@ -246,7 +247,7 @@
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — 读取 Claude Code、Codex 和 opencode 的钩子配置，并在 DeepSeek Harness 中执行这些钩子。
 - [db-connector](https://github.com/JohnXu22786/db-connector) — 为 DeepSeek Harness 提供数据库连接能力，包括 SQLite、PostgreSQL 和 MySQL 连接、模式检查、只读查询、写入审批和 JSONL 审计记录。
 - [browser-automation](https://github.com/JohnXu22786/browser-automation) — 通过 MCP 服务器为 DeepSeek Harness 提供浏览器自动化工具（导航、点击、填表、截图和 JavaScript 执行）。
-- [dsh-browser](https://github.com/Lum1104/dsh-browser) — 提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。
+- [dsh-browser](https://github.com/omdsh-dev/dsh-browser) — 提供 Chrome 扩展和桥接插件，使 DeepSeek Harness 能够通过基于文本的工具操控浏览器。
 - [dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) — 为DeepSeek Harness提供可配置的OpenAI兼容LLM适配器，支持自动提供商回退和使用统计。
 - [dsh-remote](https://github.com/xgone/dsh-remote) — 为 DeepSeek Harness 提供远程访问与认证功能，包括账号密码登录、MFA/TOTP、基于角色的访问控制及浏览器内目录选择器。
 - [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) — 通过腾讯官方微信 ClawBot/iLink 通道将 DeepSeek Harness 与微信连接，支持通过微信文本消息进行远程控制。

@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **291 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 21, 2026**.
+Explore **292 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 23, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **291 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **291 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **292 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -197,6 +197,7 @@ This is the first published directory snapshot: **291 plugins**, grouped into **
 - [REMI](https://github.com/Hoshino910/REMI) — A DeepSeek Harness plugin that observes session events, stores retrievable memories in SQLite, and injects a token-budgeted memory context window while subclassing the harness compaction engine.
 - [dsh-session-search](https://github.com/GooDAnDReaDY/dsh-session-search) — Registers a session_search tool that runs full-text queries over historical DeepSeek Harness session logs and returns matching titles, session IDs, and snippets.
 - [thoughtdag](https://github.com/chenxiachan/thoughtdag) — Provides a DeepSeek Harness web UI canvas plugin that represents conversations, materials, and notes as an editable node-and-edge graph whose incoming wires determine the context sent to the model.
+- [dsh-dd-forge](https://github.com/McBonB/dsh-dd-forge) — Provides a deterministic rule-pack engine that reviews due-diligence document folders and exports sourced risk reports in md, docx, and xlsx formats.
 
 ## Content & Creation
 
@@ -246,7 +247,7 @@ This is the first published directory snapshot: **291 plugins**, grouped into **
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter) — Loads hooks configurations from Claude Code, Codex, and opencode and executes them inside DeepSeek Harness.
 - [db-connector](https://github.com/JohnXu22786/db-connector) — Provides database connectivity for DeepSeek Harness with SQLite, PostgreSQL, and MySQL connections, schema introspection, read-only queries, write approval, and a JSONL audit trail.
 - [browser-automation](https://github.com/JohnXu22786/browser-automation) — Provides browser automation tools (navigation, clicking, form filling, screenshots, and JavaScript execution) through an MCP server for DeepSeek Harness.
-- [dsh-browser](https://github.com/Lum1104/dsh-browser) — Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.
+- [dsh-browser](https://github.com/omdsh-dev/dsh-browser) — Provides a Chrome extension and bridge plugin that lets DeepSeek Harness operate a browser via text-based tools.
 - [dsh-polyglot](https://github.com/Jesse-njx/dsh-polyglot) — Provides a configurable OpenAI-compatible LLM adapter with automatic provider fallback and usage tracking for DeepSeek Harness.
 - [dsh-remote](https://github.com/xgone/dsh-remote) — Provides remote access and authentication for DeepSeek Harness, including password login, MFA/TOTP, role-based access, and an in-browser directory picker.
 - [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) — Bridges DeepSeek Harness with Tencent's WeChat ClawBot/iLink channel, allowing remote control via WeChat text messages.

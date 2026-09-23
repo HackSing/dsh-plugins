@@ -1441,6 +1441,15 @@
       "url": "https://github.com/chenxiachan/thoughtdag"
     },
     {
+      "category": "knowledge",
+      "description_en": "Provides a deterministic rule-pack engine that reviews due-diligence document folders and exports sourced risk reports in md, docx, and xlsx formats.",
+      "description_zh": "提供确定性规则包引擎，审查尽职调查文档文件夹，并导出带来源的风险报告（md、docx、xlsx）。",
+      "name": "dsh-dd-forge",
+      "repository_id": 299520798,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/McBonB/dsh-dd-forge"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
@@ -1834,7 +1843,7 @@
       "name": "dsh-browser",
       "repository_id": 1324996099,
       "source": "github-topic:dsh-plugin",
-      "url": "https://github.com/Lum1104/dsh-browser"
+      "url": "https://github.com/omdsh-dev/dsh-browser"
     },
     {
       "category": "integrations",
