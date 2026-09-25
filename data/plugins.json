@@ -2269,6 +2269,15 @@
       "url": "https://github.com/wecode-ai/Wegent"
     },
     {
+      "category": "automation",
+      "description_en": "Provides a planning state machine that routes local Skills and orchestrates multi-step harness workflows for AI agents.",
+      "description_zh": "提供规划状态机，为 AI 智能体路由本地技能并编排多步骤 harness 工作流。",
+      "name": "Vibe-Skills",
+      "repository_id": 1164005541,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/foryourhealth111-pixel/Vibe-Skills"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",

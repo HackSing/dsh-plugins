@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **292 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 23, 2026**.
+Explore **293 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 25, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **292 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **292 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **293 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -298,6 +298,7 @@ This is the first published directory snapshot: **292 plugins**, grouped into **
 - [dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) — Adds a /goal slash command and agent tools (goal_set_milestones, goal_update_progress, goal_finish) that decompose an objective into milestones and drive a pausable autonomous loop with a sticky progress banner.
 - [dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — A DeepSeek Harness plugin that schedules cron, interval, and one-shot tasks and runs them through LLM agent sessions or shell, Node.js, Python, HTTP, SSH, and Docker runtimes with notification delivery.
 - [Wegent](https://github.com/wecode-ai/Wegent) — An open-source AI workspace monorepo with an Electron desktop app whose UI is built from DeepSeek Harness plugins and a self-hostable web platform for agents, tasks, and project automation.
+- [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) — Provides a planning state machine that routes local Skills and orchestrates multi-step harness workflows for AI agents.
 
 ## Development & Ecosystem
 

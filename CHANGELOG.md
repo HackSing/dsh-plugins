@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:36116309959 -->
+- Automatically added [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) to Automation & Agents from the `dsh-plugin` topic.
+
 <!-- topic-sync:35839203195 -->
 - Automatically added [dsh-dd-forge](https://github.com/McBonB/dsh-dd-forge) to Knowledge & Memory from the `dsh-plugin` topic.
 
