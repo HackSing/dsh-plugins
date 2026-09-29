@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **293 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 25, 2026**.
+Explore **294 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 29, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **293 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **293 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **294 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -110,6 +110,7 @@ This is the first published directory snapshot: **293 plugins**, grouped into **
 - [dsh-cost-meter](https://github.com/GooDAnDReaDY/dsh-cost-meter) — Adds a session cost chip to the DeepSeek Harness conversation header that displays live token usage by bucket and the current peak or off-peak tariff with a countdown to the next switch.
 - [dsh-just-chat](https://github.com/exoticknight/dsh-just-chat) — Adds one-click chat entry points that create an independent workspace and native DeepSeek Harness conversation.
 - [dsh-model-search](https://github.com/GooDAnDReaDY/dsh-model-search) — Adds a live search field with fuzzy, provider-prefixed and keyboard-driven filtering to the DeepSeek Harness WebUI model selector.
+- [dsh-png-pet](https://github.com/comfylies/dsh-png-pet) — A Windows desktop pet plugin for DeepSeek Harness that launches a local WPF helper and communicates with it over stdin/stdout JSON Lines.
 
 ## Tools & Capabilities
 
