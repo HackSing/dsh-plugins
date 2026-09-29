@@ -712,6 +712,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-model-search"
     },
     {
+      "category": "interaction",
+      "description_en": "A Windows desktop pet plugin for DeepSeek Harness that launches a local WPF helper and communicates with it over stdin/stdout JSON Lines.",
+      "description_zh": "一个 DeepSeek Harness 的 Windows 桌宠插件，启动本地 WPF Helper 并通过 stdin/stdout JSON Lines 与其通信。",
+      "name": "dsh-png-pet",
+      "repository_id": 1348000596,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/comfylies/dsh-png-pet"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
