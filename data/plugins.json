@@ -721,6 +721,15 @@
       "url": "https://github.com/comfylies/dsh-png-pet"
     },
     {
+      "category": "interaction",
+      "description_en": "Manages DeepSeek Harness plugin UI elements by enumerating slotted and floating controls and providing per-element show, hide, removal, drag positioning, collision avoidance, undo/redo, and JSON layout export and import.",
+      "description_zh": "管理 DeepSeek Harness 插件界面元素：枚举插槽内与浮动控件，支持逐个显示、隐藏、暂时删除、拖拽定位、碰撞避让、撤销重做以及布局 JSON 导出与导入。",
+      "name": "dsh-ui-hub",
+      "repository_id": 1334986601,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-ui-hub"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

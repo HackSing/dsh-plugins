@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **296 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 2, 2026**.
+Explore **297 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 2, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **296 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **296 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **297 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -111,6 +111,7 @@ This is the first published directory snapshot: **296 plugins**, grouped into **
 - [dsh-just-chat](https://github.com/exoticknight/dsh-just-chat) — Adds one-click chat entry points that create an independent workspace and native DeepSeek Harness conversation.
 - [dsh-model-search](https://github.com/GooDAnDReaDY/dsh-model-search) — Adds a live search field with fuzzy, provider-prefixed and keyboard-driven filtering to the DeepSeek Harness WebUI model selector.
 - [dsh-png-pet](https://github.com/comfylies/dsh-png-pet) — A Windows desktop pet plugin for DeepSeek Harness that launches a local WPF helper and communicates with it over stdin/stdout JSON Lines.
+- [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) — Manages DeepSeek Harness plugin UI elements by enumerating slotted and floating controls and providing per-element show, hide, removal, drag positioning, collision avoidance, undo/redo, and JSON layout export and import.
 
 ## Tools & Capabilities
 
