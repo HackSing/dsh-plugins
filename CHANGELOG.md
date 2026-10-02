@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:37075116391 -->
+- Automatically added [dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:37048991984 -->
 - Automatically added [dsh-wsl-native](https://github.com/Han-1413141/dsh-wsl-native) to Integrations & Connectors from the `dsh-plugin` topic.
 

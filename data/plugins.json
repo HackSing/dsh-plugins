@@ -721,6 +721,15 @@
       "url": "https://github.com/comfylies/dsh-png-pet"
     },
     {
+      "category": "interaction",
+      "description_en": "Collapses expanded thinking rows and tool cards in a DSH conversation view through a persistent button or a customizable hotkey.",
+      "description_zh": "通过常驻按钮或自定义快捷键收起 DSH 会话视图中展开的思考行与工具卡片。",
+      "name": "dsh-sticky-disclosure",
+      "repository_id": 1333236743,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-sticky-disclosure"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
