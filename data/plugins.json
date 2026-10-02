@@ -721,6 +721,15 @@
       "url": "https://github.com/comfylies/dsh-png-pet"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a visual feedback sidebar and preview toolbar to DeepSeek Harness for selecting page elements, drawing arrows or regions, inserting feedback into the composer, and comparing before/after page snapshots.",
+      "description_zh": "为 DeepSeek Harness 添加可视化反馈侧边栏和预览工具栏，可选择页面元素、绘制箭头或区域、把反馈插入输入框，并对比页面修改前后的快照。",
+      "name": "dsh-visual-edit",
+      "repository_id": 1397167556,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-visual-edit"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
