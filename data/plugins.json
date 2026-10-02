@@ -2044,6 +2044,15 @@
       "url": "https://github.com/Han-1413141/dsh-codex-computer-use"
     },
     {
+      "category": "integrations",
+      "description_en": "DSH plugin that launches Linux DSH instances inside WSL and exposes wsl_native_ command, file, and path tools alongside Windows sessions in one window.",
+      "description_zh": "DSH 插件，在 WSL 中启动 Linux DSH，并在同一窗口中与 Windows 会话并行提供 wsl_native_ 命令、文件与路径工具。",
+      "name": "dsh-wsl-native",
+      "repository_id": 1398393397,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-wsl-native"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
