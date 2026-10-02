@@ -2035,6 +2035,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-server-monitor"
     },
     {
+      "category": "integrations",
+      "description_en": "DSH plugin that bridges to the locally installed Codex Computer Use runtime, exposing tools to read window and control state and to perform clicks, typing, key presses, scrolling and app launch.",
+      "description_zh": "将本机安装的 Codex Computer Use 运行时接入 DSH 的插件，提供读取窗口与控件状态以及点击、输入、按键、滚动和启动应用等工具。",
+      "name": "dsh-codex-computer-use",
+      "repository_id": 1399308518,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-codex-computer-use"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",

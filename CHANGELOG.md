@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:36972127911 -->
+- Automatically added [dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:36592380132 -->
 - Automatically added [dsh-png-pet](https://github.com/comfylies/dsh-png-pet) to Interaction & Experience from the `dsh-plugin` topic.
 
