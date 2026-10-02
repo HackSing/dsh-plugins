@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **294 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **September 29, 2026**.
+Explore **295 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 2, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **294 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **294 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **295 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -343,6 +343,7 @@ This is the first published directory snapshot: **294 plugins**, grouped into **
 - [dsh-live-canvas](https://github.com/GooDAnDReaDY/dsh-live-canvas) — Provides a DSH sidebar/drawer canvas that renders HTML, React JSX, SVG, and Mermaid previews in a sandboxed in-browser frame with SSE hot-reload and registers agent tools for previewing, inspecting, and exporting those artifacts.
 - [dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) — A DeepSeek Harness host runtime plugin that intercepts repeated tool calls and repetitive assistant output, denying or canceling runaway loops through Cordis lifecycle hooks.
 - [dsh-issue-reporter](https://github.com/GooDAnDReaDY/dsh-issue-reporter) — Collects sanitized runtime diagnostics and plugin inventory in DeepSeek Harness and files structured bug reports to GitHub or Gitea repositories.
+- [dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) — Searches npm for DSH plugins matching a described task, plans and installs the selected set, and launches an isolated DSH environment for continued conversation.
 
 ## How to choose a plugin
 

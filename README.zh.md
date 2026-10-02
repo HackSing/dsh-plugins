@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **294 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 9 月 29 日**。
+当前整理 **295 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 2 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **294 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **295 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -343,6 +343,7 @@
 - [dsh-live-canvas](https://github.com/GooDAnDReaDY/dsh-live-canvas) — 提供 DSH 侧边栏/抽屉式画布，在浏览器沙箱 iframe 中渲染 HTML、React JSX、SVG 和 Mermaid 预览并支持 SSE 热重载，同时注册用于预览、检查与导出这些产物的 Agent 工具。
 - [dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) — 一个 DeepSeek Harness 宿主运行时插件，通过 Cordis 生命周期钩子拦截重复的工具调用与重复的助手输出，并拒绝或取消失控循环。
 - [dsh-issue-reporter](https://github.com/GooDAnDReaDY/dsh-issue-reporter) — 在 DeepSeek Harness 中收集经过脱敏的运行时诊断信息与插件清单，并向 GitHub 或 Gitea 仓库提交结构化缺陷报告。
+- [dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) — 根据描述的任务搜索 npm 上的 DSH 插件，生成方案并安装选定插件，同时启动隔离的 DSH 环境供继续对话。
 
 ## 如何选择插件
 

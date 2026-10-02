@@ -2645,6 +2645,15 @@
       "repository_id": 1370083201,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/GooDAnDReaDY/dsh-issue-reporter"
+    },
+    {
+      "category": "development",
+      "description_en": "Searches npm for DSH plugins matching a described task, plans and installs the selected set, and launches an isolated DSH environment for continued conversation.",
+      "description_zh": "根据描述的任务搜索 npm 上的 DSH 插件，生成方案并安装选定插件，同时启动隔离的 DSH 环境供继续对话。",
+      "name": "dsh-autocompose",
+      "repository_id": 1397399860,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-autocompose"
     }
   ],
   "schema_version": 1
