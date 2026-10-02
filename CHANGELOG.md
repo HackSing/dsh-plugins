@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:37010971992 -->
+- Automatically added [dsh-pnpm-build-control](https://github.com/Han-1413141/dsh-pnpm-build-control) to Development & Ecosystem from the `dsh-plugin` topic.
+
 <!-- topic-sync:36972127911 -->
 - Automatically added [dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) to Integrations & Connectors from the `dsh-plugin` topic.
 

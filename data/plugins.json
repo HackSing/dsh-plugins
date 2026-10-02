@@ -2654,6 +2654,15 @@
       "repository_id": 1370083201,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/GooDAnDReaDY/dsh-issue-reporter"
+    },
+    {
+      "category": "development",
+      "description_en": "Adds a toggle in the DSH Add Plugin dialog that turns pnpm build-script approval on or off for all DSH profiles under the current DSH_HOME, with a first-time risk confirmation and a matching CLI.",
+      "description_zh": "在 DSH“添加插件”弹窗中加入一个开关，用于统一开启或关闭当前 DSH_HOME 下所有 DSH 配置的 pnpm 构建脚本审批，首次关闭时显示风险确认，并提供对应的命令行入口。",
+      "name": "dsh-pnpm-build-control",
+      "repository_id": 1398166787,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-pnpm-build-control"
     }
   ],
   "schema_version": 1
