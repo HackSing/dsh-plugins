@@ -2672,6 +2672,15 @@
       "repository_id": 1398166787,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Han-1413141/dsh-pnpm-build-control"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides a DeepSeek Harness plugin that checks installed plugin version and dependency constraints, quarantines or disables conflicting bundles, and restores them, plus an offline CLI for startup rescue.",
+      "description_zh": "提供一个 DeepSeek Harness 插件，用于检查已安装插件的版本与依赖约束、隔离或停用冲突 bundle 并进行恢复，另含用于启动修复的离线 CLI。",
+      "name": "dsh-compat-guardian",
+      "repository_id": 1397400254,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-compat-guardian"
     }
   ],
   "schema_version": 1
