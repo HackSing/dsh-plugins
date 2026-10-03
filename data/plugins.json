@@ -739,6 +739,15 @@
       "url": "https://github.com/Han-1413141/dsh-ui-hub"
     },
     {
+      "category": "interaction",
+      "description_en": "A DeepSeek Harness client plugin that adds a collapse-all button, a customizable hotkey, and top-of-conversation chips for expanded Think, tool, and command disclosure rows in the session chat stream.",
+      "description_zh": "一个 DeepSeek Harness 客户端插件，为会话聊天流中展开的 Think、工具与命令折叠区块提供全部收起按钮、可自定义快捷键，以及滑出顶部时的常驻收起标签。",
+      "name": "dsh-sticky-disclosure",
+      "repository_id": 1333236743,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-sticky-disclosure"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
