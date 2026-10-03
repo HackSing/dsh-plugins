@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **301 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 3, 2026**.
+Explore **302 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 3, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **301 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **301 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **302 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -113,6 +113,7 @@ This is the first published directory snapshot: **301 plugins**, grouped into **
 - [dsh-png-pet](https://github.com/comfylies/dsh-png-pet) — A Windows desktop pet plugin for DeepSeek Harness that launches a local WPF helper and communicates with it over stdin/stdout JSON Lines.
 - [dsh-visual-edit](https://github.com/Han-1413141/dsh-visual-edit) — Adds a visual feedback sidebar to DSH's HTML preview that lets users select elements or draw annotations and insert review notes into the chat composer.
 - [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) — A DeepSeek Harness desktop and web UI manager plugin that enumerates plugin-contributed UI elements and controls their visibility, position, size, grouping, and arrangement with JSON layout export and import.
+- [dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure) — A DeepSeek Harness client plugin that adds a collapse-all button, a customizable hotkey, and top-of-conversation chips for expanded Think, tool, and command disclosure rows in the session chat stream.
 
 ## Tools & Capabilities
 
