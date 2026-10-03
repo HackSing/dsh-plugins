@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **298 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 2, 2026**.
+Explore **299 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 3, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **298 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **298 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **299 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -302,6 +302,7 @@ This is the first published directory snapshot: **298 plugins**, grouped into **
 - [dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — A DeepSeek Harness plugin that schedules cron, interval, and one-shot tasks and runs them through LLM agent sessions or shell, Node.js, Python, HTTP, SSH, and Docker runtimes with notification delivery.
 - [Wegent](https://github.com/wecode-ai/Wegent) — An open-source AI workspace monorepo with an Electron desktop app whose UI is built from DeepSeek Harness plugins and a self-hostable web platform for agents, tasks, and project automation.
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) — Provides a planning state machine that routes local Skills and orchestrates multi-step harness workflows for AI agents.
+- [dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) — Searches npm for DSH plugins matching a natural-language task, installs a compatible set, and can execute the task in a separate DSH environment or the current profile.
 
 ## Development & Ecosystem
 

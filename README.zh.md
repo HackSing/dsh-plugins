@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **298 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 2 日**。
+当前整理 **299 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 3 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **298 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **299 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -302,6 +302,7 @@
 - [dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — 一个 DeepSeek Harness 插件，可按 cron、间隔和一次性计划调度任务，并通过 LLM 代理会话或 shell、Node.js、Python、HTTP、SSH、Docker 运行时执行，同时发送通知。
 - [Wegent](https://github.com/wecode-ai/Wegent) — 一个开源 AI 工作空间仓库，其 Electron 桌面应用界面由 DeepSeek Harness 插件构建，并提供可自托管的 Web 平台用于代理、任务与项目自动化。
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) — 提供规划状态机，为 AI 智能体路由本地技能并编排多步骤 harness 工作流。
+- [dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) — 根据自然语言任务在 npm 上搜索匹配的 DSH 插件，安装组合后的插件集，并可在独立 DSH 环境或当前 profile 中执行该任务。
 
 ## 开发与生态集成
 
