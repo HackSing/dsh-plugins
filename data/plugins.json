@@ -2305,6 +2305,15 @@
       "url": "https://github.com/foryourhealth111-pixel/Vibe-Skills"
     },
     {
+      "category": "automation",
+      "description_en": "Searches npm for DSH plugins matching a natural-language task, installs a compatible set, and can execute the task in a separate DSH environment or the current profile.",
+      "description_zh": "根据自然语言任务在 npm 上搜索匹配的 DSH 插件，安装组合后的插件集，并可在独立 DSH 环境或当前 profile 中执行该任务。",
+      "name": "dsh-autocompose",
+      "repository_id": 1397399860,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-autocompose"
+    },
+    {
       "category": "development",
       "description_en": "Opens DSH workspace folders in VS Code from the web interface.",
       "description_zh": "从 DSH Web 界面直接在 VS Code 中打开工作区。",
