@@ -721,6 +721,15 @@
       "url": "https://github.com/comfylies/dsh-png-pet"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a visual feedback sidebar to DSH's HTML preview that lets users select elements or draw annotations and insert review notes into the chat composer.",
+      "description_zh": "为 DSH 的 HTML 预览添加可视化反馈侧栏，可选择元素或绘制标注，并将评审备注插入聊天输入框。",
+      "name": "dsh-visual-edit",
+      "repository_id": 1397167556,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-visual-edit"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
