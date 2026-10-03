@@ -721,6 +721,15 @@
       "url": "https://github.com/comfylies/dsh-png-pet"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a persistent collapse-all button, a customizable hotkey, and auto-pinning header chips for expanded thinking and tool blocks in DSH conversations.",
+      "description_zh": "为 DSH 会话中展开的思考行与工具卡片添加常驻的全部收起按钮、可自定义快捷键以及滑出后自动钉住的标题标签。",
+      "name": "dsh-sticky-disclosure",
+      "repository_id": 1333236743,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-sticky-disclosure"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
