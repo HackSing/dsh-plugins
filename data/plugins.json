@@ -730,6 +730,15 @@
       "url": "https://github.com/Han-1413141/dsh-visual-edit"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds a persistent collapse-all button, a customizable hotkey, and auto-pinned header chips that collapse expanded thinking rows, tool cards, and command cards in the DSH conversation scroll area.",
+      "description_zh": "为 DSH 会话滚动区添加常驻的「全部收起」按钮、可自定义快捷键，以及区块滑出屏幕后自动钉在顶部的标签，用于收起已展开的 Think 行、工具卡片与命令卡片。",
+      "name": "dsh-sticky-disclosure",
+      "repository_id": 1333236743,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-sticky-disclosure"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
