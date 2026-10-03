@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:37108311285 -->
+- Automatically added [dsh-visual-edit](https://github.com/Han-1413141/dsh-visual-edit) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:37087783427 -->
 - Automatically added [dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) to Automation & Agents from the `dsh-plugin` topic.
 
