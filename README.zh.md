@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **300 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 3 日**。
+当前整理 **301 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 3 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **300 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **301 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -112,6 +112,7 @@
 - [dsh-model-search](https://github.com/GooDAnDReaDY/dsh-model-search) — 为 DeepSeek Harness WebUI 的模型选择器添加实时搜索框，支持模糊匹配、@provider 前缀过滤和键盘导航。
 - [dsh-png-pet](https://github.com/comfylies/dsh-png-pet) — 一个 DeepSeek Harness 的 Windows 桌宠插件，启动本地 WPF Helper 并通过 stdin/stdout JSON Lines 与其通信。
 - [dsh-visual-edit](https://github.com/Han-1413141/dsh-visual-edit) — 为 DSH 的 HTML 预览添加可视化反馈侧栏，可选择元素或绘制标注，并将评审备注插入聊天输入框。
+- [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) — 一个 DeepSeek Harness 桌面端与 Web 插件，用于枚举各插件贡献的界面元素，并管理其显示状态、位置、大小、分组与排布，支持 JSON 布局导出与导入。
 
 ## 工具与能力
 

@@ -730,6 +730,15 @@
       "url": "https://github.com/Han-1413141/dsh-visual-edit"
     },
     {
+      "category": "interaction",
+      "description_en": "A DeepSeek Harness desktop and web UI manager plugin that enumerates plugin-contributed UI elements and controls their visibility, position, size, grouping, and arrangement with JSON layout export and import.",
+      "description_zh": "一个 DeepSeek Harness 桌面端与 Web 插件，用于枚举各插件贡献的界面元素，并管理其显示状态、位置、大小、分组与排布，支持 JSON 布局导出与导入。",
+      "name": "dsh-ui-hub",
+      "repository_id": 1334986601,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/Han-1413141/dsh-ui-hub"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
