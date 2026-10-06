@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **302 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 3 日**。
+当前整理 **303 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 6 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **302 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **303 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -202,6 +202,7 @@
 - [dsh-session-search](https://github.com/GooDAnDReaDY/dsh-session-search) — 注册 session_search 工具，对历史 DeepSeek Harness 会话记录执行全文检索，返回匹配的标题、会话 ID 和片段。
 - [thoughtdag](https://github.com/chenxiachan/thoughtdag) — 提供一个 DeepSeek Harness 网页界面画布插件，将会话、素材与笔记表示为可编辑的节点连线图，接入的连线决定发送给模型的上下文。
 - [dsh-dd-forge](https://github.com/McBonB/dsh-dd-forge) — 提供确定性规则包引擎，审查尽职调查文档文件夹，并导出带来源的风险报告（md、docx、xlsx）。
+- [sieve](https://github.com/Sev7eEn7/sieve) — 一个 DeepSeek Harness 插件，在主模型请求前过滤工具输出、裁剪历史上下文，并按需披露技能目录。
 
 ## 内容与创作
 

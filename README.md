@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **302 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 3, 2026**.
+Explore **303 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 6, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **302 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **302 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **303 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -202,6 +202,7 @@ This is the first published directory snapshot: **302 plugins**, grouped into **
 - [dsh-session-search](https://github.com/GooDAnDReaDY/dsh-session-search) — Registers a session_search tool that runs full-text queries over historical DeepSeek Harness session logs and returns matching titles, session IDs, and snippets.
 - [thoughtdag](https://github.com/chenxiachan/thoughtdag) — Provides a DeepSeek Harness web UI canvas plugin that represents conversations, materials, and notes as an editable node-and-edge graph whose incoming wires determine the context sent to the model.
 - [dsh-dd-forge](https://github.com/McBonB/dsh-dd-forge) — Provides a deterministic rule-pack engine that reviews due-diligence document folders and exports sourced risk reports in md, docx, and xlsx formats.
+- [sieve](https://github.com/Sev7eEn7/sieve) — A DeepSeek Harness plugin that filters tool outputs, prunes historical context, and progressively discloses skill listings before content reaches the main model request.
 
 ## Content & Creation
 
