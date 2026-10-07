@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **303 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 6 日**。
+当前整理 **304 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 7 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **303 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **304 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -275,6 +275,7 @@
 - [dsh-server-monitor](https://github.com/GooDAnDReaDY/dsh-server-monitor) — 一个 DSH 侧边栏插件，通过 SSH 连接 Linux 主机，并显示来自插件自有服务器配置文件的主机、CPU、内存、磁盘、容器、网络和端口指标。
 - [dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) — 将本机安装的 Codex Computer Use 运行时接入 DSH 的插件，提供读取窗口与控件状态以及点击、输入、按键、滚动和启动应用等工具。
 - [dsh-wsl-native](https://github.com/Han-1413141/dsh-wsl-native) — DSH 插件，在 WSL 中启动 Linux DSH，并在同一窗口中与 Windows 会话并行提供 wsl_native_ 命令、文件与路径工具。
+- [Codingns4DSH](https://github.com/jingyi0605/Codingns4DSH) — 一个 DSH 插件包，为 DSH 界面添加外部 Agent CLI 会话、持久终端、工作区调试以及远程或局域网访问。
 
 ## 自动化与智能体
 
