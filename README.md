@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **303 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 6, 2026**.
+Explore **304 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 7, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **303 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **303 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **304 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -275,6 +275,7 @@ This is the first published directory snapshot: **303 plugins**, grouped into **
 - [dsh-server-monitor](https://github.com/GooDAnDReaDY/dsh-server-monitor) — A DSH sidebar plugin that connects to Linux hosts over SSH and displays host, CPU, memory, disk, container, network, and port metrics from plugin-owned server profiles.
 - [dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) — DSH plugin that bridges to the locally installed Codex Computer Use runtime, exposing tools to read window and control state and to perform clicks, typing, key presses, scrolling and app launch.
 - [dsh-wsl-native](https://github.com/Han-1413141/dsh-wsl-native) — DSH plugin that launches Linux DSH instances inside WSL and exposes wsl_native_ command, file, and path tools alongside Windows sessions in one window.
+- [Codingns4DSH](https://github.com/jingyi0605/Codingns4DSH) — A DSH plugin bundle that adds external Agent CLI sessions, persistent terminals, workspace debugging, and remote or LAN access to the DSH interface.
 
 ## Automation & Agents
 

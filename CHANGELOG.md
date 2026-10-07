@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:37588918230 -->
+- Automatically added [Codingns4DSH](https://github.com/jingyi0605/Codingns4DSH) to Integrations & Connectors from the `dsh-plugin` topic.
+
 <!-- topic-sync:37501340998 -->
 - Automatically added [sieve](https://github.com/Sev7eEn7/sieve) to Knowledge & Memory from the `dsh-plugin` topic.
 

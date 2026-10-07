@@ -2089,6 +2089,15 @@
       "url": "https://github.com/Han-1413141/dsh-wsl-native"
     },
     {
+      "category": "integrations",
+      "description_en": "A DSH plugin bundle that adds external Agent CLI sessions, persistent terminals, workspace debugging, and remote or LAN access to the DSH interface.",
+      "description_zh": "一个 DSH 插件包，为 DSH 界面添加外部 Agent CLI 会话、持久终端、工作区调试以及远程或局域网访问。",
+      "name": "Codingns4DSH",
+      "repository_id": 1386538234,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/jingyi0605/Codingns4DSH"
+    },
+    {
       "category": "automation",
       "description_en": "Provides a code review gate with deterministic severity rules, LLM-assisted findings, team approval quorum, and compliance audit trail for the DeepSeek Harness.",
       "description_zh": "为 DeepSeek Harness 提供代码审查门禁，包含确定性严重性规则、LLM 辅助发现、团队批准法定人数和合规审计追踪。",
