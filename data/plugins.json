@@ -748,6 +748,15 @@
       "url": "https://github.com/Han-1413141/dsh-sticky-disclosure"
     },
     {
+      "category": "interaction",
+      "description_en": "A DSH Web plugin that renders interactive answer components such as calculators, charts, forms, simulations and small games inside DeepSeek Harness conversations.",
+      "description_zh": "一个 DSH Web 插件，可在 DeepSeek Harness 对话中渲染计算器、图表、表单、模拟和小游戏等交互式回答组件。",
+      "name": "dsh-intelligent-ui",
+      "repository_id": 1411325562,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/gulagala001/dsh-intelligent-ui"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
