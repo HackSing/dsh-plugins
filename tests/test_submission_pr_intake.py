@@ -73,6 +73,30 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(source, "explicit")
         self.assertEqual(urls, ["https://github.com/example/dsh-plugin"])
 
+    def test_recognizes_form_body_without_title_prefix_or_labels(self):
+        issue = {
+            "body": (
+                "### Plugin repository\n\nhttps://github.com/example/dsh-plugin\n\n"
+                "### Primary value\n\nAdds a useful capability."
+            ),
+            "title": "Submit a plugin: dsh-plugin",
+            "labels": [],
+        }
+        self.assertTrue(submission_intake.is_plugin_submission_issue(issue))
+
+    def test_update_request_body_is_not_a_submission(self):
+        issue = {
+            "body": (
+                "### Plugin name and repository\n\n"
+                "dsh-example — https://github.com/example/dsh-example\n\n"
+                "### Current information\n\nThe directory caches v0.6.0.\n\n"
+                "### Proposed correction\n\nPlease refresh the entry."
+            ),
+            "title": "[Update]: dsh-example v0.7.0",
+            "labels": [],
+        }
+        self.assertFalse(submission_intake.is_plugin_submission_issue(issue))
+
     def test_classifies_published_and_candidate_repositories(self):
         catalog = {
             "plugins": [
@@ -356,6 +380,45 @@ class SubmissionIntakeTests(unittest.TestCase):
         self.assertEqual(actions[0]["issue_number"], 13)
         self.assertIn("本 Issue", client.comments[0][1])
 
+    def test_normalizes_non_prefixed_submission_titles(self):
+        client = LifecycleClient()
+        report = {
+            "submissions": [
+                {
+                    "intake_status": "new_submission",
+                    "issue_number": 264,
+                    "issue_title": "Add @goodandready/dsh-key-limits",
+                    "source_type": "issue",
+                },
+                {
+                    "intake_status": "new_submission",
+                    "issue_number": 265,
+                    "issue_title": "[Plugin]: dsh-plugin",
+                    "source_type": "issue",
+                },
+                {
+                    "intake_status": "new_submission",
+                    "pr_number": 7,
+                    "pr_title": "Add plugin",
+                    "source_type": "pr",
+                },
+            ]
+        }
+        actions = submission_intake.normalize_submission_titles(report, client)
+        self.assertEqual(
+            actions, [{"action": "normalized_title", "issue_number": 264}]
+        )
+        self.assertEqual(
+            client.retitled,
+            [(264, "[Plugin]: Add @goodandready/dsh-key-limits")],
+        )
+        self.assertEqual(
+            report["submissions"][0]["issue_title"],
+            "[Plugin]: Add @goodandready/dsh-key-limits",
+        )
+        self.assertEqual(client.comments[0][0], 264)
+        self.assertIn("`[Plugin]:`", client.comments[0][1])
+
     def test_reviewing_label_prevents_duplicate_dispatch(self):
         report = {
             "submissions": [
@@ -568,6 +631,7 @@ class LifecycleClient:
         self.dispatched = []
         self.existing_comments = []
         self.labels = []
+        self.retitled = []
 
     def ensure_label(self, name, color, description):
         pass
@@ -577,6 +641,9 @@ class LifecycleClient:
 
     def post_comment(self, number, body):
         self.comments.append((number, body))
+
+    def update_issue_title(self, number, title):
+        self.retitled.append((number, title))
 
     def add_labels(self, number, labels):
         self.labels.append((number, labels))
