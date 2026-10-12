@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:38294622393 -->
+- Automatically added [dsh-quote-annotate-pro](https://github.com/zhao-guang-ai/dsh-quote-annotate-pro) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:38227684264 -->
 - Automatically added [dsh-key-limits](https://github.com/GooDAnDReaDY/dsh-key-limits) to Interaction & Experience from the `dsh-plugin` topic.
 
