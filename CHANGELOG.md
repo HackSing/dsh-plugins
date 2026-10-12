@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:38227684264 -->
+- Automatically added [dsh-key-limits](https://github.com/GooDAnDReaDY/dsh-key-limits) to Interaction & Experience from the `dsh-plugin` topic.
+
 <!-- topic-sync:38143303450 -->
 - Automatically added [dsh-intelligent-ui](https://github.com/gulagala001/dsh-intelligent-ui) to Interaction & Experience from the `dsh-plugin` topic.
 

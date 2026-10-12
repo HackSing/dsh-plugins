@@ -757,6 +757,15 @@
       "url": "https://github.com/gulagala001/dsh-intelligent-ui"
     },
     {
+      "category": "interaction",
+      "description_en": "Adds DeepSeek Harness UI elements, including a floating chip, composer bar button, and settings card, that display API key and subscription quota limits from multiple providers.",
+      "description_zh": "为 DeepSeek Harness 添加浮动徽标、输入栏按钮和设置卡片等界面元素，用于显示多个提供商的 API 密钥与订阅额度限制。",
+      "name": "dsh-key-limits",
+      "repository_id": 1372085461,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/GooDAnDReaDY/dsh-key-limits"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",
