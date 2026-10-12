@@ -766,6 +766,15 @@
       "url": "https://github.com/GooDAnDReaDY/dsh-key-limits"
     },
     {
+      "category": "interaction",
+      "description_en": "Provides selection quoting and anchored annotations inside DSH conversations.",
+      "description_zh": "在 DSH 会话中提供划词引用与锚点批注功能。",
+      "name": "dsh-quote-annotate-pro",
+      "repository_id": 1412690009,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/zhao-guang-ai/dsh-quote-annotate-pro"
+    },
+    {
       "category": "tools",
       "description_en": "Creates and manages sandboxed JavaScript tools through a Monaco-based editor.",
       "description_zh": "通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。",

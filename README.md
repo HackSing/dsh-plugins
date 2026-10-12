@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **306 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 12, 2026**.
+Explore **307 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 12, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **306 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **306 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **307 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -116,6 +116,7 @@ This is the first published directory snapshot: **306 plugins**, grouped into **
 - [dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure) — A DeepSeek Harness client plugin that adds a collapse-all button, a customizable hotkey, and top-of-conversation chips for expanded Think, tool, and command disclosure rows in the session chat stream.
 - [dsh-intelligent-ui](https://github.com/gulagala001/dsh-intelligent-ui) — A DSH Web plugin that renders interactive answer components such as calculators, charts, forms, simulations and small games inside DeepSeek Harness conversations.
 - [dsh-key-limits](https://github.com/GooDAnDReaDY/dsh-key-limits) — Adds DeepSeek Harness UI elements, including a floating chip, composer bar button, and settings card, that display API key and subscription quota limits from multiple providers.
+- [dsh-quote-annotate-pro](https://github.com/zhao-guang-ai/dsh-quote-annotate-pro) — Provides selection quoting and anchored annotations inside DSH conversations.
 
 ## Tools & Capabilities
 
