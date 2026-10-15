@@ -6,7 +6,7 @@
 
 > 一个独立维护、双语呈现、持续更新的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件目录。
 
-当前整理 **307 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 12 日**。
+当前整理 **308 个插件**，统一归入七个大类。每个插件只出现一次，并按照最主要的使用价值进行分类。最近一次目录复核：**2026 年 10 月 15 日**。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 
 ### 当前快照
 
-这是目录的首个公开快照：共 **307 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
+这是目录的首个公开快照：共 **308 个插件**、**7 个大类**，中英文条目一一对应。后续新增、移除和修正统一记录在 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 分类浏览
 
@@ -356,6 +356,7 @@
 - [dsh-issue-reporter](https://github.com/GooDAnDReaDY/dsh-issue-reporter) — 在 DeepSeek Harness 中收集经过脱敏的运行时诊断信息与插件清单，并向 GitHub 或 Gitea 仓库提交结构化缺陷报告。
 - [dsh-pnpm-build-control](https://github.com/Han-1413141/dsh-pnpm-build-control) — 在 DSH“添加插件”弹窗中加入一个开关，用于统一开启或关闭当前 DSH_HOME 下所有 DSH 配置的 pnpm 构建脚本审批，首次关闭时显示风险确认，并提供对应的命令行入口。
 - [dsh-compat-guardian](https://github.com/Han-1413141/dsh-compat-guardian) — 提供一个 DeepSeek Harness 插件，用于检查已安装插件的版本与依赖约束、隔离或停用冲突 bundle 并进行恢复，另含用于启动修复的离线 CLI。
+- [dsh-system1](https://github.com/exoticknight/dsh-system1) — 以 Cordis 插件形式为 DeepSeek Harness 提供类型化的 System One 决策服务，向消费插件暴露 ctx.system1.decide()，并提供可配置模型提供方的 system1_decide 代理工具。
 
 ## 如何选择插件
 
