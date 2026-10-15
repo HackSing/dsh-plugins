@@ -2762,6 +2762,15 @@
       "repository_id": 1397400254,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/Han-1413141/dsh-compat-guardian"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides a typed System One decision service as a Cordis plugin for DeepSeek Harness, exposing ctx.system1.decide() to consumer plugins and a system1_decide agent tool with configurable model providers.",
+      "description_zh": "以 Cordis 插件形式为 DeepSeek Harness 提供类型化的 System One 决策服务，向消费插件暴露 ctx.system1.decide()，并提供可配置模型提供方的 system1_decide 代理工具。",
+      "name": "dsh-system1",
+      "repository_id": 1382709707,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/exoticknight/dsh-system1"
     }
   ],
   "schema_version": 1
