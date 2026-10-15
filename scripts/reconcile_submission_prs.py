@@ -29,6 +29,8 @@ DECLINED_LABEL = "submission:declined"
 EXPIRED_LABEL = "submission:expired"
 REDIRECTED_LABEL = "submission:redirected"
 PLUGIN_SUBMISSION_LABEL = "plugin-submission"
+PLUGIN_TITLE_PREFIX = "[Plugin]: "
+PLUGIN_TITLE_MARKER = re.compile(r"^\s*\[plugin\]:", re.IGNORECASE)
 ISSUE_FORM_URL = (
     "https://github.com/HackSing/dsh-plugins/issues/new?template=submit-plugin.yml"
 )
@@ -221,6 +223,13 @@ class GitHubClient:
             payload={"body": body},
         )
 
+    def update_issue_title(self, number: int, title: str) -> None:
+        self.request_json(
+            f"https://api.github.com/repos/{self.repository}/issues/{number}",
+            method="PATCH",
+            payload={"title": title},
+        )
+
     def close_pull_request(self, number: int) -> None:
         self.request_json(
             f"https://api.github.com/repos/{self.repository}/pulls/{number}",
@@ -314,12 +323,13 @@ def is_plugin_submission_issue(issue: dict[str, Any]) -> bool:
     labels = {
         str(label.get("name", "")).casefold() for label in issue.get("labels", [])
     }
-    title = str(issue.get("title") or "")
     body = str(issue.get("body") or "")
-    return PLUGIN_SUBMISSION_LABEL in labels or (
-        title.casefold().startswith("[plugin]:")
-        and bool(ISSUE_REPOSITORY_HEADING.search(body))
-        and bool(ISSUE_PRIMARY_VALUE_HEADING.search(body))
+    # The official form is the only source of both headings; clients that
+    # cannot render issue forms keep the body structure but drop the
+    # "[Plugin]:" title default and the form labels.
+    return PLUGIN_SUBMISSION_LABEL in labels or bool(
+        ISSUE_REPOSITORY_HEADING.search(body)
+        and ISSUE_PRIMARY_VALUE_HEADING.search(body)
     )
 
 
@@ -1034,6 +1044,36 @@ def redirect_legacy_pull_requests(
     return actions
 
 
+def title_normalized_comment() -> str:
+    return "\n".join(
+        [
+            "📝 标题已规范为 `[Plugin]:` 前缀",
+            "",
+            "本 Issue 的正文来自官方提交表单，但标题缺少 `[Plugin]:` 前缀（常见于不支持"
+            "表单的客户端），自动收录流程此前无法识别。标题已自动规范，收录处理照常进行。",
+        ]
+    )
+
+
+def normalize_submission_titles(
+    report: dict[str, Any], client: GitHubClient
+) -> list[dict[str, Any]]:
+    actions = []
+    for item in report["submissions"]:
+        if submission_type(item) != "issue":
+            continue
+        title = str(item.get("issue_title") or "").strip()
+        if not title or PLUGIN_TITLE_MARKER.match(title):
+            continue
+        number = submission_number(item)
+        normalized = f"{PLUGIN_TITLE_PREFIX}{title}"
+        client.update_issue_title(number, normalized)
+        item["issue_title"] = normalized
+        client.post_comment(number, title_normalized_comment())
+        actions.append({"action": "normalized_title", "issue_number": number})
+    return actions
+
+
 def write_outputs(report: dict[str, Any], output: Path) -> None:
     output.write_text(
         json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
@@ -1094,6 +1134,10 @@ def main() -> None:
         else build_report(client, only_pr=args.only_pr)
     )
     actions = []
+    if args.issues and (
+        args.apply_published or args.handle_exceptions or args.queue_reviews
+    ):
+        actions.extend(normalize_submission_titles(report, client))
     if args.apply_published:
         actions.extend(close_already_published(report, client))
         report["mode"] = "published_only"
