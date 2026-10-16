@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:38879261025 -->
+- Automatically added [dsh-session-continuity](https://github.com/ymck-x/dsh-session-continuity) to Knowledge & Memory from the `dsh-plugin` topic.
+
 <!-- topic-sync:38737748081 -->
 - Automatically added [dsh-system1](https://github.com/exoticknight/dsh-system1) to Development & Ecosystem from the `dsh-plugin` topic.
 

@@ -1522,6 +1522,15 @@
       "url": "https://github.com/Sev7eEn7/sieve"
     },
     {
+      "category": "knowledge",
+      "description_en": "Injects a short continuity pointer about the previous session in the same workspace at the start of a new DSH session.",
+      "description_zh": "在新会话开始时注入一条关于同一工作区上一个会话的简短接续指针。",
+      "name": "dsh-session-continuity",
+      "repository_id": 1418147811,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ymck-x/dsh-session-continuity"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
