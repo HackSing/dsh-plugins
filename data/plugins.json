@@ -1522,6 +1522,15 @@
       "url": "https://github.com/Sev7eEn7/sieve"
     },
     {
+      "category": "knowledge",
+      "description_en": "A DSH plugin that manages a skill library, shipping six built-in skills plus a 20-skill engineering workflow pack, with a settings-page panel and host-side tools for listing, reading, writing, and deleting skills.",
+      "description_zh": "一个 DSH 插件，用于管理技能库，内置 6 个基础技能和 20 个技能的中文工程流程技能包，并提供设置页面板与用于列出、读取、写入、删除技能的宿主侧工具。",
+      "name": "dsh-skill-starter",
+      "repository_id": 1415174941,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ymck-x/dsh-skill-starter"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
