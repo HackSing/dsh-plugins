@@ -1531,6 +1531,15 @@
       "url": "https://github.com/ymck-x/dsh-skill-starter"
     },
     {
+      "category": "knowledge",
+      "description_en": "A DeepSeek Harness plugin that injects a small session-continuity pointer referencing the previous session in the same workspace, reusing DSH compaction summaries or tail messages when no handoff file exists.",
+      "description_zh": "一个 DeepSeek Harness 插件，在新会话首个模型步骤注入很小的接续指针，指向同一工作区的上一个会话；没有交接文档时复用 DSH 已有的压缩摘要或会话末尾内容。",
+      "name": "dsh-session-continuity",
+      "repository_id": 1418147811,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ymck-x/dsh-session-continuity"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
