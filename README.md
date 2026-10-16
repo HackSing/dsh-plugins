@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **309 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 16, 2026**.
+Explore **310 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 16, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **309 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **309 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **310 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -358,6 +358,7 @@ This is the first published directory snapshot: **309 plugins**, grouped into **
 - [dsh-pnpm-build-control](https://github.com/Han-1413141/dsh-pnpm-build-control) — Adds a toggle in the DSH Add Plugin dialog that turns pnpm build-script approval on or off for all DSH profiles under the current DSH_HOME, with a first-time risk confirmation and a matching CLI.
 - [dsh-compat-guardian](https://github.com/Han-1413141/dsh-compat-guardian) — Provides a DeepSeek Harness plugin that checks installed plugin version and dependency constraints, quarantines or disables conflicting bundles, and restores them, plus an offline CLI for startup rescue.
 - [dsh-system1](https://github.com/exoticknight/dsh-system1) — Provides a typed System One decision service as a Cordis plugin for DeepSeek Harness, exposing ctx.system1.decide() to consumer plugins and a system1_decide agent tool with configurable model providers.
+- [dsh-plugin-index](https://github.com/ymck-x/dsh-plugin-index) — Provides a DSH settings panel that lists third-party plugins verified by a dsh.bundle field in their package.json and installs them from remote index data.
 
 ## How to choose a plugin
 
