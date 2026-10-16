@@ -1531,6 +1531,15 @@
       "url": "https://github.com/ymck-x/dsh-skill-starter"
     },
     {
+      "category": "knowledge",
+      "description_en": "Injects a short continuity pointer (previous session title, id, and optional handoff-file reference, falling back to DSH compaction summaries or the last two messages) into the first model step of a new session in the same workspace.",
+      "description_zh": "在同一工作区的新会话第一个模型步骤注入一小段接续指针（上一个会话的标题、id，以及可选的交接文档引用，无交接文档时退回 DSH 压缩摘要或最后两句）。",
+      "name": "dsh-session-continuity",
+      "repository_id": 1418147811,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ymck-x/dsh-session-continuity"
+    },
+    {
       "category": "content",
       "description_en": "Equips text-only models for image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.",
       "description_zh": "为纯文本模型补充图片问答、长截图 OCR、UI 还原、定位及像素比较能力。",
