@@ -10,6 +10,9 @@ All meaningful directory changes are recorded here. Dates use `YYYY-MM-DD`.
 
 ### Added
 
+<!-- topic-sync:38879244941 -->
+- Automatically added [dsh-skill-starter](https://github.com/ymck-x/dsh-skill-starter) to Knowledge & Memory from the `dsh-plugin` topic.
+
 <!-- topic-sync:38737748081 -->
 - Automatically added [dsh-system1](https://github.com/exoticknight/dsh-system1) to Development & Ecosystem from the `dsh-plugin` topic.
 
