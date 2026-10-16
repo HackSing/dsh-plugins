@@ -2780,6 +2780,15 @@
       "repository_id": 1382709707,
       "source": "github-topic:dsh-plugin",
       "url": "https://github.com/exoticknight/dsh-system1"
+    },
+    {
+      "category": "development",
+      "description_en": "Provides a DSH settings panel that lists third-party plugins verified by a dsh.bundle field in their package.json and installs them from remote index data.",
+      "description_zh": "提供 DSH 设置内的插件索引面板，列出经 package.json 中 dsh.bundle 字段校验的第三方插件，并从远端索引数据中安装。",
+      "name": "dsh-plugin-index",
+      "repository_id": 1418156475,
+      "source": "github-topic:dsh-plugin",
+      "url": "https://github.com/ymck-x/dsh-plugin-index"
     }
   ],
   "schema_version": 1
