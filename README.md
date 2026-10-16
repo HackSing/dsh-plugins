@@ -6,7 +6,7 @@ English | [中文](README.zh.md)
 
 > An independent, bilingual, and continuously maintained plugin directory for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`).
 
-Explore **310 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 16, 2026**.
+Explore **311 plugins** across seven broad areas. Each plugin appears once, under the category that best represents its primary use. Last directory review: **October 16, 2026**.
 
 ## Start here
 
@@ -17,7 +17,7 @@ Explore **310 plugins** across seven broad areas. Each plugin appears once, unde
 
 ### Current snapshot
 
-This is the first published directory snapshot: **310 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
+This is the first published directory snapshot: **311 plugins**, grouped into **7 categories**, with matching English and Chinese entries. Future additions, removals, and corrections are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Browse by category
 
@@ -207,6 +207,7 @@ This is the first published directory snapshot: **310 plugins**, grouped into **
 - [dsh-dd-forge](https://github.com/McBonB/dsh-dd-forge) — Provides a deterministic rule-pack engine that reviews due-diligence document folders and exports sourced risk reports in md, docx, and xlsx formats.
 - [sieve](https://github.com/Sev7eEn7/sieve) — A DeepSeek Harness plugin that filters tool outputs, prunes historical context, and progressively discloses skill listings before content reaches the main model request.
 - [dsh-skill-starter](https://github.com/ymck-x/dsh-skill-starter) — A DSH plugin that manages a skill library, shipping six built-in skills plus a 20-skill engineering workflow pack, with a settings-page panel and host-side tools for listing, reading, writing, and deleting skills.
+- [dsh-session-continuity](https://github.com/ymck-x/dsh-session-continuity) — Injects a short continuity pointer (previous session title, id, and optional handoff-file reference, falling back to DSH compaction summaries or the last two messages) into the first model step of a new session in the same workspace.
 
 ## Content & Creation
 
